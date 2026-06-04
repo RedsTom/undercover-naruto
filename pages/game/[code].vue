@@ -5,7 +5,8 @@
         <div class="flex items-center justify-between">
           <h1 class="text-2xl font-bold">Partie en cours</h1>
           <div class="flex gap-2">
-            <UButton v-if="isHost" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
+            <UButton v-if="gameState.phase === 'finished'" color="orange" size="sm" @click="handleGoToLobby">Retour au lobby</UButton>
+            <UButton v-if="isHost && gameState.phase !== 'finished'" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
             <UButton color="gray" variant="outline" size="sm" @click="handleLeave">Quitter</UButton>
           </div>
         </div>
@@ -233,7 +234,7 @@ onMounted(async () => {
           navigateTo('/');
           return;
         }
-        if (room.value?.gameState?.phase === 'finished' || room.value?.gameState?.phase === 'waiting') {
+        if ((room.value?.gameState?.phase as string) === 'waiting') {
           gameCleanup();
           disconnect();
           if (pollInterval) clearInterval(pollInterval);
@@ -270,6 +271,13 @@ async function handleNextRound() {
 
 async function handleReturnToLobby() {
   await returnToLobby();
+}
+
+function handleGoToLobby() {
+  gameCleanup();
+  disconnect();
+  if (pollInterval) clearInterval(pollInterval);
+  navigateTo(`/room/${route.params.code}`);
 }
 
 function handleLeave() {

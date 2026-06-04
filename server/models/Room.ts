@@ -1,6 +1,14 @@
 import { PlayerModel } from './Player';
 import type { GameState, GameConfig, GamePhase } from '~/types';
 
+export interface GameResult {
+  winner: 'civilians' | 'undercover';
+  exposed: Array<{ playerId: string; name: string; role: string; word: string | null }>;
+  wordA: string;
+  wordB: string;
+  scores: { civilians: number; undercover: number };
+}
+
 export class RoomModel {
   id: string;
   code: string;
@@ -11,6 +19,7 @@ export class RoomModel {
   lastActivity: number;
   gameState: GameState | null;
   lastConfig: GameConfig | null = null;
+  lastGameResult: GameResult | null = null;
 
   constructor(id: string, code: string, hostId: string, maxPlayers = 8) {
     this.id = id;
@@ -100,6 +109,7 @@ export class RoomModel {
     playerCount: number;
     gameState: GameState | null;
     lastConfig: GameConfig | null;
+    lastGameResult: GameResult | null;
   } {
     return {
       id: this.id,
@@ -110,6 +120,7 @@ export class RoomModel {
       playerCount: this.players.size,
       gameState: this.gameState,
       lastConfig: this.lastConfig,
+      lastGameResult: this.lastGameResult,
     };
   }
 
@@ -122,6 +133,7 @@ export class RoomModel {
     playerCount: number;
     gameState: GameState | null;
     lastConfig: GameConfig | null;
+    lastGameResult: GameResult | null;
     myWord: string | null;
     myRole: string | null;
   } {

@@ -27,6 +27,18 @@ export class GameService {
       ...config,
     };
 
+    if (room.gameState?.exposed) {
+      const rounds = room.gameState.rounds;
+      const lastPair = rounds[rounds.length - 1]?.wordPair;
+      room.lastGameResult = {
+        winner: room.gameState.winner ?? 'civilians',
+        exposed: room.gameState.exposed,
+        wordA: lastPair?.wordA ?? '',
+        wordB: lastPair?.wordB ?? '',
+        scores: { ...room.gameState.scores },
+      };
+    }
+
     room.initGameState(mergedConfig);
     room.resetPlayers();
 
@@ -135,6 +147,19 @@ export class GameService {
 
   static resetGame(room: RoomModel): void {
     room.lastConfig = room.gameState?.config ?? null;
+    if (room.gameState?.exposed) {
+      const rounds = room.gameState.rounds;
+      const lastPair = rounds[rounds.length - 1]?.wordPair;
+      room.lastGameResult = {
+        winner: room.gameState.winner ?? 'civilians',
+        exposed: room.gameState.exposed,
+        wordA: lastPair?.wordA ?? '',
+        wordB: lastPair?.wordB ?? '',
+        scores: { ...room.gameState.scores },
+      };
+    } else {
+      room.lastGameResult = null;
+    }
     room.gameState = null;
     room.resetPlayers();
     room.setPhase('waiting');

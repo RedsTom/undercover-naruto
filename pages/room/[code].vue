@@ -31,6 +31,30 @@
 
           <LobbyPlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" />
 
+          <div v-if="lastGameResult" class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow space-y-4 text-center">
+            <h2 class="text-xl font-bold">{{ lastGameResult.winner === 'civilians' ? 'Les civils ont gagné !' : 'Les Undercover ont gagné !' }}</h2>
+
+            <div class="space-y-1">
+              <p class="font-semibold">Mot des civils : <span class="text-orange-600">{{ lastGameResult.wordA }}</span></p>
+              <p class="font-semibold">Mot des imposteurs : <span class="text-orange-600">{{ lastGameResult.wordB }}</span></p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-lg font-semibold">Rôles</h3>
+              <div v-for="p in lastGameResult.exposed" :key="p.playerId"
+                class="p-3 rounded-lg text-sm"
+                :class="p.role === 'undercover' || p.role === 'mrWhite' ? 'bg-red-50 dark:bg-red-900/30 ring-1 ring-red-300' : 'bg-green-50 dark:bg-green-900/30 ring-1 ring-green-300'">
+                <p class="font-medium">{{ p.name }}</p>
+                <p>{{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
+                <p v-if="p.word" class="text-xs text-gray-500">Mot : {{ p.word }}</p>
+              </div>
+            </div>
+
+            <p class="text-gray-500 text-sm">
+              Civils {{ lastGameResult.scores.civilians }} - {{ lastGameResult.scores.undercover }} Undercover
+            </p>
+          </div>
+
           <LobbyGameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" @start="handleStart" />
 
           <div v-if="!isHost" class="text-center">
@@ -64,6 +88,7 @@ const joining = ref(false);
 const joinError = ref('');
 
 const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (room.value as any)?.lastConfig ?? null);
+const lastGameResult = computed(() => (room.value as any)?.gameState?.phase === 'finished' ? (room.value as any)?.gameState : (room.value as any)?.lastGameResult ?? null);
 
 let pollInterval: NodeJS.Timeout | null = null;
 

@@ -57,6 +57,7 @@
 
         <div v-if="gameState.phase === 'voting' && myRole" class="space-y-3">
           <h2 class="text-lg font-semibold text-center">Votez pour éliminer un joueur</h2>
+          <p class="text-center text-sm text-gray-500">Votes : {{ voteProgress.count }}/{{ voteProgress.total }}</p>
           <div class="grid grid-cols-2 gap-2">
             <UButton v-for="player in alivePlayers" :key="player.id"
               :disabled="player.id === playerId || voting"
@@ -135,6 +136,16 @@ const alivePlayers = computed(() => {
 const aliveAll = computed(() => {
   if (!room.value) return [];
   return room.value.players.filter((p: any) => p.isAlive);
+});
+
+const voteProgress = computed(() => {
+  const rounds = (gameState.value as any)?.rounds;
+  if (!rounds?.length) return { count: 0, total: 0 };
+  const lastRound = rounds[rounds.length - 1];
+  return {
+    count: lastRound.votes?.length ?? 0,
+    total: aliveAll.value.length,
+  };
 });
 
 const currentSpeaker = computed(() => {

@@ -9,8 +9,8 @@ services:
       - "traefik.http.routers.undercover-naruto.tls.certresolver=letsencrypt"
       - "traefik.http.services.undercover-naruto.loadbalancer.server.port=3000"
     networks:
-      - traefik
+      - proxy
 
 networks:
-  traefik:
+  proxy:
     external: true

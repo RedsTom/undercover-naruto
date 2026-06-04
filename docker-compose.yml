@@ -1,0 +1,16 @@
+services:
+  app:
+    image: ghcr.io/redstom/undercover-naruto:latest
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.undercover-naruto.rule=Host(`undercover-naruto.vps.redstom.fr`)"
+      - "traefik.http.routers.undercover-naruto.entrypoints=websecure"
+      - "traefik.http.routers.undercover-naruto.tls.certresolver=letsencrypt"
+      - "traefik.http.services.undercover-naruto.loadbalancer.server.port=3000"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

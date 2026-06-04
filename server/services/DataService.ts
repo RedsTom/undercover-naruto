@@ -101,15 +101,18 @@ export function generateWordPairs(eras: string[], minOverlap = 3): WordPairCandi
   return pairs;
 }
 
-export function getRandomWordPair(eras: string[], difficulty?: 'easy' | 'medium' | 'hard'): WordPairCandidate {
-  const pairs = generateWordPairs(eras);
+export function getRandomWordPair(eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard'): WordPairCandidate | null {
+  const pairs = generateWordPairs(eras, minOverlap);
 
   const filtered = difficulty
     ? pairs.filter(p => p.difficulty === difficulty)
     : pairs;
 
   if (filtered.length === 0) {
-    return pairs[Math.floor(Math.random() * pairs.length)];
+    if (pairs.length > 0) {
+      return pairs[Math.floor(Math.random() * pairs.length)];
+    }
+    return null;
   }
 
   return filtered[Math.floor(Math.random() * filtered.length)];

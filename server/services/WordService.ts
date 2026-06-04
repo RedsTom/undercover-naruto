@@ -4,7 +4,14 @@ import { getRandomWordPair as getRandomPair } from './DataService';
 
 export class WordService {
   static getRandomWordPair(eras: string[] = []): WordPair {
-    const candidate = getRandomPair(eras);
+    let candidate = getRandomPair(eras, 3);
+    if (!candidate) candidate = getRandomPair(eras, 2);
+    if (!candidate) candidate = getRandomPair(eras, 1);
+
+    if (!candidate) {
+      throw new Error('Aucune paire de mots trouvée pour les époques sélectionnées. Essayez d\'ajouter plus d\'époques.');
+    }
+
     return {
       wordA: candidate.wordA,
       wordB: candidate.wordB,

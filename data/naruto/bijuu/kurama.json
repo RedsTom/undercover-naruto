@@ -1,0 +1,43 @@
+{
+  "id": "kurama",
+  "name": "Kurama",
+  "category": "bijuu",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "kurama",
+    "naruto",
+    "konoha",
+    "feu",
+    "kyubi",
+    "renard",
+    "plus-puissant",
+    "jinchuriki"
+  ],
+  "summary": "Bête à neuf queues, le renard démoniaque Kurama, le plus puissant des bijū, jinchuriki de Naruto",
+  "details": [
+    "Kurama est le Kyūbi (bête à neuf queues), le bijū le plus puissant, au chakra infini et dévastateur",
+    "Ses natures de chakra sont le Feu (Katon) et le Vent (Fūton), capables de raser des montagnes",
+    "Naruto Uzumaki est son jinchuriki le plus célèbre, ayant transformé leur relation de haine en amitié",
+    "Ses précédents jinchuriki incluent Mito Uzumaki, Kushina Uzumaki et brièvement Minato Namikaze",
+    "Attaqua Konoha seize ans avant le début de la série, causant des destructions massives avant d'être scellé"
+  ],
+  "image": "",
+  "tails": 9,
+  "jinchuriki": [
+    "Naruto Uzumaki",
+    "Kushina Uzumaki",
+    "Mito Uzumaki",
+    "Minato Namikaze"
+  ],
+  "nature": [
+    "Feu",
+    "Vent"
+  ]
+}

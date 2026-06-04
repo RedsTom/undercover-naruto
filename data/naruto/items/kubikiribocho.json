@@ -1,0 +1,32 @@
+{
+  "id": "kubikiribocho",
+  "name": "Kubikiribōchō",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "epee",
+    "kiri",
+    "zabuza",
+    "sang",
+    "7-epéistes",
+    "decapiteuse",
+    "hache",
+    "metal",
+    "reparation"
+  ],
+  "summary": "Épée décapiteuse des Sept Épéistes, capable de se réparer avec le sang de ses victimes",
+  "details": [
+    "L'une des sept épées légendaires de Kirigakure, une immense hache-épée",
+    "Zabuza Momochi, le Démon de la Brume, en était le porteur",
+    "Se régénère en utilisant le fer contenu dans le sang de ses victimes",
+    "Après la mort de Zabuza, elle fut récupérée par Suigetsu Hozuki",
+    "Son nom signifie 'Décapiteur' en référence à sa fonction première"
+  ],
+  "image": "",
+  "wielder": "Zabuza Momochi",
+  "origin": "Kirigakure"
+}

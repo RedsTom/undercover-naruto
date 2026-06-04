@@ -1,0 +1,43 @@
+{
+  "id": "insect-jutsu",
+  "name": "Technique des Insectes",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "aburame",
+    "insectes",
+    "chakra",
+    "parasites",
+    "shino",
+    "rang-B",
+    "konoha",
+    "clan-aburame",
+    "kikaichu",
+    "symbiose",
+    "reconnaissance"
+  ],
+  "summary": "Manipulation d'insectes destructeurs de chakra par le clan Aburame",
+  "details": [
+    "Technique héréditaire du clan Aburame utilisant des insectes parasites",
+    "Les insectes vivent en symbiose avec leur hôte, partageant leur chakra",
+    "Shino Aburame contrôle les insectes Kikaichū qui dévorent le chakra",
+    "Peuvent être utilisés pour l'attaque, la défense, la reconnaissance",
+    "Les insectes peuvent transporter des messages et former des boucliers",
+    "Chaque membre du clan peut avoir une espèce d'insecte différente"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Shino Aburame",
+    "Shibi Aburame"
+  ]
+}

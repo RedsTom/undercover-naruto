@@ -1,0 +1,29 @@
+{
+  "id": "kazekage-1-reto",
+  "name": "Reto — 1er Kazekage",
+  "category": "kage",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kage",
+    "kazekage",
+    "suna",
+    "fondateur",
+    "sable",
+    "desert",
+    "pays-du-vent"
+  ],
+  "summary": "Premier Kazekage, fondateur de Sunagakure et premier dirigeant du village caché du Sable",
+  "details": [
+    "Fondateur du village caché du Sable, établissant Sunagakure comme puissance dans le Pays du Vent",
+    "A participé à la première réunion des cinq Kage organisée par Hashirama Senju pour distribuer les bijū",
+    "Connu pour sa maîtrise exceptionnelle des techniques de sable et des tactiques désertiques",
+    "A négocié l'obtention de Shukaku, la bête à une queue, pour Sunagakure lors de la distribution",
+    "Peu d'informations historiques subsistent sur son règne et ses accomplissements personnels"
+  ],
+  "image": "",
+  "title": "Kazekage",
+  "village": "Sunagakure",
+  "person": "Reto"
+}

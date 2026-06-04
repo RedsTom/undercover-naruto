@@ -1,0 +1,30 @@
+{
+  "id": "shimogakure",
+  "name": "Shimogakure",
+  "category": "village",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-du-givre",
+    "shimo",
+    "froid",
+    "glace",
+    "petite-nation",
+    "neige",
+    "ninja"
+  ],
+  "summary": "Village caché du Givre, village mineur perdu dans les terres enneigées du Pays du Givre",
+  "details": [
+    "Situé au Pays du Givre, une région glaciale et isolée où la neige recouvre tout une grande partie de l'année",
+    "Village ninja mineur avec très peu d'informations canoniques disponibles dans l'œuvre originale",
+    "Apparaît principalement dans les arcs filler de l'anime, hors de la trame principale du manga",
+    "Spécialisé dans les techniques de glace adaptées à son environnement hostile et glacial",
+    "Région si isolée que le village a développé une culture ninja distincte des grandes nations"
+  ],
+  "image": "",
+  "country": "Pays du Givre",
+  "kage": "Aucun",
+  "notableClans": []
+}

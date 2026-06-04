@@ -1,0 +1,38 @@
+{
+  "id": "gyuki",
+  "name": "Gyūki",
+  "category": "bijuu",
+  "era": [
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "gyuki",
+    "killer-bee",
+    "kumo",
+    "encre",
+    "hachibi",
+    "poulpe-taureau",
+    "eau",
+    "rap"
+  ],
+  "summary": "Bête à huit queues, le bœuf-poulpe Gyūki, jinchuriki de Killer Bee de Kumogakure",
+  "details": [
+    "Gyūki est le Hachibi (bête à huit queues), hybride unique de bœuf et de pieuvre aux tentacules d'encre",
+    "Sa nature de chakra est l'Eau (Suiton), et il peut produire de l'encre pour attaquer ou créer des illusions",
+    "Killer Bee de Kumogakure est son jinchuriki, avec lequel il partage une amitié sincère et un humour ravageur",
+    "Deuxième bijū le plus puissant après Kurama, il est connu pour sa sagesse et son amour du rap",
+    "A aidé Killer Bee à développer son style de combat unique mêlant épées, encre et rap"
+  ],
+  "image": "",
+  "tails": 8,
+  "jinchuriki": [
+    "Killer Bee"
+  ],
+  "nature": [
+    "Eau",
+    "Encre"
+  ]
+}

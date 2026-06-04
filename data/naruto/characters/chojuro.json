@@ -1,0 +1,37 @@
+{
+  "id": "chojuro",
+  "name": "Chojuro",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "kiri",
+    "mizukage",
+    "hiramekarei",
+    "7-epéistes",
+    "timide",
+    "lunettes",
+    "mei-disciple"
+  ],
+  "summary": "6e Mizukage de Kiri, timide mais redoutable épéiste héritier d'Hiramekarei",
+  "details": [
+    "Sixième Mizukage de Kirigakure, successeur désigné par Mei Terumi après la guerre",
+    "Manie Hiramekarei, l'une des 7 Épées Légendaires de la Brume, qui emmagasine le chakra",
+    "Timide et réservé, il manque de confiance en lui mais devient un leader respecté avec le temps",
+    "A combattu aux côtés des Alliés lors de la 4e Grande Guerre Shinobi contre les armées d'Obito",
+    "Porte des lunettes et une apparence jeune, souvent sous-estimé par ses adversaires",
+    "Gouverne Kiri avec sagesse et ouverture dans l'ère Boruto, modernisant le village"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kirigakure",
+  "rank": "Mizukage",
+  "team": null,
+  "jutsu": [
+    "Hiramekarei",
+    "Water techniques"
+  ],
+  "kageTitle": "6e Mizukage"
+}

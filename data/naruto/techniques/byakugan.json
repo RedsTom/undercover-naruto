@@ -1,0 +1,46 @@
+{
+  "id": "byakugan",
+  "name": "Byakugan",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "dojutsu",
+    "hyuga",
+    "vision-360",
+    "points-chakra",
+    "rang-A",
+    "kekkei-genkai",
+    "perception",
+    "oeil",
+    "blanc",
+    "vue-peripherique",
+    "distance",
+    "konoha"
+  ],
+  "summary": "Œil blanc du clan Hyuga offrant une vision à 360 degrés",
+  "details": [
+    "Kekkei Genkai du clan Hyuga, l'un des trois grands dojutsu",
+    "Permet de voir le système de chakra et les points de pression",
+    "Offre une vision panoramique à 360 degrés presque complète",
+    "Permet de voir à travers les objets solides sur une longue distance",
+    "Combiné au Poing Doux, il peut frapper les points de chakra vitaux",
+    "Boruto possède un Byakugan spécial hérité de sa mère Hinata"
+  ],
+  "image": "",
+  "type": "dojutsu",
+  "rank": "A",
+  "nature": [],
+  "users": [
+    "Hinata Hyuga",
+    "Neji Hyuga",
+    "Hiashi Hyuga",
+    "Hanabi Hyuga",
+    "Boruto Uzumaki"
+  ]
+}

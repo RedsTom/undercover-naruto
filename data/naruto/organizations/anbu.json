@@ -1,0 +1,40 @@
+{
+  "id": "anbu",
+  "name": "ANBU",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "organisation",
+    "elite",
+    "masque",
+    "assassinat",
+    "tous-villages",
+    "anbu",
+    "espion",
+    "commando",
+    "incognito",
+    "operation-speciales"
+  ],
+  "summary": "Brigade d'élite des villages ninjas spécialisée dans les missions secrètes et l'assassinat",
+  "details": [
+    "Acronyme de Ansatsu Senjutsu Tokushu Butai (Brigade Spéciale d'Assassinat)",
+    "Portent des masques d'animaux pour préserver leur anonymat",
+    "Opèrent directement sous les ordres du Kage",
+    "Présents dans chaque grand village ninja avec leur propre section",
+    "Forment l'élite des forces spéciales du monde shinobi"
+  ],
+  "image": "",
+  "members": [
+    "Kakashi Hatake",
+    "Itachi Uchiha",
+    "Yamato",
+    "Shisui Uchiha",
+    "Kabuto Yakushi"
+  ],
+  "leader": "Kage du village"
+}

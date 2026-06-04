@@ -1,0 +1,41 @@
+{
+  "id": "isshiki-otsutsuki",
+  "name": "Isshiki Otsutsuki",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "otsutsuki",
+    "isshiki",
+    "jigen",
+    "kara",
+    "karma",
+    "boruto",
+    "dimension",
+    "reduction"
+  ],
+  "summary": "Membre supérieur du clan Otsutsuki, cerveau de Kara et plus grande menace de Boruto",
+  "details": [
+    "Membre du clan Otsutsuki, compagnon originel de Kaguya qu'elle a trahi en le laissant pour mort",
+    "Survit en implantant son Karma sur un moine du nom de Jigen, dont il contrôle le corps",
+    "Fondateur et leader secret de Kara, une organisation cherchant à contrôler le monde shinobi",
+    "Maîtrise Sukunahikona (réduction d'objets) et Daikokuten (stockage dimensionnel) via son Dojutsu",
+    "Impose son Karma sur Kawaki, faisant de lui son futur réceptacle pour une résurrection complète",
+    "Extrêmement puissant, il domine Naruto et Sasuke simultanément en combat rapproché",
+    "Représente la plus grande menace pour Konoha dans l'ère Boruto, forçant l'union de tous les shinobi"
+  ],
+  "image": "",
+  "clan": "Otsutsuki",
+  "village": null,
+  "rank": null,
+  "team": "Kara",
+  "jutsu": [
+    "Karma",
+    "Sukunahikona",
+    "Daikokuten",
+    "Arm transformation",
+    "Byakugan"
+  ],
+  "kageTitle": null
+}

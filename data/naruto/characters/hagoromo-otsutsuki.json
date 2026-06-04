@@ -1,0 +1,43 @@
+{
+  "id": "hagoromo-otsutsuki",
+  "name": "Hagoromo Otsutsuki",
+  "category": "character",
+  "era": [
+    "shippuden-end"
+  ],
+  "tags": [
+    "otsutsuki",
+    "sage",
+    "rinnegan",
+    "six-chemins",
+    "fondateur",
+    "ninshu",
+    "chakra",
+    "indra-pere",
+    "ashura-pere",
+    "naruto-esprit"
+  ],
+  "summary": "Sage des Six Chemins, fondateur du ninshu et père du ninjutsu moderne",
+  "details": [
+    "Fils de Kaguya Otsutsuki, né avec le Rinnegan hérité de sa mère après avoir consommé le fruit défendu",
+    "Fondateur du Ninshu, une philosophie reliant les humains par le chakra sans combat, précurseur du ninjutsu",
+    "A scellé Kaguya avec son frère Hamura, puis libéré le chakra des Dix Queues en créant les 9 Bijuu",
+    "Père d'Indra (héritier des yeux, fondateur des Uchiha) et Ashura (héritier du corps, fondateur des Senju)",
+    "Apparaît sous forme spirituelle à Naruto et Sasuke durant la 4e Guerre pour leur transmettre ses pouvoirs",
+    "Son Rinnegan et son héritage ont façonné l'intégralité de l'histoire shinobi à travers ses fils",
+    "Considéré comme le dieu du monde shinobi, vénéré à travers les âges comme le Sage des Six Chemins"
+  ],
+  "image": "",
+  "clan": "Otsutsuki",
+  "village": null,
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Rinnegan",
+    "Six Paths",
+    "Ninshu",
+    "Creation of All Things",
+    "Truth-Seeking Balls"
+  ],
+  "kageTitle": null
+}

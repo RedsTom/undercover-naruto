@@ -1,0 +1,38 @@
+{
+  "id": "kokuo",
+  "name": "Kokuō",
+  "category": "bijuu",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "kokuo",
+    "vapeur",
+    "han",
+    "iwa",
+    "gobi",
+    "dauphin-cheval",
+    "futton",
+    "kekkei-genkai"
+  ],
+  "summary": "Bête à cinq queues, l'hybride dauphin-cheval Kokuō, jinchuriki de Han",
+  "details": [
+    "Kokuō est le Gobi (bête à cinq queues), à l'apparence unique mêlant dauphin et cheval en une créature aquatique",
+    "Ses natures de chakra sont le Feu et l'Eau, combinées en Vapeur (Futton), un rare kekkei genkai",
+    "Han, un grand guerrier d'Iwagakure, fut son jinchuriki et utilisait la vapeur pour augmenter sa force",
+    "Kokuō est considéré comme le plus docile des bijū, préférant fuir les combats plutôt que se battre",
+    "Fut capturé par l'Akatsuki pendant leur collecte systématique des bêtes à queues"
+  ],
+  "image": "",
+  "tails": 5,
+  "jinchuriki": [
+    "Han"
+  ],
+  "nature": [
+    "Feu",
+    "Eau",
+    "Vapeur"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "yamato",
+  "name": "Yamato",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end"
+  ],
+  "tags": [
+    "konoha",
+    "anbu",
+    "mokuton",
+    "orochimaru-experiment",
+    "hashirama-cells",
+    "root",
+    "team-7-captain",
+    "kakashi-remplacant"
+  ],
+  "summary": "Capitaine temporaire de Team 7 et unique ninja capable d'utiliser le Mokuton avec succès",
+  "details": [
+    "Créé par Orochimaru dans une expérience génétique avec les cellules d'Hashirama Senju",
+    "Unique ninja (avec Obito/Madara) capable d'utiliser le Mokuton (libération du bois)",
+    "Ancien membre de la Racine (Root) de Danzo et de l'ANBU",
+    "A servi de capitaine temporaire de Team 7 après le départ de Kakashi",
+    "A utilisé le Mokuton pour supprimer le chakra de Kurama chez Naruto",
+    "Surnom de code Tenzo, son vrai nom est inconnu",
+    "Capturé par Kabuto pendant la guerre, il fut libéré à la fin du conflit"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Wood Release",
+    "Suppression"
+  ],
+  "kageTitle": null
+}

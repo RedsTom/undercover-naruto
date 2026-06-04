@@ -1,0 +1,31 @@
+{
+  "id": "yata-mirror",
+  "name": "Yata no Kagami",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "bouclier",
+    "itachi",
+    "susanoo",
+    "defense",
+    "absolue",
+    "legendaire",
+    "miroir",
+    "spirituel",
+    "indestructible"
+  ],
+  "summary": "Bouclier spirituel absolu d'Itachi, capable de contrer toute attaque en changeant de nature",
+  "details": [
+    "Bouclier éthéré du Susanoo d'Itachi Uchiha",
+    "Change sa composition élémentaire pour contrer toute attaque",
+    "Considéré comme la défense absolue, capable de tout bloquer",
+    "N'existe pas physiquement, uniquement manifesté via le Susanoo",
+    "Forme la paire parfaite avec l'épée Totsuka : défense et attaque absolues"
+  ],
+  "image": "",
+  "wielder": "Itachi Uchiha",
+  "origin": "Susanoo d'Itachi Uchiha"
+}

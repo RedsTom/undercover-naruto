@@ -1,0 +1,37 @@
+{
+  "id": "team-guy",
+  "name": "Team Guy",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "equipe",
+    "konoha",
+    "guy",
+    "rock-lee",
+    "neji",
+    "tenten",
+    "taijutsu",
+    "huit-portes",
+    "dynamique",
+    "entrainement"
+  ],
+  "summary": "Équipe de Konoha dirigée par Might Guy, spécialisée en taijutsu surhumain",
+  "details": [
+    "Dirigée par Might Guy, le plus puissant taijutsu user de Konoha",
+    "Rock Lee, protégé de Guy, maître du taijutsu pur sans ninjutsu",
+    "Neji Hyuga, prodige du Byakugan et du Gentle Fist",
+    "Tenten, experte en armes de jet et invocation d'armes",
+    "Leur philosophie : l'effort acharné triomphe du talent inné"
+  ],
+  "image": "",
+  "members": [
+    "Might Guy",
+    "Rock Lee",
+    "Neji Hyuga",
+    "Tenten"
+  ],
+  "leader": "Might Guy"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "killer-bee",
+  "name": "Killer Bee",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "kumo",
+    "jinchuriki",
+    "gyuki",
+    "huit-queues",
+    "rapper",
+    "lariat",
+    "frere-raikage",
+    "epees",
+    "danseur",
+    "acrobate",
+    "naruto-mentor"
+  ],
+  "summary": "Jinchuriki de Gyuki, maître du style acrobatique à 7 épées et rappeur légendaire",
+  "details": [
+    "Jinchuriki de Gyuki le démon à huit queues, parfaitement synchronisé avec son bijuu",
+    "Manie un style de combat unique à 7 épées, combinant acrobaties, danse et lames dans une chorégraphie mortelle",
+    "Rappeur invétéré, il ponctue ses combats de rimes et de poses, ce qui agace autant ses ennemis que ses alliés",
+    "Frère adoptif du 4e Raikage A, il est l'atout majeur de Kumo et son épéiste le plus puissant",
+    "Devient le mentor de Naruto pour le contrôle du Mode Bijuu, lui apprenant à dompter Kurama",
+    "A survécu à une extraction de bijuu, prouvant sa volonté exceptionnelle et son lien avec Gyuki",
+    "Continue à protéger Kumo dans l'ère Boruto, toujours aussi excentrique et redoutable"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kumogakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Samehada (formerly)",
+    "Gyuki",
+    "Lariat",
+    "Ink techniques",
+    "Rapper blades"
+  ],
+  "kageTitle": null
+}

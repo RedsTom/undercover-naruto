@@ -1,0 +1,36 @@
+{
+  "id": "roshi",
+  "name": "Roshi",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "iwa",
+    "jinchuriki",
+    "son-goku",
+    "quatre-queues",
+    "lave",
+    "yoton",
+    "ermite"
+  ],
+  "summary": "Jinchuriki de Son Goku, ermite d'Iwa au contrôle parfait de la lave",
+  "details": [
+    "Jinchuriki de Son Goku, le démon à quatre queues ressemblant à un singe géant de lave",
+    "Maîtrise le Lava Release (Yoton), crachant de la lave et maniant la chaleur infernale de son bijuu",
+    "Vivait en ermite loin d'Iwa, cherchant la paix intérieure loin des conflits des villages",
+    "Capturé par l'Akatsuki après un combat acharné, Son Goku est extrait et scellé",
+    "Ressuscité par l'Edo Tensei, il combat aux côtés des autres jinchuriki contre Naruto et Killer Bee",
+    "Son nom s'inspire du personnage de Son Goku, le Roi Singe du voyage vers l'Ouest"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Iwagakure",
+  "rank": "Jinchuriki",
+  "team": null,
+  "jutsu": [
+    "Lava Release",
+    "Son Goku transformation"
+  ],
+  "kageTitle": null
+}

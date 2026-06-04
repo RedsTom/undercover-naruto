@@ -1,0 +1,46 @@
+{
+  "id": "might-guy",
+  "name": "Might Guy",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end"
+  ],
+  "tags": [
+    "konoha",
+    "guy",
+    "taijutsu",
+    "portes",
+    "team-guy",
+    "rival-kakashi",
+    "huit-portes",
+    "ninja-le-plus-fort",
+    "dynamique",
+    "sourcils-epais",
+    "nuit-guy"
+  ],
+  "summary": "Might Guy, le plus puissant taijutsu master de Konoha aux Huit Portes Intérieures",
+  "details": [
+    "Considéré comme le plus puissant utilisateur de taijutsu de l'histoire shinobi",
+    "Maître des Huit Portes Intérieures, ouvrant la Porte de la Mort contre Madara",
+    "A failli tuer Madara Uchiha avec sa technique ultime Night Guy (Yagai)",
+    "Rival de toujours de Kakashi Hatake, avec qui il se mesure en tout",
+    "Leader de Team Guy, formant Rock Lee, Neji et Tenten",
+    "Surnommé le Démon Vert de Konoha pour son jumpsuit vert et sa coupe bowl",
+    "Survivant paralysé après l'ouverture de la 8e porte, sauvé par Naruto"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team Guy",
+  "jutsu": [
+    "Eight Gates",
+    "Hirudora",
+    "Sekizo",
+    "Night Guy",
+    "Primary Lotus"
+  ],
+  "kageTitle": null
+}

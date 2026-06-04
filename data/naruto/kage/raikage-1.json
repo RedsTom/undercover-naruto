@@ -1,0 +1,28 @@
+{
+  "id": "raikage-1",
+  "name": "A — 1er Raikage",
+  "category": "kage",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kage",
+    "raikage",
+    "kumo",
+    "fondateur",
+    "foudre",
+    "kumogakure"
+  ],
+  "summary": "Premier Raikage, fondateur de Kumogakure et premier à porter le titre honorifique A",
+  "details": [
+    "Fondateur du village caché des Nuages, établissant Kumogakure dans les montagnes du Pays de la Foudre",
+    "Instaura la tradition selon laquelle tous les Raikage portent le nom honorifique A",
+    "A fait de Kumogakure une puissance militaire redoutable grâce à une politique expansionniste",
+    "A participé à la première réunion des cinq Kage pour la distribution des bêtes à queues",
+    "A créé les fondations de la culture guerrière et fière qui caractérise Kumogakure"
+  ],
+  "image": "",
+  "title": "Raikage",
+  "village": "Kumogakure",
+  "person": "1er Raikage (A)"
+}

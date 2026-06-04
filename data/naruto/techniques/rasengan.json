@@ -1,0 +1,48 @@
+{
+  "id": "rasengan",
+  "name": "Rasengan",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "konoha",
+    "minato",
+    "naruto",
+    "spirale",
+    "chakra-rotatif",
+    "sans-sceau",
+    "rang-A",
+    "jiraiya",
+    "perforant",
+    "sphere",
+    "entrainement",
+    "heritage"
+  ],
+  "summary": "Sphère de chakra rotatif à très haute densité, créée par Minato Namikaze",
+  "details": [
+    "Créée par Minato Namikaze en s'inspirant du Bijūdama",
+    "Considérée comme le paroxysme du contrôle du chakra, aucun sceau requis",
+    "Maîtrisée et perfectionnée par Naruto Uzumaki avec des centaines de variantes",
+    "Combinée à l'élément Vent pour former le Rasenshuriken",
+    "Plusieurs variantes existent : Odama Rasengan, Rasengan multiple, Rasengan géant",
+    "Transmise de maître à élève : Minato à Jiraiya, Jiraiya à Naruto"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "vent"
+  ],
+  "users": [
+    "Minato Namikaze",
+    "Jiraiya",
+    "Naruto Uzumaki",
+    "Kakashi Hatake",
+    "Konohamaru Sarutobi",
+    "Boruto Uzumaki"
+  ]
+}

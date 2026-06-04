@@ -1,0 +1,38 @@
+{
+  "id": "sunagakure",
+  "name": "Sunagakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-du-vent",
+    "sable",
+    "desert",
+    "suna",
+    "kazekage",
+    "gaara",
+    "grande-nation",
+    "marionnette",
+    "shukaku",
+    "jinchuriki"
+  ],
+  "summary": "Village caché du Sable, niché au cœur du désert du Pays du Vent, l'une des cinq grandes nations ninja",
+  "details": [
+    "Situé au Pays du Vent, entouré d'un vaste désert aride qui le protège naturellement des invasions",
+    "Dirigé par le Kazekage, Gaara étant le cinquième et plus respecté dirigeant de son histoire",
+    "Réputé pour ses marionnettistes légendaires comme Sasori et Chiyo, un art unique au monde ninja",
+    "A subi des coupes budgétaires sévères menant à une alliance désastreuse avec Otogakure contre Konoha",
+    "Le Troisième Kazekage, considéré comme le plus puissant, fut assassiné par Sasori et transformé en marionnette"
+  ],
+  "image": "",
+  "country": "Pays du Vent",
+  "kage": "Kazekage",
+  "notableClans": [
+    "Marionnettistes"
+  ]
+}

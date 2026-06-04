@@ -1,0 +1,35 @@
+{
+  "id": "hoshigaki",
+  "name": "Clan Hoshigaki",
+  "category": "clan",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "clan",
+    "kiri",
+    "requin",
+    "kisame",
+    "branchies",
+    "samehada",
+    "akatsuki",
+    "brume",
+    "force",
+    "chakra-massif",
+    "epee"
+  ],
+  "summary": "Clan de Kirigakure à l'apparence de requin et à la force redoutable",
+  "details": [
+    "Membres caractérisés par des traits de requin : branchies, dents acérées et peau bleutée",
+    "Kisame Hoshigaki est le membre le plus célèbre et redoutable du clan",
+    "Kisame fut membre des Sept Épéistes puis d'Akatsuki",
+    "Possède une réserve de chakra comparable à celle d'un bijuu",
+    "Manie Samehada, l'épée vivante qui absorbe le chakra"
+  ],
+  "image": "",
+  "village": "Kirigakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Kisame Hoshigaki"
+  ]
+}

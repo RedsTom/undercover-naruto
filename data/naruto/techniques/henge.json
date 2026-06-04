@@ -1,0 +1,40 @@
+{
+  "id": "henge",
+  "name": "Henge no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "base",
+    "transformation",
+    "academie",
+    "rang-E",
+    "infiltration",
+    "fondamental",
+    "deguisement",
+    "apprentissage",
+    "polyvalent"
+  ],
+  "summary": "Technique de transformation permettant de prendre l'apparence d'une personne ou d'un objet",
+  "details": [
+    "Technique de base enseignée à l'Académie des ninjas",
+    "Permet de se transformer en n'importe quelle personne ou objet",
+    "Peut être utilisée de manière créative pour des stratégies d'infiltration",
+    "Naruto l'a utilisée de façon célèbre pour se transformer en femme",
+    "Le Henge de combat, une variante, est utilisé pendant les combats",
+    "Technique indispensable pour les missions d'espionnage"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "E",
+  "nature": [],
+  "users": [
+    "Tous les ninjas"
+  ]
+}

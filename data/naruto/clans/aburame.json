@@ -1,0 +1,39 @@
+{
+  "id": "aburame",
+  "name": "Clan Aburame",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "insecte",
+    "chakra",
+    "shino",
+    "kikaichu",
+    "parasite",
+    "pistage",
+    "espion",
+    "lunettes",
+    "essaim"
+  ],
+  "summary": "Clan de Konoha utilisant des insectes dévoreurs de chakra logés dans leur corps",
+  "details": [
+    "Offrent leur corps comme nid aux kikaichu, des insectes destructeurs de chakra",
+    "Les insectes servent au pistage, à l'espionnage et aux attaques massives",
+    "Portent en permanence des lunettes et des vêtements couvrants",
+    "Spécialistes des techniques d'infiltration et de destruction par essaim",
+    "Shino Aburame est le membre le plus notable de la jeune génération"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Shino Aburame",
+    "Shibi Aburame"
+  ]
+}

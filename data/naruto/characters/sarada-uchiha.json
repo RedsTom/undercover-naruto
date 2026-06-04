@@ -1,0 +1,43 @@
+{
+  "id": "sarada-uchiha",
+  "name": "Sarada Uchiha",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "uchiha",
+    "sarada",
+    "sharingan",
+    "chidori",
+    "team-7",
+    "hokage-reve",
+    "naruto-hommage",
+    "sakura-fille",
+    "sasuke-fille"
+  ],
+  "summary": "Fille de Sasuke et Sakura, héritière Uchiha au rêve de devenir Hokage",
+  "details": [
+    "Fille unique de Sasuke Uchiha et Sakura Haruno, héritière du clan Uchiha",
+    "Éveille son Sharingan à un jeune âge, le développant jusqu'au Mangekyo dans l'ère Boruto",
+    "Maîtrise le Chidori hérité de son père et la force surhumaine héritée de sa mère Sakura",
+    "Rêve de devenir Hokage, un objectif qui la motive à se dépasser et à protéger ses camarades",
+    "Membre de la nouvelle Team 7 avec Boruto et Mitsuki, elle est la leader pragmatique de l'équipe",
+    "Sa quête pour rencontrer son père Sasuke, absent pendant son enfance, est au cœur de son développement",
+    "Représente la relève du clan Uchiha avec un héritage mêlant puissance des yeux et force du poing"
+  ],
+  "image": "",
+  "clan": "Uchiha",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 7",
+  "jutsu": [
+    "Sharingan",
+    "Chidori",
+    "Fireball",
+    "Strength",
+    "Mangekyo Sharingan"
+  ],
+  "kageTitle": null
+}

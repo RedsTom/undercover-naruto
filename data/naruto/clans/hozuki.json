@@ -1,0 +1,35 @@
+{
+  "id": "hozuki",
+  "name": "Clan Hozuki",
+  "category": "clan",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "clan",
+    "kiri",
+    "eau",
+    "suigetsu",
+    "liquide",
+    "hydratation",
+    "epee",
+    "sept-epéistes",
+    "brume",
+    "transformation"
+  ],
+  "summary": "Clan de Kirigakure capable de liquéfier leur corps pour éviter les dégâts",
+  "details": [
+    "Capacité unique de transformer leur corps en eau liquide pour annuler les attaques",
+    "Suigetsu Hozuki est le dernier membre connu, ancien de Taka",
+    "Mangetsu Hozuki maniait toutes les épées des Sept Épéistes de la Brume",
+    "Leur faiblesse est la déshydratation prolongée",
+    "Originaires du sanglant village de Kirigakure"
+  ],
+  "image": "",
+  "village": "Kirigakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Suigetsu Hozuki",
+    "Mangetsu Hozuki"
+  ]
+}

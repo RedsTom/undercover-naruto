@@ -1,0 +1,44 @@
+{
+  "id": "lava-release",
+  "name": "Yōton (Libération de Lave)",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-genkai",
+    "lave",
+    "mei",
+    "feu",
+    "terre",
+    "rang-A",
+    "dissoudre",
+    "roshi",
+    "kurotsuchi",
+    "son-goku",
+    "volcan"
+  ],
+  "summary": "Kekkei Genkai combinant feu et terre pour créer de la lave",
+  "details": [
+    "Kekkei Genkai combinant le feu et la terre",
+    "Maîtrisée par Rōshi et son bijuu Son Gokū",
+    "Mei Terumi peut l'utiliser pour dissoudre le Susanoo",
+    "Permet de cracher de la lave dévastatrice",
+    "Technique très rare et extrêmement puissante",
+    "Kurotsuchi l'a héritée en tant que Tsuchikage"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "feu",
+    "terre"
+  ],
+  "users": [
+    "Mei Terumi",
+    "Rōshi",
+    "Son Gokū",
+    "Kurotsuchi"
+  ]
+}

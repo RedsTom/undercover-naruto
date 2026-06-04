@@ -1,0 +1,46 @@
+{
+  "id": "boruto-uzumaki",
+  "name": "Boruto Uzumaki",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "uzumaki",
+    "boruto",
+    "karma",
+    "otsutsuki",
+    "momoshiki",
+    "team-7",
+    "jougan",
+    "rasengan",
+    "naruto-fils",
+    "himawari-frere",
+    "genie-prodige"
+  ],
+  "summary": "Fils de Naruto, prodige rebelle marqué par le Karma d'Otsutsuki",
+  "details": [
+    "Fils aîné du 7e Hokage Naruto Uzumaki et d'Hinata Hyuga, frère d'Himawari",
+    "Prodige précoce, il maîtrise le Rasengan et crée le Vanishing Rasengan (invisible) à un âge jeune",
+    "Marqué du Karma de Momoshiki Otsutsuki, il lutte pour garder le contrôle de son corps et de son destin",
+    "Détenteur du Jougan, un dojutsu rare lié aux Otsutsuki, capable de voir les anomalies dimensionnelles",
+    "Forme la nouvelle Team 7 avec Sarada Uchiha et Mitsuki sous la direction de Konohamaru",
+    "Rebelle à l'autorité de son père au début, il évolue pour devenir un protecteur de Konoha à sa manière",
+    "Dans Boruto: Two Blue Vortex, il opère dans l'ombre avec un nouveau style et un œil scellé"
+  ],
+  "image": "",
+  "clan": "Uzumaki",
+  "village": "Konohagakure",
+  "rank": "Genin",
+  "team": "Team 7 (Konohamaru)",
+  "jutsu": [
+    "Rasengan",
+    "Vanishing Rasengan",
+    "Karma",
+    "Jougan",
+    "Shadow Clones",
+    "Uzumaki heritage"
+  ],
+  "kageTitle": null
+}

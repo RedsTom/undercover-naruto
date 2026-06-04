@@ -1,0 +1,40 @@
+{
+  "id": "kagutsuchi",
+  "name": "Kagutsuchi",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "sasuke",
+    "controle-flammes",
+    "mangekyo",
+    "rang-S",
+    "feu",
+    "uchiha",
+    "amaterasu",
+    "forme",
+    "bouclier",
+    "epée",
+    "modelage"
+  ],
+  "summary": "Contrôle des flammes noires d'Amaterasu par Sasuke Uchiha",
+  "details": [
+    "Capacité unique de Sasuke avec son Mangekyo",
+    "Permet de modeler et contrôler les flammes noires d'Amaterasu",
+    "Peut créer des formes, des projectiles et des boucliers de flammes",
+    "Peut enflammer Susanoo pour former un guerrier de flammes",
+    "Permet d'éteindre les flammes noires à volonté",
+    "Capacité extrêmement rare, propre à Sasuke Uchiha"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [
+    "feu"
+  ],
+  "users": [
+    "Sasuke Uchiha"
+  ]
+}

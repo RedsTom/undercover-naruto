@@ -1,0 +1,43 @@
+{
+  "id": "dust-release",
+  "name": "Jinton (Libération de Poussière)",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-tota",
+    "desintegration",
+    "onoki",
+    "feu",
+    "terre",
+    "vent",
+    "rang-S",
+    "iwa",
+    "mu",
+    "moléculaire",
+    "absolu"
+  ],
+  "summary": "Kekkei Tōta désintégrant la matière au niveau moléculaire",
+  "details": [
+    "Kekkei Tōta unique d'Onoki, combinant trois natures : feu, terre, vent",
+    "Désintègre la matière au niveau moléculaire",
+    "Peut traverser n'importe quelle défense",
+    "Seul Onoki et son maître Mū la maîtrisent",
+    "Considérée comme la technique offensive la plus absolue",
+    "Nécessite une maîtrise parfaite des trois natures élémentaires"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [
+    "feu",
+    "terre",
+    "vent"
+  ],
+  "users": [
+    "Onoki",
+    "Mū"
+  ]
+}

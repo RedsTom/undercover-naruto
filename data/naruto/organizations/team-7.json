@@ -1,0 +1,38 @@
+{
+  "id": "team-7",
+  "name": "Team 7",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "equipe",
+    "konoha",
+    "kakashi",
+    "naruto",
+    "sasuke",
+    "sakura",
+    "team-7",
+    "protagonistes",
+    "genin",
+    "septième-equipe"
+  ],
+  "summary": "L'équipe la plus célèbre de Konoha, formée par Kakashi avec Naruto, Sasuke et Sakura",
+  "details": [
+    "Équipe de genin la plus emblématique, dirigée par Kakashi Hatake",
+    "Naruto Uzumaki, futur Septième Hokage et héros de la Grande Guerre",
+    "Sasuke Uchiha, dernier survivant du clan Uchiha et rival éternel",
+    "Sakura Haruno, devenue la plus puissante ninja médicale de sa génération",
+    "Leur équipe a vaincu Kaguya et sauvé le monde ninja"
+  ],
+  "image": "",
+  "members": [
+    "Kakashi Hatake",
+    "Naruto Uzumaki",
+    "Sasuke Uchiha",
+    "Sakura Haruno"
+  ],
+  "leader": "Kakashi Hatake"
+}

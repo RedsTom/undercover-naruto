@@ -1,0 +1,38 @@
+{
+  "id": "yamanaka",
+  "name": "Clan Yamanaka",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "esprit",
+    "fleur",
+    "ino",
+    "mental",
+    "telepathie",
+    "transfert",
+    "sensoriel",
+    "ino-shika-cho"
+  ],
+  "summary": "Clan de Konoha spécialisé dans les techniques psychiques et le transfert d'esprit",
+  "details": [
+    "Maîtres du Shintenshin no Jutsu pour transférer leur esprit dans le corps adverse",
+    "Experts en télépathie et communication sensorielle à longue distance",
+    "Membre de l'alliance Ino-Shika-Cho avec les clans Nara et Akimichi",
+    "Tiennent la boutique de fleurs Yamanaka, institution de Konoha",
+    "Ino Yamanaka est la membre la plus remarquable de la génération actuelle"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Ino Yamanaka",
+    "Inoichi Yamanaka"
+  ]
+}

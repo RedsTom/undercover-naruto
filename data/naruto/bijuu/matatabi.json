@@ -1,0 +1,35 @@
+{
+  "id": "matatabi",
+  "name": "Matatabi",
+  "category": "bijuu",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "matatabi",
+    "feu",
+    "yugito",
+    "kumo",
+    "nibi",
+    "chat-bleu",
+    "flamme"
+  ],
+  "summary": "Bête à deux queues, le chat des flammes bleues Matatabi, jinchuriki de Yugito Nii",
+  "details": [
+    "Matatabi est le Nibi (bête à deux queues), prenant la forme d'un félin géant enveloppé de flammes bleues",
+    "Sa nature de chakra est le Feu (Katon), qu'elle manifeste sous forme de flammes mystiques bleues",
+    "Yugito Nii de Kumogakure était sa jinchuriki, une kunoichi capable de maîtriser sa forme de bête",
+    "Fut extraite par Hidan et Kakuzu de l'Akatsuki, causant la mort de Yugito",
+    "Après la guerre, Matatabi fut libérée et vécut en paix aux côtés des autres bijū"
+  ],
+  "image": "",
+  "tails": 2,
+  "jinchuriki": [
+    "Yugito Nii"
+  ],
+  "nature": [
+    "Feu"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "kage-bunshin",
+  "name": "Kage Bunshin no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "clonage",
+    "ombre",
+    "naruto",
+    "rang-B",
+    "multitudes",
+    "tactique",
+    "entrainement",
+    "konoha",
+    "physique",
+    "conscience",
+    "partage-memoire"
+  ],
+  "summary": "Technique de clonage d'ombre créant des copies physiques et conscientes",
+  "details": [
+    "Technique de rang B, bien plus avancée que le Bunshin classique",
+    "Les clones ont une conscience propre et peuvent agir indépendamment",
+    "Naruto Uzumaki en est le maître incontesté, pouvant en créer des milliers",
+    "L'expérience des clones est transmise à l'utilisateur lors de leur dissipation",
+    "Considérée comme une technique interdite car elle divise le chakra",
+    "Utilisée par Naruto pour accélérer son entraînement de façon exponentielle"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Naruto Uzumaki",
+    "Kakashi Hatake",
+    "Minato Namikaze",
+    "Hashirama Senju",
+    "Jiraiya"
+  ]
+}

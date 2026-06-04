@@ -1,0 +1,39 @@
+{
+  "id": "infinite-tsukuyomi",
+  "name": "Tsukuyomi Infini",
+  "category": "technique",
+  "era": [
+    "shippuden-end"
+  ],
+  "tags": [
+    "genjutsu",
+    "lune",
+    "planetaire",
+    "reve-eternel",
+    "madara",
+    "kaguya",
+    "rang-S",
+    "arbre-divin",
+    "total",
+    "humanite",
+    "zetsu",
+    "controle-monde"
+  ],
+  "summary": "Genjutsu projeté sur la lune pour contrôler l'humanité entière",
+  "details": [
+    "Genjutsu ultime projeté sur la surface de la lune",
+    "Toute personne regardant la lune est piégée dans un rêve éternel",
+    "Nécessite le Rinnegan et l'Arbre Divin pour être lancé",
+    "Projet de Madara Uchiha pour créer une paix forcée universelle",
+    "Kaguya Otsutsuki l'a utilisé historiquement pour contrôler le monde",
+    "Seuls ceux protégés par le Susanoo de Sasuke y ont échappé"
+  ],
+  "image": "",
+  "type": "genjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Madara Uchiha",
+    "Kaguya Otsutsuki"
+  ]
+}

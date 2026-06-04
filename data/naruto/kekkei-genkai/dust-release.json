@@ -1,0 +1,39 @@
+{
+  "id": "dust-release",
+  "name": "Jinton (Dust Release)",
+  "category": "kekkei-genkai",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "kekkei-tota",
+    "poussiere",
+    "onoki",
+    "desintegration",
+    "jinton",
+    "trois-natures",
+    "kekkei-tota",
+    "detection",
+    "atome",
+    "supreme"
+  ],
+  "summary": "Kekkei Tōta combinant Trois natures pour désintégrer la matière au niveau atomique",
+  "details": [
+    "Kekkei Tōta (plus rare qu'un kekkei genkai) combinant Terre, Feu et Vent",
+    "Art transmis uniquement à Iwagakure, maîtrisé par Ōnoki et Mu",
+    "Désintègre la cible au niveau atomique, annihilant toute forme de matière",
+    "Les techniques de Dust Release peuvent être modelées en formes géométriques",
+    "Considéré comme l'une des techniques offensives les plus destructrices"
+  ],
+  "image": "",
+  "natures": [
+    "Terre",
+    "Feu",
+    "Vent"
+  ],
+  "clans": [],
+  "users": [
+    "Ōnoki",
+    "Mū"
+  ]
+}

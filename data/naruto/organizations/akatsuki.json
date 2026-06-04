@@ -1,0 +1,43 @@
+{
+  "id": "akatsuki",
+  "name": "Akatsuki",
+  "category": "organization",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "organisation",
+    "criminel",
+    "bijuu",
+    "manteau-nuage",
+    "nukenin",
+    "akatsuki",
+    "shinobi-renégats",
+    "mondial",
+    "capture",
+    "paix-tordue"
+  ],
+  "summary": "Organisation criminelle de shinobi renégats traquant les bijûs pour conquérir le monde",
+  "details": [
+    "Fondée par Yahiko, Nagato et Konan, détournée par Obito et Madara",
+    "Composée de dix membres d'élite, tous de rang S (nukenin)",
+    "Objectif : capturer les neuf bijûs pour créer l'Arme Suprême",
+    "Reconnaissable à leur manteau noir à nuages rouges",
+    "Chaque membre opère en binôme pour capturer les démons à queues"
+  ],
+  "image": "",
+  "members": [
+    "Pain",
+    "Konan",
+    "Zetsu",
+    "Tobi",
+    "Itachi Uchiha",
+    "Kisame Hoshigaki",
+    "Sasori",
+    "Deidara",
+    "Hidan",
+    "Kakuzu",
+    "Orochimaru"
+  ],
+  "leader": "Pain (Nagato)"
+}

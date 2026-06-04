@@ -1,0 +1,44 @@
+{
+  "id": "rinnegan",
+  "name": "Rinnegan",
+  "category": "kekkei-genkai",
+  "era": [
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "dojutsu",
+    "otsutsuki",
+    "sage",
+    "six-chemins",
+    "rinnegan",
+    "pain",
+    "nagato",
+    "sasuke",
+    "madara",
+    "divin"
+  ],
+  "summary": "Dōjutsu suprême du Sage des Six Chemins, maîtrise de toutes les natures",
+  "details": [
+    "Considéré comme le plus puissant des trois grands dōjutsu",
+    "Permet la maîtrise des Six Chemins de Pain",
+    "Confère la capacité de manipuler la vie et la mort",
+    "Détecte et maîtrise toutes les natures de chakra",
+    "Accessible aux descendants d'Indra et d'Asura combinant leurs chakras"
+  ],
+  "image": "",
+  "natures": [
+    "Toutes les natures"
+  ],
+  "clans": [
+    "Otsutsuki",
+    "Uchiha"
+  ],
+  "users": [
+    "Hagoromo Otsutsuki",
+    "Madara Uchiha",
+    "Sasuke Uchiha",
+    "Nagato Uzumaki",
+    "Kaguya Otsutsuki"
+  ]
+}

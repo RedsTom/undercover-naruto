@@ -1,0 +1,39 @@
+{
+  "id": "night-guy",
+  "name": "Night Guy (Yagai)",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "guy",
+    "dragon",
+    "soir",
+    "porte-de-la-mort",
+    "rang-S",
+    "ultime",
+    "madara",
+    "konoha",
+    "8e-porte",
+    "sacrifice",
+    "espace-temps",
+    "devastateur"
+  ],
+  "summary": "Technique ultime de Might Guy via la 8e porte, un coup de pied dévastateur en forme de dragon",
+  "details": [
+    "Technique ultime accessible uniquement via la 8e Porte : la Porte de la Mort",
+    "Délivre un coup de pied enflammé en forme de dragon",
+    "Dévie l'espace-temps et brise les défenses les plus solides",
+    "A failli tuer Madara Uchiha en mode Six Chemins",
+    "Tue l'utilisateur après exécution (sauf intervention divine)",
+    "Considérée comme la technique de taijutsu la plus puissante de l'histoire"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Might Guy"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "rock-lee",
+  "name": "Rock Lee",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "lee",
+    "taijutsu",
+    "guy",
+    "lotus",
+    "portes",
+    "poids",
+    "endurance",
+    "gai",
+    "sans-ninjutsu",
+    "genie-martial",
+    "metal-lee-pere"
+  ],
+  "summary": "Ninja au taijutsu surhumain, incapable d'utiliser le ninjutsu ou le genjutsu",
+  "details": [
+    "Ninja incapable d'utiliser le ninjutsu ou le genjutsu, il se consacra exclusivement au taijutsu",
+    "Disciple dévoué de Might Guy, dont il a hérité la philosophie de la jeunesse et du travail",
+    "Maître des Huit Portes Intérieures, capable d'ouvrir jusqu'à la 6e porte",
+    "Inventeur du Lotus Primaire et du Lotus Inversé, techniques surpuissantes",
+    "A combattu avec des poids aux jambes, les retirant pour révéler sa vitesse réelle",
+    "A affronté Gaara lors des examens Chunin dans un combat légendaire",
+    "Père de Metal Lee, il continue de s'entraîner sans relâche"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team Guy",
+  "jutsu": [
+    "Primary Lotus",
+    "Hidden Lotus",
+    "Eight Gates",
+    "Drunken Fist"
+  ],
+  "kageTitle": null
+}

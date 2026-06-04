@@ -1,0 +1,37 @@
+{
+  "id": "kurotsuchi",
+  "name": "Kurotsuchi",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "iwa",
+    "tsuchikage",
+    "lave",
+    "yoton",
+    "onoki-petite-fille",
+    "akatsuchi-collegue",
+    "nouvelle-generation"
+  ],
+  "summary": "4e Tsuchikage d'Iwa, petite-fille d'Onoki, maître de la lave",
+  "details": [
+    "Quatrième Tsuchikage d'Iwagakure, petite-fille et successeure du 3e Tsuchikage Onoki",
+    "Maîtrise le Lava Release (Yoton), une Kekkei Genkai combinant terre et feu",
+    "A combattu aux côtés de l'Alliance Shinobi lors de la 4e Grande Guerre, démontrant son courage",
+    "Collaboratrice proche d'Akatsuchi, le garde du corps et conseiller de son grand-père",
+    "Autoritaire mais juste, elle gouverne Iwa avec fermeté dans l'ère Boruto",
+    "Représente la nouvelle génération de Kage aux côtés de Naruto, Chojuro et Darui"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Iwagakure",
+  "rank": "Tsuchikage",
+  "team": null,
+  "jutsu": [
+    "Lava Release",
+    "Earth techniques"
+  ],
+  "kageTitle": "4e Tsuchikage"
+}

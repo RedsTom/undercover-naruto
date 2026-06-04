@@ -1,0 +1,46 @@
+{
+  "id": "sharingan",
+  "name": "Sharingan",
+  "category": "kekkei-genkai",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "dojutsu",
+    "uchiha",
+    "copier",
+    "sharingan",
+    "oeil",
+    "prediction",
+    "genjutsu",
+    "visualiser",
+    "chakra",
+    "kekkei-genkai"
+  ],
+  "summary": "Dōjutsu du clan Uchiha capable de copier toute technique et de voir le chakra",
+  "details": [
+    "Permet de copier n'importe quelle technique après une seule observation",
+    "Offre une vision précise du chakra et de ses flux",
+    "Peut lire les mouvements ennemis pour les anticiper",
+    "Capable de projeter des genjutsu puissants",
+    "Évolue en Mangekyo Sharingan après un trauma émotionnel intense"
+  ],
+  "image": "",
+  "natures": [
+    "Visuel"
+  ],
+  "clans": [
+    "Uchiha"
+  ],
+  "users": [
+    "Sasuke Uchiha",
+    "Itachi Uchiha",
+    "Madara Uchiha",
+    "Obito Uchiha",
+    "Shisui Uchiha",
+    "Kakashi Hatake"
+  ]
+}

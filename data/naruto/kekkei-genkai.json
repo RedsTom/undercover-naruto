@@ -1,0 +1,290 @@
+[
+  {
+    "id": "sharingan",
+    "name": "Sharingan",
+    "category": "kekkei-genkai",
+    "tags": ["dojutsu", "oeil", "uchiha", "copie", "vision", "kekkei-genkai", "indien", "sharingan"],
+    "summary": "Œil miraculeux du clan Uchiha, permettant de copier techniques et mouvements",
+    "details": [
+      "Kekkei Genkai spécifique au clan Uchiha dans son sang",
+      "Offre une perception surhumaine et la capacité de copier les techniques",
+      "Peut voir le chakra et prévoir les mouvements ennemis",
+      "S'éveille par une émotion intense, souvent lors d'un traumatisme",
+      "Évolue en Mangekyo Sharingan après une perte tragique"
+    ],
+    "image": "",
+    "natures": [],
+    "clans": ["Uchiha"],
+    "users": ["Sasuke Uchiha", "Itachi Uchiha", "Madara Uchiha", "Obito Uchiha", "Kakashi Hatake", "Shisui Uchiha", "Sarada Uchiha", "Fugaku Uchiha"]
+  },
+  {
+    "id": "mangekyo-sharingan",
+    "name": "Mangekyo Sharingan",
+    "category": "kekkei-genkai",
+    "tags": ["dojutsu", "oeil", "uchiha", "evolution", "kekkei-genkai", "susanoo", "tragique"],
+    "summary": "Évolution du Sharingan aux pouvoirs uniques et dévastateurs",
+    "details": [
+      "S'éveille par le traumatisme de la perte d'un être cher",
+      "Chaque porteur développe des techniques uniques (Amaterasu, Tsukuyomi, etc.)",
+      "Confère l'accès au Susanoo, guerrier éthéré gigantesque",
+      "L'utilisation excessive mène progressivement à la cécité",
+      "Peut être transplanté pour éviter la perte de vision"
+    ],
+    "image": "",
+    "natures": [],
+    "clans": ["Uchiha"],
+    "users": ["Itachi Uchiha", "Sasuke Uchiha", "Madara Uchiha", "Obito Uchiha", "Kakashi Hatake", "Shisui Uchiha"]
+  },
+  {
+    "id": "byakugan",
+    "name": "Byakugan",
+    "category": "kekkei-genkai",
+    "tags": ["dojutsu", "oeil", "hyuga", "vision-360", "kekkei-genkai", "points-chakra"],
+    "summary": "Œil blanc du clan Hyuga offrant une vision à 360 degrés",
+    "details": [
+      "Kekkei Genkai du clan Hyuga, l'un des trois grands dojutsu",
+      "Permet de voir le système circulatoire de chakra",
+      "Offre une vision panoramique quasi totale à 360 degrés",
+      "Peut voir à travers les objets sur de longues distances",
+      "Utilisé avec le Poing Doux pour frapper les points de chakra"
+    ],
+    "image": "",
+    "natures": [],
+    "clans": ["Hyuga"],
+    "users": ["Hinata Hyuga", "Neji Hyuga", "Hiashi Hyuga", "Hanabi Hyuga", "Boruto Uzumaki"]
+  },
+  {
+    "id": "rinnegan",
+    "name": "Rinnegan",
+    "category": "kekkei-genkai",
+    "tags": ["dojutsu", "oeil", "otsutsuki", "kekkei-genkai", "sage", "six-chemins", "legendaire"],
+    "summary": "Œil légendaire de la transmigration, le plus puissant des dojutsu",
+    "details": [
+      "Le plus puissant des trois grands dojutsu",
+      "Permet la maîtrise des Six Chemins de la Douleur",
+      "Confère la compréhension de toutes les natures élémentaires",
+      "S'éveille en combinant le chakra d'Indra et d'Ashura",
+      "Originaire du clan Otsutsuki et transmis aux Uchiha"
+    ],
+    "image": "",
+    "natures": ["feu", "eau", "terre", "foudre", "vent"],
+    "clans": ["Otsutsuki", "Uchiha"],
+    "users": ["Hagoromo Otsutsuki", "Madara Uchiha", "Sasuke Uchiha", "Nagato"]
+  },
+  {
+    "id": "tenseigan",
+    "name": "Tenseigan",
+    "category": "kekkei-genkai",
+    "tags": ["dojutsu", "oeil", "hyuga", "otsutsuki", "kekkei-genkai", "evolution", "lune"],
+    "summary": "Évolution du Byakugan, équivalent Otsutsuki du Rinnegan",
+    "details": [
+      "Évolution ultime du Byakugan chez les descendants Otsutsuki",
+      "Confère le Mode Tenseigan, amplifiant considérablement les capacités",
+      "Permet de contrôler les Sphères de Vérité",
+      "Seul Toneri Otsutsuki l'a démontré dans l'histoire récente",
+      "Sa puissance rivalise avec le Rinnegan"
+    ],
+    "image": "",
+    "natures": ["feu", "foudre"],
+    "clans": ["Hyuga", "Otsutsuki"],
+    "users": ["Hamura Otsutsuki", "Toneri Otsutsuki"]
+  },
+  {
+    "id": "wood-release",
+    "name": "Mokuton — Libération de Bois",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "bois", "hashirama", "senju", "eau", "terre", "rare"],
+    "summary": "Kekkei Genkai combinant eau et terre pour créer du bois",
+    "details": [
+      "Composé des natures Eau et Terre",
+      "Kekkei Genkai unique d'Hashirama Senju à l'origine",
+      "Permet de créer des forêts entières et de capturer les bijuu",
+      "Considérée comme la technique suprême pour le contrôle des démons",
+      "Yamato en possède une version artificielle via les expériences d'Orochimaru"
+    ],
+    "image": "",
+    "natures": ["eau", "terre"],
+    "clans": ["Senju"],
+    "users": ["Hashirama Senju", "Yamato"]
+  },
+  {
+    "id": "ice-release",
+    "name": "Hyōton — Libération de Glace",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "glace", "haku", "vent", "eau", "rare"],
+    "summary": "Kekkei Genkai du clan Yuki combinant vent et eau en glace",
+    "details": [
+      "Composé des natures Vent et Eau",
+      "Trait spécifique du clan Yuki de Kirigakure",
+      "Haku en est le seul utilisateur connu de l'époque",
+      "Permet de créer et contrôler la glace sous toutes ses formes",
+      "Les Miroirs de Cristal sont la technique ultime de cette capacité"
+    ],
+    "image": "",
+    "natures": ["vent", "eau"],
+    "clans": ["Yuki"],
+    "users": ["Haku"]
+  },
+  {
+    "id": "lava-release",
+    "name": "Yōton — Libération de Lave",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "lave", "mei", "son-goku", "feu", "terre"],
+    "summary": "Kekkei Genkai combinant feu et terre en lave dévastatrice",
+    "details": [
+      "Composé des natures Feu et Terre",
+      "Maîtrisé par Mei Terumi et le bijuu Son Gokū",
+      "Peut dissoudre n'importe quelle matière, y compris le Susanoo",
+      "Technique très rare et extrêmement destructrice",
+      "Également maîtrisée par Kurotsuchi (4e Tsuchikage)"
+    ],
+    "image": "",
+    "natures": ["feu", "terre"],
+    "clans": [],
+    "users": ["Mei Terumi", "Kurotsuchi", "Son Gokū", "Rōshi"]
+  },
+  {
+    "id": "storm-release",
+    "name": "Ranton — Libération d'Orage",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "orage", "darui", "foudre", "eau", "kumo"],
+    "summary": "Kekkei Genkai combinant foudre et eau en orage",
+    "details": [
+      "Composé des natures Foudre et Eau",
+      "Capacité de Darui de Kumogakure",
+      "Crée des orages de foudre liquide aveuglants",
+      "Technique héréditaire transmise à Kumogakure",
+      "Aussi utilisé par le 3e Raikage"
+    ],
+    "image": "",
+    "natures": ["foudre", "eau"],
+    "clans": [],
+    "users": ["Darui", "3e Raikage"]
+  },
+  {
+    "id": "dust-release",
+    "name": "Jinton — Libération de Poussière",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-tota", "poussiere", "onoki", "desintegration", "feu", "terre", "vent"],
+    "summary": "Kekkei Tōta désintégrant la matière au niveau atomique",
+    "details": [
+      "Kekkei Tōta (combinaison de trois natures) : Feu, Terre, Vent",
+      "Désintègre la matière au niveau atomique sans laisser de trace",
+      "Seul le 2e Tsuchikage Mū et Onoki l'ont maîtrisée",
+      "Peut traverser n'importe quelle défense, même Susanoo",
+      "Considérée comme la technique offensive la plus absolue"
+    ],
+    "image": "",
+    "natures": ["feu", "terre", "vent"],
+    "clans": [],
+    "users": ["Onoki", "Mū"]
+  },
+  {
+    "id": "magnet-release",
+    "name": "Jiton — Libération d'Aimant",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "aimant", "sable-de-fer", "gaara", "vent", "terre"],
+    "summary": "Kekkei Genkai manipulant les forces magnétiques",
+    "details": [
+      "Composé des natures Vent et Terre",
+      "Utilisée par les Kazekage pour contrôler le sable",
+      "Le 3e Kazekage l'utilisait pour le Sable de Fer",
+      "Gaara et Rasa l'utilisent pour le sable doré",
+      "Le bijuu Shukaku partage cette affinité magnétique"
+    ],
+    "image": "",
+    "natures": ["vent", "terre"],
+    "clans": [],
+    "users": ["Gaara", "3e Kazekage", "Rasa", "Shukaku"]
+  },
+  {
+    "id": "boil-release",
+    "name": "Futton — Libération d'Ébullition",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "vapeur", "mei", "feu", "eau", "corrosif"],
+    "summary": "Kekkei Genkai produisant de la vapeur acide brûlante",
+    "details": [
+      "Composé des natures Feu et Eau",
+      "Capacité de Mei Terumi (5e Mizukage)",
+      "Produit une vapeur acide qui dissout tout sur son passage",
+      "Permet de faire fondre le Susanoo d'Itachi",
+      "Technique très rare, peu d'utilisateurs connus"
+    ],
+    "image": "",
+    "natures": ["feu", "eau"],
+    "clans": [],
+    "users": ["Mei Terumi"]
+  },
+  {
+    "id": "scorch-release",
+    "name": "Shakuton — Libération de Chaleur Torride",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "chaleur", "pakura", "feu", "vent", "deshydratation"],
+    "summary": "Kekkei Genkai desséchant tout sur son passage par une chaleur extrême",
+    "details": [
+      "Composé des natures Feu et Vent",
+      "Capacité de Pakura de Sunagakure",
+      "Dessèche et carbonise instantanément tout ce qu'elle touche",
+      "Considérée comme l'une des kekkei genkai les plus meurtrières",
+      "Pakura en était la seule utilisatrice connue"
+    ],
+    "image": "",
+    "natures": ["feu", "vent"],
+    "clans": [],
+    "users": ["Pakura"]
+  },
+  {
+    "id": "crystal-release",
+    "name": "Shōton — Libération de Cristal",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "cristal", "guren", "rare", "piege"],
+    "summary": "Kekkei Genkai créant et contrôlant des cristaux",
+    "details": [
+      "Kekkei Genkai extrêmement rare, non documentée dans les grandes nations",
+      "Permet de créer des cristaux aux formes variées",
+      "Peut emprisonner les ennemis dans des cristaux",
+      "Guren en était l'utilisatrice connue (alliée d'Orochimaru)",
+      "Les cristaux peuvent réfléchir et concentrer la lumière"
+    ],
+    "image": "",
+    "natures": ["terre", "eau"],
+    "clans": [],
+    "users": ["Guren"]
+  },
+  {
+    "id": "bone-release",
+    "name": "Shikotsumyaku — Libération d'Os",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "os", "kaguya", "kimimaro", "kiri", "corps"],
+    "summary": "Kekkei Genkai du clan Kaguya manipulant les os du corps",
+    "details": [
+      "Capacité héréditaire du clan Kaguya de Kirigakure",
+      "Permet de manipuler librement ses propres os",
+      "Les os peuvent être projetés comme des projectiles tranchants",
+      "Kimimaro Kaguya en est le dernier représentant connu",
+      "Confère une régénération et une densité osseuse surhumaine"
+    ],
+    "image": "",
+    "natures": [],
+    "clans": ["Kaguya"],
+    "users": ["Kimimaro Kaguya"]
+  },
+  {
+    "id": "swift-release",
+    "name": "Kōton — Libération de Rapidité",
+    "category": "kekkei-genkai",
+    "tags": ["kekkei-genkai", "vitesse", "kumo", "rare", "mouvement"],
+    "summary": "Kekkei Genkai conférant une vitesse surhumaine",
+    "details": [
+      "Kekkei Genkai augmentant considérablement la vitesse de l'utilisateur",
+      "Trait spécifique de certains ninjas de Kumogakure",
+      "Permet des déplacements trop rapides pour l'œil humain",
+      "Utilisé par certains membres de l'ANBU de Kumo",
+      "Technique très rare et difficile à maîtriser"
+    ],
+    "image": "",
+    "natures": [],
+    "clans": [],
+    "users": ["Yugito Nii"]
+  }
+]

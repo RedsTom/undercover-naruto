@@ -1,0 +1,37 @@
+{
+  "id": "rasa",
+  "name": "Rasa",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "suna",
+    "kazekage",
+    "sable-dore",
+    "pere-gaara",
+    "aimant",
+    "shukaku",
+    "sacrifice-gaara",
+    "tue-par-orochimaru"
+  ],
+  "summary": "4e Kazekage de Suna, père de Gaara, maître du sable magnétique doré",
+  "details": [
+    "Père de Gaara, Temari et Kankuro, il a fait de Gaara un jinchuriki pour renforcer Suna",
+    "Maître du Magnet Release (Jiton), il manipule le sable doré imprégné de poudre de fer",
+    "A ordonné l'assassinat de Gaara par son oncle Yashamaru, croyant son fils incontrôlable",
+    "Tué par Orochimaru lors de l'invasion de Suna, qui prit son apparence pour manipuler le village",
+    "Considéré comme un leader cruel mais pragmatique, prêt à tout pour la puissance de Suna",
+    "Ressuscité par l'Edo Tensei lors de la 4e Grande Guerre Shinobi, il combat aux côtés des Alliés"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Kazekage",
+  "team": null,
+  "jutsu": [
+    "Magnet Release",
+    "Gold Dust Manipulation"
+  ],
+  "kageTitle": "4e Kazekage"
+}

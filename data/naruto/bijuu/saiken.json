@@ -1,0 +1,36 @@
+{
+  "id": "saiken",
+  "name": "Saiken",
+  "category": "bijuu",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "saiken",
+    "bulles",
+    "utakata",
+    "kiri",
+    "rokubi",
+    "limace",
+    "acide",
+    "eau"
+  ],
+  "summary": "Bête à six queues, la limace géante Saiken, jinchuriki d'Utakata de Kirigakure",
+  "details": [
+    "Saiken est le Rokubi (bête à six queues), prenant la forme d'une limace blanche géante et visqueuse",
+    "Sa nature de chakra est l'Eau (Suiton), qu'elle utilise pour produire des bulles alcalines corrosives",
+    "Utakata de Kirigakure fut son jinchuriki, un ancien élève ayant fui son maître abusif",
+    "Peut sécréter des substances alcalines capables de dissoudre presque tout sur leur passage",
+    "Fut capturé par Pain (Nagato) et l'Akatsuki pendant leur traque des jinchuriki"
+  ],
+  "image": "",
+  "tails": 6,
+  "jinchuriki": [
+    "Utakata"
+  ],
+  "nature": [
+    "Eau"
+  ]
+}

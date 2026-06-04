@@ -1,0 +1,43 @@
+{
+  "id": "tobirama-senju",
+  "name": "Tobirama Senju",
+  "category": "character",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "konoha",
+    "senju",
+    "hokage",
+    "eau",
+    "suiton",
+    "inventeur",
+    "interdit",
+    "frere-hashirama",
+    "politique-uchiha",
+    "academie",
+    "anbu"
+  ],
+  "summary": "2e Hokage, inventeur génial de nombreuses techniques ninja interdites",
+  "details": [
+    "Second Hokage de Konoha, frère cadet d'Hashirama Senju",
+    "Inventeur de nombreuses techniques légendaires : Edo Tensei, Hiraishin, Kage Bunshin",
+    "Maître inégalé du Suiton (eau), capable d'en créer sans source d'eau naturelle",
+    "A fondé l'Académie Ninja, l'ANBU et le système d'examens Chunin",
+    "A créé le conseil des chefs de clan pour équilibrer le pouvoir politique",
+    "Méfiant envers le clan Uchiha, il instaura des mesures de surveillance qui créeront des tensions",
+    "Mort en sacrifice pour permettre à son équipe de fuir les frères Kinkaku et Ginkaku"
+  ],
+  "image": "",
+  "clan": "Senju",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Edo Tensei",
+    "Hiraishin",
+    "Kage Bunshin",
+    "Suiton"
+  ],
+  "kageTitle": "2e Hokage"
+}

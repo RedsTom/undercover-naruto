@@ -1,0 +1,33 @@
+{
+  "id": "amegakure",
+  "name": "Amegakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-la-pluie",
+    "pluie",
+    "ame",
+    "akatsuki",
+    "nagato",
+    "pain",
+    "konan",
+    "petite-nation",
+    "guerre"
+  ],
+  "summary": "Village caché de la Pluie, petit pays déchiré par les guerres devenu le repaire de l'Akatsuki",
+  "details": [
+    "Situé au Pays de la Pluie, un petit pays pris en étau entre les grandes nations, condamné à subir les guerres",
+    "Pain (Nagato) a pris le contrôle du village après avoir tué Hanzo le Salamandre, son dictateur",
+    "A servi de quartier général à l'Akatsuki, caché dans les gratte-ciels technologiques du village",
+    "Yahiko, Nagato et Konan y ont fondé l'Akatsuki originelle comme organisation pacifiste",
+    "Le village pleut en permanence, symbolisant les larmes des innombrables victimes de la guerre"
+  ],
+  "image": "",
+  "country": "Pays de la Pluie",
+  "kage": "Aucun",
+  "notableClans": []
+}

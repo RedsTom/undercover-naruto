@@ -1,0 +1,37 @@
+{
+  "id": "yahiko",
+  "name": "Yahiko",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "amegakure",
+    "akatsuki",
+    "fondateur",
+    "idealiste",
+    "nagato-amie",
+    "konan-amie",
+    "sacrifice",
+    "chef",
+    "hanzo-trahison"
+  ],
+  "summary": "Fondateur idéaliste de l'Akatsuki, sacrifié par la trahison de Hanzo",
+  "details": [
+    "Orphelin d'Amegakure recueilli par Jiraiya avec Nagato et Konan durant la 2e Grande Guerre",
+    "Fondateur et premier leader de l'Akatsuki, rêvant de paix sans violence pour son pays déchiré",
+    "Charismatique et déterminé, il est le pilier émotionnel du trio originel de l'Akatsuki",
+    "Forcé au suicide par Hanzo la Salamandre pour sauver Nagato, il se jette sur son kunai",
+    "Son corps devient le Pain Principal (Deva Path) de Nagato, qui utilisera son cadavre comme symbole",
+    "Son rêve de paix est perpétué par Nagato puis Naruto, qui hérite de son idéalisme"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Amegakure",
+  "rank": null,
+  "team": "Akatsuki (founder)",
+  "jutsu": [
+    "Basic techniques"
+  ],
+  "kageTitle": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": "tenseigan",
+  "name": "Tenseigan",
+  "category": "kekkei-genkai",
+  "era": [
+    "shippuden-end"
+  ],
+  "tags": [
+    "dojutsu",
+    "hyuga",
+    "otsutsuki",
+    "tenseigan",
+    "toneri",
+    "lune",
+    "chakra",
+    "evolution",
+    "byakugan",
+    "divin"
+  ],
+  "summary": "Forme évoluée du Byakugan apparaissant chez Toneri Otsutsuki",
+  "details": [
+    "Évolution ultime du Byakugan, similaire au Rinnegan pour le Sharingan",
+    "Manifesté par Toneri Otsutsuki dans The Last: Naruto the Movie",
+    "Confère un pouvoir divin sur la lune et les forces gravitationnelles",
+    "Permet de créer des formes de chakra géantes et le Golden Wheel Rebirth",
+    "Nécessite la fusion du Byakugan d'un Hyuga avec le chakra d'un Otsutsuki"
+  ],
+  "image": "",
+  "natures": [
+    "Visuel",
+    "Gravité"
+  ],
+  "clans": [
+    "Hyuga",
+    "Otsutsuki"
+  ],
+  "users": [
+    "Toneri Otsutsuki",
+    "Hagoromo Otsutsuki",
+    "Hamura Otsutsuki"
+  ]
+}

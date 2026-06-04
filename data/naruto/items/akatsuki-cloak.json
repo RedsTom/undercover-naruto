@@ -1,0 +1,31 @@
+{
+  "id": "akatsuki-cloak",
+  "name": "Manteau d'Akatsuki",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "objet",
+    "akatsuki",
+    "manteau",
+    "nuage-rouge",
+    "uniforme",
+    "noir",
+    "nuages",
+    "organisation",
+    "symbole",
+    "tenue"
+  ],
+  "summary": "Manteau noir à nuages rouges, uniforme distinctif des membres de l'Akatsuki",
+  "details": [
+    "Veste noire ornée de nuages rouges, l'uniforme officiel de l'Akatsuki",
+    "Chaque membre le porte par-dessus son propre costume",
+    "Les nuages rouges symbolisent la pluie de sang tombée sur Amegakure",
+    "Immédiatement reconnaissable et craint dans tout le monde ninja",
+    "Devenu l'un des symboles les plus iconiques de la série"
+  ],
+  "image": "",
+  "wielder": "Membres de l'Akatsuki",
+  "origin": "Akatsuki"
+}

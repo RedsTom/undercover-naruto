@@ -1,0 +1,44 @@
+{
+  "id": "shadow-possession",
+  "name": "Technique de Possession d'Ombre",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "nara",
+    "ombre",
+    "controle",
+    "shikamaru",
+    "rang-B",
+    "konoha",
+    "manipulation",
+    "tactique",
+    "clan-nara",
+    "immobilisation",
+    "etendre"
+  ],
+  "summary": "Technique du clan Nara permettant de manipuler les ombres",
+  "details": [
+    "Technique héréditaire du clan Nara, manipulant l'ombre de l'utilisateur",
+    "L'ombre peut être étendue pour se connecter à celle de l'ennemi",
+    "Une fois connectée, la cible imite les mouvements de l'utilisateur",
+    "Shikamaru Nara est un génie tactique qui maximise son potentiel",
+    "Plusieurs variantes existent : Paralysie, Étreinte, Épée d'ombre",
+    "Nécessite une grande intelligence pour être utilisée efficacement"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Shikamaru Nara",
+    "Shikaku Nara",
+    "Yoshino Nara"
+  ]
+}

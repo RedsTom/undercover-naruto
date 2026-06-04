@@ -1,0 +1,35 @@
+{
+  "id": "pakura",
+  "name": "Pakura",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "suna",
+    "pakura",
+    "scorch-release",
+    "kekkei-genkai",
+    "chaleur",
+    "heroique",
+    "sacrifice",
+    "resurrection-edo"
+  ],
+  "summary": "Héroïne légendaire de Suna, maître du Scorch Release au destin tragique",
+  "details": [
+    "Héroïne de Sunagakure, célèbre pour sa maîtrise du Scorch Release (Shakuton), une rare Kekkei Genkai",
+    "A remporté une guerre pour Suna en déshydratant des armées entières avec ses techniques de chaleur extrême",
+    "Sacrifiée par les anciens de Suna lors d'un traité de paix, livrée à Kiri pour apaiser les tensions",
+    "Ressuscitée par l'Edo Tensei lors de la 4e Grande Guerre Shinobi, elle combat contre son gré",
+    "Son histoire symbolise le sacrifice des héros par la realpolitik des villages shinobi"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Scorch Release"
+  ],
+  "kageTitle": null
+}

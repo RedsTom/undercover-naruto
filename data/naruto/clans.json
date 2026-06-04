@@ -1,0 +1,470 @@
+[
+  {
+    "id": "uchiha",
+    "name": "Clan Uchiha",
+    "category": "clan",
+    "tags": ["clan", "konoha", "dojutsu", "sharingan", "feu", "elite", "fondateur", "mangekyo", "susano-o", "amaterasu", "katon", " massacre", "rival-senju"],
+    "summary": "Clan légendaire de Konoha possédant le Sharingan, co-fondateur du village",
+    "details": [
+      "Possède le Sharingan, un dojutsu capable de copier et prévoir les mouvements",
+      "Descend d'Indra Otsutsuki, fils d'Hagoromo",
+      "Co-fondateur de Konoha avec le clan Senju sous l'alliance Hashirama-Madara",
+      "Massacré par Itachi Uchiha sur ordre de Konoha, ne laissant que Sasuke en survivant",
+      "Spécialistes du Katon (Fire Release) et du Sharingan avec ses évolutions : Mangekyo et Rinnegan"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": ["Sharingan", "Mangekyo Sharingan"],
+    "notableMembers": ["Sasuke Uchiha", "Itachi Uchiha", "Madara Uchiha", "Obito Uchiha", "Fugaku Uchiha", "Shisui Uchiha", "Izuna Uchiha"]
+  },
+  {
+    "id": "senju",
+    "name": "Clan Senju",
+    "category": "clan",
+    "tags": ["clan", "konoha", "fondateur", "bois", "hokage", "elite", "rival-uchiha", "senju", "mokuton", "arme", "corps"],
+    "summary": "Clan fondateur de Konoha avec les Uchiha, spécialisé dans les arts ninja variés",
+    "details": [
+      "Descend d'Asura Otsutsuki, fils d'Hagoromo",
+      "Clan rival historique des Uchiha, opposé dans la guerre originelle",
+      "Hashirama Senju, le Premier Hokage, est le seul utilisateur naturel du Wood Release",
+      "Produit de très nombreux Hokage : Hashirama, Tobirama, Tsunade",
+      "Leur nom signifie « mille mains » en référence à leur maîtrise de mille compétences"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Hashirama Senju", "Tobirama Senju", "Tsunade Senju"]
+  },
+  {
+    "id": "hyuga",
+    "name": "Clan Hyuga",
+    "category": "clan",
+    "tags": ["clan", "konoha", "dojutsu", "byakugan", "gentle-fist", "elite", "noble", "branche-principale", "branche-secondaire", "juken", "vue-360"],
+    "summary": "Clan noble de Konoha possédant le Byakugan et le Poing Doux",
+    "details": [
+      "Possède le Byakugan, un dojutsu offrant une vision à 360 degrés et la capacité de voir le réseau de chakra",
+      "Divisé en deux branches : la branche principale (Sōke) et la branche secondaire (Bunke)",
+      "La branche secondaire porte le sceau maudit de l'oiseau en cage pour protéger le sang pur",
+      "Maîtres du Gentle Fist (Juken), frappant les tenketsu pour bloquer le chakra",
+      "L'un des clans les plus anciens et prestigieux de Konoha"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": ["Byakugan"],
+    "notableMembers": ["Hinata Hyuga", "Neji Hyuga", "Hiashi Hyuga", "Hanabi Hyuga"]
+  },
+  {
+    "id": "uzumaki",
+    "name": "Clan Uzumaki",
+    "category": "clan",
+    "tags": ["clan", "uzushio", "konoha", "chakra", "vitalite", "longevite", "scellement", "fuinjutsu", "allie-senju", "tourbillon", "jinchuriki"],
+    "summary": "Clan d'Uzushiogakure connu pour leur chakra massif et leur longévité",
+    "details": [
+      "Originaires d'Uzushiogakure au Pays des Tourbillons, village détruit",
+      "Connus pour leur immense réserve de chakra et leur longévité exceptionnelle",
+      "Maîtres du Fūinjutsu (techniques de scellement)",
+      "Parents éloignés du clan Senju, alliés historiques de Konoha",
+      "Naruto, Kushina, Nagato et Karin sont des Uzumaki notables"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Naruto Uzumaki", "Kushina Uzumaki", "Nagato Uzumaki", "Karin Uzumaki", "Boruto Uzumaki", "Himawari Uzumaki"]
+  },
+  {
+    "id": "nara",
+    "name": "Clan Nara",
+    "category": "clan",
+    "tags": ["clan", "konoha", "ombre", "strategie", "intelligence", "kage-mane", "ino-shika-cho", "cerf", "boutique-fleur"],
+    "summary": "Clan de Konoha maîtrisant les techniques d'ombre et réputé pour leur intelligence",
+    "details": [
+      "Maîtres du Shadow Possession Jutsu (Kage Mane no Jutsu) et ses dérivés",
+      "Connus pour leur intelligence supérieure et leurs talents de stratèges",
+      "Partie de l'alliance Ino-Shika-Cho avec les clans Yamanaka et Akimichi",
+      "Élèvent des cerfs et tiennent une pharmacie dans le village",
+      "Shikamaru Nara est le plus célèbre membre, devenu conseiller du Hokage"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Shikamaru Nara", "Shikaku Nara", "Yoshino Nara"]
+  },
+  {
+    "id": "yamanaka",
+    "name": "Clan Yamanaka",
+    "category": "clan",
+    "tags": ["clan", "konoha", "esprit", "mental", "telepathie", "ino-shika-cho", "fleur", "transfert", "sens"],
+    "summary": "Clan de Konoha spécialisé dans les techniques de transfert d'esprit et de communication",
+    "details": [
+      "Maîtres du Mind Transfer Jutsu (Shintenshin no Jutsu) et du Mind Disturbance",
+      "Spécialisés dans les techniques de communication sensorielle à longue distance",
+      "Partie de l'alliance Ino-Shika-Cho avec les clans Nara et Akimichi",
+      "Tiennent une boutique de fleurs dans Konoha",
+      "Ino Yamanaka est la membre la plus notable de la nouvelle génération"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Ino Yamanaka", "Inoichi Yamanaka"]
+  },
+  {
+    "id": "akimichi",
+    "name": "Clan Akimichi",
+    "category": "clan",
+    "tags": ["clan", "konoha", "expansion", "corps", "force", "ino-shika-cho", "poids", "calorie", "pilule"],
+    "summary": "Clan de Konoha spécialisé dans les techniques d'expansion et de modification corporelle",
+    "details": [
+      "Maîtres de l'Expansion Jutsu et des techniques de modification corporelle",
+      "Utilisent les Pilules du Clan (Hōrengan) pour multiplier leur chakra au prix de leur santé",
+      "Partie de l'alliance Ino-Shika-Cho avec les clans Nara et Yamanaka",
+      "Connus pour leur forte corpulence qui alimente leurs techniques",
+      "Choji Akimichi est le membre le plus notable de la nouvelle génération"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Choji Akimichi", "Choza Akimichi"]
+  },
+  {
+    "id": "inuzuka",
+    "name": "Clan Inuzuka",
+    "category": "clan",
+    "tags": ["clan", "konoha", "ninken", "chien", "loup", "odorat", "beast-mimicry", "collaboration", "animal"],
+    "summary": "Clan de Konoha combattant aux côtés de chiens ninja (ninken)",
+    "details": [
+      "Chaque membre est associé à un chien ninja (ninken) dès son plus jeune âge",
+      "Maîtres du Beast Mimic Jutsu et des techniques de combat collaboratif homme-chien",
+      "Connus pour leur odorat surdéveloppé et leurs crocs marqués",
+      "Portent des marques rouges en forme de crocs sur les joues",
+      "Kiba Inuzuka et son ninken Akamaru sont les membres les plus notables"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Kiba Inuzuka", "Tsume Inuzuka"]
+  },
+  {
+    "id": "aburame",
+    "name": "Clan Aburame",
+    "category": "clan",
+    "tags": ["clan", "konoha", "insecte", "kikaichu", "parasite", "tracking", "espion", "destruction"],
+    "summary": "Clan de Konoha utilisant des insectes parasites destructeurs comme armes",
+    "details": [
+      "À la naissance, un membre du clan offre son corps comme nid aux kikaichu (insectes destructeurs)",
+      "Les insectes peuvent aspirer le chakra des ennemis et servir d'espions",
+      "Maîtres des techniques d'espionnage, de pistage et d'attaque par essaim",
+      "Portent toujours des lunettes de soleil et des vêtements couvrants",
+      "Shino Aburame est le membre le plus notable de la nouvelle génération"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Shino Aburame", "Shibi Aburame"]
+  },
+  {
+    "id": "sarutobi",
+    "name": "Clan Sarutobi",
+    "category": "clan",
+    "tags": ["clan", "konoha", "hokage", "feu", "katon", "singe", "influence", "respecte"],
+    "summary": "Clan influent de Konoha, dont le Troisième Hokage Hiruzen",
+    "details": [
+      "Hiruzen Sarutobi, le Troisième Hokage, est le membre le plus célèbre",
+      "Asuma Sarutobi était un jōnin respecté et membre des Douze Gardiens du Feu",
+      "Konohamaru Sarutobi est le petit-fils d'Hiruzen et membre de la nouvelle génération",
+      "Le clan est l'un des plus respectés de Konoha avec une longue histoire de service",
+      "Spécialistes du Fire Release (Katon)"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Hiruzen Sarutobi", "Asuma Sarutobi", "Konohamaru Sarutobi"]
+  },
+  {
+    "id": "hatake",
+    "name": "Clan Hatake",
+    "category": "clan",
+    "tags": ["clan", "konoha", "copiste", "raikiri", "sharingan", "hokage", "chien", "blanc"],
+    "summary": "Clan de Konoha dont Kakashi, le ninja copieur et Sixième Hokage",
+    "details": [
+      "Sakumo Hatake, le Croc Blanc de Konoha, était un ninja aussi fort que les Sannin",
+      "Kakashi Hatake est le Sixième Hokage et le ninja copieur le plus célèbre",
+      "Le clan est petit mais a produit des ninjas d'élite exceptionnels",
+      "Kakashi a hérité le Sharingan d'Obito Uchiha, bien qu'il ne soit pas du clan Uchiha",
+      "Connus pour leur affinité avec les chiens et les techniques de foudre"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Kakashi Hatake", "Sakumo Hatake"]
+  },
+  {
+    "id": "namikaze",
+    "name": "Clan Namikaze",
+    "category": "clan",
+    "tags": ["clan", "konoha", "minato", "eclair-jaune", "hokage", "vitesse", "flying-thunder", "teleportation"],
+    "summary": "Clan de Konoha dont Minato, l'Éclair Jaune et Quatrième Hokage",
+    "details": [
+      "Minato Namikaze est le Quatrième Hokage, connu comme l'Éclair Jaune de Konoha",
+      "Créateur du Rasengan et maître du Flying Thunder God Jutsu",
+      "Naruto porte le nom Uzumaki de sa mère plutôt que Namikaze pour sa protection",
+      "Le clan est relativement mystérieux avec peu de membres connus",
+      "Minato a scellé Kurama en Naruto en sacrifiant sa vie"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Minato Namikaze"]
+  },
+  {
+    "id": "hoshigaki",
+    "name": "Clan Hoshigaki",
+    "category": "clan",
+    "tags": ["clan", "kiri", "branchule", "requin", "agua", "force", "akatsuki", "epee", "samehada"],
+    "summary": "Clan de Kirigakure connu pour leur apparence de requin et leur force brute",
+    "details": [
+      "Membres avec des caractéristiques de requin : branchies, dents triangulaires, peau bleue",
+      "Kisame Hoshigaki est le membre le plus célèbre, membre d'Akatsuki",
+      "Originaires de Kirigakure, le village de la brume",
+      "Kisame possédait Samehada, une épée qui absorbe le chakra",
+      "Connus pour leur immense réserve de chakra"
+    ],
+    "image": "",
+    "village": "Kirigakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Kisame Hoshigaki"]
+  },
+  {
+    "id": "hozuki",
+    "name": "Clan Hozuki",
+    "category": "clan",
+    "tags": ["clan", "kiri", "eau", "hydratation", "liquide", "epees-brume", "suigetsu", "transformation"],
+    "summary": "Clan de Kirigakure capable de transformer leur corps en eau",
+    "details": [
+      "Possèdent la capacité de transformer leur corps en eau liquide à volonté",
+      "Suigetsu Hozuki est le membre le plus connu, ayant rejoint l'équipe Taka",
+      "Mangetsu Hozuki était l'un des Sept Épéistes de la Brume",
+      "L'hydratation est leur principale faiblesse : ils se déshydratent facilement",
+      "Originaires de Kirigakure et impliqués dans les Sept Épéistes"
+    ],
+    "image": "",
+    "village": "Kirigakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Suigetsu Hozuki", "Mangetsu Hozuki"]
+  },
+  {
+    "id": "kaguya-clan",
+    "name": "Clan Kaguya",
+    "category": "clan",
+    "tags": ["clan", "kiri", "os", "shikotsumyaku", "combat", "savage", "guerrier", "kimimaro"],
+    "summary": "Clan de Kirigakure possédant le Shikotsumyaku, la capacité de manipuler ses os",
+    "details": [
+      "Possède le Shikotsumyaku, un kekkei genkai permettant de manipuler la structure osseuse",
+      "Kimimaro est le dernier survivant connu du clan",
+      "Le clan était extrêmement belliqueux et a attaqué Kirigakure, menant à sa destruction",
+      "Leurs os sont plus durs que l'acier et peuvent être régénérés instantanément",
+      "Servait Orochimaru qui les considérait comme des armes puissantes"
+    ],
+    "image": "",
+    "village": "Kirigakure",
+    "kekkeiGenkai": ["Shikotsumyaku"],
+    "notableMembers": ["Kimimaro"]
+  },
+  {
+    "id": "yuki",
+    "name": "Clan Yuki",
+    "category": "clan",
+    "tags": ["clan", "kiri", "glace", "hyoton", "kekkei-genkai", "vaporise", "eau", "vent", "haku"],
+    "summary": "Clan de Kirigakure possédant le Ice Release (Hyoton)",
+    "details": [
+      "Possède le Hyoton (Ice Release), combinant les natures Eau et Vent",
+      "Haku est le membre le plus connu, disciple de Zabuza",
+      "Le clan a été persécuté et presque exterminé à cause de la peur des kekkei genkai à Kiri",
+      "Pendant l'ère du brouillard sanglant, les détenteurs de kekkei genkai étaient chassés",
+      "Les miroirs de glace démoniaques sont la signature de Haku"
+    ],
+    "image": "",
+    "village": "Kirigakure",
+    "kekkeiGenkai": ["Ice Release"],
+    "notableMembers": ["Haku"]
+  },
+  {
+    "id": "otsutsuki",
+    "name": "Clan Otsutsuki",
+    "category": "clan",
+    "tags": ["clan", "celeste", "extraterrestre", "chakra", "rinnegan", "byakugan", "tsukuyomi-infini", "divin", "fondateur", "monde-ninja"],
+    "summary": "Clan céleste origine de tout le chakra dans le monde ninja",
+    "details": [
+      "Kaguya Otsutsuki est l'ancêtre du chakra, venue de l'arbre divin",
+      "Hagoromo (Sage des Six Chemins) et Hamura sont ses fils",
+      "Le clan vole le chakra des planètes via les Arbres Divins (God Trees)",
+      "Momoshiki, Kinshiki et Isshiki sont les membres de l'ère Boruto",
+      "Possèdent les dojutsu les plus puissants : Rinnegan, Tenseigan, Byakugan originel"
+    ],
+    "image": "",
+    "village": "Céleste",
+    "kekkeiGenkai": ["Rinnegan", "Byakugan", "Tenseigan"],
+    "notableMembers": ["Kaguya Otsutsuki", "Hagoromo Otsutsuki", "Hamura Otsutsuki", "Momoshiki Otsutsuki", "Isshiki Otsutsuki"]
+  },
+  {
+    "id": "shimura",
+    "name": "Clan Shimura",
+    "category": "clan",
+    "tags": ["clan", "konoha", "danzo", "root", "fondateur", "conservateur", "ombre", "politique"],
+    "summary": "Clan de Konoha dont Danzo Shimura, fondateur de la Root",
+    "details": [
+      "Danzo Shimura est le membre le plus connu, rival d'Hiruzen Sarutobi",
+      "Fondateur de la Root (Fondation), l'unité secrète de Konoha",
+      "Le clan est l'un des premiers à avoir rejoint Konoha",
+      "Connus pour leur vision conservatrice et militariste du village",
+      "Danzo a implanté le Sharingan et le bras de Hashirama sur son propre corps"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Danzo Shimura"]
+  },
+  {
+    "id": "lee-clan",
+    "name": "Clan Lee",
+    "category": "clan",
+    "tags": ["clan", "konoha", "taijutsu", "portes", "loto", "sans-chakra", "effort", "bourreau"],
+    "summary": "Clan de Konoha spécialisé en taijutsu pur sans affinité pour le ninjutsu",
+    "details": [
+      "Rock Lee est le membre le plus célèbre, incapable d'utiliser le ninjutsu ou le genjutsu",
+      "Metal Lee est le fils de Rock Lee dans l'ère Boruto",
+      "Spécialisés dans le taijutsu pur et l'ouverture des Huit Portes",
+      "Philosophie : l'effort acharné peut surpasser le talent naturel",
+      "Might Guy est leur mentor bien qu'il ne soit pas du clan"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Rock Lee", "Metal Lee"]
+  },
+  {
+    "id": "haruno",
+    "name": "Clan Haruno",
+    "category": "clan",
+    "tags": ["clan", "konoha", "medical", "force-surhumaine", "sakura", "intelligence", "chakra-control"],
+    "summary": "Clan de Konoha dont Sakura Haruno, ninja médicale d'élite",
+    "details": [
+      "Sakura Haruno est la membre la plus connue, élève de Tsunade",
+      "Pas de kekkei genkai connue, mais une maîtrise exceptionnelle du chakra",
+      "Sakura a appris la force surhumaine et le ninjutsu médical de Tsunade",
+      "Clan ordinaire sans capacité spéciale héréditaire",
+      "La détermination et le travail acharné compensent le manque de dons naturels"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Sakura Haruno"]
+  },
+  {
+    "id": "ino-shika-cho",
+    "name": "Alliance Ino-Shika-Cho",
+    "category": "clan",
+    "tags": ["clan", "konoha", "alliance", "nara", "yamanaka", "akimichi", "ino-shika-cho", "cerf", "cochon", "papillon"],
+    "summary": "Alliance historique des clans Nara, Yamanaka et Akimichi de Konoha",
+    "details": [
+      "Combinaison des clans Nara (ombre), Yamanaka (esprit) et Akimichi (corps)",
+      "L'alliance existe depuis la fondation de Konoha",
+      "Chaque génération forme un trio : Ino-Shika-Cho",
+      "La formation Ino-Shika-Cho combine capture (Yamanaka), immobilisation (Nara) et frappe (Akimichi)",
+      "Shikamaru, Ino et Choji sont la génération actuelle"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Shikamaru Nara", "Ino Yamanaka", "Choji Akimichi"]
+  },
+  {
+    "id": "uzumaki-clan",
+    "name": "Clan Uzumaki (Uzushio)",
+    "category": "clan",
+    "tags": ["clan", "uzushio", "konoha", "chakra-vital", "longevite", "scellement", "fuinjutsu", "rouge", "tourbillon", "alliance"],
+    "summary": "Clan d'Uzushiogakure, maîtres du scellement et alliés historiques de Konoha",
+    "details": [
+      "Fondèrent Uzushiogakure au Pays des Tourbillons",
+      "Leur symbole du tourbillon est intégré dans l'uniforme de Konoha en leur honneur",
+      "Leurs techniques de scellement (fūinjutsu) sont les plus puissantes du monde",
+      "Leur vitalité et longévité exceptionnels font d'eux des jinchuriki idéaux",
+      "Le village fut détruit par des nations voisines craignant leur puissance de scellement"
+    ],
+    "image": "",
+    "village": "Uzushiogakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Mito Uzumaki", "Kushina Uzumaki", "Nagato Uzumaki", "Karin Uzumaki"]
+  },
+  {
+    "id": "sarutobi-clan",
+    "name": "Clan Sarutobi",
+    "category": "clan",
+    "tags": ["clan", "konoha", "hokage", "feu", "katon", "respecte", "singe", "asuma", "troisieme"],
+    "summary": "Clan influent de Konoha, produit de multiples Hokage et ninjas d'élite",
+    "details": [
+      "L'un des clans les plus respectés de Konoha avec une lignée de Hokage",
+      "Hiruzen Sarutobi a été le Troisième Hokage pendant des décennies",
+      "Asuma Sarutobi a été membre des Douze Gardiens du Feu du Pays du Feu",
+      "Konohamaru Sarutobi est le petit-fils d'Hiruzen etPotentiel futur Hokage",
+      "Leur nom signifie « saut de singe », symbole de leur agilité"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Hiruzen Sarutobi", "Asuma Sarutobi", "Konohamaru Sarutobi"]
+  },
+  {
+    "id": "momochi",
+    "name": "Clan Momochi",
+    "category": "clan",
+    "tags": ["clan", "kiri", "epee", "démon", "brume", "zabuza", "sept-epéistes", "assassin"],
+    "summary": "Clan de Kirigakure dont Zabuza, le Démon de la Brume",
+    "details": [
+      "Zabuza Momochi est le membre le plus célèbre, l'un des Sept Épéistes de la Brume",
+      "Surnommé le Démon de la Brume pour avoir massacré une promotion entière d'étudiants",
+      "Maître de l'épée Kubikiribocho (Décapiteuse)",
+      "Premier antagoniste majeur de la série Naruto",
+      "Représente l'ère du brouillard sanglant de Kirigakure"
+    ],
+    "image": "",
+    "village": "Kirigakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Zabuza Momochi"]
+  },
+  {
+    "id": "yakushi",
+    "name": "Clan Yakushi",
+    "category": "clan",
+    "tags": ["clan", "konoha", "medic", "espion", "orochimaru", "kabuto", "intelligence", "traître"],
+    "summary": "Clan de Konoha dont Kabuto Yakushi, espion et ninja médical d'élite",
+    "details": [
+      "Kabuto Yakushi est le membre le plus notoire, bras droit d'Orochimaru",
+      "Orphelin élevé à la Root par Danzo avant de devenir un espion",
+      "Maîtrise le Edo Tensei (Réanimation Impure) mieux que quiconque",
+      "A atteint le Sage Mode via Ryuchi Cave",
+      "Ultime combat contre Itachi et Sasuke lors de la Quatrième Grande Guerre Ninja"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Kabuto Yakushi"]
+  },
+  {
+    "id": "hoki",
+    "name": "Clan Hoki",
+    "category": "clan",
+    "tags": ["clan", "konoha", "anime", "filler", "équipe-25", "genin"],
+    "summary": "Clan mineur de Konoha apparaissant dans les arcs filler de l'anime",
+    "details": [
+      "Clan mineur avec peu d'histoire canonique",
+      "Apparaît dans les arcs filler de l'anime Naruto",
+      "Hoki Taketori est le membre le plus connu",
+      "Membre de l'Équipe 25 dans l'anime Boruto",
+      "Spécialisés dans des techniques de combat mineures"
+    ],
+    "image": "",
+    "village": "Konohagakure",
+    "kekkeiGenkai": [],
+    "notableMembers": ["Hoki Taketori"]
+  }
+]

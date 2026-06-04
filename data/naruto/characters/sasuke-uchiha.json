@@ -1,0 +1,54 @@
+{
+  "id": "sasuke-uchiha",
+  "name": "Sasuke Uchiha",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "uchiha",
+    "sharingan",
+    "mangekyo",
+    "rinnegan",
+    "team-7",
+    "taka",
+    "nukenin",
+    "avenger",
+    "rival",
+    "foudre",
+    "chidori",
+    "susanoo",
+    "frere-itachi",
+    "dernier-uchiha",
+    "sage-six-chemins"
+  ],
+  "summary": "Dernier survivant du clan Uchiha, rival et meilleur ami de Naruto",
+  "details": [
+    "Dernier survivant du clan Uchiha après le massacre perpétré par son frère Itachi",
+    "Détenteur du Sharingan, du Mangekyo et du Rinnegan, héritier du Sage des 6 Chemins",
+    "A créé le Chidori et maîtrise la foudre (Raiton) à un niveau surpuissant",
+    "A formé l'équipe Taka (Hebi) pour traquer et tuer son frère Itachi",
+    "A combattu Naruto au Val de la Fin à deux reprises, la seconde fois en perdant un bras",
+    "Aide Naruto à protéger Konoha en secret après la guerre, en tant que shinobi de l'ombre",
+    "Époux de Sakura Haruno et père de Sarada Uchiha"
+  ],
+  "image": "",
+  "clan": "Uchiha",
+  "village": "Konohagakure",
+  "rank": "Nukenin",
+  "team": "Team 7 / Taka",
+  "jutsu": [
+    "Chidori",
+    "Kirin",
+    "Amaterasu",
+    "Kagutsuchi",
+    "Susanoo",
+    "Fire Ball",
+    "Rinnegan"
+  ],
+  "kageTitle": null
+}

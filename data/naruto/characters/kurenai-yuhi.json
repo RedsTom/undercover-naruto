@@ -1,0 +1,37 @@
+{
+  "id": "kurenai-yuhi",
+  "name": "Kurenai Yuhi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "genjutsu",
+    "team-8",
+    "asuma-femme",
+    "maitre-hinata",
+    "rouges-levres"
+  ],
+  "summary": "Jonin leader de Team 8 et maîtresse du genjutsu aux yeux rouges perçants",
+  "details": [
+    "Leader de Team 8 composée de Hinata, Kiba et Shino",
+    "Spécialiste reconnue du genjutsu, une des rares expertes en illusions de Konoha",
+    "Compagne d'Asuma Sarutobi avant sa mort, elle donna naissance à leur fille Mirai",
+    "A formé Hinata Hyuga dans le contrôle de son Byakugan et ses techniques",
+    "A combattu Itachi Uchiha qui retourna son genjutsu contre elle",
+    "A pris sa retraite du terrain après la mort d'Asuma pour élever Mirai",
+    "Reconnaissable à ses yeux rouges caractéristiques"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team 8",
+  "jutsu": [
+    "Genjutsu Tree Binding",
+    "Demonic Illusion"
+  ],
+  "kageTitle": null
+}

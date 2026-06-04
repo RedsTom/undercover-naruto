@@ -1,0 +1,56 @@
+{
+  "id": "naruto-uzumaki",
+  "name": "Naruto Uzumaki",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "protagoniste",
+    "héros",
+    "konoha",
+    "uzumaki",
+    "hokage",
+    "jinchuriki",
+    "kurama",
+    "mode-sage",
+    "team-7",
+    "rasengan",
+    "kage-bunshin",
+    "crapaud",
+    "mont-myoboku",
+    "vent",
+    "fils-minato",
+    "uzushio",
+    "orphelin",
+    "prophete"
+  ],
+  "summary": "Ninja hyperactif devenu 7e Hokage, porteur du démon renard Kyûbi",
+  "details": [
+    "Fils du 4e Hokage Minato Namikaze et de Kushina Uzumaki, dernier jinchuriki de Kurama",
+    "A appris le Kage Bunshin et perfectionné le Rasengan inventé par son père",
+    "Maître du Mode Sage de Mont Myôboku et du Mode Kurama (Biju Mode)",
+    "A vaincu Pain, sauvé le monde de Kaguya et réalisé son rêve de devenir Hokage",
+    "Est marié à Hinata Hyuga et père de Boruto et Himawari",
+    "Descendant du clan Uzumaki d'Uzushio, célèbre pour ses sceaux et sa vitalité",
+    "Élu 7e Hokage, reconnu comme le héros du monde shinobi"
+  ],
+  "image": "",
+  "clan": "Uzumaki",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": "Team 7 / 7th Division",
+  "jutsu": [
+    "Rasengan",
+    "Rasenshuriken",
+    "Kage Bunshin",
+    "Mode Sage",
+    "Mode Kurama",
+    "Bijūdama",
+    "Sexy Jutsu"
+  ],
+  "kageTitle": "7e Hokage"
+}

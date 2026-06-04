@@ -1,0 +1,41 @@
+{
+  "id": "eight-gates",
+  "name": "Huit Portes Intérieures",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "portes",
+    "kinjutsu",
+    "limite",
+    "boost-puissance",
+    "rang-S",
+    "guy-destructeur",
+    "rock-lee",
+    "konoha",
+    "corps",
+    "chakra-limite",
+    "sacrifice"
+  ],
+  "summary": "Technique libérant les huit portes du corps pour une puissance décuplée",
+  "details": [
+    "Technique qui lâche les limites naturelles du corps",
+    "Chaque porte ouverte multiplie la puissance du ninja",
+    "La Porte de la Mort (8e) donne un pouvoir divin mais tue l'utilisateur",
+    "Might Guy a failli tuer Madara Uchiha en ouvrant la 8e porte",
+    "Rock Lee n'a accès qu'à certaines portes mais s'entraîne pour toutes",
+    "Les portes sont initialement nommées d'après des concepts du bouddhisme"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Might Guy",
+    "Rock Lee",
+    "Kakashi Hatake"
+  ]
+}

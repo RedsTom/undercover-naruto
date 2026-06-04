@@ -1,0 +1,45 @@
+{
+  "id": "konohagakure",
+  "name": "Konohagakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-du-feu",
+    "grande-nation",
+    "hokage",
+    "konoha",
+    "feuille",
+    "protagoniste"
+  ],
+  "summary": "Village caché des Feuilles, capitale du Pays du Feu, le plus puissant des cinq grands villages",
+  "details": [
+    "Fondé par Hashirama Senju et Madara Uchiha après des siècles de guerre entre clans",
+    "Dirigé par le Hokage, considéré comme le plus puissant des cinq Kage",
+    "Abrite les clans les plus prestigieux : Uchiha, Senju, Hyuga, Nara, Akimichi, Yamanaka",
+    "A survécu à plusieurs guerres mondiales et à l'attaque de Kurama",
+    "Forme la génération la plus puissante de l'histoire : Naruto, Sasuke, Sakura, etc."
+  ],
+  "image": "",
+  "country": "Pays du Feu",
+  "kage": "Hokage",
+  "notableClans": [
+    "Uchiha",
+    "Senju",
+    "Hyuga",
+    "Uzumaki",
+    "Nara",
+    "Akimichi",
+    "Yamanaka",
+    "Inuzuka",
+    "Aburame",
+    "Sarutobi",
+    "Hatake",
+    "Namikaze"
+  ]
+}

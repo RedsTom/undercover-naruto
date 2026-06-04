@@ -1,0 +1,36 @@
+{
+  "id": "chomei",
+  "name": "Chōmei",
+  "category": "bijuu",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "chomei",
+    "vent",
+    "fu",
+    "taki",
+    "nanabi",
+    "scarabee",
+    "vol",
+    "insecte"
+  ],
+  "summary": "Bête à sept queues, le scarabée volant Chōmei, jinchuriki de Fū de Takigakure",
+  "details": [
+    "Chōmei est le Nanabi (bête à sept queues), prenant la forme d'un immense coléoptère aux ailes lumineuses",
+    "Ses natures de chakra sont le Vent (Fūton) et l'insecte, lui permettant de voler et de manipuler les insectes",
+    "Fū de Takigakure était sa jinchuriki, une jeune kunoichi enjouée et pleine de vie",
+    "Chōmei est le seul bijū capable de voler de manière naturelle grâce à ses ailes",
+    "Fut capturé par Kakuzu et Hidan de l'Akatsuki, tuant Fū dans le processus"
+  ],
+  "image": "",
+  "tails": 7,
+  "jinchuriki": [
+    "Fū"
+  ],
+  "nature": [
+    "Vent"
+  ]
+}

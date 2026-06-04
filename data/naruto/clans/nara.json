@@ -1,0 +1,39 @@
+{
+  "id": "nara",
+  "name": "Clan Nara",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "ombre",
+    "cerf",
+    "strategie",
+    "shikamaru",
+    "kage-mane",
+    "intelligence",
+    "ino-shika-cho",
+    "pharmacie"
+  ],
+  "summary": "Clan de Konoha manipulant l'ombre, réputé pour son génie stratégique",
+  "details": [
+    "Maîtrise le Kage Mane no Jutsu pour contrôler l'ombre et immobiliser les ennemis",
+    "Réputé pour leur intelligence exceptionnelle et leurs talents de stratèges",
+    "Membre de l'alliance Ino-Shika-Cho avec les clans Yamanaka et Akimichi",
+    "Élèvent des cerfs et tiennent la pharmacie du village",
+    "Shikamaru Nara est le stratège le plus brillant de sa génération"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Shikamaru Nara",
+    "Shikaku Nara",
+    "Yoshino Nara"
+  ]
+}

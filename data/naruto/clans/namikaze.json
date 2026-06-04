@@ -1,0 +1,34 @@
+{
+  "id": "namikaze",
+  "name": "Clan Namikaze",
+  "category": "clan",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "minato",
+    "hokage",
+    "eclair-jaune",
+    "vitesse",
+    "rasengan",
+    "teleportation",
+    "flying-thunder",
+    "hero"
+  ],
+  "summary": "Clan de Konoha dont Minato Namikaze, le Quatrième Hokage légendaire",
+  "details": [
+    "Minato Namikaze est le Quatrième Hokage, surnommé l'Éclair Jaune de Konoha",
+    "Créateur du Rasengan, technique qu'il perfectionna en trois ans",
+    "Maître du Flying Thunder God, la téléportation spatiale ultime",
+    "Sacrifia sa vie pour sceller Kurama en son fils Naruto",
+    "Son nom fut caché pour protéger Naruto des ennemis du village"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Minato Namikaze"
+  ]
+}

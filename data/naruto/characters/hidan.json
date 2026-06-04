@@ -1,0 +1,40 @@
+{
+  "id": "hidan",
+  "name": "Hidan",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "akatsuki",
+    "jashin",
+    "immortel",
+    "rituel",
+    "sang",
+    "nukenin",
+    "scythe",
+    "kakuzu-partenaire",
+    "asuma-mort"
+  ],
+  "summary": "Membre immortel de l'Akatsuki, fanatique de Jashin au rituel de sang mortel",
+  "details": [
+    "Membre de l'Akatsuki, adorateur de Jashin le dieu de la destruction, pratiquant des rituels sanglants",
+    "Parfaitement immortel, aucun dommage physique ne peut le tuer, même décapité il survit",
+    "Manie une grande faux à trois lames sur une chaîne extensible, prélévant le sang de ses ennemis",
+    "Son rituel maudit relie son corps à celui de sa victime : toute blessure qu'il s'inflige se répète sur elle",
+    "Tue Asuma Sarutobi, mentor de Shikamaru, provoquant une vengeance implacable de ce dernier",
+    "Vaincu par Shikamaru qui le piège et le fait exploser, puis l'enterre vivant en morceaux dans la forêt",
+    "Partenaire de Kakuzu, avec qui il forme un duo immortel aussi efficace qu'explosif"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Yugakure",
+  "rank": "Jonin (nukenin)",
+  "team": "Akatsuki (Kakuzu partnership)",
+  "jutsu": [
+    "Curse Technique",
+    "Immortality",
+    "Scythe"
+  ],
+  "kageTitle": null
+}

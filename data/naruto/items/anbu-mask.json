@@ -1,0 +1,34 @@
+{
+  "id": "anbu-mask",
+  "name": "Masque ANBU",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "objet",
+    "masque",
+    "anbu",
+    "elite",
+    "animal",
+    "incognito",
+    "assassinat",
+    "unité-spéciale",
+    "anonymat",
+    "opération-secrète"
+  ],
+  "summary": "Masque d'animal porté par les membres de l'ANBU pour préserver leur anonymat",
+  "details": [
+    "Porté par l'élite des forces spéciales des villages cachés",
+    "Représente un animal qui correspond souvent au style de combat du ninja",
+    "Garantit l'anonymat et protège l'identité du porteur",
+    "Chaque village a son propre design de masque ANBU",
+    "Kakashi, Itachi, Yamato et Shisui furent des ANBU célèbres"
+  ],
+  "image": "",
+  "wielder": "Membres ANBU",
+  "origin": "Tous les villages cachés"
+}

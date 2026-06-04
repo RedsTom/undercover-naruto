@@ -1,0 +1,34 @@
+{
+  "id": "scroll-summoning",
+  "name": "Parchemin d'Invocation",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "objet",
+    "contrat",
+    "invocation",
+    "animal",
+    "crapaud",
+    "serpent",
+    "limace",
+    "parchemin",
+    "sang",
+    "kuchiyose"
+  ],
+  "summary": "Parchemin scellant un contrat avec des animaux pour les invoquer au combat",
+  "details": [
+    "Requiert la signature avec du sang pour lier un contrat",
+    "Permet d'invoquer des animaux de toute taille selon le chakra fourni",
+    "Les trois grands contrats sont : crapauds (Mont Myoboku), serpents (Ryuchi Cave), limaces (Shikkotsu Forest)",
+    "Naruto signa avec les crapauds, Sasuke avec les serpents, Tsunade avec les limaces",
+    "Peut être utilisé pour invoquer des outils et d'autres ninjas via des marques spéciales"
+  ],
+  "image": "",
+  "wielder": "Variable",
+  "origin": "Technique ninja"
+}

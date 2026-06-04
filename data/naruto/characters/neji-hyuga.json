@@ -1,0 +1,42 @@
+{
+  "id": "neji-hyuga",
+  "name": "Neji Hyuga",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "hyuga",
+    "byakugan",
+    "gentle-fist",
+    "team-guy",
+    "genie",
+    "branche-cadette",
+    "destin",
+    "libre-arbitre",
+    "sacrifice-hinata"
+  ],
+  "summary": "Génie prodige du clan Hyuga ayant combattu le destin puis sacrifié pour ses proches",
+  "details": [
+    "Membre de la branche cadette du clan Hyuga, marqué du sceau maudit de la branche principale",
+    "Considéré comme un génie du Byakugan et du Gentle Fist, surpassant même les aînés",
+    "Inventeur du Jukaiho (technique des 64 paumes) et maître de la Rotation",
+    "Membre de Team Guy avec Rock Lee et Tenten, sous le commandement de Might Guy",
+    "A cru au déterminisme absolu avant que Naruto ne brise sa vision du destin",
+    "A sacrifié sa vie pour protéger Hinata et Naruto de l'attaque de Madara pendant la guerre",
+    "A atteint le rang de Jonin, le plus jeune de sa génération avec Sasuke"
+  ],
+  "image": "",
+  "clan": "Hyuga",
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team Guy",
+  "jutsu": [
+    "Gentle Fist",
+    "Rotation",
+    "Jukaiho"
+  ],
+  "kageTitle": null
+}

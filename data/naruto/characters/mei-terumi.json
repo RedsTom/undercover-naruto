@@ -1,0 +1,41 @@
+{
+  "id": "mei-terumi",
+  "name": "Mei Terumi",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "kiri",
+    "mizukage",
+    "lave",
+    "yoton",
+    "vapeur",
+    "futton",
+    "kekkei-genkai",
+    "celibataire",
+    "reforme",
+    "brume-sanglante",
+    "susanoo-dissoudre"
+  ],
+  "summary": "5e Mizukage de Kiri, femme politique ayant mis fin à la Brume Sanglante",
+  "details": [
+    "Cinquième Mizukage de Kirigakure, elle a mis fin au régime de la Brume Sanglante instauré sous Yagura",
+    "Possède deux Kekkei Genkai rares : le Lava Release (Yoton) et le Steam Release (Futton)",
+    "Capable de faire fondre le Susanoo complet de Sasuke avec son acide brûlant de Lava Release",
+    "Désespérée de trouver un mari, elle aborde constamment les hommes puissants avec des sous-entendus",
+    "A combattu aux côtés des Alliés lors de la 4e Grande Guerre Shinobi contre Madara et Obito",
+    "A formé et légué le poste de Mizukage à Chojuro, son disciple et assistant"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kirigakure",
+  "rank": "Mizukage",
+  "team": null,
+  "jutsu": [
+    "Lava Release",
+    "Steam Release",
+    "Boil Release"
+  ],
+  "kageTitle": "5e Mizukage"
+}

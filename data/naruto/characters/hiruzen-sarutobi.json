@@ -1,0 +1,42 @@
+{
+  "id": "hiruzen-sarutobi",
+  "name": "Hiruzen Sarutobi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "sarutobi",
+    "hokage",
+    "professeur",
+    "sannin",
+    "toutes-natures",
+    "dieu-shinobi",
+    "vieux-sage",
+    "grand-pere-konohamaru",
+    "sacrifice"
+  ],
+  "summary": "3e Hokage, professeur des légendaires Sannin et protecteur de Konoha",
+  "details": [
+    "3e Hokage de Konoha, élève des 1er et 2e Hokage, il a régné le plus longtemps",
+    "Professeur des trois Sannin légendaires : Jiraiya, Tsunade et Orochimaru",
+    "Maître de toutes les cinq natures élémentaires, surnommé le Professeur ou Dieu des Shinobis",
+    "A utilisé le Shiki Fujin (sceau de la mort) pour sceller les bras d'Orochimaru, se sacrifiant",
+    "A traité Naruto comme un petit-fils, veillant sur lui après la mort de ses parents",
+    "Grand-père de Konohamaru Sarutobi et père d'Asuma Sarutobi",
+    "A dirigé Konoha pendant les trois grandes guerres ninja"
+  ],
+  "image": "",
+  "clan": "Sarutobi",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Enma",
+    "Shiki Fujin",
+    "5 natures"
+  ],
+  "kageTitle": "3e Hokage"
+}

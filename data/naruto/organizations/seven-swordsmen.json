@@ -1,0 +1,41 @@
+{
+  "id": "seven-swordsmen",
+  "name": "Les Sept Épéistes de la Brume",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "organisation",
+    "kiri",
+    "epee",
+    "legende",
+    "zabuza",
+    "kisame",
+    "brume",
+    "sept-epéistes",
+    "kubikiribocho",
+    "samehada",
+    "nuibari"
+  ],
+  "summary": "Groupe d'élite de Kirigakure maniant des épées légendaires aux pouvoirs uniques",
+  "details": [
+    "Groupe des sept meilleurs épéistes de Kirigakure, craints dans tout le monde ninja",
+    "Chacun possède une épée légendaire unique aux capacités spéciales",
+    "Zabuza Momochi manie Kubikiribocho, Kisame Hoshigaki manie Samehada",
+    "Le symbole de l'ère du brouillard sanglant de Kiri",
+    "Mangetsu Hozuki était le seul à pouvoir manier les sept épées simultanément"
+  ],
+  "image": "",
+  "members": [
+    "Zabuza Momochi",
+    "Kisame Hoshigaki",
+    "Mangetsu Hozuki",
+    "Jinin Akebino",
+    "Kushimaru Kuriarare",
+    "Jinpachi Munashi",
+    "Raiga Kurosuki"
+  ],
+  "leader": "Pas de chef officiel"
+}

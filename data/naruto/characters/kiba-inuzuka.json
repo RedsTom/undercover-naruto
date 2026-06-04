@@ -1,0 +1,43 @@
+{
+  "id": "kiba-inuzuka",
+  "name": "Kiba Inuzuka",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "inuzuka",
+    "akamaru",
+    "chien",
+    "ninken",
+    "team-8",
+    "odorat",
+    "bete",
+    "impetueux"
+  ],
+  "summary": "Ninja canin du clan Inuzuka, inséparable de son compagnon Akamaru",
+  "details": [
+    "Membre du clan Inuzuka, élevant et combattant avec son chien Akamaru depuis l'enfance",
+    "Maître des techniques de mimétisme animal et du Fang over Fang",
+    "Membre de Team 8 sous la direction de Kurenai Yuhi",
+    "Possède un odorat surdéveloppé, capable de pister n'importe quelle cible",
+    "Impatient et bagarreur, mais d'une loyauté sans faille envers ses camarades",
+    "A combattu lors de la 4e Grande Guerre Ninja avec Akamaru devenu aussi grand que lui",
+    "Travaille comme éclaireur et pisteur pour Konoha après la guerre"
+  ],
+  "image": "",
+  "clan": "Inuzuka",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 8",
+  "jutsu": [
+    "Beast Mimicry",
+    "Fang over Fang",
+    "Wolf Transformation"
+  ],
+  "kageTitle": null
+}

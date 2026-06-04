@@ -1,0 +1,44 @@
+{
+  "id": "summoning",
+  "name": "Kuchiyose no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "invocation",
+    "contrat",
+    "animal",
+    "crapaud",
+    "serpent",
+    "limace",
+    "rang-B",
+    "espace-temps",
+    "sang",
+    "myoboku",
+    "ryuchi",
+    "shikkotsu"
+  ],
+  "summary": "Technique d'invocation de créatures liées par contrat",
+  "details": [
+    "Technique invoquant des animaux via un contrat de sang",
+    "Chaque ninja signe un contrat avec une espèce spécifique",
+    "Jiraiya invoque des crapauds du Mont Myoboku",
+    "Orochimaru invoque des serpents de Ryūchi Cave",
+    "Tsunade invoque Katsuyu, la limace géante de Shikkotsu Forest",
+    "Naruto a signé le contrat des crapauds avec Jiraiya"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Naruto Uzumaki",
+    "Jiraiya",
+    "Tsunade",
+    "Orochimaru",
+    "Kakashi Hatake"
+  ]
+}

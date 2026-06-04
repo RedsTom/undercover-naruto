@@ -1,0 +1,47 @@
+{
+  "id": "orochimaru",
+  "name": "Orochimaru",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "sannin",
+    "serpent",
+    "nukenin",
+    "immortel",
+    "scientifique",
+    "interdit",
+    "kinjutsu",
+    "kabuto",
+    "laboratoire",
+    "hashirama-cells",
+    "akatsuki-ex"
+  ],
+  "summary": "Génie fou des techniques interdites, Sannin serpent assoiffé d'immortalité",
+  "details": [
+    "Membre des légendaires Sannin avec Jiraiya et Tsunade, prodige précoce d'Hiruzen",
+    "Obsédé par l'apprentissage de toutes les techniques et la conquête de l'immortalité",
+    "A développé des centaines de techniques interdites dont l'Edo Tensei (résurrection des morts)",
+    "Fondeur du village d'Otogakure et créateur des marques maudites (Cursed Seal)",
+    "A manipulé Sasuke depuis l'enfance pour s'emparer de son corps",
+    "A survécu grâce à des corps de substitution (Zetsu, etc.) en défiant la mort",
+    "Finalement devenu un scientifique neutre, il collabore à la recherche dans Boruto"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Kusanagi",
+    "Edo Tensei",
+    "Invocation Serpents",
+    "Régénération",
+    "Marque-Malédiction"
+  ],
+  "kageTitle": null
+}

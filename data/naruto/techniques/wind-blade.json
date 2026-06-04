@@ -1,0 +1,44 @@
+{
+  "id": "wind-blade",
+  "name": "Fūton : Lame de Vent",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "vent",
+    "futon",
+    "tranchant",
+    "invisible",
+    "rang-C",
+    "naruto",
+    "temari",
+    "asuma",
+    "offensif",
+    "rare",
+    "decisif"
+  ],
+  "summary": "Technique de vent créant des lames invisibles et tranchantes",
+  "details": [
+    "Nature de vent, affinité rare parmi les ninjas",
+    "Les lames de vent sont invisibles, rendant l'attaque difficile à éviter",
+    "Naruto a une forte affinité avec le vent",
+    "Temari de Sunagakure est une experte des techniques de vent",
+    "Peut trancher la pierre et l'acier",
+    "Asuma Sarutobi combine le vent avec ses lames de chakra"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "C",
+  "nature": [
+    "vent"
+  ],
+  "users": [
+    "Naruto Uzumaki",
+    "Temari",
+    "Asuma Sarutobi",
+    "Danzo Shimura"
+  ]
+}

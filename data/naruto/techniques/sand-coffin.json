@@ -1,0 +1,43 @@
+{
+  "id": "sand-coffin",
+  "name": "Cercueil de Sable",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "gaara",
+    "sable",
+    "suna",
+    "defense-automatique",
+    "rang-B",
+    "shukaku",
+    "vent",
+    "terre",
+    "ecrasement",
+    "protection",
+    "jinchuriki"
+  ],
+  "summary": "Technique de Gaara enveloppant l'ennemi dans du sable pour l'écraser",
+  "details": [
+    "Technique signature de Gaara utilisant le sable contrôlé par son chakra",
+    "Le sable imprégné de chakra réagit instantanément aux menaces",
+    "Peut envelopper et broyer n'importe quelle cible",
+    "La défense automatique de Gaara est activée sans qu'il ait besoin de penser",
+    "Shukaku amplifie considérablement le contrôle du sable",
+    "Gaara a perfectionné cette technique pour devenir Kazekage"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [
+    "vent",
+    "terre"
+  ],
+  "users": [
+    "Gaara",
+    "Shukaku"
+  ]
+}

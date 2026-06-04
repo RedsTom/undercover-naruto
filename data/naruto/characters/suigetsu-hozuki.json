@@ -1,0 +1,39 @@
+{
+  "id": "suigetsu-hozuki",
+  "name": "Suigetsu Hozuki",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "kiri",
+    "hozuki",
+    "taka",
+    "eau",
+    "hydrification",
+    "assassinat",
+    "zabuza-fan",
+    "frere-mangetsu",
+    "nukenin"
+  ],
+  "summary": "Nukenin de Kiri, membre de Taka, manieur d'eau au corps liquide",
+  "details": [
+    "Membre du clan Hozuki de Kiri, capable de liquéfier son corps pour éviter les coups physiques",
+    "Frère cadet de Mangetsu Hozuki, légendaire épéiste des 7 Épéistes de la Brume",
+    "Rejoint l'équipe Taka (Hebi) de Sasuke pour l'aider à traquer Itachi et récupérer des épées légendaires",
+    "Fanatique de Zabuza, il cherche à rassembler les 7 Épées des Épéistes de la Brume",
+    "Maîtrise l'Hydrification, technique qui le rend immunisé aux coups tranchants et contondants",
+    "Sarcastique et sanguinaire, il est néanmoins loyal envers ses camarades de Taka"
+  ],
+  "image": "",
+  "clan": "Hozuki",
+  "village": "Kirigakure",
+  "rank": "Jonin (nukenin)",
+  "team": "Taka",
+  "jutsu": [
+    "Hydrification",
+    "Water Gun",
+    "Zabuza-sword fan"
+  ],
+  "kageTitle": null
+}

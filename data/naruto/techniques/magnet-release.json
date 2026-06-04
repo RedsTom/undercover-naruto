@@ -1,0 +1,49 @@
+{
+  "id": "magnet-release",
+  "name": "Jiton (Libération d'Aimant)",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-genkai",
+    "aimant",
+    "sable",
+    "fer",
+    "gaara",
+    "kazekage",
+    "rang-A",
+    "suna",
+    "shukaku",
+    "vent",
+    "terre",
+    "magnétique"
+  ],
+  "summary": "Kekkei Genkai manipulant les champs magnétiques",
+  "details": [
+    "Kekkei Genkai manipulant les forces magnétiques",
+    "Le Troisième Kazekage l'utilisait pour contrôler le sable de fer",
+    "Gaara utilise une variante pour contrôler le sable doré",
+    "Shukaku, le bijuu à une queue, a une affinité avec cette technique",
+    "Permet de créer des armes et des boucliers avec des métaux",
+    "Le Quatrième Kazekage l'utilisait pour manipuler la poussière d'or"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "vent",
+    "terre"
+  ],
+  "users": [
+    "Gaara",
+    "3e Kazekage",
+    "Rasa (4e Kazekage)",
+    "Shukaku"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "yugito-nii",
+  "name": "Yugito Nii",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kumo",
+    "jinchuriki",
+    "matatabi",
+    "deux-queues",
+    "feu",
+    "immortalite",
+    "akatsuki-capture"
+  ],
+  "summary": "Jinchuriki de Matatabi, elfe féline de Kumo au contrôle du feu parfait",
+  "details": [
+    "Jinchuriki de Matatabi, le démon à deux queues ressemblant à un chat de feu bleu",
+    "Membre d'élite de Kumogakure, elle maîtrise le feu et le chakra de son bijuu avec une précision parfaite",
+    "Capturée par Hidan et Kakuzu de l'Akatsuki, qui la vainquent après un combat acharné",
+    "Sa forme de bijuu est un chat spectral de flammes bleues capable de mouvements foudroyants",
+    "Son nom signifie Soirée de Neige, reflétant son apparence pâle et son élégance féline",
+    "Ressuscitée par l'Edo Tensei pour combattre lors de la 4e Grande Guerre Shinobi"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kumogakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Fire techniques",
+    "Matatabi",
+    "Tiger Burning"
+  ],
+  "kageTitle": null
+}

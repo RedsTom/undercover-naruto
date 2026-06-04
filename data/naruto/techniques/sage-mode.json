@@ -1,0 +1,43 @@
+{
+  "id": "sage-mode",
+  "name": "Mode Sage (Senjutsu)",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "senjutsu",
+    "nature",
+    "energie",
+    "rang-S",
+    "crapaud",
+    "myoboku",
+    "naruto",
+    "jiraiya",
+    "hashirama",
+    "minato",
+    "boost",
+    "statues"
+  ],
+  "summary": "Mode utilisant l'énergie naturelle pour décupler les capacités",
+  "details": [
+    "Technique de senjutsu qui utilise l'énergie naturelle ambiante",
+    "Nécessite un équilibre parfait entre énergie physique, spirituelle et naturelle",
+    "Augmente considérablement la force, la vitesse et la perception",
+    "Jiraiya l'a maîtrisé au Mont Myoboku avec les crapauds",
+    "Naruto le maîtrise parfaitement avec une accumulation rapide des clones",
+    "Hashirama possédait un Mode Sage encore plus puissant sans artefacts"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Naruto Uzumaki",
+    "Jiraiya",
+    "Hashirama Senju",
+    "Minato Namikaze"
+  ]
+}

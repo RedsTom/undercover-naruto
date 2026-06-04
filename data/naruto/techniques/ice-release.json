@@ -1,0 +1,41 @@
+{
+  "id": "ice-release",
+  "name": "Hyōton (Libération de Glace)",
+  "category": "technique",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-genkai",
+    "glace",
+    "haku",
+    "yuki",
+    "vent",
+    "eau",
+    "rang-A",
+    "miroirs",
+    "kiri",
+    "cristal",
+    "aiguilles"
+  ],
+  "summary": "Kekkei Genkai combinant vent et eau pour créer de la glace",
+  "details": [
+    "Kekkei Genkai rare du clan Yuki de Kirigakure",
+    "Combine la nature de vent et d'eau pour créer de la glace",
+    "Haku est le seul représentant connu de cette capacité",
+    "Sa technique des Miroirs de Cristal permet des attaques fulgurantes",
+    "La glace peut être modelée en aiguilles, murs ou miroirs",
+    "Considérée comme l'une des plus belles techniques de la série"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "vent",
+    "eau"
+  ],
+  "users": [
+    "Haku"
+  ]
+}

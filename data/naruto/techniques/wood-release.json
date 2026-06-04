@@ -1,0 +1,44 @@
+{
+  "id": "wood-release",
+  "name": "Mokuton (Libération de Bois)",
+  "category": "technique",
+  "era": [
+    "naruto-backstory",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-genkai",
+    "bois",
+    "hashirama",
+    "eau",
+    "terre",
+    "rang-S",
+    "bijuu-capture",
+    "senju",
+    "foret",
+    "sceau",
+    "konoha"
+  ],
+  "summary": "Kekkei Genkai combinant la terre et l'eau pour créer du bois",
+  "details": [
+    "Kekkei Genkai unique de Hashirama Senju, mélange de terre et d'eau",
+    "Considérée comme la technique la plus puissante pour capturer les bijuu",
+    "Permet de créer des forêts entières en un instant",
+    "Yamato et le Laboratoire d'Orochimaru ont tenté de la recréer",
+    "Le Bois peut sceller les bêtes à queues et apaiser leur chakra",
+    "Hashirama l'utilisait pour créer le village de Konoha"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [
+    "terre",
+    "eau"
+  ],
+  "users": [
+    "Hashirama Senju",
+    "Yamato",
+    "Mokuton clones d'Orochimaru"
+  ]
+}

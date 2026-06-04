@@ -1,0 +1,40 @@
+{
+  "id": "kirigakure",
+  "name": "Kirigakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-leau",
+    "brume",
+    "kiri",
+    "mizukage",
+    "brume-sanglante",
+    "grande-nation",
+    "epéistes",
+    "yagura",
+    "mei"
+  ],
+  "summary": "Village caché de la Brume, nation de l'Eau autrefois connue pour sa brutalité et son isolement",
+  "details": [
+    "Situé au Pays de l'Eau, construit sur un réseau d'îles entourées d'un épais brouillard permanent",
+    "Dirigé par le Mizukage, Mei Terumi étant la cinquième à avoir mis fin au régime de la Brume Sanglante",
+    "Célèbre pour les Sept Épéistes de la Brume, des guerriers d'élite maniant des lames légendaires",
+    "Yagura, le Quatrième Mizukage, fut manipulé par Obito Uchiha via le Sharingan pendant des années",
+    "L'examen de graduation consistait en un combat à mort entre élèves, une tradition cruelle abolie par Mei"
+  ],
+  "image": "",
+  "country": "Pays de l'Eau",
+  "kage": "Mizukage",
+  "notableClans": [
+    "Hoshigaki",
+    "Hozuki",
+    "Yuki",
+    "Kaguya"
+  ]
+}

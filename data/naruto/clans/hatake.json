@@ -1,0 +1,39 @@
+{
+  "id": "hatake",
+  "name": "Clan Hatake",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "kakashi",
+    "sakumo",
+    "copiste",
+    "raikiri",
+    "sharingan",
+    "hokage",
+    "croc-blanc",
+    "foudre",
+    "chiens"
+  ],
+  "summary": "Petit clan de Konoha ayant produit le Croc Blanc et le Sixième Hokage",
+  "details": [
+    "Sakumo Hatake, le Croc Blanc de Konoha, était aussi légendaire que les Sannin",
+    "Kakashi Hatake devint le Sixième Hokage après la Quatrième Grande Guerre",
+    "Kakashi est surnommé le Ninja Copieur grâce à son Sharingan emprunté",
+    "Créateur du Raikiri, technique de foudre signature",
+    "Le clan est connu pour son affinité avec les chiens et la foudre"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Kakashi Hatake",
+    "Sakumo Hatake"
+  ]
+}

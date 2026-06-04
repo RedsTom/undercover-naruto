@@ -1,0 +1,43 @@
+{
+  "id": "choji-akimichi",
+  "name": "Choji Akimichi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "akimichi",
+    "expansion",
+    "nourriture",
+    "team-10",
+    "ino-shika-cho",
+    "papillon",
+    "ami-shikamaru",
+    "karui-mari"
+  ],
+  "summary": "Membre de l'équipe Ino-Shika-Cho au grand cœur et aux techniques d'expansion",
+  "details": [
+    "Héritier du clan Akimichi, spécialiste des techniques d'expansion corporelle",
+    "Membre de Team 10 formant le trio Ino-Shika-Cho avec Shikamaru et Ino",
+    "Maître du Butterfly Mode (ailes de papillon) qui décuple sa puissance au sacrifice de sa graisse",
+    "Considéré comme l'un des piliers de Konoha, combattant féroce malgré son apparente douceur",
+    "A surmonté son complexe lié à son poids grâce à Shikamaru et ses coéquipiers",
+    "Marié à Karui de Kumo et père de Cho-Cho Akimichi",
+    "Aide la communauté Akimichi et tient le restaurant familial BBQ"
+  ],
+  "image": "",
+  "clan": "Akimichi",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 10",
+  "jutsu": [
+    "Expansion",
+    "Butterfly Mode",
+    "Human Boulder"
+  ],
+  "kageTitle": null
+}

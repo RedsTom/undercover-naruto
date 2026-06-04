@@ -1,0 +1,43 @@
+{
+  "id": "expansion",
+  "name": "Technique d'Expansion",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "akimichi",
+    "corps",
+    "taille",
+    "choji",
+    "rang-B",
+    "konoha",
+    "calories",
+    "clan-akimichi",
+    "croissance",
+    "geant",
+    "boost"
+  ],
+  "summary": "Technique du clan Akimichi permettant d'étendre le corps",
+  "details": [
+    "Technique héréditaire du clan Akimichi qui augmente la taille du corps",
+    "Transforme les calories en chakra pour la croissance corporelle",
+    "Permet de devenir un géant pour écraser les ennemis",
+    "Choji Akimichi utilise aussi des pilules de calories pour des boosts",
+    "La technique Butterfly Mode est l'apogée du clan",
+    "Chaque partie du corps peut être agrandie indépendamment"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Choji Akimichi",
+    "Choza Akimichi"
+  ]
+}

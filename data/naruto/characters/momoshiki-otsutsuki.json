@@ -1,0 +1,40 @@
+{
+  "id": "momoshiki-otsutsuki",
+  "name": "Momoshiki Otsutsuki",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "otsutsuki",
+    "momoshiki",
+    "boruto",
+    "karma",
+    "absorption",
+    "dojutsu",
+    "envahisseur"
+  ],
+  "summary": "Membre du clan Otsutsuki venu récolter le chakra de la Terre, lié à Boruto",
+  "details": [
+    "Membre du clan Otsutsuki venu sur Terre avec Kinshiki pour récolter le chakra de l'Arbre Divin",
+    "Possède un Byakugan et un Rinnegan capable d'absorber et de renvoyer n'importe quelle technique",
+    "Vaincu par Naruto, Sasuke et Boruto, il implante son Karma sur Boruto juste avant sa mort",
+    "Son Karma permet à Momoshiki de posséder le corps de Boruto et d'influencer ses actions",
+    "Capable de transformer des objets en pillules de chakra et de les consommer pour amplifier sa puissance",
+    "Apparaît régulièrement à travers le Karma de Boruto, observant et manipulant le jeune ninja",
+    "Considère les humains comme des êtres inférieurs destinés à fertiliser les arbres divins"
+  ],
+  "image": "",
+  "clan": "Otsutsuki",
+  "village": null,
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Karma",
+    "Absorption",
+    "Rinnegan",
+    "Byakugan",
+    "Shadow Paralysis"
+  ],
+  "kageTitle": null
+}

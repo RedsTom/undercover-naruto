@@ -1,0 +1,30 @@
+{
+  "id": "hoshigakure",
+  "name": "Hoshigakure",
+  "category": "village",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-letoile",
+    "hoshi",
+    "meteorite",
+    "petite-nation",
+    "ninja",
+    "chakra",
+    "entrainement"
+  ],
+  "summary": "Village caché de l'Étoile, village isolé dont les ninjas tirent leur pouvoir d'une mystérieuse météorite",
+  "details": [
+    "Situé au Pays de l'Étoile, un petit pays montagneux isolé du reste du monde ninja",
+    "Possède une météorite tombée du ciel qui confère un chakra spécial mais mortel à long terme",
+    "L'entraînement auprès de la météorite, appelé la Formation de l'Étoile, empoisonne lentement ses utilisateurs",
+    "Narihira, le fondateur, a découvert la météorite il y a 200 ans et fondé le village autour d'elle",
+    "Le village n'est pas officiellement reconnu par les cinq grandes nations ninja"
+  ],
+  "image": "",
+  "country": "Pays de l'Étoile",
+  "kage": "Aucun",
+  "notableClans": []
+}

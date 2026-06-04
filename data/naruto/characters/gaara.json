@@ -1,0 +1,47 @@
+{
+  "id": "gaara",
+  "name": "Gaara",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "suna",
+    "kazekage",
+    "jinchuriki",
+    "shukaku",
+    "sable",
+    "defense-automatique",
+    "ancien-ennemi",
+    "redemption",
+    "naruto-ami",
+    "plus-jeune-kage",
+    "pere-rasa",
+    "oncle-yashamaru"
+  ],
+  "summary": "Ancien jinchuriki de Shukaku devenu Kazekage, plus jeune Kage de l'histoire",
+  "details": [
+    "Troisième enfant du 4e Kazekage Rasa, né jinchuriki de Shukaku le démon raton-laveur",
+    "A grandi isolé et craint, avec une défense automatique de sable qui tuait sans qu'il le veuille",
+    "Transformé par son combat contre Naruto, il trouve la rédemption et devient un allié précieux de Konoha",
+    "Nommé 5e Kazekage à 15-16 ans, le plus jeune Kage de l'histoire shinobi",
+    "Maître du contrôle du sable, capable de protéger tout Suna avec son Shield of Sand",
+    "Dévient un père adoptif et mentor bienveillant après la guerre, respecté de tous",
+    "Frère de Temari et Kankuro, il entretient une rivalité amicale avec Naruto"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Kazekage",
+  "team": "Siblings",
+  "jutsu": [
+    "Sand Coffin",
+    "Sand Burial",
+    "Sand Shield",
+    "Sand Tsunami"
+  ],
+  "kageTitle": "5e Kazekage"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "hinata-hyuga",
+  "name": "Hinata Hyuga",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "hyuga",
+    "byakugan",
+    "gentle-fist",
+    "team-8",
+    "kurenai",
+    "amour-naruto",
+    "mere-boruto",
+    "himawari",
+    "timide",
+    "branche-principale"
+  ],
+  "summary": "Héritière de la branche principale du clan Hyuga, devenue l'épouse de Naruto",
+  "details": [
+    "Héritière de la branche principale du clan Hyuga, fille aînée d'Hiashi Hyuga",
+    "Maîtresse du Gentle Fist (Poing Doux) et des techniques de rotation et lions jumeaux",
+    "Membre de Team 8 sous le commandement de Kurenai Yuhi",
+    "A combattu aux côtés de Naruto contre Pain et durant la 4e Grande Guerre Ninja",
+    "A toujours soutenu et aimé Naruto, devenant sa femme et mère de Boruto et Himawari",
+    "A surmonté sa timidité maladive pour devenir une kunoichi confiante et puissante",
+    "A activé le Tenseigan dans le film The Last, prouvant la pureté de son Byakugan"
+  ],
+  "image": "",
+  "clan": "Hyuga",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 8",
+  "jutsu": [
+    "Gentle Fist",
+    "Lion Fists",
+    "Twin Lion Fists",
+    "Rotation"
+  ],
+  "kageTitle": null
+}

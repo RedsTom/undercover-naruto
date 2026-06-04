@@ -1,0 +1,39 @@
+{
+  "id": "inuzuka",
+  "name": "Clan Inuzuka",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "chien",
+    "ninken",
+    "kiba",
+    "akamaru",
+    "odorat",
+    "loup",
+    "4-pattes",
+    "collaboration",
+    "marques-rouges"
+  ],
+  "summary": "Clan de Konoha combattant en symbiose avec des chiens ninja (ninken)",
+  "details": [
+    "Chaque membre est lié à un ninken dès la naissance pour une synergie parfaite",
+    "Utilisent le Beast Mimicry pour adopter des capacités canines",
+    "Possèdent un odorat surdéveloppé pour le pistage",
+    "Arborent des marques rouges de crocs sur les joues, leur signature",
+    "Kiba Inuzuka et son fidèle Akamaru sont les plus connus du clan"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Kiba Inuzuka",
+    "Tsume Inuzuka"
+  ]
+}

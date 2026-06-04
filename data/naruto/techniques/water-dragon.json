@@ -1,0 +1,45 @@
+{
+  "id": "water-dragon",
+  "name": "Suiton : Suiryūdan no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "eau",
+    "suiton",
+    "dragon",
+    "rang-B",
+    "44-sceaux",
+    "kiri",
+    "offensif",
+    "zabuza",
+    "kakashi",
+    "tobirama",
+    "puissant"
+  ],
+  "summary": "Technique d'eau formant un dragon dévastateur",
+  "details": [
+    "Technique d'eau de haut niveau nécessitant 44 sceaux manuels",
+    "Forme un dragon d'eau qui s'abat sur l'ennemi",
+    "Zabuza l'exécute avec seulement quelques sceaux par sa maîtrise",
+    "Technique emblématique des ninjas de Kirigakure",
+    "Nécessite une grande quantité d'eau à proximité pour être efficace",
+    "Tobirama Senju pouvait l'exécuter sans source d'eau"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [
+    "eau"
+  ],
+  "users": [
+    "Zabuza Momochi",
+    "Kakashi Hatake",
+    "Tobirama Senju",
+    "Mei Terumi",
+    "Yagura"
+  ]
+}

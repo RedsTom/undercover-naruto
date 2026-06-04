@@ -1,0 +1,43 @@
+{
+  "id": "kaguya-otsutsuki",
+  "name": "Kaguya Otsutsuki",
+  "category": "character",
+  "era": [
+    "shippuden-end"
+  ],
+  "tags": [
+    "otsutsuki",
+    "kaguya",
+    "mere",
+    "chakra",
+    "deesse",
+    "dimension",
+    "parallele",
+    "arbre-divin",
+    "zetsu-maitre",
+    "final-boss"
+  ],
+  "summary": "Déesse immortelle, mère du chakra et ultime antagoniste de l'ère shinobi",
+  "details": [
+    "Membre du clan Otsutsuki venu sur Terre pour récolter les fruits de l'Arbre Divin, mais consomme le fruit elle-même",
+    "Considérée comme la mère du chakra sur Terre, elle transmet le chakra à ses fils Hagoromo et Hamura",
+    "Maîtrise des dimensions parallèles, capable de voyager et d'emprisonner ses ennemis dans des espaces infinis",
+    "Crée le Infinite Tsukuyomi, un genjutsu planétaire qui transforme les humains en créatures blanches",
+    "Manie les All-Killing Ash Bones, des os capables de désintégrer n'importe quelle cible touchée",
+    "Scellée par ses fils Hagoromo et Hamura, puis par Naruto et Sasuke avec le Six Paths Chibaku Tensei",
+    "Sa volonté incarnée par Zetsu Noir a manipulé l'histoire shinobi pendant des millénaires pour la libérer"
+  ],
+  "image": "",
+  "clan": "Otsutsuki",
+  "village": null,
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Infinite Tsukuyomi",
+    "Dimensions",
+    "Ash Bones",
+    "All-Killing",
+    "Expansive Truth-Seeking Ball"
+  ],
+  "kageTitle": null
+}

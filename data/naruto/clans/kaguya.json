@@ -1,0 +1,36 @@
+{
+  "id": "kaguya",
+  "name": "Clan Kaguya",
+  "category": "clan",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "clan",
+    "kiri",
+    "os",
+    "kimimaro",
+    "shikotsumyaku",
+    "kekkei-genkai",
+    "guerrier",
+    "belliqueux",
+    "orochimaru",
+    "guerre"
+  ],
+  "summary": "Clan guerrier de Kirigakure maniant ses os comme des armes via le Shikotsumyaku",
+  "details": [
+    "Possède le Shikotsumyaku, kekkei genkai permettant de manipuler sa propre ossature",
+    "Kimimaro est le dernier survivant connu de ce clan exterminé",
+    "Leur agressivité légendaire les poussa à attaquer Kirigakure, causant leur perte",
+    "Leurs os sont plus durs que l'acier et se régénèrent instantanément",
+    "Orochimaru convoitait Kimimaro comme réceptacle idéal"
+  ],
+  "image": "",
+  "village": "Kirigakure",
+  "kekkeiGenkai": [
+    "Shikotsumyaku"
+  ],
+  "notableMembers": [
+    "Kimimaro"
+  ]
+}

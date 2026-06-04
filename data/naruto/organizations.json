@@ -1,0 +1,206 @@
+[
+  {
+    "id": "akatsuki",
+    "name": "Akatsuki",
+    "category": "organization",
+    "tags": ["organisation", "akatsuki", "criminal", "bijuu", "nuage-rouge", "S-rank", "deserteur", "pain", "tobi", "anneau", "capture"],
+    "summary": "Organisation criminelle de déserteurs S-rank cherchant à collecter les bêtes à queues",
+    "details": [
+      "Fondée originellement par Yahiko, Nagato et Konan à Amegakure comme mouvement de paix",
+      "Transformée par Obito Uchiha (Tobi) en organisation criminelle collectant les bijū",
+      "Les membres portent des manteaux à nuages rouges et des bagues uniques",
+      "Objectif final : créer une arme de dissuasion avec les bijū pour contrôler les nations",
+      "Pain (Nagato) était le leader nominal, Obito le véritable manipulateur"
+    ],
+    "image": "",
+    "members": ["Pain", "Konan", "Itachi Uchiha", "Kisame Hoshigaki", "Deidara", "Sasori", "Hidan", "Kakuzu", "Zetsu", "Obito Uchiha", "Orochimaru"],
+    "leader": "Pain / Tobi"
+  },
+  {
+    "id": "kara",
+    "name": "Kara",
+    "category": "organization",
+    "tags": ["organisation", "kara", "boruto", "otsutsuki", "vessel", "karma", "jigen", "isshiki", "technologie", "secret"],
+    "summary": "Organisation secrète de l'ère Boruto servir Isshiki Otsutsuki",
+    "details": [
+      "Organisation secrète opérant dans l'ombre pendant l'ère Boruto",
+      "Jigen (vessel d'Isshiki Otsutsuki) était le leader officiel",
+      "Les Inners sont les membres de haut rang, les Outers sont les subordonnés",
+      "Objectif : créer un vaisseau (vessel) pour Isshiki Otsutsuki via le Karma",
+      "Amado a trahi Kara pour se réfugier à Konoha avec des informations cruciales"
+    ],
+    "image": "",
+    "members": ["Jigen", "Delta", "Code", "Boro", "Koji Kashin", "Amado", "Victor", "Deepa"],
+    "leader": "Jigen / Isshiki Otsutsuki"
+  },
+  {
+    "id": "root",
+    "name": "Root / Fondation",
+    "category": "organization",
+    "tags": ["organisation", "root", "fondation", "danzo", "konoha", "secret", "assassin", "anbu", "shadow"],
+    "summary": "Division secrète de Konoha sous le commandement de Danzo Shimura",
+    "details": [
+      "Fondée par Danzo Shimura comme organisation parallèle à l'ANBU",
+      "Les membres portent un sceau maudit qui les empêche de révéler les secrets de la Root",
+      "Entraîne des enfants dès leur plus jeune âge sans émotions ni liens personnels",
+      "Sai fut un membre qui intégra plus tard l'Équipe 7 de Kakashi",
+      "Dissoute après la mort de Danzo par les mains de Sasuke"
+    ],
+    "image": "",
+    "members": ["Sai", "Shin", "Fu", "Torune", "Danzo Shimura"],
+    "leader": "Danzo Shimura"
+  },
+  {
+    "id": "anbu",
+    "name": "ANBU",
+    "category": "organization",
+    "tags": ["organisation", "anbu", "konoha", "elite", "masque", "assassin", "protection", "hokage", "force-speciale"],
+    "summary": "Forces spéciales d'élite de Konoha opérant sous les ordres directs du Hokage",
+    "details": [
+      "ANBU signifie Ansatsu Senjutsu Tokushu Butai (Forces Spéciales d'Assassinat)",
+      "Les membres portent des masques d'animaux pour cacher leur identité",
+      "Opèrent directement sous les ordres du Hokage en dehors de la hiérarchie normale",
+      "Kakashi, Itachi et Yamato furent tous membres de l'ANBU",
+      "L'ANBU de Racine (Root) était une faction dissidente contrôlée par Danzo"
+    ],
+    "image": "",
+    "members": ["Kakashi Hatake", "Itachi Uchiha", "Yamato", "Sai"],
+    "leader": "Hokage"
+  },
+  {
+    "id": "seven-swordsmen",
+    "name": "Sept Épéistes de la Brume",
+    "category": "organization",
+    "tags": ["organisation", "epees", "kiri", "brume", "mist", "epee-legendaire", "zabuza", "kisame", "epéiste", "7"],
+    "summary": "Groupe de sept ninjas d'élite de Kirigakure maniant des épées légendaires",
+    "details": [
+      "Groupe de sept ninjas de Kirigakure maniant les sept épées légendaires",
+      "Les épées sont transmises de génération en génération au sein du village",
+      "Zabuza Momochi et Kisame Hoshigaki sont les membres les plus notoires",
+      "Plusieurs membres ont déserté Kirigakure et sont devenus nukenin",
+      "L'épée Samehada fit partie de leur arsenal avant de passer à Killer Bee"
+    ],
+    "image": "",
+    "members": ["Zabuza Momochi", "Kisame Hoshigaki", "Mangetsu Hozuki", "Suigetsu Hozuki", "Chojuro", "Ameyuri Ringo", "Kushimaru Kuriarare"],
+    "leader": "Variable"
+  },
+  {
+    "id": "sannin",
+    "name": "Sannin Légendaires",
+    "category": "organization",
+    "tags": ["organisation", "sannin", "legendaire", "jiraiya", "tsunade", "orochimaru", "hiruzen", "konoha", "elite", "trois"],
+    "summary": "Les trois ninjas légendaires de Konoha, élèves du Troisième Hokage",
+    "details": [
+      "Jiraiya, Tsunade et Orochimaru furent les élèves de Hiruzen Sarutobi",
+      "Surnommés par Hanzo le Salamandre lors de la Première Grande Guerre Ninja",
+      "Chacun a quitté Konoha à un moment donné pour des raisons différentes",
+      "Jiraiya est devenu ermite-pétrin, Tsunade a fui ses dettes, Orochimaru est devenu criminel",
+      "Leurs légendes dépassent celles de tout autre ninja vivant"
+    ],
+    "image": "",
+    "members": ["Jiraiya", "Tsunade", "Orochimaru"],
+    "leader": "Hiruzen Sarutobi (sensei)"
+  },
+  {
+    "id": "team-7",
+    "name": "Équipe 7",
+    "category": "organization",
+    "tags": ["organisation", "equipe", "konoha", "team-7", "kakashi", "naruto", "sasuke", "sakura", "genin", "fonds"],
+    "summary": "Équipe de genin de Kakashi composée de Naruto, Sasuke et Sakura",
+    "details": [
+      "Formée à l'Académie Ninja de Konoha sous la direction de Kakashi Hatake",
+      "Composée de Naruto Uzumaki, Sasuke Uchiha et Sakura Haruno",
+      "Sasuke quitta l'équipe pour rejoindre Orochimaru, remplacé temporairement par Sai",
+      "Devenus les ninjas les plus puissants de leur génération",
+      "Réunis pour la dernière mission contre Kaguya Otsutsuki"
+    ],
+    "image": "",
+    "members": ["Kakashi Hatake", "Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Sai"],
+    "leader": "Kakashi Hatake"
+  },
+  {
+    "id": "team-8",
+    "name": "Équipe 8",
+    "category": "organization",
+    "tags": ["organisation", "equipe", "konoha", "team-8", "kurenai", "hinata", "kiba", "shino", "pistage", "tracking"],
+    "summary": "Équipe de genin de Kurenai composée de Hinata, Kiba et Shino",
+    "details": [
+      "Formée sous la direction de Kurenai Yuhi",
+      "Spécialisée dans le pistage et la reconnaissance grâce aux ninken et aux insectes",
+      "Hinata Hyuga, Kiba Inuzuka et Shino Aburame en sont les membres",
+      "L'équipe la plus équilibrée pour les missions de traque",
+      "Kurenai est la seule femme jōnin sensei de la génération"
+    ],
+    "image": "",
+    "members": ["Kurenai Yuhi", "Hinata Hyuga", "Kiba Inuzuka", "Shino Aburame"],
+    "leader": "Kurenai Yuhi"
+  },
+  {
+    "id": "team-10",
+    "name": "Équipe 10 / Ino-Shika-Cho",
+    "category": "organization",
+    "tags": ["organisation", "equipe", "konoha", "team-10", "asuma", "ino", "shikamaru", "choji", "ino-shika-cho"],
+    "summary": "Équipe d'Asuma composée de l'alliance Ino-Shika-Cho classique",
+    "details": [
+      "Formée sous la direction d'Asuma Sarutobi",
+      "Poursuit l'alliance Ino-Shika-Cho avec Ino Yamanaka, Shikamaru Nara et Choji Akimichi",
+      "Leur formation combine la transition d'esprit (Yamanaka), l'immobilisation (Nara) et la frappe (Akimichi)",
+      "Asuma fut tué par Hidan d'Akatsuki, vengé par Shikamaru",
+      "La nouvelle génération reforme l'alliance avec les enfants des membres originaux"
+    ],
+    "image": "",
+    "members": ["Asuma Sarutobi", "Ino Yamanaka", "Shikamaru Nara", "Choji Akimichi"],
+    "leader": "Asuma Sarutobi"
+  },
+  {
+    "id": "team-guy",
+    "name": "Équipe Guy",
+    "category": "organization",
+    "tags": ["organisation", "equipe", "konoha", "team-guy", "might-guy", "rock-lee", "neji", "tenten", "taijutsu", "youth"],
+    "summary": "Équipe de Might Guy spécialisée en taijutsu et puissance physique",
+    "details": [
+      "Formée sous la direction de Might Guy, maître du taijutsu",
+      "Rock Lee, Neji Hyuga et Tenten en sont les membres",
+      "Rock Lee ne peut utiliser le ninjutsu mais compense par le taijutsu pur",
+      "Neji est considéré comme le génie de l'équipe avec le Byakugan",
+      "Guy ouvrit les Huit Portes contre Madara, sauvant le monde au prix presque fatal"
+    ],
+    "image": "",
+    "members": ["Might Guy", "Rock Lee", "Neji Hyuga", "Tenten"],
+    "leader": "Might Guy"
+  },
+  {
+    "id": "taka",
+    "name": "Taka / Hebi",
+    "category": "organization",
+    "tags": ["organisation", "taka", "hebi", "sasuke", "suigetsu", "karin", "jugo", "serpent", "faucon", "deserteur"],
+    "summary": "Équipe de Sasuke formée après sa trahison d'Orochimaru",
+    "details": [
+      "Initialement appelée Hebi (Serpent) pour traquer Itachi Uchiha",
+      "Renommée Taka (Faucon) après la mort d'Itachi et l'alliance avec Akatsuki",
+      "Suigetsu Hozuki, Karin Uzumaki et Jugo en sont les membres",
+      "Suigetsu cherche les épées des Sept Épéistes de la Brume",
+      "Karin est une sensorielle Uzumaki, Jugo possède le curse mark d'Orochimaru"
+    ],
+    "image": "",
+    "members": ["Sasuke Uchiha", "Suigetsu Hozuki", "Karin Uzumaki", "Jugo"],
+    "leader": "Sasuke Uchiha"
+  },
+  {
+    "id": "konoha-11",
+    "name": "Konoha 11",
+    "category": "organization",
+    "tags": ["organisation", "konoha", "genin", "next-generation", "ninja", "11", "chunin", "guerre"],
+    "summary": "Les onze genin de Konoha de la génération de Naruto",
+    "details": [
+      "Groupe des onze genin de Konoha promus chūnin après l'examen",
+      "Ne comprend pas Sasuke qui avait quitté le village",
+      "Naruto, Sakura, Shikamaru, Ino, Choji, Hinata, Kiba, Shino, Rock Lee, Neji et Tenten",
+      "Ont participé ensemble à la Quatrième Grande Guerre Ninja",
+      "Symbole de la nouvelle génération de ninjas de Konoha"
+    ],
+    "image": "",
+    "members": ["Naruto Uzumaki", "Sakura Haruno", "Shikamaru Nara", "Ino Yamanaka", "Choji Akimichi", "Hinata Hyuga", "Kiba Inuzuka", "Shino Aburame", "Rock Lee", "Neji Hyuga", "Tenten"],
+    "leader": "Variable"
+  }
+]

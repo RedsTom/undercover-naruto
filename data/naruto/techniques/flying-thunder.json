@@ -1,0 +1,42 @@
+{
+  "id": "flying-thunder",
+  "name": "Hiraishin no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto-backstory",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "teleportation",
+    "espace-temps",
+    "minato",
+    "vitesse",
+    "rang-S",
+    "marque",
+    "konoha",
+    "tobirama",
+    "boruto",
+    "eclair-jaune",
+    "instantanee"
+  ],
+  "summary": "Technique de téléportation instantanée via des sceaux marqués",
+  "details": [
+    "Technique d'espace-temps développée par le Second Hokage Tobirama",
+    "Minato Namikaze en est le maître absolu, l'Éclair Jaune de Konoha",
+    "L'utilisateur place des marques sur des cibles et s'y téléporte",
+    "Permet de se déplacer instantanément sur n'importe quelle distance",
+    "Minato l'utilisait pour des attaques éclair impossibles à suivre",
+    "Boruto l'a récemment maîtrisée avec l'aide de Sasuke"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Minato Namikaze",
+    "Tobirama Senju",
+    "Boruto Uzumaki"
+  ]
+}

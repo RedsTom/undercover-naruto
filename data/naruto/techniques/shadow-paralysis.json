@@ -1,0 +1,43 @@
+{
+  "id": "shadow-paralysis",
+  "name": "Paralysie d'Ombre",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "nara",
+    "ombre",
+    "immobilisation",
+    "shikamaru",
+    "rang-B",
+    "konoha",
+    "tactique",
+    "clan-nara",
+    "etanchéité",
+    "multiple",
+    "précision"
+  ],
+  "summary": "Variante de la technique d'ombre paralysant la cible",
+  "details": [
+    "Technique avancée du clan Nara immobilisant totalement l'ennemi",
+    "Plus rapide et plus complexe que la simple Possession d'Ombre",
+    "Shikamaru l'utilise avec une précision tactique redoutable",
+    "Peut être combinée avec d'autres techniques d'équipe",
+    "L'ombre peut capturer plusieurs cibles simultanément",
+    "Nécessite un QI élevé pour être utilisée efficacement"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Shikamaru Nara",
+    "Shikaku Nara"
+  ]
+}

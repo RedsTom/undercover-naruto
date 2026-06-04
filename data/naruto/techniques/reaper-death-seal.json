@@ -1,0 +1,41 @@
+{
+  "id": "reaper-death-seal",
+  "name": "Shiki Fūjin",
+  "category": "technique",
+  "era": [
+    "naruto-backstory",
+    "naruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kinjutsu",
+    "sacrifice",
+    "shinigami",
+    "rang-S",
+    "sceau",
+    "mort",
+    "minato",
+    "hiruzen",
+    "ame",
+    "demon",
+    "interdit",
+    "ultime"
+  ],
+  "summary": "Sceau démoniaque sacrifiant l'âme de l'utilisateur pour sceller un ennemi",
+  "details": [
+    "Technique de sceau ultime qui scelle l'âme en échange de celle de l'utilisateur",
+    "Le Shinigami (Dieu de la Mort) est invoqué pour exécuter le sceau",
+    "Minato l'a utilisée pour sceller Kurama en Naruto",
+    "Hiruzen l'a utilisée pour tenter d'arrêter Orochimaru",
+    "Les âmes scellées sont piégées dans le ventre du Dieu de la Mort",
+    "Considérée comme la technique de sceau la plus puissante et dangereuse"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Minato Namikaze",
+    "Hiruzen Sarutobi"
+  ]
+}

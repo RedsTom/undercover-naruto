@@ -1,0 +1,41 @@
+{
+  "id": "amaterasu",
+  "name": "Amaterasu",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "flammes-noires",
+    "inextinguible",
+    "rang-S",
+    "mangekyo",
+    "uchiha",
+    "feu",
+    "oeil",
+    "itachi",
+    "sasuke",
+    "brulure-eternelle",
+    "attaque"
+  ],
+  "summary": "Flammes noires inextinguibles du Mangekyo Sharingan",
+  "details": [
+    "Les flammes noires les plus puissantes, censées brûler éternellement",
+    "Apparaissent au point focal du regard de l'utilisateur",
+    "Ne peuvent être éteintes que par Kagutsuchi ou scellées",
+    "Technique signature d'Itachi Uchiha avec son Mangekyo",
+    "Sasuke peut contrôler les flammes avec Kagutsuchi",
+    "Capables de brûler le feu lui-même et de traverser toute défense"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [
+    "feu"
+  ],
+  "users": [
+    "Itachi Uchiha",
+    "Sasuke Uchiha"
+  ]
+}

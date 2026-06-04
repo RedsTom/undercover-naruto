@@ -1,0 +1,44 @@
+{
+  "id": "nagato",
+  "name": "Nagato",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "amegakure",
+    "uzumaki",
+    "akatsuki",
+    "rinnegan",
+    "six-chemins",
+    "douleur",
+    "jiraiya-disciple",
+    "yahiko",
+    "konan",
+    "guerre",
+    "transmigration"
+  ],
+  "summary": "Leader de l'Akatsuki, détenteur du Rinnegan, manipulateur des Six Chemins de Pain",
+  "details": [
+    "Dernier descendant du clan Uzumaki aux côtés de Naruto, doté d'un chakra colossal",
+    "Détenteur du Rinnegan, l'œil légendaire du Sage des Six Chemins hérité de Madara",
+    "Disciple de Jiraiya avec Yahiko et Konan, il apprend le ninjutsu et le idéalisme de la paix",
+    "Crée les Six Chemins de Pain, six cadavres contrôlés à distance chacun avec une capacité unique",
+    "Détruit Konoha avec un Shinra Tensei géant avant d'être vaincu par Naruto et de se racheter",
+    "Sacrifie sa vie pour ressusciter tous les habitants de Konoha avec la technique de la Transmigration",
+    "Son corps devient le réceptacle de la Volonté de Madara, menant à la résurrection de Kaguya"
+  ],
+  "image": "",
+  "clan": "Uzumaki",
+  "village": "Amegakure",
+  "rank": "Akatsuki Leader",
+  "team": "Akatsuki",
+  "jutsu": [
+    "Rinnegan",
+    "Six Paths of Pain",
+    "Shinra Tensei",
+    "Chibaku Tensei",
+    "Soul Dragon"
+  ],
+  "kageTitle": null
+}

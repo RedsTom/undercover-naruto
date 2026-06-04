@@ -1,0 +1,43 @@
+{
+  "id": "susanoo",
+  "name": "Susanoo",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "guerrier-chakra",
+    "defense",
+    "offensif",
+    "rang-S",
+    "mangekyo",
+    "geant",
+    "etherique",
+    "uchiha",
+    "armure",
+    "epée",
+    "bouclier"
+  ],
+  "summary": "Guerrier éthéré géant formé de chakra, manifestation ultime du Mangekyo",
+  "details": [
+    "Troisième pouvoir du Mangekyo Sharingan, forme d'un gigantesque guerrier",
+    "Protège l'utilisateur tout en offrant une puissance offensive massive",
+    "Chaque utilisateur a une couleur et des armes uniques",
+    "Itachi possède les armes légendaires Totsuka no Tsurugi et Yata no Kagami",
+    "Sasuke peut le combiner avec son Kirin et le chakra de Kurama",
+    "Le Susanoo parfait forme une armure complète autour de l'utilisateur"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Itachi Uchiha",
+    "Sasuke Uchiha",
+    "Madara Uchiha",
+    "Kakashi Hatake",
+    "Shisui Uchiha",
+    "Indra Otsutsuki"
+  ]
+}

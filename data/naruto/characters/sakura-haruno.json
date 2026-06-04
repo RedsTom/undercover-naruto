@@ -1,0 +1,48 @@
+{
+  "id": "sakura-haruno",
+  "name": "Sakura Haruno",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "haruno",
+    "team-7",
+    "tsunade-disciple",
+    "medical-nin",
+    "force-surhumaine",
+    "sceau-byakugo",
+    "genin",
+    "chunin",
+    "jonin",
+    "intelligence",
+    "amie-naruto",
+    "femme-sasuke"
+  ],
+  "summary": "Médicale ninja d'élite de Konoha, disciple de Tsunade et membre de Team 7",
+  "details": [
+    "Disciple de la 5e Hokage Tsunade, dont elle a hérité la force surhumaine et le Sceau Byakugo",
+    "Considérée comme la meilleure médicale ninja de sa génération, capable de soigner n'importe quelle blessure",
+    "A libéré le sceau de Kakashi et soigné les blessés de la 4e Grande Guerre Ninja",
+    "A vaincu Sasori avec l'aide de Chiyo, prouvant sa valeur de kunoichi",
+    "A détruit une partie du champ de bataille avec sa force brute lors du combat contre Shin Uchiha",
+    "Mariée à Sasuke Uchiha et mère de Sarada Uchiha",
+    "Rang Jonin, réputée pour son intelligence hors-norme aux examens chunin"
+  ],
+  "image": "",
+  "clan": "Haruno",
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team 7",
+  "jutsu": [
+    "Force Cent",
+    "Katsuyu",
+    "Soin",
+    "Régénération"
+  ],
+  "kageTitle": null
+}

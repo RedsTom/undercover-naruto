@@ -1,0 +1,41 @@
+{
+  "id": "mitsuki",
+  "name": "Mitsuki",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "mitsuki",
+    "orochimaru-fils",
+    "sage",
+    "serpent",
+    "team-7",
+    "artificial",
+    "soleil-lune",
+    "log"
+  ],
+  "summary": "Fils artificiel d'Orochimaru, ninja serpent au Mode Sage inné",
+  "details": [
+    "Création artificielle d'Orochimaru, considéré comme son fils, il possède une nature synthétique unique",
+    "Capable d'activer un Mode Sage (Senjutsu) inné, un exploit inégalé chez les ninjas artificiels",
+    "Maîtrise les techniques de serpent héritées d'Orochimaru, dont la flexibilité et l'extension des membres",
+    "Membre de la nouvelle Team 7 avec Boruto et Sarada, dont il est un loyal et sage compagnon",
+    "Cherche à comprendre sa propre existence et sa volonté, considérant Boruto comme son soleil",
+    "Possède un clone/frère nommé Log (Mitsuki l'original étant la version améliorée)",
+    "Son nom signifie Lumière de la Lune, en contraste avec Boruto qui signifie Lumière de la Feuille"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Genin",
+  "team": "Team 7",
+  "jutsu": [
+    "Sage Mode",
+    "Snake techniques",
+    "Flexibility",
+    "Inorganic Reincarnation"
+  ],
+  "kageTitle": null
+}

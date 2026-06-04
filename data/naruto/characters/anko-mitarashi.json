@@ -1,0 +1,39 @@
+{
+  "id": "anko-mitarashi",
+  "name": "Anko Mitarashi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "orochimaru-disciple",
+    "serpent",
+    "marque-malediction",
+    "examine-chunin",
+    "dango",
+    "anko"
+  ],
+  "summary": "Ancienne disciple d'Orochimaru devenue examinatrice des examens Chunin",
+  "details": [
+    "Ancienne disciple d'Orochimaru, ayant reçu la marque maudite (Cursed Seal) du serpent",
+    "Abandonnée par Orochimaru après avoir échoué à devenir son réceptacle",
+    "Examinatrice de la seconde épreuve des examens Chunin (Forêt de la Mort)",
+    "Maîtrise les techniques de serpent héritées de l'enseignement d'Orochimaru",
+    "Marque maudite incomplète, elle conserve des liens de chakra avec Orochimaru",
+    "Fan déclarée des brochettes de dango (boulettes de riz grillées)",
+    "Réapparaît dans Boruto comme enquêtrice sur les incidents mystérieux"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Tokubetsu Jonin",
+  "team": null,
+  "jutsu": [
+    "Snake techniques",
+    "Curse Mark"
+  ],
+  "kageTitle": null
+}

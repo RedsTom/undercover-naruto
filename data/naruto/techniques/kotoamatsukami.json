@@ -1,0 +1,40 @@
+{
+  "id": "kotoamatsukami",
+  "name": "Kotoamatsukami",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "genjutsu",
+    "shisui",
+    "controle-mental",
+    "invisible",
+    "rang-S",
+    "mangekyo",
+    "manipulation",
+    "uchiha",
+    "esprit",
+    "subtil",
+    "corbeau",
+    "itachi"
+  ],
+  "summary": "Genjutsu ultime contrôlant l'esprit sans que la cible ne le sache",
+  "details": [
+    "Genjutsu le plus puissant, capable de manipuler l'esprit sans détection",
+    "Capacité unique du Mangekyo de Shisui Uchiha",
+    "La cible n'a aucun souvenir d'avoir été manipulée",
+    "Itachi a récupéré l'œil de Shisui et l'a implanté à un corbeau",
+    "Ne peut être utilisé qu'une fois toutes les décennies sans l'œil originel",
+    "Danzo a utilisé Kotoamatsukami lors du conseil des Cinq Kage"
+  ],
+  "image": "",
+  "type": "genjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Shisui Uchiha",
+    "Itachi Uchiha",
+    "Danzo Shimura"
+  ]
+}

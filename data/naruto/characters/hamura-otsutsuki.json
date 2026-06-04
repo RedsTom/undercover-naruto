@@ -1,0 +1,38 @@
+{
+  "id": "hamura-otsutsuki",
+  "name": "Hamura Otsutsuki",
+  "category": "character",
+  "era": [
+    "shippuden-end"
+  ],
+  "tags": [
+    "otsutsuki",
+    "hamura",
+    "byakugan",
+    "tenseigan",
+    "lune",
+    "hyuga-ancetre",
+    "hagoromo-frere"
+  ],
+  "summary": "Frère cadet du Sage des Six Chemins, ancêtre du clan Hyuga et gardien de la Lune",
+  "details": [
+    "Deuxième fils de Kaguya Otsutsuki et frère cadet d'Hagoromo, il l'aide à sceller leur mère",
+    "Détenteur du Byakugan et du Tenseigan, l'équivalent du Rinnegan pour sa lignée",
+    "Ancêtre du clan Hyuga et du clan Otsutsuki de la Lune, qui veille sur le Gedo Mazo scellé",
+    "Après la mort d'Hagoromo, il part sur la Lune avec ses descendants pour surveiller le sceau de Kaguya",
+    "Apparaît spirituellement à Hinata et contribue à libérer Naruto du sceau du Chibaku Tensei",
+    "Son héritage se perpétue à travers le clan Hyuga et le Tenseigan de Toneri Otsutsuki",
+    "Son rôle est moins connu que celui d'Hagoromo mais tout aussi crucial dans l'équilibre du monde"
+  ],
+  "image": "",
+  "clan": "Otsutsuki",
+  "village": null,
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Byakugan",
+    "Tenseigan",
+    "Hamura's Truth-Seeking Balls"
+  ],
+  "kageTitle": null
+}

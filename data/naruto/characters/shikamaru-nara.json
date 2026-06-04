@@ -1,0 +1,44 @@
+{
+  "id": "shikamaru-nara",
+  "name": "Shikamaru Nara",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "nara",
+    "ombre",
+    "strategie",
+    "team-10",
+    "ino-shika-cho",
+    "chuunin",
+    "assistant-hokage",
+    "temari-mari",
+    "intelligence-200",
+    "flemme"
+  ],
+  "summary": "Génie stratégique de Konoha à l'égoïsme assumé, devenu assistant du 7e Hokage",
+  "details": [
+    "Considéré comme le plus grand stratège de sa génération avec un QI de 200+",
+    "Membre de la célèbre formation Ino-Shika-Cho de Team 10 sous Asuma Sarutobi",
+    "Maître des techniques d'ombre (Kagemane no Jutsu) du clan Nara",
+    "A vaincu Hidan de l'Akatsuki grâce à un plan complexe mêlant piège et sacrifice",
+    "Promu Chunin pendant l'examen, il est devenu le conseiller stratégique des Hokage",
+    "Marié à Temari de Suna et père de Shikadai Nara",
+    "Aide Naruto en tant qu'assistant Hokage, gérant l'administration du village"
+  ],
+  "image": "",
+  "clan": "Nara",
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team 10",
+  "jutsu": [
+    "Shadow Possession",
+    "Shadow Paralysis"
+  ],
+  "kageTitle": null
+}

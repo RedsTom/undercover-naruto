@@ -1,0 +1,39 @@
+{
+  "id": "root",
+  "name": "Root (Fondation)",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "organisation",
+    "danzo",
+    "anbu",
+    "sombre",
+    "konoha",
+    "secret",
+    "fondation",
+    "assassinat",
+    "root",
+    "cerveau-lave",
+    "manipulation"
+  ],
+  "summary": "Branche secrète et illégale de l'ANBU de Konoha dirigée par Danzo Shimura",
+  "details": [
+    "Organisation parallèle à l'ANBU officielle, créée et dirigée par Danzo Shimura",
+    "Ses membres sont privés de leurs émotions et de leurs noms par sceau maudit",
+    "Opère dans l'ombre pour la stabilité de Konoha par tous les moyens",
+    "Responsable du massacre du clan Uchiha via Itachi",
+    "Dissoute officiellement après la mort de Danzo durant la Quatrième Guerre"
+  ],
+  "image": "",
+  "members": [
+    "Danzo Shimura",
+    "Sai",
+    "Kabuto Yakushi",
+    "Yamato",
+    "Shin Uchiha"
+  ],
+  "leader": "Danzo Shimura"
+}

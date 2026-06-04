@@ -1,0 +1,40 @@
+{
+  "id": "hidden-lotus",
+  "name": "Lotus Caché",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "portes",
+    "interdit",
+    "rang-A",
+    "bandages",
+    "vitesse",
+    "rock-lee",
+    "guy",
+    "konoha",
+    "combo-aerien",
+    "sacrifice",
+    "ouverture-porte"
+  ],
+  "summary": "Technique de taijutsu interdite libérant les premières portes",
+  "details": [
+    "Technique de taijutsu nécessitant l'ouverture d'au moins une porte",
+    "Considérée comme interdite car elle blesse l'utilisateur",
+    "Rock Lee l'a utilisée contre Gaara lors de l'examen chunin",
+    "Le corps devient rouge vif à cause du flux sanguin accéléré",
+    "La puissance est décuplée mais les dégâts musculaires sont sévères",
+    "Might Guy l'a aussi maîtrisée et utilisée en combat"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "A",
+  "nature": [],
+  "users": [
+    "Rock Lee",
+    "Might Guy"
+  ]
+}

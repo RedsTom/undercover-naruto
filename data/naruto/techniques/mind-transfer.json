@@ -1,0 +1,44 @@
+{
+  "id": "mind-transfer",
+  "name": "Technique de Transfert d'Esprit",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "yamanaka",
+    "esprit",
+    "mental",
+    "ino",
+    "rang-B",
+    "konoha",
+    "possession",
+    "reconnaissance",
+    "clan-yamanaka",
+    "transfert",
+    "vulnerable"
+  ],
+  "summary": "Technique permettant de transférer son esprit dans le corps d'autrui",
+  "details": [
+    "Technique héréditaire du clan Yamanaka",
+    "L'utilisateur projette son esprit dans le corps de la cible",
+    "Pendant le transfert, le corps de l'utilisateur est vulnérable",
+    "Ino Yamanaka l'utilise pour des missions de reconnaissance et d'interrogatoire",
+    "Nécessite une grande concentration et ne dure que quelques secondes",
+    "Une version avancée permet de posséder plusieurs cibles à la fois"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Ino Yamanaka",
+    "Inoichi Yamanaka",
+    "Fu Yamanaka"
+  ]
+}

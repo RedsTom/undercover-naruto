@@ -1,0 +1,35 @@
+{
+  "id": "kumogakure",
+  "name": "Kumogakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-la-foudre",
+    "nuage",
+    "kumo",
+    "raikage",
+    "foudre",
+    "grande-nation",
+    "killer-bee",
+    "jinchuriki",
+    "force-brute"
+  ],
+  "summary": "Village caché des Nuages, perché dans les montagnes du Pays de la Foudre, réputé pour sa puissance militaire",
+  "details": [
+    "Construit au sommet de montagnes élevées, littéralement au-dessus des nuages, dans le Pays de la Foudre",
+    "Dirigé par le Raikage, dont la tradition veut que tous portent le nom honorifique A",
+    "Possède une puissance militaire brute exceptionnelle et une politique expansionniste agressive",
+    "Seul village à avoir eu deux jinchuriki stables et coopératifs : Killer Bee et Yugito",
+    "A tenté de kidnapper Hinata Hyuga pour voler le Byakugan au clan Hyuga de Konoha"
+  ],
+  "image": "",
+  "country": "Pays de la Foudre",
+  "kage": "Raikage",
+  "notableClans": []
+}

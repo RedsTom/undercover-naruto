@@ -1,0 +1,46 @@
+{
+  "id": "minato-namikaze",
+  "name": "Minato Namikaze",
+  "category": "character",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "konoha",
+    "namikaze",
+    "hokage",
+    "eclair-jaune",
+    "hiraishin",
+    "rasengan",
+    "jiraiya-disciple",
+    "pere-naruto",
+    "kushina-mari",
+    "vitesse",
+    "teleportation",
+    "sage-mode",
+    "prophete"
+  ],
+  "summary": "4e Hokage légendaire, l'Éclair Jaune de Konoha au talent inégalé",
+  "details": [
+    "Surnommé l'Éclair Jaune (Yellow Flash), réputé comme le plus rapide de son époque",
+    "Disciple de Jiraiya et créateur du Rasengan, inspiré du Bijūdama",
+    "Maître du Hiraishin (technique de téléportation instantanée), inventé par Tobirama Senju",
+    "A scellé Kurama dans son fils Naruto lors de l'attaque du démon renard, sacrifiant sa vie",
+    "A maîtrisé le Mode Sage de Mont Myôboku, bien qu'imparfait",
+    "A vaincu l'armée d'Iwa pendant la 3e Grande Guerre Ninja en un combat éclair",
+    "Mari de Kushina Uzumaki et père du 7e Hokage Naruto Uzumaki"
+  ],
+  "image": "",
+  "clan": "Namikaze",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Hiraishin",
+    "Rasengan",
+    "Rasenshuriken",
+    "Shiki Fujin",
+    "Mode Sage"
+  ],
+  "kageTitle": "4e Hokage"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "onoki",
+  "name": "Onoki",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "shippuden-end"
+  ],
+  "tags": [
+    "iwa",
+    "tsuchikage",
+    "poussiere",
+    "jinton",
+    "kekkei-tota",
+    "vieux",
+    "tetu",
+    "vol",
+    "mu-eleve",
+    "petite-kurotsuchi"
+  ],
+  "summary": "3e Tsuchikage d'Iwa, plus vieux Kage vivant, maître du Particle Style",
+  "details": [
+    "Troisième Tsuchikage d'Iwagakure, le plus vieux Kage en activité, dépassant les 70 ans",
+    "Seul utilisateur connu du Particle Style (Jinton), une Kekkei Tota capable de désintégrer la matière",
+    "Élève de Mu le 2e Tsuchikage, il a hérité de sa technique de vol et du Particle Style",
+    "Grand-père de Kurotsuchi, il la forme pour devenir sa successeure comme Tsuchikage",
+    "Particulièrement têtu, il change rarement d'avis sauf face à des arguments irréfutables",
+    "Rejoint tardivement l'Alliance Shinobi lors de la 4e Guerre après avoir été convaincu par Naruto",
+    "Malgré son dos fragile, il est capable de porter une île entière avec sa technique de gravité"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Iwagakure",
+  "rank": "Tsuchikage",
+  "team": null,
+  "jutsu": [
+    "Particle Style",
+    "Earth techniques",
+    "Flight",
+    "Weight manipulation"
+  ],
+  "kageTitle": "3e Tsuchikage"
+}

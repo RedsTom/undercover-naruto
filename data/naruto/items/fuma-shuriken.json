@@ -1,0 +1,34 @@
+{
+  "id": "fuma-shuriken",
+  "name": "Fūma Shuriken",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "arme",
+    "shuriken",
+    "lancer",
+    "grand",
+    "ninja",
+    "fuma",
+    "etolie",
+    "projectile",
+    "tranchant",
+    "distance"
+  ],
+  "summary": "Immense shuriken à quatre lames, utilisé comme projectile dévastateur",
+  "details": [
+    "Shuriken géant à quatre lames, bien plus grand qu'un shuriken classique",
+    "Lancé à pleine puissance, il peut trancher des arbres et des rochers",
+    "Peut être utilisé avec un fil métallique pour des trajectories contrôlées",
+    "Naruto l'utilisa de façon mémorable contre Zabuza avec la technique de l'Ombre",
+    "Arme traditionnelle du clan Fūma, adaptée par les ninjas de tous villages"
+  ],
+  "image": "",
+  "wielder": "Variable",
+  "origin": "Clan Fūma"
+}

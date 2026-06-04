@@ -1,0 +1,37 @@
+{
+  "id": "han",
+  "name": "Han",
+  "category": "character",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "iwa",
+    "jinchuriki",
+    "kokuo",
+    "cinq-queues",
+    "vapeur",
+    "futton",
+    "armure-vapeur"
+  ],
+  "summary": "Jinchuriki de Kokuo, imposant guerrier d'Iwa à l'armure de vapeur",
+  "details": [
+    "Jinchuriki de Kokuo, le démon à cinq queues ressemblant à un dauphin-cheval hybride",
+    "Maîtrise le Steam Release (Futton), une Kekkei Genkai qui crée une armure de vapeur surpuissante",
+    "Imposant et massif, son style de combat repose sur la force brute amplifiée par sa vapeur",
+    "Capturé par l'Akatsuki et extrait de son bijuu, il meurt lors de l'extraction",
+    "Ressuscité par l'Edo Tensei, il est forcé de combattre l'Alliance Shinobi durant la 4e Guerre",
+    "Son armure de vapeur lui confère une force et une vitesse dévastatrices au corps à corps"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Iwagakure",
+  "rank": "Jinchuriki",
+  "team": null,
+  "jutsu": [
+    "Steam Release",
+    "Kokuo transformation",
+    "Steam Armor"
+  ],
+  "kageTitle": null
+}

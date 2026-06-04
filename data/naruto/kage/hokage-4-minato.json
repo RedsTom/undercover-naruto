@@ -1,0 +1,31 @@
+{
+  "id": "hokage-4-minato",
+  "name": "Minato Namikaze — 4e Hokage",
+  "category": "kage",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kage",
+    "hokage",
+    "konoha",
+    "namikaze",
+    "eclair-jaune",
+    "rasengan",
+    "hiraishin",
+    "hero",
+    "teleportation"
+  ],
+  "summary": "Quatrième Hokage, l'Éclair Jaune de Konoha, ninja le plus rapide de son temps ayant sacrifié sa vie",
+  "details": [
+    "Surnommé l'Éclair Jaune de Konoha, sa vitesse légendaire avec le Hiraishin était inégalée",
+    "Élève de Jiraiya et créateur du Rasengan, technique qu'il perfectionna avant de la transmettre",
+    "A sacrifié sa vie en scellant Kurama dans son fils Naruto avec le Shiki Fūjin lors de l'attaque de Kyūbi",
+    "Maître absolu du Hiraishin no Jutsu, pouvant se téléporter instantanément via des sceaux marqués",
+    "Mari de Kushina Uzumaki et père de Naruto Uzumaki, le futur Septième Hokage"
+  ],
+  "image": "",
+  "title": "Hokage",
+  "village": "Konohagakure",
+  "person": "Minato Namikaze"
+}

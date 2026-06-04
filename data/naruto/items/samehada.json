@@ -1,0 +1,31 @@
+{
+  "id": "samehada",
+  "name": "Samehada",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "epee",
+    "kiri",
+    "kisame",
+    "vivant",
+    "chakra",
+    "7-epéistes",
+    "epée-vivante",
+    "ecaille",
+    "absorption"
+  ],
+  "summary": "Épée vivante à écailles des Sept Épéistes, qui absorbe le chakra de ses ennemis",
+  "details": [
+    "L'une des sept épées légendaires de Kirigakure",
+    "Recouverte d'écailles qui se hérissent quand elle détecte du chakra",
+    "Absorbe le chakra de l'adversaire et peut le partager avec son porteur",
+    "Possède une conscience propre et peut choisir qui la manie",
+    "Kisame Hoshigaki était son porteur le plus célèbre"
+  ],
+  "image": "",
+  "wielder": "Kisame Hoshigaki",
+  "origin": "Kirigakure"
+}

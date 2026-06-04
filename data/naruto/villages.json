@@ -1,0 +1,272 @@
+[
+  {
+    "id": "konohagakure",
+    "name": "Konohagakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-du-feu", "konoha", "grande-nation", "hokage", "feu", "ninja", "fondateur", "senju", "uchiha", "grande-guerre-ninja", "examen-chunin", "alliance-shinobi"],
+    "summary": "Village caché des feuilles, plus grand village ninja du monde",
+    "details": [
+      "Fondé par Hashirama Senju et Madara Uchiha après la guerre entre les clans Senju et Uchiha",
+      "Surnommé le village caché des feuilles, situé au Pays du Feu",
+      "Abrite les clans les plus prestigieux : Uchiha, Hyuga, Senju, Uzumaki, Nara, Akimichi, Yamanaka, Inuzuka, Aburame, Sarutobi",
+      "La montagne des Hokage sculpte les visages de tous les Hokage dans la falaise",
+      "Centre de nombreuses guerres ninja et de l'examen Chunin"
+    ],
+    "image": "",
+    "country": "Pays du Feu",
+    "kage": "Hokage",
+    "notableClans": ["Uchiha", "Hyuga", "Senju", "Uzumaki", "Nara", "Akimichi", "Yamanaka", "Inuzuka", "Aburame", "Sarutobi"]
+  },
+  {
+    "id": "sunagakure",
+    "name": "Sunagakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-du-vent", "suna", "grande-nation", "kazekage", "vent", "sable", "ninja", "desert", "marionnette", "gaara"],
+    "summary": "Village caché du sable, nation du Vent entourée de désert",
+    "details": [
+      "Situé au Pays du Vent, entouré de déserts et de falaises de sable",
+      "Le Kazekage est le chef du village ; Gaara en est le Cinquième",
+      "Connu pour ses marionnettistes et ses utilisateurs de sable",
+      "A subi des coupes budgétaires sévères menant à l'alliance avec Otogakure contre Konoha",
+      "Troisième Kazekage assassiné par Sasori qui a transformé son corps en marionnette"
+    ],
+    "image": "",
+    "country": "Pays du Vent",
+    "kage": "Kazekage",
+    "notableClans": ["Puppeteer Clan"]
+  },
+  {
+    "id": "kirigakure",
+    "name": "Kirigakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-leau", "kiri", "grande-nation", "mizukage", "eau", "brume", "ninja", "epees", "brouillard", "epéistes", "yagura"],
+    "summary": "Village caché de la brume, nation de l'Eau connu pour sa brutalité passée",
+    "details": [
+      "Situé au Pays de l'Eau, entouré de brouillard permanent",
+      "Le Mizukage est le chef ; Mei Terumi en est la Cinquième",
+      "Célèbre pour les Sept Épéistes de la Brume et l'examen de graduation meurtrier",
+      "Yagura, le Troisième Mizukage, était manipulé par Obito Uchiha via Sharingan",
+      "Clans notables : Hoshigaki, Hozuki, Yuki, Kaguya"
+    ],
+    "image": "",
+    "country": "Pays de l'Eau",
+    "kage": "Mizukage",
+    "notableClans": ["Hoshigaki", "Hozuki", "Yuki", "Kaguya"]
+  },
+  {
+    "id": "kumogakure",
+    "name": "Kumogakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-foudre", "kumo", "grande-nation", "raikage", "foudre", "ninja", "nuage", "jinchuriki", "killer-bee"],
+    "summary": "Village caché des nuages, nation de la Foudre au relief montagneux",
+    "details": [
+      "Situé au Pays de la Foudre, dans les montagnes au-dessus des nuages",
+      "Le Raikage est le chef ; le Quatrième est A, le Cinquième est Darui",
+      "A Always eu deux jinchuriki stables : Killer Bee (Hachibi) et précédemment Yugito (Nibi)",
+      "Connu pour sa puissance militaire brute et sa vitesse",
+      "A tenté de capturer Hinata Hyuga pour obtenir le Byakugan dans le passé"
+    ],
+    "image": "",
+    "country": "Pays de la Foudre",
+    "kage": "Raikage",
+    "notableClans": []
+  },
+  {
+    "id": "iwagakure",
+    "name": "Iwagakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-terre", "iwa", "grande-nation", "tsuchikage", "terre", "roche", "ninja", "deidara", "onoki", "jinton"],
+    "summary": "Village caché de la pierre, nation de la Terre fortifié dans les montagnes",
+    "details": [
+      "Situé au Pays de la Terre, construit dans des falaises rocheuses",
+      "Le Tsuchikage est le chef ; Onoki en est le Troisième, Kurotsuchi la Quatrième",
+      "Onoki est le seul utilisateur connu du Jinton (Release de Poussière), un kekkei tota",
+      "A été en guerre contre Konoha pendant la Troisième Grande Guerre Ninja",
+      "Deidara était un ninja déserteur d'Iwagakure, ayant volé la technique d'argile explosive"
+    ],
+    "image": "",
+    "country": "Pays de la Terre",
+    "kage": "Tsuchikage",
+    "notableClans": []
+  },
+  {
+    "id": "amegakure",
+    "name": "Amegakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-pluie", "ame", "pluie", "ninja", "nagato", "pain", "akatsuki", "guerre", "orivelage", "konan"],
+    "summary": "Village caché de la pluie, déchiré par les guerres et repaire d'Akatsuki",
+    "details": [
+      "Situé au Pays de la Pluie, un petit pays pris en étau entre les grandes nations",
+      "Pain (Nagato) a pris le contrôle du village après avoir tué Hanzo",
+      "A été le quartier général de l'Akatsuki sous la direction de Pain",
+      "Le village a souffert des guerres entre grandes nations qui se faisaient sur son territoire",
+      "Yahiko, Nagato et Konan y ont fondé l'Akatsuki originelle comme groupe de paix"
+    ],
+    "image": "",
+    "country": "Pays de la Pluie",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "takigakure",
+    "name": "Takigakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-cascade", "taki", "cascade", "eau", "ninja", "kakuzu", "petite-nation"],
+    "summary": "Village caché de la cascade, petit village au Pays de la Cascade",
+    "details": [
+      "Situé au Pays de la Cascade, caché derrière une immense cascade",
+      "Kakuzu.originait de ce village avant de devenir un déserteur d'Akatsuki",
+      "Petit village ninjamoins puissant que les cinq grandes nations",
+      "Possède le Héros de l'Eau, un insecte capable de résister au chakra",
+      "A été impliqué dans des conflits mineurs avec Konoha"
+    ],
+    "image": "",
+    "country": "Pays de la Cascade",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "kusagakure",
+    "name": "Kusagakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-lherbe", "kusa", "herbe", "ninja", "petite-nation", "guerre"],
+    "summary": "Village caché de l'herbe, petit village souvent en conflit",
+    "details": [
+      "Situé au Pays de l'Herbe, entre le Pays du Feu et le Pays de la Terre",
+      "A joué un rôle mineur dans les grandes guerres ninja",
+      "Zabuza et l'équipe de Kimimaro y ont été aperçus",
+      "Village relativement faible mais stratégiquement situé",
+      "Itachi Uchiha y a accompli des missions pendant l'époque de l'Akatsuki"
+    ],
+    "image": "",
+    "country": "Pays de l'Herbe",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "yugakure",
+    "name": "Yugakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-des-sources-chaudes", "yugi", "sources-chaudes", "ninja", "petite-nation", "hot-spring"],
+    "summary": "Village caché des sources chaudes, village déclinant du Pays des Sources",
+    "details": [
+      "Situé au Pays des Sources Chaudes",
+      "Ancien village ninja qui a décliné et s'est démilitarisé",
+      "Hidan.en.est originaire avant de rejoindre Akatsuki",
+      "Devenu une station thermique pacifique après avoir abandonné le ninjutsu",
+      "L'un des villages qui ont renoncé à leur statut militaire"
+    ],
+    "image": "",
+    "country": "Pays des Sources",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "shimogakure",
+    "name": "Shimogakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-du-givre", "shimo", "givre", "froid", "ninja", "petite-nation", "glace"],
+    "summary": "Village caché du givre, village secret du Pays du Givre",
+    "details": [
+      "Situé au Pays du Givre, un pays froid et enneigé",
+      "Village mineur avec peu d'informations canoniques",
+      "Apparaît dans les arcs filler de l'anime",
+      "Spécialisé dans les techniques de glace et de froid",
+      "Région isolée et difficile d'accès"
+    ],
+    "image": "",
+    "country": "Pays du Givre",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "hoshigakure",
+    "name": "Hoshigakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-letoile", "hoshi", "etoile", "meteorite", "ninja", "petite-nation"],
+    "summary": "Village caché de l'étoile, village utilisant le chakra de météorite",
+    "details": [
+      "Situé au Pays de l'Étoile, un petit pays montagneux",
+      "Possède une météorite qui confère un chakra spécial mais mortel",
+      "L'entraînement avec la météorite est appelé la formation de l'étoile",
+      "Le village n'est pas reconnu officiellement par les grandes nations",
+      "Narihira, le fondateur, a découvert la météorite il y a 200 ans"
+    ],
+    "image": "",
+    "country": "Pays de l'Étoile",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "otogakure",
+    "name": "Otogakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-du-son", "oto", "son", "orochimaru", "ninja", "experimentation", "curse-mark", "sasuke"],
+    "summary": "Village caché du son, créé par Orochimaru comme base d'expérimentation",
+    "details": [
+      "Fondé par Orochimaru comme couverture pour ses expériences",
+      "Situé au Pays du Son, anciennement Pays du Riz",
+      "Ne fut jamais un véritable village ninja mais un réseau de bases souterraines",
+      "Orochimaru y menait des expériences sur les curse marks et l'immortalité",
+      "Sasuke y a été entraîné après sa trahison de Konoha"
+    ],
+    "image": "",
+    "country": "Pays du Son",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "uzushiogakure",
+    "name": "Uzushiogakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-des-tourbillons", "uzushio", "tourbillon", "uzumaki", "ninja", "scelle", "detruit", "past"],
+    "summary": "Village caché des tourbillons, ancien village Uzumaki détruit",
+    "details": [
+      "Situé au Pays des Tourbillons, une île maintenant détruite",
+      "Village natal du clan Uzumaki, maîtres du scellement (fūinjutsu)",
+      "Détruit pendant les guerres ninja par les villages voisins craignant leur puissance",
+      "Kushina Uzumaki.en.est originaire, tout comme Nagato et Karin",
+      "Konoha et Uzushio étaient alliés ; le symbole du tourbillon orne les vestes de Konoha en leur honneur"
+    ],
+    "image": "",
+    "country": "Pays des Tourbillons",
+    "kage": "Aucun",
+    "notableClans": ["Uzumaki"]
+  },
+  {
+    "id": "tanigakure",
+    "name": "Tanigakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-vallee", "tani", "vallee", "ninja", "petite-nation"],
+    "summary": "Village caché de la vallée, petit village du Pays de la Vallée",
+    "details": [
+      "Situé au Pays de la Vallée",
+      "Petit village ninja sans influence majeure",
+      "Peu d'informations canoniques disponibles",
+      "Région montagneuse avec de nombreuses vallées",
+      "Apparaît brièvement dans l'anime"
+    ],
+    "image": "",
+    "country": "Pays de la Vallée",
+    "kage": "Aucun",
+    "notableClans": []
+  },
+  {
+    "id": "getsugakure",
+    "name": "Getsugakure",
+    "category": "village",
+    "tags": ["village-cache", "pays-de-la-lune", "getsu", "lune", "ninja", "petite-nation"],
+    "summary": "Village caché de la lune, village mineur du Pays de la Lune",
+    "details": [
+      "Situé au Pays de la Lune",
+      "Apparaît dans le troisième film Naruto",
+      "Village insulaire avec une architecture unique",
+      "Peu d'implication dans l'histoire principale",
+      "Michiru et Hare étaient des personnages notables de cette région"
+    ],
+    "image": "",
+    "country": "Pays de la Lune",
+    "kage": "Aucun",
+    "notableClans": []
+  }
+]

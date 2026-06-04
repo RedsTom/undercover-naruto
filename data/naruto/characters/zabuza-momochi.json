@@ -1,0 +1,41 @@
+{
+  "id": "zabuza-momochi",
+  "name": "Zabuza Momochi",
+  "category": "character",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "kiri",
+    "zabuza",
+    "7-epéistes",
+    "kubikiribocho",
+    "demon",
+    "assassin",
+    "brume-sanglante",
+    "haku",
+    "vif",
+    "nukenin"
+  ],
+  "summary": "Le Démon de la Brume Sanglante, épéiste légendaire de Kiri sans pitié",
+  "details": [
+    "Membre des 7 Épéistes de la Brume de Kiri, manie la Kubikiribocho (tranchanteuse de cou) qui se régénère",
+    "Surnommé le Démon de la Brume Sanglante pour avoir massacré tous ses camarades à l'académie en un examen",
+    "Tente un coup d'État contre le 4e Mizukage Yagura avant de devenir nukenin avec son disciple Haku",
+    "Engagé par Gatō pour assassiner Tazuna, il affronte l'Équipe 7 et trouve la mort au combat contre Kakashi",
+    "Pleure sincèrement la mort de Haku, révélant une humanité cachée sous sa façade démoniaque",
+    "Ressuscité par l'Edo Tensei lors de la guerre, il combat aux côtés de Kakashi avant d'être libéré"
+  ],
+  "image": "",
+  "clan": "Momochi",
+  "village": "Kirigakure",
+  "rank": "Jonin (nukenin)",
+  "team": null,
+  "jutsu": [
+    "Kubikiribocho",
+    "Water Dragon",
+    "Silent Killing",
+    "Hidden Mist"
+  ],
+  "kageTitle": null
+}

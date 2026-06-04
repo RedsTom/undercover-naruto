@@ -1,0 +1,41 @@
+{
+  "id": "zetsu",
+  "name": "Zetsu",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "shippuden-end"
+  ],
+  "tags": [
+    "akatsuki",
+    "zetsu",
+    "plante",
+    "kaguya",
+    "espion",
+    "otsutsuki",
+    "deux-personnalites",
+    "noir-blanc",
+    "madara-esclave"
+  ],
+  "summary": "Espion végétal bicéphale de l'Akatsuki, serviteur secret de Kaguya Otsutsuki",
+  "details": [
+    "Membre de l'Akatsuki spécialisé dans l'espionnage, capable de fusionner avec la terre et les plantes",
+    "Possède deux personnalités en un corps : Zetsu Noir (volonté de Kaguya, manipulateur) et Zetsu Blanc (créature du Gedō Mazō)",
+    "Zetsu Noir est en réalité la manifestation de la volonté de Kaguya Otsutsuki, ayant manipulé l'histoire shinobi",
+    "A secrètement orchestré la création d'Indra et Ashura, le cycle de haine Uchiha-Senju, et la chute de Madara",
+    "Zetsu Blanc est une armée de clones créés par le Gedō Mazō, utilisée comme soldats durant la guerre",
+    "Trahit Madara après sa résurrection en lui transperçant le cœur pour ressusciter Kaguya Otsutsuki",
+    "Vaincu finalement par Naruto et Sasuke, mettant fin à des millénaires de manipulations"
+  ],
+  "image": "",
+  "clan": null,
+  "village": null,
+  "rank": null,
+  "team": "Akatsuki",
+  "jutsu": [
+    "Spore technique",
+    "Wood parts",
+    "Kaguya-servant"
+  ],
+  "kageTitle": null
+}

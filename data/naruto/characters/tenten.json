@@ -1,0 +1,41 @@
+{
+  "id": "tenten",
+  "name": "Tenten",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end"
+  ],
+  "tags": [
+    "konoha",
+    "tenten",
+    "armes",
+    "team-guy",
+    "shuriken",
+    "parchemin",
+    "nunchaku",
+    "kunai",
+    "boutique"
+  ],
+  "summary": "Kunoichi spécialiste des armes de jet et invocations de parchemins",
+  "details": [
+    "Membre de Team Guy aux côtés de Rock Lee et Neji Hyuga",
+    "Spécialiste du maniement des armes de jet : shuriken, kunai, nunchaku, épées, etc.",
+    "Utilise des parchemins d'invocation pour déployer un arsenal infini d'armes",
+    "A manié l'éventail Bashosen de Temari pendant la 4e Grande Guerre Ninja",
+    "Rêve de devenir une grande kunoichi comme Tsunade",
+    "A ouvert une boutique d'armes à Konoha après la guerre"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team Guy",
+  "jutsu": [
+    "Weapon Summoning",
+    "Rising Twin Dragons",
+    "Bashosen"
+  ],
+  "kageTitle": null
+}

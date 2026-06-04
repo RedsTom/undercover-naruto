@@ -1,0 +1,35 @@
+{
+  "id": "iwagakure",
+  "name": "Iwagakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-la-terre",
+    "pierre",
+    "iwa",
+    "tsuchikage",
+    "grande-nation",
+    "onoki",
+    "deidara",
+    "kekkei-tota",
+    "jinton"
+  ],
+  "summary": "Village caché de la Pierre, forteresse montagneuse du Pays de la Terre, dirigé par le Tsuchikage",
+  "details": [
+    "Situé au Pays de la Terre, construit dans des falaises rocheuses imprenables et des cavernes naturelles",
+    "Dirigé par le Tsuchikage, Onoki étant le plus vieux Kage et Kurotsuchi la quatrième dirigeante",
+    "Onoki maîtrise le Jinton (Libération de Poussière), un rare kekkei tōta capable de désintégrer toute matière",
+    "Fut en guerre contre Konoha pendant la Troisième Grande Guerre Ninja, conflict long et meurtrier",
+    "Deidara, ninja déserteur d'Iwa, vola la technique d'argile explosive avant de rejoindre l'Akatsuki"
+  ],
+  "image": "",
+  "country": "Pays de la Terre",
+  "kage": "Tsuchikage",
+  "notableClans": []
+}

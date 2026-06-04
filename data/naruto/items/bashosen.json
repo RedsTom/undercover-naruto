@@ -1,0 +1,32 @@
+{
+  "id": "bashosen",
+  "name": "Bashōsen",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "eventail",
+    "temari",
+    "suna",
+    "vent",
+    "fuuton",
+    "grand",
+    "légendaire",
+    "combat-distance",
+    "rafale"
+  ],
+  "summary": "Éventail géant de combat de Temari, capable de générer des ouragans dévastateurs",
+  "details": [
+    "Arme héritée par Temari du clan Kazekage de Suna",
+    "Génère des rafales de vent (Fuuton) d'une puissance destructrice",
+    "Peut balayer des forêts entières et dévier les attaques",
+    "Se replie pour être transportée facilement dans le dos",
+    "Symbole du statut d'élite des ninjas de Sunagakure"
+  ],
+  "image": "",
+  "wielder": "Temari Nara",
+  "origin": "Sunagakure"
+}

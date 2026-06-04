@@ -1,0 +1,32 @@
+{
+  "id": "otogakure",
+  "name": "Otogakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-du-son",
+    "oto",
+    "orochimaru",
+    "son",
+    "experimentation",
+    "curse-mark",
+    "sasuke",
+    "kimimaro"
+  ],
+  "summary": "Village caché du Son, créé par Orochimaru comme couverture pour ses expériences macabres",
+  "details": [
+    "Fondé par Orochimaru comme façade pour ses expériences illégales sur les ninjas et les curse marks",
+    "Situé au Pays du Son (anciennement Pays du Riz), un petit territoire contrôlé par Orochimaru",
+    "Ne fut jamais un véritable village mais un réseau de bases souterraines dédiées à la recherche",
+    "Orochimaru y menait des expériences sur l'immortalité, les curse marks et le clonage",
+    "Sasuke Uchiha y a été entraîné après avoir trahi Konoha, y perfectionnant ses techniques"
+  ],
+  "image": "",
+  "country": "Pays du Son",
+  "kage": "Aucun",
+  "notableClans": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "obito-uchiha",
+  "name": "Obito Uchiha",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "uchiha",
+    "sharingan",
+    "mangekyo",
+    "kamui",
+    "espace-temps",
+    "tobi",
+    "akatsuki",
+    "madara-disciple",
+    "rin",
+    "kakashi-coequipier",
+    "rocher",
+    "reve-mondial"
+  ],
+  "summary": "Ancien compagnon de Kakashi devenu le sombre leader secret de l'Akatsuki",
+  "details": [
+    "Camarade d'équipe de Kakashi et Rin, présumé mort écrasé par un rocher lors d'une mission",
+    "A survécu grâce à Madara qui le sauva et le manipula pour devenir son successeur",
+    "A maîtrisé le Kamui, technique d'espace-temps permettant de se téléporter dans une dimension",
+    "A usurpé l'identité de Madara sous le masque de Tobi pour manipuler l'Akatsuki",
+    "A lancé la 4e Grande Guerre Ninja pour capturer les Bijûs et réaliser le Tsukuyomi Infini",
+    "S'est retourné contre Madara après avoir compris ses véritables intentions, aidant Naruto",
+    "A utilisé le Mokuton (cellules d'Hashirama) et manié le Gédô Mazô"
+  ],
+  "image": "",
+  "clan": "Uchiha",
+  "village": "Konohagakure",
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Kamui",
+    "Sharingan",
+    "Mangekyo",
+    "Wood Release",
+    "Susanoo",
+    "Gunbai"
+  ],
+  "kageTitle": null
+}

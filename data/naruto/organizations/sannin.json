@@ -1,0 +1,37 @@
+{
+  "id": "sannin",
+  "name": "Les Sannins Légendaires",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "organisation",
+    "legende",
+    "jiraiya",
+    "tsunade",
+    "orochimaru",
+    "konoha",
+    "sannin",
+    "hokage",
+    "mythe",
+    "trois-ninjas",
+    "guerre"
+  ],
+  "summary": "Trois ninjas légendaires de Konoha, élèves du Troisième Hokage, aux destins opposés",
+  "details": [
+    "Surnommés les Trois Ninjas Légendaires par Hanzô de la Salamandre après la guerre",
+    "Jiraiya, le Sage des Grenouilles, écrivain et maître de Naruto et Minato",
+    "Tsunade, la plus grande ninja médicale, devenue Cinquième Hokage",
+    "Orochimaru, le génie interdit obsédé par l'immortalité et tous les jutsu",
+    "Chacun maîtrise un mode d'invocation : crapauds, limaces, serpents"
+  ],
+  "image": "",
+  "members": [
+    "Jiraiya",
+    "Tsunade Senju",
+    "Orochimaru"
+  ],
+  "leader": "Aucun (trio légendaire)"
+}

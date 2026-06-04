@@ -1,0 +1,40 @@
+{
+  "id": "reanimation",
+  "name": "Edo Tensei",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kinjutsu",
+    "resurrection",
+    "interdit",
+    "rang-S",
+    "zombie",
+    "mort",
+    "tobirama",
+    "orochimaru",
+    "kabuto",
+    "sacrifice",
+    "ame"
+  ],
+  "summary": "Technique interdite de résurrection des morts",
+  "details": [
+    "Technique interdite inventée par Tobirama Senju",
+    "Ressuscite les morts sous forme de zombies immortels",
+    "Les ressuscités ont un approvisionnement infini de chakra",
+    "Orochimaru et Kabuto l'ont perfectionnée à un niveau extrême",
+    "Nécessite un sacrifice vivant et de l'ADN du défunt",
+    "Kabuto a ressuscité des dizaines de ninjas légendaires durant la guerre"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Tobirama Senju",
+    "Orochimaru",
+    "Kabuto Yakushi"
+  ]
+}

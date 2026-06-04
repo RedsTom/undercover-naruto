@@ -1,0 +1,45 @@
+{
+  "id": "konoha-11",
+  "name": "Konoha 11",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "equipe",
+    "konoha",
+    "generation-naruto",
+    "examine-chunin",
+    "rookie-9",
+    "genin",
+    "promotion",
+    "onze",
+    "amis",
+    "coequipiers"
+  ],
+  "summary": "Génération des onze jeunes ninjas de Konoha ayant passé l'examen chūnin ensemble",
+  "details": [
+    "Regroupe les diplômés de l'Académie de l'année de Naruto",
+    "Inclut les équipes 7, 8, 10 et Guy : Naruto, Sasuke, Sakura, Shikamaru, Ino, Choji, Kiba, Shino, Hinata, Rock Lee, Neji, Tenten",
+    "Shikamaru fut promu chūnin le premier après l'examen mémorable",
+    "Cette génération devint la plus puissante de l'histoire de Konoha",
+    "Chaque membre joua un rôle crucial dans la Quatrième Grande Guerre Ninja"
+  ],
+  "image": "",
+  "members": [
+    "Naruto Uzumaki",
+    "Sasuke Uchiha",
+    "Sakura Haruno",
+    "Shikamaru Nara",
+    "Ino Yamanaka",
+    "Choji Akimichi",
+    "Kiba Inuzuka",
+    "Shino Aburame",
+    "Hinata Hyuga",
+    "Rock Lee",
+    "Neji Hyuga",
+    "Tenten"
+  ],
+  "leader": "Pas de chef officiel"
+}

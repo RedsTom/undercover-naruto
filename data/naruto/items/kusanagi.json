@@ -1,0 +1,32 @@
+{
+  "id": "kusanagi",
+  "name": "Kusanagi",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "epee",
+    "orochimaru",
+    "sasuke",
+    "legendaire",
+    "kusanagi",
+    "serpent",
+    "extensible",
+    "tranchant",
+    "tenue"
+  ],
+  "summary": "Épée légendaire portée par Orochimaru et plus tard par Sasuke Uchiha",
+  "details": [
+    "Épée légendaire de la mythologie japonaise, adaptée dans l'univers Naruto",
+    "Orochimaru la maniait, pouvant l'étendre à volonté pour frapper à distance",
+    "Sasuke Uchiha la reçut après le combat contre Orochimaru",
+    "Particulièrement efficace contre les techniques de régénération",
+    "Connue pour sa dureté et sa capacité à trancher presque tout"
+  ],
+  "image": "",
+  "wielder": "Orochimaru puis Sasuke Uchiha",
+  "origin": "Forge légendaire"
+}

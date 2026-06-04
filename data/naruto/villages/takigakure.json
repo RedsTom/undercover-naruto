@@ -1,0 +1,31 @@
+{
+  "id": "takigakure",
+  "name": "Takigakure",
+  "category": "village",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-la-cascade",
+    "taki",
+    "kakuzu",
+    "eau-heroique",
+    "petite-nation",
+    "cascade",
+    "ninja"
+  ],
+  "summary": "Village caché de la Cascade, petit village dissimulé derrière une chute d'eau majestueuse",
+  "details": [
+    "Situé au Pays de la Cascade, caché derrière une immense chute d'eau qui sert de barrière naturelle",
+    "Kakuzu, célèbre membre de l'Akatsuki, était originaire de ce village avant de devenir déserteur",
+    "Possède le Héros de l'Eau, un insecte sacré capable de résister au chakra et d'accorder des pouvoirs",
+    "Petit village ninja sans la puissance des cinq grandes nations mais doté d'une riche histoire",
+    "A entretenu des relations tendues avec Konoha par le passé lors de conflits territoriaux"
+  ],
+  "image": "",
+  "country": "Pays de la Cascade",
+  "kage": "Aucun",
+  "notableClans": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hokage-6-kakashi",
+  "name": "Kakashi Hatake — 6e Hokage",
+  "category": "kage",
+  "era": [
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "kage",
+    "hokage",
+    "konoha",
+    "hatake",
+    "sharingan",
+    "ninja-copieur",
+    "team-7",
+    "anbu"
+  ],
+  "summary": "Sixième Hokage, le Ninja Copieur au Sharingan, ancien chef de l'ANBU et maître de l'équipe 7",
+  "details": [
+    "Surnommé le Ninja Copieur pour sa capacité à copier plus de mille techniques avec son Sharingan emprunté",
+    "Ancien chef de l'ANBU de Konoha, élève de Minato et futur maître de l'équipe 7 (Naruto, Sakura, Sasuke)",
+    "Reçut le Sharingan de son ami Obito Uchiha, qu'il utilisa pour bâtir sa réputation légendaire",
+    "A brièvement possédé un Susanoo complet grâce aux vestiges du chakra d'Obito",
+    "Prit sa retraite après avoir cédé sa place à Naruto, préférant une vie paisible de retraité"
+  ],
+  "image": "",
+  "title": "Hokage",
+  "village": "Konohagakure",
+  "person": "Kakashi Hatake"
+}

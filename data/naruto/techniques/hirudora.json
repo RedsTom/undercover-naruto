@@ -1,0 +1,38 @@
+{
+  "id": "hirudora",
+  "name": "Hirudora (Tigre du Soir)",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "guy",
+    "tigre",
+    "portes",
+    "air",
+    "rang-S",
+    "septieme-porte",
+    "konoha",
+    "pression",
+    "onde-de-choc",
+    "devastateur",
+    "combat-distance"
+  ],
+  "summary": "Technique de Might Guy via la 7e porte, projetant un tigre d'air comprimé",
+  "details": [
+    "Technique de taijutsu utilisant la 7e Porte : la Porte de la Joie",
+    "Projette un tigre géant d'air comprimé à très haute pression",
+    "L'onde de choc est visible à des kilomètres",
+    "Créée par Might Guy spécifiquement pour combattre à distance",
+    "A été utilisée contre Madara Uchiha sans effet significatif",
+    "La pression de l'air déforme le sol autour de la cible"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Might Guy"
+  ]
+}

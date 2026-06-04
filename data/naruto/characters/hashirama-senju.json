@@ -1,0 +1,42 @@
+{
+  "id": "hashirama-senju",
+  "name": "Hashirama Senju",
+  "category": "character",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "konoha",
+    "senju",
+    "hokage",
+    "fondateur",
+    "bois",
+    "mokuton",
+    "mode-sage",
+    "dieu-shinobi",
+    "madara-rival",
+    "bijuu-distribution",
+    "grand-pere-tsunade"
+  ],
+  "summary": "1er Hokage et fondateur de Konoha, surnommé le Dieu des Shinobis",
+  "details": [
+    "Cofondateur du village de Konoha avec Madara Uchiha, mettant fin aux guerres entre clans",
+    "Premier Hokage de l'histoire, élu pour sa puissance inégalée et sa vision de la paix",
+    "Maître du Mokuton (libération du bois), un Kekkei Genkai rare capable de dompter les Bijûs",
+    "Surnommé le Dieu des Shinobis pour sa puissance surhumaine et sa maîtrise du Mode Sage",
+    "A capturé et distribué les 9 Bijûs aux différents villages pour équilibrer les pouvoirs",
+    "A combattu et vaincu Madara à plusieurs reprises, dont la célèbre bataille du Val de la Fin",
+    "Grand-père de Tsunade, la 5e Hokage"
+  ],
+  "image": "",
+  "clan": "Senju",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Wood Release",
+    "Mode Sage",
+    "Healing"
+  ],
+  "kageTitle": "1er Hokage"
+}

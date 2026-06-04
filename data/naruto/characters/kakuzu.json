@@ -1,0 +1,41 @@
+{
+  "id": "kakuzu",
+  "name": "Kakuzu",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "takigakure",
+    "akatsuki",
+    "coeurs",
+    "argent",
+    "nukenin",
+    "immortel",
+    "hidan-partenaire",
+    "mercenaire",
+    "5-coeurs"
+  ],
+  "summary": "Mercenaire immortel de l'Akatsuki au corps cousu de cœurs volés",
+  "details": [
+    "Ancien membre d'élite de Takigakure, devenu nukenin après avoir tenté d'assassiner le 1er Hokage",
+    "Maintient son immortalité en volant les cœurs de ses victimes, pouvant en stocker jusqu'à cinq",
+    "Chacun de ses cœurs possède un affinité élémentaire, lui permettant de lancer des attaques combinées",
+    "Mercenaire avare, il ne travaille que pour l'argent et calcule chaque action en termes de profit",
+    "Son corps est une masse de fils noirs (Earth Grudge Fear) qui relient ses organes et membres",
+    "Partenaire forcé d'Hidan qu'il ne supporte pas, mais dont il exploite l'immortalité pour les combats",
+    "Vaincu par l'Équipe 10 (Shikamaru, Ino, Choji) et Kakashi, ses cinq cœurs détruits un par un"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Takigakure",
+  "rank": "Jonin (nukenin)",
+  "team": "Akatsuki (Hidan partnership)",
+  "jutsu": [
+    "Earth Grudge Fear",
+    "5 hearts",
+    "Masks",
+    "Elemental attacks"
+  ],
+  "kageTitle": null
+}

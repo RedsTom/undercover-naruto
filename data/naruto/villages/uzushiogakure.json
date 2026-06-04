@@ -1,0 +1,32 @@
+{
+  "id": "uzushiogakure",
+  "name": "Uzushiogakure",
+  "category": "village",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-des-tourbillons",
+    "uzushio",
+    "uzumaki",
+    "detruit",
+    "scellement",
+    "petite-nation",
+    "allié-konoha"
+  ],
+  "summary": "Village caché des Tourbillons, ancien bastion du clan Uzumaki, détruit par les nations voisines",
+  "details": [
+    "Situé au Pays des Tourbillons, une île aujourd'hui dévastée, autrefois prospère et puissante",
+    "Village natal du clan Uzumaki, célèbres maîtres du fūinjutsu (techniques de scellement) inégalés",
+    "Détruit pendant les grandes guerres ninja par les villages voisins craignant la puissance des Uzumaki",
+    "Kushina Uzumaki (mère de Naruto), Nagato et Karin descendent tous de ce clan légendaire",
+    "Konoha était l'allié le plus proche d'Uzushio ; le symbole du tourbillon orne les vestes des ninjas de Konoha"
+  ],
+  "image": "",
+  "country": "Pays des Tourbillons",
+  "kage": "Aucun",
+  "notableClans": [
+    "Uzumaki"
+  ]
+}

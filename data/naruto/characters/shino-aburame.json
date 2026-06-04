@@ -1,0 +1,43 @@
+{
+  "id": "shino-aburame",
+  "name": "Shino Aburame",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "aburame",
+    "insecte",
+    "parasite",
+    "chakra",
+    "team-8",
+    "mysterieux",
+    "silencieux",
+    "lunettes"
+  ],
+  "summary": "Membre énigmatique du clan Aburame, dont le corps sert de nid à des insectes dévoreurs de chakra",
+  "details": [
+    "Membre du clan Aburame, offrant son corps comme nid aux kikaichu dévoreurs de chakra",
+    "Membre de Team 8 sous Kurenai Yuhi, aux côtés de Hinata et Kiba",
+    "Maître des techniques d'insectes : destruction de chakra, pistage, et formation de barrières",
+    "Calme, mystérieux et extrêmement logique, il parle peu mais observe tout",
+    "Ses insectes peuvent dévorer le chakra ennemi, espionner et former des clones",
+    "A combattu durant la 4e Grande Guerre Ninja contre les armées de Madara",
+    "Devenu professeur à l'Académie Ninja de Konoha après la guerre"
+  ],
+  "image": "",
+  "clan": "Aburame",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 8",
+  "jutsu": [
+    "Insect Jutsu",
+    "Insect Dome",
+    "Parasite"
+  ],
+  "kageTitle": null
+}

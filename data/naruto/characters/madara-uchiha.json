@@ -1,0 +1,49 @@
+{
+  "id": "madara-uchiha",
+  "name": "Madara Uchiha",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "uchiha",
+    "fondateur",
+    "sharingan",
+    "mangekyo",
+    "rinnegan",
+    "susanoo",
+    "akatsuki-ombre",
+    "otsutsuki",
+    "kaguya",
+    "dieu-shinobi",
+    "rival-hashirama",
+    "gunbai",
+    "guerre-perpetuelle"
+  ],
+  "summary": "Légendaire cofondateur de Konoha et shinobi le plus puissant de son époque",
+  "details": [
+    "Cofondateur de Konoha avec Hashirama Senju, son rival et ami devenu ennemi",
+    "Premier Uchiha à éveiller le Mangekyo Sharingan et le Rinnegan après avoir greffé des cellules d'Hashirama",
+    "A combattu Hashirama au Val de la Fin et fut donné pour mort, avant de survivre en secret",
+    "A manipulé Obito et l'Akatsuki depuis l'ombre pour réaliser le Tsukuyomi Infini",
+    "Ressuscité par Kabuto via Edo Tensei puis par le Rinneban, il est devenu le Jinchuriki du Jûbi",
+    "A atteint un niveau divin, capable d'invoquer le Susanoo parfait et de manipuler la réalité",
+    "A finalement trahi et vaincu par Kaguya Ōtsutsuki, dont il était l'instrument involontaire"
+  ],
+  "image": "",
+  "clan": "Uchiha",
+  "village": "Konohagakure",
+  "rank": null,
+  "team": null,
+  "jutsu": [
+    "Susanoo",
+    "Rinnegan",
+    "Wood Release",
+    "Fire Ball",
+    "Gunbai",
+    "Infinite Tsukuyomi"
+  ],
+  "kageTitle": null
+}

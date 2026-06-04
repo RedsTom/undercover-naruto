@@ -1,0 +1,45 @@
+{
+  "id": "gentle-fist",
+  "name": "Poing Doux (Juken)",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "taijutsu",
+    "hyuga",
+    "byakugan",
+    "points-chakra",
+    "precision",
+    "rang-A",
+    "kekkei-genkai",
+    "konoha",
+    "style-combat",
+    "chirurgical",
+    "blocage",
+    "meridiens"
+  ],
+  "summary": "Style de combat du clan Hyuga ciblant les points de chakra",
+  "details": [
+    "Style de combat spécifique au clan Hyuga utilisant le Byakugan",
+    "Frappe directement les points de chakra du corps pour bloquer son flux",
+    "Peut paralyser des membres ou tuer en bloquant des organes vitaux",
+    "Style d'une précision chirurgicale, chaque coup vise un point précis",
+    "Neji Hyuga en était le maître incontesté de sa génération",
+    "Le Poing Serein est une version avancée réservée à la branche principale"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "A",
+  "nature": [],
+  "users": [
+    "Neji Hyuga",
+    "Hinata Hyuga",
+    "Hiashi Hyuga",
+    "Hanabi Hyuga"
+  ]
+}

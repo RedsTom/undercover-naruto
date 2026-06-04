@@ -1,0 +1,41 @@
+{
+  "id": "puppet-jutsu",
+  "name": "Kugutsu no Jutsu",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "marionnette",
+    "sasori",
+    "kankuro",
+    "suna",
+    "fils-chakra",
+    "poison",
+    "rang-B",
+    "poupee",
+    "combat-distance",
+    "mecanique",
+    "chiyo"
+  ],
+  "summary": "Technique de manipulation de marionnettes de combat",
+  "details": [
+    "Art ninja spécialisé des ninjas de Sunagakure",
+    "Les marionnettistes contrôlent leurs poupées avec des fils de chakra",
+    "Sasori est le plus grand marionnettiste de l'histoire",
+    "Kankuro utilise des marionnettes mécaniques avec des armes cachées",
+    "Les marionnettes peuvent être empoisonnées, explosées ou transformées",
+    "Sasori pouvait contrôler jusqu'à 100 marionnettes simultanément"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Kankuro",
+    "Sasori",
+    "Chiyo"
+  ]
+}

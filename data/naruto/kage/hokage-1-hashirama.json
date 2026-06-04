@@ -1,0 +1,32 @@
+{
+  "id": "hokage-1-hashirama",
+  "name": "Hashirama Senju — 1er Hokage",
+  "category": "kage",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kage",
+    "hokage",
+    "konoha",
+    "senju",
+    "fondateur",
+    "dieu-shinobi",
+    "bois",
+    "mokuton",
+    "legende",
+    "senju-hashirama"
+  ],
+  "summary": "Premier Hokage, fondateur légendaire de Konoha, connu comme le Dieu des Shinobis pour sa puissance inégalée",
+  "details": [
+    "Fondateur du village caché de Konoha avec son ancien rival Madara Uchiha après des siècles de guerre",
+    "Surnommé le Dieu des Shinobis, considéré comme le ninja le plus puissant de son époque",
+    "Maître unique du Mokuton (Libération de Bois), un kekkei genkai capable de créer des forêts entières",
+    "A capturé et distribué les neuf bêtes à queues entre les grandes nations pour maintenir l'équilibre",
+    "Grand-père de Tsunade, capable de maîtriser le Mode Sage et de soigner sans gestes"
+  ],
+  "image": "",
+  "title": "Hokage",
+  "village": "Konohagakure",
+  "person": "Hashirama Senju"
+}

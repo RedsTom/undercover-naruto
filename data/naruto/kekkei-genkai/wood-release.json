@@ -1,0 +1,46 @@
+{
+  "id": "wood-release",
+  "name": "Mokuton (Wood Release)",
+  "category": "kekkei-genkai",
+  "era": [
+    "naruto-backstory",
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "kekkei-genkai",
+    "bois",
+    "hashirama",
+    "yamato",
+    "eau",
+    "terre",
+    "mokuton",
+    "création",
+    "defense",
+    "bijuu"
+  ],
+  "summary": "Kekkei Genkai combinant l'Eau et la Terre pour créer et contrôler le bois",
+  "details": [
+    "Fusion des natures Eau et Terre pour générer du bois",
+    "Capacité unique d'Hashirama Senju, le Premier Hokage",
+    "Peut créer des forêts entières et des structures en un instant",
+    "Particulièrement efficace pour capturer et contrôler les bijūs",
+    "Yamato (Tenzo) est le seul autre utilisateur connu par expérimentation"
+  ],
+  "image": "",
+  "natures": [
+    "Eau",
+    "Terre"
+  ],
+  "clans": [
+    "Senju"
+  ],
+  "users": [
+    "Hashirama Senju",
+    "Yamato",
+    "Danzo Shimura",
+    "Obito Uchiha"
+  ]
+}

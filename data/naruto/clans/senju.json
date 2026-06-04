@@ -1,0 +1,37 @@
+{
+  "id": "senju",
+  "name": "Clan Senju",
+  "category": "clan",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "bois",
+    "fondateur",
+    "senju",
+    "hashirama",
+    "hokage",
+    "elite",
+    "rival-uchiha",
+    "mokuton",
+    "corps"
+  ],
+  "summary": "Clan fondateur de Konoha, descendant d'Asura Otsutsuki aux mille compétences",
+  "details": [
+    "Descend d'Asura Otsutsuki, frère d'Indra et ancêtre de la volonté du feu",
+    "Possède une vitalité exceptionnelle et un chakra puissant",
+    "Hashirama Senju, le Premier Hokage, maîtrise le Mokuton unique au monde",
+    "Tobirama Senju, le Second Hokage, créa de nombreuses techniques interdites",
+    "Tsunade Senju, la Cinquième Hokage, est la plus grande ninja médicale"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Hashirama Senju",
+    "Tobirama Senju",
+    "Tsunade Senju"
+  ]
+}

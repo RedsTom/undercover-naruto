@@ -1,0 +1,39 @@
+{
+  "id": "kirin",
+  "name": "Kirin",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "sasuke",
+    "foudre-naturelle",
+    "orage",
+    "rang-S",
+    "foudre",
+    "itachi",
+    "atmosphere",
+    "katon-combo",
+    "vitesse-lumiere",
+    "devastateur"
+  ],
+  "summary": "Technique de Sasuke utilisant la foudre naturelle des nuages",
+  "details": [
+    "Technique qui utilise la foudre naturelle des nuages d'orage",
+    "Sasuke chauffe l'atmosphère avec un Katon pour créer des nuages",
+    "La foudre frappe à la vitesse de la lumière, impossible à esquiver",
+    "Nécessite une préparation météorologique préalable",
+    "Technique dévastatrice utilisée contre Itachi Uchiha",
+    "Considérée comme l'une des techniques de foudre les plus puissantes"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "S",
+  "nature": [
+    "foudre"
+  ],
+  "users": [
+    "Sasuke Uchiha"
+  ]
+}

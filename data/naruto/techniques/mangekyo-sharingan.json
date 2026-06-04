@@ -1,0 +1,45 @@
+{
+  "id": "mangekyo-sharingan",
+  "name": "Mangekyo Sharingan",
+  "category": "technique",
+  "era": [
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "dojutsu",
+    "uchiha",
+    "evolution",
+    "tragique",
+    "rang-S",
+    "susanoo",
+    "amaterasu",
+    "kekkei-genkai",
+    "oeil",
+    "mangekyo",
+    "pouvoir-unique",
+    "cecite"
+  ],
+  "summary": "Évolution suprême du Sharingan aux pouvoirs dévastateurs",
+  "details": [
+    "S'éveille après avoir vécu la perte d'un être cher",
+    "Chaque utilisateur développe des capacités uniques",
+    "Confère l'accès au Susanoo, au Tsukuyomi et à l'Amaterasu selon l'utilisateur",
+    "L'utilisation répétée mène progressivement à la cécité",
+    "Peut être transplanté pour éviter la perte de vision (échange entre frères)",
+    "L'Eternal Mangekyo est obtenu en transplantant les yeux d'un parent proche"
+  ],
+  "image": "",
+  "type": "dojutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Sasuke Uchiha",
+    "Itachi Uchiha",
+    "Madara Uchiha",
+    "Obito Uchiha",
+    "Shisui Uchiha",
+    "Kakashi Hatake"
+  ]
+}

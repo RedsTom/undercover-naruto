@@ -1,0 +1,43 @@
+{
+  "id": "hyuga",
+  "name": "Clan Hyuga",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "byakugan",
+    "dojutsu",
+    "noble",
+    "gentle-fist",
+    "elite",
+    "branche",
+    "juken",
+    "sceau",
+    "vision-360"
+  ],
+  "summary": "Clan noble de Konoha au Byakugan, maîtres du Poing Doux héréditaire",
+  "details": [
+    "Possède le Byakugan offrant une vision à 360 degrés et la perception du chakra",
+    "Divisé en branche principale et branche secondaire avec le sceau de l'oiseau en cage",
+    "Le clan le plus ancien et prestigieux de Konoha",
+    "Maîtres du Gentle Fist (Juken) qui frappe les tenketsu pour bloquer le chakra",
+    "Hinata et Neji Hyuga sont les membres les plus célèbres de la nouvelle génération"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [
+    "Byakugan"
+  ],
+  "notableMembers": [
+    "Hinata Hyuga",
+    "Neji Hyuga",
+    "Hiashi Hyuga",
+    "Hanabi Hyuga"
+  ]
+}

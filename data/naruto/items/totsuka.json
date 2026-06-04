@@ -1,0 +1,31 @@
+{
+  "id": "totsuka",
+  "name": "Totsuka no Tsurugi",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "epee",
+    "itachi",
+    "susanoo",
+    "sceau",
+    "legendaire",
+    "totsuka",
+    "eternel",
+    "esprit",
+    "illusions"
+  ],
+  "summary": "Épée spirituelle d'Itachi Uchiha, capable de sceller éternellement quiconque est transpercé",
+  "details": [
+    "Épée éthérée maniée par le Susanoo d'Itachi Uchiha",
+    "Scelle dans une illusion éternelle quiconque est percé par sa lame",
+    "Orochimaru fut scellé par cette épée lors du combat contre Itachi",
+    "Considérée comme l'une des armes les plus puissantes de l'univers",
+    "Ne possède pas de forme physique, uniquement spirituelle via le Susanoo"
+  ],
+  "image": "",
+  "wielder": "Itachi Uchiha",
+  "origin": "Susanoo d'Itachi Uchiha"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "shimura",
+  "name": "Clan Shimura",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "danzo",
+    "root",
+    "sombre",
+    "fondateur",
+    "conservateur",
+    "ombre",
+    "politique",
+    "anbu",
+    "militariste"
+  ],
+  "summary": "Clan de Konoha dont Danzo Shimura, fondateur de la Root et ombre du village",
+  "details": [
+    "Danzo Shimura fut le leader de la Root, l'unité noire de Konoha",
+    "Rival acharné d'Hiruzen Sarutobi pour le poste de Hokage",
+    "Le clan est l'un des plus anciens et influents de Konoha",
+    "Connu pour sa vision militariste et ses méthodes impitoyables",
+    "Danzo s'est greffé un bras entier de Sharingan et le Mokuton de Hashirama"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Danzo Shimura"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tsunade",
+  "name": "Tsunade Senju",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "senju",
+    "hokage",
+    "sannin",
+    "medical",
+    "force-surhumaine",
+    "sceau-byakugo",
+    "joueuse",
+    "grand-pere-hashirama",
+    "frere-nawaki",
+    "amour-dan"
+  ],
+  "summary": "5e Hokage et plus grande médicale ninja du monde shinobi, l'une des trois Sannin",
+  "details": [
+    "Petite-fille du 1er Hokage Hashirama Senju et membre du clan Senju",
+    "Considérée comme la meilleure médicale ninja de tous les temps, capable de soigner l'incurable",
+    "Développeuse du Sceau Byakugo et technique de Force Cent (force surhumaine surpuissante)",
+    "L'une des trois Sannin légendaires avec Jiraiya et Orochimaru, élèves d'Hiruzen",
+    "A surmonté sa phobie du sang grâce à Naruto et est devenue 5e Hokage",
+    "A formé Sakura Haruno comme sa disciple directe, perpétuant son héritage médical",
+    "Connue pour sa chance légendaire au jeu et son amour perdu Dan Kato"
+  ],
+  "image": "",
+  "clan": "Senju",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Katsuyu",
+    "Force Cent",
+    "Régénération"
+  ],
+  "kageTitle": "5e Hokage"
+}

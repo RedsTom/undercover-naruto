@@ -1,0 +1,45 @@
+{
+  "id": "otsutsuki",
+  "name": "Clan Otsutsuki",
+  "category": "clan",
+  "era": [
+    "naruto-backstory",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "otsutsuki",
+    "celeste",
+    "dojutsu",
+    "chakra",
+    "kaguya",
+    "hagoromo",
+    "extraterrestre",
+    "arbre-divin",
+    "divin",
+    "tsukuyomi-infini"
+  ],
+  "summary": "Clan céleste dont l'ancêtre Kaguya apporta le chakra au monde ninja",
+  "details": [
+    "Kaguya Otsutsuki, première détentrice du chakra, venue de l'espace via l'Arbre Divin",
+    "Ses fils Hagoromo et Hamura devinrent les ancêtres de tous les ninjas",
+    "Parcourent l'univers pour récolter le chakra des planètes via les God Trees",
+    "Possèdent les dojutsu ultimes : Rinnegan, Byakugan originel et Tenseigan",
+    "Momoshiki, Kinshiki et Isshiki sont les principaux antagonistes de l'ère Boruto"
+  ],
+  "image": "",
+  "village": null,
+  "kekkeiGenkai": [
+    "Rinnegan",
+    "Byakugan",
+    "Tenseigan"
+  ],
+  "notableMembers": [
+    "Kaguya Otsutsuki",
+    "Hagoromo Otsutsuki",
+    "Hamura Otsutsuki",
+    "Momoshiki Otsutsuki",
+    "Isshiki Otsutsuki"
+  ]
+}

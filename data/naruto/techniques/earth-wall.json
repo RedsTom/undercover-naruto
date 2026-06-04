@@ -1,0 +1,47 @@
+{
+  "id": "earth-wall",
+  "name": "Doton : Doryūheki",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "terre",
+    "doton",
+    "mur",
+    "defense",
+    "iwa",
+    "rang-C",
+    "onoki",
+    "jiraiya",
+    "barricade",
+    "protection",
+    "polyvalent"
+  ],
+  "summary": "Technique de terre créant des murs défensifs",
+  "details": [
+    "Technique de défense utilisant l'élément terre",
+    "Spécialité des ninjas d'Iwagakure",
+    "Peut créer des murs, des pieux ou des golems de terre",
+    "Technique très versatile utilisée aussi pour les pièges",
+    "Onoki est le maître incontesté des techniques de terre",
+    "Peut être combinée avec d'autres éléments pour des constructions"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "C",
+  "nature": [
+    "terre"
+  ],
+  "users": [
+    "Onoki",
+    "Kurotsuchi",
+    "Jiraiya",
+    "Hashirama Senju"
+  ]
+}

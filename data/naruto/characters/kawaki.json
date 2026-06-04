@@ -1,0 +1,43 @@
+{
+  "id": "kawaki",
+  "name": "Kawaki",
+  "category": "character",
+  "era": [
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "kawaki",
+    "karma",
+    "kara",
+    "jigen",
+    "isshiki",
+    "boruto-rival",
+    "karma-frere",
+    "naruto-adopte",
+    "sombre"
+  ],
+  "summary": "Réceptacle du Karma d'Isshiki, fils adoptif de Naruto, rival-frère de Boruto",
+  "details": [
+    "Enfant martyrisé vendu à Kara par son père, devient le réceptacle du Karma d'Isshiki Otsutsuki",
+    "Marqué du Karma qui le transforme progressivement en Isshiki, il lutte pour garder son identité",
+    "Adopté par Naruto qui voit en lui un fils, il trouve une famille à Konoha pour la première fois",
+    "Maîtrise Sukunahikona (réduction) et Daikokuten (stockage dimensionnel) via son Karma",
+    "Son corps peut se transformer en armes, créant des lames et des canons à partir de ses membres",
+    "Sa relation avec Boruto passe de frères rivaux à une confrontation inévitable quand leurs Karma s'éveillent",
+    "Dans Boruto: Two Blue Vortex, il semble être devenu l'antagoniste principal avec des motivations obscures"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Genin",
+  "team": null,
+  "jutsu": [
+    "Karma",
+    "Sukunahikona",
+    "Daikokuten",
+    "Arm transformation",
+    "Scientific ninja tools"
+  ],
+  "kageTitle": null
+}

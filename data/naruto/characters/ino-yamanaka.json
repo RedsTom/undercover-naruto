@@ -1,0 +1,44 @@
+{
+  "id": "ino-yamanaka",
+  "name": "Ino Yamanaka",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "yamanaka",
+    "esprit",
+    "team-10",
+    "ino-shika-cho",
+    "fleuriste",
+    "medical",
+    "sakura-rivale",
+    "sai-mari",
+    "inojin-mere"
+  ],
+  "summary": "Kunoichi spécialiste des techniques mentales du clan Yamanaka et médicale ninja",
+  "details": [
+    "Héritière du clan Yamanaka, experte en manipulation de l'esprit (Mind Transfer)",
+    "Membre de la formation Ino-Shika-Cho de Team 10 sous Asuma Sarutobi",
+    "A développé des compétences médicales sous l'enseignement de Tsunade",
+    "Aide à la gestion de la fleuriste familiale Yamanaka Flowers",
+    "A surmonté sa rivalité avec Sakura pour devenir une alliée et amie fidèle",
+    "Mariée à Sai et mère d'Inojin Yamanaka",
+    "Particulièrement compétente en techniques d'échange mental et de télépathie"
+  ],
+  "image": "",
+  "clan": "Yamanaka",
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": "Team 10",
+  "jutsu": [
+    "Mind Transfer",
+    "Mind Switch",
+    "Medical"
+  ],
+  "kageTitle": null
+}

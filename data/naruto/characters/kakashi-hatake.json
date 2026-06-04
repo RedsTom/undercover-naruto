@@ -1,0 +1,52 @@
+{
+  "id": "kakashi-hatake",
+  "name": "Kakashi Hatake",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "hatake",
+    "sharingan",
+    "copieur",
+    "foudre",
+    "raiton",
+    "chidori",
+    "team-7",
+    "anbu",
+    "6e-hokage",
+    "minato-eleve",
+    "pere-sakumo",
+    "kamui",
+    "naruto-mentor",
+    "rival-guy"
+  ],
+  "summary": "Ninja légendaire copieur au Sharingan, 6e Hokage et mentor de Team 7",
+  "details": [
+    "Surnommé le Ninja Copieur pour avoir copié plus d'un millier de techniques avec son Sharingan",
+    "Inventeur du Chidori et du Raikiri, maître inégalé de l'affinité foudre (Raiton)",
+    "Ancien membre de l'ANBU et élève du 4e Hokage Minato Namikaze",
+    "A reçu le Sharingan de son coéquipier Obito Uchiha, développant plus tard le Kamui",
+    "A formé et encadré les membres de Team 7 : Naruto, Sasuke et Sakura",
+    "A succédé à Tsunade en tant que 6e Hokage avant de passer le flambeau à Naruto",
+    "Fils du célèbre Sakumo Hatake (le Croc Blanc de Konoha)"
+  ],
+  "image": "",
+  "clan": "Hatake",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": "Team 7 / ANBU",
+  "jutsu": [
+    "Chidori",
+    "Raikiri",
+    "Sharingan",
+    "Kamui",
+    "Susanoo",
+    "Earth Wall"
+  ],
+  "kageTitle": "6e Hokage"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "konohamaru-sarutobi",
+  "name": "Konohamaru Sarutobi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "sarutobi",
+    "petit-fils",
+    "naruto-disciple",
+    "genin",
+    "moegi",
+    "udon",
+    "3e-hokage-petit-fils",
+    "boruto-maitre"
+  ],
+  "summary": "Petit-fils du 3e Hokage et disciple de Naruto, devenu Jonin et mentor de la relève",
+  "details": [
+    "Petit-fils du 3e Hokage Hiruzen Sarutobi, il vouait une admiration à Naruto dès l'enfance",
+    "Disciple auto-proclamé de Naruto, il apprit le Rasengan et le Kage Bunshin",
+    "A maîtrisé le Mode Sage (imparfait) et le Rasengan, devenant un redoutable Jonin",
+    "A vaincu un Pain (voie des animaux) à lui seul pendant l'invasion de Konoha",
+    "Devient le mentor de l'équipe de Boruto (Team 7 nouvelle génération)",
+    "A le grade de Jonin et dirige la nouvelle génération de Konoha",
+    "Garde la mémoire de son grand-père et de Naruto comme modèles du ninja idéal"
+  ],
+  "image": "",
+  "clan": "Sarutobi",
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Rasengan",
+    "Kage Bunshin",
+    "Sexy Jutsu"
+  ],
+  "kageTitle": null
+}

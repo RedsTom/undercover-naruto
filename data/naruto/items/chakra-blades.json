@@ -1,0 +1,31 @@
+{
+  "id": "chakra-blades",
+  "name": "Lames de Chakra (Chakra Blades)",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "lame",
+    "chakra",
+    "asuma",
+    "konoha",
+    "vent",
+    "fuuton",
+    "poing",
+    "dague",
+    "tranchant"
+  ],
+  "summary": "Paire de dagues transmettant le chakra de leur utilisateur pour trancher toute chose",
+  "details": [
+    "Armes de prédilection d'Asuma Sarutobi",
+    "Peuvent canaliser le chakra pour créer une lame tranchante invisible",
+    "Asuma y insufflait son affinité Vent pour décupler leur pouvoir",
+    "Héritées par Shikamaru après la mort d'Asuma durant la Quatrième Guerre",
+    "Fabriquées dans un métal spécial qui conduit parfaitement le chakra"
+  ],
+  "image": "",
+  "wielder": "Asuma Sarutobi / Shikamaru Nara",
+  "origin": "Konohagakure"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "lightning-blade",
+  "name": "Raiton : Lame de Foudre",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "foudre",
+    "raiton",
+    "paralysie",
+    "rang-C",
+    "kakashi",
+    "sasuke",
+    "darui",
+    "raikage",
+    "kumo",
+    "vitesse",
+    "eclair"
+  ],
+  "summary": "Technique de foudre projetant des éclairs destructeurs",
+  "details": [
+    "Nature de foudre, l'une des cinq natures élémentaires",
+    "Spécialité des ninjas de Kumogakure",
+    "Kakashi Hatake est célèbre pour ses techniques de foudre",
+    "Sasuke combine le Chidori avec sa nature de foudre",
+    "Permet de paralyser les muscles avant même l'impact",
+    "Le Quatrième Raikage l'utilise pour augmenter sa vitesse"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "C",
+  "nature": [
+    "foudre"
+  ],
+  "users": [
+    "Kakashi Hatake",
+    "Sasuke Uchiha",
+    "Darui",
+    "A (4e Raikage)",
+    "Killer Bee"
+  ]
+}

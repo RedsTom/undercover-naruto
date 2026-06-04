@@ -1,0 +1,38 @@
+{
+  "id": "sekizo",
+  "name": "Sekizō (Éléphant du Soir)",
+  "category": "technique",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "guy",
+    "elephant",
+    "portes",
+    "rang-S",
+    "coups-de-poing",
+    "konoha",
+    "8e-porte",
+    "rapide",
+    "pression-air",
+    "impacts-multiples",
+    "devastateur"
+  ],
+  "summary": "Technique de Might Guy libérant une série de coups de poing d'air comprimé",
+  "details": [
+    "Technique de taijutsu de la 8e Porte : la Porte de la Mort",
+    "Libère une série de coups de poing d'air comprimé",
+    "Chaque coup prend la forme d'une tête d'éléphant",
+    "Les impacts sont si puissants qu'ils déforment l'espace",
+    "A failli tuer Madara Uchiha, le brisant en deux",
+    "Représente l'apogée du taijutsu avant Night Guy"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "S",
+  "nature": [],
+  "users": [
+    "Might Guy"
+  ]
+}

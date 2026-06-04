@@ -1,0 +1,44 @@
+{
+  "id": "sai",
+  "name": "Sai",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "root",
+    "anbu",
+    "danzo",
+    "dessin",
+    "encre",
+    "team-7",
+    "ino-mari",
+    "emotionless",
+    "frere-shin"
+  ],
+  "summary": "Ancien membre de la Racine de Danzo devenu artiste ninja et membre de Team 7",
+  "details": [
+    "Ancien membre de la Racine (Root) de Danzo, privé d'émotions par l'entraînement",
+    "Maître des techniques d'encre et dessin : invocation d'animaux et créatures par pinceau",
+    "A rejoint la nouvelle Team 7 avec Naruto et Sakura après le départ de Sasuke",
+    "A progressivement appris à ressentir et exprimer des émotions grâce à Naruto et Ino",
+    "Marié à Ino Yamanaka et père d'Inojin Yamanaka",
+    "Aide à la gestion des affaires de Konoha en tant que ninja d'élite",
+    "A tué son frère Shin lors de l'entraînement Root, traumatisme qui le hante longtemps"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team 7",
+  "jutsu": [
+    "Super Beast Scroll",
+    "Ink Techniques",
+    "Drawing"
+  ],
+  "kageTitle": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": "darui",
+  "name": "Darui",
+  "category": "character",
+  "era": [
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "kumo",
+    "darui",
+    "raikage",
+    "orage",
+    "storm-release",
+    "lieu-tenant",
+    "faineant",
+    "kumo-elite",
+    "guerre-allie"
+  ],
+  "summary": "5e Raikage de Kumo, lieutenant flegmatique au Black Lightning dévastateur",
+  "details": [
+    "Cinquième Raikage de Kumogakure, choisi par A pour lui succéder après la guerre",
+    "Lieutenant dévoué du 4e Raikage, il exécute les missions avec une efficacité déconcertante",
+    "Maître du Black Lightning et du Storm Release (Ranton), une rare combinaison d'éléments",
+    "À l'apparence nonchalante et paresseuse, mais devient redoutablement sérieux au combat",
+    "A combattu aux côtés de l'Alliance Shinobi lors de la 4e Grande Guerre, affrontant les frères Gold et Silver",
+    "Gouverne Kumo dans l'ère Boruto avec sagesse, entouré de ses disciples et gardes"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kumogakure",
+  "rank": "Raikage",
+  "team": null,
+  "jutsu": [
+    "Black Lightning",
+    "Storm Release",
+    "Water techniques"
+  ],
+  "kageTitle": "5e Raikage"
+}

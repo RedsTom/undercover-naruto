@@ -1,0 +1,43 @@
+{
+  "id": "mangekyo",
+  "name": "Mangekyo Sharingan",
+  "category": "kekkei-genkai",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "dojutsu",
+    "uchiha",
+    "evolution",
+    "mangekyo",
+    "susanoo",
+    "amaterasu",
+    "kamui",
+    "tsukuyomi",
+    "pouvoir",
+    "sacrifice"
+  ],
+  "summary": "Évolution ultime du Sharingan débloquée après la perte d'un être cher",
+  "details": [
+    "S'active après avoir vécu une perte émotionnelle traumatisante",
+    "Chaque utilisateur développe des capacités uniques : Amaterasu, Kamui, Tsukuyomi",
+    "Permet d'invoquer le Susanoo, un guerrier spirituel géant",
+    "Sans transplantation, mène à la cécité totale à force d'utilisation",
+    "Le Mangekyo Éternel (Eternal Mangekyo) empêche la cécité par transplantation"
+  ],
+  "image": "",
+  "natures": [
+    "Visuel"
+  ],
+  "clans": [
+    "Uchiha"
+  ],
+  "users": [
+    "Sasuke Uchiha",
+    "Itachi Uchiha",
+    "Madara Uchiha",
+    "Obito Uchiha",
+    "Shisui Uchiha",
+    "Izuna Uchiha"
+  ]
+}

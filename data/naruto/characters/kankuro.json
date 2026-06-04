@@ -1,0 +1,42 @@
+{
+  "id": "kankuro",
+  "name": "Kankuro",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "suna",
+    "kankuro",
+    "marionnette",
+    "frere-gaara",
+    "sasori-rival",
+    "peinture-visage",
+    "crow",
+    "pantin"
+  ],
+  "summary": "Marionnettiste de Suna, frère de Gaara et héritier des techniques de Chiyo",
+  "details": [
+    "Deuxième enfant du 4e Kazekage Rasa, frère de Gaara et Temari",
+    "Marionnettiste talentueux, il manie les pantins Crow, Black Ant et Salamander",
+    "Aide à libérer Gaara des griffes de l'Akatsuki, prouvant sa loyauté fraternelle",
+    "S'inspire du style de Sasori et Chiyo pour perfectionner son art du combat de marionnettes",
+    "Devient le chef des marionnettistes de Suna et un conseiller respecté de Gaara",
+    "Reconnaissable à sa peinture faciale violette et son attitude sarcastique"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Puppet techniques",
+    "Crow",
+    "Black Ant",
+    "Salamander"
+  ],
+  "kageTitle": null
+}

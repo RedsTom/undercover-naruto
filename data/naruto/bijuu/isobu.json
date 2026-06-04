@@ -1,0 +1,36 @@
+{
+  "id": "isobu",
+  "name": "Isobu",
+  "category": "bijuu",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "bijuu",
+    "queue",
+    "isobu",
+    "eau",
+    "yagura",
+    "kiri",
+    "sanbi",
+    "tortue",
+    "carapace"
+  ],
+  "summary": "Bête à trois queues, la tortue marine Isobu, jinchuriki de Yagura le Quatrième Mizukage",
+  "details": [
+    "Isobu est le Sanbi (bête à trois queues), prenant la forme d'une tortue marine géante à carapace blindée",
+    "Sa nature de chakra est l'Eau (Suiton), maîtrisant des courants marins dévastateurs",
+    "Yagura Karatachi, le Quatrième Mizukage, fut son jinchuriki et le seul à devenir Kage en étant jinchuriki",
+    "Fut brièvement scellé dans Rin Nohara par Kirigakure dans le but de détruire Konoha de l'intérieur",
+    "Après la mort de Yagura, Isobu erra librement avant d'être capturé par Deidara et Tobi"
+  ],
+  "image": "",
+  "tails": 3,
+  "jinchuriki": [
+    "Yagura Karatachi",
+    "Rin Nohara"
+  ],
+  "nature": [
+    "Eau"
+  ]
+}

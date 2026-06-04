@@ -1,0 +1,32 @@
+{
+  "id": "gourd",
+  "name": "Gourde de Gaara",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "sable",
+    "gaara",
+    "suna",
+    "defense-automatique",
+    "gourde",
+    "jinchuriki",
+    "shukaku",
+    "protection",
+    "sable-du-désert"
+  ],
+  "summary": "Gourde magique contenant le sable控 contrôlé par Gaara pour se défendre automatiquement",
+  "details": [
+    "Contient du sable spécial imprégné du chakra de Gaara",
+    "Défend automatiquement son porteur sans besoin de commande consciente",
+    "Le sable peut être façonné en toutes formes : bouclier, main, lame",
+    "Symbole emblématique de Gaara, toujours portée sur son dos",
+    "Le sable est renforcé par le chakra de Shukaku, le démon du désert"
+  ],
+  "image": "",
+  "wielder": "Gaara",
+  "origin": "Sunagakure"
+}

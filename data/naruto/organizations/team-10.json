@@ -1,0 +1,37 @@
+{
+  "id": "team-10",
+  "name": "Team 10 (Ino-Shika-Cho)",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "equipe",
+    "konoha",
+    "asuma",
+    "shikamaru",
+    "ino",
+    "choji",
+    "ino-shika-cho",
+    "genin",
+    "dixieme-equipe",
+    "strategie"
+  ],
+  "summary": "Équipe de Konoha perpétuant l'alliance Ino-Shika-Cho sous la direction d'Asuma",
+  "details": [
+    "Dirigée par Asuma Sarutobi, fils du Troisième Hokage",
+    "Composée des héritiers des trois clans alliés : Nara, Yamanaka, Akimichi",
+    "Shikamaru Nara, le stratège génie devenu conseiller du Hokage",
+    "Ino Yamanaka, ninja médicale et héritière des techniques de l'esprit",
+    "Choji Akimichi, combattant dévastateur aux techniques d'expansion"
+  ],
+  "image": "",
+  "members": [
+    "Asuma Sarutobi",
+    "Shikamaru Nara",
+    "Ino Yamanaka",
+    "Choji Akimichi"
+  ],
+  "leader": "Asuma Sarutobi"
+}

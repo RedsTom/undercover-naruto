@@ -1,0 +1,30 @@
+{
+  "id": "kusagakure",
+  "name": "Kusagakure",
+  "category": "village",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-de-lherbe",
+    "kusa",
+    "karin",
+    "petite-nation",
+    "ninja",
+    "guerre",
+    "uzumaki"
+  ],
+  "summary": "Village caché de l'Herbe, petit village stratégiquement situé entre les grandes puissances",
+  "details": [
+    "Situé au Pays de l'Herbe, à la frontière entre le Pays du Feu et le Pays de la Terre",
+    "Karin, descendante du clan Uzumaki, y fut recrutée par Orochimaru pour ses pouvoirs de guérison",
+    "Village relativement faible mais stratégiquement positionné sur les routes commerciales",
+    "A servi de terrain de jeu pour les conflits entre grandes nations pendant les guerres ninja",
+    "Itachi Uchiha y a accompli plusieurs missions durant son temps dans l'Akatsuki"
+  ],
+  "image": "",
+  "country": "Pays de l'Herbe",
+  "kage": "Aucun",
+  "notableClans": []
+}

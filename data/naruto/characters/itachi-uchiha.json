@@ -1,0 +1,52 @@
+{
+  "id": "itachi-uchiha",
+  "name": "Itachi Uchiha",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "uchiha",
+    "akatsuki",
+    "sharingan",
+    "mangekyo",
+    "susanoo",
+    "amaterasu",
+    "tsukuyomi",
+    "genjutsu",
+    "frere-sasuke",
+    "shisui",
+    "nukenin",
+    "anbu",
+    "genie",
+    "sacrifice",
+    "double-agent",
+    "clan-massacre"
+  ],
+  "summary": "Génie prodige du clan Uchiha, ayant massacré son clan pour protéger Konoha",
+  "details": [
+    "A massacré tout son clan (excepté Sasuke) sur ordre de Danzo pour éviter un coup d'État",
+    "Considéré comme un prodige ultime, devenu capitaine ANBU à 13 ans",
+    "Maître du Mangekyo Sharingan avec Amaterasu, Tsukuyomi et Susanoo équipé du Totsuka et Yata",
+    "A rejoint l'Akatsuki comme agent double pour protéger Konoha et surveiller Obito",
+    "A affronté Sasuke à plusieurs reprises, orchestrant sa propre mort pour lui transmettre ses pouvoirs",
+    "Ressuscité par Kabuto via Edo Tensei, il s'est libéré pour aider Naruto et Sasuke",
+    "Meilleur ami de Shisui Uchiha, dont il hérita l'idéal de protéger le village"
+  ],
+  "image": "",
+  "clan": "Uchiha",
+  "village": "Konohagakure",
+  "rank": "Nukenin",
+  "team": "Akatsuki",
+  "jutsu": [
+    "Amaterasu",
+    "Tsukuyomi",
+    "Susanoo",
+    "Totsuka",
+    "Yata Mirror",
+    "Fire Ball"
+  ],
+  "kageTitle": null
+}

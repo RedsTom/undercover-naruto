@@ -1,0 +1,30 @@
+{
+  "id": "yugakure",
+  "name": "Yugakure",
+  "category": "village",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "village-cache",
+    "pays-des-sources",
+    "yugi",
+    "sources-chaudes",
+    "hidan",
+    "petite-nation",
+    "demilitarise",
+    "ninja"
+  ],
+  "summary": "Village caché des Sources, ancien village ninja transformé en station thermale pacifique",
+  "details": [
+    "Situé au Pays des Sources, une région montagneuse riche en sources chaudes naturelles",
+    "A abandonné son statut militaire et s'est démilitarisé pour devenir une destination touristique",
+    "Hidan, le membre immortel de l'Akatsuki, est originaire de ce village autrefois guerrier",
+    "Les bâtiments du village sont construits autour des sources chaudes, créant une atmosphère relaxante",
+    "Symbole de la paix après des siècles de conflits, le village a choisi la voie du tourisme"
+  ],
+  "image": "",
+  "country": "Pays des Sources",
+  "kage": "Aucun",
+  "notableClans": []
+}

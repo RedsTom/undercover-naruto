@@ -1,0 +1,37 @@
+{
+  "id": "team-8",
+  "name": "Team 8",
+  "category": "organization",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "equipe",
+    "konoha",
+    "kurenai",
+    "hinata",
+    "kiba",
+    "shino",
+    "pistage",
+    "sensoriel",
+    "huitieme-equipe",
+    "genin"
+  ],
+  "summary": "Équipe de Konoha spécialisée dans le pistage et les capacités sensorielles",
+  "details": [
+    "Dirigée par Kurenai Yuhi, maîtresse du genjutsu",
+    "Hinata Hyuga utilise le Byakugan pour la vision et le pistage",
+    "Kiba Inuzuka et Akamaru excellent dans le pistage olfactif",
+    "Shino Aburame utilise ses insectes pour l'espionnage et le pistage",
+    "Considérée comme la meilleure équipe de pistage de Konoha"
+  ],
+  "image": "",
+  "members": [
+    "Kurenai Yuhi",
+    "Hinata Hyuga",
+    "Kiba Inuzuka",
+    "Shino Aburame"
+  ],
+  "leader": "Kurenai Yuhi"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "iron-sand",
+  "name": "Sable de Fer",
+  "category": "technique",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "sable-fer",
+    "aimant",
+    "kazekage",
+    "suna",
+    "rang-A",
+    "3e-kazekage",
+    "sasori",
+    "magnétique",
+    "arme",
+    "bouclier",
+    "offensif"
+  ],
+  "summary": "Technique de sable de fer du Troisième Kazekage",
+  "details": [
+    "Technique unique du Troisième Kazekage utilisant du sable de fer",
+    "Le sable de fer est imprégné de chakra magnétique",
+    "Permet de créer des armes, des boucliers et des pièges",
+    "Considérée comme le sable le plus puissant avant Gaara",
+    "Sasori a transformé le Troisième Kazekage en marionnette",
+    "Considérée comme la technique la plus redoutable de Sunagakure"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "vent",
+    "terre"
+  ],
+  "users": [
+    "3e Kazekage",
+    "Sasori"
+  ]
+}

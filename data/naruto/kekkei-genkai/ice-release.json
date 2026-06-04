@@ -1,0 +1,39 @@
+{
+  "id": "ice-release",
+  "name": "Hyōton (Ice Release)",
+  "category": "kekkei-genkai",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "kekkei-genkai",
+    "glace",
+    "haku",
+    "yuki",
+    "vent",
+    "eau",
+    "hyoton",
+    "miroir",
+    "cristal",
+    "gel"
+  ],
+  "summary": "Kekkei Genkai du clan Yuki combinant l'Eau et le Vent pour créer de la glace",
+  "details": [
+    "Fusion des natures Eau et Vent pour générer et contrôler la glace",
+    "Capacité héréditaire du clan Yuki de Kirigakure",
+    "Haku en est l'utilisateur le plus célèbre avec ses Miroirs de Glace Démoniaques",
+    "Permet la création de structures de glace quasi indestructibles",
+    "Le clan Yuki fut persécuté durant l'ère du brouillard sanglant"
+  ],
+  "image": "",
+  "natures": [
+    "Eau",
+    "Vent"
+  ],
+  "clans": [
+    "Yuki"
+  ],
+  "users": [
+    "Haku"
+  ]
+}

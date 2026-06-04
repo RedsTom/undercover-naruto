@@ -1,0 +1,43 @@
+{
+  "id": "storm-release",
+  "name": "Ranton (Libération d'Orage)",
+  "category": "technique",
+  "era": [
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "ninjutsu",
+    "kekkei-genkai",
+    "orage",
+    "darui",
+    "foudre",
+    "eau",
+    "rang-A",
+    "kumo",
+    "raikage",
+    "foudre-liquide",
+    "laser",
+    "paralysie"
+  ],
+  "summary": "Kekkei Genkai combinant foudre et eau en orage",
+  "details": [
+    "Kekkei Genkai de Darui, combinant foudre et eau",
+    "Crée des orages dévastateurs de foudre liquide",
+    "Technique très rare, transmise au sein de Kumogakure",
+    "Peut paralyser et électrocuter simultanément",
+    "Le Troisième Raikage possédait une variante plus puissante",
+    "Darui l'a perfectionnée pendant la Quatrième Guerre mondiale"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [
+    "foudre",
+    "eau"
+  ],
+  "users": [
+    "Darui",
+    "3e Raikage"
+  ]
+}

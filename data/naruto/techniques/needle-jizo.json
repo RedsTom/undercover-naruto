@@ -1,0 +1,39 @@
+{
+  "id": "needle-jizo",
+  "name": "Needle Jizō",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "ninjutsu",
+    "jiraiya",
+    "cheveux",
+    "defense",
+    "aiguilles",
+    "rang-A",
+    "konoha",
+    "herisson",
+    "polyvalent",
+    "offensif",
+    "acier",
+    "protection"
+  ],
+  "summary": "Protection de Jiraiya utilisant ses cheveux comme des aiguilles",
+  "details": [
+    "Technique défensive de Jiraiya qui durcit ses cheveux en aiguilles",
+    "Les cheveux deviennent aussi durs que l'acier",
+    "Protège tout le corps comme un hérisson",
+    "Peut aussi être utilisée offensivement pour projeter les aiguilles",
+    "Technique très polyvalente de Jiraiya",
+    "Les aiguilles de cheveux peuvent être imprégnées de chakra"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [],
+  "users": [
+    "Jiraiya"
+  ]
+}

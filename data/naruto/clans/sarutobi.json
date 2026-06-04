@@ -1,0 +1,39 @@
+{
+  "id": "sarutobi",
+  "name": "Clan Sarutobi",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "feu",
+    "hiruzen",
+    "asuma",
+    "konohamaru",
+    "hokage",
+    "katon",
+    "singe",
+    "gardiens-du-feu"
+  ],
+  "summary": "Clan influent de Konoha ayant produit le Troisième Hokage et de nombreux guerriers",
+  "details": [
+    "Hiruzen Sarutobi fut le Troisième Hokage, le plus long règne de l'histoire",
+    "Asuma Sarutobi était un jōnin d'élite et membre des Douze Gardiens du Feu",
+    "Konohamaru Sarutobi, petit-fils d'Hiruzen, est un prodige de la nouvelle génération",
+    "Spécialistes du Katon et du combat au corps à corps",
+    "L'un des clans les plus respectés et influents de Konoha"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Hiruzen Sarutobi",
+    "Asuma Sarutobi",
+    "Konohamaru Sarutobi"
+  ]
+}

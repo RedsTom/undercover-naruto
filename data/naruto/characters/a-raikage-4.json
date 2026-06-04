@@ -1,0 +1,41 @@
+{
+  "id": "a-raikage-4",
+  "name": "A (4e Raikage)",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "kumo",
+    "raikage",
+    "vitesse",
+    "foudre",
+    "force",
+    "killer-bee-frere",
+    "bouclier-foudre",
+    "ninja-le-plus-rapide",
+    "impetueux",
+    "sasuke-confrontation"
+  ],
+  "summary": "4e Raikage de Kumo, ninja le plus rapide du monde, frère protecteur de Killer Bee",
+  "details": [
+    "Quatrième Raikage de Kumogakure, réputé comme le shinobi le plus rapide de son époque",
+    "Son corps entier est enveloppé d'un Bouclier de Foudre (Raiton no Yoroi) augmentant sa vitesse et sa force",
+    "Frère adoptif de Killer Bee, il est prêt à tout pour protéger son frère, y compris défier le monde shinobi",
+    "Affronte Sasuke personnellement après l'enlèvement de Killer Bee par Taka, le dominant en combat",
+    "Perd son bras gauche en se sacrifiant pour arrêter l'attaque de Sasuke, mais continue de combattre",
+    "Imposant et colérique, il impose le respect par sa puissance brute et son leadership autoritaire",
+    "Nomme Darui comme 5e Raikage après la 4e Grande Guerre Shinobi, prenant sa retraite"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Kumogakure",
+  "rank": "Raikage",
+  "team": null,
+  "jutsu": [
+    "Lightning Armor",
+    "Lariat",
+    "Lightning Punch"
+  ],
+  "kageTitle": "4e Raikage"
+}

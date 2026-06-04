@@ -1,0 +1,29 @@
+{
+  "id": "kazekage-2-shamon",
+  "name": "Shamon — 2e Kazekage",
+  "category": "kage",
+  "era": [
+    "naruto-backstory"
+  ],
+  "tags": [
+    "kage",
+    "kazekage",
+    "suna",
+    "sable",
+    "desert",
+    "deuxieme",
+    "successeur"
+  ],
+  "summary": "Deuxième Kazekage, successeur du fondateur de Sunagakure ayant consolidé le pouvoir du village",
+  "details": [
+    "Deuxième dirigeant de Sunagakure, succédant au fondateur Reto dans une période de consolidation",
+    "A poursuivi le développement des techniques de sable qui feront la renommée du village",
+    "A renforcé les défenses du village face aux environnements hostiles du désert",
+    "A établi les bases de l'art du marionnettisme qui deviendra une spécialité de Suna",
+    "Son règne reste peu documenté dans l'histoire officielle du monde ninja"
+  ],
+  "image": "",
+  "title": "Kazekage",
+  "village": "Sunagakure",
+  "person": "Shamon"
+}

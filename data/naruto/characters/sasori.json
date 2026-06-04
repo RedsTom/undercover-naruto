@@ -1,0 +1,41 @@
+{
+  "id": "sasori",
+  "name": "Sasori",
+  "category": "character",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "suna",
+    "akatsuki",
+    "marionnette",
+    "pantin",
+    "poison",
+    "sasori",
+    "chiyo-petit-fils",
+    "3e-kazekage-marionnette",
+    "immortel-artificiel"
+  ],
+  "summary": "Marionnettiste génie de Suna transformé en pantin humain de l'Akatsuki",
+  "details": [
+    "Petit-fils de Chiyo, prodige de la marionnette dès l'enfance, quittant Suna pour l'Akatsuki",
+    "A transformé son propre corps en marionnette, ne conservant qu'un cœur vivant scellé dans son torse",
+    "A transformé le 3e Kazekage en marionnette, la plus puissante jamais créée avec le Magnet Release",
+    "Crée le Red Secret Technique: Performance of 100 Puppets, contrôlant cent pantins simultanément",
+    "Tue le 3e Kazekage de Suna, plongeant le village dans une crise politique et militaire",
+    "Se laisse volontairement transpercer par les lames de ses parents-marionnettes, mis au point par Chiyo",
+    "Son Hiruko, une marionnette-cocon blindée, sert d'armure extérieure avec une queue empoisonnée"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Jonin (nukenin)",
+  "team": "Akatsuki",
+  "jutsu": [
+    "Puppet techniques",
+    "100 puppets",
+    "Hiruko",
+    "Kazekage puppet"
+  ],
+  "kageTitle": null
+}

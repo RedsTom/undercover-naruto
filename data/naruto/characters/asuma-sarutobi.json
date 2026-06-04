@@ -1,0 +1,42 @@
+{
+  "id": "asuma-sarutobi",
+  "name": "Asuma Sarutobi",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "sarutobi",
+    "team-10",
+    "vent",
+    "lames-chakra",
+    "fils-hiruzen",
+    "kurenai-mari",
+    "shikamaru-mentor",
+    "fumeur",
+    "hidan-mort"
+  ],
+  "summary": "Fils du 3e Hokage et Jonin leader de Team 10, maître du vent et des lames de chakra",
+  "details": [
+    "Fils du 3e Hokage Hiruzen Sarutobi et père de Mirai Sarutobi",
+    "Leader de Team 10 formant le trio Ino-Shika-Cho : Shikamaru, Choji et Ino",
+    "Maître de l'affinité vent (Futon) et des lames de chakra (Chakra Blades)",
+    "Ancien garde du corps des 12 Gardes Ninja du Pays du Feu",
+    "A affronté Hidan et Kakuzu de l'Akatsuki avec Shikamaru et ses coéquipiers",
+    "Tué par Hidan lors du combat, sa mort pousse Shikamaru à la vengeance",
+    "Marié à Kurenai Yuhi, qui donna naissance à Mirai après sa mort"
+  ],
+  "image": "",
+  "clan": "Sarutobi",
+  "village": "Konohagakure",
+  "rank": "Jonin",
+  "team": "Team 10",
+  "jutsu": [
+    "Wind Release",
+    "Chakra Blades",
+    "Ash Pile"
+  ],
+  "kageTitle": null
+}

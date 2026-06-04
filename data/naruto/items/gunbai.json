@@ -1,0 +1,31 @@
+{
+  "id": "gunbai",
+  "name": "Gunbai Uchiha",
+  "category": "item",
+  "era": [
+    "shippuden"
+  ],
+  "tags": [
+    "arme",
+    "eventail",
+    "uchiha",
+    "madara",
+    "obito",
+    "feu",
+    "gunbai",
+    "bouclier",
+    "katon",
+    "vent"
+  ],
+  "summary": "Éventail de combat légendaire du clan Uchiha, manié par Madara et Obito",
+  "details": [
+    "Grand éventail de guerre en métal, symbole du clan Uchiha",
+    "Manié par Madara Uchiha et plus tard par Obito Uchiha",
+    "Peut dévier les attaques et amplifier les techniques de feu",
+    "Utilisé à la fois comme bouclier et comme arme offensive",
+    "Orné du symbole du clan Uchiha en son centre"
+  ],
+  "image": "",
+  "wielder": "Madara Uchiha / Obito Uchiha",
+  "origin": "Clan Uchiha"
+}

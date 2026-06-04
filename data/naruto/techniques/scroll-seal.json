@@ -1,0 +1,44 @@
+{
+  "id": "scroll-seal",
+  "name": "Fūinjutsu (Techniques de Sceau)",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto",
+    "naruto-backstory"
+  ],
+  "tags": [
+    "ninjutsu",
+    "sceau",
+    "fuinjutsu",
+    "uzumaki",
+    "barriere",
+    "rang-A",
+    "minato",
+    "naruto",
+    "interdit",
+    "protection",
+    "scellement",
+    "enfermement"
+  ],
+  "summary": "Techniques de sceau permettant de sceller des objets, êtres ou chakra",
+  "details": [
+    "Art ninja spécialisé dans la création de sceaux et barrières",
+    "Utilisé pour sceller les bijuu dans les jinchuriki",
+    "Le clan Uzumaki était célèbre pour sa maîtrise des sceaux",
+    "Minato a utilisé le Fūinjutsu pour sceller Kurama",
+    "Les sceaux peuvent être placés sur des objets, des corps ou des lieux",
+    "Nécessite une connaissance approfondie des symboles et formules"
+  ],
+  "image": "",
+  "type": "ninjutsu",
+  "rank": "A",
+  "nature": [],
+  "users": [
+    "Uzumaki clan",
+    "Minato Namikaze",
+    "Naruto Uzumaki"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "danzo-shimura",
+  "name": "Danzo Shimura",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "konoha",
+    "shimura",
+    "root",
+    "anbu",
+    "sombre",
+    "concierge",
+    "roncier",
+    "sharingan",
+    "bras-uchiha",
+    "shisui-oeil",
+    "hokage-auto"
+  ],
+  "summary": "Leader manipulateur de la Racine ayant sacrifié son humanité pour protéger Konoha dans l'ombre",
+  "details": [
+    "Membre des fondateurs de Konoha et chef de la Racine (Root), branche secrète de l'ANBU",
+    "Rival d'Hiruzen Sarutobi, il prône la realpolitik et les moyens extrêmes pour la paix",
+    "A orchestré le massacre du clan Uchiha en ordonnant à Itachi d'agir",
+    "A volé l'œil de Shisui Uchiha (Kotoamatsukami) pour ses propres desseins",
+    "S'est greffé un bras couvert de Sharingans Uchiha et un œil de Shisui",
+    "S'est auto-proclamé 6e Hokage après la chute de Pain, avant d'être vaincu par Sasuke",
+    "A utilisé l'Izanagi pour survivre à ses blessures avant de succomber sous le genjutsu de Sasuke"
+  ],
+  "image": "",
+  "clan": "Shimura",
+  "village": "Konohagakure",
+  "rank": "Hokage",
+  "team": null,
+  "jutsu": [
+    "Kotoamatsukami",
+    "Wind Release",
+    "Izanagi",
+    "Sharingan-arm"
+  ],
+  "kageTitle": "Hokage (auto-proclamé)"
+}

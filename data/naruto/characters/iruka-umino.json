@@ -1,0 +1,39 @@
+{
+  "id": "iruka-umino",
+  "name": "Iruka Umino",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "boruto"
+  ],
+  "tags": [
+    "konoha",
+    "umino",
+    "professeur",
+    "academie",
+    "pere-naruto",
+    "chunin",
+    "cicatrice-nez",
+    "mizuki"
+  ],
+  "summary": "Professeur à l'Académie Ninja de Konoha, première figure paternelle de Naruto",
+  "details": [
+    "Professeur principal à l'Académie Ninja de Konoha, il forme les plus jeunes générations",
+    "Premier adulte à reconnaître et accepter Naruto pour qui il est, devenant un père adoptif",
+    "A perdu ses parents lors de l'attaque du Kyûbi, morts sous ses yeux",
+    "Porte une cicatrice sur le nez depuis l'attaque de Kyûbi",
+    "Aide Naruto à vaincre Mizuki, lui offrant le premier Kage Bunshin",
+    "Deviendra le directeur de l'Académie Ninja plus tard dans sa carrière",
+    "Figure d'autorité bienveillante respectée par tous les jeunes ninjas de Konoha"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Konohagakure",
+  "rank": "Chunin",
+  "team": null,
+  "jutsu": [
+    "basic techniques"
+  ],
+  "kageTitle": null
+}

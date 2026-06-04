@@ -1,0 +1,42 @@
+{
+  "id": "magnet-release",
+  "name": "Jiton (Magnet Release)",
+  "category": "kekkei-genkai",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "kekkei-genkai",
+    "aimant",
+    "sable-fer",
+    "kazekage",
+    "gaara",
+    "jiton",
+    "sable",
+    "magnétique",
+    "shukaku",
+    "suna"
+  ],
+  "summary": "Kekkei Genkai combinant la Terre et le Vent pour manipuler les champs magnétiques",
+  "details": [
+    "Fusion des natures Terre et Vent pour contrôler le magnétisme",
+    "Capacité héréditaire des Kazekage de Sunagakure",
+    "Le Troisième Kazekage l'utilisait pour créer du sable de fer impénétrable",
+    "Gaara l'a développé après la perte de Shukaku, en combinant son sable avec de l'or",
+    "Permet le contrôle du sable à grande échelle pour l'attaque et la défense"
+  ],
+  "image": "",
+  "natures": [
+    "Terre",
+    "Vent"
+  ],
+  "clans": [],
+  "users": [
+    "Gaara",
+    "Troisième Kazekage",
+    "Shinki"
+  ]
+}

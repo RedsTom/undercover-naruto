@@ -1,0 +1,34 @@
+{
+  "id": "forehead-protector",
+  "name": "Bandana Ninja (Protège-front)",
+  "category": "item",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "objet",
+    "symbole",
+    "village",
+    "ninja",
+    "metallique",
+    "bandeau",
+    "frontal",
+    "identification",
+    "graduation",
+    "loyauté"
+  ],
+  "summary": "Bandeau frontal en métal gravé du symbole du village, marque de tout ninja diplômé",
+  "details": [
+    "Remis à chaque ninja après avoir passé l'examen de l'Académie",
+    "Comporte le symbole du village caché de son propriétaire",
+    "Porté de multiples façons : front, cou, bras, taille, genou",
+    "Symbole de la loyauté et de l'identité du ninja",
+    "Certains le rayent en signe de reniement (nukenin comme Sasuke)"
+  ],
+  "image": "",
+  "wielder": "Tous les ninjas",
+  "origin": "Tous les villages cachés"
+}

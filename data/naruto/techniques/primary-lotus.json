@@ -1,0 +1,40 @@
+{
+  "id": "primary-lotus",
+  "name": "Lotus Primaire (Omote Renge)",
+  "category": "technique",
+  "era": [
+    "naruto",
+    "shippuden"
+  ],
+  "tags": [
+    "taijutsu",
+    "rock-lee",
+    "bandages",
+    "combo-aerien",
+    "rang-B",
+    "guy",
+    "konoha",
+    "vitesse",
+    "poids",
+    "impact",
+    "projection",
+    "acrobatie"
+  ],
+  "summary": "Technique de taijutsu combinant vitesse et puissance aérienne",
+  "details": [
+    "Technique de taijutsu qui projette l'ennemi dans les airs",
+    "L'utilisateur enroule son adversaire dans des bandages pendant la chute",
+    "L'ennemi est écrasé au sol avec une force dévastatrice",
+    "Rock Lee l'utilise avec des poids pour augmenter l'impact",
+    "Nécessite une vitesse fulgurante pour être exécutée",
+    "Might Guy enseigne cette technique comme base du combat aérien"
+  ],
+  "image": "",
+  "type": "taijutsu",
+  "rank": "B",
+  "nature": [],
+  "users": [
+    "Rock Lee",
+    "Might Guy"
+  ]
+}

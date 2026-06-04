@@ -1,0 +1,39 @@
+{
+  "id": "akimichi",
+  "name": "Clan Akimichi",
+  "category": "clan",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "clan",
+    "konoha",
+    "expansion",
+    "nourriture",
+    "choji",
+    "corps",
+    "force",
+    "pilule",
+    "ino-shika-cho",
+    "poids",
+    "calorie"
+  ],
+  "summary": "Clan de Konoha aux techniques d'expansion corporelle et à la force surhumaine",
+  "details": [
+    "Spécialistes des techniques d'expansion corporelle pour devenir géants",
+    "Utilisent des pilules de calories pour décupler leur puissance au combat",
+    "Membre de l'alliance Ino-Shika-Cho avec les clans Nara et Yamanaka",
+    "Leur corpulence est directement liée à la puissance de leurs techniques",
+    "Choji Akimichi est le représentant le plus célèbre de la nouvelle génération"
+  ],
+  "image": "",
+  "village": "Konohagakure",
+  "kekkeiGenkai": [],
+  "notableMembers": [
+    "Choji Akimichi",
+    "Choza Akimichi"
+  ]
+}

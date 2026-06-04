@@ -1,0 +1,41 @@
+{
+  "id": "temari",
+  "name": "Temari",
+  "category": "character",
+  "era": [
+    "naruto",
+    "shippuden",
+    "shippuden-end",
+    "boruto"
+  ],
+  "tags": [
+    "suna",
+    "temari",
+    "eventail",
+    "vent",
+    "shikamaru-mari",
+    "soeur-gaara",
+    "mere-shikadai",
+    "bashosen",
+    "puissante"
+  ],
+  "summary": "Aînée des frères et sœurs Suna, maître du vent et stratège redoutable",
+  "details": [
+    "Fille aînée du 4e Kazekage Rasa, sœur de Gaara et Kankuro",
+    "Manie le Bashosen, un éventail géant capable de générer des tornades dévastatrices",
+    "Examinatrice lors de l'examen chunin de Konoha, elle bat Temari avec une stratégie implacable",
+    "Épouse de Shikamaru Nara et mère de Shikadai, elle vit à Konoha après la guerre",
+    "Combat avec une combinaison de vent (Futon) et de son éventail, excellente à distance",
+    "Devient une diplomate clé entre Suna et Konoha après son mariage"
+  ],
+  "image": "",
+  "clan": null,
+  "village": "Sunagakure",
+  "rank": "Jonin",
+  "team": null,
+  "jutsu": [
+    "Bashosen",
+    "Wind techniques"
+  ],
+  "kageTitle": null
+}

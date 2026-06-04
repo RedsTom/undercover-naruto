@@ -43,12 +43,22 @@ export function joinRoom(roomCode: string, playerName: string): { room: RoomMode
   return { room, player };
 }
 
-export function removePlayer(roomId: string, playerId: string): boolean {
+export function kickPlayer(roomId: string, hostId: string, targetId: string): { success: boolean; error?: string } {
   const room = rooms.get(roomId);
-  if (!room) return false;
-  const removed = room.removePlayer(playerId);
-  if (removed && room.players.size === 0) rooms.delete(roomId);
-  return removed;
+  if (!room) return { success: false, error: 'Room not found' };
+  if (room.hostId !== hostId) return { success: false, error: 'Only host can kick players' };
+  if (hostId === targetId) return { success: false, error: 'Cannot kick yourself' };
+  if (room.gameState?.phase && room.gameState.phase !== 'waiting') return { success: false, error: 'Cannot kick during a game' };
+
+  const removed = room.removePlayer(targetId);
+  if (!removed) return { success: false, error: 'Player not found' };
+
+  broadcastToRoom(roomId, 'player:kicked', { playerId: targetId });
+  broadcastToRoom(roomId, 'room:updated', room.toPublic());
+
+  if (room.players.size === 0) rooms.delete(roomId);
+
+  return { success: true };
 }
 
 export function startGame(roomId: string, playerId: string, config?: Record<string, any>): { success: boolean; error?: string } {

@@ -63,5 +63,20 @@ export const useRoomAPI = () => {
     playerName.value = '';
   }
 
-  return { room, playerId, playerName, isHost, playerCount, createRoom, joinRoom, fetchRoom, setRoom, cleanup };
+  async function kickPlayer(targetId: string): Promise<{ success: boolean; error?: string }> {
+    if (!room.value || !playerId.value) return { success: false, error: 'Not in a room' };
+
+    try {
+      const res = await $fetch('/api/rooms/kick', {
+        method: 'POST',
+        body: { roomId: room.value.id, hostId: playerId.value, targetId },
+      });
+      const data = res as any;
+      return { success: data.success };
+    } catch (e: any) {
+      return { success: false, error: e.data?.message || 'Failed to kick player' };
+    }
+  }
+
+  return { room, playerId, playerName, isHost, playerCount, createRoom, joinRoom, fetchRoom, setRoom, cleanup, kickPlayer };
 };

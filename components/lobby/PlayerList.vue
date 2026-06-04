@@ -26,6 +26,15 @@
             </div>
           </div>
         </div>
+
+        <UButton
+          v-if="isHost && player.id !== playerId"
+          color="red"
+          variant="ghost"
+          size="xs"
+          icon="i-heroicons-x-mark"
+          @click="handleKick(player.id)"
+        />
       </div>
     </div>
   </UCard>
@@ -34,8 +43,17 @@
 <script setup lang="ts">
 import type { RoomState } from '~/types';
 
-defineProps<{
+const props = defineProps<{
   room: RoomState;
   playerId: string | null;
+  isHost: boolean;
 }>();
+
+const emit = defineEmits<{
+  kick: [targetId: string];
+}>();
+
+function handleKick(targetId: string) {
+  emit('kick', targetId);
+}
 </script>

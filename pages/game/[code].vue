@@ -171,6 +171,13 @@ onMounted(async () => {
       if (room.value) {
         await fetchRoom(room.value.id);
         await fetchMyInfo();
+        const stillInRoom = room.value?.players?.some((p: any) => p.id === playerId.value);
+        if (!stillInRoom) {
+          cleanup();
+          disconnect();
+          if (pollInterval) clearInterval(pollInterval);
+          navigateTo('/');
+        }
       }
     }, 3000);
   }

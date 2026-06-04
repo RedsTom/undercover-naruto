@@ -29,7 +29,7 @@
 
           <LobbyInviteLink :room="room" />
 
-          <LobbyPlayerList :room="room" :player-id="playerId" />
+          <LobbyPlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" />
 
           <LobbyGameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" @start="handleStart" />
 
@@ -55,7 +55,7 @@
 import type { GameConfig } from '~/types';
 
 const route = useRoute();
-const { room, playerId, isHost, playerCount, fetchRoom, cleanup, joinRoom } = useRoomAPI();
+const { room, playerId, isHost, playerCount, fetchRoom, cleanup, joinRoom, kickPlayer } = useRoomAPI();
 const { startGame, fetchMyInfo } = useGameAPI();
 const { connect, disconnect } = useSSE();
 
@@ -78,8 +78,17 @@ onMounted(async () => {
 
   if (room.value && playerId.value) {
     connect(room.value.id);
-    pollInterval = setInterval(() => {
-      if (room.value) fetchRoom(room.value.id);
+    pollInterval = setInterval(async () => {
+      if (room.value && playerId.value) {
+        await fetchRoom(room.value.id);
+        const stillInRoom = room.value?.players?.some((p: any) => p.id === playerId.value);
+        if (!stillInRoom) {
+          cleanup();
+          disconnect();
+          if (pollInterval) clearInterval(pollInterval);
+          navigateTo('/');
+        }
+      }
     }, 3000);
   }
 });
@@ -114,6 +123,13 @@ async function handleJoinRoom() {
     joinError.value = 'Erreur de connexion';
   } finally {
     joining.value = false;
+  }
+}
+
+async function handleKick(targetId: string) {
+  const result = await kickPlayer(targetId);
+  if (!result.success) {
+    useToast().add({ title: 'Erreur', description: result.error, color: 'red' });
   }
 }
 

@@ -5,8 +5,7 @@
         <div class="flex items-center justify-between">
           <h1 class="text-2xl font-bold">Partie en cours</h1>
           <div class="flex gap-2">
-            <UButton v-if="gameState.phase === 'finished'" color="orange" size="sm" @click="handleGoToLobby">Retour au lobby</UButton>
-            <UButton v-if="isHost && gameState.phase !== 'finished'" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
+            <UButton v-if="isHost" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
             <UButton color="gray" variant="outline" size="sm" @click="handleLeave">Quitter</UButton>
           </div>
         </div>
@@ -85,28 +84,9 @@
           <UButton size="lg" @click="handleNextRound">Tour suivant</UButton>
         </div>
 
-        <div v-if="gameState.phase === 'finished'" class="text-center space-y-6">
-          <h2 class="text-2xl font-bold">{{ winnerText }}</h2>
-
-          <div v-if="lastWordPair" class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow space-y-2">
-            <p class="font-semibold">Mot des civils : <span class="text-orange-600">{{ lastWordPair.wordA }}</span></p>
-            <p class="font-semibold">Mot des imposteurs : <span class="text-orange-600">{{ lastWordPair.wordB }}</span></p>
-          </div>
-
-          <div v-if="exposedPlayers.length" class="space-y-2">
-            <h3 class="text-lg font-semibold">Rôles</h3>
-            <div v-for="p in exposedPlayers" :key="p.playerId"
-              class="p-3 rounded-lg text-sm"
-              :class="p.role === 'undercover' || p.role === 'mrWhite' ? 'bg-red-50 dark:bg-red-900/30 ring-1 ring-red-300' : 'bg-green-50 dark:bg-green-900/30 ring-1 ring-green-300'">
-              <p class="font-medium">{{ p.name }}</p>
-              <p>{{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
-              <p v-if="p.word" class="text-xs text-gray-500">Mot : {{ p.word }}</p>
-            </div>
-          </div>
-
-          <p v-if="gameState.scores" class="text-gray-500">
-            Civils {{ gameState.scores.civilians }} - {{ gameState.scores.undercover }} Undercover
-          </p>
+        <div v-if="gameState.phase === 'finished'" class="text-center py-12">
+          <h2 class="text-2xl font-bold mb-4">{{ winnerText }}</h2>
+          <p class="text-gray-500">Redirection vers le lobby...</p>
         </div>
       </div>
 
@@ -150,16 +130,6 @@ const phaseLabel = computed(() => {
 const winnerText = computed(() => {
   if (!gameState.value?.winner) return 'Partie terminée !';
   return gameState.value.winner === 'civilians' ? 'Les civils ont gagné !' : 'Les Undercover ont gagné !';
-});
-
-const lastWordPair = computed(() => {
-  const rounds = (gameState.value as any)?.rounds;
-  if (!rounds?.length) return null;
-  return rounds[rounds.length - 1].wordPair ?? null;
-});
-
-const exposedPlayers = computed(() => {
-  return (gameState.value as any)?.exposed ?? [];
 });
 
 const timerLabel = computed(() => {
@@ -234,7 +204,7 @@ onMounted(async () => {
           navigateTo('/');
           return;
         }
-        if ((room.value?.gameState?.phase as string) === 'waiting') {
+        if (room.value?.gameState?.phase === 'finished' || room.value?.gameState?.phase === 'waiting') {
           gameCleanup();
           disconnect();
           if (pollInterval) clearInterval(pollInterval);
@@ -271,13 +241,6 @@ async function handleNextRound() {
 
 async function handleReturnToLobby() {
   await returnToLobby();
-}
-
-function handleGoToLobby() {
-  gameCleanup();
-  disconnect();
-  if (pollInterval) clearInterval(pollInterval);
-  navigateTo(`/room/${route.params.code}`);
 }
 
 function handleLeave() {

@@ -106,10 +106,25 @@ export const useGameAPI = () => {
     } catch {}
   }
 
+  async function returnToLobby(): Promise<{ success: boolean; error?: string }> {
+    if (!room.value || !playerId.value) return { success: false, error: 'Not in a room' };
+
+    try {
+      const res = await $fetch('/api/rooms/reset', {
+        method: 'POST',
+        body: { roomId: room.value.id, playerId: playerId.value },
+      });
+      const data = res as any;
+      return { success: data.success };
+    } catch (e: any) {
+      return { success: false, error: e.data?.message || 'Failed to return to lobby' };
+    }
+  }
+
   function cleanup(): void {
     myWord.value = null;
     myRole.value = null;
   }
 
-  return { myWord, myRole, startGame, nextTurn, startVoting, vote, nextRound, fetchMyInfo, cleanup };
+  return { myWord, myRole, startGame, nextTurn, startVoting, vote, nextRound, returnToLobby, fetchMyInfo, cleanup };
 };

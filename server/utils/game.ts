@@ -133,6 +133,7 @@ export function resetGame(roomId: string, playerId: string): { success: boolean;
   if (room.hostId !== playerId) return { success: false, error: 'Only host can reset' };
 
   GameService.resetGame(room);
+  broadcastToRoom(roomId, 'game:reset', room.toPublic());
   return { success: true };
 }
 

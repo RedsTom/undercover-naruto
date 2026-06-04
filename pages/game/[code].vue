@@ -4,7 +4,10 @@
       <div v-if="room && gameState" class="max-w-4xl mx-auto space-y-6">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl font-bold">Partie en cours</h1>
-          <UButton color="gray" variant="outline" size="sm" @click="handleLeave">Quitter</UButton>
+          <div class="flex gap-2">
+            <UButton v-if="isHost" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
+            <UButton color="gray" variant="outline" size="sm" @click="handleLeave">Quitter</UButton>
+          </div>
         </div>
 
         <div class="text-center space-y-1">
@@ -89,7 +92,7 @@ import { getWordInfo } from '~/utils/wordInfo';
 
 const route = useRoute();
 const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
-const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound, cleanup: gameCleanup } = useGameAPI();
+const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect } = useSSE();
 
 const voting = ref(false);
@@ -180,7 +183,7 @@ onMounted(async () => {
           navigateTo('/');
           return;
         }
-        if (room.value?.gameState?.phase === 'finished') {
+        if (room.value?.gameState?.phase === 'finished' || room.value?.gameState?.phase === 'waiting') {
           gameCleanup();
           disconnect();
           if (pollInterval) clearInterval(pollInterval);
@@ -213,6 +216,10 @@ async function handleVote(targetId: string) {
 async function handleNextRound() {
   await nextRound();
   await fetchMyInfo();
+}
+
+async function handleReturnToLobby() {
+  await returnToLobby();
 }
 
 function handleLeave() {

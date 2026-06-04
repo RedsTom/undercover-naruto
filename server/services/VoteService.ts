@@ -6,10 +6,13 @@ export class VoteService {
     if (!room.gameState || room.gameState.phase !== 'voting') return false;
 
     const voter = room.getPlayer(voterId);
-    const target = room.getPlayer(targetId);
+    if (!voter || !voter.isAlive) return false;
 
-    if (!voter || !target || !voter.isAlive || !target.isAlive) return false;
-    if (voterId === targetId) return false;
+    if (targetId !== 'neutral') {
+      const target = room.getPlayer(targetId);
+      if (!target || !target.isAlive) return false;
+      if (voterId === targetId) return false;
+    }
 
     const currentRound = room.gameState.rounds[room.gameState.rounds.length - 1];
     const existingVoteIndex = currentRound.votes.findIndex(v => v.voterId === voterId);
@@ -33,6 +36,7 @@ export class VoteService {
     const voteCounts: Record<string, number> = {};
 
     currentRound.votes.forEach(vote => {
+      if (vote.targetId === 'neutral') return;
       voteCounts[vote.targetId] = (voteCounts[vote.targetId] || 0) + 1;
     });
 

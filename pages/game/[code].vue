@@ -16,6 +16,13 @@
           </p>
           <p class="text-sm text-gray-400">Round {{ gameState.currentRound }}</p>
           <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
+          <div class="text-xs text-gray-400 space-x-2">
+            <span>Mode : {{ gameState.config.mode === 'classic' ? 'Classique' : 'Double Infiltration' }}</span>
+            <span>·</span>
+            <span>Mr. White : {{ gameState.config.mrWhite ? 'Oui' : 'Non' }}</span>
+            <span>·</span>
+            <span>Rôles masqués : {{ gameState.config.hideRole ? 'Oui' : 'Non' }}</span>
+          </div>
         </div>
 
         <div v-if="myWord" class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow">
@@ -66,14 +73,36 @@
               {{ player.name }}
             </UButton>
           </div>
+          <div class="text-center pt-2">
+            <UButton color="gray" variant="outline" :disabled="voting" @click="handleVote('neutral')">
+              Neutre
+            </UButton>
+          </div>
         </div>
 
         <div v-if="gameState.phase === 'reveal' && isHost" class="text-center">
           <UButton size="lg" @click="handleNextRound">Tour suivant</UButton>
         </div>
 
-        <div v-if="gameState.phase === 'finished'" class="text-center space-y-4">
+        <div v-if="gameState.phase === 'finished'" class="text-center space-y-6">
           <h2 class="text-2xl font-bold">{{ winnerText }}</h2>
+
+          <div v-if="lastWordPair" class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow space-y-2">
+            <p class="font-semibold">Mot des civils : <span class="text-orange-600">{{ lastWordPair.wordA }}</span></p>
+            <p class="font-semibold">Mot des imposteurs : <span class="text-orange-600">{{ lastWordPair.wordB }}</span></p>
+          </div>
+
+          <div v-if="exposedPlayers.length" class="space-y-2">
+            <h3 class="text-lg font-semibold">Rôles</h3>
+            <div v-for="p in exposedPlayers" :key="p.playerId"
+              class="p-3 rounded-lg text-sm"
+              :class="p.role === 'undercover' || p.role === 'mrWhite' ? 'bg-red-50 dark:bg-red-900/30 ring-1 ring-red-300' : 'bg-green-50 dark:bg-green-900/30 ring-1 ring-green-300'">
+              <p class="font-medium">{{ p.name }}</p>
+              <p>{{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
+              <p v-if="p.word" class="text-xs text-gray-500">Mot : {{ p.word }}</p>
+            </div>
+          </div>
+
           <p v-if="gameState.scores" class="text-gray-500">
             Civils {{ gameState.scores.civilians }} - {{ gameState.scores.undercover }} Undercover
           </p>
@@ -120,6 +149,16 @@ const phaseLabel = computed(() => {
 const winnerText = computed(() => {
   if (!gameState.value?.winner) return 'Partie terminée !';
   return gameState.value.winner === 'civilians' ? 'Les civils ont gagné !' : 'Les Undercover ont gagné !';
+});
+
+const lastWordPair = computed(() => {
+  const rounds = (gameState.value as any)?.rounds;
+  if (!rounds?.length) return null;
+  return rounds[rounds.length - 1].wordPair ?? null;
+});
+
+const exposedPlayers = computed(() => {
+  return (gameState.value as any)?.exposed ?? [];
 });
 
 const timerLabel = computed(() => {

@@ -86,6 +86,12 @@ export function castVote(roomId: string, voterId: string, targetId: string): { s
     if (winner) {
       room.setPhase('finished');
       room.gameState!.winner = winner;
+      room.gameState!.exposed = Array.from(room.players.values()).map(p => ({
+        playerId: p.id,
+        name: p.name,
+        role: p.role ?? 'unknown',
+        word: p.word ?? null,
+      }));
       if (winner === 'civilians') room.gameState!.scores.civilians++;
       else room.gameState!.scores.undercover++;
     } else {

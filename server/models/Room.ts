@@ -10,6 +10,7 @@ export class RoomModel {
   createdAt: number;
   lastActivity: number;
   gameState: GameState | null;
+  lastConfig: GameConfig | null = null;
 
   constructor(id: string, code: string, hostId: string, maxPlayers = 8) {
     this.id = id;
@@ -98,6 +99,7 @@ export class RoomModel {
     maxPlayers: number;
     playerCount: number;
     gameState: GameState | null;
+    lastConfig: GameConfig | null;
   } {
     return {
       id: this.id,
@@ -107,6 +109,7 @@ export class RoomModel {
       maxPlayers: this.maxPlayers,
       playerCount: this.players.size,
       gameState: this.gameState,
+      lastConfig: this.lastConfig,
     };
   }
 
@@ -118,6 +121,7 @@ export class RoomModel {
     maxPlayers: number;
     playerCount: number;
     gameState: GameState | null;
+    lastConfig: GameConfig | null;
     myWord: string | null;
     myRole: string | null;
   } {

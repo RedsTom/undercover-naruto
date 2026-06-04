@@ -73,6 +73,7 @@ const props = defineProps<{
   playerCount: number;
   minPlayers?: number;
   maxPlayers?: number;
+  config?: Partial<GameConfig>;
 }>();
 
 const emit = defineEmits<{
@@ -119,4 +120,17 @@ function handleStart() {
     mrWhite: mrWhite.value,
   });
 }
+
+watch(() => props.config, (cfg) => {
+  if (!cfg) return;
+  if (cfg.mode) {
+    const found = modeOptions.find(m => m.value === cfg.mode);
+    if (found) selectedMode.value = found;
+  }
+  if (cfg.discussionTime) discussionTime.value = cfg.discussionTime;
+  if (cfg.voteTime) voteTime.value = cfg.voteTime;
+  if (cfg.eras?.length) selectedEras.value = cfg.eras;
+  if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
+  if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
+}, { immediate: true });
 </script>

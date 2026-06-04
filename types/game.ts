@@ -63,4 +63,10 @@ export interface GameState {
     civilians: number;
     undercover: number;
   };
+  exposed?: Array<{
+    playerId: string;
+    name: string;
+    role: string;
+    word: string | null;
+  }>;
 }

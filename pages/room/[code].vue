@@ -31,7 +31,7 @@
 
           <LobbyPlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" />
 
-          <LobbyGameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" @start="handleStart" />
+          <LobbyGameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" @start="handleStart" />
 
           <div v-if="!isHost" class="text-center">
             <p class="text-gray-500">En attente que l'hôte lance la partie...</p>
@@ -62,6 +62,8 @@ const { connect, disconnect } = useSSE();
 const joinName = ref('');
 const joining = ref(false);
 const joinError = ref('');
+
+const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (room.value as any)?.lastConfig ?? null);
 
 let pollInterval: NodeJS.Timeout | null = null;
 

@@ -80,11 +80,10 @@ export class GameService {
     if (!room.gameState) return null;
 
     const alivePlayers = room.getAlivePlayers();
-    const civilians = alivePlayers.filter(p => p.role === 'civil');
-    const undercover = alivePlayers.filter(p => p.role === 'undercover' || p.role === 'mrWhite');
-
-    if (undercover.length === 0) return 'civilians';
-    if (undercover.length >= civilians.length) return 'undercover';
+    if (alivePlayers.length <= 2) {
+      const undercoverAlive = alivePlayers.some(p => p.role === 'undercover' || p.role === 'mrWhite');
+      return undercoverAlive ? 'undercover' : 'civilians';
+    }
 
     return null;
   }
@@ -97,6 +96,13 @@ export class GameService {
 
     if (winner) {
       room.setPhase('finished');
+      room.gameState!.winner = winner;
+      room.gameState!.exposed = Array.from(room.players.values()).map(p => ({
+        playerId: p.id,
+        name: p.name,
+        role: p.role ?? 'unknown',
+        word: p.word ?? null,
+      }));
       if (winner === 'civilians') {
         room.gameState.scores.civilians++;
       } else {
@@ -128,6 +134,7 @@ export class GameService {
   }
 
   static resetGame(room: RoomModel): void {
+    room.lastConfig = room.gameState?.config ?? null;
     room.gameState = null;
     room.resetPlayers();
     room.setPhase('waiting');

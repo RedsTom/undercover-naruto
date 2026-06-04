@@ -1,4 +1,4 @@
-name: Deploy
+name: Build Docker image
 
 on:
   push:
@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ghcr.io/redstom/undercover-naruto
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -31,15 +31,3 @@ jobs:
           context: .
           push: true
           tags: ${{ env.IMAGE_NAME }}:latest
-
-      - name: Deploy on VPS via SSH
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            cd /opt/undercover-naruto
-            docker compose pull
-            docker compose up -d --remove-orphans
-            docker image prune -f

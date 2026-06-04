@@ -2,6 +2,7 @@
   "name": "undercover-naruto",
   "private": true,
   "type": "module",
+  "packageManager": "bun@1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

@@ -43,6 +43,14 @@
         />
       </div>
 
+      <USeparator label="Options" />
+
+      <UCheckbox v-model="mrWhite" label="Activer Mr. White" />
+      <p class="text-xs text-gray-400">Un joueur reçoit un mot vide et doit deviner quel mot les autres ont</p>
+
+      <UCheckbox v-model="hideRole" label="Masquer les rôles (mode difficile)" />
+      <p class="text-xs text-gray-400">Les joueurs ne voient pas leur rôle, seulement leur mot</p>
+
       <UButton
         v-if="isHost"
         block
@@ -85,7 +93,6 @@ const minPlayers = computed(() => props.minPlayers ?? 3);
 
 const modeOptions = [
   { label: 'Classique', value: 'classic' as GameMode },
-  { label: 'Mr. White', value: 'mrWhite' as GameMode },
   { label: 'Double Infiltration', value: 'doubleInfiltration' as GameMode },
 ];
 
@@ -93,6 +100,8 @@ const selectedMode = ref(modeOptions[0]);
 const discussionTime = ref(60);
 const voteTime = ref(30);
 const selectedEras = ref<string[]>([...ALL_ERAS]);
+const hideRole = ref(false);
+const mrWhite = ref(false);
 
 const canStart = computed(() => {
   return props.isHost && props.playerCount >= minPlayers.value && props.playerCount <= maxPlayers.value;
@@ -106,6 +115,8 @@ function handleStart() {
     discussionTime: discussionTime.value,
     voteTime: voteTime.value,
     eras: selectedEras.value,
+    hideRole: hideRole.value,
+    mrWhite: mrWhite.value,
   });
 }
 </script>

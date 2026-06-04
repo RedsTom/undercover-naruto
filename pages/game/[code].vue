@@ -18,7 +18,7 @@
         <div v-if="myWord" class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow">
           <p class="text-sm text-gray-500 mb-1">Votre mot :</p>
           <p class="text-3xl font-bold text-orange-600">{{ myWord }}</p>
-          <p class="text-xs text-gray-400 mt-1">Rôle : {{ myRole === 'civil' ? 'Civil' : myRole === 'undercover' ? 'Undercover' : 'Mr. White' }}</p>
+          <p v-if="!hideRole" class="text-xs text-gray-400 mt-1">Rôle : {{ myRole === 'civil' ? 'Civil' : myRole === 'undercover' ? 'Undercover' : 'Mr. White' }}</p>
           <div v-if="wordInfo" class="mt-4 text-left border-t pt-4">
             <p class="text-sm text-gray-600 dark:text-gray-400 italic">{{ wordInfo.summary }}</p>
             <ul class="mt-2 space-y-1">
@@ -95,6 +95,8 @@ const { connect, disconnect } = useSSE();
 const voting = ref(false);
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
+
+const hideRole = computed(() => (gameState.value as any)?.config?.hideRole ?? false);
 
 const wordInfo = computed(() => {
   if (!myWord.value) return null;

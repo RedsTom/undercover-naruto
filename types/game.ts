@@ -1,4 +1,4 @@
-export type GameMode = 'classic' | 'mrWhite' | 'doubleInfiltration';
+export type GameMode = 'classic' | 'doubleInfiltration';
 
 export type GamePhase = 'waiting' | 'playing' | 'discussion' | 'voting' | 'reveal' | 'finished';
 
@@ -29,6 +29,8 @@ export interface GameConfig {
   maxPlayers: number;
   minPlayers: number;
   eras: string[];
+  hideRole: boolean;
+  mrWhite: boolean;
 }
 
 export interface Vote {

@@ -72,6 +72,9 @@ export function generateWordPairs(eras: string[], minOverlap = 3): WordPairCandi
     for (let j = i + 1; j < entries.length; j++) {
       const a = entries[i];
       const b = entries[j];
+
+      if (a.category !== b.category) continue;
+
       const overlap = getTagOverlap(a, b);
 
       if (overlap >= minOverlap) {

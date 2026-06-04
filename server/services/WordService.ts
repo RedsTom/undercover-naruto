@@ -20,22 +20,29 @@ export class WordService {
     const wordPair = WordService.getRandomWordPair(eras);
     const players = Array.from(room.players.values());
     const mode = room.gameState.config.mode;
-    const infiltrators = WordService.getInfiltratorCount(players.length, mode);
+    const hasMrWhite = room.gameState.config.mrWhite;
+    const undercoverCount = WordService.getInfiltratorCount(players.length, mode, hasMrWhite);
 
     const shuffled = [...players].sort(() => Math.random() - 0.5);
+    let idx = 0;
 
-    shuffled.forEach((player, index) => {
-      if (mode === 'mrWhite' && index === 0) {
-        player.assignRole('mrWhite');
-        player.assignWord(null);
-      } else if (index < infiltrators) {
-        player.assignRole('undercover');
-        player.assignWord(wordPair.wordB);
-      } else {
-        player.assignRole('civil');
-        player.assignWord(wordPair.wordA);
-      }
-    });
+    if (hasMrWhite) {
+      shuffled[idx].assignRole('mrWhite');
+      shuffled[idx].assignWord(null);
+      idx++;
+    }
+
+    for (let i = 0; i < undercoverCount; i++) {
+      shuffled[idx].assignRole('undercover');
+      shuffled[idx].assignWord(wordPair.wordB);
+      idx++;
+    }
+
+    while (idx < shuffled.length) {
+      shuffled[idx].assignRole('civil');
+      shuffled[idx].assignWord(wordPair.wordA);
+      idx++;
+    }
 
     room.gameState.rounds.push({
       roundNumber: room.gameState.currentRound + 1,
@@ -46,9 +53,10 @@ export class WordService {
     room.gameState.currentRound++;
   }
 
-  static getInfiltratorCount(playerCount: number, mode: GameMode): number {
-    if (mode === 'mrWhite') return 1;
-    if (mode === 'doubleInfiltration' && playerCount >= 6) return 2;
-    return 1;
+  static getInfiltratorCount(playerCount: number, mode: GameMode, hasMrWhite?: boolean): number {
+    let count = 1;
+    if (mode === 'doubleInfiltration' && playerCount >= 6) count = 2;
+    if (hasMrWhite) count = Math.max(1, count);
+    return Math.min(count, playerCount - (hasMrWhite ? 2 : 1));
   }
 }

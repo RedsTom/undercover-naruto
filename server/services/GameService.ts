@@ -11,6 +11,8 @@ export class GameService {
     maxPlayers: 8,
     minPlayers: 3,
     eras: [],
+    hideRole: false,
+    mrWhite: false,
   };
 
   static canStartGame(room: RoomModel): boolean {

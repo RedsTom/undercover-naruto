@@ -101,7 +101,9 @@ export function castVote(roomId: string, voterId: string, targetId: string): { s
 export function nextTurn(roomId: string, playerId: string): { success: boolean; error?: string } {
   const room = rooms.get(roomId);
   if (!room) return { success: false, error: 'Room not found' };
-  if (room.hostId !== playerId) return { success: false, error: 'Only host can advance turn' };
+  if (room.hostId !== playerId && !GameService.isCurrentSpeaker(room, playerId)) {
+    return { success: false, error: 'Only host or current speaker can advance turn' };
+  }
 
   GameService.nextTurn(room);
   broadcastToRoom(roomId, 'turn:changed', { currentTurnIndex: room.gameState?.currentTurnIndex });
@@ -111,7 +113,9 @@ export function nextTurn(roomId: string, playerId: string): { success: boolean; 
 export function startVoting(roomId: string, playerId: string): { success: boolean; error?: string } {
   const room = rooms.get(roomId);
   if (!room) return { success: false, error: 'Room not found' };
-  if (room.hostId !== playerId) return { success: false, error: 'Only host can start voting' };
+  if (room.hostId !== playerId && !GameService.isCurrentSpeaker(room, playerId)) {
+    return { success: false, error: 'Only host or current speaker can start voting' };
+  }
 
   GameService.startVoting(room);
   broadcastToRoom(roomId, 'phase:changed', { phase: 'voting' });

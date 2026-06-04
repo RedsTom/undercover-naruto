@@ -49,7 +49,7 @@
             Tour de <strong>{{ currentSpeaker.name }}</strong>
           </p>
           <p class="text-sm text-gray-500">Décrivez votre mot sans être trop explicite</p>
-          <div v-if="isHost" class="flex gap-3 justify-center">
+          <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center">
             <UButton @click="handleNextTurn">Tour suivant</UButton>
             <UButton color="red" variant="outline" @click="handleStartVoting">Passer au vote</UButton>
           </div>

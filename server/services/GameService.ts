@@ -61,6 +61,12 @@ export class GameService {
     room.updateActivity();
   }
 
+  static isCurrentSpeaker(room: RoomModel, playerId: string): boolean {
+    if (!room.gameState || room.gameState.phase !== 'discussion') return false;
+    const alivePlayers = room.getAlivePlayers();
+    return alivePlayers[room.gameState.currentTurnIndex]?.id === playerId;
+  }
+
   static startVoting(room: RoomModel): void {
     if (!room.gameState) return;
 

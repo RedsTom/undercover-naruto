@@ -35,11 +35,21 @@ export class GameService {
     }
 
     WordService.assignWords(room);
+    GameService.shufflePlayers(room);
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;
     room.gameState.timerEndTime = Date.now() + mergedConfig.discussionTime * 1000;
 
     return true;
+  }
+
+  static shufflePlayers(room: RoomModel): void {
+    const entries = Array.from(room.players.entries());
+    for (let i = entries.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [entries[i], entries[j]] = [entries[j], entries[i]];
+    }
+    room.players = new Map(entries);
   }
 
   static nextTurn(room: RoomModel): void {
@@ -104,6 +114,7 @@ export class GameService {
     });
 
     WordService.assignWords(room);
+    GameService.shufflePlayers(room);
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;
     room.gameState.timerEndTime = Date.now() + room.gameState.config.discussionTime * 1000;

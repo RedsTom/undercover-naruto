@@ -89,7 +89,7 @@ import { getWordInfo } from '~/utils/wordInfo';
 
 const route = useRoute();
 const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
-const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound } = useGameAPI();
+const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect } = useSSE();
 
 const voting = ref(false);
@@ -173,10 +173,18 @@ onMounted(async () => {
         await fetchMyInfo();
         const stillInRoom = room.value?.players?.some((p: any) => p.id === playerId.value);
         if (!stillInRoom) {
+          gameCleanup();
           cleanup();
           disconnect();
           if (pollInterval) clearInterval(pollInterval);
           navigateTo('/');
+          return;
+        }
+        if (room.value?.gameState?.phase === 'finished') {
+          gameCleanup();
+          disconnect();
+          if (pollInterval) clearInterval(pollInterval);
+          navigateTo(`/room/${route.params.code}`);
         }
       }
     }, 3000);

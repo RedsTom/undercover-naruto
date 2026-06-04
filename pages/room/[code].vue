@@ -99,7 +99,7 @@ onUnmounted(() => {
 });
 
 watch(() => room.value?.gameState?.phase, (phase) => {
-  if (phase && phase !== 'waiting' && playerId.value) {
+  if (phase && phase !== 'waiting' && phase !== 'finished' && playerId.value) {
     fetchMyInfo();
     navigateTo(`/game/${route.params.code}`);
   }

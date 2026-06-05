@@ -63,7 +63,7 @@ export interface WordPairCandidate {
   overlap: number;
 }
 
-export function generateWordPairs(eras: string[], minOverlap = 3): WordPairCandidate[] {
+export function generateWordPairs(eras: string[], minOverlap = 3, excludeKeys: Set<string> = new Set()): WordPairCandidate[] {
   const entries = getEntriesByEras(eras);
   const pairs: WordPairCandidate[] = [];
   const seen = new Set<string>();
@@ -78,8 +78,8 @@ export function generateWordPairs(eras: string[], minOverlap = 3): WordPairCandi
       const overlap = getTagOverlap(a, b);
 
       if (overlap >= minOverlap) {
-        const key = [a.id, b.id].sort().join(':');
-        if (seen.has(key)) continue;
+        const key = [a.name, b.name].sort().join(':');
+        if (seen.has(key) || excludeKeys.has(key)) continue;
         seen.add(key);
 
         let difficulty: 'easy' | 'medium' | 'hard';
@@ -101,8 +101,8 @@ export function generateWordPairs(eras: string[], minOverlap = 3): WordPairCandi
   return pairs;
 }
 
-export function getRandomWordPair(eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard'): WordPairCandidate | null {
-  const pairs = generateWordPairs(eras, minOverlap);
+export function getRandomWordPair(eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard', excludeKeys: Set<string> = new Set()): WordPairCandidate | null {
+  const pairs = generateWordPairs(eras, minOverlap, excludeKeys);
 
   const filtered = difficulty
     ? pairs.filter(p => p.difficulty === difficulty)
@@ -110,10 +110,20 @@ export function getRandomWordPair(eras: string[], minOverlap = 3, difficulty?: '
 
   if (filtered.length === 0) {
     if (pairs.length > 0) {
-      return pairs[Math.floor(Math.random() * pairs.length)];
+      const shuffled = [...pairs];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled[0];
     }
     return null;
   }
 
-  return filtered[Math.floor(Math.random() * filtered.length)];
+  const shuffled = [...filtered];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled[0];
 }

@@ -87,6 +87,7 @@ export class RoomModel {
         civilians: 0,
         undercover: 0,
       },
+      usedWordKeys: [],
     };
   }
 

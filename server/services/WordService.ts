@@ -3,10 +3,10 @@ import { RoomModel } from '../models/Room';
 import { getRandomWordPair as getRandomPair } from './DataService';
 
 export class WordService {
-  static getRandomWordPair(eras: string[] = []): WordPair {
-    let candidate = getRandomPair(eras, 3);
-    if (!candidate) candidate = getRandomPair(eras, 2);
-    if (!candidate) candidate = getRandomPair(eras, 1);
+  static getRandomWordPair(eras: string[] = [], excludeKeys: Set<string> = new Set()): WordPair {
+    let candidate = getRandomPair(eras, 3, undefined, excludeKeys);
+    if (!candidate) candidate = getRandomPair(eras, 2, undefined, excludeKeys);
+    if (!candidate) candidate = getRandomPair(eras, 1, undefined, excludeKeys);
 
     if (!candidate) {
       throw new Error('Aucune paire de mots trouvée pour les époques sélectionnées. Essayez d\'ajouter plus d\'époques.');
@@ -24,11 +24,15 @@ export class WordService {
     if (!room.gameState) return;
 
     const eras = room.gameState.config.eras ?? [];
-    const wordPair = WordService.getRandomWordPair(eras);
+    const excludeKeys = new Set(room.gameState.usedWordKeys);
+    const wordPair = WordService.getRandomWordPair(eras, excludeKeys);
     const players = Array.from(room.players.values());
     const mode = room.gameState.config.mode;
     const hasMrWhite = room.gameState.config.mrWhite;
     const undercoverCount = WordService.getInfiltratorCount(players.length, mode, hasMrWhite);
+
+    const pairKey = [wordPair.wordA, wordPair.wordB].sort().join(':');
+    room.gameState.usedWordKeys.push(pairKey);
 
     const shuffled = WordService.shuffle(players);
     let idx = 0;

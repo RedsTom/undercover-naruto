@@ -1,4 +1,4 @@
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
   const { id } = event.context.params!;
   const room = getRoom(id as string);
 
@@ -6,15 +6,19 @@ export default defineEventHandler((event) => {
     throw createError({ statusCode: 404, message: 'Room not found' });
   }
 
-  const stream = createEventStream(event, { pingInterval: 15000 });
+  const stream = createEventStream(event, { pingInterval: 5000 });
 
   addSSEStream(id as string, { push: stream.push.bind(stream) });
 
-  stream.push(JSON.stringify({ event: 'connected', data: room.toPublic() }));
+  try {
+    await stream.push(JSON.stringify({ event: 'connected', data: room.toPublic() }));
+  } catch {}
 
   stream.onClosed(() => {
     removeSSEStream(id as string, { push: stream.push.bind(stream) });
   });
 
-  return stream.send();
+  try {
+    await stream.send();
+  } catch {}
 });

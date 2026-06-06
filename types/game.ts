@@ -1,3 +1,5 @@
+export type Difficulty = 'easy' | 'medium' | 'hard' | 'mixed';
+
 export type GameMode = 'classic' | 'doubleInfiltration';
 
 export type GamePhase = 'waiting' | 'playing' | 'discussion' | 'voting' | 'reveal' | 'finished';
@@ -30,6 +32,8 @@ export interface GameConfig {
   minPlayers: number;
   eras: string[];
   anime: string;
+  difficulty: Difficulty;
+  categories: string[];
   hideRole: boolean;
   mrWhite: boolean;
 }

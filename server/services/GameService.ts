@@ -1,4 +1,4 @@
-import type { GameMode, GameConfig } from '~/types';
+import type { GameMode, GameConfig, Difficulty } from '~/types';
 import { RoomModel } from '../models/Room';
 import { WordService } from './WordService';
 import { VoteService } from './VoteService';
@@ -12,6 +12,8 @@ export class GameService {
     minPlayers: 3,
     eras: [],
     anime: 'naruto',
+    difficulty: 'mixed',
+    categories: [],
     hideRole: false,
     mrWhite: false,
   };

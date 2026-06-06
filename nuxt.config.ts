@@ -23,6 +23,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Undercover Naruto",
+      link: [
+        { rel: "icon", type: "image/png", href: "/icon.png" },
+      ],
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -30,6 +33,11 @@ export default defineNuxtConfig({
           name: "description",
           content: "Jeu Undercover en ligne sur le thème Naruto",
         },
+        { property: "og:image", content: "/icon.png" },
+        { property: "og:image:width", content: "512" },
+        { property: "og:image:height", content: "512" },
+        { name: "twitter:card", content: "summary" },
+        { name: "twitter:image", content: "/icon.png" },
       ],
     },
   },

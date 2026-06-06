@@ -59,7 +59,7 @@
       </div>
 
       <VotePanel
-        v-if="gameState.phase === 'voting' && myWord !== null"
+        v-if="gameState.phase === 'voting'"
         :players="room.players"
         :player-id="playerId"
         :vote-count="voteProgress.count"

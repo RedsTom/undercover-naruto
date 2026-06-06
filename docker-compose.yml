@@ -2,6 +2,8 @@ services:
   app:
     image: ghcr.io/redstom/undercover-naruto:latest
     restart: unless-stopped
+    environment:
+      - NITRO_BUN_IDLE_TIMEOUT=0
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.undercover-naruto.rule=Host(`undercover-naruto.vps.redstom.fr`)"

@@ -132,6 +132,7 @@ export class GameService {
 
   static continueRound(room: RoomModel): boolean {
     if (!room.gameState || room.gameState.phase !== 'reveal') return false;
+    if (room.players.size < 3) return false;
 
     room.players.forEach(p => { p.isAlive = true; });
 
@@ -153,8 +154,7 @@ export class GameService {
   static continueGame(room: RoomModel, config?: Partial<GameConfig>): boolean {
     if (!room.gameState || room.gameState.phase !== 'waiting') return false;
 
-    const alivePlayers = room.getAlivePlayers();
-    if (alivePlayers.length < 2) return false;
+    if (room.players.size < 3) return false;
 
     const mergedConfig: GameConfig = {
       ...room.gameState.config,

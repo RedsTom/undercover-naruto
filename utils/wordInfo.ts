@@ -6,10 +6,11 @@ const manifestCache = new Map<string, { name: string; color: string; eras: Array
 async function loadManifest(anime: string) {
   if (manifestCache.has(anime)) return manifestCache.get(anime)!;
 
-  const modules = import.meta.glob(`~/data/*/manifest.json`, { eager: true, import: 'default' });
+  const modules = import.meta.glob('~/data/*/manifest.json', { eager: true, import: 'default' });
   for (const [path, data] of Object.entries(modules)) {
-    const parts = path.split('/');
-    const slug = parts[parts.length - 2];
+    const idx = path.indexOf(`/data/`);
+    const afterData = idx >= 0 ? path.slice(idx + 6) : '';
+    const slug = afterData.split('/')[0];
     if (slug === anime && data && typeof data === 'object') {
       const m = data as any;
       manifestCache.set(anime, m);
@@ -20,12 +21,13 @@ async function loadManifest(anime: string) {
 }
 
 export async function getAvailableAnime(): Promise<Array<{ slug: string; name: string; color: string }>> {
-  const modules = import.meta.glob(`~/data/*/manifest.json`, { eager: true, import: 'default' });
+  const modules = import.meta.glob('~/data/*/manifest.json', { eager: true, import: 'default' });
   const result: Array<{ slug: string; name: string; color: string }> = [];
 
   for (const [path, data] of Object.entries(modules)) {
-    const parts = path.split('/');
-    const slug = parts[parts.length - 2];
+    const idx = path.indexOf(`/data/`);
+    const afterData = idx >= 0 ? path.slice(idx + 6) : '';
+    const slug = afterData.split('/')[0];
     if (data && typeof data === 'object') {
       const m = data as any;
       result.push({ slug, name: m.name, color: m.color });

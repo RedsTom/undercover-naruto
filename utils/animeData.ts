@@ -23,9 +23,10 @@ export function getEntries(anime: string): AnimeEntry[] {
   const entries: AnimeEntry[] = [];
   for (const [path, data] of Object.entries(modules)) {
     if (path.includes('/manifest.json')) continue;
-    const parts = path.split('/');
-    const animeSlug = parts[parts.length - 2];
-    if (animeSlug !== anime) continue;
+    const idx = path.indexOf(`/data/`);
+    const afterData = idx >= 0 ? path.slice(idx + 6) : '';
+    const slug = afterData.split('/')[0];
+    if (slug !== anime) continue;
 
     if (Array.isArray(data)) {
       entries.push(...data);

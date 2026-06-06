@@ -27,6 +27,7 @@
         :word="myWord"
         :role="myRole"
         :show-word="!!myWord"
+        :anime="animeSlug"
       />
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -125,6 +126,7 @@ const { connect, disconnect } = useSSE();
 const voting = ref(false);
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
+const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
 
 const phaseLabel = computed(() => {
   const phases: Record<string, string> = {

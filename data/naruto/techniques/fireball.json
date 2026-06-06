@@ -31,18 +31,5 @@
     "Produit une boule de feu de plusieurs mètres de diamètre",
     "Nécessite une grande quantité de chakra et un bon contrôle",
     "Technique de démonstration de la puissance du clan Uchiha"
-  ],
-  "image": "",
-  "type": "ninjutsu",
-  "rank": "C",
-  "nature": [
-    "feu"
-  ],
-  "users": [
-    "Sasuke Uchiha",
-    "Itachi Uchiha",
-    "Madara Uchiha",
-    "Obito Uchiha",
-    "Hiruzen Sarutobi"
   ]
 }

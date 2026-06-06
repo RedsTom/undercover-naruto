@@ -89,7 +89,7 @@
 
         <InviteLink :room="room" />
 
-        <GameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" :in-game="!!isInGame" @start="handleStart" />
+        <GameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" :in-game="!!isInGame" :anime="animeSlug" @start="handleStart" />
 
         <div v-if="!isHost && !isInGame" class="text-center">
           <p class="text-gray-500 animate-pulse">&#9203; En attente que l'hôte lance la partie...</p>
@@ -124,6 +124,7 @@ const joinError = ref('');
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const isInGame = computed(() => gameState.value && gameState.value.currentRound > 0 && gameState.value.phase === 'waiting');
+const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
 const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (room.value as any)?.lastConfig ?? null);
 const lastGameResult = computed(() => {
   if (gameState.value?.phase === 'finished') return gameState.value;

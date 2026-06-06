@@ -1,0 +1,23 @@
+{
+  "name": "Naruto",
+  "slug": "naruto",
+  "color": "#f97316",
+  "eras": [
+    { "id": "naruto", "label": "Naruto Original" },
+    { "id": "shippuden", "label": "Shippuden" },
+    { "id": "shippuden-end", "label": "Fin Shippuden" },
+    { "id": "boruto", "label": "Boruto" },
+    { "id": "naruto-backstory", "label": "Flashback" }
+  ],
+  "categories": {
+    "character": "Personnage",
+    "technique": "Technique",
+    "village": "Village",
+    "clan": "Clan",
+    "bijuu": "Bij\u00fb",
+    "organization": "Organisation",
+    "kage": "Kage",
+    "kekkei-genkai": "Kekkei Genkai",
+    "item": "Objet"
+  }
+}

@@ -1,52 +1,58 @@
-import { getAllEntries } from './narutoData';
-import type { NarutoEntry, Era } from '~/types';
+import { getEntryByName } from './animeData';
+import type { AnimeEntry } from '~/types';
 
-export function getWordInfo(name: string): NarutoEntry | undefined {
-  return getAllEntries().find(e => e.name === name);
+const manifestCache = new Map<string, { name: string; color: string; eras: Array<{ id: string; label: string }>; categories: Record<string, string> }>();
+
+async function loadManifest(anime: string) {
+  if (manifestCache.has(anime)) return manifestCache.get(anime)!;
+
+  const modules = import.meta.glob(`~/data/*/manifest.json`, { eager: true, import: 'default' });
+  for (const [path, data] of Object.entries(modules)) {
+    const parts = path.split('/');
+    const slug = parts[parts.length - 2];
+    if (slug === anime && data && typeof data === 'object') {
+      const m = data as any;
+      manifestCache.set(anime, m);
+      return m;
+    }
+  }
+  return null;
 }
 
-export function getWordSummary(name: string): string | null {
-  const entry = getWordInfo(name);
-  return entry?.summary ?? null;
+export async function getAvailableAnime(): Promise<Array<{ slug: string; name: string; color: string }>> {
+  const modules = import.meta.glob(`~/data/*/manifest.json`, { eager: true, import: 'default' });
+  const result: Array<{ slug: string; name: string; color: string }> = [];
+
+  for (const [path, data] of Object.entries(modules)) {
+    const parts = path.split('/');
+    const slug = parts[parts.length - 2];
+    if (data && typeof data === 'object') {
+      const m = data as any;
+      result.push({ slug, name: m.name, color: m.color });
+      manifestCache.set(slug, m);
+    }
+  }
+
+  return result;
 }
 
-export function getWordDetails(name: string): string[] {
-  const entry = getWordInfo(name);
-  return entry?.details ?? [];
+export function getWordInfo(anime: string, name: string): AnimeEntry | undefined {
+  return getEntryByName(anime, name);
 }
 
-export function getWordEra(name: string): Era[] {
-  const entry = getWordInfo(name);
-  return entry?.era ?? [];
+export async function getCategoryLabel(anime: string, category: string): Promise<string> {
+  const manifest = await loadManifest(anime);
+  return manifest?.categories?.[category] ?? category;
 }
 
-export function getWordTags(name: string): string[] {
-  const entry = getWordInfo(name);
-  return entry?.tags ?? [];
+export async function getAnimeManifest(anime: string) {
+  return loadManifest(anime);
 }
 
-export function getCategoryLabel(category: string): string {
-  const labels: Record<string, string> = {
-    characters: 'Personnage',
-    techniques: 'Technique',
-    clans: 'Clan',
-    villages: 'Village',
-    bijuu: 'Bijû',
-    organizations: 'Organisation',
-    kage: 'Kage',
-    'kekkei-genkai': 'Kekkei Genkai',
-    items: 'Objet',
-  };
-  return labels[category] ?? category;
-}
-
-export function formatEra(era: Era): string {
-  const labels: Record<Era, string> = {
-    'naruto': 'Naruto Original',
-    'shippuden': 'Shippuden',
-    'shippuden-end': 'Fin Shippuden',
-    'boruto': 'Boruto',
-    'naruto-backstory': 'Flashback',
-  };
-  return labels[era] ?? era;
+export function formatEra(era: string, manifest?: { eras: Array<{ id: string; label: string }> }): string {
+  if (manifest) {
+    const found = manifest.eras.find(e => e.id === era);
+    if (found) return found.label;
+  }
+  return era;
 }

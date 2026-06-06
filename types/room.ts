@@ -24,4 +24,5 @@ export interface RoomState {
   gameState: GameState | null;
   myWord?: string | null;
   myRole?: string | null;
+  anime?: string;
 }

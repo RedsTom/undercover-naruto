@@ -1,33 +1,66 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import type { NarutoEntry } from '~/types';
+import type { AnimeEntry, AnimeManifest } from '~/types';
 
-const CATEGORIES = [
-  'characters', 'techniques', 'clans', 'villages', 'bijuu',
-  'organizations', 'kage', 'kekkei-genkai', 'items',
-];
-
-let cachedEntries: NarutoEntry[] | null = null;
-
-function getDataDir(): string {
-  return join(process.cwd(), 'data', 'naruto');
+interface CachedAnime {
+  entries: AnimeEntry[];
+  manifest: AnimeManifest;
 }
 
-export function loadAllEntries(): NarutoEntry[] {
-  if (cachedEntries) return cachedEntries;
+const cache = new Map<string, CachedAnime>();
 
-  const entries: NarutoEntry[] = [];
-  const baseDir = getDataDir();
+function getDataDir(anime: string): string {
+  return join(process.cwd(), 'data', anime);
+}
 
-  for (const category of CATEGORIES) {
-    const dir = join(baseDir, category);
-    if (!existsSync(dir)) continue;
+export function loadManifest(anime: string): AnimeManifest | null {
+  const manifestPath = join(getDataDir(anime), 'manifest.json');
+  if (!existsSync(manifestPath)) return null;
+  try {
+    return JSON.parse(readFileSync(manifestPath, 'utf-8')) as AnimeManifest;
+  } catch {
+    return null;
+  }
+}
 
+export function listAvailableAnime(): Array<{ slug: string; name: string; color: string }> {
+  const dataRoot = join(process.cwd(), 'data');
+  if (!existsSync(dataRoot)) return [];
+
+  const results: Array<{ slug: string; name: string; color: string }> = [];
+  const dirs = readdirSync(dataRoot, { withFileTypes: true });
+
+  for (const dir of dirs) {
+    if (!dir.isDirectory()) continue;
+    const manifestPath = join(dataRoot, dir.name, 'manifest.json');
+    if (!existsSync(manifestPath)) continue;
+    try {
+      const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8')) as AnimeManifest;
+      results.push({ slug: dir.name, name: manifest.name, color: manifest.color });
+    } catch {}
+  }
+
+  return results;
+}
+
+function loadAnimeData(anime: string): CachedAnime | null {
+  if (cache.has(anime)) return cache.get(anime)!;
+
+  const manifest = loadManifest(anime);
+  if (!manifest) return null;
+
+  const entries: AnimeEntry[] = [];
+  const baseDir = getDataDir(anime);
+
+  const subDirs = readdirSync(baseDir, { withFileTypes: true });
+  for (const subDir of subDirs) {
+    if (!subDir.isDirectory()) continue;
+    const dir = join(baseDir, subDir.name);
     const files = readdirSync(dir).filter(f => f.endsWith('.json'));
     for (const file of files) {
       try {
         const content = readFileSync(join(dir, file), 'utf-8');
-        const data = JSON.parse(content) as NarutoEntry;
+        const data = JSON.parse(content) as AnimeEntry;
         entries.push(data);
       } catch (e) {
         console.error(`[DataService] Error loading ${dir}/${file}:`, e);
@@ -35,22 +68,28 @@ export function loadAllEntries(): NarutoEntry[] {
     }
   }
 
-  cachedEntries = entries;
-  return entries;
+  const result = { entries, manifest };
+  cache.set(anime, result);
+  return result;
 }
 
-export function getEntryByName(name: string): NarutoEntry | undefined {
-  return loadAllEntries().find(e => e.name === name);
+export function loadAllEntries(anime: string): AnimeEntry[] {
+  const data = loadAnimeData(anime);
+  return data?.entries ?? [];
 }
 
-export function getEntriesByEras(eras: string[]): NarutoEntry[] {
-  if (eras.length === 0) return loadAllEntries();
-  return loadAllEntries().filter(e =>
+export function getEntryByName(anime: string, name: string): AnimeEntry | undefined {
+  return loadAllEntries(anime).find(e => e.name === name);
+}
+
+export function getEntriesByEras(anime: string, eras: string[]): AnimeEntry[] {
+  if (eras.length === 0) return loadAllEntries(anime);
+  return loadAllEntries(anime).filter(e =>
     e.era.some(era => eras.includes(era))
   );
 }
 
-export function getTagOverlap(a: NarutoEntry, b: NarutoEntry): number {
+export function getTagOverlap(a: AnimeEntry, b: AnimeEntry): number {
   const setB = new Set(b.tags);
   return a.tags.filter(t => setB.has(t)).length;
 }
@@ -63,8 +102,8 @@ export interface WordPairCandidate {
   overlap: number;
 }
 
-export function generateWordPairs(eras: string[], minOverlap = 3, excludeKeys: Set<string> = new Set()): WordPairCandidate[] {
-  const entries = getEntriesByEras(eras);
+export function generateWordPairs(anime: string, eras: string[], minOverlap = 3, excludeKeys: Set<string> = new Set()): WordPairCandidate[] {
+  const entries = getEntriesByEras(anime, eras);
   const pairs: WordPairCandidate[] = [];
   const seen = new Set<string>();
 
@@ -101,8 +140,8 @@ export function generateWordPairs(eras: string[], minOverlap = 3, excludeKeys: S
   return pairs;
 }
 
-export function getRandomWordPair(eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard', excludeKeys: Set<string> = new Set()): WordPairCandidate | null {
-  const pairs = generateWordPairs(eras, minOverlap, excludeKeys);
+export function getRandomWordPair(anime: string, eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard', excludeKeys: Set<string> = new Set()): WordPairCandidate | null {
+  const pairs = generateWordPairs(anime, eras, minOverlap, excludeKeys);
 
   const filtered = difficulty
     ? pairs.filter(p => p.difficulty === difficulty)

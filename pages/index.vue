@@ -6,40 +6,61 @@
         <h1 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-red-500">
           UNDERCOVER
         </h1>
-        <p class="text-xl text-orange-300 font-semibold tracking-wider">NARUTO EDITION</p>
+        <p class="text-xl text-orange-300 font-semibold tracking-wider">ANIME EDITION</p>
         <p class="text-sm text-gray-500">Trouvez l'intrus avant qu'il ne soit trop tard</p>
       </div>
 
       <GameCard>
-        <form @submit.prevent="handleCreate" class="space-y-5">
-          <div class="flex flex-col gap-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Pseudo</label>
-            <input v-model="playerName" placeholder="Entrez votre pseudo" autocomplete="off" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]" />
+        <div class="space-y-5">
+          <div class="text-center">
+            <p class="block text-xs font-bold uppercase tracking-wider text-white/50 mb-3">Choisissez un anime</p>
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                v-for="a in animeList" :key="a.slug"
+                class="p-4 rounded-xl text-sm font-bold transition-all duration-200"
+                :class="selectedAnime === a.slug
+                  ? 'scale-[0.97] ring-2 text-white'
+                  : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white ring-1 ring-white/10'"
+                :style="selectedAnime === a.slug ? { backgroundColor: a.color + '20', borderColor: a.color, boxShadow: `0 0 20px ${a.color}30` } : {}"
+                @click="selectedAnime = a.slug"
+              >
+                {{ a.name }}
+              </button>
+            </div>
           </div>
 
-          <GameButton type="submit" block size="lg" :disabled="!canCreate" :loading="creating">
-            &#128640; Créer une partie
-          </GameButton>
-        </form>
+          <div class="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent" />
 
-        <div class="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent my-5" />
+          <form @submit.prevent="handleCreate" class="space-y-4">
+            <div class="flex flex-col gap-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Pseudo</label>
+              <input v-model="playerName" placeholder="Entrez votre pseudo" autocomplete="off" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]" />
+            </div>
 
-        <form @submit.prevent="handleJoin" class="space-y-4">
-          <div class="flex flex-col gap-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Code de la salle</label>
-            <input
-              v-model="roomCode"
-              placeholder="ABC123"
-              autocomplete="off"
-              class="w-full px-4 py-3.5 rounded-xl text-center text-2xl font-mono tracking-widest text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]"
-              :maxlength="6"
-            />
-          </div>
+            <GameButton type="submit" block size="lg" :disabled="!canCreate" :loading="creating">
+              &#128640; Créer une partie
+            </GameButton>
+          </form>
 
-          <GameButton type="submit" block size="lg" variant="secondary" :disabled="!canJoin" :loading="joining">
-            &#128279; Rejoindre
-          </GameButton>
-        </form>
+          <div class="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent" />
+
+          <form @submit.prevent="handleJoin" class="space-y-4">
+            <div class="flex flex-col gap-2">
+              <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Code de la salle</label>
+              <input
+                v-model="roomCode"
+                placeholder="ABC123"
+                autocomplete="off"
+                class="w-full px-4 py-3.5 rounded-xl text-center text-2xl font-mono tracking-widest text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]"
+                :maxlength="6"
+              />
+            </div>
+
+            <GameButton type="submit" block size="lg" variant="secondary" :disabled="!canJoin" :loading="joining">
+              &#128279; Rejoindre
+            </GameButton>
+          </form>
+        </div>
       </GameCard>
 
       <div v-if="error" class="animate-shake">
@@ -59,6 +80,9 @@
 <script setup lang="ts">
 const { createRoom, joinRoom } = useRoomAPI();
 
+const animeList = ref<Array<{ slug: string; name: string; color: string }>>([]);
+const selectedAnime = ref('naruto');
+
 const roomCode = ref('');
 const creating = ref(false);
 const joining = ref(false);
@@ -68,12 +92,18 @@ const playerName = ref('');
 const canCreate = computed(() => playerName.value.trim().length >= 2 && !creating.value);
 const canJoin = computed(() => roomCode.value.length === 6 && !joining.value);
 
+onMounted(async () => {
+  try {
+    animeList.value = await $fetch('/api/anime') as any;
+  } catch {}
+});
+
 async function handleCreate() {
   if (!canCreate.value) return;
   creating.value = true;
   error.value = '';
   try {
-    const result = await createRoom(playerName.value.trim());
+    const result = await createRoom(playerName.value.trim(), selectedAnime.value);
     if (result.success && result.roomCode) {
       navigateTo(`/room/${result.roomCode}`);
     } else {

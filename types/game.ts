@@ -4,7 +4,7 @@ export type GamePhase = 'waiting' | 'playing' | 'discussion' | 'voting' | 'revea
 
 export type PlayerRole = 'civil' | 'undercover' | 'mrWhite';
 
-export type WordCategory = 'character' | 'technique' | 'village' | 'clan' | 'bijuu' | 'organization' | 'title' | 'item' | 'kage' | 'kekkei-genkai';
+export type WordCategory = string;
 
 export interface WordPair {
   wordA: string;
@@ -29,6 +29,7 @@ export interface GameConfig {
   maxPlayers: number;
   minPlayers: number;
   eras: string[];
+  anime: string;
   hideRole: boolean;
   mrWhite: boolean;
 }

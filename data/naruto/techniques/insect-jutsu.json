@@ -31,13 +31,5 @@
     "Peuvent être utilisés pour l'attaque, la défense, la reconnaissance",
     "Les insectes peuvent transporter des messages et former des boucliers",
     "Chaque membre du clan peut avoir une espèce d'insecte différente"
-  ],
-  "image": "",
-  "type": "ninjutsu",
-  "rank": "B",
-  "nature": [],
-  "users": [
-    "Shino Aburame",
-    "Shibi Aburame"
   ]
 }

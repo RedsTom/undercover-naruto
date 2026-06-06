@@ -20,8 +20,9 @@ export class RoomModel {
   gameState: GameState | null;
   lastConfig: GameConfig | null = null;
   lastGameResult: GameResult | null = null;
+  anime: string;
 
-  constructor(id: string, code: string, hostId: string, maxPlayers = 8) {
+  constructor(id: string, code: string, hostId: string, maxPlayers = 8, anime = 'naruto') {
     this.id = id;
     this.code = code;
     this.hostId = hostId;
@@ -30,6 +31,7 @@ export class RoomModel {
     this.createdAt = Date.now();
     this.lastActivity = Date.now();
     this.gameState = null;
+    this.anime = anime;
   }
 
   addPlayer(player: PlayerModel): boolean {
@@ -111,6 +113,7 @@ export class RoomModel {
     gameState: GameState | null;
     lastConfig: GameConfig | null;
     lastGameResult: GameResult | null;
+    anime: string;
   } {
     return {
       id: this.id,
@@ -122,6 +125,7 @@ export class RoomModel {
       gameState: this.gameState,
       lastConfig: this.lastConfig,
       lastGameResult: this.lastGameResult,
+      anime: this.anime,
     };
   }
 
@@ -137,6 +141,7 @@ export class RoomModel {
     lastGameResult: GameResult | null;
     myWord: string | null;
     myRole: string | null;
+    anime: string;
   } {
     const me = this.players.get(playerId);
     return {

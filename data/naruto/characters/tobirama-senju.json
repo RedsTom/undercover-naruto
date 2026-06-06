@@ -27,17 +27,5 @@
     "A créé le conseil des chefs de clan pour équilibrer le pouvoir politique",
     "Méfiant envers le clan Uchiha, il instaura des mesures de surveillance qui créeront des tensions",
     "Mort en sacrifice pour permettre à son équipe de fuir les frères Kinkaku et Ginkaku"
-  ],
-  "image": "",
-  "clan": "Senju",
-  "village": "Konohagakure",
-  "rank": "Hokage",
-  "team": null,
-  "jutsu": [
-    "Edo Tensei",
-    "Hiraishin",
-    "Kage Bunshin",
-    "Suiton"
-  ],
-  "kageTitle": "2e Hokage"
+  ]
 }

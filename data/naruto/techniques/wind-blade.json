@@ -28,17 +28,5 @@
     "Temari de Sunagakure est une experte des techniques de vent",
     "Peut trancher la pierre et l'acier",
     "Asuma Sarutobi combine le vent avec ses lames de chakra"
-  ],
-  "image": "",
-  "type": "ninjutsu",
-  "rank": "C",
-  "nature": [
-    "vent"
-  ],
-  "users": [
-    "Naruto Uzumaki",
-    "Temari",
-    "Asuma Sarutobi",
-    "Danzo Shimura"
   ]
 }

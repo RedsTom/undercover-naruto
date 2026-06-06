@@ -7,11 +7,11 @@ export const useRoomAPI = () => {
   const isHost = computed(() => room.value?.hostId === playerId.value);
   const playerCount = computed(() => room.value?.playerCount ?? 0);
 
-  async function createRoom(name: string): Promise<{ success: boolean; roomCode?: string; error?: string }> {
+  async function createRoom(name: string, anime: string): Promise<{ success: boolean; roomCode?: string; error?: string }> {
     try {
       const res = await $fetch('/api/rooms', {
         method: 'POST',
-        body: { playerName: name },
+        body: { playerName: name, anime },
       });
       const data = res as any;
       if (data.success) {

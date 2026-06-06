@@ -70,8 +70,7 @@
 </template>
 
 <script setup lang="ts">
-import type { GameMode, GameConfig, Era } from '~/types';
-import { ALL_ERAS } from '~/types';
+import type { GameMode, GameConfig } from '~/types';
 
 const props = defineProps<{
   isHost: boolean;
@@ -80,23 +79,12 @@ const props = defineProps<{
   maxPlayers?: number;
   config?: Partial<GameConfig>;
   inGame?: boolean;
+  anime?: string;
 }>();
 
 const emit = defineEmits<{
   start: [config: Partial<GameConfig>];
 }>();
-
-const eraLabels: Record<Era, string> = {
-  'naruto': 'Original',
-  'shippuden': 'Shippuden',
-  'shippuden-end': 'Fin Shippuden',
-  'boruto': 'Boruto',
-  'naruto-backstory': 'Flashback',
-};
-
-const eraOptions = ALL_ERAS.map(e => ({ label: eraLabels[e], value: e }));
-
-const minPlayers = computed(() => props.minPlayers ?? 3);
 
 const modeOptions = [
   { label: 'Classique', value: 'classic' as GameMode },
@@ -106,9 +94,11 @@ const modeOptions = [
 const selectedMode = ref(modeOptions[0]);
 const discussionTime = ref(60);
 const voteTime = ref(30);
-const selectedEras = ref<string[]>([...ALL_ERAS]);
+const selectedEras = ref<string[]>([]);
 const hideRole = ref(false);
 const mrWhite = ref(false);
+
+const minPlayers = computed(() => props.minPlayers ?? 3);
 
 const canStart = computed(() => {
   if (!props.isHost) return false;
@@ -117,6 +107,17 @@ const canStart = computed(() => {
 });
 
 const maxPlayers = computed(() => props.maxPlayers ?? 8);
+
+const eraOptions = computed(() => {
+  const defaultEras = [
+    { label: 'Original', value: 'naruto' },
+    { label: 'Shippuden', value: 'shippuden' },
+    { label: 'Fin Shippuden', value: 'shippuden-end' },
+    { label: 'Boruto', value: 'boruto' },
+    { label: 'Flashback', value: 'naruto-backstory' },
+  ];
+  return defaultEras;
+});
 
 function toggleEra(value: string) {
   if (!props.isHost) return;
@@ -134,6 +135,7 @@ function handleStart() {
     discussionTime: discussionTime.value,
     voteTime: voteTime.value,
     eras: selectedEras.value,
+    anime: props.anime ?? 'naruto',
     hideRole: hideRole.value,
     mrWhite: mrWhite.value,
   });
@@ -150,5 +152,11 @@ watch(() => props.config, (cfg) => {
   if (cfg.eras?.length) selectedEras.value = [...cfg.eras];
   if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
   if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
+}, { immediate: true });
+
+watch(() => props.config, () => {
+  if (selectedEras.value.length === 0) {
+    selectedEras.value = [...eraOptions.value.map(e => e.value)];
+  }
 }, { immediate: true });
 </script>

@@ -11,6 +11,7 @@ export class GameService {
     maxPlayers: 8,
     minPlayers: 3,
     eras: [],
+    anime: 'naruto',
     hideRole: false,
     mrWhite: false,
   };

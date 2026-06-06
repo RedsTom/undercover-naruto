@@ -52,6 +52,7 @@ const props = defineProps<{
   word: string | null;
   role: string | null;
   showWord: boolean;
+  anime?: string;
 }>();
 
 defineEmits<{ toggle: [] }>();
@@ -67,11 +68,14 @@ const roleLabel = computed(() => {
 
 const wordDetail = computed(() => {
   if (!props.word) return null;
-  return getWordInfo(props.word);
+  return getWordInfo(props.anime ?? 'naruto', props.word);
 });
 
-const categoryLabel = computed(() => {
-  if (!wordDetail.value) return '';
-  return getCategoryLabel(wordDetail.value.category);
-});
+const categoryLabel = ref('');
+
+watch(wordDetail, async (detail) => {
+  if (detail?.category) {
+    categoryLabel.value = await getCategoryLabel(props.anime ?? 'naruto', detail.category);
+  }
+}, { immediate: true });
 </script>

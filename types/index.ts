@@ -1,3 +1,3 @@
 export * from './game';
 export * from './room';
-export * from './naruto';
+export * from './anime';

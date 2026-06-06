@@ -1,0 +1,26 @@
+{
+  "id": "eren-kruger",
+  "name": "Eren Kruger",
+  "category": "character",
+  "era": [
+    "saison-3"
+  ],
+  "tags": [
+    "restauration-eldia",
+    "titan-assaillant",
+    "marley",
+    "eldien",
+    "agent-double",
+    "combattant-liberte",
+    "pere-grisha",
+    "mystere"
+  ],
+  "summary": "Agent secret de la Restauration d'Eldia infiltré dans Marley, détenteur du Titan Assaillant",
+  "details": [
+    "Membre infiltré du mouvement de Restauration d'Eldia au sein des services marleyens",
+    "Détenteur du Titan Assaillant, qu'il a transmis à Grisha Jaeger",
+    "A sauvé Grisha de l'exil à Paradis en le transformant en Titan",
+    "Célèbre pour sa phrase 'Avance, avance encore, même après la mort'",
+    "Son nom et son héritage ont été repris par Eren Jaeger, le fils de Grisha"
+  ]
+}

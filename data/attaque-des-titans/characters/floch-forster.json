@@ -1,0 +1,28 @@
+{
+  "id": "floch-forster",
+  "name": "Floch Forster",
+  "category": "character",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "yeageriste",
+    "eldien",
+    "extremiste",
+    "nationaliste",
+    "survivant",
+    "shiganshina",
+    "erecharge"
+  ],
+  "summary": "Membre du Bataillon d'Exploration devenu chef des Yeagerists, nationaliste eldien radical",
+  "details": [
+    "Seul survivant de la charge suicidaire contre le Titan Bestial à Shiganshina",
+    "Ancien membre du Bataillon d'Exploration, il devient le chef des Yeagerists",
+    "Admirateur d'Eren, il embrasse une idéologie nationaliste eldienne extrême",
+    "A organisé un coup d'État pour soutenir le plan d'Eren de destruction du monde",
+    "Tué par Mikasa et l'escouade de Levi lors de la bataille du port de Paradis"
+  ]
+}

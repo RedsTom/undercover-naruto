@@ -1,0 +1,32 @@
+{
+  "id": "mikasa-ackerman",
+  "name": "Mikasa Ackerman",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "protagoniste",
+    "bataillon-exploration",
+    "ackerman",
+    "paradis",
+    "shiganshina",
+    "famille-jaeger",
+    "surhumain",
+    "lames",
+    "equipement-tridimensionnel",
+    "eldien",
+    "meilleure-combattante"
+  ],
+  "summary": "Sœur adoptive d'Eren, dernière descendante Ackerman, combattante d'élite du Bataillon d'Exploration",
+  "details": [
+    "Dernière descendante du clan Ackerman avec Levi, dotée d'une force surhumaine éveillée",
+    "A passé son enfance avec Eren et Armin à Shiganshina après avoir été recueillie par les Jaeger",
+    "Considérée comme la plus grande combattante de l'humanité au maniement de l'équipement tridimensionnel",
+    "A tué Eren de ses propres mains pour mettre fin au Grand Terrassement",
+    "Protège désormais la tombe d'Eren avec Armin"
+  ]
+}

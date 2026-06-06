@@ -1,0 +1,30 @@
+{
+  "id": "connie-springer",
+  "name": "Connie Springer",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "ragako",
+    "eldien",
+    "tete-rasee",
+    "crane",
+    "famille",
+    "titan",
+    "soldat"
+  ],
+  "summary": "Membre du Bataillon d'Exploration, ami loyal originaire de Ragako",
+  "details": [
+    "Originaire de Ragako, son village a été décimé par la transformation des habitants en Titans",
+    "Sa mère a été transformée en Titan, condamnée à errer sans conscience",
+    "S'est rasé la tête volontairement pour ressembler à ses camarades du Bataillon",
+    "A rejoint le Bataillon d'Exploration avec Jean, Sasha et ses amis de la 104e",
+    "A survécu à la guerre et s'est installé à Paradis après le Grand Terrassement"
+  ]
+}

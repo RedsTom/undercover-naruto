@@ -1,0 +1,33 @@
+{
+  "id": "eren-jaeger",
+  "name": "Eren Jaeger",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "protagoniste",
+    "bataillon-exploration",
+    "titan-assaillant",
+    "titan-originel",
+    "paradis",
+    "shiganshina",
+    "jaeger",
+    "liberte",
+    "vengeance",
+    "humain",
+    "eldien",
+    "volontaires"
+  ],
+  "summary": "Protagoniste, Titan Assaillant et Titan Originel, fils de Grisha Jaeger, résolu à détruire tous ses ennemis",
+  "details": [
+    "Fils de Grisha et Carla Jaeger, témoin de la dévoration de sa mère par un Titan",
+    "Détenteur du Titan Assaillant et du Titan Originel, capable de commander tous les Titans",
+    "A rejoint le Bataillon d'Exploration pour exterminer les Titans et découvrir la vérité",
+    "A initié le Grand Terrassement pour éradiquer toute vie hors de Paradis",
+    "Tué par Mikasa Ackerman pour mettre fin au Grand Terrassement"
+  ]
+}

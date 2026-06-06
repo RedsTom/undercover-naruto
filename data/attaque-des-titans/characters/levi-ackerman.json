@@ -1,0 +1,32 @@
+{
+  "id": "levi-ackerman",
+  "name": "Levi Ackerman",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "ackerman",
+    "paradis",
+    "surhumain",
+    "capitaine",
+    "meilleur-combattant",
+    "lames",
+    "equipement-tridimensionnel",
+    "nettoyage",
+    "eldien",
+    "legende"
+  ],
+  "summary": "Capitaine du Bataillon d'Exploration, considéré comme le plus fort combattant de l'humanité",
+  "details": [
+    "Capitaine de l'escouade d'élite du Bataillon d'Exploration, sous les ordres d'Erwin Smith",
+    "Descendant Ackerman, sa force surhumaine dépasse même Mikasa en maniement du 3DMG",
+    "A survécu à l'explosion du Thunder Spear de Zeke Jaeger, perdant deux doigts",
+    "A vaincu le Titan Bestial après que Zeke ait tout détruit autour de lui",
+    "Dernier survivant de l'escouade d'origine, témoin de la mort de tous ses compagnons"
+  ]
+}

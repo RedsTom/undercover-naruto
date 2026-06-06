@@ -1,0 +1,28 @@
+{
+  "id": "kenny-ackerman",
+  "name": "Kenny Ackerman",
+  "category": "character",
+  "era": [
+    "saison-3"
+  ],
+  "tags": [
+    "ackerman",
+    "paradis",
+    "tueur",
+    "brigade-centrale",
+    "anti-personnel",
+    "oncle",
+    "levi",
+    "ambition",
+    "rod-reiss",
+    "surhumain"
+  ],
+  "summary": "Tueur impitoyable de la brigade anti-personnel, oncle de Levi Ackerman",
+  "details": [
+    "Oncle de Levi Ackerman, tueur légendaire surnommé 'Kenny le Tueur'",
+    "Chef de l'Escouade Anti-Personnel au service de Rod Reiss",
+    "A assassiné des ennemis de la famille Reiss pendant des années",
+    "Descendant Ackerman, sa force surhumaine rivalisait avec celle de Levi",
+    "Blessé mortellement par Levi, il lui confie le sérum de Titan avant de mourir"
+  ]
+}

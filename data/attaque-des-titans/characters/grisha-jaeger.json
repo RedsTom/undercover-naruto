@@ -1,0 +1,31 @@
+{
+  "id": "grisha-jaeger",
+  "name": "Grisha Jaeger",
+  "category": "character",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "marley",
+    "eldien",
+    "jaeger",
+    "titan-assaillant",
+    "titan-originel",
+    "restauration-eldia",
+    "medecin",
+    "libere",
+    "pere-eren",
+    "vengeance",
+    "paradis",
+    "carnets"
+  ],
+  "summary": "Père d'Eren et Zeke, médecin eldien, détenteur du Titan Assaillant et du Titan Originel",
+  "details": [
+    "Médecin eldien de Marley, membre du mouvement de Restauration d'Eldia",
+    "A reçu le Titan Assaillant d'Eren Kruger pour continuer la mission de libération",
+    "Exilé à Paradis après le massacre de sa famille par Marley",
+    "A dérobé le Titan Originel à la famille Reiss et l'a transmis à Eren",
+    "A révélé la vérité à Eren dans ses carnets avant d'être dévoré par son propre fils"
+  ]
+}

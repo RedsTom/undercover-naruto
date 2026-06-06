@@ -1,0 +1,30 @@
+{
+  "id": "erwin-smith",
+  "name": "Erwin Smith",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "commandant",
+    "strategiste",
+    "intellect",
+    "liberte",
+    "sacrifice",
+    "reve",
+    "legende",
+    "eldien"
+  ],
+  "summary": "Commandant légendaire du Bataillon d'Exploration, stratège génial prêt à tout pour la vérité",
+  "details": [
+    "Commandant le plus charismatique du Bataillon d'Exploration, a mené l'humanité vers la vérité",
+    "A sacrifié son bras droit pour prouver l'existence des Titans humains, capturant Annie Leonhart",
+    "Son père a été tué pour avoir suggéré que l'humanité n'était pas seule au monde",
+    "A mené la charge suicidaire contre le Titan Bestial pour permettre à Levi de le vaincre",
+    "Mort lors de la bataille de Shiganshina, léguant son rêve de connaître la vérité"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "jean-kirstein",
+  "name": "Jean Kirstein",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "trost",
+    "tactique",
+    "cheval",
+    "realiste",
+    "eldien",
+    "strategiste",
+    "survie",
+    "commandant"
+  ],
+  "summary": "Membre du Bataillon d'Exploration, stratège réaliste devenu un leader respecté",
+  "details": [
+    "Originaire de Trost, hésitait entre la Gendarmerie et le Bataillon avant de choisir l'exploration",
+    "Excellent cavalier et tacticien, souvent opposé aux idéaux d'Eren",
+    "A pris le commandement de l'escouade après la disparition d'Eren",
+    "A épousé Mikasa Ackerman et fondé une famille après la guerre",
+    "Son pragmatisme et son sens du devoir ont sauvé ses camarades à plusieurs reprises"
+  ]
+}

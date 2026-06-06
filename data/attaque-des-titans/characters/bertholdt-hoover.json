@@ -1,0 +1,30 @@
+{
+  "id": "bertholdt-hoover",
+  "name": "Bertholdt Hoover",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-colossal",
+    "marley",
+    "eldien",
+    "timide",
+    "silencieux",
+    "soldat",
+    "paradis",
+    "grand",
+    "remords"
+  ],
+  "summary": "Guerrier Marleyen détenteur originel du Titan Colossal, a détruit la porte de Wall Maria",
+  "details": [
+    "Détenteur originel du Titan Colossal, capable de produire une explosion dévastatrice à la transformation",
+    "A détruit la porte de Wall Maria avec Reiner, provoquant la chute de l'humanité",
+    "Compagnon d'armes de Reiner, tous deux envoyés par Marley pour la mission Paradis",
+    "Rongé par la culpabilité et la peur pendant toutes ses années à Paradis",
+    "Tué par Armin Arlert qui a hérité de son Titan Colossal"
+  ]
+}

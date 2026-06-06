@@ -1,0 +1,31 @@
+{
+  "id": "historia-reiss",
+  "name": "Historia Reiss",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "reine",
+    "reiss",
+    "famille-royale",
+    "identite",
+    "eldien",
+    "ymir",
+    "orpheline",
+    "ferme"
+  ],
+  "summary": "Reine de Paradis, dernière descendante de la famille royale Reiss et amoureuse d'Ymir",
+  "details": [
+    "Fille illégitime de Rod Reiss, élevée sous le nom de Christa Lenz dans un orphelinat",
+    "Dernière descendante du roi Reiss capable d'utiliser le pouvoir du Titan Originel",
+    "A brisé le cycle du mensonge royal en refusant de succéder à son père",
+    "Devenue reine de Paradis, symbole d'espoir et de renouveau pour le peuple",
+    "A partagé un amour profond avec Ymir avant que celle-ci ne retourne chez Marley"
+  ]
+}

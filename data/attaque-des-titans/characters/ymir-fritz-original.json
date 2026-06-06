@@ -1,0 +1,28 @@
+{
+  "id": "ymir-fritz-original",
+  "name": "Ymir Fritz",
+  "category": "character",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-originel",
+    "eldien",
+    "ancetre",
+    "fritz",
+    "esclave",
+    "roi-eldien",
+    "pouvoir-titan",
+    "cheminements",
+    "legende"
+  ],
+  "summary": "Ancêtre de tous les Eldiens, première détentrice du pouvoir des Titans",
+  "details": [
+    "Première humaine à avoir obtenu le pouvoir des Titans il y a près de 2000 ans",
+    "Esclave du Roi d'Eldia, elle a acquis son pouvoir en entrant en contact avec un parasite",
+    "A construit les Murs de Paradis avec le Titan Originel",
+    "Son âme reste prisonnière des Chemins, contrôlant les pouvoirs des Titans",
+    "Eren a libéré son esprit, mettant fin au pouvoir des Titans pour toujours"
+  ]
+}

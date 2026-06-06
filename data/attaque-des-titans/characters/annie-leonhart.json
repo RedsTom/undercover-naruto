@@ -1,0 +1,30 @@
+{
+  "id": "annie-leonhart",
+  "name": "Annie Leonhart",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-feminin",
+    "marley",
+    "eldien",
+    "cristal",
+    "combat-corps-a-corps",
+    "pere",
+    "paradis",
+    "stohess",
+    "cryo"
+  ],
+  "summary": "Guerrière Marleyenne, détentrice du Titan Féminin, restée cristallisée des années sous Stohess",
+  "details": [
+    "Envoyée par Marley pour récupérer le Titan Originel, experte en combat rapproché",
+    "Détentrice du Titan Féminin, capable d'attirer les Titans par ses cris",
+    "A piégé et tué le Bataillon d'Exploration lors de la 57e expédition",
+    "Cristallisée sous Stohess par ses propres moyens après avoir été démasquée",
+    "Libérée des années plus tard, elle combattit aux côtés de Paradis contre le Grand Terrassement"
+  ]
+}

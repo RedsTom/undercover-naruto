@@ -1,0 +1,31 @@
+{
+  "id": "hange-zoe",
+  "name": "Hange Zoë",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "commandant",
+    "scientifique",
+    "recherche-titan",
+    "lunettes",
+    "passionnee",
+    "eldien",
+    "sage",
+    "amie"
+  ],
+  "summary": "Scientifique passionnée des Titans, devient commandante du Bataillon d'Exploration après Erwin",
+  "details": [
+    "Chercheuse obsessionnelle des Titans, les surnommant avec affection malgré leur danger",
+    "A développé les premières expériences sur les Titans en captivité",
+    "Devenue commandante du Bataillon d'Exploration après la mort d'Erwin Smith",
+    "A sacrifié sa vie en affrontant les Titans du Grand Terrassement pour permettre l'évacuation",
+    "Surnommée affectueusement 'Hanji' par ses camarades malgré son rang"
+  ]
+}

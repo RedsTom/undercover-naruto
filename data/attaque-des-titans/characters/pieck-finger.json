@@ -1,0 +1,27 @@
+{
+  "id": "pieck-finger",
+  "name": "Pieck Finger",
+  "category": "character",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-charrette",
+    "marley",
+    "eldien",
+    "intelligence",
+    "boiteuse",
+    "strategiste",
+    "fidele",
+    "zeke"
+  ],
+  "summary": "Guerrière Marleyenne, détentrice du Titan Charrette, stratégiste redoutable et loyale",
+  "details": [
+    "Détentrice du Titan Charrette, capable de rester en forme titanesque pendant des mois",
+    "A transporté Zeke sur son dos pendant l'expédition de Paradis, jouant un rôle crucial",
+    "Redoutable tacticienne, elle a élaboré plusieurs plans complexes contre Paradis",
+    "Surnommée 'Pieck' par ses camarades, elle boite après une blessure de guerre",
+    "A survécu à la guerre et contribué à la reconstruction après le Grand Terrassement"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gabi-braun",
+  "name": "Gabi Braun",
+  "category": "character",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "marley",
+    "eldien",
+    "braun",
+    "jeune",
+    "combattante",
+    "determinee",
+    "tireur-elite",
+    "liberio",
+    "paradis"
+  ],
+  "summary": "Jeune guerrière Marleyenne, cousine de Reiner Braun, tireuse d'élite talentueuse et endoctrinée",
+  "details": [
+    "Cousine de Reiner Braun, élevée dans l'idéologie anti-Paradis de Marley",
+    "Tireuse d'élite exceptionnelle malgré son jeune âge, elle a tué Sasha Blouse",
+    "Endoctrinée par la propagande marleyenne qu'elle a fini par remettre en question",
+    "Capturée par le Bataillon d'Exploration, elle a découvert la vérité sur Paradis",
+    "A aidé à sauver le monde en participant à l'arrêt du Grand Terrassement"
+  ]
+}

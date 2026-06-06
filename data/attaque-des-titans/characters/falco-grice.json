@@ -1,0 +1,29 @@
+{
+  "id": "falco-grice",
+  "name": "Falco Grice",
+  "category": "character",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-bestiale",
+    "marley",
+    "eldien",
+    "jeune",
+    "kind",
+    "gabi",
+    "liberio",
+    "amour",
+    "paradis",
+    "colt"
+  ],
+  "summary": "Jeune guerrier Marleyen, amoureux de Gabi, devient le Titan Bestial",
+  "details": [
+    "Jeune eldien de Liberio, amoureux de Gabi Braun, plus doux que ses camarades",
+    "A hérité du Titan Bestial après la mort de Zeke, devenant le dernier détenteur",
+    "Son frère Colt Grice a tenté de le sauver du sort des guerriers",
+    "Aide ses amis à combattre le Grand Terrassement en tant que Titan volant",
+    "Symbole de la nouvelle génération capable de dépasser la haine héritée"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "reiner-braun",
+  "name": "Reiner Braun",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-cuirasse",
+    "marley",
+    "eldien",
+    "traumatisme",
+    "double-personnalite",
+    "soldat",
+    "paradis",
+    "cupidite",
+    "mere",
+    "braun"
+  ],
+  "summary": "Guerrier Marleyen, détenteur du Titan Cuirassé, tiraillé entre deux identités",
+  "details": [
+    "Envoyé par Marley pour récupérer le Titan Originel, a passé des années à Paradis",
+    "Détenteur du Titan Cuirassé, capable de se transformer en une armure vivante quasi invincible",
+    "A développé une double personnalité pour supporter la culpabilité de ses actes",
+    "A brisé la porte de Wall Maria avec Bertolt, causant des centaines de milliers de morts",
+    "Sauvé par Falco et devenu défenseur de Paradis et de la paix"
+  ]
+}

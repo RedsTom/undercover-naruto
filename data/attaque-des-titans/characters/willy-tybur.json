@@ -1,0 +1,27 @@
+{
+  "id": "willy-tybur",
+  "name": "Willy Tybur",
+  "category": "character",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "marley",
+    "eldien",
+    "tybur",
+    "titan-marteau",
+    "famille-royale",
+    "declaration-guerre",
+    "diplomatie",
+    "liberio",
+    "manipulateur"
+  ],
+  "summary": "Héritier de la famille Tybur, détenteur du Titan Marteau, déclencheur de la guerre mondiale",
+  "details": [
+    "Héritier de la prestigieuse famille Tybur, détenteur du Titan Marteau d'Attack",
+    "A organisé la déclaration de guerre contre Paradis lors d'un discours à Liberio",
+    "A retourné l'opinion mondiale contre Paradis en révélant la vérité du Roi d'Eldia",
+    "Son discours a servi de catalyseur à l'invasion de Paradis par Marley",
+    "Tué par Eren Jaeger lors de l'attaque de Liberio, son Titan hérité par Lara Tybur"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "dot-pixis",
+  "name": "Dot Pixis",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "armee-paradis",
+    "paradis",
+    "commandant",
+    "strategie",
+    "sage",
+    "calme",
+    "mur-rose",
+    "trost",
+    "veteran",
+    "vin"
+  ],
+  "summary": "Commandant de l'armée de Paradis, stratège calme et expérimenté, défenseur de Trost",
+  "details": [
+    "Commandant en chef des armées de Paradis, réputé pour son calme légendaire sous pression",
+    "A organisé la défense victorieuse de Trost contre l'invasion des Titans",
+    "Stratège brillant, il a compris rapidement la nature des Titans humains",
+    "Célèbre pour boire du vin en toutes circonstances, même au cœur des batailles",
+    "Transformé en Titan par Zeke via le vin spiké, tué par l'armée de Paradis"
+  ]
+}

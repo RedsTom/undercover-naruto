@@ -1,0 +1,29 @@
+{
+  "id": "ymir-fritz",
+  "name": "Ymir",
+  "category": "character",
+  "era": [
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "titan-machoire",
+    "ymir",
+    "historia",
+    "eldien",
+    "amour",
+    "mysterieuse",
+    "sacrifice",
+    "marley"
+  ],
+  "summary": "Détentrice du Titan Mâchoire, amoureuse d'Historia, retournée à Marley pour ses amis",
+  "details": [
+    "A vécu en tant que sans-abri après avoir été rejetée par un culte religieux",
+    "A hérité du Titan Mâchoire en errant dans les murs après avoir trouvé Marcel Galliard",
+    "Est tombée amoureuse d'Historia Reiss (Christa Lenz) au sein de la 104e",
+    "A choisi de retourner à Marley avec Reiner et Bertolt pour protéger Historia",
+    "Son titan a été hérité par Porco Galliard après sa mort"
+  ]
+}

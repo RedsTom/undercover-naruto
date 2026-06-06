@@ -1,0 +1,32 @@
+{
+  "id": "armin-arlert",
+  "name": "Armin Arlert",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "protagoniste",
+    "bataillon-exploration",
+    "titan-colossal",
+    "paradis",
+    "shiganshina",
+    "strategiste",
+    "intellect",
+    "liberte",
+    "eldien",
+    "commandant",
+    "ami-enfance"
+  ],
+  "summary": "Meilleur ami d'Eren, stratège du Bataillon d'Exploration, devient le Titan Colossal",
+  "details": [
+    "Enfant de Shiganshina, élevé par son grand-père après la mort de ses parents dans une expédition",
+    "Stratège brillant dont les plans ont sauvé l'humanité à de multiples reprises",
+    "A hérité du Titan Colossal après avoir sacrifié Bertolt Hoover",
+    "Devenu le commandant du Bataillon d'Exploration après Erwin Smith",
+    "Négociateur clé de la paix entre Paradis et Marley après la guerre"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "sasha-blouse",
+  "name": "Sasha Blouse",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-exploration",
+    "paradis",
+    "tireur-elite",
+    "nourriture",
+    "chasseuse",
+    "pomme-de-terre",
+    "eldien",
+    "rire",
+    "appetit",
+    "archer"
+  ],
+  "summary": "Tireuse d'élite du Bataillon d'Exploration, célèbre pour son appétit légendaire et son humour",
+  "details": [
+    "Recrue de la 104e, célèbre pour avoir volé une patate lors de la cérémonie de remise des diplômes",
+    "Chasseuse talentueuse originaire des bois de Paradis, excellente au tir à l'arc",
+    "Son appétit gargantuesque est devenu une légende au sein du Bataillon",
+    "A sauvé la fille Kaya des Titans lors de l'attaque de Ragako",
+    "Tuée par Gabi Braun lors de la libération de Paradis"
+  ]
+}

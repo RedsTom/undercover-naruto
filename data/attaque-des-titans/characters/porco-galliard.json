@@ -1,0 +1,27 @@
+{
+  "id": "porco-galliard",
+  "name": "Porco Galliard",
+  "category": "character",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-machoire",
+    "marley",
+    "eldien",
+    "fier",
+    "vitesse",
+    "fureur",
+    "marcel",
+    "frere"
+  ],
+  "summary": "Guerrier Marleyen, détenteur du Titan Mâchoire, frère de Marcel Galliard",
+  "details": [
+    "Deuxième fils de la famille Galliard, choisi pour hériter du Titan Mâchoire",
+    "Rival et détestant Reiner Braun, qu'il juge responsable de la mort de son frère Marcel",
+    "Son Titan Mâchoire possède des mâchoires et des griffes capables de broyer n'importe quoi",
+    "A combattu vaillamment lors de la guerre de Paradis contre le Bataillon d'Exploration",
+    "Sacrifié pour protéger Reiner, mourant dévoré par les Titans de Paradis"
+  ]
+}

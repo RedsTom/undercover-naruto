@@ -1,0 +1,31 @@
+{
+  "id": "zeke-jaeger",
+  "name": "Zeke Jaeger",
+  "category": "character",
+  "era": [
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "guerrier-marley",
+    "titan-bestiale",
+    "marley",
+    "eldien",
+    "jaeger",
+    "stratégie",
+    "liberte",
+    "lancer",
+    "frere",
+    "pere-grisha",
+    "restauration-eldia"
+  ],
+  "summary": "Fils de Grisha Jaeger et Dina Fritz, détenteur du Titan Bestial, stratège génial de Marley",
+  "details": [
+    "Fils aîné de Grisha Jaeger et Dina Fritz, frère d'Eren jaeger",
+    "Détenteur du Titan Bestial, capable de lancer des projectiles avec une précision dévastatrice",
+    "A infiltré le Bataillon d'Exploration sous une fausse identité pendant des années",
+    "A ourdi un plan complexe pour euthanasier la race eldienne",
+    "Tué par Levi Ackerman avant que son Titan Bestial ne soit hérité par Falco Grice"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "keith-shadis",
+  "name": "Keith Shadis",
+  "category": "character",
+  "era": [
+    "saison-1",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "bataillon-entrainement",
+    "paradis",
+    "instructeur",
+    "dur",
+    "respect",
+    "ancien",
+    "mere-eren",
+    "formation",
+    "eldien"
+  ],
+  "summary": "Ancien commandant du Bataillon d'Exploration, instructeur impitoyable de la 104e brigade",
+  "details": [
+    "Ancien commandant du Bataillon d'Exploration avant Erwin Smith",
+    "Instructeur en chef de la 104e Brigade d'Entraînement, connu pour sa sévérité",
+    "Amoureux de Carla Jaeger (mère d'Eren) qu'il n'a jamais pu épouser",
+    "A formé la génération de soldats la plus talentueuse de Paradis",
+    "A survécu à la guerre et assisté à la fin du conflit entre Paradis et Marley"
+  ]
+}

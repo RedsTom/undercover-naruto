@@ -34,7 +34,7 @@ export class VoteService {
 
     const currentRound = room.gameState.rounds[room.gameState.rounds.length - 1];
     const voteCounts: Record<string, number> = {};
-    const totalVotes = currentRound.votes.length;
+    const alivePlayersCount = room.getAlivePlayers().length;
 
     currentRound.votes.forEach(vote => {
       voteCounts[vote.targetId] = (voteCounts[vote.targetId] || 0) + 1;
@@ -55,7 +55,7 @@ export class VoteService {
       }
     });
 
-    if (isTie || !eliminatedPlayerId || maxVotes < totalVotes / 2) {
+    if (isTie || !eliminatedPlayerId || maxVotes < alivePlayersCount / 2) {
       eliminatedPlayerId = null;
       isTie = true;
     }

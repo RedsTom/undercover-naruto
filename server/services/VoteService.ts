@@ -55,7 +55,7 @@ export class VoteService {
       }
     });
 
-    if (isTie || !eliminatedPlayerId || maxVotes <= totalVotes / 2) {
+    if (isTie || !eliminatedPlayerId || maxVotes < totalVotes / 2) {
       eliminatedPlayerId = null;
       isTie = true;
     }

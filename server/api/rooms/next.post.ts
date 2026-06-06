@@ -7,12 +7,13 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, message: 'Room not found' });
   }
 
-  const result = nextRound(roomId, playerId);
+  const result = nextRound(room, playerId);
 
   if (!result.success) {
     throw createError({ statusCode: 400, message: result.error });
   }
 
+  broadcastToRoom(roomId, 'phase:changed', { phase: 'waiting' });
   broadcastToRoom(roomId, 'game:newRound', room.toPublic());
 
   return { success: true };

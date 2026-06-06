@@ -2,11 +2,18 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { roomId, playerId } = body;
 
-  const result = startVoting(roomId, playerId);
+  const room = getRoom(roomId);
+  if (!room) {
+    throw createError({ statusCode: 404, message: 'Room not found' });
+  }
+
+  const result = startVoting(room, playerId);
 
   if (!result.success) {
     throw createError({ statusCode: 400, message: result.error });
   }
+
+  broadcastToRoom(roomId, 'phase:changed', { phase: 'voting' });
 
   return { success: true };
 });

@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, message: 'Room not found' });
   }
 
-  const result = startGame(roomId, playerId, config);
+  const result = startGame(room, playerId, config);
 
   if (!result.success) {
     throw createError({ statusCode: 400, message: result.error });

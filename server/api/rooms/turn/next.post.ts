@@ -2,11 +2,18 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { roomId, playerId } = body;
 
-  const result = nextTurn(roomId, playerId);
+  const room = getRoom(roomId);
+  if (!room) {
+    throw createError({ statusCode: 404, message: 'Room not found' });
+  }
+
+  const result = nextTurn(room, playerId);
 
   if (!result.success) {
     throw createError({ statusCode: 400, message: result.error });
   }
+
+  broadcastToRoom(roomId, 'turn:changed', { currentTurnIndex: room.gameState?.currentTurnIndex });
 
   return { success: true };
 });

@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, message: 'Room not found' });
   }
 
-  const result = castVote(roomId, voterId, targetId);
+  const result = castVote(room, voterId, targetId);
 
   if (!result.success) {
     throw createError({ statusCode: 400, message: result.error });

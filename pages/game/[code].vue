@@ -88,12 +88,15 @@
         <div v-if="!canContinueGame && gameState.exposed" class="space-y-2 border-t border-white/10 pt-6">
           <p class="text-xs font-bold uppercase tracking-wider text-white/50 text-center">Tous les rôles</p>
           <div v-for="p in gameState.exposed" :key="p.playerId"
-            class="p-3 rounded-xl text-sm font-bold"
+            class="p-3 rounded-xl text-sm font-bold flex items-center gap-3"
             :class="p.role === 'undercover' || p.role === 'mrWhite'
               ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
               : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-            <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
-            <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+            <img v-if="p.word && getWordImage(p.word)" :src="getWordImage(p.word)" :alt="p.word" class="w-10 h-10 object-cover rounded-lg ring-1 ring-white/10 shrink-0" />
+            <div>
+              <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
+              <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+            </div>
           </div>
         </div>
 
@@ -114,11 +117,7 @@
         <p v-else class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
       </div>
 
-      <div v-if="gameState.phase === 'finished'" class="text-center py-12 animate-bounce-in">
-        <div class="text-6xl mb-4">&#127942;</div>
-        <h2 class="text-3xl font-black text-white mb-2">{{ winnerText }}</h2>
-        <p class="text-gray-500">Redirection vers le lobby...</p>
-      </div>
+
     </div>
 
     <div v-else class="text-center py-20">
@@ -131,12 +130,19 @@
 </template>
 
 <script setup lang="ts">
+import { getWordInfo } from '~/utils/wordInfo';
+
 const route = useRoute();
 const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect } = useSSE();
 
 const voting = ref(false);
+
+function getWordImage(word: string): string | undefined {
+  const entry = getWordInfo(animeSlug.value, word);
+  return entry?.image;
+}
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
@@ -146,7 +152,6 @@ const phaseLabel = computed(() => {
     discussion: 'Discussion',
     voting: 'Vote',
     reveal: 'Révélation',
-    finished: 'Fin',
   };
   return phases[gameState.value?.phase] || gameState.value?.phase || 'En attente';
 });
@@ -157,14 +162,8 @@ const phaseBadgeClass = computed(() => {
     discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
     voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',
     reveal: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
-    finished: 'bg-gradient-to-r from-green-500 to-green-600 text-white',
   };
   return `${base} ${colors[gameState.value?.phase] || ''}`;
-});
-
-const winnerText = computed(() => {
-  if (!gameState.value?.winner) return 'Partie terminée !';
-  return gameState.value.winner === 'civilians' ? 'Les civils ont gagné !' : 'Les Undercover ont gagné !';
 });
 
 const lastRoundResult = computed(() => {
@@ -258,7 +257,7 @@ onMounted(async () => {
           navigateTo('/');
           return;
         }
-        if (room.value?.gameState?.phase === 'finished' || room.value?.gameState?.phase === 'waiting') {
+        if (room.value?.gameState?.phase === 'waiting') {
           gameCleanup();
           disconnect();
           if (pollInterval) clearInterval(pollInterval);

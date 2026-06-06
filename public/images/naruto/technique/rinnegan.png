@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Rinnegan_Momoshiki.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="638"
+     inkscape:window-height="648"
+     id="namedview37"
+     showgrid="false"
+     inkscape:zoom="1.04"
+     inkscape:cx="123.89888"
+     inkscape:cy="150"
+     inkscape:window-x="633"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g5414" />
+  <metadata
+     id="metadata7">image/svg+xmlimage/svg+xml<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <!-- Created by Lukas Pessoa Dantas -->
+  <defs
+     id="defs5">
+    <radialGradient
+       id="fondo"
+       r="147"
+       gradientUnits="userSpaceOnUse"
+       fy="150"
+       fx="150"
+       cy="150"
+       cx="150"
+       gradientTransform="matrix(1.0309279,0,0,1.0309279,-4.63919,-4.6391418)">
+      <stop
+         id="fondo 9"
+         offset="0"
+         stop-color="#600" />
+      <stop
+         stop-color="#c30000"
+         offset="0.09512"
+         id="stop5394" />
+      <stop
+         stop-color="#a00000"
+         offset="0.14701"
+         id="stop5388" />
+      <stop
+         id="stop5392"
+         offset="0.20754"
+         stop-color="#c30000" />
+      <stop
+         stop-color="#a00000"
+         offset="0.2724"
+         id="stop5386" />
+      <stop
+         id="stop5390"
+         offset="0.35022"
+         stop-color="#c30000" />
+      <stop
+         stop-color="#a00000"
+         offset="0.42805"
+         id="stop5384" />
+      <stop
+         offset="0.49428"
+         id="fondo 8"
+         stop-color="#c30000" />
+      <stop
+         offset="0.57428"
+         id="fondo 7"
+         stop-color="#a00000" />
+      <stop
+         id="fondo 6"
+         offset="0.64307"
+         stop-color="#c30000" />
+      <stop
+         offset="0.72484"
+         id="fondo 5"
+         stop-color="#a00000" />
+      <stop
+         id="fondo 4"
+         offset="0.7943"
+         stop-color="#c30000" />
+      <stop
+         offset="0.86242"
+         id="fondo 3"
+         stop-color="#a00000" />
+      <stop
+         offset="0.91486"
+         id="fondo 2"
+         stop-color="#c30000" />
+      <stop
+         offset="1"
+         id="fondo 1"
+         stop-color="#a00000" />
+    </radialGradient>
+  </defs>
+  <g
+     id="g23">
+    <title
+       id="title25">Layer 1</title>
+    <g
+       id="g5414">
+      <circle
+         id="base"
+         cx="150"
+         cy="150"
+         r="150"
+         style="fill:url(#fondo);stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none" />
+      <circle
+         id="centro"
+         cx="150"
+         cy="150.00005"
+         r="5.9888935"
+         style="fill:#000000" />
+      <g
+         id="g5396"
+         transform="matrix(1.011552,0,0,1.011552,-1.7328046,-1.7327573)">
+        <circle
+           stroke-miterlimit="4"
+           r="127.14741"
+           cy="150"
+           cx="150"
+           id="iris 3"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+        <circle
+           stroke-miterlimit="4"
+           r="40.118061"
+           cy="150"
+           cx="150"
+           id="iris1"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+        <circle
+           stroke-miterlimit="4"
+           id="iris 2"
+           cx="150"
+           cy="150"
+           r="84.343933"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+        <circle
+           stroke-miterlimit="4"
+           id="iris 2-4"
+           cx="150"
+           cy="150"
+           r="63.25795"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+        <circle
+           stroke-miterlimit="4"
+           r="20.78656"
+           cy="150"
+           cx="150"
+           id="iris1-2"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+        <circle
+           stroke-miterlimit="4"
+           r="105.95617"
+           cy="150"
+           cx="150"
+           id="iris 3-1"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-miterlimit:4" />
+      </g>
+    </g>
+  </g>
+</svg>

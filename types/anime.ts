@@ -9,6 +9,7 @@ export interface AnimeManifest {
 export interface AnimeEntry {
   id: string;
   name: string;
+  image?: string;
   category: string;
   era: string[];
   tags: string[];

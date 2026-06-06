@@ -10,6 +10,9 @@
         @click="$emit('toggle')"
       >
         <div v-if="showWord && word" class="space-y-3 animate-bounce-in">
+          <div v-if="wordImage" class="flex justify-center">
+            <img :src="wordImage" :alt="word" class="w-24 h-24 object-cover rounded-xl ring-2 ring-orange-500/30" />
+          </div>
           <p class="text-4xl font-black text-orange-400">{{ word }}</p>
           <span v-if="!hideRole" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
             :class="role === 'civil' ? 'bg-green-900/30 text-green-400 ring-1 ring-green-500/30' : role === 'undercover' ? 'bg-red-900/30 text-red-400 ring-1 ring-red-500/30' : 'bg-orange-900/30 text-orange-400 ring-1 ring-orange-500/30'">
@@ -73,6 +76,10 @@ const roleLabel = computed(() => {
 const wordDetail = computed(() => {
   if (!props.word) return null;
   return getWordInfo(props.anime ?? 'naruto', props.word);
+});
+
+const wordImage = computed(() => {
+  return wordDetail.value?.image ?? null;
 });
 
 const categoryLabel = ref('');

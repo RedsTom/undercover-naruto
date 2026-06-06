@@ -1,294 +1,190 @@
-# Undercover Naruto - Spécification du Projet
+# PROJECT.md - État du Projet
+
+Pour le contexte complet du projet (stack, conventions, architecture, style), voir [AGENTS.md](./AGENTS.md).
 
 ## Vue d'ensemble
 
-Jeu web multijoueur en temps réel basé sur le jeu de société Undercover, thématique Naruto. Les joueurs reçoivent des mots similaires mais pas identiques et doivent identifier l'intrus par la discussion et le vote.
+Jeu web multijoueur Undercover à thème anime. Les joueurs reçoivent des mots similaires mais pas identiques et doivent identifier l'intrus par la discussion et le vote. Architecture Nuxt 3 fullstack (REST + SSE, pas de Socket.io).
 
-## Caractéristiques Principales
+## Stack Technique
 
-- **4-8 joueurs** par partie
-- **3 modes de jeu** : Classique, Mr. White, Double Infiltration
-- **Communication temps réel** via Socket.io
-- **Thématique Naruto** : techniques, villages, personnages
-- **Pas de stockage utilisateur** : sessions éphémères en mémoire
-- **Score par salon** : conservé pendant la durée de la partie
+- **Framework** : Nuxt.js 3 (Vue 3 + TypeScript)
+- **UI** : Headless UI + Tailwind v4 (`@tailwindcss/vite`) — pas de Nuxt UI
+- **État** : Composables (`useState`) — pas de Pinia
+- **Temps réel** : SSE (Server-Sent Events), pas de Socket.io
+- **Langage** : TypeScript strict
+- **Paquet** : Bun
 
-## Modes de Jeu
+## Contraintes & Préférences
 
-### 1. Mode Classique
-- **Configuration** : 1 intrus (ou 2 pour 6-8 joueurs)
-- **Distribution** : Civils reçoivent le mot A, intrus reçoivent le mot B (similaire mais différent)
-- **Objectif civils** : Identifier et éliminer l'intrus
-- **Objectif intrus** : Rester en jeu ou faire éliminer un civil
+- Pas de stockage persistant — état éphémère en mémoire uniquement
+- Min 3 / max 8 joueurs
+- Modes : Classic / Double Infiltration + toggle Mr. White
+- Tailwind v4 : opacités en multiples de 5 uniquement (`/5`, `/10`, `/15`…)
+- Pas de classes CSS custom — tout via utility classes Tailwind inline
+- Composants plats dans `components/` (pas de sous-dossiers, évite les auto-imports préfixés)
+- Formulaires : `<form @submit.prevent>` + `type="submit"` pour la touche Entrée
 
-### 2. Mode Mr. White
-- **Configuration** : 1 Mr. White
-- **Distribution** : Civils reçoivent le mot A, Mr. White ne reçoit aucun mot
-- **Objectif civils** : Identifier Mr. White
-- **Objectif Mr. White** : Bluffer et deviner le mot des civils s'il n'est pas éliminé
+## Système Multi-Anime
 
-### 3. Mode Double Infiltration
-- **Configuration** : 2 intrus (requis pour 6-8 joueurs)
-- **Distribution** : Civils reçoivent le mot A, intrus reçoivent le mot B
-- **Objectif civils** : Éliminer les 2 intrus
-- **Objectif intrus** : Collaborer pour survivre
+Les données sont organisées par anime dans `data/<slug>/`. Chaque dossier anime contient :
+- `manifest.json` — nom, slug, couleur, époques, catégories
+- Des sous-dossiers de catégories avec des fichiers JSON individuels
 
-## Architecture Technique
-
-### Stack Technologique
-```
-Frontend :
-- Nuxt.js 3 (Vue 3 + TypeScript)
-- Nuxt UI (composants UI basés sur Tailwind CSS)
-- Pinia (gestion d'état)
-- Socket.io-client
-
-Backend :
-- Nuxt Server (Node.js)
-- Socket.io (communication temps réel)
-- En mémoire (pas de base de données)
+### Format manifest.json
+```json
+{
+  "name": "Naruto",
+  "slug": "naruto",
+  "color": "#f97316",
+  "eras": [
+    { "id": "naruto", "label": "Naruto Original" },
+    { "id": "shippuden", "label": "Shippuden" }
+  ],
+  "categories": {
+    "character": "Personnage",
+    "technique": "Technique"
+  }
+}
 ```
 
-### Structure des Dossiers
+### Format des entrées JSON (7 champs uniquement)
+```json
+{
+  "id": "naruto-uzumaki",
+  "name": "Naruto Uzumaki",
+  "category": "character",
+  "era": ["naruto", "shippuden"],
+  "tags": ["protagoniste", "konoha", "hokage"],
+  "summary": "Description courte",
+  "details": ["Point 1", "Point 2"]
+}
 ```
-undercover-naruto/
-├── server/              # Backend Nuxt
-│   ├── api/            # API REST (création salle)
-│   ├── socket/         # Handlers Socket.io
-│   ├── models/         # Modèles de données
-│   └── services/       # Logique métier
-├── components/         # Composants Vue
-│   ├── game/          # Composants de jeu
-│   ├── lobby/         # Composants de salon
-│   └── ui/            # Composants UI personnalisés
-├── composables/        # Hooks Vue réutilisables
-├── pages/             # Routes Nuxt
-├── stores/            # Stores Pinia
-├── types/             # Types TypeScript
-├── data/              # Données statiques (Naruto)
-└── utils/             # Fonctions utilitaires
-```
+
+Pour ajouter un anime : créer `data/<slug>/manifest.json` + des sous-dossiers de catégories avec des fichiers JSON. Le DataService charge dynamiquement tous les dossiers.
 
 ## Flux du Jeu
 
-### 1. Création de Salle
+### Phases
+`waiting` → `discussion` → `voting` → `reveal` → (`continue` | `backToLobby`)
+
+### Logique de vote
+- **Majorité stricte** requise (>50% des votes totaux, neutres inclus) pour éliminer
+- Égalité ou absence de majorité → personne n'est éliminé, on continue
+- Vote neutre comptabilisé dans le total
+
+### Conditions de victoire
+- Tous les undercover/mrWhite éliminés → civils gagnent
+- 2 joueurs ou moins avec undercover vivant → undercover gagnent
+
+### Entre les tours
+- L'hôte peut **Continuer** (passe directement au tour suivant) ou **Retour au lobby** (change les options)
+- Le lobby entre les tours affiche les scores, les joueurs éliminés restent éliminés
+- Seuls les joueurs vivants reçoivent de nouveaux mots
+
+## Architecture
+
 ```
-POST /api/rooms
-→ Retourne { roomId, hostId }
+undercover-naruto/
+├── server/
+│   ├── api/              # Endpoints REST (+ SSE stream)
+│   ├── models/            # Room, Player
+│   └── services/          # GameService, VoteService, WordService, DataService
+├── components/            # Composants Vue plats (pas de sous-dossiers)
+│   ├── GameButton.vue     # Bouton 3D style Duolingo
+│   ├── GameCard.vue        # Carte avec glow
+│   ├── GameInput.vue
+│   ├── GameSelect.vue      # Headless UI Listbox
+│   ├── GameSwitch.vue      # Headless UI Switch
+│   ├── GameTimer.vue       # Timer SVG cercle
+│   ├── GameSettings.vue    # Config partie
+│   ├── InviteLink.vue
+│   ├── PlayerList.vue
+│   ├── VotePanel.vue       # Grille de vote (neutre inclus)
+│   └── WordDisplay.vue     # Révélation mot + infos anime
+├── composables/
+│   ├── useRoom.ts
+│   ├── useGameAPI.ts
+│   └── useSSE.ts
+├── pages/
+│   ├── index.vue           # Accueil + sélection anime
+│   ├── room/[code].vue     # Lobby + scores entre tours
+│   └── game/[code].vue     # Plateau de jeu
+├── types/
+│   ├── game.ts             # GameConfig (avec anime), GameState, Vote, etc.
+│   ├── room.ts             # RoomState, PlayerPublic
+│   └── anime.ts            # AnimeManifest, AnimeEntry
+├── data/
+│   └── <slug>/             # Un dossier par anime
+│       ├── manifest.json
+│       └── <category>/*.json
+├── utils/
+│   ├── animeData.ts        # Chargement client des entrées par anime
+│   └── wordInfo.ts         # Lookup mots + labels catégories
+└── server/utils/game.ts    # Fonctions métier rooms/salles
 ```
 
-### 2. Rejointe de Salle
-```
-Socket.io: 'room:join' { roomId, playerName }
-→ Broadcast aux joueurs existants
-→ Envoie état de la salle au nouveau joueur
-```
+## Types Clés
 
-### 3. Configuration
-- Hôte choisit le mode de jeu
-- Hôte choisit le nombre d'intrus (si applicable)
-- Hôte lance la partie
-
-### 4. Distribution des Mots
-```
-Service: WordService.assignWords(room)
-- Sélectionne une paire de mots aléatoire
-- Attribue le mot A aux civils
-- Attribue le mot B aux intrus (ou rien pour Mr. White)
-- Émet 'game:wordAssigned' à chaque joueur (mot personnel)
-```
-
-### 5. Phase de Discussion
-- Tour par tour dans l'ordre des joueurs
-- Chronomètre de 60 secondes par tour (configurable)
-- Chaque joueur décrit son mot en 1 phrase
-- Chat textuel autorisé pendant la discussion
-
-### 6. Phase de Vote
-- Tous les joueurs votent simultanément
-- Chaque joueur vote pour qui il pense être l'intrus
-- Timer de 30 secondes pour voter
-- Le joueur avec le plus de votes est éliminé
-- En cas d'égalité : nouveau vote
-
-### 7. Résolution
-```
-Service: GameService.checkWinCondition(room)
-- Si tous les intrus éliminés → Victoire des civils
-- Si intrus = civils (ou intrus = 1 et civils = 1) → Victoire des intrus
-- Sinon → Nouvelle manche
-```
-
-### 8. Fin de Partie
-- Affichage du mot des civils et des intrus
-- Révélation des identités
-- Score final (manches gagnées par chaque équipe)
-- Option de rejouer
-
-## Données Naruto
-
-### Catégories de Mots
-1. **Techniques** (jutsu)
-2. **Villages** (sakura no sato, etc.)
-3. **Personnages** (shinobi)
-
-### Structure des Données
+### GameConfig
 ```typescript
-interface WordPair {
+interface GameConfig {
+  mode: GameMode;           // 'classic' | 'doubleInfiltration'
+  discussionTime: number;   // secondes
+  voteTime: number;         // secondes
+  maxPlayers: number;
+  minPlayers: number;
+  eras: string[];            // filtres d'époques
+  anime: string;             // slug de l'anime (ex: 'naruto')
+  hideRole: boolean;
+  mrWhite: boolean;
+}
+```
+
+### AnimeEntry
+```typescript
+interface AnimeEntry {
   id: string;
-  category: 'technique' | 'village' | 'character';
-  wordA: string;
-  wordB: string;
-  difficulty: 'easy' | 'medium' | 'hard';
-}
-
-interface WordInfo {
   name: string;
-  description: string;
-  image?: string;
   category: string;
+  era: string[];
+  tags: string[];
+  summary: string;
+  details: string[];
 }
 ```
 
-## Interface Utilisateur
+## APIs
 
-### Page d'Accueil
-- Bouton "Créer une partie"
-- Champ "Rejoindre avec un code"
-- Règles du jeu (modal)
-- Sélection de pseudo
+| Endpoint | Méthode | Description |
+|---|---|---|
+| `POST /api/rooms` | Créer une salle (body: `{playerName, anime}`) |
+| `POST /api/rooms/join` | Rejoindre (body: `{roomCode, playerName}`) |
+| `GET /api/rooms/:id` | État de la salle |
+| `GET /api/rooms/code/:code` | Lookup par code |
+| `GET /api/rooms/:id/me` | Infos privées (mot, rôle) |
+| `GET /api/rooms/:id/stream` | SSE |
+| `POST /api/rooms/start` | Lancer/continuer la partie |
+| `POST /api/rooms/vote` | Voter |
+| `POST /api/rooms/turn/next` | Tour suivant |
+| `POST /api/rooms/start-vote` | Passer au vote |
+| `POST /api/rooms/next` | Retour au lobby |
+| `POST /api/rooms/continue` | Continuer le tour suivant |
+| `POST /api/rooms/reset` | Reset complet |
+| `POST /api/rooms/kick` | Expulser un joueur |
+| `GET /api/anime` | Liste des anime disponibles |
+| `GET /api/anime/:slug` | Manifest d'un anime |
 
-### Salon d'Attente
-- Liste des joueurs connectés
-- Configuration du jeu (mode, nombre d'intrus)
-- Lien d'invitation partageable
-- Bouton "Lancer la partie" (hôte uniquement)
+## Points Critiques
 
-### Interface de Jeu
-- **Phase de discussion** :
-  - Affichage du mot personnel (cliquable pour voir)
-  - Liste des joueurs avec indicateur de tour
-  - Chronomètre
-  - Chat textuel
-- **Phase de vote** :
-  - Liste des joueurs restants
-  - Boutons de vote
-  - Chronomètre
-- **Phase de résultat** :
-  - Joueur éliminé
-  - Révélation de son identité
-  - Condition de victoire vérifiée
-
-### Écran de Fin
-- Équipe gagnante
-- Révélation des mots
-- Score final
-- Bouton "Rejouer" / "Quitter"
-
-## Principes de Conception
-
-### SOLID
-- **Single Responsibility** : Chaque service a une responsabilité unique
-- **Open/Closed** : Extension via héritage/interfaces, pas de modification
-- **Liskov Substitution** : Les types sont interchangeables
-- **Interface Segregation** : Interfaces spécifiques plutôt que générales
-- **Dependency Inversion** : Dépendances vers abstractions, pas implémentations
-
-### DRY
-- Composants réutilisables
-- Composables pour logique partagée
-- Types centralisés
-- Utilitaires communs
-
-### Clean Code
-- Nommage explicite
-- Fonctions courtes (< 20 lignes)
-- Commentaires uniquement si nécessaire
-- Tests unitaires pour la logique critique
-
-## Sécurité
-
-### Protection des Salles
-- Codes de salle aléatoires (6 caractères alphanumériques)
-- Limite de joueurs par salle (4-8)
-- Nettoyage automatique des salles inactives (timeout 10 min)
-
-### Anti-Triche
-- Mots envoyés individuellement via Socket.io (pas visibles par les autres)
-- Validation côté serveur de toutes les actions
-- Impossible de changer de pseudo en cours de partie
-
-## Performance
-
-### Optimisations
-- Compression des messages Socket.io
-- Debounce sur les événements de chat
-- Lazy loading des composants
-- Cache des données Naruto (statiques)
-
-### Scalabilité
-- Architecture stateless (salles en mémoire)
-- Possibilité d'ajouter Redis pour multi-instance (futur)
-- Limite de 1000 salles simultanées par instance
-
-## Déploiement
-
-### Requirements
-- Node.js 18+
-- NPM ou Yarn
-
-### Commandes
-```bash
-# Installation
-npm install
-
-# Développement
-npm run dev
-
-# Build
-npm run build
-
-# Production
-npm run preview
-```
-
-### Variables d'Environnement
-```env
-PORT=3000
-HOST=0.0.0.0
-NODE_ENV=production
-```
-
-## Roadmap
-
-### Phase 1 - MVP
-- [x] Spécification complète
-- [ ] Initialisation projet Nuxt
-- [ ] Structure de base (dossiers, types)
-- [ ] Création de salle (API + Socket.io)
-- [ ] Rejointe de salle
-- [ ] Lobby avec liste des joueurs
-
-### Phase 2 - Cœur du Jeu
-- [ ] Distribution des mots
-- [ ] Phase de discussion (timer, tour par tour)
-- [ ] Phase de vote
-- [ ] Logique de victoire
-- [ ] Mode Classique fonctionnel
-
-### Phase 3 - Modes Avancés
-- [ ] Mode Mr. White
-- [ ] Mode Double Infiltration
-- [ ] Score par salon
-- [ ] Historique des manches
-
-### Phase 4 - Polish
-- [ ] Animations et transitions
-- [ ] Thème visuel Naruto
-- [ ] Responsive mobile
-- [ ] Tests et bugfix
-
-### Phase 5 - Déploiement
-- [ ] Configuration production
-- [ ] Déploiement sur serveur
-- [ ] Documentation utilisateur
+- `nuxt.config.ts` : `@tailwindcss/vite` plugin, modules: `@pinia/nuxt` seulement
+- `@import "tailwindcss"` doit être première ligne dans `main.css`
+- Tailwind v4 : opacités en `/5`, `/10`, `/15` uniquement
+- Composants DOIVENT être plats dans `components/`
+- `AnimeEntry` : 7 champs uniquement (id, name, category, era, tags, summary, details)
+- `VotePanel.vue` : grille incluant le bouton Neutre, exclude le joueur courant
+- `GameButton.vue` : passe `$attrs` (incluant `type="submit"`)
+- SSE : endpoint `/api/rooms/[id]/stream`, broadcast `{ event, data }`
+- DataService côte serveur : scan dynamique des dossiers anime
+- animeData côte client : `import.meta.glob` pour charger les JSON
+- Tag matching : overlap ≥3 = paire valide, fallback à 2 puis 1

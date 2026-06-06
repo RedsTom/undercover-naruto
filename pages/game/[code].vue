@@ -85,6 +85,18 @@
           <h2 class="text-xl font-black text-white">Pas de majorité — personne n'est éliminé !</h2>
         </div>
 
+        <div v-if="!canContinueGame && gameState.exposed" class="space-y-2 border-t border-white/10 pt-6">
+          <p class="text-xs font-bold uppercase tracking-wider text-white/50 text-center">Tous les rôles</p>
+          <div v-for="p in gameState.exposed" :key="p.playerId"
+            class="p-3 rounded-xl text-sm font-bold"
+            :class="p.role === 'undercover' || p.role === 'mrWhite'
+              ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
+              : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
+            <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
+            <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+          </div>
+        </div>
+
         <div v-if="isHost && canContinueGame" class="flex flex-col gap-3 items-center">
           <GameButton variant="primary" size="lg" @click="handleContinueRound">
             &#10145;&#65039; Continuer
@@ -175,8 +187,9 @@ function roleLabel(role?: string): string {
 
 const canContinueGame = computed(() => {
   if (!gameState.value?.phase || gameState.value.phase !== 'reveal') return false;
+  if (!lastRoundResult.value?.eliminatedPlayerId) return false;
+  if (lastRoundResult.value?.eliminatedRole !== 'civil') return false;
   if (aliveAll.value.length <= 2) return false;
-  if (lastRoundResult.value?.eliminatedPlayerId) return false;
   return true;
 });
 

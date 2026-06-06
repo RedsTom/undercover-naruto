@@ -29,7 +29,9 @@
               'data-[active]:bg-orange-500/15 data-[active]:text-white',
               'data-[selected]:text-orange-400',
             ]">
-              {{ item[labelKey] }}
+              <slot name="item" :item="item">
+                {{ item[labelKey] }}
+              </slot>
             </li>
           </ListboxOption>
         </ListboxOptions>

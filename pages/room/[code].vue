@@ -93,11 +93,7 @@
 
         <InviteLink :room="room" />
 
-        <GameSettings v-if="isHost" :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" :in-game="!!isInGame" :anime="animeSlug" @start="handleStart" />
-
-        <div v-if="!isHost && !isInGame" class="text-center">
-          <p class="text-gray-500 animate-pulse">&#9203; En attente que l'hôte lance la partie...</p>
-        </div>
+        <GameSettings :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" :in-game="!!isInGame" :anime="animeSlug" @start="handleStart" />
 
         <div class="text-center">
           <GameButton variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>

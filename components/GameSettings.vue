@@ -17,11 +17,19 @@
         label-key="label"
         value-key="value"
         label="Mode de jeu"
-      />
+      >
+        <template #item="{ item }">
+          <div class="flex flex-col gap-0.5">
+            <span>{{ item.label }}</span>
+            <span class="text-xs opacity-60">{{ item.desc }}</span>
+          </div>
+        </template>
+      </GameSelect>
 
-      <div v-if="!isHost" class="flex items-center justify-between p-3 rounded-xl bg-white/5">
+      <div v-if="!isHost" class="flex flex-col items-center justify-between p-3 rounded-xl bg-white/5 gap-1">
         <span class="text-sm text-gray-400">Mode</span>
         <span class="text-sm font-bold text-white">{{ selectedMode.label }}</span>
+        <span class="text-xs text-gray-500">{{ selectedMode.desc }}</span>
       </div>
 
       <GameSelect
@@ -35,7 +43,7 @@
 
       <div v-if="!isHost" class="flex items-center justify-between p-3 rounded-xl bg-white/5">
         <span class="text-sm text-gray-400">Difficulté</span>
-        <span class="text-sm font-bold text-white">{{ difficultyOptions.find(d => d.value === selectedDifficulty)?.label ?? 'Mixte' }}</span>
+        <span class="text-sm font-bold text-white">{{ selectedDifficulty.label }}</span>
       </div>
 
       <div class="grid grid-cols-2 gap-4">
@@ -91,8 +99,7 @@
 
       <div class="space-y-4 p-4 rounded-xl bg-white/5">
         <p class="block text-xs font-bold uppercase tracking-wider text-white/50">&#127917; Options</p>
-        <GameSwitch v-model="mrWhite" label="Activer Mr. White" />
-        <GameSwitch v-model="hideRole" label="Masquer les rôles (mode difficile)" />
+        <GameSwitch v-model="hideRole" :disabled="!isHost" label="Masquer les rôles (mode difficile)" />
       </div>
 
       <GameButton
@@ -127,8 +134,11 @@ const emit = defineEmits<{
 }>();
 
 const modeOptions = [
-  { label: 'Classique', value: 'classic' as GameMode },
-  { label: 'Double Infiltration', value: 'doubleInfiltration' as GameMode },
+  { label: 'Classique', value: 'classic' as GameMode, desc: '1 Undercover se cache parmi les civils', mrWhite: false },
+  { label: 'Mr. White', value: 'mrWhiteOnly' as GameMode, desc: '1 Mr. White sans mot cherche à se fondre', mrWhite: true },
+  { label: 'Classique + Mr. White', value: 'classic' as GameMode, desc: '1 Undercover + 1 Mr. White sans mot', mrWhite: true },
+  { label: 'Double Infiltration', value: 'doubleInfiltration' as GameMode, desc: '2 Undercover se cachant mutuellement (6+ joueurs)', mrWhite: false },
+  { label: 'Double Infiltration + Mr. White', value: 'doubleInfiltration' as GameMode, desc: '2 Undercover + 1 Mr. White (6+ joueurs)', mrWhite: true },
 ];
 
 const difficultyOptions = [
@@ -139,13 +149,12 @@ const difficultyOptions = [
 ];
 
 const selectedMode = ref(modeOptions[0]);
-const selectedDifficulty = ref<Difficulty>('mixed');
+const selectedDifficulty = ref(difficultyOptions[0]);
 const selectedCategories = ref<string[]>([]);
 const discussionTime = ref(60);
 const voteTime = ref(30);
 const selectedEras = ref<string[]>([]);
 const hideRole = ref(false);
-const mrWhite = ref(false);
 const eraOptions = ref<Array<{ label: string; value: string }>>([]);
 const categoryOptions = ref<Array<{ label: string; value: string }>>([]);
 const animeName = ref('');
@@ -202,17 +211,17 @@ function handleStart() {
     voteTime: voteTime.value,
     eras: selectedEras.value,
     anime: props.anime ?? 'naruto',
-    difficulty: selectedDifficulty.value,
+    difficulty: selectedDifficulty.value.value,
     categories: selectedCategories.value,
     hideRole: hideRole.value,
-    mrWhite: mrWhite.value,
+    mrWhite: selectedMode.value.mrWhite,
   });
 }
 
 watch(() => props.config, (cfg) => {
   if (!cfg) return;
   if (cfg.mode) {
-    const found = modeOptions.find(m => m.value === cfg.mode);
+    const found = modeOptions.find(m => m.value === cfg.mode && m.mrWhite === (cfg.mrWhite ?? false));
     if (found) selectedMode.value = found;
   }
   if (cfg.discussionTime) discussionTime.value = cfg.discussionTime;
@@ -220,7 +229,9 @@ watch(() => props.config, (cfg) => {
   if (cfg.eras?.length) selectedEras.value = [...cfg.eras];
   if (cfg.categories?.length) selectedCategories.value = [...cfg.categories];
   if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
-  if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
-  if (cfg.difficulty) selectedDifficulty.value = cfg.difficulty;
+  if (cfg.difficulty) {
+    const found = difficultyOptions.find(d => d.value === cfg.difficulty);
+    if (found) selectedDifficulty.value = found;
+  }
 }, { immediate: true });
 </script>

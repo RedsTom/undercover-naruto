@@ -79,6 +79,7 @@ export class WordService {
   }
 
   static getInfiltratorCount(playerCount: number, mode: GameMode, hasMrWhite?: boolean): number {
+    if (mode === 'mrWhiteOnly') return 0;
     let count = 1;
     if (mode === 'doubleInfiltration' && playerCount >= 6) count = 2;
     if (hasMrWhite) count = Math.max(1, count);

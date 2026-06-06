@@ -1,6 +1,6 @@
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'mixed';
 
-export type GameMode = 'classic' | 'doubleInfiltration';
+export type GameMode = 'classic' | 'doubleInfiltration' | 'mrWhiteOnly';
 
 export type GamePhase = 'waiting' | 'playing' | 'discussion' | 'voting' | 'reveal' | 'finished';
 

@@ -34,9 +34,9 @@ export class VoteService {
 
     const currentRound = room.gameState.rounds[room.gameState.rounds.length - 1];
     const voteCounts: Record<string, number> = {};
+    const totalVotes = currentRound.votes.length;
 
     currentRound.votes.forEach(vote => {
-      if (vote.targetId === 'neutral') return;
       voteCounts[vote.targetId] = (voteCounts[vote.targetId] || 0) + 1;
     });
 
@@ -45,6 +45,7 @@ export class VoteService {
     let isTie = false;
 
     Object.entries(voteCounts).forEach(([playerId, count]) => {
+      if (playerId === 'neutral') return;
       if (count > maxVotes) {
         maxVotes = count;
         eliminatedPlayerId = playerId;
@@ -54,8 +55,9 @@ export class VoteService {
       }
     });
 
-    if (isTie) {
+    if (isTie || !eliminatedPlayerId || maxVotes <= totalVotes / 2) {
       eliminatedPlayerId = null;
+      isTie = true;
     }
 
     currentRound.eliminatedPlayerId = eliminatedPlayerId;
@@ -64,6 +66,8 @@ export class VoteService {
       const player = room.getPlayer(eliminatedPlayerId);
       if (player) {
         player.eliminate();
+        currentRound.eliminatedRole = player.role ?? 'unknown';
+        currentRound.eliminatedWord = player.word ?? null;
       }
     }
 

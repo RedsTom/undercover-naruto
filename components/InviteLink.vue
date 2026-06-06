@@ -1,32 +1,32 @@
 <template>
   <GameCard>
     <template #header>
-      <h3 class="text-lg font-bold text-white">🔗 Inviter des amis</h3>
+      <h3 class="text-lg font-bold text-white">&#128279; Inviter des amis</h3>
     </template>
 
-    <div class="space-y-4">
-      <div>
-        <p class="game-label">Code de la salle</p>
-        <div class="flex items-center gap-2">
-          <div class="flex-1 bg-white/5 rounded-xl px-4 py-3 text-center text-2xl font-mono tracking-widest text-ninja-400 font-bold select-all">
+    <div class="space-y-5">
+      <div class="flex flex-col gap-2">
+        <p class="block text-xs font-bold uppercase tracking-wider text-white/50">Code de la salle</p>
+        <div class="flex items-center gap-3">
+          <div class="flex-1 bg-white/5 rounded-xl px-4 py-3 text-center text-2xl font-mono tracking-widest text-orange-400 font-bold select-all">
             {{ room.code }}
           </div>
           <GameButton size="sm" @click="copyCode">
-            {{ copied ? '✅' : '📋' }}
+            {{ copied ? '&#9989;' : '&#128203;' }}
           </GameButton>
         </div>
       </div>
 
-      <div>
-        <p class="game-label">Lien d'invitation</p>
-        <div class="flex items-center gap-2">
+      <div class="flex flex-col gap-2">
+        <p class="block text-xs font-bold uppercase tracking-wider text-white/50">Lien d'invitation</p>
+        <div class="flex items-center gap-3">
           <input
             :value="inviteLink"
             readonly
-            class="game-input flex-1"
+            class="flex-1 w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none box-border"
           />
           <GameButton size="sm" @click="copyLink">
-            {{ linkCopied ? '✅' : '📋' }}
+            {{ linkCopied ? '&#9989;' : '&#128203;' }}
           </GameButton>
         </div>
       </div>

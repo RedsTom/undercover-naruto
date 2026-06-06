@@ -56,15 +56,15 @@ const formattedTime = computed(() => {
 
 const timerClass = computed(() => {
   const s = remainingMs.value / 1000;
-  if (s <= 5) return 'text-akatsuki-400';
-  if (s <= 15) return 'text-ninja-400';
+  if (s <= 5) return 'text-red-400';
+  if (s <= 15) return 'text-orange-400';
   return 'text-white';
 });
 
 const strokeClass = computed(() => {
   const s = remainingMs.value / 1000;
-  if (s <= 5) return 'text-akatsuki-500';
-  if (s <= 15) return 'text-ninja-500';
-  return 'text-leaf-500';
+  if (s <= 5) return 'text-red-500';
+  if (s <= 15) return 'text-orange-500';
+  return 'text-green-500';
 });
 </script>

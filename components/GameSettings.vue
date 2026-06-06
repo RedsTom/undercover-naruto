@@ -1,10 +1,10 @@
 <template>
   <GameCard>
     <template #header>
-      <h3 class="text-lg font-bold text-white">⚙️ Configuration</h3>
+      <h3 class="text-lg font-bold text-white">&#9881;&#65039; Configuration</h3>
     </template>
 
-    <div class="space-y-5">
+    <div class="space-y-6">
       <GameSelect
         v-if="isHost"
         v-model="selectedMode"
@@ -19,32 +19,39 @@
         <span class="text-sm font-bold text-white">{{ selectedMode.label }}</span>
       </div>
 
-      <div class="grid grid-cols-2 gap-3">
-        <div>
-          <label class="game-label">Discussion</label>
-          <input v-model.number="discussionTime" type="number" :min="30" :max="120" :disabled="!isHost" class="game-input" />
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-2">
+          <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Discussion</label>
+          <input v-model.number="discussionTime" type="number" :min="30" :max="120" :disabled="!isHost" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)] disabled:opacity-50 disabled:cursor-not-allowed" />
         </div>
-        <div>
-          <label class="game-label">Vote</label>
-          <input v-model.number="voteTime" type="number" :min="15" :max="60" :disabled="!isHost" class="game-input" />
+        <div class="flex flex-col gap-2">
+          <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Vote</label>
+          <input v-model.number="voteTime" type="number" :min="15" :max="60" :disabled="!isHost" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)] disabled:opacity-50 disabled:cursor-not-allowed" />
         </div>
       </div>
 
-      <div>
-        <p class="game-label">📜 Époques</p>
-        <div class="grid grid-cols-2 gap-2">
-          <label v-for="era in eraOptions" :key="era.value" class="game-checkbox">
+      <div class="flex flex-col gap-2">
+        <p class="block text-xs font-bold uppercase tracking-wider text-white/50">&#128220; Époques</p>
+        <div class="grid grid-cols-2 gap-3">
+          <label v-for="era in eraOptions" :key="era.value" class="inline-flex items-center gap-2 cursor-pointer select-none">
             <input type="checkbox" :value="era.value" :checked="selectedEras.includes(era.value)"
               :disabled="!isHost"
-              @change="toggleEra(era.value)" />
-            <span class="game-checkbox__visual">{{ selectedEras.includes(era.value) ? '✓' : '' }}</span>
+              @change="toggleEra(era.value)"
+              class="hidden peer" />
+            <span :class="[
+              'w-5 h-5 rounded-md border-2 flex items-center justify-center transition-all duration-200 shrink-0 text-[0.7rem]',
+              'bg-white/5 text-[0.7rem]',
+              selectedEras.includes(era.value)
+                ? 'bg-orange-500 border-orange-500 text-white'
+                : 'border-white/20 hover:border-orange-500/50',
+            ]">{{ selectedEras.includes(era.value) ? '&#10003;' : '' }}</span>
             <span class="text-sm" :class="selectedEras.includes(era.value) ? 'text-white' : 'text-gray-500'">{{ era.label }}</span>
           </label>
         </div>
       </div>
 
-      <div class="space-y-3 p-4 rounded-xl bg-white/5">
-        <p class="game-label">🎭 Options</p>
+      <div class="space-y-4 p-4 rounded-xl bg-white/5">
+        <p class="block text-xs font-bold uppercase tracking-wider text-white/50">&#127917; Options</p>
         <GameSwitch v-model="mrWhite" label="Activer Mr. White" />
         <GameSwitch v-model="hideRole" label="Masquer les rôles (mode difficile)" />
       </div>
@@ -56,7 +63,7 @@
         :disabled="!canStart"
         @click="handleStart"
       >
-        {{ canStart ? '🚀 Lancer la partie' : `⏳ ${playerCount}/${minPlayers}` }}
+        {{ inGame ? '&#10145;&#65039; Tour suivant' : (canStart ? '&#128640; Lancer la partie' : `&#9203; ${playerCount}/${minPlayers}`) }}
       </GameButton>
     </div>
   </GameCard>
@@ -72,6 +79,7 @@ const props = defineProps<{
   minPlayers?: number;
   maxPlayers?: number;
   config?: Partial<GameConfig>;
+  inGame?: boolean;
 }>();
 
 const emit = defineEmits<{
@@ -103,7 +111,9 @@ const hideRole = ref(false);
 const mrWhite = ref(false);
 
 const canStart = computed(() => {
-  return props.isHost && props.playerCount >= minPlayers.value && props.playerCount <= maxPlayers.value;
+  if (!props.isHost) return false;
+  if (props.inGame) return true;
+  return props.playerCount >= minPlayers.value && props.playerCount <= maxPlayers.value;
 });
 
 const maxPlayers = computed(() => props.maxPlayers ?? 8);

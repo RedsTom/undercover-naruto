@@ -25,6 +25,21 @@ export function getWordTags(name: string): string[] {
   return entry?.tags ?? [];
 }
 
+export function getCategoryLabel(category: string): string {
+  const labels: Record<string, string> = {
+    characters: 'Personnage',
+    techniques: 'Technique',
+    clans: 'Clan',
+    villages: 'Village',
+    bijuu: 'Bijû',
+    organizations: 'Organisation',
+    kage: 'Kage',
+    'kekkei-genkai': 'Kekkei Genkai',
+    items: 'Objet',
+  };
+  return labels[category] ?? category;
+}
+
 export function formatEra(era: Era): string {
   const labels: Record<Era, string> = {
     'naruto': 'Naruto Original',

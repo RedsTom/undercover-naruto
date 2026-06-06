@@ -147,6 +147,7 @@ export class GameService {
   static returnToLobby(room: RoomModel): void {
     if (!room.gameState) return;
     room.gameState.timerEndTime = null;
+    room.players.forEach(p => { p.isAlive = true; });
     room.setPhase('waiting');
     room.updateActivity();
   }

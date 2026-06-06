@@ -1,0 +1,27 @@
+{
+  "id": "restauration-eldia",
+  "name": "Restauration d'Eldia",
+  "category": "organization",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "organisation",
+    "marley",
+    "eldien",
+    "resistance",
+    "restauration",
+    "liberation",
+    "underground",
+    "rebellion"
+  ],
+  "summary": "Mouvement de résistance eldien clandestin à Marley visant à restaurer l'empire d'Eldia",
+  "details": [
+    "Mouvement souterrain eldien à Marley cherchant à restaurer la grandeur passée d'Eldia",
+    "Contre la propagande marleyenne et la manipulation des Eldiens",
+    "Membres célèbres incluent Grisha Jaeger et Dina Fritz",
+    "A été démantelé par le gouvernement marleyen, ses membres transformés en Titans",
+    "A survécu grâce à Eren Kruger, agent double infiltré dans Marley"
+  ]
+}

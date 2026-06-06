@@ -1,0 +1,29 @@
+{
+  "id": "paradis",
+  "name": "Paradis",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "ile",
+    "royaume",
+    "eldien",
+    "mur",
+    "titans",
+    "isole",
+    "dernier-refuge",
+    "peuple"
+  ],
+  "summary": "Île isolée, dernier refuge des Eldiens, entourée de Murs gigantesques et de Titans",
+  "details": [
+    "Île isolée du continent, dernier refuge des Eldiens après leur défaite",
+    "Entourée de trois murs gigantesques : Maria, Rose et Sina",
+    "Considérée par Marley comme une terre maudite peuplée de démons",
+    "Riche en ressources convoitées par les nations du continent",
+    "Théâtre des événements principaux de l'histoire d'Attack on Titan"
+  ]
+}

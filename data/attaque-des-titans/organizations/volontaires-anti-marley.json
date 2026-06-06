@@ -1,0 +1,26 @@
+{
+  "id": "volontaires-anti-marley",
+  "name": "Volontaires Anti-Marley",
+  "category": "organization",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "organisation",
+    "marley",
+    "eldien",
+    "resistance",
+    "volontaires",
+    "anti-marley",
+    "liberation",
+    "etranger"
+  ],
+  "summary": "Groupe de volontaires étrangers opposés à Marley, alliés à Paradis pour la libération des Eldiens",
+  "details": [
+    "Coalition de soldats étrangers rejetant l'impérialisme de Marley",
+    "Dirigée par Yelena, agent double au service de Zeke Jaeger",
+    "A aidé Paradis à développer des technologies modernes (armes, aviation)",
+    "Composée principalement de soldats issus de nations vaincues par Marley",
+    "Ses membres incluent Onyankopon, rescapé d'une colonie marleyenne"
+  ]
+}

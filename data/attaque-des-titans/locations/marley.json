@@ -1,0 +1,26 @@
+{
+  "id": "marley",
+  "name": "Marley",
+  "category": "location",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "continent",
+    "empire",
+    "eldien",
+    "oppresseur",
+    "moderne",
+    "technologie",
+    "militaire",
+    "ennemi"
+  ],
+  "summary": "Empire continental dominant, puissance militaire mondiale, oppresseur historique des Eldiens",
+  "details": [
+    "Empire continental dominant, puissance mondiale après la chute d'Eldia",
+    "Technologiquement avancé, possédant chemins de fer, armes à feu et marine de guerre",
+    "A opprimé les Eldiens pendant un siècle, les confinant dans des zones de réserve",
+    "Utilise les pouvoirs des Titans comme armes de guerre offensives",
+    "En guerre contre plusieurs nations coalisées pour les ressources de Paradis"
+  ]
+}

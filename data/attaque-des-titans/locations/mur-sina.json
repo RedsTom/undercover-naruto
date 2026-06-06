@@ -1,0 +1,29 @@
+{
+  "id": "mur-sina",
+  "name": "Mur Sina",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "mur",
+    "paradis",
+    "enceinte",
+    "titans",
+    "interieur",
+    "roi",
+    "elite",
+    "dernier"
+  ],
+  "summary": "Le plus petit et le plus interne des trois Murs de Paradis, protégeant le roi et l'élite",
+  "details": [
+    "Mur le plus interne de Paradis, enceinte de la capitale royale",
+    "Protège le palais du roi, la résidence de la famille Reiss et l'aristocratie",
+    "Considéré comme le dernier refuge en cas de catastrophe",
+    "Ses districts incluent Stohess, Ehrmich, Orvud et le Quartier Royal",
+    "Lieu du palais royal et de la chambre du trône"
+  ]
+}

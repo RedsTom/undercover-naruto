@@ -1,0 +1,26 @@
+{
+  "id": "gouvernement-marley",
+  "name": "Gouvernement Marley",
+  "category": "organization",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "organisation",
+    "marley",
+    "gouvernement",
+    "militaire",
+    "eldien",
+    "propagande",
+    "guerre",
+    "empire"
+  ],
+  "summary": "Empire expansionniste dominant, oppresseur des Eldiens, principale nation ennemie de Paradis",
+  "details": [
+    "Nation dominante du continent, puissance militaire mondiale après la chute d'Eldia",
+    "Utilise les Eldiens comme armes de guerre via les Warriors",
+    "A maintenu Paradis sous blocus et propagande pendant un siècle",
+    "A déclenché une guerre mondiale pour les ressources de Paradis",
+    "Son idéologie anti-eldienne a forcé des générations d'Eldiens à vivre dans des camps"
+  ]
+}

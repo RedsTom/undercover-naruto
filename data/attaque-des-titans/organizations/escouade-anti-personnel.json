@@ -1,0 +1,26 @@
+{
+  "id": "escouade-anti-personnel",
+  "name": "Escouade Anti-Personnel",
+  "category": "organization",
+  "era": [
+    "saison-3"
+  ],
+  "tags": [
+    "organisation",
+    "paradis",
+    "brigade-centrale",
+    "anti-personnel",
+    "kenny",
+    "assassinat",
+    "reiss",
+    "brutal"
+  ],
+  "summary": "Escouade d'élite de la Brigade Centrale dirigée par Kenny Ackerman, chargée des basses œuvres de la famille Reiss",
+  "details": [
+    "Escouade d'élite de la Brigade Centrale, opérant dans l'ombre pour la famille Reiss",
+    "Spécialisée dans l'assassinat, la torture et les opérations clandestines",
+    "Utilisait des équipements tridimensionnels modifiés avec des armes à feu",
+    "Dirigée par Kenny Ackerman, le redoutable 'Kenny le Tueur'",
+    "Démantelée par le Bataillon d'Exploration lors de la chute du gouvernement Reiss"
+  ]
+}

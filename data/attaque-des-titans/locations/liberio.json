@@ -1,0 +1,26 @@
+{
+  "id": "liberio",
+  "name": "Liberio",
+  "category": "location",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "ville",
+    "marley",
+    "eldien",
+    "camp",
+    "zone-reserve",
+    "liberio",
+    "propagande",
+    "guerre"
+  ],
+  "summary": "Zone de réserve eldienne en Marley, camp urbanisé où vivent les Eldiens sous contrôle marleyen",
+  "details": [
+    "Zone de réserve (camp) où les Eldiens de Marley sont confinés et contrôlés",
+    "Ville entourée de murs, sous surveillance militaire constante",
+    "Lieu de vie des guerriers marleyens et de leurs familles",
+    "Théâtre de la déclaration de guerre de Willy Tybur contre Paradis",
+    "Site de l'attaque d'Eren Jaeger qui déclencha la guerre totale entre Paradis et Marley"
+  ]
+}

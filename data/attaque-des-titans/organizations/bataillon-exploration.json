@@ -1,0 +1,31 @@
+{
+  "id": "bataillon-exploration",
+  "name": "Bataillon d'Exploration",
+  "category": "organization",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "organisation",
+    "paradis",
+    "armee",
+    "exploration",
+    "liberte",
+    "aile-de-la-liberte",
+    "titane",
+    "bataillon",
+    "survie",
+    "elite"
+  ],
+  "summary": "Division d'élite de l'armée de Paradis, chargée d'explorer le monde au-delà des Murs et de combattre les Titans",
+  "details": [
+    "Division d'élite de l'armée de Paradis, vêtue de la célèbre cape vert olive ornée des ailes de la liberté",
+    "Mission principale : explorer le monde extérieur et exterminer les Titans",
+    "Dirigée successivement par Keith Shadis, Erwin Smith, Hange Zoë et Armin Arlert",
+    "Escouade d'élite du capitaine Levi, considérée comme la plus redoutable unité de combat",
+    "Symbole de la quête de liberté et de la résistance de l'humanité contre les Titans"
+  ]
+}

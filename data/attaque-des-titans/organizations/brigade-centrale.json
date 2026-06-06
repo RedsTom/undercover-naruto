@@ -1,0 +1,28 @@
+{
+  "id": "brigade-centrale",
+  "name": "Brigade Centrale",
+  "category": "organization",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "organisation",
+    "paradis",
+    "armee",
+    "police",
+    "mur-sina",
+    "ordre",
+    "corruption",
+    "interieur"
+  ],
+  "summary": "Police militaire d'élite de Paradis chargée de la protection du roi et du maintien de l'ordre",
+  "details": [
+    "Division militaire d'élite protégeant le roi de Paradis et patrouillant Wall Sina",
+    "Considérée comme la branche la plus prestigieuse de l'armée",
+    "Généralement critiquée pour sa corruption et son inefficacité face aux vrais dangers",
+    "Souvent choisie par les meilleurs recrues voulant une vie facile et en sécurité",
+    "Dirigée par Nile Dawk, était en réalité contrôlée par la famille Reiss"
+  ]
+}

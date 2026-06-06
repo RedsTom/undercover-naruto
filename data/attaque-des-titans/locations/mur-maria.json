@@ -1,0 +1,29 @@
+{
+  "id": "mur-maria",
+  "name": "Mur Maria",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "mur",
+    "paradis",
+    "enceinte",
+    "titans",
+    "exterieur",
+    "chute",
+    "perdu",
+    "gigantesque"
+  ],
+  "summary": "Le plus grand et le plus externe des trois Murs de Paradis, tombé après l'attaque du Titan Colossal",
+  "details": [
+    "Premier mur extérieur de Paradis, le plus vaste des trois enceintes concentriques",
+    "Brisé par le Titan Colossal et le Titan Cuirassé lors de l'attaque de Shiganshina",
+    "Son effondrement a causé la perte de centaines de milliers de vies humaines",
+    "Plus grand territoire perdu, livré aux Titans pendant des années",
+    "Repris par le Bataillon d'Exploration après la reconquête de Shiganshina"
+  ]
+}

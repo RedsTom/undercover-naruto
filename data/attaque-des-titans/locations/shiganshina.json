@@ -1,0 +1,28 @@
+{
+  "id": "shiganshina",
+  "name": "Shiganshina",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "ville",
+    "paradis",
+    "mur-maria",
+    "district",
+    "portail",
+    "natal",
+    "jaeger",
+    "ere-chute"
+  ],
+  "summary": "District natal d'Eren, Mikasa et Armin, lieu de la chute de Wall Maria et de la bataille finale",
+  "details": [
+    "District situé au bord extérieur de Wall Maria, ville natale d'Eren, Mikasa et Armin",
+    "Premier district attaqué par le Titan Colossal et le Titan Cuirassé",
+    "Porte d'entrée des Titans après la destruction de son portail principal",
+    "Lieu de la bataille décisive pour reprendre Wall Maria au Bataillon d'Exploration",
+    "Site du sous-sol de la maison Jaeger contenant les carnets de Grisha"
+  ]
+}

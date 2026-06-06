@@ -1,0 +1,29 @@
+{
+  "id": "mur-rose",
+  "name": "Mur Rose",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "mur",
+    "paradis",
+    "enceinte",
+    "titans",
+    "interieur",
+    "defense",
+    "peuple",
+    "agricole"
+  ],
+  "summary": "Deuxième mur de Paradis, protégeant les terres agricoles et la majorité de la population",
+  "details": [
+    "Deuxième enceinte concentrique de Paradis, située entre Maria et Sina",
+    "Protège les principales zones agricoles et la majorité de la population",
+    "Théâtre de l'attaque du Titan Bestial et des guerriers marleyens",
+    "Ses districts incluent Trost, Krolva et Utopia",
+    "Frontière de la dernière ligne de défense après la chute de Wall Maria"
+  ]
+}

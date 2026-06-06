@@ -1,0 +1,26 @@
+{
+  "id": "yeageristes",
+  "name": "Yeagerists",
+  "category": "organization",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "organisation",
+    "paradis",
+    "extremiste",
+    "nationaliste",
+    "eldien",
+    "jaeger",
+    "coup-etat",
+    "milice"
+  ],
+  "summary": "Mouvement nationaliste eldien extrémiste fondé par Eren Jaeger et dirigé par Floch Forster",
+  "details": [
+    "Mouvement nationaliste eldien radical, partisans d'Eren Jaeger à Paradis",
+    "Objectif : libérer Paradis de toute influence extérieure par la force",
+    "A organisé un coup d'État renversant le gouvernement de Paradis",
+    "Composé d'anciens soldats du Bataillon d'Exploration et de nouveaux convertis",
+    "A soutenu le Grand Terrassement d'Eren comme seul moyen de protéger Paradis"
+  ]
+}

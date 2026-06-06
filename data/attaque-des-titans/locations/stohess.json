@@ -1,0 +1,27 @@
+{
+  "id": "stohess",
+  "name": "Stohess",
+  "category": "location",
+  "era": [
+    "saison-1",
+    "saison-3"
+  ],
+  "tags": [
+    "ville",
+    "paradis",
+    "mur-sina",
+    "district",
+    "elite",
+    "traque",
+    "annie",
+    "cristal"
+  ],
+  "summary": "District de Wall Sina, lieu de la traque et de la capture d'Annie Leonhart",
+  "details": [
+    "District important de Wall Sina, résidence de l'élite de Paradis",
+    "Lieu de la confrontation majeure entre le Bataillon d'Exploration et Annie Leonhart",
+    "Site où Annie s'est cristallisée sous terre pour se protéger",
+    "Théâtre de la révélation publique de l'existence des Titans humains",
+    "Abrite le quartier général de la Brigade Centrale"
+  ]
+}

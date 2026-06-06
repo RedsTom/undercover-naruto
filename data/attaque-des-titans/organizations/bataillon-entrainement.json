@@ -1,0 +1,28 @@
+{
+  "id": "bataillon-entrainement",
+  "name": "Bataillon d'Entraînement",
+  "category": "organization",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3"
+  ],
+  "tags": [
+    "organisation",
+    "paradis",
+    "armee",
+    "entrainement",
+    "formation",
+    "recrues",
+    "jeunes",
+    "104e"
+  ],
+  "summary": "Branche de l'armée de Paradis chargée de former les nouvelles recrues, notamment la célèbre 104e brigade",
+  "details": [
+    "Forme les jeunes soldats de 12 à 15 ans pendant trois ans",
+    "Enseigne le combat, l'équipement tridimensionnel et la survie",
+    "La 104e brigade est la plus célèbre, comptant Eren, Mikasa, Armin, Reiner, etc.",
+    "Dirigée par l'impitoyable instructeur Keith Shadis",
+    "Les diplômés choisissent ensuite leur affectation entre les trois branches"
+  ]
+}

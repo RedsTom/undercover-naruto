@@ -1,0 +1,26 @@
+{
+  "id": "trost",
+  "name": "Trost",
+  "category": "location",
+  "era": [
+    "saison-1"
+  ],
+  "tags": [
+    "ville",
+    "paradis",
+    "mur-rose",
+    "district",
+    "bataille",
+    "defense",
+    "104e",
+    "invasion"
+  ],
+  "summary": "District de Wall Rose, théâtre de l'invasion des Titans et de la première grande victoire de la 104e",
+  "details": [
+    "District important de Wall Rose, porte d'entrée vers l'intérieur des Murs",
+    "Envahi par les Titans après la brèche créée par le Titan Cuirassé",
+    "Lieu de la première bataille majeure de la 104e brigade",
+    "Défendu héroïquement par Eren qui révéla son pouvoir de Titan",
+    "Site de la première utilisation du rocher pour bloquer la brèche"
+  ]
+}

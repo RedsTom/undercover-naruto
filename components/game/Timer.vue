@@ -1,9 +1,21 @@
 <template>
   <div class="text-center">
-    <div class="text-4xl font-bold tabular-nums" :class="timerColor">
-      {{ formattedTime }}
+    <div class="relative inline-flex items-center justify-center">
+      <svg class="w-20 h-20 -rotate-90" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="8"
+          class="text-white/5" />
+        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="8"
+          stroke-linecap="round"
+          :stroke-dasharray="264"
+          :stroke-dashoffset="progressOffset"
+          :class="strokeClass"
+          class="transition-all duration-300" />
+      </svg>
+      <span class="absolute text-2xl font-black tabular-nums" :class="timerClass">
+        {{ formattedTime }}
+      </span>
     </div>
-    <div class="text-sm text-gray-500 mt-1">
+    <div v-if="label" class="text-sm text-gray-500 mt-1 font-bold">
       {{ label }}
     </div>
   </div>
@@ -18,19 +30,21 @@ const props = defineProps<{
 const now = ref(Date.now());
 let interval: ReturnType<typeof setInterval> | null = null;
 
-onMounted(() => {
-  interval = setInterval(() => {
-    now.value = Date.now();
-  }, 100);
-});
-
-onUnmounted(() => {
-  if (interval) clearInterval(interval);
-});
+onMounted(() => { interval = setInterval(() => { now.value = Date.now(); }, 100); });
+onUnmounted(() => { if (interval) clearInterval(interval); });
 
 const remainingMs = computed(() => {
   if (!props.endTime) return 0;
   return Math.max(0, props.endTime - now.value);
+});
+
+const totalDuration = computed(() => 60000);
+
+const progressOffset = computed(() => {
+  if (!props.endTime) return 0;
+  const total = totalDuration.value;
+  const remaining = remainingMs.value;
+  return 264 * (1 - remaining / total);
 });
 
 const formattedTime = computed(() => {
@@ -40,10 +54,17 @@ const formattedTime = computed(() => {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 });
 
-const timerColor = computed(() => {
-  const seconds = remainingMs.value / 1000;
-  if (seconds <= 5) return 'text-red-500';
-  if (seconds <= 15) return 'text-orange-500';
-  return 'text-gray-900 dark:text-white';
+const timerClass = computed(() => {
+  const s = remainingMs.value / 1000;
+  if (s <= 5) return 'text-akatsuki-400';
+  if (s <= 15) return 'text-ninja-400';
+  return 'text-white';
+});
+
+const strokeClass = computed(() => {
+  const s = remainingMs.value / 1000;
+  if (s <= 5) return 'text-akatsuki-500';
+  if (s <= 15) return 'text-ninja-500';
+  return 'text-leaf-500';
 });
 </script>

@@ -1,50 +1,63 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-gray-800">
-    <div class="container mx-auto px-4 py-16">
-      <div class="max-w-md mx-auto space-y-8">
-        <div class="text-center space-y-4">
-          <h1 class="text-5xl font-bold text-orange-600 dark:text-orange-400">Undercover</h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300">Naruto Edition</p>
+  <div class="min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="max-w-md w-full space-y-8 animate-slide-up">
+      <div class="text-center space-y-3">
+        <div class="text-7xl mb-4 animate-float">🍥</div>
+        <h1 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-ninja-400 via-ninja-500 to-akatsuki-500">
+          UNDERCOVER
+        </h1>
+        <p class="text-xl text-ninja-300 font-semibold tracking-wider">NARUTO EDITION</p>
+        <p class="text-sm text-gray-500">Trouvez l'intrus avant qu'il ne soit trop tard</p>
+      </div>
+
+      <GameCard>
+        <div class="space-y-5">
+          <div>
+            <label class="game-label">Pseudo</label>
+            <input v-model="playerName" placeholder="Entrez votre pseudo" class="game-input" />
+          </div>
+
+          <div class="space-y-3">
+            <GameButton block size="lg" :disabled="!canCreate" :loading="creating" @click="handleCreate">
+              🚀 Créer une partie
+            </GameButton>
+
+            <hr class="game-separator" />
+
+            <div>
+              <label class="game-label">Code de la salle</label>
+              <input
+                v-model="roomCode"
+                placeholder="ABC123"
+                class="game-input text-center text-2xl font-mono tracking-widest"
+                :maxlength="6"
+                @keyup.enter="handleJoin"
+              />
+            </div>
+
+            <GameButton block size="lg" variant="secondary" :disabled="!canJoin" :loading="joining" @click="handleJoin">
+              🔗 Rejoindre
+            </GameButton>
+          </div>
         </div>
+      </GameCard>
 
-        <UCard>
-          <div class="space-y-6">
-            <UFormField label="Votre pseudo">
-              <UInput v-model="playerName" placeholder="Entrez votre pseudo" size="lg" icon="i-heroicons-user" />
-            </UFormField>
-
-            <div class="space-y-3">
-              <UButton block size="lg" :disabled="!canCreate" :loading="creating" @click="handleCreate">
-                Créer une partie
-              </UButton>
-
-              <div class="flex items-center gap-4 my-4">
-                <div class="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
-                <span class="text-sm text-gray-500">ou</span>
-                <div class="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
-              </div>
-
-              <UFormField label="Code de la salle">
-                <UInput v-model="roomCode" placeholder="ABC123" size="lg" class="text-center text-2xl font-mono tracking-widest" :maxlength="6" @keyup.enter="handleJoin" />
-              </UFormField>
-
-              <UButton block size="lg" color="gray" :disabled="!canJoin" :loading="joining" @click="handleJoin">
-                Rejoindre
-              </UButton>
+      <div v-if="error" class="animate-shake">
+        <div class="game-card">
+          <div class="game-card__body">
+            <div class="flex items-center gap-3 text-akatsuki-400">
+              <span>⚠️</span>
+              <span class="text-sm font-semibold">{{ error }}</span>
             </div>
           </div>
-        </UCard>
-
-        <UCard v-if="error">
-          <UAlert color="red" :description="error" />
-        </UCard>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const { createRoom, joinRoom, setRoom } = useRoomAPI();
+const { createRoom, joinRoom } = useRoomAPI();
 
 const roomCode = ref('');
 const creating = ref(false);

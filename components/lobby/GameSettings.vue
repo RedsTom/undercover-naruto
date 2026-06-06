@@ -1,67 +1,65 @@
 <template>
-  <UCard>
+  <GameCard>
     <template #header>
-      <h3 class="text-lg font-semibold">Configuration du jeu</h3>
+      <h3 class="text-lg font-bold text-white">⚙️ Configuration</h3>
     </template>
 
-    <div class="space-y-4">
-      <UFormField label="Mode de jeu">
-        <USelect
-          v-model="selectedMode"
-          :options="modeOptions"
-          value-key="value"
-        />
-      </UFormField>
+    <div class="space-y-5">
+      <GameSelect
+        v-if="isHost"
+        v-model="selectedMode"
+        :items="modeOptions"
+        label-key="label"
+        value-key="value"
+        label="Mode de jeu"
+      />
 
-      <UFormField label="Temps de discussion (secondes)">
-        <UInput
-          v-model.number="discussionTime"
-          type="number"
-          :min="30"
-          :max="120"
-        />
-      </UFormField>
-
-      <UFormField label="Temps de vote (secondes)">
-        <UInput
-          v-model.number="voteTime"
-          type="number"
-          :min="15"
-          :max="60"
-        />
-      </UFormField>
-
-      <USeparator label="Époques" />
-
-      <div class="space-y-2">
-        <p class="text-sm text-gray-500">Sélectionnez les époques pour les paires de mots :</p>
-        <UCheckboxGroup
-          v-model="selectedEras"
-          :items="eraOptions"
-          value-key="value"
-          label-key="label"
-        />
+      <div v-if="!isHost" class="flex items-center justify-between p-3 rounded-xl bg-white/5">
+        <span class="text-sm text-gray-400">Mode</span>
+        <span class="text-sm font-bold text-white">{{ selectedMode.label }}</span>
       </div>
 
-      <USeparator label="Options" />
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="game-label">Discussion</label>
+          <input v-model.number="discussionTime" type="number" :min="30" :max="120" :disabled="!isHost" class="game-input" />
+        </div>
+        <div>
+          <label class="game-label">Vote</label>
+          <input v-model.number="voteTime" type="number" :min="15" :max="60" :disabled="!isHost" class="game-input" />
+        </div>
+      </div>
 
-      <UCheckbox v-model="mrWhite" label="Activer Mr. White" />
-      <p class="text-xs text-gray-400">Un joueur reçoit un mot vide et doit deviner quel mot les autres ont</p>
+      <div>
+        <p class="game-label">📜 Époques</p>
+        <div class="grid grid-cols-2 gap-2">
+          <label v-for="era in eraOptions" :key="era.value" class="game-checkbox">
+            <input type="checkbox" :value="era.value" :checked="selectedEras.includes(era.value)"
+              :disabled="!isHost"
+              @change="toggleEra(era.value)" />
+            <span class="game-checkbox__visual">{{ selectedEras.includes(era.value) ? '✓' : '' }}</span>
+            <span class="text-sm" :class="selectedEras.includes(era.value) ? 'text-white' : 'text-gray-500'">{{ era.label }}</span>
+          </label>
+        </div>
+      </div>
 
-      <UCheckbox v-model="hideRole" label="Masquer les rôles (mode difficile)" />
-      <p class="text-xs text-gray-400">Les joueurs ne voient pas leur rôle, seulement leur mot</p>
+      <div class="space-y-3 p-4 rounded-xl bg-white/5">
+        <p class="game-label">🎭 Options</p>
+        <GameSwitch v-model="mrWhite" label="Activer Mr. White" />
+        <GameSwitch v-model="hideRole" label="Masquer les rôles (mode difficile)" />
+      </div>
 
-      <UButton
+      <GameButton
         v-if="isHost"
         block
         size="lg"
         :disabled="!canStart"
         @click="handleStart"
       >
-        {{ canStart ? 'Lancer la partie' : `En attente de joueurs (${playerCount}/${minPlayers})` }}
-      </UButton>
+        {{ canStart ? '🚀 Lancer la partie' : `⏳ ${playerCount}/${minPlayers}` }}
+      </GameButton>
     </div>
-  </UCard>
+  </GameCard>
 </template>
 
 <script setup lang="ts">
@@ -81,7 +79,7 @@ const emit = defineEmits<{
 }>();
 
 const eraLabels: Record<Era, string> = {
-  'naruto': 'Naruto Original',
+  'naruto': 'Original',
   'shippuden': 'Shippuden',
   'shippuden-end': 'Fin Shippuden',
   'boruto': 'Boruto',
@@ -110,6 +108,16 @@ const canStart = computed(() => {
 
 const maxPlayers = computed(() => props.maxPlayers ?? 8);
 
+function toggleEra(value: string) {
+  if (!props.isHost) return;
+  const idx = selectedEras.value.indexOf(value);
+  if (idx >= 0) {
+    selectedEras.value.splice(idx, 1);
+  } else {
+    selectedEras.value.push(value);
+  }
+}
+
 function handleStart() {
   emit('start', {
     mode: selectedMode.value.value,
@@ -129,7 +137,7 @@ watch(() => props.config, (cfg) => {
   }
   if (cfg.discussionTime) discussionTime.value = cfg.discussionTime;
   if (cfg.voteTime) voteTime.value = cfg.voteTime;
-  if (cfg.eras?.length) selectedEras.value = cfg.eras;
+  if (cfg.eras?.length) selectedEras.value = [...cfg.eras];
   if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
   if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
 }, { immediate: true });

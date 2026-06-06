@@ -1,106 +1,92 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-gray-800">
-    <div class="container mx-auto px-4 py-8">
-      <div v-if="room && gameState" class="max-w-4xl mx-auto space-y-6">
-        <div class="flex items-center justify-between">
-          <h1 class="text-2xl font-bold">Partie en cours</h1>
-          <div class="flex gap-2">
-            <UButton v-if="isHost" color="orange" variant="outline" size="sm" @click="handleReturnToLobby">Retour au lobby</UButton>
-            <UButton color="gray" variant="outline" size="sm" @click="handleLeave">Quitter</UButton>
+  <div class="min-h-screen pb-16">
+    <div v-if="room && gameState" class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-2xl font-black text-white">🎮 Partie</h1>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="game-phase-badge" :class="`game-phase-badge--${gameState.phase}`">{{ phaseLabel }}</span>
+            <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
           </div>
         </div>
-
-        <div class="text-center space-y-1">
-          <p class="text-lg text-gray-600 dark:text-gray-300">
-            Phase : <span class="font-semibold capitalize">{{ phaseLabel }}</span>
-          </p>
-          <p class="text-sm text-gray-400">Round {{ gameState.currentRound }}</p>
-          <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
-          <div class="text-xs text-gray-400 space-x-2">
-            <span>Mode : {{ gameState.config.mode === 'classic' ? 'Classique' : 'Double Infiltration' }}</span>
-            <span>·</span>
-            <span>Mr. White : {{ gameState.config.mrWhite ? 'Oui' : 'Non' }}</span>
-            <span>·</span>
-            <span>Rôles masqués : {{ gameState.config.hideRole ? 'Oui' : 'Non' }}</span>
-          </div>
-        </div>
-
-        <div v-if="myWord" class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow">
-          <p class="text-sm text-gray-500 mb-1">Votre mot :</p>
-          <p class="text-3xl font-bold text-orange-600">{{ myWord }}</p>
-          <p v-if="!hideRole" class="text-xs text-gray-400 mt-1">Rôle : {{ myRole === 'civil' ? 'Civil' : myRole === 'undercover' ? 'Undercover' : 'Mr. White' }}</p>
-          <div v-if="wordInfo" class="mt-4 text-left border-t pt-4">
-            <p class="text-sm text-gray-600 dark:text-gray-400 italic">{{ wordInfo.summary }}</p>
-            <ul class="mt-2 space-y-1">
-              <li v-for="(detail, i) in wordInfo.details" :key="i" class="text-xs text-gray-500 flex gap-2">
-                <span class="text-orange-400 shrink-0">•</span>
-                <span>{{ detail }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div v-for="player in room.players" :key="player.id"
-            class="p-3 rounded-lg text-center relative"
-            :class="playerClasses(player)">
-            <p class="font-medium">{{ player.name }}</p>
-            <p v-if="!player.isAlive" class="text-xs text-red-500">Éliminé</p>
-            <p v-if="player.id === playerId" class="text-xs text-orange-500">Vous</p>
-            <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-green-600 font-semibold mt-1">🔊 En train de parler</p>
-          </div>
-        </div>
-
-        <div v-if="gameState.phase === 'discussion'" class="text-center space-y-3">
-          <p v-if="currentSpeaker" class="text-lg">
-            Tour de <strong>{{ currentSpeaker.name }}</strong>
-          </p>
-          <p class="text-sm text-gray-500">Décrivez votre mot sans être trop explicite</p>
-          <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center">
-            <UButton @click="handleNextTurn">Tour suivant</UButton>
-            <UButton color="red" variant="outline" @click="handleStartVoting">Passer au vote</UButton>
-          </div>
-        </div>
-
-        <div v-if="gameState.phase === 'voting' && myRole" class="space-y-3">
-          <h2 class="text-lg font-semibold text-center">Votez pour éliminer un joueur</h2>
-          <p class="text-center text-sm text-gray-500">Votes : {{ voteProgress.count }}/{{ voteProgress.total }}</p>
-          <div class="grid grid-cols-2 gap-2">
-            <UButton v-for="player in alivePlayers" :key="player.id"
-              :disabled="player.id === playerId || voting"
-              block
-              @click="handleVote(player.id)">
-              {{ player.name }}
-            </UButton>
-          </div>
-          <div class="text-center pt-2">
-            <UButton color="gray" variant="outline" :disabled="voting" @click="handleVote('neutral')">
-              Neutre
-            </UButton>
-          </div>
-        </div>
-
-        <div v-if="gameState.phase === 'reveal' && isHost" class="text-center">
-          <UButton size="lg" @click="handleNextRound">Tour suivant</UButton>
-        </div>
-
-        <div v-if="gameState.phase === 'finished'" class="text-center py-12">
-          <h2 class="text-2xl font-bold mb-4">{{ winnerText }}</h2>
-          <p class="text-gray-500">Redirection vers le lobby...</p>
+        <div class="flex gap-2">
+          <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
+            ← Lobby
+          </GameButton>
+          <GameButton variant="ghost" size="sm" @click="handleLeave">
+            🚪
+          </GameButton>
         </div>
       </div>
 
-      <div v-else class="text-center">
-        <p class="text-gray-500">Chargement...</p>
-        <UButton class="mt-4" @click="navigateTo('/')">Retour à l'accueil</UButton>
+      <div class="flex items-center justify-center">
+        <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
       </div>
+
+      <WordDisplay
+        :word="myWord"
+        :role="myRole"
+        :show-word="!!myWord"
+      />
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div v-for="player in room.players" :key="player.id"
+          class="game-card p-4 text-center transition-all duration-200 cursor-default"
+          :class="playerCardClass(player)">
+          <div class="text-2xl mb-1">
+            {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '🎤' : '😶') : '💀' }}
+          </div>
+          <p class="font-bold text-white text-sm">{{ player.name }}</p>
+          <p v-if="player.id === playerId" class="text-xs text-ninja-400 mt-0.5">👤 Vous</p>
+          <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-leaf-400 font-bold mt-0.5 animate-pulse">🔊 Parle</p>
+        </div>
+      </div>
+
+      <div v-if="gameState.phase === 'discussion'" class="game-card">
+        <div class="game-card__body text-center space-y-4">
+          <div v-if="currentSpeaker" class="space-y-1">
+            <p class="text-3xl">🎤</p>
+            <p class="text-lg text-white font-bold">Tour de {{ currentSpeaker.name }}</p>
+          </div>
+          <p class="text-sm text-gray-400">Décrivez votre mot sans être trop explicite</p>
+          <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center flex-wrap">
+            <GameButton @click="handleNextTurn">➡️ Tour suivant</GameButton>
+            <GameButton variant="danger" @click="handleStartVoting">🗳️ Passer au vote</GameButton>
+          </div>
+        </div>
+      </div>
+
+      <VotePanel
+        v-if="gameState.phase === 'voting' && myRole"
+        :players="room.players"
+        :player-id="playerId"
+        :vote-count="voteProgress.count"
+        :vote-total="voteProgress.total"
+        :disabled="voting"
+        @vote="handleVote"
+      />
+
+      <div v-if="gameState.phase === 'reveal' && isHost" class="text-center animate-bounce-in">
+        <GameButton variant="primary" size="lg" @click="handleNextRound">
+          🎯 Tour suivant
+        </GameButton>
+      </div>
+
+      <div v-if="gameState.phase === 'finished'" class="text-center py-12 animate-bounce-in">
+        <div class="text-6xl mb-4">🏆</div>
+        <h2 class="text-3xl font-black text-white mb-2">{{ winnerText }}</h2>
+        <p class="text-gray-500">Redirection vers le lobby...</p>
+      </div>
+    </div>
+
+    <div v-else class="text-center py-20">
+      <p class="text-gray-500">Chargement...</p>
+      <GameButton class="mt-4" variant="secondary" @click="navigateTo('/')">← Retour</GameButton>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { getWordInfo } from '~/utils/wordInfo';
-
 const route = useRoute();
 const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound, returnToLobby, cleanup: gameCleanup } = useGameAPI();
@@ -109,13 +95,6 @@ const { connect, disconnect } = useSSE();
 const voting = ref(false);
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
-
-const hideRole = computed(() => (gameState.value as any)?.config?.hideRole ?? false);
-
-const wordInfo = computed(() => {
-  if (!myWord.value) return null;
-  return getWordInfo(myWord.value) ?? null;
-});
 
 const phaseLabel = computed(() => {
   const phases: Record<string, string> = {
@@ -136,11 +115,6 @@ const timerLabel = computed(() => {
   if (gameState.value?.phase === 'discussion') return 'Temps de discussion restant';
   if (gameState.value?.phase === 'voting') return 'Temps de vote restant';
   return 'Temps restant';
-});
-
-const alivePlayers = computed(() => {
-  if (!room.value) return [];
-  return room.value.players.filter((p: any) => p.isAlive && p.id !== playerId.value);
 });
 
 const aliveAll = computed(() => {
@@ -165,21 +139,20 @@ const currentSpeaker = computed(() => {
   return players[idx] ?? null;
 });
 
-function isCurrentSpeaker(playerId: string): boolean {
-  return currentSpeaker.value?.id === playerId;
+function isCurrentSpeaker(pid: string): boolean {
+  return currentSpeaker.value?.id === pid;
 }
 
-function playerClasses(player: any): string {
-  if (!player.isAlive) return 'bg-gray-200 dark:bg-gray-700 opacity-50';
-  if (isCurrentSpeaker(player.id) && gameState.value?.phase === 'discussion') return 'bg-green-50 dark:bg-green-900 ring-2 ring-green-500';
-  return 'bg-white dark:bg-gray-800';
+function playerCardClass(player: any): string {
+  if (!player.isAlive) return 'opacity-40 ring-1 ring-white/5';
+  if (isCurrentSpeaker(player.id) && gameState.value?.phase === 'discussion') return 'ring-2 ring-leaf-500 ninja-glow-green';
+  return 'ring-1 ring-white/10';
 }
 
 let pollInterval: NodeJS.Timeout | null = null;
 
 onMounted(async () => {
   const code = route.params.code as string;
-
   try {
     const data = await $fetch(`/api/rooms/code/${code}`);
     room.value = data as any;
@@ -187,7 +160,6 @@ onMounted(async () => {
     navigateTo('/');
     return;
   }
-
   if (room.value) {
     connect(room.value.id);
     await fetchMyInfo();

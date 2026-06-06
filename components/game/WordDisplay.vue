@@ -1,59 +1,48 @@
 <template>
-  <UCard>
-    <div class="text-center space-y-4">
-      <div class="text-sm text-gray-500 dark:text-gray-400">
-        {{ showWord ? 'Votre mot est' : 'Cliquez pour révéler' }}
-      </div>
+  <div class="game-card game-card--glow text-center overflow-hidden">
+    <div class="p-6 space-y-3">
+      <p class="text-sm text-gray-500 font-bold uppercase tracking-wider">
+        {{ showWord ? '🎯 Votre mot' : '👁️ Cliquez pour révéler' }}
+      </p>
 
       <div
-        class="min-h-[100px] flex items-center justify-center cursor-pointer"
+        class="min-h-[80px] flex items-center justify-center cursor-pointer select-none"
         @click="$emit('toggle')"
       >
-        <div v-if="showWord && word" class="space-y-3">
-          <p class="text-3xl font-bold text-primary">{{ word }}</p>
-          <UBadge :color="roleColor" variant="subtle">
+        <div v-if="showWord && word" class="space-y-3 animate-bounce-in">
+          <p class="text-4xl font-black text-ninja-400">{{ word }}</p>
+          <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
+            :class="role === 'civil' ? 'bg-leaf-900/30 text-leaf-400 ring-1 ring-leaf-500/30' : role === 'undercover' ? 'bg-akatsuki-900/30 text-akatsuki-400 ring-1 ring-akatsuki-500/30' : 'bg-ninja-900/30 text-ninja-400 ring-1 ring-ninja-500/30'">
             {{ roleLabel }}
-          </UBadge>
+          </span>
         </div>
-        <div v-else-if="showWord && !word" class="space-y-3">
-          <p class="text-2xl font-bold text-orange-500">Mr. White</p>
-          <UBadge color="orange" variant="subtle">
+        <div v-else-if="showWord && !word" class="space-y-3 animate-bounce-in">
+          <p class="text-3xl font-black text-ninja-400">❓ Mr. White</p>
+          <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-ninja-900/30 text-ninja-400 ring-1 ring-ninja-500/30">
             Vous ne connaissez pas le mot
-          </UBadge>
+          </span>
         </div>
-        <UIcon
-          v-else
-          name="i-heroicons-eye"
-          class="w-16 h-16 text-gray-400"
-        />
+        <div v-else class="text-6xl text-gray-600 hover:text-ninja-400 transition-colors duration-300">
+          👁️
+        </div>
       </div>
 
-      <div v-if="showWord && word && wordDetail" class="mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-left">
-        <div class="flex items-center gap-2 mb-2">
-          <UBadge color="primary" variant="outline" size="xs">
-            {{ categoryLabel }}
-          </UBadge>
-        </div>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-          {{ wordDetail.description }}
-        </p>
-        <div v-if="wordDetail.extra" class="space-y-1">
-          <div
-            v-for="(value, key) in wordDetail.extra"
-            :key="key"
-            class="flex items-center gap-2 text-sm"
-          >
+      <div v-if="showWord && word && wordDetail" class="mt-4 p-4 rounded-xl bg-white/5 text-left space-y-2 animate-slide-up">
+        <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-ninja-500/20 text-ninja-400 uppercase tracking-wider">
+          {{ categoryLabel }}
+        </span>
+        <p class="text-sm text-gray-400">{{ wordDetail.description }}</p>
+        <div v-if="wordDetail.extra" class="space-y-1 text-xs text-gray-500">
+          <div v-for="(value, key) in wordDetail.extra" :key="key" class="flex gap-2">
             <span class="font-medium text-gray-500">{{ key }}:</span>
-            <span class="text-gray-700 dark:text-gray-300">{{ value }}</span>
+            <span>{{ value }}</span>
           </div>
         </div>
       </div>
 
-      <p class="text-xs text-gray-400">
-        Attention à ne pas montrer votre écran!
-      </p>
+      <p class="text-xs text-gray-600 font-medium">🙈 Attention à ne pas montrer votre écran</p>
     </div>
-  </UCard>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -65,18 +54,7 @@ const props = defineProps<{
   showWord: boolean;
 }>();
 
-defineEmits<{
-  toggle: [];
-}>();
-
-const roleColor = computed(() => {
-  switch (props.role) {
-    case 'civil': return 'green';
-    case 'undercover': return 'red';
-    case 'mrWhite': return 'orange';
-    default: return 'gray';
-  }
-});
+defineEmits<{ toggle: [] }>();
 
 const roleLabel = computed(() => {
   switch (props.role) {

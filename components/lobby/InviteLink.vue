@@ -1,47 +1,37 @@
 <template>
-  <UCard>
+  <GameCard>
     <template #header>
-      <h3 class="text-lg font-semibold">Inviter des amis</h3>
+      <h3 class="text-lg font-bold text-white">🔗 Inviter des amis</h3>
     </template>
 
     <div class="space-y-4">
       <div>
-        <label class="block text-sm font-medium mb-2">Code de la salle</label>
+        <p class="game-label">Code de la salle</p>
         <div class="flex items-center gap-2">
-          <UInput
-            :model-value="room.code"
-            readonly
-            class="flex-1 text-center text-2xl font-mono tracking-widest"
-          />
-          <UButton
-            icon="i-heroicons-clipboard-document"
-            @click="copyCode"
-            :color="copied ? 'green' : 'primary'"
-          >
-            {{ copied ? 'Copié!' : 'Copier' }}
-          </UButton>
+          <div class="flex-1 bg-white/5 rounded-xl px-4 py-3 text-center text-2xl font-mono tracking-widest text-ninja-400 font-bold select-all">
+            {{ room.code }}
+          </div>
+          <GameButton size="sm" @click="copyCode">
+            {{ copied ? '✅' : '📋' }}
+          </GameButton>
         </div>
       </div>
 
       <div>
-        <label class="block text-sm font-medium mb-2">Lien d'invitation</label>
+        <p class="game-label">Lien d'invitation</p>
         <div class="flex items-center gap-2">
-          <UInput
-            :model-value="inviteLink"
+          <input
+            :value="inviteLink"
             readonly
-            class="flex-1"
+            class="game-input flex-1"
           />
-          <UButton
-            icon="i-heroicons-clipboard-document"
-            @click="copyLink"
-            :color="linkCopied ? 'green' : 'primary'"
-          >
-            {{ linkCopied ? 'Copié!' : 'Copier' }}
-          </UButton>
+          <GameButton size="sm" @click="copyLink">
+            {{ linkCopied ? '✅' : '📋' }}
+          </GameButton>
         </div>
       </div>
     </div>
-  </UCard>
+  </GameCard>
 </template>
 
 <script setup lang="ts">

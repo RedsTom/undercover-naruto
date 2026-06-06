@@ -11,15 +11,18 @@
       >
         <div v-if="showWord && word" class="space-y-3 animate-bounce-in">
           <p class="text-4xl font-black text-orange-400">{{ word }}</p>
-          <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
+          <span v-if="!hideRole" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
             :class="role === 'civil' ? 'bg-green-900/30 text-green-400 ring-1 ring-green-500/30' : role === 'undercover' ? 'bg-red-900/30 text-red-400 ring-1 ring-red-500/30' : 'bg-orange-900/30 text-orange-400 ring-1 ring-orange-500/30'">
             {{ roleLabel }}
           </span>
         </div>
         <div v-else-if="showWord && !word" class="space-y-3 animate-bounce-in">
           <p class="text-3xl font-black text-orange-400">&#10067; Mr. White</p>
-          <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-900/30 text-orange-400 ring-1 ring-orange-500/30">
+          <span v-if="!hideRole" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-900/30 text-orange-400 ring-1 ring-orange-500/30">
             Vous ne connaissez pas le mot
+          </span>
+          <span v-else class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 text-gray-400 ring-1 ring-white/10">
+            Bonne chance...
           </span>
         </div>
         <div v-else class="text-6xl text-gray-600 hover:text-orange-400 transition-colors duration-300">
@@ -53,6 +56,7 @@ const props = defineProps<{
   role: string | null;
   showWord: boolean;
   anime?: string;
+  hideRole?: boolean;
 }>();
 
 defineEmits<{ toggle: [] }>();

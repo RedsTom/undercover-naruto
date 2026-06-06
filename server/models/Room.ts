@@ -141,13 +141,16 @@ export class RoomModel {
     lastGameResult: GameResult | null;
     myWord: string | null;
     myRole: string | null;
+    hideRole: boolean;
     anime: string;
   } {
     const me = this.players.get(playerId);
+    const hideRole = this.gameState?.config?.hideRole ?? false;
     return {
       ...this.toPublic(),
       myWord: me?.word ?? null,
-      myRole: me?.role ?? null,
+      myRole: hideRole ? null : (me?.role ?? null),
+      hideRole,
     };
   }
 }

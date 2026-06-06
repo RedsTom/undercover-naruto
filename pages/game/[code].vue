@@ -28,6 +28,7 @@
         :role="myRole"
         :show-word="!!myWord"
         :anime="animeSlug"
+        :hide-role="!!(gameState.value?.config?.hideRole)"
       />
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3">

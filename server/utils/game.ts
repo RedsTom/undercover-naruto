@@ -65,6 +65,13 @@ export function startGame(roomId: string, playerId: string, config?: Record<stri
   const room = rooms.get(roomId);
   if (!room) return { success: false, error: 'Room not found' };
   if (room.hostId !== playerId) return { success: false, error: 'Only host can start' };
+
+  if (room.gameState?.phase === 'waiting' && room.gameState.currentRound > 0) {
+    const success = GameService.continueGame(room, config as any);
+    if (!success) return { success: false, error: 'Cannot continue game' };
+    return { success: true };
+  }
+
   if (room.players.size < 3) return { success: false, error: 'Not enough players (min 3)' };
 
   const success = GameService.startGame(room, config as any);
@@ -133,7 +140,20 @@ export function nextRound(roomId: string, playerId: string): { success: boolean;
   if (!room) return { success: false, error: 'Room not found' };
   if (room.hostId !== playerId) return { success: false, error: 'Only host can advance' };
 
-  GameService.startNewRound(room);
+  GameService.returnToLobby(room);
+  broadcastToRoom(roomId, 'phase:changed', { phase: 'waiting' });
+  return { success: true };
+}
+
+export function continueRound(roomId: string, playerId: string): { success: boolean; error?: string } {
+  const room = rooms.get(roomId);
+  if (!room) return { success: false, error: 'Room not found' };
+  if (room.hostId !== playerId) return { success: false, error: 'Only host can advance' };
+
+  const success = GameService.continueRound(room);
+  if (!success) return { success: false, error: 'Cannot continue' };
+
+  broadcastToRoom(roomId, 'game:continued', room.toPublic());
   return { success: true };
 }
 

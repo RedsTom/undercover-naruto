@@ -74,11 +74,26 @@ export const useGameAPI = () => {
     }
   }
 
-  async function nextRound(): Promise<{ success: boolean; error?: string }> {
+  async function backToLobby(): Promise<{ success: boolean; error?: string }> {
     if (!room.value || !playerId.value) return { success: false, error: 'Not in a room' };
 
     try {
       const res = await $fetch('/api/rooms/next', {
+        method: 'POST',
+        body: { roomId: room.value.id, playerId: playerId.value },
+      });
+      const data = res as any;
+      return { success: data.success };
+    } catch (e: any) {
+      return { success: false, error: e.data?.message || 'Failed to return to lobby' };
+    }
+  }
+
+  async function continueRound(): Promise<{ success: boolean; error?: string }> {
+    if (!room.value || !playerId.value) return { success: false, error: 'Not in a room' };
+
+    try {
+      const res = await $fetch('/api/rooms/continue', {
         method: 'POST',
         body: { roomId: room.value.id, playerId: playerId.value },
       });
@@ -93,7 +108,7 @@ export const useGameAPI = () => {
 
       return { success: data.success };
     } catch (e: any) {
-      return { success: false, error: e.data?.message || 'Failed to advance' };
+      return { success: false, error: e.data?.message || 'Failed to continue' };
     }
   }
 
@@ -126,5 +141,5 @@ export const useGameAPI = () => {
     myRole.value = null;
   }
 
-  return { myWord, myRole, startGame, nextTurn, startVoting, vote, nextRound, returnToLobby, fetchMyInfo, cleanup };
+  return { myWord, myRole, startGame, nextTurn, startVoting, vote, continueRound, backToLobby, returnToLobby, fetchMyInfo, cleanup };
 };

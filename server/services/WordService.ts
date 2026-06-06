@@ -20,13 +20,14 @@ export class WordService {
     };
   }
 
-  static assignWords(room: RoomModel): void {
+  static assignWords(room: RoomModel, aliveOnly = false): void {
     if (!room.gameState) return;
 
     const eras = room.gameState.config.eras ?? [];
     const excludeKeys = new Set(room.gameState.usedWordKeys);
     const wordPair = WordService.getRandomWordPair(eras, excludeKeys);
-    const players = Array.from(room.players.values());
+    const allPlayers = Array.from(room.players.values());
+    const players = aliveOnly ? allPlayers.filter(p => p.isAlive) : allPlayers;
     const mode = room.gameState.config.mode;
     const hasMrWhite = room.gameState.config.mrWhite;
     const undercoverCount = WordService.getInfiltratorCount(players.length, mode, hasMrWhite);

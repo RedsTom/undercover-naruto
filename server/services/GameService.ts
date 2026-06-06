@@ -92,10 +92,10 @@ export class GameService {
     if (!room.gameState) return null;
 
     const alivePlayers = room.getAlivePlayers();
-    if (alivePlayers.length <= 2) {
-      const undercoverAlive = alivePlayers.some(p => p.role === 'undercover' || p.role === 'mrWhite');
-      return undercoverAlive ? 'undercover' : 'civilians';
-    }
+    const undercoverAlive = alivePlayers.some(p => p.role === 'undercover' || p.role === 'mrWhite');
+
+    if (!undercoverAlive) return 'civilians';
+    if (alivePlayers.length <= 2) return 'undercover';
 
     return null;
   }
@@ -127,8 +127,13 @@ export class GameService {
     room.updateActivity();
   }
 
-  static startNewRound(room: RoomModel): void {
-    if (!room.gameState) return;
+  static continueRound(room: RoomModel): boolean {
+    if (!room.gameState || room.gameState.phase !== 'reveal') return false;
+
+    const alivePlayers = room.getAlivePlayers();
+    if (alivePlayers.length < 3) return false;
+    const undercoverAlive = alivePlayers.some(p => p.role === 'undercover' || p.role === 'mrWhite');
+    if (!undercoverAlive) return false;
 
     room.players.forEach(p => {
       if (p.isAlive) {
@@ -137,12 +142,50 @@ export class GameService {
       }
     });
 
-    WordService.assignWords(room);
+    WordService.assignWords(room, true);
     GameService.shufflePlayers(room);
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;
     room.gameState.timerEndTime = Date.now() + room.gameState.config.discussionTime * 1000;
     room.updateActivity();
+
+    return true;
+  }
+
+  static returnToLobby(room: RoomModel): void {
+    if (!room.gameState) return;
+    room.gameState.timerEndTime = null;
+    room.setPhase('waiting');
+    room.updateActivity();
+  }
+
+  static continueGame(room: RoomModel, config?: Partial<GameConfig>): boolean {
+    if (!room.gameState || room.gameState.phase !== 'waiting') return false;
+
+    const alivePlayers = room.getAlivePlayers();
+    if (alivePlayers.length < 2) return false;
+
+    const mergedConfig: GameConfig = {
+      ...room.gameState.config,
+      ...config,
+    };
+    room.gameState.config = mergedConfig;
+
+    room.players.forEach(p => {
+      if (p.isAlive) {
+        p.word = undefined;
+        p.role = undefined;
+      }
+    });
+
+    WordService.assignWords(room, true);
+    GameService.shufflePlayers(room);
+    room.setPhase('discussion');
+    room.gameState.currentTurnIndex = 0;
+    room.gameState.timerEndTime = Date.now() + mergedConfig.discussionTime * 1000;
+    room.updateActivity();
+
+    return true;
   }
 
   static resetGame(room: RoomModel): void {

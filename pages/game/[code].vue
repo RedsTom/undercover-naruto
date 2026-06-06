@@ -3,18 +3,18 @@
     <div v-if="room && gameState" class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
       <div class="flex items-center justify-between">
         <div>
-          <h1 class="text-2xl font-black text-white">🎮 Partie</h1>
+          <h1 class="text-2xl font-black text-white">&#127918; Partie</h1>
           <div class="flex items-center gap-2 mt-1">
-            <span class="game-phase-badge" :class="`game-phase-badge--${gameState.phase}`">{{ phaseLabel }}</span>
+            <span :class="phaseBadgeClass">{{ phaseLabel }}</span>
             <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
           </div>
         </div>
         <div class="flex gap-2">
           <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
-            ← Lobby
+            &#8592; Lobby
           </GameButton>
           <GameButton variant="ghost" size="sm" @click="handleLeave">
-            🚪
+            &#128682;
           </GameButton>
         </div>
       </div>
@@ -31,27 +31,27 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
         <div v-for="player in room.players" :key="player.id"
-          class="game-card p-4 text-center transition-all duration-200 cursor-default"
+          class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] p-4 text-center transition-all duration-200 cursor-default"
           :class="playerCardClass(player)">
           <div class="text-2xl mb-1">
-            {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '🎤' : '😶') : '💀' }}
+            {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '&#127908;' : '&#128564;') : '&#128128;' }}
           </div>
           <p class="font-bold text-white text-sm">{{ player.name }}</p>
-          <p v-if="player.id === playerId" class="text-xs text-ninja-400 mt-0.5">👤 Vous</p>
-          <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-leaf-400 font-bold mt-0.5 animate-pulse">🔊 Parle</p>
+          <p v-if="player.id === playerId" class="text-xs text-orange-400 mt-0.5">&#128100; Vous</p>
+          <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-green-400 font-bold mt-0.5 animate-pulse">&#128266; Parle</p>
         </div>
       </div>
 
-      <div v-if="gameState.phase === 'discussion'" class="game-card">
-        <div class="game-card__body text-center space-y-4">
+      <div v-if="gameState.phase === 'discussion'" class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden">
+        <div class="p-6 text-center space-y-4">
           <div v-if="currentSpeaker" class="space-y-1">
-            <p class="text-3xl">🎤</p>
+            <p class="text-3xl">&#127908;</p>
             <p class="text-lg text-white font-bold">Tour de {{ currentSpeaker.name }}</p>
           </div>
           <p class="text-sm text-gray-400">Décrivez votre mot sans être trop explicite</p>
           <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center flex-wrap">
-            <GameButton @click="handleNextTurn">➡️ Tour suivant</GameButton>
-            <GameButton variant="danger" @click="handleStartVoting">🗳️ Passer au vote</GameButton>
+            <GameButton @click="handleNextTurn">&#10145;&#65039; Tour suivant</GameButton>
+            <GameButton variant="danger" @click="handleStartVoting">&#128499;&#65039; Passer au vote</GameButton>
           </div>
         </div>
       </div>
@@ -66,14 +66,42 @@
         @vote="handleVote"
       />
 
-      <div v-if="gameState.phase === 'reveal' && isHost" class="text-center animate-bounce-in">
-        <GameButton variant="primary" size="lg" @click="handleNextRound">
-          🎯 Tour suivant
-        </GameButton>
+      <div v-if="gameState.phase === 'reveal'" class="text-center space-y-4 animate-bounce-in">
+        <div v-if="lastRoundResult?.eliminatedPlayerId" class="space-y-3">
+          <div class="text-5xl">&#128128;</div>
+          <h2 class="text-xl font-black text-white">{{ eliminatedPlayerName }} a été éliminé !</h2>
+          <div class="inline-block px-4 py-2 rounded-xl text-sm font-bold"
+            :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite'
+              ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
+              : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
+            {{ roleLabel(lastRoundResult.eliminatedRole) }}
+            <span v-if="lastRoundResult.eliminatedWord" class="ml-1 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
+          </div>
+        </div>
+        <div v-else class="space-y-2">
+          <div class="text-5xl">&#129335;</div>
+          <h2 class="text-xl font-black text-white">Pas de majorité — personne n'est éliminé !</h2>
+        </div>
+
+        <div v-if="isHost && canContinueGame" class="flex flex-col gap-3 items-center">
+          <GameButton variant="primary" size="lg" @click="handleContinueRound">
+            &#10145;&#65039; Continuer
+          </GameButton>
+          <GameButton variant="ghost" size="sm" @click="handleNextRound">
+            &#127968; Retour au lobby
+          </GameButton>
+        </div>
+        <p v-else-if="!isHost && canContinueGame" class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
+        <div v-else-if="isHost" class="flex flex-col gap-3 items-center">
+          <GameButton variant="primary" size="lg" @click="handleNextRound">
+            &#127968; Retour au lobby
+          </GameButton>
+        </div>
+        <p v-else class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
       </div>
 
       <div v-if="gameState.phase === 'finished'" class="text-center py-12 animate-bounce-in">
-        <div class="text-6xl mb-4">🏆</div>
+        <div class="text-6xl mb-4">&#127942;</div>
         <h2 class="text-3xl font-black text-white mb-2">{{ winnerText }}</h2>
         <p class="text-gray-500">Redirection vers le lobby...</p>
       </div>
@@ -81,7 +109,9 @@
 
     <div v-else class="text-center py-20">
       <p class="text-gray-500">Chargement...</p>
-      <GameButton class="mt-4" variant="secondary" @click="navigateTo('/')">← Retour</GameButton>
+      <div class="mt-4">
+        <GameButton variant="secondary" @click="navigateTo('/')">&#8592; Retour</GameButton>
+      </div>
     </div>
   </div>
 </template>
@@ -89,7 +119,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
-const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, nextRound, returnToLobby, cleanup: gameCleanup } = useGameAPI();
+const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect } = useSSE();
 
 const voting = ref(false);
@@ -106,9 +136,46 @@ const phaseLabel = computed(() => {
   return phases[gameState.value?.phase] || gameState.value?.phase || 'En attente';
 });
 
+const phaseBadgeClass = computed(() => {
+  const base = 'inline-block px-4 py-1 rounded-full text-[0.7rem] font-extrabold uppercase tracking-wider';
+  const colors: Record<string, string> = {
+    discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
+    voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',
+    reveal: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
+    finished: 'bg-gradient-to-r from-green-500 to-green-600 text-white',
+  };
+  return `${base} ${colors[gameState.value?.phase] || ''}`;
+});
+
 const winnerText = computed(() => {
   if (!gameState.value?.winner) return 'Partie terminée !';
   return gameState.value.winner === 'civilians' ? 'Les civils ont gagné !' : 'Les Undercover ont gagné !';
+});
+
+const lastRoundResult = computed(() => {
+  if (!gameState.value?.rounds?.length) return null;
+  return gameState.value.rounds[gameState.value.rounds.length - 1];
+});
+
+const eliminatedPlayerName = computed(() => {
+  if (!lastRoundResult.value?.eliminatedPlayerId || !room.value) return '';
+  const p = room.value.players.find((pl: any) => pl.id === lastRoundResult.value.eliminatedPlayerId);
+  return p?.name ?? 'Un joueur';
+});
+
+function roleLabel(role?: string): string {
+  if (role === 'undercover') return 'Undercover';
+  if (role === 'mrWhite') return 'Mr. White';
+  if (role === 'civil') return 'Civil';
+  return role ?? 'Inconnu';
+}
+
+const canContinueGame = computed(() => {
+  if (!gameState.value?.phase || gameState.value.phase !== 'reveal') return false;
+  if (aliveAll.value.length <= 2) return false;
+  const lastElim = lastRoundResult.value?.eliminatedRole;
+  if (lastElim === 'undercover' || lastElim === 'mrWhite') return false;
+  return true;
 });
 
 const timerLabel = computed(() => {
@@ -145,7 +212,7 @@ function isCurrentSpeaker(pid: string): boolean {
 
 function playerCardClass(player: any): string {
   if (!player.isAlive) return 'opacity-40 ring-1 ring-white/5';
-  if (isCurrentSpeaker(player.id) && gameState.value?.phase === 'discussion') return 'ring-2 ring-leaf-500 ninja-glow-green';
+  if (isCurrentSpeaker(player.id) && gameState.value?.phase === 'discussion') return 'ring-2 ring-green-500';
   return 'ring-1 ring-white/10';
 }
 
@@ -207,7 +274,11 @@ async function handleVote(targetId: string) {
 }
 
 async function handleNextRound() {
-  await nextRound();
+  await backToLobby();
+}
+
+async function handleContinueRound() {
+  await continueRound();
   await fetchMyInfo();
 }
 

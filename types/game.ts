@@ -49,6 +49,8 @@ export interface GameRound {
   wordPair: WordPair;
   votes: Vote[];
   eliminatedPlayerId: string | null;
+  eliminatedRole?: string;
+  eliminatedWord?: string | null;
 }
 
 export interface GameState {

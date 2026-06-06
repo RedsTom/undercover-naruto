@@ -1,0 +1,29 @@
+{
+  "id": "equipement-tridimensionnel",
+  "name": "Équipement Tridimensionnel",
+  "category": "equipment",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "combat",
+    "mobilite",
+    "cables",
+    "lames",
+    "gaz",
+    "3dmg",
+    "essentiel"
+  ],
+  "summary": "Appareil de mobilité permettant de se déplacer en trois dimensions et de combattre les Titans",
+  "details": [
+    "Dispositif à gaz fixé à la taille, projetant des câbles d'ancrage pour se déplacer",
+    "Permet aux soldats de se propulser dans les airs et d'escalader les bâtiments",
+    "Utilisé avec deux lames rétractables pour frapper la nuque des Titans",
+    "Extrêmement difficile à maîtriser, nécessite des années d'entraînement",
+    "Inventé par l'humanité spécifiquement pour lutter contre les Titans"
+  ]
+}

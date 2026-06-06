@@ -1,0 +1,27 @@
+{
+  "id": "lance-tonnerre",
+  "name": "Lance-Tonnerre",
+  "category": "equipment",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "arme",
+    "explosif",
+    "lourde",
+    "anti-titan",
+    "forge",
+    "percage",
+    "armure"
+  ],
+  "summary": "Arme explosive anti-Titan capable de percer l'armure du Titan Cuirassé",
+  "details": [
+    "Arme explosive portable, projetée comme une lance avant de percer et exploser",
+    "Développée spécifiquement par le Bataillon d'Exploration pour percer l'armure du Titan Cuirassé",
+    "Considérée comme l'une des armes les plus efficaces contre les Titans Shifter",
+    "Extrêmement dangereuse à utiliser, capable de tuer le lanceur si mal employée",
+    "A permis au Bataillon de vaincre le Titan Cuirassé lors de la bataille de Shiganshina"
+  ]
+}

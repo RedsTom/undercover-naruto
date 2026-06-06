@@ -1,0 +1,29 @@
+{
+  "id": "signal-fumigene",
+  "name": "Signal Fumigène",
+  "category": "equipment",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "communication",
+    "fumee",
+    "signal",
+    "formation",
+    "combat",
+    "couleur",
+    "strategie"
+  ],
+  "summary": "Dispositif de signalisation par fumée colorée utilisé par le Bataillon d'Exploration pour communiquer",
+  "details": [
+    "Dispositif émettant de la fumée colorée pour les communications sur le champ de bataille",
+    "Chaque couleur correspond à un ordre spécifique : formation, retraite, danger, etc.",
+    "Essentiel pour la coordination du Bataillon d'Exploration lors des expéditions",
+    "Visible à grande distance, permet de transmettre des ordres rapidement",
+    "Utilisé notamment pour signaler la présence d'un Titan Shifter ou changer de formation"
+  ]
+}

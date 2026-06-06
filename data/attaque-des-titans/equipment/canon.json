@@ -1,0 +1,29 @@
+{
+  "id": "canon",
+  "name": "Canon",
+  "category": "equipment",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "arme",
+    "artillerie",
+    "defense",
+    "mur",
+    "distance",
+    "titane",
+    "fortification"
+  ],
+  "summary": "Arme d'artillerie lourde placée sur les Murs pour abattre les Titans à distance",
+  "details": [
+    "Pièce d'artillerie montée sur les Murs pour la défense contre les Titans",
+    "Capable d'abattre un Titan d'un seul tir bien placé à la nuque",
+    "Nécessite des servants entraînés et un temps de rechargement long",
+    "Installée sur tous les districts militaires des Murs",
+    "Efficace contre les Titans purs mais inefficace contre les Shifter rapides"
+  ]
+}

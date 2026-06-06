@@ -1,0 +1,29 @@
+{
+  "id": "lames",
+  "name": "Lames",
+  "category": "equipment",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "arme",
+    "lames",
+    "combat",
+    "tranchant",
+    "acier",
+    "3dmg",
+    "remplacable"
+  ],
+  "summary": "Lames rétractables utilisées avec l'équipement tridimensionnel pour trancher la nuque des Titans",
+  "details": [
+    "Lames principales du Bataillon d'Exploration, fixées aux poignées du 3DMG",
+    "Fabriquées dans un acier spécial capable de trancher la chair des Titans",
+    "Ultra-tranchantes mais fragiles, se brisent facilement après quelques impacts",
+    "Les soldats transportent plusieurs jeux de rechange dans leurs étuis",
+    "Utilisées spécifiquement pour cibler la nuque des Titans, leur point faible"
+  ]
+}

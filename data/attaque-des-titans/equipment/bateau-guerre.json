@@ -1,0 +1,26 @@
+{
+  "id": "bateau-guerre",
+  "name": "Bateau de Guerre",
+  "category": "equipment",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "marine",
+    "transport",
+    "guerre",
+    "marley",
+    "traverse",
+    "flotte",
+    "naval"
+  ],
+  "summary": "Navire de guerre utilisé par Marley et Paradis pour le transport de troupes et le combat naval",
+  "details": [
+    "Navire militaire standard des marines marleyenne et paradisienne",
+    "Utilisé pour le transport des troupes et des équipements entre le continent et Paradis",
+    "Équipé de canons pour le combat naval et le bombardement côtier",
+    "Essentiel lors de l'invasion de Paradis par les forces marleyennes",
+    "Permet la traversée de l'océan entre Marley et Paradis"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "avion",
+  "name": "Avion",
+  "category": "equipment",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "vol",
+    "transport",
+    "guerre",
+    "moderne",
+    "technologie",
+    "aile",
+    "reconnaissance"
+  ],
+  "summary": "Aéronef développé par les Volontaires Anti-Marley pour le transport et le combat aérien",
+  "details": [
+    "Aéronef à moteur développé par les Volontaires Anti-Marley pour Paradis",
+    "Premier appareil volant de l'histoire de Paradis, symbole de sa modernisation",
+    "Utilisé pour le transport rapide de troupes sur de longues distances",
+    "Nécessite une piste d'atterrissage ou un décollage depuis un terrain dégagé",
+    "Utilisé lors de la bataille finale contre le Grand Terrassement pour atteindre Eren"
+  ]
+}

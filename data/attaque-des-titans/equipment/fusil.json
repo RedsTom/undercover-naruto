@@ -1,0 +1,26 @@
+{
+  "id": "fusil",
+  "name": "Fusil",
+  "category": "equipment",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "equipement",
+    "arme",
+    "feu",
+    "moderne",
+    "distance",
+    "marley",
+    "tireur-elite",
+    "infanterie"
+  ],
+  "summary": "Arme à feu moderne standard des armées de Marley et des nations développées",
+  "details": [
+    "Arme à feu à chargement par la culasse, standard dans l'armée marleyenne",
+    "Utilisée principalement contre les humains plutôt que contre les Titans",
+    "Permet aux soldats non-Eldiens de se défendre efficacement",
+    "Utilisée par des tireurs d'élite comme Gabi Braun pour des tirs de précision",
+    "Arme qui a rendu les Titans moins décisifs sur le champ de bataille moderne"
+  ]
+}

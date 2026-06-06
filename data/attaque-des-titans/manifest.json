@@ -1,0 +1,18 @@
+{
+  "name": "Attaque des Titans",
+  "slug": "attaque-des-titans",
+  "color": "#556b2f",
+  "eras": [
+    { "id": "saison-1", "label": "Saison 1" },
+    { "id": "saison-2", "label": "Saison 2" },
+    { "id": "saison-3", "label": "Saison 3" },
+    { "id": "saison-4", "label": "Saison 4" }
+  ],
+  "categories": {
+    "character": "Personnage",
+    "titan": "Titan",
+    "organization": "Organisation",
+    "location": "Lieu",
+    "equipment": "Équipement"
+  }
+}

@@ -138,15 +138,21 @@ export class GameService {
     const undercoverAlive = alivePlayers.some(p => p.role === 'undercover' || p.role === 'mrWhite');
     if (!undercoverAlive) return false;
 
-    room.players.forEach(p => {
-      if (p.isAlive) {
-        p.word = undefined;
-        p.role = undefined;
-      }
-    });
+    const lastRound = room.gameState.rounds[room.gameState.rounds.length - 1];
+    const someoneEliminated = !!lastRound?.eliminatedPlayerId;
 
-    WordService.assignWords(room, true);
-    GameService.shufflePlayers(room);
+    if (someoneEliminated) {
+      room.players.forEach(p => {
+        if (p.isAlive) {
+          p.word = undefined;
+          p.role = undefined;
+        }
+      });
+
+      WordService.assignWords(room, true);
+      GameService.shufflePlayers(room);
+    }
+
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;
     room.gameState.timerEndTime = Date.now() + room.gameState.config.discussionTime * 1000;

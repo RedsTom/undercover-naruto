@@ -176,8 +176,7 @@ function roleLabel(role?: string): string {
 const canContinueGame = computed(() => {
   if (!gameState.value?.phase || gameState.value.phase !== 'reveal') return false;
   if (aliveAll.value.length <= 2) return false;
-  const lastElim = lastRoundResult.value?.eliminatedRole;
-  if (lastElim === 'undercover' || lastElim === 'mrWhite') return false;
+  if (lastRoundResult.value?.eliminatedPlayerId) return false;
   return true;
 });
 

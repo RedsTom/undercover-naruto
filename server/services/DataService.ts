@@ -102,15 +102,18 @@ export interface WordPairCandidate {
   overlap: number;
 }
 
-export function generateWordPairs(anime: string, eras: string[], minOverlap = 3, excludeKeys: Set<string> = new Set()): WordPairCandidate[] {
+export function generateWordPairs(anime: string, eras: string[], minOverlap = 3, excludeKeys: Set<string> = new Set(), categories: string[] = []): WordPairCandidate[] {
   const entries = getEntriesByEras(anime, eras);
+  const filtered = categories.length > 0
+    ? entries.filter(e => categories.includes(e.category))
+    : entries;
   const pairs: WordPairCandidate[] = [];
   const seen = new Set<string>();
 
-  for (let i = 0; i < entries.length; i++) {
-    for (let j = i + 1; j < entries.length; j++) {
-      const a = entries[i];
-      const b = entries[j];
+  for (let i = 0; i < filtered.length; i++) {
+    for (let j = i + 1; j < filtered.length; j++) {
+      const a = filtered[i];
+      const b = filtered[j];
 
       if (a.category !== b.category) continue;
 
@@ -140,8 +143,8 @@ export function generateWordPairs(anime: string, eras: string[], minOverlap = 3,
   return pairs;
 }
 
-export function getRandomWordPair(anime: string, eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard', excludeKeys: Set<string> = new Set()): WordPairCandidate | null {
-  const pairs = generateWordPairs(anime, eras, minOverlap, excludeKeys);
+export function getRandomWordPair(anime: string, eras: string[], minOverlap = 3, difficulty?: 'easy' | 'medium' | 'hard', excludeKeys: Set<string> = new Set(), categories: string[] = []): WordPairCandidate | null {
+  const pairs = generateWordPairs(anime, eras, minOverlap, excludeKeys, categories);
 
   const filtered = difficulty
     ? pairs.filter(p => p.difficulty === difficulty)

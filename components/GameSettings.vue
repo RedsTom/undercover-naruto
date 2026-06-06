@@ -24,6 +24,20 @@
         <span class="text-sm font-bold text-white">{{ selectedMode.label }}</span>
       </div>
 
+      <GameSelect
+        v-if="isHost"
+        v-model="selectedDifficulty"
+        :items="difficultyOptions"
+        label-key="label"
+        value-key="value"
+        label="Difficulté"
+      />
+
+      <div v-if="!isHost" class="flex items-center justify-between p-3 rounded-xl bg-white/5">
+        <span class="text-sm text-gray-400">Difficulté</span>
+        <span class="text-sm font-bold text-white">{{ difficultyOptions.find(d => d.value === selectedDifficulty)?.label ?? 'Mixte' }}</span>
+      </div>
+
       <div class="grid grid-cols-2 gap-4">
         <div class="flex flex-col gap-2">
           <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Discussion</label>
@@ -55,6 +69,26 @@
         </div>
       </div>
 
+      <div v-if="categoryOptions.length > 0" class="flex flex-col gap-2">
+        <p class="block text-xs font-bold uppercase tracking-wider text-white/50">&#128300; Catégories</p>
+        <div class="grid grid-cols-2 gap-3">
+          <label v-for="cat in categoryOptions" :key="cat.value" class="inline-flex items-center gap-2 cursor-pointer select-none">
+            <input type="checkbox" :value="cat.value" :checked="selectedCategories.includes(cat.value)"
+              :disabled="!isHost"
+              @change="toggleCategory(cat.value)"
+              class="hidden peer" />
+            <span :class="[
+              'w-5 h-5 rounded-md border-2 flex items-center justify-center transition-all duration-200 shrink-0 text-[0.7rem]',
+              'bg-white/5 text-[0.7rem]',
+              selectedCategories.includes(cat.value)
+                ? 'bg-orange-500 border-orange-500 text-white'
+                : 'border-white/20 hover:border-orange-500/50',
+            ]">{{ selectedCategories.includes(cat.value) ? '&#10003;' : '' }}</span>
+            <span class="text-sm" :class="selectedCategories.includes(cat.value) ? 'text-white' : 'text-gray-500'">{{ cat.label }}</span>
+          </label>
+        </div>
+      </div>
+
       <div class="space-y-4 p-4 rounded-xl bg-white/5">
         <p class="block text-xs font-bold uppercase tracking-wider text-white/50">&#127917; Options</p>
         <GameSwitch v-model="mrWhite" label="Activer Mr. White" />
@@ -75,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-import type { GameMode, GameConfig } from '~/types';
+import type { GameMode, GameConfig, Difficulty } from '~/types';
 import { getAnimeManifest } from '~/utils/wordInfo';
 
 const props = defineProps<{
@@ -97,13 +131,23 @@ const modeOptions = [
   { label: 'Double Infiltration', value: 'doubleInfiltration' as GameMode },
 ];
 
+const difficultyOptions = [
+  { label: 'Mixte', value: 'mixed' as Difficulty, desc: 'Toutes difficultés' },
+  { label: 'Facile', value: 'easy' as Difficulty, desc: 'Mots très similaires' },
+  { label: 'Moyen', value: 'medium' as Difficulty, desc: 'Mots similaires' },
+  { label: 'Difficile', value: 'hard' as Difficulty, desc: 'Mots peu similaires' },
+];
+
 const selectedMode = ref(modeOptions[0]);
+const selectedDifficulty = ref<Difficulty>('mixed');
+const selectedCategories = ref<string[]>([]);
 const discussionTime = ref(60);
 const voteTime = ref(30);
 const selectedEras = ref<string[]>([]);
 const hideRole = ref(false);
 const mrWhite = ref(false);
 const eraOptions = ref<Array<{ label: string; value: string }>>([]);
+const categoryOptions = ref<Array<{ label: string; value: string }>>([]);
 const animeName = ref('');
 
 const minPlayers = computed(() => props.minPlayers ?? 3);
@@ -121,8 +165,12 @@ watch(() => props.anime, async (slug) => {
   if (manifest) {
     animeName.value = manifest.name;
     eraOptions.value = manifest.eras.map(e => ({ label: e.label, value: e.id }));
+    categoryOptions.value = Object.entries(manifest.categories).map(([value, label]) => ({ label, value }));
     if (selectedEras.value.length === 0) {
       selectedEras.value = manifest.eras.map(e => e.id);
+    }
+    if (selectedCategories.value.length === 0) {
+      selectedCategories.value = Object.keys(manifest.categories);
     }
   }
 }, { immediate: true });
@@ -137,6 +185,16 @@ function toggleEra(value: string) {
   }
 }
 
+function toggleCategory(value: string) {
+  if (!props.isHost) return;
+  const idx = selectedCategories.value.indexOf(value);
+  if (idx >= 0) {
+    selectedCategories.value.splice(idx, 1);
+  } else {
+    selectedCategories.value.push(value);
+  }
+}
+
 function handleStart() {
   emit('start', {
     mode: selectedMode.value.value,
@@ -144,6 +202,8 @@ function handleStart() {
     voteTime: voteTime.value,
     eras: selectedEras.value,
     anime: props.anime ?? 'naruto',
+    difficulty: selectedDifficulty.value,
+    categories: selectedCategories.value,
     hideRole: hideRole.value,
     mrWhite: mrWhite.value,
   });
@@ -158,7 +218,9 @@ watch(() => props.config, (cfg) => {
   if (cfg.discussionTime) discussionTime.value = cfg.discussionTime;
   if (cfg.voteTime) voteTime.value = cfg.voteTime;
   if (cfg.eras?.length) selectedEras.value = [...cfg.eras];
+  if (cfg.categories?.length) selectedCategories.value = [...cfg.categories];
   if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
   if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
+  if (cfg.difficulty) selectedDifficulty.value = cfg.difficulty;
 }, { immediate: true });
 </script>

@@ -1,12 +1,13 @@
-import type { WordPair, GameMode } from '~/types';
+import type { WordPair, GameMode, Difficulty } from '~/types';
 import { RoomModel } from '../models/Room';
 import { getRandomWordPair as getRandomPair } from './DataService';
 
 export class WordService {
-  static getRandomWordPair(anime: string, eras: string[] = [], excludeKeys: Set<string> = new Set()): WordPair {
-    let candidate = getRandomPair(anime, eras, 3, undefined, excludeKeys);
-    if (!candidate) candidate = getRandomPair(anime, eras, 2, undefined, excludeKeys);
-    if (!candidate) candidate = getRandomPair(anime, eras, 1, undefined, excludeKeys);
+  static getRandomWordPair(anime: string, eras: string[] = [], difficulty: Difficulty = 'mixed', categories: string[] = [], excludeKeys: Set<string> = new Set()): WordPair {
+    const diff = difficulty === 'mixed' ? undefined : difficulty;
+    let candidate = getRandomPair(anime, eras, 3, diff, excludeKeys, categories);
+    if (!candidate) candidate = getRandomPair(anime, eras, 2, diff, excludeKeys, categories);
+    if (!candidate) candidate = getRandomPair(anime, eras, 1, diff, excludeKeys, categories);
 
     if (!candidate) {
       throw new Error('Aucune paire de mots trouvée pour les époques sélectionnées. Essayez d\'ajouter plus d\'époques.');
@@ -25,8 +26,10 @@ export class WordService {
 
     const anime = room.gameState.config.anime || 'naruto';
     const eras = room.gameState.config.eras ?? [];
+    const difficulty = room.gameState.config.difficulty || 'mixed';
+    const categories = room.gameState.config.categories ?? [];
     const excludeKeys = new Set(room.gameState.usedWordKeys);
-    const wordPair = WordService.getRandomWordPair(anime, eras, excludeKeys);
+    const wordPair = WordService.getRandomWordPair(anime, eras, difficulty, categories, excludeKeys);
     const allPlayers = Array.from(room.players.values());
     const players = aliveOnly ? allPlayers.filter(p => p.isAlive) : allPlayers;
     const mode = room.gameState.config.mode;

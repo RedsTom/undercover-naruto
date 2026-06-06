@@ -133,6 +133,8 @@ export class GameService {
   static continueRound(room: RoomModel): boolean {
     if (!room.gameState || room.gameState.phase !== 'reveal') return false;
 
+    room.players.forEach(p => { p.isAlive = true; });
+
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;
     room.gameState.timerEndTime = Date.now() + room.gameState.config.discussionTime * 1000;
@@ -161,13 +163,12 @@ export class GameService {
     room.gameState.config = mergedConfig;
 
     room.players.forEach(p => {
-      if (p.isAlive) {
-        p.word = undefined;
-        p.role = undefined;
-      }
+      p.word = undefined;
+      p.role = undefined;
+      p.isAlive = true;
     });
 
-    WordService.assignWords(room, true);
+    WordService.assignWords(room);
     GameService.shufflePlayers(room);
     room.setPhase('discussion');
     room.gameState.currentTurnIndex = 0;

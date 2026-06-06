@@ -96,6 +96,13 @@ export function castVote(roomId: string, voterId: string, targetId: string): { s
       word: p.word ?? null,
     }));
 
+    const lastRound = room.gameState!.rounds[room.gameState!.rounds.length - 1];
+    if (lastRound?.eliminatedRole === 'undercover' || lastRound?.eliminatedRole === 'mrWhite') {
+      room.gameState!.scores.civilians++;
+    } else if (room.getAlivePlayers().length <= 2) {
+      room.gameState!.scores.undercover++;
+    }
+
     room.setPhase('reveal');
 
     return { success: true, roundEnded: true, result };

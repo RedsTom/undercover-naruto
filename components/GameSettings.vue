@@ -5,6 +5,11 @@
     </template>
 
     <div class="space-y-6">
+      <div class="flex items-center justify-between p-3 rounded-xl bg-white/5">
+        <span class="text-sm text-gray-400">Animé</span>
+        <span class="text-sm font-bold text-orange-400">{{ animeName || 'Naruto' }}</span>
+      </div>
+
       <GameSelect
         v-if="isHost"
         v-model="selectedMode"
@@ -71,6 +76,7 @@
 
 <script setup lang="ts">
 import type { GameMode, GameConfig } from '~/types';
+import { getAnimeManifest } from '~/utils/wordInfo';
 
 const props = defineProps<{
   isHost: boolean;
@@ -97,6 +103,8 @@ const voteTime = ref(30);
 const selectedEras = ref<string[]>([]);
 const hideRole = ref(false);
 const mrWhite = ref(false);
+const eraOptions = ref<Array<{ label: string; value: string }>>([]);
+const animeName = ref('');
 
 const minPlayers = computed(() => props.minPlayers ?? 3);
 
@@ -108,16 +116,16 @@ const canStart = computed(() => {
 
 const maxPlayers = computed(() => props.maxPlayers ?? 8);
 
-const eraOptions = computed(() => {
-  const defaultEras = [
-    { label: 'Original', value: 'naruto' },
-    { label: 'Shippuden', value: 'shippuden' },
-    { label: 'Fin Shippuden', value: 'shippuden-end' },
-    { label: 'Boruto', value: 'boruto' },
-    { label: 'Flashback', value: 'naruto-backstory' },
-  ];
-  return defaultEras;
-});
+watch(() => props.anime, async (slug) => {
+  const manifest = await getAnimeManifest(slug ?? 'naruto');
+  if (manifest) {
+    animeName.value = manifest.name;
+    eraOptions.value = manifest.eras.map(e => ({ label: e.label, value: e.id }));
+    if (selectedEras.value.length === 0) {
+      selectedEras.value = manifest.eras.map(e => e.id);
+    }
+  }
+}, { immediate: true });
 
 function toggleEra(value: string) {
   if (!props.isHost) return;
@@ -152,11 +160,5 @@ watch(() => props.config, (cfg) => {
   if (cfg.eras?.length) selectedEras.value = [...cfg.eras];
   if (cfg.hideRole !== undefined) hideRole.value = cfg.hideRole;
   if (cfg.mrWhite !== undefined) mrWhite.value = cfg.mrWhite;
-}, { immediate: true });
-
-watch(() => props.config, () => {
-  if (selectedEras.value.length === 0) {
-    selectedEras.value = [...eraOptions.value.map(e => e.value)];
-  }
 }, { immediate: true });
 </script>

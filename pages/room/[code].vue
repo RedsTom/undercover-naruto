@@ -6,7 +6,9 @@
           <form @submit.prevent="handleJoinRoom" class="text-center space-y-4">
             <div class="text-5xl">&#127841;</div>
             <h3 class="text-xl font-bold text-white">Rejoindre la partie</h3>
-            <p class="text-gray-400">
+            <p class="text-sm text-gray-400">
+              <span class="text-orange-400 font-semibold">{{ animeName }}</span>
+              <span class="mx-2 text-gray-600">|</span>
               Code: <span class="font-mono text-2xl font-bold text-orange-400">{{ room.code }}</span>
             </p>
             <div class="flex flex-col gap-2">
@@ -29,7 +31,9 @@
           <div class="text-4xl animate-float">&#127807;</div>
           <h1 class="text-3xl font-black text-white">Salle d'attente</h1>
           <p class="text-gray-400">
-            Code: <span class="font-mono text-2xl font-bold text-orange-400">{{ room.code }}</span>
+            <span class="text-sm">Animé :</span> <span class="font-bold text-orange-400">{{ animeName }}</span>
+            <span class="mx-2 text-gray-600">|</span>
+            Code : <span class="font-mono text-2xl font-bold text-white">{{ room.code }}</span>
           </p>
         </div>
 
@@ -125,6 +129,8 @@ const joinError = ref('');
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const isInGame = computed(() => gameState.value && gameState.value.currentRound > 0 && gameState.value.phase === 'waiting');
 const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
+const animeName = ref('Naruto');
+
 const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (room.value as any)?.lastConfig ?? null);
 const lastGameResult = computed(() => {
   if (gameState.value?.phase === 'finished') return gameState.value;
@@ -145,6 +151,10 @@ onMounted(async () => {
   }
   if (room.value && playerId.value) {
     connect(room.value.id);
+    try {
+      const manifest = await $fetch(`/api/anime/${animeSlug.value}`) as any;
+      animeName.value = manifest.name;
+    } catch {}
     pollInterval = setInterval(async () => {
       if (room.value && playerId.value) {
         await fetchRoom(room.value.id);

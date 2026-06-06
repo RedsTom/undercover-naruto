@@ -1,0 +1,29 @@
+{
+  "id": "titan-cuirasse",
+  "name": "Titan Cuirassé",
+  "category": "titan",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "cuirasse",
+    "armure",
+    "defense",
+    "charge",
+    "impenetrable",
+    "combat"
+  ],
+  "summary": "L'un des Neuf Titans, recouvert d'une armure quasi impénétrable, spécialiste de la charge",
+  "details": [
+    "Recouvert d'une armure de plaques quasi impénétrable sur tout le corps",
+    "Spécialiste de la charge, capable de briser les murs les plus solides",
+    "Ses points faibles sont les jointures de l'armure, ciblées par les Lances-Tonnerre",
+    "Détenu par Reiner Braun depuis son enfance",
+    "Sa mâchoire et ses doigts ne sont pas recouverts d'armure pour permettre la préhension"
+  ]
+}

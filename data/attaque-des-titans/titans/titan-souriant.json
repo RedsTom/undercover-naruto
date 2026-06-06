@@ -1,0 +1,27 @@
+{
+  "id": "titan-souriant",
+  "name": "Titan Souriant",
+  "category": "titan",
+  "era": [
+    "saison-1",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-pur",
+    "aberrant",
+    "souriant",
+    "dina",
+    "carla",
+    "shiganshina",
+    "tragique",
+    "fritz"
+  ],
+  "summary": "Titan aberrant qui a dévoré Carla Jaeger sous les yeux d'Eren, révélé être Dina Fritz",
+  "details": [
+    "Titan aberrant qui a dévoré Carla Jaeger sous les yeux de son fils Eren",
+    "Son visage arbore un sourire glaçant permanent, d'où son surnom",
+    "Révélé plus tard être Dina Fritz, la première femme de Grisha Jaeger",
+    "A erré pendant des années autour de Shiganshina après la chute de Wall Maria",
+    "Symbole de la tragédie du cycle de haine entre Marley et Eldia"
+  ]
+}

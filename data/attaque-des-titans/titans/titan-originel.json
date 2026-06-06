@@ -1,0 +1,27 @@
+{
+  "id": "titan-originel",
+  "name": "Titan Originel",
+  "category": "titan",
+  "era": [
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "originel",
+    "commandement",
+    "grand-terrassement",
+    "roi-eldien",
+    "memoire",
+    "reiss"
+  ],
+  "summary": "L'un des Neuf Titans, le plus puissant de tous, capable de commander tous les Titans et de modifier les mémoires",
+  "details": [
+    "Le Titan le plus puissant des Neuf, capable de commander tous les autres Titans",
+    "Peut modifier les mémoires de tous les Eldiens et les contrôler",
+    "Capable de déclencher le Grand Terrassement en libérant les Titans des Murs",
+    "Transmis au sein de la famille Reiss pendant des générations à Paradis",
+    "Détenu par Eren Jaeger qui l'utilisa pour le Grand Terrassement final"
+  ]
+}

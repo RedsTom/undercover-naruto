@@ -1,0 +1,26 @@
+{
+  "id": "titan-marteau",
+  "name": "Titan Marteau",
+  "category": "titan",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "marteau",
+    "arme",
+    "creation",
+    "cristal",
+    "distance",
+    "tybur"
+  ],
+  "summary": "L'un des Neuf Titans, capable de créer des armes et structures en cristal à distance",
+  "details": [
+    "Capable de créer des armes et des structures en cristal à partir de son corps",
+    "Peut attaquer à distance en projetant des lances et marteaux de cristal",
+    "Son détenteur peut rester protégé dans une coque de cristal à distance du combat",
+    "Héritage de la famille Tybur pendant des générations",
+    "Détenu par Lara Tybur après Willy Tybur, vaincu par Eren et Mikasa"
+  ]
+}

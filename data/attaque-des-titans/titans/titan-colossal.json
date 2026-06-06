@@ -1,0 +1,29 @@
+{
+  "id": "titan-colossal",
+  "name": "Titan Colossal",
+  "category": "titan",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "colossal",
+    "geant",
+    "vapeur",
+    "explosion",
+    "puissance",
+    "destruction"
+  ],
+  "summary": "L'un des Neuf Titans, le plus grand de tous, capable de détruire des villes entières",
+  "details": [
+    "Le plus grand des Neuf Titans, mesurant environ 60 mètres de haut",
+    "Produit une explosion de vapeur brûlante à chaque transformation",
+    "Capable de libérer une chaleur intense qui repousse toute approche",
+    "Son corps dégage une vapeur surchauffée qui épuise rapidement son détenteur",
+    "Détenu par Bertholdt Hoover puis par Armin Arlert"
+  ]
+}

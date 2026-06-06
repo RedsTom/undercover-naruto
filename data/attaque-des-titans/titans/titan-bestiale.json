@@ -1,0 +1,28 @@
+{
+  "id": "titan-bestiale",
+  "name": "Titan Bestial",
+  "category": "titan",
+  "era": [
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "bestiale",
+    "lancer",
+    "projectiles",
+    "singe",
+    "poilu",
+    "precision"
+  ],
+  "summary": "L'un des Neuf Titans, couvert de fourrure, capable de lancer des projectiles avec une précision dévastatrice",
+  "details": [
+    "Apparence simiesque couverte de fourrure, d'une taille imposante",
+    "Capable de lancer des projectiles (pierres, gravats) avec une précision chirurgicale",
+    "Peut contrôler les Titans purs par son cri, même à distance",
+    "Son détenteur Zeke Jaeger en a fait la terreur du Bataillon d'Exploration",
+    "Détenu par Zeke Jaeger puis par Falco Grice"
+  ]
+}

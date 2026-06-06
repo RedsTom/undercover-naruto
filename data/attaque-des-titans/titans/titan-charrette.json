@@ -1,0 +1,26 @@
+{
+  "id": "titan-charrette",
+  "name": "Titan Charrette",
+  "category": "titan",
+  "era": [
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "charrette",
+    "quadrupède",
+    "endurance",
+    "transport",
+    "artillerie",
+    "longue-duree"
+  ],
+  "summary": "L'un des Neuf Titans, quadrupède endurant capable de rester transformé des mois",
+  "details": [
+    "Forme quadrupède, plus petite que les autres Titans Shifter",
+    "Capable de rester en forme titanesque pendant plusieurs mois sans se fatiguer",
+    "Utilisé pour le transport, l'artillerie montée et les missions de longue durée",
+    "Son dos peut transporter des canons, des munitions et des soldats",
+    "Détenu par Pieck Finger, redoutable stratège de Marley"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "titan-assaillant",
+  "name": "Titan Assaillant",
+  "category": "titan",
+  "era": [
+    "saison-1",
+    "saison-2",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "assaillant",
+    "marcher",
+    "ere-changement",
+    "avenir",
+    "liberte",
+    "combat"
+  ],
+  "summary": "L'un des Neuf Titans, toujours en quête de liberté, capable de voir la mémoire de ses futurs héritiers",
+  "details": [
+    "L'un des Neuf Titans, connu pour ne jamais avoir été asservi au cours de l'histoire",
+    "Capable de voir les mémoires de ses détenteurs futurs et passés",
+    "Lié inextricablement à la quête de liberté, d'où son nom",
+    "Détenu successivement par Eren Kruger, Grisha Jaeger, puis Eren Jaeger",
+    "Son détenteur peut se téléporter d'un endroit à un autre sur une courte distance"
+  ]
+}

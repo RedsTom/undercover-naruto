@@ -1,0 +1,28 @@
+{
+  "id": "titan-feminin",
+  "name": "Titan Féminin",
+  "category": "titan",
+  "era": [
+    "saison-1",
+    "saison-3",
+    "saison-4"
+  ],
+  "tags": [
+    "titan-shifter",
+    "neuf-titans",
+    "feminin",
+    "attraction",
+    "cri",
+    "agilite",
+    "combat-rapproche",
+    "cristal"
+  ],
+  "summary": "L'un des Neuf Titans, agile et attirant les Titans par son cri, spécialiste du combat rapproché",
+  "details": [
+    "Capable d'attirer les Titans par un cri perçant, les utilisant comme arme",
+    "Son corps peut se cristalliser partiellement pour se protéger des attaques",
+    "Excellente en combat rapproché, capable de copier les techniques de combat",
+    "Détentrice Annie Leonhart, restée cristallisée des années pour survivre",
+    "Son agilité et sa rapidité en font l'un des Titans les plus équilibrés"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "titan-rod-reiss",
+  "name": "Titan de Rod Reiss",
+  "category": "titan",
+  "era": [
+    "saison-3"
+  ],
+  "tags": [
+    "titan-pur",
+    "reiss",
+    "monstrueux",
+    "geant",
+    "colossal",
+    "difforme",
+    "tragique"
+  ],
+  "summary": "Titan monstrueux et difforme résultant de la transformation ratée de Rod Reiss",
+  "details": [
+    "Titan gigantesque et difforme résultant de la transformation incomplète de Rod Reiss",
+    "Mesurait environ 120 mètres de haut, rampant sur le ventre, incapable de se tenir debout",
+    "Sa chaleur corporelle était si intense qu'elle brûlait tout sur son passage",
+    "Sa nuque, le point faible des Titans, se trouvait à l'intérieur de sa colonne vertébrale",
+    "Abattu par le Bataillon d'Exploration dirigé par Erwin et histoires Reiss"
+  ]
+}

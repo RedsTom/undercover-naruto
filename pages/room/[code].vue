@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen pb-16">
+  <div class="min-h-screen pb-16 max-[420px]:pb-0">
     <div v-if="room" class="max-w-2xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
       <div v-if="!playerId" class="text-center space-y-4">
         <GameCard>

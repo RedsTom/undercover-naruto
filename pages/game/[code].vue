@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen pb-16">
+  <div class="min-h-screen pb-16 max-[420px]:pb-0">
     <template v-if="room && gameState">
       <div class="hidden max-[420px]:block text-center px-2 py-3 space-y-2">
         <div class="space-x-1">

@@ -1,0 +1,26 @@
+{
+  "id": "mizukage-3",
+  "name": "3e Mizukage",
+  "category": "kage",
+  "era": [
+    "naruto"
+  ],
+  "tags": [
+    "kage",
+    "mizukage",
+    "kiri",
+    "brume-sanglante",
+    "eau",
+    "ninja",
+    "inconnu"
+  ],
+  "summary": "Troisième Mizukage, prédécesseur méconnu de Yagura, ayant perpétué la tradition de la Brume Sanglante",
+  "details": [
+    "Précéda Yagura à la tête de Kirigakure, poursuivant les politiques rigoureuses du village",
+    "Son identité et son visage restent inconnus, masqués par l'histoire du Village de la Brume",
+    "A gouverné dans l'ombre de Gengetsu et avant l'ère de manipulation d'Obito via Yagura",
+    "Maintint la réputation impitoyable de Kiri, préparant le terrain pour le régime encore plus brutal de Yagura",
+    "Peu d'informations canoniques existent sur son règne et sa personne"
+  ],
+  "image": "/images/naruto/kage/3e-mizukage.png"
+}

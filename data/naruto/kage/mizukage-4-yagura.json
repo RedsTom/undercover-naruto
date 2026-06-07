@@ -1,6 +1,6 @@
 {
-  "id": "mizukage-3-yagura",
-  "name": "Yagura — 3e Mizukage",
+  "id": "mizukage-4-yagura",
+  "name": "Yagura — 4e Mizukage",
   "category": "kage",
   "era": [
     "naruto"
@@ -14,7 +14,7 @@
     "manipule",
     "brume-sanglante"
   ],
-  "summary": "Troisième Mizukage, seul jinchuriki à être devenu Kage, manipulé par Obito Uchiha",
+  "summary": "Quatrième Mizukage, seul jinchuriki à être devenu Kage, manipulé par Obito Uchiha",
   "details": [
     "Jinchuriki d'Isobu, la bête à trois queues, et seul jinchuriki de l'histoire à être devenu Kage d'un grand village",
     "Fut manipulé pendant des années par Obito Uchiha via un genjutsu puissant, contrôlant ses décisions",
@@ -22,5 +22,5 @@
     "Imposa l'épreuve cruelle de graduation où les élèves devaient combattre à mort leurs camarades",
     "Après sa mort, le régime de la Brume Sanglante prit fin, mais laissa des cicatrices profondes à Kiri"
   ],
-  "image": "/images/naruto/kage/yagura-3e-mizukage.png"
+  "image": "/images/naruto/kage/yagura-4e-mizukage.png"
 }

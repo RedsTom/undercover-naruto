@@ -97,7 +97,6 @@ async function handleAuth() {
       log('SDK ready() threw:', r.name, r.message, r.code, r.stack);
       throw r;
     }
-
     const channelId = discordSdk.channelId;
     if (!channelId) {
       error.value = 'Impossible de récupérer le salon Discord';
@@ -105,16 +104,46 @@ async function handleAuth() {
     }
 
     status.value = 'Authentification...';
-    const { code } = await withTimeout(
-      discordSdk.commands.authorize({ scopes: ['identify'] }),
-      15000,
-      'authorize()',
-    );
+    log('Calling authenticate()...');
+    let accessToken: string | undefined;
+    let user: any;
+    try {
+      const authResult = await withTimeout(
+        discordSdk.commands.authenticate({}),
+        15000,
+        'authenticate()',
+      );
+      log('authenticate() succeeded');
+      accessToken = (authResult as any).access_token;
+      user = (authResult as any).user;
+    } catch (authErr: any) {
+      log('authenticate() failed, fallback to authorize():', authErr.code, authErr.message);
+      const { code } = await withTimeout(
+        discordSdk.commands.authorize({ scopes: ['identify'] }),
+        15000,
+        'authorize()',
+      );
+      log('authorize() got code');
+      status.value = 'Échange du code...';
+      const exchange = await $fetch('/api/discord/auth', {
+        method: 'POST',
+        body: { code, channelId },
+      });
+      const r = exchange as any;
+      if (r.success) {
+        setRoom(r.room, r.playerId);
+        playerName.value = r.user.username;
+        await router.push(`/room/${r.roomCode}`);
+        return;
+      }
+      error.value = 'Erreur lors de la connexion au salon';
+      return;
+    }
 
     status.value = 'Création de la salle...';
     const data = await $fetch('/api/discord/auth', {
       method: 'POST',
-      body: { code, channelId },
+      body: { accessToken, channelId },
     });
 
     const result = data as any;

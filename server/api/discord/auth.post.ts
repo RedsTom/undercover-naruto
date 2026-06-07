@@ -7,31 +7,39 @@ export default defineEventHandler(async (event) => {
   }
 
   const body = await readBody(event);
-  const { code, channelId } = body;
+  const { code, accessToken: clientAccessToken, channelId } = body;
 
-  if (!code || !channelId) {
-    throw createError({ statusCode: 400, message: 'Missing code or channelId' });
+  if (!channelId) {
+    throw createError({ statusCode: 400, message: 'Missing channelId' });
   }
 
-  const tokenResponse = await fetch('https://discord.com/api/oauth2/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({
-      client_id: DISCORD_CLIENT_ID,
-      client_secret: DISCORD_CLIENT_SECRET,
-      grant_type: 'authorization_code',
-      code,
-      redirect_uri: `https://${DISCORD_CLIENT_ID}.discordsays.com/`,
-    }),
-  });
+  let accessToken: string;
 
-  if (!tokenResponse.ok) {
-    const text = await tokenResponse.text();
-    throw createError({ statusCode: 401, message: `Failed to exchange Discord code: ${text}` });
+  if (code) {
+    const tokenResponse = await fetch('https://discord.com/api/oauth2/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: DISCORD_CLIENT_ID,
+        client_secret: DISCORD_CLIENT_SECRET,
+        grant_type: 'authorization_code',
+        code,
+        redirect_uri: `https://${DISCORD_CLIENT_ID}.discordsays.com/`,
+      }),
+    });
+
+    if (!tokenResponse.ok) {
+      const text = await tokenResponse.text();
+      throw createError({ statusCode: 401, message: `Failed to exchange Discord code: ${text}` });
+    }
+
+    const tokenData = await tokenResponse.json();
+    accessToken = tokenData.access_token;
+  } else if (clientAccessToken) {
+    accessToken = clientAccessToken;
+  } else {
+    throw createError({ statusCode: 400, message: 'Missing code or accessToken' });
   }
-
-  const tokenData = await tokenResponse.json();
-  const accessToken = tokenData.access_token;
 
   const userResponse = await fetch('https://discord.com/api/users/@me', {
     headers: { Authorization: `Bearer ${accessToken}` },

@@ -13,6 +13,11 @@ export function broadcastToRoom(roomId: string, event: string, data: any): void 
   const streams = sseStreams.get(roomId);
   if (!streams) return;
   for (const stream of streams) {
-    try { stream.push({ event, data: JSON.stringify(data) }); } catch {}
+    try {
+      const result = stream.push({ event, data: JSON.stringify(data) });
+      if (result && typeof result.catch === 'function') {
+        result.catch(() => {});
+      }
+    } catch {}
   }
 }

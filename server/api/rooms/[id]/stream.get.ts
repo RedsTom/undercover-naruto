@@ -10,15 +10,13 @@ export default defineEventHandler((event) => {
 
   addSSEStream(id as string, stream);
 
-  setTimeout(async () => {
-    try {
-      await stream.push({ event: 'connected', data: JSON.stringify(room.toPublic()) });
-    } catch {}
+  setTimeout(() => {
+    stream.push({ event: 'connected', data: JSON.stringify(room.toPublic()) }).catch(() => {});
   }, 0);
 
   stream.onClosed(() => {
     removeSSEStream(id as string, stream);
   });
 
-  return stream.send();
+  return stream.send().catch(() => {});
 });

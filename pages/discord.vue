@@ -76,9 +76,27 @@ async function handleAuth() {
 
     status.value = 'Initialisation...';
     log('Creating DiscordSDK with CLIENT_ID:', CLIENT_ID);
-    discordSdk = new DiscordSDK(CLIENT_ID);
+    let sdk;
+    try {
+      sdk = new DiscordSDK(CLIENT_ID);
+      log('SDK constructor OK');
+    } catch (c: any) {
+      log('SDK constructor threw:', c.name, c.message, c.code, c.stack);
+      throw c;
+    }
+    discordSdk = sdk;
+    log('SDK instanceId:', discordSdk.instanceId);
+    log('SDK channelId:', discordSdk.channelId);
+    log('SDK guildId:', discordSdk.guildId);
+    log('SDK frameId:', (discordSdk as any).frameId);
     log('Calling SDK ready()...');
-    await withTimeout(discordSdk.ready(), 15000, 'SDK ready()');
+    try {
+      await withTimeout(discordSdk.ready(), 15000, 'SDK ready()');
+      log('SDK ready() resolved');
+    } catch (r: any) {
+      log('SDK ready() threw:', r.name, r.message, r.code, r.stack);
+      throw r;
+    }
 
     const channelId = discordSdk.channelId;
     if (!channelId) {
@@ -108,8 +126,13 @@ async function handleAuth() {
       error.value = 'Erreur lors de la connexion au salon';
     }
   } catch (e: any) {
-    log('Error:', e.message, e.stack);
-    error.value = e.message || 'Erreur de connexion à Discord';
+    log('Error name:', e?.name);
+    log('Error message:', e?.message);
+    log('Error code:', e?.code);
+    log('Error stack:', e?.stack);
+    log('Error constructor:', e?.constructor?.name);
+    log('Error full:', JSON.stringify(e, Object.getOwnPropertyNames(e)));
+    error.value = e?.message || e?.toString() || 'Erreur de connexion à Discord';
   }
 }
 

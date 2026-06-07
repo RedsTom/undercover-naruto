@@ -25,5 +25,6 @@
     "Essentiel pour la coordination du Bataillon d'Exploration lors des expéditions",
     "Visible à grande distance, permet de transmettre des ordres rapidement",
     "Utilisé notamment pour signaler la présence d'un Titan Shifter ou changer de formation"
-  ]
+  ],
+  "image": "/images/attaque-des-titans/equipment/signal-fumigene.png"
 }

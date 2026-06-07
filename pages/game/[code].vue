@@ -1,55 +1,54 @@
 <template>
   <div class="min-h-screen pb-16">
     <template v-if="room && gameState">
-      <div v-if="isPreview" class="max-w-md mx-auto px-4 py-6 space-y-4">
+      <div class="hidden max-[480px]:block max-w-xs mx-auto px-3 py-4 space-y-3">
         <div class="text-center">
-          <span :class="phaseBadgeClass">{{ phaseLabel }}</span>
-          <span class="text-xs text-gray-500 ml-2">Round {{ gameState.currentRound }}</span>
+          <span :class="phaseBadgeClass" class="text-[0.6rem]">{{ phaseLabel }}</span>
+          <span class="text-[0.6rem] text-gray-500 ml-1">R{{ gameState.currentRound }}</span>
         </div>
 
         <div v-if="gameState.phase === 'discussion'">
-          <div v-if="currentSpeaker" class="text-center space-y-2">
-            <div class="w-14 h-14 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
+          <div v-if="currentSpeaker" class="text-center space-y-1.5">
+            <div class="w-10 h-10 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
               <img v-if="(currentSpeaker as any).discordAvatar" :src="(currentSpeaker as any).discordAvatar" :alt="currentSpeaker.name" class="w-full h-full object-cover" />
-              <div v-else class="w-full h-full flex items-center justify-center text-xl font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
+              <div v-else class="w-full h-full flex items-center justify-center text-sm font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
                 {{ currentSpeaker.name.charAt(0).toUpperCase() }}
               </div>
             </div>
-            <p class="text-base font-bold text-green-400">{{ currentSpeaker.name }} parle</p>
+            <p class="text-xs font-bold text-green-400 truncate">{{ currentSpeaker.name }} parle</p>
           </div>
-          <div v-if="myWord" class="text-center mt-3">
-            <p class="text-2xl font-black text-white">{{ myWord }}</p>
-            <p v-if="myRole && !gameState.value?.config?.hideRole" class="text-xs text-white/50 mt-1">{{ roleLabel(myRole) }}</p>
+          <div v-if="myWord" class="text-center mt-2">
+            <p class="text-lg font-black text-white">{{ myWord }}</p>
+            <p v-if="myRole && !gameState.value?.config?.hideRole" class="text-[0.6rem] text-white/50 mt-0.5">{{ roleLabel(myRole) }}</p>
           </div>
         </div>
 
-        <div v-else-if="gameState.phase === 'voting'" class="text-center py-4">
-          <div class="text-4xl mb-2">&#128499;&#65039;</div>
-          <p class="text-lg font-bold text-white">Vote en cours...</p>
-          <p class="text-sm text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
+        <div v-else-if="gameState.phase === 'voting'" class="text-center py-2">
+          <div class="text-2xl mb-1">&#128499;&#65039;</div>
+          <p class="text-sm font-bold text-white">Vote en cours...</p>
+          <p class="text-[0.65rem] text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
         </div>
 
-        <div v-else-if="gameState.phase === 'reveal'" class="text-center py-4">
-          <div class="text-4xl mb-2">&#128128;</div>
-          <p v-if="eliminatedPlayerName" class="text-lg font-bold text-white">{{ eliminatedPlayerName }} éliminé</p>
-          <p v-else class="text-lg font-bold text-white">Pas d'élimination</p>
-          <p v-if="lastRoundResult?.eliminatedRole" class="text-xs mt-1"
+        <div v-else-if="gameState.phase === 'reveal'" class="text-center py-2">
+          <div class="text-2xl mb-1">&#128128;</div>
+          <p class="text-sm font-bold text-white truncate">{{ eliminatedPlayerName || 'Pas d\'élimination' }}</p>
+          <p v-if="lastRoundResult?.eliminatedRole" class="text-[0.6rem] mt-0.5"
             :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite' ? 'text-red-300' : 'text-green-300'">
             {{ roleLabel(lastRoundResult.eliminatedRole) }}
           </p>
         </div>
 
-        <div v-else class="text-center py-4">
-          <div v-if="myWord" class="mb-2">
-            <p class="text-2xl font-black text-white">{{ myWord }}</p>
+        <div v-else class="text-center py-2">
+          <div v-if="myWord" class="mb-1">
+            <p class="text-lg font-black text-white">{{ myWord }}</p>
           </div>
         </div>
 
-        <div class="text-center text-xs text-white/50">
+        <div class="text-center text-[0.6rem] text-white/50">
           &#128101; {{ aliveAll.length }} en vie
         </div>
       </div>
-      <div v-else class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
+      <div class="block max-[480px]:hidden max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
         <div class="flex items-center justify-between">
           <div>
             <h1 class="text-2xl font-black text-white">&#127918; Partie</h1>
@@ -199,15 +198,6 @@ const { room, playerId, isHost, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
-const isDiscord = import.meta.client && window.self !== window.top;
-const isPreview = ref(false);
-
-if (import.meta.client) {
-  const checkPreview = () => { isPreview.value = window.innerWidth < 400 || window.innerHeight < 400; };
-  checkPreview();
-  window.addEventListener('resize', checkPreview);
-}
-
 const voting = ref(false);
 
 function getWordImage(word: string): string | undefined {
@@ -355,7 +345,7 @@ onMounted(async () => {
       gameCleanup();
       cleanup();
       disconnect();
-      navigateTo('/');
+      navigateTo('/kicked');
     }
   });
 
@@ -402,6 +392,7 @@ async function handleVote(targetId: string) {
 
 async function handleNextRound() {
   await returnToLobby();
+  navigateTo(`/room/${route.params.code}`);
 }
 
 async function handleContinueRound() {
@@ -411,6 +402,7 @@ async function handleContinueRound() {
 
 async function handleReturnToLobby() {
   await returnToLobby();
+  navigateTo(`/room/${route.params.code}`);
 }
 
 function handleLeave() {

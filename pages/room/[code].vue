@@ -57,9 +57,9 @@
           </GameCard>
         </div>
 
-        <InviteLink v-if="!isDiscord && !isPreview" :room="room" />
+        <InviteLink class="block max-[480px]:hidden" :room="room" />
 
-        <div v-if="isPreview && playerId && room" class="text-center py-4">
+        <div class="hidden max-[480px]:block text-center py-4">
           <p class="text-xs text-white/50 uppercase tracking-wider">&#128101; {{ room.players.length }} joueurs</p>
         </div>
 
@@ -99,18 +99,9 @@ const { room, playerId, isHost, playerCount, cleanup, joinRoom, kickPlayer } = u
 const { startGame, fetchMyInfo } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
-const isDiscord = import.meta.client && window.self !== window.top;
-const isPreview = ref(false);
-
 const joinName = ref('');
 const joining = ref(false);
 const joinError = ref('');
-
-if (import.meta.client) {
-  const checkPreview = () => { isPreview.value = window.innerWidth < 400 || window.innerHeight < 400; };
-  checkPreview();
-  window.addEventListener('resize', checkPreview);
-}
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const isInGame = computed(() => gameState.value && gameState.value.currentRound > 0 && gameState.value.phase === 'waiting');
@@ -187,7 +178,7 @@ onMounted(async () => {
     if (data?.playerId === playerId.value) {
       cleanup();
       disconnect();
-      navigateTo('/');
+      navigateTo('/kicked');
     }
   });
 

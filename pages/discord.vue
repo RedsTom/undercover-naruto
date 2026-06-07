@@ -60,10 +60,11 @@ async function handleAuth() {
     log('Search:', window.location.search);
     log('In iframe:', window.self !== window.top);
 
-    const frameId = new URL(window.location.href).searchParams.get('frame_id');
-    if (frameId) {
-      sessionStorage.setItem('discord_frame_id', frameId);
-    }
+    const urlParams = new URL(window.location.href).searchParams;
+    const frameId = urlParams.get('frame_id');
+    const instanceId = urlParams.get('instance_id');
+    if (frameId) sessionStorage.setItem('discord_frame_id', frameId);
+    if (instanceId) sessionStorage.setItem('discord_instance_id', instanceId);
 
     const config = await $fetch('/api/config');
     log('/api/config response:', config);
@@ -79,18 +80,23 @@ async function handleAuth() {
       return;
     }
 
-    status.value = 'Initialisation...';
-    log('Creating DiscordSDK with CLIENT_ID:', CLIENT_ID);
-
-    if (!window.location.search.includes('frame_id')) {
-      const saved = sessionStorage.getItem('discord_frame_id');
-      if (saved) {
-        const url = new URL(window.location.href);
-        url.searchParams.set('frame_id', saved);
-        window.history.replaceState({}, '', url.toString());
-        log('Restored frame_id from sessionStorage:', saved);
+    const url = new URL(window.location.href);
+    let needsReload = false;
+    for (const [key, storageKey] of [['frame_id', 'discord_frame_id'], ['instance_id', 'discord_instance_id']] as const) {
+      if (!url.searchParams.has(key)) {
+        const saved = sessionStorage.getItem(storageKey);
+        if (saved) {
+          url.searchParams.set(key, saved);
+          needsReload = true;
+        }
       }
     }
+    if (needsReload) {
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    status.value = 'Initialisation...';
+    log('Creating DiscordSDK with CLIENT_ID:', CLIENT_ID);
 
     let sdk;
     try {
@@ -98,8 +104,8 @@ async function handleAuth() {
       log('SDK constructor OK');
     } catch (c: any) {
       log('SDK constructor threw:', c.name, c.message, c.code, c.stack);
-      if (c.message?.includes('frame_id') && !window.location.search.includes('frame_id')) {
-        error.value = 'Connexion Discord impossible : frame_id manquant. Veuillez rouvrir l\'activité depuis Discord.';
+      if (c.message?.includes('frame_id') || c.message?.includes('instance_id')) {
+        error.value = 'Connexion Discord impossible : paramètres manquants. Veuillez rouvrir l\'activité depuis Discord.';
         return;
       }
       throw c;

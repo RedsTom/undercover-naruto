@@ -77,7 +77,7 @@ const { createRoom, joinRoom } = useRoomAPI();
 
 const route = useRoute();
 
-if (import.meta.client && window.self !== window.top) {
+if (import.meta.client && window.self !== window.top && route.query.frame_id) {
   navigateTo({ path: '/discord', query: route.query });
 }
 

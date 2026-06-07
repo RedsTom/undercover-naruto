@@ -61,7 +61,7 @@
             <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
               &#8592; Lobby
             </GameButton>
-            <GameButton variant="ghost" size="sm" class="max-[420px]:hidden" @click="handleLeave">
+            <GameButton v-if="!isIframe" variant="ghost" size="sm" @click="handleLeave">
               &#128682;
             </GameButton>
           </div>
@@ -198,6 +198,7 @@ const { room, playerId, isHost, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
+const isIframe = import.meta.client && window.self !== window.top;
 const voting = ref(false);
 
 function getWordImage(word: string): string | undefined {

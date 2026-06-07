@@ -80,7 +80,7 @@
           </div>
 
           <div class="text-center">
-            <GameButton variant="ghost" class="max-[420px]:hidden" @click="handleLeave">&#128682; Quitter la salle</GameButton>
+            <GameButton v-if="!isIframe" variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>
           </div>
         </div>
       </template>
@@ -103,6 +103,7 @@ const { room, playerId, isHost, playerCount, cleanup, joinRoom, kickPlayer } = u
 const { startGame, fetchMyInfo } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
+const isIframe = import.meta.client && window.self !== window.top;
 const joinName = ref('');
 const joining = ref(false);
 const joinError = ref('');

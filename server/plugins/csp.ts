@@ -1,5 +1,6 @@
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('render:response', (response) => {
-    response.setHeader('Content-Security-Policy', "frame-ancestors https://*.discord.com https://*.discordsays.com");
+    response.headers = response.headers || {};
+    response.headers['Content-Security-Policy'] = "frame-ancestors https://*.discord.com https://*.discordsays.com";
   });
 });

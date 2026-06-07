@@ -179,9 +179,6 @@ onMounted(async () => {
     }
   });
 
-  on('connected', (data: any) => {
-    room.value = data;
-  });
 });
 
 onUnmounted(() => {

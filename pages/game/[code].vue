@@ -288,10 +288,6 @@ onMounted(async () => {
     }
   });
 
-  on('connected', (data: any) => {
-    room.value = data;
-    fetchMyInfo();
-  });
 });
 
 watch(gameState, (newState, oldState) => {

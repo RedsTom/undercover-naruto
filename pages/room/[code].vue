@@ -25,10 +25,10 @@
       </div>
 
       <template v-else>
-        <div class="hidden max-[420px]:flex flex-col items-center justify-center min-h-[200px] text-center space-y-3">
-          <div class="text-6xl">&#128101;</div>
-          <p class="text-2xl font-bold text-white">{{ room.players.length }} joueur{{ room.players.length > 1 ? 's' : '' }}</p>
-          <p class="text-sm text-gray-400 font-mono">#{{ room.code }}</p>
+        <div class="hidden max-[420px]:flex flex-col items-center justify-center text-center space-y-1 py-6">
+          <div class="text-3xl">&#128101;</div>
+          <p class="text-sm font-bold text-white">{{ room.players.length }} joueur{{ room.players.length > 1 ? 's' : '' }}</p>
+          <p class="text-[0.6rem] text-gray-400 font-mono">#{{ room.code }}</p>
         </div>
 
         <div class="flex max-[420px]:hidden flex-col space-y-6">

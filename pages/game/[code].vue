@@ -1,50 +1,50 @@
 <template>
   <div class="min-h-screen pb-16">
     <template v-if="room && gameState">
-      <div class="hidden max-[420px]:block max-w-xs mx-auto px-3 py-4 space-y-3">
-        <div class="text-center">
-          <span :class="phaseBadgeClass" class="text-[0.6rem]">{{ phaseLabel }}</span>
-          <span class="text-[0.6rem] text-gray-500 ml-1">R{{ gameState.currentRound }}</span>
+      <div class="hidden max-[420px]:block text-center px-2 py-3 space-y-2">
+        <div class="space-x-1">
+          <span :class="compactBadgeClass">{{ phaseLabel }}</span>
+          <span class="text-[0.5rem] text-gray-500">R{{ gameState.currentRound }}</span>
         </div>
 
         <div v-if="gameState.phase === 'discussion'">
-          <div v-if="currentSpeaker" class="text-center space-y-1.5">
-            <div class="w-10 h-10 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
+          <div v-if="currentSpeaker" class="space-y-1">
+            <div class="w-7 h-7 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
               <img v-if="(currentSpeaker as any).discordAvatar" :src="(currentSpeaker as any).discordAvatar" :alt="currentSpeaker.name" class="w-full h-full object-cover" />
-              <div v-else class="w-full h-full flex items-center justify-center text-sm font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
+              <div v-else class="w-full h-full flex items-center justify-center text-[0.6rem] font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
                 {{ currentSpeaker.name.charAt(0).toUpperCase() }}
               </div>
             </div>
-            <p class="text-xs font-bold text-green-400 truncate">{{ currentSpeaker.name }} parle</p>
+            <p class="text-[0.6rem] font-bold text-green-400 truncate">{{ currentSpeaker.name }} parle</p>
           </div>
-          <div v-if="myWord" class="text-center mt-2">
-            <p class="text-lg font-black text-white">{{ myWord }}</p>
-            <p v-if="myRole && !gameState.value?.config?.hideRole" class="text-[0.6rem] text-white/50 mt-0.5">{{ roleLabel(myRole) }}</p>
+          <div v-if="myWord">
+            <p class="text-sm font-black text-white">{{ myWord }}</p>
+            <p v-if="myRole && !gameState.value?.config?.hideRole" class="text-[0.5rem] text-white/50">{{ roleLabel(myRole) }}</p>
           </div>
         </div>
 
-        <div v-else-if="gameState.phase === 'voting'" class="text-center py-2">
-          <div class="text-2xl mb-1">&#128499;&#65039;</div>
-          <p class="text-sm font-bold text-white">Vote en cours...</p>
-          <p class="text-[0.65rem] text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
+        <div v-else-if="gameState.phase === 'voting'">
+          <div class="text-lg">&#128499;&#65039;</div>
+          <p class="text-[0.65rem] font-bold text-white">Vote en cours...</p>
+          <p class="text-[0.55rem] text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
         </div>
 
-        <div v-else-if="gameState.phase === 'reveal'" class="text-center py-2">
-          <div class="text-2xl mb-1">&#128128;</div>
-          <p class="text-sm font-bold text-white truncate">{{ eliminatedPlayerName || 'Pas d\'élimination' }}</p>
-          <p v-if="lastRoundResult?.eliminatedRole" class="text-[0.6rem] mt-0.5"
+        <div v-else-if="gameState.phase === 'reveal'">
+          <div class="text-lg">&#128128;</div>
+          <p class="text-[0.65rem] font-bold text-white truncate">{{ eliminatedPlayerName || 'Pas d\'élimination' }}</p>
+          <p v-if="lastRoundResult?.eliminatedRole" class="text-[0.5rem]"
             :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite' ? 'text-red-300' : 'text-green-300'">
             {{ roleLabel(lastRoundResult.eliminatedRole) }}
           </p>
         </div>
 
-        <div v-else class="text-center py-2">
-          <div v-if="myWord" class="mb-1">
-            <p class="text-lg font-black text-white">{{ myWord }}</p>
+        <div v-else>
+          <div v-if="myWord">
+            <p class="text-sm font-black text-white">{{ myWord }}</p>
           </div>
         </div>
 
-        <div class="text-center text-[0.6rem] text-white/50">
+        <div class="text-[0.5rem] text-white/50">
           &#128101; {{ aliveAll.length }} en vie
         </div>
       </div>
@@ -219,6 +219,16 @@ const phaseLabel = computed(() => {
 
 const phaseBadgeClass = computed(() => {
   const base = 'inline-block px-4 py-1 rounded-full text-[0.7rem] font-extrabold uppercase tracking-wider';
+  const colors: Record<string, string> = {
+    discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
+    voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',
+    reveal: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
+  };
+  return `${base} ${colors[gameState.value?.phase] || ''}`;
+});
+
+const compactBadgeClass = computed(() => {
+  const base = 'inline-block px-1.5 py-0.5 rounded-full text-[0.5rem] font-extrabold uppercase tracking-wider';
   const colors: Record<string, string> = {
     discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
     voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',

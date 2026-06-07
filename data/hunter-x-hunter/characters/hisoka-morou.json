@@ -1,0 +1,33 @@
+{
+  "id": "hisoka-morou",
+  "name": "Hisoka Morou",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "greed-island",
+    "chairman-election"
+  ],
+  "tags": [
+    "hunter",
+    "transmuteur",
+    "magicien",
+    "clown",
+    "combat",
+    "bungee-gum",
+    "texture-surprise",
+    "phantom-troupe",
+    "gon",
+    "antagoniste",
+    "obsession",
+    "nen"
+  ],
+  "summary": "Magicien Hunter sadique, membre de la Brigade Fantôme, obsédé par le combat contre des adversaires puissants",
+  "details": [
+    "Magicien psychopathe, membre numéro 4 de la Brigade Fantôme, chercheur de combats puissants",
+    "Utilisateur de Nen de type Transmuteur, Bungee Gum combine propriétés du chewing-gum et du caoutchouc",
+    "Texture Surprise lui permet de modifier l'apparence des surfaces par son aura",
+    "Obsédé par Gon Freecss qu'il voit comme un fruit à déguster quand il sera mûr",
+    "A tué le précédent numéro 4 de la Brigade Fantôme pour prendre sa place"
+  ]
+}

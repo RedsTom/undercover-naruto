@@ -1,0 +1,34 @@
+{
+  "id": "gon-freecss",
+  "name": "Gon Freecss",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "greed-island",
+    "chimera-ant",
+    "chairman-election"
+  ],
+  "tags": [
+    "protagoniste",
+    "hunter",
+    "enhanceur",
+    "jajanken",
+    "canne-pêche",
+    "ging",
+    "ile-baleine",
+    "kite",
+    "freecss",
+    "détermination",
+    "candidat",
+    "nen"
+  ],
+  "summary": "Protagoniste principal, jeune Hunter en quête de son père Ging Freecss",
+  "details": [
+    "Enfant de l'Île Baleine, élevé par sa tante Mito après le départ de son père Ging",
+    "Devenu Hunter à 12 ans, le plus jeune candidat de sa génération à réussir l'examen",
+    "Utilisateur de Nen de type Enhanceur, sa technique Jajanken combine Rock-Paper-Scissors",
+    "A frôlé la mort en utilisant un pacte Nen pour vaincre Neferpitou, perdant son Nen",
+    "A retrouvé son père Ging après l'arc des Fourmis Chimères, refermant sa quête initiale"
+  ]
+}

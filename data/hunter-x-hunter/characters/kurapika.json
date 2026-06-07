@@ -1,0 +1,34 @@
+{
+  "id": "kurapika",
+  "name": "Kurapika",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "dark-continent"
+  ],
+  "tags": [
+    "protagoniste",
+    "hunter",
+    "conjureur",
+    "specialisateur",
+    "kurta",
+    "phantom-troupe",
+    "vengeance",
+    "yeaux-écarlates",
+    "chaines",
+    "dai-li",
+    "chaines-ju",
+    "emperor-time",
+    "ju",
+    "nen"
+  ],
+  "summary": "Dernier survivant du clan Kurta, Hunter déterminé à venger son clan massacré par la Brigade Fantôme",
+  "details": [
+    "Dernier survivant du clan Kurta, dont tous les membres furent massacrés par la Brigade Fantôme",
+    "Ses yeux deviennent écarlates sous l'émotion, état qui le transforme en Spécialisateur Nen",
+    "Utilisateur de Nen de type Conjureur, a créé des chaînes spécifiques contre la Brigade",
+    "A rejoint les Mafias de Yorknew City pour traquer et capturer les membres de la Brigade",
+    "Devenu garde du corps du prince Woble lors de l'expédition vers le Continent Obscur"
+  ]
+}

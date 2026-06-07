@@ -1,0 +1,30 @@
+{
+  "id": "machi",
+  "name": "Machi",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "dark-continent"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "transmuteuse",
+    "meteor-city",
+    "fils",
+    "chirurgie",
+    "hisoka",
+    "calme",
+    "observatrice",
+    "nen",
+    "couture"
+  ],
+  "summary": "Membre numéro 5 de la Brigade Fantôme, transmuteuse au fil d'aura capable de suturer n'importe quoi",
+  "details": [
+    "Membre de la Brigade Fantôme, une des rares à avoir des interactions civilisées avec Hisoka",
+    "Utilisatrice de Nen de type Transmuteuse, transforme son aura en fils tranchants et résistants",
+    "Capable de suturer des membres sectionnés avec une précision chirurgicale",
+    "Calme, lucide et observatrice, elle sert souvent de voix rationnelle dans la Brigade",
+    "A gardé le bras d'Hisoka après l'avoir recousu, le lui rendant plus tard"
+  ]
+}

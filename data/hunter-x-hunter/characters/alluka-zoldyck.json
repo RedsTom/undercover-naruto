@@ -1,0 +1,28 @@
+{
+  "id": "alluka-zoldyck",
+  "name": "Alluka Zoldyck",
+  "category": "character",
+  "era": [
+    "chairman-election"
+  ],
+  "tags": [
+    "zoldyck",
+    "enfant",
+    "pouvoir-souhait",
+    "nanika",
+    "killua",
+    "frere-soeur",
+    "monstre-interieur",
+    "guerison",
+    "dangereuse",
+    "innocence"
+  ],
+  "summary": "Sœur cadette de Killua Zoldyck, hôte de l'entité Nanika capable d'exaucer tous les souhaits",
+  "details": [
+    "Sœur cadette de Killua, enfermée par la famille Zoldyck pour son pouvoir dangereux",
+    "Son corps est habité par Nanika, une entité mystérieuse capable d'exaucer tous les souhaits",
+    "Chaque souhait exaucé par Nanika s'accompagne d'une demande mortelle pour autrui",
+    "Killua peut commander Nanika sans conséquence en la traitant comme un être aimé",
+    "A sauvé Gon de la mort en exauçant le souhait de Killua de le guérir"
+  ]
+}

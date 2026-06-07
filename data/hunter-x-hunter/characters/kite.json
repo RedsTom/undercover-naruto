@@ -1,0 +1,29 @@
+{
+  "id": "kite",
+  "name": "Kite",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "hunter",
+    "conjureur",
+    "ging",
+    "gon",
+    "crazy-slots",
+    "mentor",
+    "fourmis-chimeres",
+    "reincarnation",
+    "bras",
+    "de",
+    "nen"
+  ],
+  "summary": "Hunter disciple de Ging Freecss, mentor indirect de Gon, qui croisa le chemin des Fourmis Chimères",
+  "details": [
+    "Hunter disciple de Ging Freecss, compagnon d'exploration et chercheur de trésors",
+    "Utilisateur de Nen de type Conjureur, Crazy Slots invoque une arme aléatoire via un dé",
+    "A sauvé Gon enfant dans la forêt, lui donnant la bague du Hunter pour retrouver Ging",
+    "Tué par Neferpitou alors qu'il protégeait des enfants des Fourmis Chimères",
+    "Réincarné en fille Fourmis Chimère après sa mort, conservant sa mémoire partielle"
+  ]
+}

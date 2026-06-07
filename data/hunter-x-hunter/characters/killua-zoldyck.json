@@ -1,0 +1,34 @@
+{
+  "id": "killua-zoldyck",
+  "name": "Killua Zoldyck",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "greed-island",
+    "chimera-ant",
+    "chairman-election"
+  ],
+  "tags": [
+    "protagoniste",
+    "hunter",
+    "transmuteur",
+    "zoldyck",
+    "assassin",
+    "électricité",
+    "godspeed",
+    "famille",
+    "alluka",
+    "gon",
+    "nen",
+    "meilleur-ami"
+  ],
+  "summary": "Meilleur ami de Gon, héritier de la famille d'assassins Zoldyck, devenu Hunter",
+  "details": [
+    "Troisième fils de la célèbre famille d'assassins Zoldyck, entraîné dès la naissance au meurtre",
+    "A fui sa famille pour devenir l'ami de Gon et passer l'examen Hunter",
+    "Utilisateur de Nen de type Transmuteur, transforme son aura en électricité",
+    "Maîtrise Godspeed, technique ultra-rapide combinant Kanmuru et l'électricité",
+    "A libéré sa sœur Alluka de l'isolement familial en la protégeant de la famille Zoldyck"
+  ]
+}

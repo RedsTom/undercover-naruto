@@ -1,0 +1,29 @@
+{
+  "id": "meruem",
+  "name": "Meruem",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "chimera-ant",
+    "roi",
+    "antagoniste",
+    "enhanceur",
+    "komugi",
+    "pouvoir-absolu",
+    "évolution",
+    "hiru-gi",
+    "poison",
+    "nen",
+    "humain"
+  ],
+  "summary": "Roi des Fourmis Chimères, être ultime né pour dominer, transformé par sa rencontre avec Komugi",
+  "details": [
+    "Roi des Fourmis Chimères, né de la reine après avoir absorbé les meilleurs gènes humains",
+    "Le plus puissant être vivant de la série, capable de vaincre Netero au combat",
+    "Utilisateur de Nen inné, sa puissance et sa vitesse dépassent l'entendement",
+    "Sa rencontre avec Komugi au Gungi a éveillé son humanité et sa compassion",
+    "Mort empoisonné par la bombe miniaturisée de Netero, tenant Komugi dans ses bras"
+  ]
+}

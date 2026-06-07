@@ -1,0 +1,30 @@
+{
+  "id": "phinks",
+  "name": "Phinks Magcub",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "dark-continent"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "enhanceur",
+    "meteor-city",
+    "brassards",
+    "poulet-volant",
+    "cyclotron",
+    "force",
+    "impatient",
+    "feitan",
+    "nen"
+  ],
+  "summary": "Membre numéro 5 de la Brigade Fantôme, enhanceur dont la force augmente avec les rotations de ses bras",
+  "details": [
+    "Membre de la Brigade Fantôme, souvent accompagné de Feitan",
+    "Utilisateur de Nen de type Enhanceur, Ripper Cyclotron augmente sa force à chaque rotation de bras",
+    "Plus il tourne ses bras, plus le prochain coup devient puissant - théoriquement infini",
+    "Caractère impatient et colérique, mais loyal envers la Brigade",
+    "A participé à toutes les missions majeures de la Brigade depuis Yorknew"
+  ]
+}

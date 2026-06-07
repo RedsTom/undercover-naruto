@@ -1,0 +1,32 @@
+{
+  "id": "netero",
+  "name": "Isaac Netero",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "greed-island",
+    "chimera-ant"
+  ],
+  "tags": [
+    "hunter",
+    "president",
+    "enhanceur",
+    "100-type-guanyin",
+    "légende",
+    "vieillard",
+    "combattant",
+    "meditation",
+    "sacrifice",
+    "temple",
+    "nen"
+  ],
+  "summary": "Président légendaire de l'Association des Hunters, considéré comme le plus puissant Hunter de son temps",
+  "details": [
+    "Président de l'Association des Hunters pendant des décennies, Hunter d'exception",
+    "Utilisateur de Nen de type Enhanceur, maître du 100-Type Guanyin Bodhisattva",
+    "A atteint la maîtrise ultime du Nen après une année de méditation et de gratitude quotidienne",
+    "A affronté Meruem, le roi des Fourmis Chimères, dans un combat titanesque",
+    "A sacrifié sa vie en activant une bombe miniature dans son corps pour tuer Meruem"
+  ]
+}

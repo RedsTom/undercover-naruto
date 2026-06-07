@@ -1,0 +1,29 @@
+{
+  "id": "zeno-zoldyck",
+  "name": "Zeno Zoldyck",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "chairman-election"
+  ],
+  "tags": [
+    "zoldyck",
+    "assassin",
+    "grand-pere",
+    "transmuteur",
+    "dragon-dragon",
+    "dragon-divin",
+    "sage",
+    "sagesse",
+    "rythme",
+    "nen"
+  ],
+  "summary": "Ancien chef de la famille Zoldyck, grand-père de Killua, assassin légendaire à la retraite active",
+  "details": [
+    "Grand-père de Killua et ancien chef de la famille Zoldyck",
+    "Utilisateur de Nen de type Transmuteur, Dragon Divin crée un dragon d'aura dévastateur",
+    "Assassin légendaire, a participé à l'extermination du précédent numéro 2 de la Brigade",
+    "A aidé Netero à localiser le roi des Fourmis Chimères avec son dragon chercheur",
+    "Sage et philosophe, il conseille sa famille tout en restant un combattant redoutable"
+  ]
+}

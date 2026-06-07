@@ -1,0 +1,31 @@
+{
+  "id": "feitan",
+  "name": "Feitan",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "dark-continent"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "meteor-city",
+    "conjureur",
+    "rapide",
+    "parasol",
+    "pain-packer",
+    "rising-sun",
+    "torture",
+    "combattant",
+    "nen",
+    "sadique"
+  ],
+  "summary": "Membre numéro 2 de la Brigade Fantôme, combattant sadique et rapide, maître du Nen de type Conjureur",
+  "details": [
+    "Membre numéro 2 de la Brigade Fantôme, originaire de Météor City",
+    "Combattant extrêmement rapide, manie un parasol en combat",
+    "Utilisateur de Nen de type Conjureur, Pain Packer stocke les dégâts reçus",
+    "Rising Sun libère les dégâts stockés sous forme d'un soleil miniature brûlant tout",
+    "S'adonne à la torture de ses adversaires, parlant un langage mêlant plusieurs langues"
+  ]
+}

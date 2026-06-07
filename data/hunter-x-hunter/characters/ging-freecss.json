@@ -1,0 +1,32 @@
+{
+  "id": "ging-freecss",
+  "name": "Ging Freecss",
+  "category": "character",
+  "era": [
+    "greed-island",
+    "chimera-ant",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "hunter",
+    "freecss",
+    "pere-gon",
+    "double-star",
+    "createur-GI",
+    "enhanceur",
+    "tresor",
+    "genie",
+    "continent-obscur",
+    "absent",
+    "nen"
+  ],
+  "summary": "Père de Gon, Hunter de légende classé Double Star, créateur du jeu Greed Island",
+  "details": [
+    "Père de Gon Freecss, Hunter Double Star, considéré comme l'un des meilleurs Hunters au monde",
+    "Créateur du jeu Greed Island avec ses amis, pour laisser un message à son fils",
+    "Utilisateur de Nen de type Enhanceur, ses capacités exactes restent mystérieuses",
+    "A volontairement abandonné Gon enfant pour poursuivre sa vie de Hunter",
+    "Parti vers le Continent Obscur avec Beyond Netero pour une expédition historique"
+  ]
+}

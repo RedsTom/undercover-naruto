@@ -1,0 +1,29 @@
+{
+  "id": "bisky-krueger",
+  "name": "Bisky Krueger",
+  "category": "character",
+  "era": [
+    "greed-island"
+  ],
+  "tags": [
+    "hunter",
+    "conjureuse",
+    "coach",
+    "three-star",
+    "tresor",
+    "killua-gon",
+    "entrainement",
+    "transformation",
+    "magical-spa",
+    "nen",
+    "apparence-trompeuse"
+  ],
+  "summary": "Hunter Three Star, maître Nen cachée derrière l'apparence d'une petite fille, mentor de Gon et Killua",
+  "details": [
+    "Hunter Three Star, l'un des plus hauts rangs de l'Association, experte en Nen",
+    "Apparence d'une fillette mais en réalité une femme de 57 ans, redoutable combattante",
+    "Utilisatrice de Nen de type Conjureuse, Magical Spa crée un espace de massage régénérateur",
+    "A entraîné Gon et Killua pendant Greed Island, les transformant en combattants Nen accomplis",
+    "Chasseuse de trésors, elle cherchait des bijoux rares sur Greed Island"
+  ]
+}

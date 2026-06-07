@@ -1,0 +1,28 @@
+{
+  "id": "komugi",
+  "name": "Komugi",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "humain",
+    "gungi",
+    "aveugle",
+    "meruem",
+    "jeu",
+    "pure",
+    "maitre-gungi",
+    "lien",
+    "sacrifice",
+    "poison"
+  ],
+  "summary": "Jeune fille aveugle, maîtresse invaincue du Gungi, dont la rencontre avec Meruem changea le destin du monde",
+  "details": [
+    "Jeune fille aveugle vivant dans le palais de East Gorteau, maîtresse absolue du jeu de Gungi",
+    "Incapable de rien faire d'autre que jouer au Gungi, mais invaincue en centaines de parties",
+    "Sa rencontre avec Meruem a humanisé le roi des Fourmis Chimères, éveillant sa compassion",
+    "A continué de jouer avec Meruem jusqu'à la fin, ignorant sa véritable nature",
+    "Morte dans les bras de Meruem, empoisonnée par la bombe de Netero"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "illumi-zoldyck",
+  "name": "Illumi Zoldyck",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "zoldyck",
+    "assassin",
+    "manipulateur",
+    "frere-killua",
+    "aiguilles",
+    "contrôle-mental",
+    "psychopathe",
+    "hisoka",
+    "nen",
+    "calme-glacial"
+  ],
+  "summary": "Fils aîné des Zoldyck, manipulateur Nen utilisant des aiguilles pour contrôler les esprits",
+  "details": [
+    "Fils aîné de Silva Zoldyck, frère de Killua, Milluki et Alluka",
+    "Assassin impitoyable, considère sa famille comme ses outils",
+    "Utilisateur de Nen de type Manipulateur, ses aiguilles plantées dans le crâne contrôlent les gens",
+    "A participé à l'examen Hunter sous un déguisement pour surveiller Killua",
+    "Son alliance temporaire avec Hisoka cache une méfiance réciproque"
+  ]
+}

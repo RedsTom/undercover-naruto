@@ -1,0 +1,29 @@
+{
+  "id": "knuckle-bine",
+  "name": "Knuckle Bine",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "hunter",
+    "emetteur",
+    "hakoware",
+    "morel",
+    "fourmis-chimeres",
+    "compagnon",
+    "dette",
+    "juste",
+    "APR",
+    "credit",
+    "nen"
+  ],
+  "summary": "Hunter disciple de Morel, combattant au cœur juste dont le Nen inflige des dettes à ses adversaires",
+  "details": [
+    "Hunter et disciple de Morel Mccarnathy, participant clé à l'extermination des Fourmis Chimères",
+    "Utilisateur de Nen de type Émetteur, Hakoware crée une petite créature qui accumule l'aura",
+    "Son Nen APR (Automated Potential Recuperation) transforme la dette en aura empruntée",
+    "A affronté Youpi avec Shoot, utilisant une stratégie pour l'endetter jusqu'à le rendre inoffensif",
+    "A survécu à la bataille et témoigné de la puissance des Fourmis Chimères"
+  ]
+}

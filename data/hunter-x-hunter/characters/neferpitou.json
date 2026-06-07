@@ -1,0 +1,28 @@
+{
+  "id": "neferpitou",
+  "name": "Neferpitou",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "chimera-ant",
+    "royale-garde",
+    "specialisateur",
+    "terpsichore",
+    "chirurgien",
+    "nen",
+    "chat",
+    "kite",
+    "gon",
+    "sacrifice"
+  ],
+  "summary": "Membre de la Garde Royale des Fourmis Chimères, la plus dévouée et la plus puissante des gardes",
+  "details": [
+    "Première garde royale née de la reine, dévouée corps et âme au roi Meruem",
+    "Utilisateur de Nen de type Spécialisateur, sa capacité Terpsichore contrôle les corps",
+    "A tué Kite, déclenchant la rage vengeresse de Gon",
+    "A sacrifié sa vie pour soigner Komugi sur ordre du roi, utilisant son Nen jusqu'à l'épuisement",
+    "Vaincue par Gon dans sa transformation adulte, mourant sans trahir Meruem"
+  ]
+}

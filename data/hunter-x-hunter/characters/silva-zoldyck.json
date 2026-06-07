@@ -1,0 +1,30 @@
+{
+  "id": "silva-zoldyck",
+  "name": "Silva Zoldyck",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "chairman-election"
+  ],
+  "tags": [
+    "zoldyck",
+    "assassin",
+    "chef-famille",
+    "emetteur",
+    "pere-killua",
+    "aura",
+    "meteor-city",
+    "professionnel",
+    "calme",
+    "nen"
+  ],
+  "summary": "Chef actuel de la famille Zoldyck, père de Killua, assassin d'élite redouté dans le monde entier",
+  "details": [
+    "Chef de la famille Zoldyck et père de Killua, Illumi, Milluki et Alluka",
+    "Assassin professionnel de renommée mondiale, fils de Zeno Zoldyck",
+    "Utilisateur de Nen de type Émetteur, projette des orbes d'aura dévastatrices",
+    "A tué le précédent numéro 2 de la Brigade Fantôme avec Zeno",
+    "A autorisé Killua à suivre son propre chemin après avoir vu son potentiel"
+  ]
+}

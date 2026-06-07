@@ -1,0 +1,28 @@
+{
+  "id": "shoot-mcmahon",
+  "name": "Shoot McMahon",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "hunter",
+    "conjureur",
+    "morel",
+    "fourmis-chimeres",
+    "bras-mecaniques",
+    "hotel-rafflesia",
+    "timide",
+    "cage",
+    "nen",
+    "evolue"
+  ],
+  "summary": "Hunter disciple de Morel, combattant timide mais courageux, spécialiste du combat en cage",
+  "details": [
+    "Hunter et disciple de Morel Mccarnathy, a combattu lors de l'extermination des Fourmis Chimères",
+    "Utilisateur de Nen de type Conjureur, Hotel Rafflesia crée des cages et mains mécaniques",
+    "Ses trois mains volantes peuvent saisir et enfermer ses adversaires dans des cages d'aura",
+    "Très timide au début, il a surmonté sa peur pour affronter Youpi avec Knuckle",
+    "A perdu un bras et une jambe mais a survécu au combat contre Youpi"
+  ]
+}

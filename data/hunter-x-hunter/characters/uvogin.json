@@ -1,0 +1,28 @@
+{
+  "id": "uvogin",
+  "name": "Uvogin",
+  "category": "character",
+  "era": [
+    "yorknew"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "enhanceur",
+    "meteor-city",
+    "brute",
+    "cri-ultime",
+    "big-bang-impact",
+    "force-brute",
+    "puissance",
+    "kurapika",
+    "nen"
+  ],
+  "summary": "Membre numéro 11 de la Brigade Fantôme, enhanceur à la force surhumaine, spécialiste du combat frontal",
+  "details": [
+    "Membre de la Brigade Fantôme, spécialiste du combat frontal et de la force brute",
+    "Utilisateur de Nen de type Enhanceur, Big Bang Impact concentre toute sa force en un coup de poing",
+    "Son Cri Ultime (Roar) est une onde sonore dévastatrice balayant tout sur son passage",
+    "A vaincu seul la quasi-totalité des Bêtes de l'Ombre de la Mafia",
+    "Capture et tué par Kurapika lors de l'arc Yorknew City"
+  ]
+}

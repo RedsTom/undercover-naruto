@@ -1,0 +1,31 @@
+{
+  "id": "chrollo-lucilfer",
+  "name": "Chrollo Lucilfer",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "specialisateur",
+    "chef",
+    "meteor-city",
+    "bandit-secret",
+    "voleur",
+    "antagoniste",
+    "livre",
+    "nen",
+    "manipulateur"
+  ],
+  "summary": "Chef charismatique de la Brigade Fantôme, spécialiste du Nen capable de voler les capacités des autres",
+  "details": [
+    "Chef et fondateur de la Brigade Fantôme (Genei Ryodan), originaire de Météor City",
+    "Utilisateur de Nen de type Spécialisateur, Bandit's Secret vole les capacités Nen d'autrui",
+    "Son livre conserve toutes les capacités volées, accessible uniquement avec l'empreinte de sa main",
+    "A affronté Hisoka au Céleste Tour dans un combat à mort après l'avoir exclu de la Brigade",
+    "Son passé est mystérieux, il serait un enfant de Météor City ayant perdu tout ce qui lui était cher"
+  ]
+}

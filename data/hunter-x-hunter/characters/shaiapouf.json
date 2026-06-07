@@ -1,0 +1,28 @@
+{
+  "id": "shaiapouf",
+  "name": "Shaiapouf",
+  "category": "character",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "chimera-ant",
+    "royale-garde",
+    "manipulateur",
+    "papillon",
+    "dévouement",
+    "komugi",
+    "manipulation",
+    "beelzebub",
+    "nen",
+    "orgueil"
+  ],
+  "summary": "Membre de la Garde Royale des Fourmis Chimères, manipulateur dévoué à la perfection du roi",
+  "details": [
+    "Garde royale des Fourmis Chimères, dévoué à l'idée d'un roi parfait et suprême",
+    "Utilisateur de Nen de type Manipulateur, sa capacité Beelzebub divise son corps en essaim",
+    "Manipulateur psychologique, il a tenté d'éloigner Komugi du roi pour préserver sa perfection",
+    "A survécu à la bombe de Netero en se divisant, puis s'est consumé de chagrin pour le roi",
+    "Son obsession pour la perfection du roi a causé sa perte morale"
+  ]
+}

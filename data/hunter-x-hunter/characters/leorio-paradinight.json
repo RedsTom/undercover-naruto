@@ -1,0 +1,31 @@
+{
+  "id": "leorio-paradinight",
+  "name": "Leorio Paradinight",
+  "category": "character",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "protagoniste",
+    "hunter",
+    "emetteur",
+    "médecin",
+    "ami-gon",
+    "argent",
+    "altruisme",
+    "kick",
+    "candidat-président",
+    "nen"
+  ],
+  "summary": "Hunter médecin, membre du quatuor principal, devenu candidat à la présidence de l'Association des Hunters",
+  "details": [
+    "Devenu Hunter pour financer ses études de médecine, motivé par la mort de son ami Piastro",
+    "Membre du groupe d'amis formé avec Gon, Killua et Kurapika pendant l'examen Hunter",
+    "Utilisateur de Nen de type Émetteur, sa technique projette son aura sous forme de rayons",
+    "S'est présenté à l'élection du 13e président de l'Association des Hunters",
+    "A sauvé Gon mourant en négociant avec Alluka Zoldyck via Killua"
+  ]
+}

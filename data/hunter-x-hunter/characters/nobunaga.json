@@ -1,0 +1,30 @@
+{
+  "id": "nobunaga",
+  "name": "Nobunaga Hazama",
+  "category": "character",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "dark-continent"
+  ],
+  "tags": [
+    "phantom-troupe",
+    "enhanceur",
+    "meteor-city",
+    "samourai",
+    "katana",
+    "uvogin",
+    "fidèle",
+    "enai-deuil",
+    "combattant",
+    "nen"
+  ],
+  "summary": "Membre numéro 1 de la Brigade Fantôme, épéiste redoutable utilisant un katana imprégné de Nen",
+  "details": [
+    "Membre de la Brigade Fantôme, ami proche d'Uvogin dont il porta longtemps le deuil",
+    "Utilisateur de Nen de type Enhanceur, son katana imprégné d'aura peut tout trancher",
+    "Style de combat basé sur Iaijutsu, dégainant et frappant à une vitesse foudroyante",
+    "Son En (extension d'aura) couvre un rayon de 4 mètres, zone de mort absolue",
+    "Resta dans la Brigade pour venger Uvogin, fidèle à Chrollo malgré tout"
+  ]
+}

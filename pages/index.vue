@@ -12,34 +12,22 @@
 
       <GameCard>
         <div class="space-y-5">
-          <div class="text-center">
-            <p class="block text-xs font-bold uppercase tracking-wider text-white/50 mb-3">Choisissez un anime</p>
-            <div class="grid grid-cols-2 gap-3">
-              <button
-                v-for="a in animeList" :key="a.slug"
-                class="p-4 rounded-xl text-sm font-bold transition-all duration-200"
-                :class="selectedAnime === a.slug
-                  ? 'scale-[0.97] ring-2 text-white'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white ring-1 ring-white/10'"
-                :style="selectedAnime === a.slug ? { backgroundColor: a.color + '20', borderColor: a.color, boxShadow: `0 0 20px ${a.color}30` } : {}"
-                @click="selectedAnime = a.slug"
-              >
-                {{ a.name }}
-              </button>
-            </div>
-          </div>
-
-          <div class="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent" />
-
           <form @submit.prevent="handleCreate" class="space-y-4">
             <div class="flex flex-col gap-2">
               <label class="block text-xs font-bold uppercase tracking-wider text-white/50">Pseudo</label>
-              <input v-model="playerName" placeholder="Entrez votre pseudo" autocomplete="off" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]" />
+              <input v-model="createName" placeholder="Entrez votre pseudo" autocomplete="off" class="w-full px-4 py-3.5 rounded-xl text-sm text-white bg-white/5 border-2 border-white/10 outline-none transition-all duration-200 box-border placeholder:text-white/25 focus:border-orange-500 focus:shadow-[0_0_0_3px_rgba(249,115,22,0.15)]" />
             </div>
 
-            <GameButton type="submit" block size="lg" :disabled="!canCreate" :loading="creating">
-              &#128640; Créer une partie
-            </GameButton>
+            <ClientOnly>
+              <GameButton type="submit" block size="lg" :disabled="createName.trim().length < 2 || creating" :loading="creating">
+                &#128640; Créer une partie
+              </GameButton>
+              <template #fallback>
+                <GameButton type="submit" block size="lg" disabled>
+                  &#128640; Créer une partie
+                </GameButton>
+              </template>
+            </ClientOnly>
           </form>
 
           <div class="h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent" />
@@ -56,9 +44,16 @@
               />
             </div>
 
-            <GameButton type="submit" block size="lg" variant="secondary" :disabled="!canJoin" :loading="joining">
-              &#128279; Rejoindre
-            </GameButton>
+            <ClientOnly>
+              <GameButton type="submit" block size="lg" variant="secondary" :disabled="roomCode.length !== 6 || joining" :loading="joining">
+                &#128279; Rejoindre
+              </GameButton>
+              <template #fallback>
+                <GameButton type="submit" block size="lg" variant="secondary" disabled>
+                  &#128279; Rejoindre
+                </GameButton>
+              </template>
+            </ClientOnly>
           </form>
         </div>
       </GameCard>
@@ -80,30 +75,18 @@
 <script setup lang="ts">
 const { createRoom, joinRoom } = useRoomAPI();
 
-const animeList = ref<Array<{ slug: string; name: string; color: string }>>([]);
-const selectedAnime = ref('naruto');
-
 const roomCode = ref('');
+const createName = ref('');
 const creating = ref(false);
 const joining = ref(false);
 const error = ref('');
-const playerName = ref('');
-
-const canCreate = computed(() => playerName.value.trim().length >= 2 && !creating.value);
-const canJoin = computed(() => roomCode.value.length === 6 && !joining.value);
-
-onMounted(async () => {
-  try {
-    animeList.value = await $fetch('/api/anime') as any;
-  } catch {}
-});
 
 async function handleCreate() {
-  if (!canCreate.value) return;
+  if (createName.value.trim().length < 2) return;
   creating.value = true;
   error.value = '';
   try {
-    const result = await createRoom(playerName.value.trim(), selectedAnime.value);
+    const result = await createRoom(createName.value.trim());
     if (result.success && result.roomCode) {
       navigateTo(`/room/${result.roomCode}`);
     } else {
@@ -114,21 +97,13 @@ async function handleCreate() {
 }
 
 async function handleJoin() {
-  if (playerName.value.trim().length < 2) {
-    error.value = 'Entrez un pseudo (2 caractères minimum)';
-    return;
-  }
-  if (!canJoin.value) return;
+  if (roomCode.value.length !== 6) return;
   joining.value = true;
   error.value = '';
   try {
-    const result = await joinRoom(roomCode.value.toUpperCase(), playerName.value.trim());
-    if (result.success && result.roomCode) {
-      navigateTo(`/room/${result.roomCode}`);
-    } else {
-      error.value = result.error || 'Salle introuvable';
-    }
-  } catch { error.value = 'Erreur de connexion'; }
+    await $fetch(`/api/rooms/code/${roomCode.value.toUpperCase()}`);
+    navigateTo(`/room/${roomCode.value.toUpperCase()}`);
+  } catch { error.value = 'Salle introuvable'; }
   finally { joining.value = false; }
 }
 </script>

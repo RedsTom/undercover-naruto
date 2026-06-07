@@ -1,6 +1,6 @@
-# Undercover Naruto
+# Undercover
 
-Jeu de société Undercover multijoueur en ligne sur le thème Naruto, avec support multi-anime.
+Jeu de société Undercover multijoueur en ligne sur le thème Anime.
 
 ## Stack
 

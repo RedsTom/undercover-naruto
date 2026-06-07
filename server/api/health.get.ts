@@ -1,3 +1,3 @@
 export default defineEventHandler(() => {
-  return { status: 'ok', message: 'Undercover Naruto API' };
+  return { status: 'ok', message: 'Undercover Anime API' };
 });

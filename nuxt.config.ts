@@ -8,6 +8,12 @@ export default defineNuxtConfig({
     preset: "bun",
   },
 
+  runtimeConfig: {
+    public: {
+      discordClientId: process.env.DISCORD_CLIENT_ID || "",
+    },
+  },
+
   modules: ["@pinia/nuxt"],
 
   css: ["~/assets/css/main.css"],

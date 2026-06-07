@@ -4,6 +4,9 @@ services:
     restart: unless-stopped
     environment:
       - NITRO_BUN_IDLE_TIMEOUT=60
+      - DISCORD_CLIENT_ID=${DISCORD_CLIENT_ID}
+      - DISCORD_CLIENT_SECRET=${DISCORD_CLIENT_SECRET}
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.undercover-naruto.rule=Host(`undercover-naruto.vps.redstom.fr`)"

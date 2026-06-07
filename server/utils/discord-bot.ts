@@ -10,14 +10,19 @@ async function registerCommands() {
   if (!TOKEN || !CLIENT_ID) return;
   try {
     const rest = new REST({ version: '10' }).setToken(TOKEN);
-    const commands = [
-      {
+    const existing = await rest.get(Routes.applicationCommands(CLIENT_ID)) as any[];
+    const names = new Set(existing.map((c: any) => c.name));
+
+    if (!names.has('undercover')) {
+      existing.push({
         name: 'undercover',
         description: 'Lancer une partie Undercover',
-      },
-    ];
-    await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
-    console.log('[DiscordBot] Slash command /undercover registered');
+      });
+      await rest.put(Routes.applicationCommands(CLIENT_ID), { body: existing });
+      console.log('[DiscordBot] Slash command /undercover registered');
+    } else {
+      console.log('[DiscordBot] Slash command /undercover already registered');
+    }
   } catch (e) {
     console.error('[DiscordBot] Failed to register command:', e);
   }

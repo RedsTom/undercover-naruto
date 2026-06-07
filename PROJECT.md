@@ -21,7 +21,7 @@ Jeu web multijoueur Undercover à thème anime. Les joueurs reçoivent des mots 
 - Min 3 / max 8 joueurs
 - **5 modes** : Classique, Mr. White Only, Classique + Mr. White, Double Infiltration, Double Infiltration + Mr. White
 - Difficultés : Facile / Moyen / Difficile / Mixte — filtrent les entrées par tags
-- Catégories sélectionnables dans le lobby (filtre les paires de mots)
+- Catégories et époques sélectionnables dans le lobby (filtre les paires de mots)
 - Tailwind v4 : opacités en multiples de 5 uniquement (`/5`, `/10`, `/15`…)
 - Pas de classes CSS custom — tout via utility classes Tailwind inline
 - Composants plats dans `components/` (pas de sous-dossiers, évite les auto-imports préfixés)
@@ -83,7 +83,7 @@ Images téléchargeables en masse via `scripts/download-images.ts` (interroge le
 ### Logique de vote
 - **Majorité simple** (≥50% des joueurs vivants) pour éliminer
 - Neutre compté dans le total mais ne change pas le seuil
-- Égalité ou absence de majorité → personne n'est éliminé
+- Égalité ou absence de majorité → personne n'est éliminé, retour direct en `discussion` sans révélation
 
 ### Fin de partie
 - **Pas de phase `finished`** — le jeu ne se termine jamais automatiquement
@@ -103,6 +103,7 @@ Images téléchargeables en masse via `scripts/download-images.ts` (interroge le
 
 ### Retour au lobby
 - `returnToLobby()` réanime tous les joueurs
+- Les scores de la partie précédente sont affichés dans le lobby
 
 ## Architecture
 
@@ -114,28 +115,28 @@ undercover-naruto/
 │   ├── services/          # GameService, VoteService, WordService, DataService
 │   └── utils/             # rooms.ts, sse.ts, game.ts (séparés)
 ├── components/            # Composants Vue plats (pas de sous-dossiers)
-│   ├── GameButton.vue     # Bouton 3D style Duolingo
-│   ├── GameCard.vue        # Carte avec glow
-│   ├── GameInput.vue
-│   ├── GameSelect.vue      # Headless UI Listbox + slot #item
-│   ├── GameSwitch.vue      # Headless UI Switch + disabled prop
-│   ├── GameTimer.vue       # Timer SVG cercle
-│   ├── GameSettings.vue    # Config partie (visible tous, disabled non-host)
+│   ├── GameAnimeSettings.vue  # Sélection anime + époques + catégories
+│   ├── GameButton.vue         # Bouton 3D style Duolingo
+│   ├── GameCard.vue           # Carte avec glow
+│   ├── GameGeneralSettings.vue # Mode, difficulté, timers, options
+│   ├── GameSelect.vue         # Headless UI Listbox + slot #item
+│   ├── GameSwitch.vue         # Headless UI Switch + disabled prop
+│   ├── GameTimer.vue          # Timer SVG cercle
 │   ├── InviteLink.vue
 │   ├── PlayerList.vue
-│   ├── VotePanel.vue       # Grille de vote (neutre inclus)
-│   └── WordDisplay.vue     # Révélation mot + image + infos anime
+│   ├── VotePanel.vue          # Grille de vote (neutre inclus)
+│   └── WordDisplay.vue        # Révélation mot + image + infos anime
 ├── composables/
 │   ├── useRoom.ts
 │   ├── useGameAPI.ts
 │   └── useSSE.ts
 ├── pages/
-│   ├── index.vue           # Accueil + grille sélection anime
-│   ├── room/[code].vue     # Lobby + scores entre tours
+│   ├── index.vue           # Accueil (créer avec pseudo / rejoindre par code)
+│   ├── room/[code].vue     # Lobby + scores entre tours + settings
 │   ├── game/[code].vue     # Plateau de jeu (discussion/vote/reveal)
 │   └── test/word-pairs.vue # Testeur d'appariement de paires
 ├── types/
-│   ├── game.ts             # GameConfig (anime, difficulty, categories), GameState, Vote, GameRound
+│   ├── game.ts             # GameConfig, GameState, Vote, GameRound
 │   ├── room.ts             # RoomState, PlayerPublic
 │   └── anime.ts            # AnimeManifest, AnimeEntry (8 champs)
 ├── data/
@@ -158,16 +159,17 @@ undercover-naruto/
 ### GameConfig
 ```typescript
 interface GameConfig {
-  mode: GameMode;           // 'classic' | 'doubleInfiltration' | 'mrWhiteOnly' | 'classicMrWhite' | 'doubleMrWhite'
+  mode: GameMode;           // 'classic' | 'doubleInfiltration' | 'mrWhiteOnly'
   discussionTime: number;   // secondes
   voteTime: number;         // secondes
   maxPlayers: number;
   minPlayers: number;
   eras: string[];            // filtres d'époques
   anime: string;             // slug de l'anime (ex: 'naruto')
-  hideRole: boolean;
   difficulty: string;        // 'easy' | 'medium' | 'hard' | 'mixed'
   categories: string[];      // filtres de catégories (ex: ['character', 'technique'])
+  hideRole: boolean;
+  mrWhite: boolean;          // flag ajoutant un Mr. White au mode
 }
 ```
 
@@ -189,7 +191,7 @@ interface AnimeEntry {
 
 | Endpoint | Méthode | Description |
 |---|---|---|
-| `POST /api/rooms` | Créer une salle (body: `{playerName, anime}`) |
+| `POST /api/rooms` | Créer une salle (body: `{playerName}`) |
 | `POST /api/rooms/join` | Rejoindre (body: `{roomCode, playerName}`) |
 | `GET /api/rooms/:id` | État de la salle |
 | `GET /api/rooms/code/:code` | Lookup par code |
@@ -199,29 +201,33 @@ interface AnimeEntry {
 | `POST /api/rooms/vote` | Voter |
 | `POST /api/rooms/turn/next` | Tour suivant |
 | `POST /api/rooms/start-vote` | Passer au vote |
+| `POST /api/rooms/config` | Mettre à jour la config lobby (host only, broadcast `room:updated`) |
 | `POST /api/rooms/next` | Retour au lobby (`returnToLobby`, réanime tous) |
 | `POST /api/rooms/continue` | Continuer le tour (`continueRound`, réanime tous, mêmes mots) |
 | `POST /api/rooms/reset` | Reset complet |
 | `POST /api/rooms/kick` | Expulser un joueur |
-| `POST /api/rooms/return` | Retour au lobby depuis la partie |
 | `POST /api/word-pairs` | Tester l'appariement de paires (body: filters) |
 | `GET /api/anime` | Liste des anime disponibles |
 | `GET /api/anime/:slug` | Manifest d'un anime |
 
 ## Points Critiques
 
-- `nuxt.config.ts` : `@tailwindcss/vite` plugin, modules: `@pinia/nuxt` seulement
+- `nuxt.config.ts` : `@tailwindcss/vite` plugin
 - `@import "tailwindcss"` doit être première ligne dans `main.css`
 - Tailwind v4 : opacités en `/5`, `/10`, `/15` uniquement
 - Composants DOIVENT être plats dans `components/`
 - `AnimeEntry` : 8 champs (id, name, image?, category, era, tags, summary, details)
-- `GameMode` : 5 modes (`'classic'`, `'doubleInfiltration'`, `'mrWhiteOnly'`, `'classicMrWhite'`, `'doubleMrWhite'`)
+- `GameMode` : 3 modes (`'classic'`, `'doubleInfiltration'`, `'mrWhiteOnly'`) — le flag `mrWhite` étend ces 3 en 5 modes effectifs
 - `VotePanel.vue` : grille incluant le bouton Neutre, exclude le joueur courant ; **non-gaté par `myRole`**
 - `WordDisplay.vue` : affiche l'image du mot quand révélé ; badge de rôle caché si `hideRole`
 - `GameButton.vue` : passe `$attrs` (incluant `type="submit"`)
 - `GameSelect.vue` : slot `#item` pour rendu personnalisé des options
 - `GameSwitch.vue` : prop `disabled` avec état visuel grisé
-- `GameSettings.vue` : **visible à tous les joueurs** du lobby ; contrôles `disabled` pour non-host
+- **GameGeneralSettings + GameAnimeSettings** : remplacé `GameSettings`. Deux cartes séparées dans le lobby. L'hôte configure, les changements sont broadcastés via `POST /api/rooms/config` + SSE `room:updated`.
+- **Anime sélectionné dans le lobby** : plus de sélection à la création. L'hôte choisit l'anime dans `GameAnimeSettings` avant de lancer.
+- **`pendingConfig`** : stocké sur `RoomModel`, mis à jour en temps réel via l'API config + SSE. Les joueurs voient les changements de l'hôte sans rechargement.
+- **Bouton "Lancer"** : standalone sous les deux cartes. Affiche `⏳ X/3` si pas assez de joueurs, `🚀 Lancer la partie` si OK, `➡️ Tour suivant` si reprise.
+- `canStartGame` : nécessite `anime` sélectionné + `playerCount >= minPlayers`.
 - SSE : endpoint `/api/rooms/[id]/stream`, broadcast `{ event, data }`, ping 5s, `try/catch` sur push/send
 - `NITRO_BUN_IDLE_TIMEOUT=60` requis pour éviter la déconnexion SSE des connexions idle Bun
 - DataService côte serveur : scan dynamique des dossiers anime, cache en mémoire
@@ -234,3 +240,4 @@ interface AnimeEntry {
 - **Bouton "Continuer"** : civil éliminé ET >2 vivants uniquement ; sinon révélation complète + "Retour au lobby"
 - **Images** : `public/images/<slug>/<category>/<slugified-name>.png` ; champ `image` optionnel dans `AnimeEntry`
 - **Routes serveur fines** : room lookup via `getRoom()`, `RoomModel` passé aux fonctions game, broadcast dans la route
+- **Égalité aux votes** : pas d'élimination, pas de révélation, retour direct en `discussion` avec les mêmes mots

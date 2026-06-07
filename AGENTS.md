@@ -25,7 +25,7 @@ undercover-naruto/
 │   ├── services/       # GameService, VoteService, WordService, DataService
 │   └── utils/          # rooms.ts, sse.ts, game.ts (séparés)
 ├── components/         # Composants Vue PLATS (pas de sous-dossiers)
-├── composables/        # Hooks Vue réutilisables (useRoomAPI, useGameAPI, useSSE)
+├── composables/        # Hooks Vue réutilisables (useRoom, useGameAPI, useSSE)
 ├── pages/             # Routes Nuxt (file-based routing)
 ├── types/             # Types TypeScript (game, room, anime)
 ├── data/              # Données statiques par anime
@@ -58,9 +58,9 @@ undercover-naruto/
 
 ### Types
 - `types/anime.ts` : `AnimeEntry` (8 champs : id, name, image?, category, era, tags, summary, details) + `AnimeManifest`
-- `types/game.ts` : `GameConfig` (contient `anime: string`, `difficulty`, `categories`), `GameState`, `Vote`, `GameRound` (avec `eliminatedRole`, `eliminatedWord`)
+- `types/game.ts` : `GameConfig` (contient `anime: string`, `difficulty`, `categories`, `mrWhite`), `GameState`, `Vote`, `GameRound` (avec `eliminatedRole`, `eliminatedWord`)
 - `types/room.ts` : `RoomState` (contient `anime?: string`)
-- `GameMode` inclut `'mrWhiteOnly'` (5 modes au total)
+- `GameMode` : `'classic' | 'doubleInfiltration' | 'mrWhiteOnly'` — le flag `mrWhite` dans `GameConfig` étend à 5 modes effectifs
 
 ### Données Anime
 - Chaque anime dans `data/<slug>/manifest.json` avec nom, couleur, époques, catégories
@@ -70,6 +70,7 @@ undercover-naruto/
 - DataService (serveur) : scan dynamique des dossiers, cache en mémoire
 - animeData (client) : `import.meta.glob` pour charger les JSON
 - Images téléchargées via `scripts/download-images.ts` (wiki → `public/images/`), slugify du nom pour le nom de fichier
+- **Pas de sélection d'anime à la création de salle** : l'hôte choisit dans le lobby via `GameAnimeSettings`
 
 ## Principes SOLID
 
@@ -84,7 +85,7 @@ undercover-naruto/
 
 ### Fichiers
 - **Composants** : PascalCase (`PlayerCard.vue`) — plats dans `components/`
-- **Composables** : camelCase avec préfixe `use` (`useRoomAPI.ts`)
+- **Composables** : camelCase avec préfixe `use` (`useRoom.ts`)
 - **Services** : PascalCase avec suffixe `Service` (`GameService.ts`)
 - **Types** : PascalCase (`game.ts`, `anime.ts`)
 - **Utils** : camelCase (`animeData.ts`, `wordInfo.ts`)
@@ -113,6 +114,11 @@ static getRandomWordPair(anime: string, eras: string[], ...): WordPairCandidate 
 - Validation côté serveur de toutes les entrées
 - SSE pour le temps réel (`/api/rooms/[id]/stream`) avec ping 5s + `try/catch` + `NITRO_BUN_IDLE_TIMEOUT=60`
 
+### Config temps réel
+- `POST /api/rooms/config` : l'hôte met à jour la config lobby → stocké dans `room.pendingConfig` → broadcast `room:updated`
+- Les joueurs voient les changements en temps réel sans rechargement
+- Dé-bouncé côté client (500ms) pour éviter les appels sur chaque frappe
+
 ## Architecture Client
 
 ### Composables
@@ -122,9 +128,10 @@ export const useGameAPI = () => {
   // Actions de jeu : startGame, vote, nextTurn, continueRound, backToLobby, returnToLobby
 }
 
-// composables/useRoomAPI.ts
+// composables/useRoom.ts
 export const useRoomAPI = () => {
-  // Gestion de salle : createRoom(anime), joinRoom, kickPlayer, fetchRoom
+  // Gestion de salle : createRoom(), joinRoom, kickPlayer, fetchRoom
+  // createRoom ne prend plus d'anime — sélectionné dans le lobby
 }
 ```
 

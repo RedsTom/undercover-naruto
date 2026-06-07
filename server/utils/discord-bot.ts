@@ -1,30 +1,46 @@
-import { Client, GatewayIntentBits, REST, Routes, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
+import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
 
 const TOKEN = process.env.DISCORD_BOT_TOKEN;
 const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
-const APP_URL = process.env.APP_URL || 'https://undercover.vps.redstom.fr';
 
 let client: Client | null = null;
 
-async function registerCommands() {
+async function registerEntryPoint() {
   if (!TOKEN || !CLIENT_ID) return;
   try {
     const rest = new REST({ version: '10' }).setToken(TOKEN);
     const existing = await rest.get(Routes.applicationCommands(CLIENT_ID)) as any[];
-    const names = new Set(existing.map((c: any) => c.name));
+    const entryPoint = existing.find((c: any) => c.type === 4);
 
-    if (!names.has('undercover')) {
-      existing.push({
-        name: 'undercover',
-        description: 'Lancer une partie Undercover',
-      });
-      await rest.put(Routes.applicationCommands(CLIENT_ID), { body: existing });
-      console.log('[DiscordBot] Slash command /undercover registered');
-    } else {
-      console.log('[DiscordBot] Slash command /undercover already registered');
+    if (entryPoint) {
+      if (entryPoint.name !== 'undercover') {
+        await rest.patch(Routes.applicationCommand(CLIENT_ID, entryPoint.id), {
+          body: { name: 'undercover' },
+        });
+        console.log('[DiscordBot] Entry point renamed to /undercover');
+      } else {
+        console.log('[DiscordBot] Entry point /undercover already exists');
+      }
+      return;
     }
+
+    const oldRegular = existing.find((c: any) => c.name === 'undercover' && c.type === 1);
+    if (oldRegular) {
+      await rest.delete(Routes.applicationCommand(CLIENT_ID, oldRegular.id));
+    }
+
+    await rest.post(Routes.applicationCommands(CLIENT_ID), {
+      body: {
+        name: 'undercover',
+        type: 4,
+        handler: 2,
+        integration_types: [0, 1],
+        contexts: [0, 1, 2],
+      },
+    });
+    console.log('[DiscordBot] Entry point /undercover created');
   } catch (e) {
-    console.error('[DiscordBot] Failed to register command:', e);
+    console.error('[DiscordBot] Failed to register entry point:', e);
   }
 }
 
@@ -43,30 +59,7 @@ export function startBot() {
 
   client.on('ready', async () => {
     console.log(`[DiscordBot] Connected as ${client?.user?.tag}`);
-    await registerCommands();
-  });
-
-  client.on('interactionCreate', async (interaction) => {
-    if (!interaction.isChatInputCommand()) return;
-    if (interaction.commandName !== 'undercover') return;
-
-    const embed = new EmbedBuilder()
-      .setTitle('Undercover — Anime Edition')
-      .setDescription("Trouvez l'intrus avant qu'il ne soit trop tard !")
-      .setColor(0xf97316)
-      .addFields(
-        { name: '👥 Joueurs', value: 'De 3 à 8 joueurs', inline: true },
-        { name: '🎭 Rôles', value: 'Civils, Undercover, Mr.White', inline: true },
-      );
-
-    const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
-      new ButtonBuilder()
-        .setStyle(ButtonStyle.Link)
-        .setLabel('🎮 Lancer le jeu')
-        .setURL(`${APP_URL}/discord`),
-    );
-
-    await interaction.reply({ embeds: [embed], components: [row] });
+    await registerEntryPoint();
   });
 
   client.on('error', (e) => {

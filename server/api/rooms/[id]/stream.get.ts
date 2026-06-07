@@ -1,5 +1,7 @@
 export default defineEventHandler((event) => {
   const { id } = event.context.params!;
+  const query = getQuery(event);
+  const playerId = query.playerId as string;
   const room = getRoom(id as string);
 
   if (!room) {
@@ -8,10 +10,13 @@ export default defineEventHandler((event) => {
 
   const stream = createEventStream(event);
 
-  addSSEStream(id as string, stream);
+  addSSEStream(id as string, playerId || 'unknown', stream);
 
   stream.onClosed(() => {
-    removeSSEStream(id as string, stream);
+    const pid = removeSSEStream(id as string, stream);
+    if (pid && pid !== 'unknown') {
+      handlePlayerDisconnect(id as string, pid);
+    }
   });
 
   return stream.send().catch(() => {});

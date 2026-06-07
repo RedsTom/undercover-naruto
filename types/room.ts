@@ -6,6 +6,8 @@ export interface PlayerPublic {
   isHost: boolean;
   isReady: boolean;
   isAlive: boolean;
+  discordId?: string;
+  discordAvatar?: string;
 }
 
 export interface RoomSettings {

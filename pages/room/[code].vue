@@ -57,7 +57,11 @@
           </GameCard>
         </div>
 
-        <InviteLink :room="room" />
+        <InviteLink v-if="!isDiscord && !isPreview" :room="room" />
+
+        <div v-if="isPreview && playerId && room" class="text-center py-4">
+          <p class="text-xs text-white/50 uppercase tracking-wider">&#128101; {{ room.players.length }} joueurs</p>
+        </div>
 
         <div class="space-y-6">
           <GameGeneralSettings :is-host="isHost" :config="settingsConfig" @config-changed="onGeneralConfigChanged" />
@@ -95,9 +99,18 @@ const { room, playerId, isHost, playerCount, cleanup, joinRoom, kickPlayer } = u
 const { startGame, fetchMyInfo } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
+const isDiscord = import.meta.client && window.self !== window.top;
+const isPreview = ref(false);
+
 const joinName = ref('');
 const joining = ref(false);
 const joinError = ref('');
+
+if (import.meta.client) {
+  const checkPreview = () => { isPreview.value = window.innerWidth < 400 || window.innerHeight < 400; };
+  checkPreview();
+  window.addEventListener('resize', checkPreview);
+}
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const isInGame = computed(() => gameState.value && gameState.value.currentRound > 0 && gameState.value.phase === 'waiting');
@@ -158,7 +171,7 @@ onMounted(async () => {
     return;
   }
   if (room.value && playerId.value) {
-    connect(room.value.id);
+    connect(room.value.id, playerId.value);
   }
 
   on('room:updated', (data: any) => {
@@ -176,6 +189,18 @@ onMounted(async () => {
       disconnect();
       navigateTo('/');
     }
+  });
+
+  on('host:changed', (data: any) => {
+    if (room.value) {
+      room.value = { ...room.value, hostId: data.newHostId };
+    }
+  });
+
+  on('room:closed', () => {
+    cleanup();
+    disconnect();
+    navigateTo('/');
   });
 
 });
@@ -235,7 +260,7 @@ async function handleJoinRoom() {
   try {
     const result = await joinRoom(route.params.code as string, joinName.value.trim());
     if (result.success) {
-      connect(room.value!.id);
+      connect(room.value!.id, playerId.value!);
     } else {
       joinError.value = result.error || 'Impossible de rejoindre';
     }

@@ -2,6 +2,7 @@ export const useSSE = () => {
   const listeners = new Map<string, Set<(data: unknown) => void>>();
   let eventSource: EventSource | null = null;
   let roomIdRef: string | null = null;
+  let pingInterval: ReturnType<typeof setInterval> | null = null;
 
   function on(event: string, callback: (data: unknown) => void): () => void {
     if (!listeners.has(event)) listeners.set(event, new Set());
@@ -13,51 +14,35 @@ export const useSSE = () => {
     listeners.get(event)?.delete(callback);
   }
 
-  function connect(roomId: string): void {
+  function connect(roomId: string, playerId?: string): void {
     if (import.meta.server) return;
     disconnect();
     roomIdRef = roomId;
 
-    const es = new EventSource(`/api/rooms/${roomId}/stream`);
+    const params = playerId ? `?playerId=${playerId}` : '';
+    const es = new EventSource(`/api/rooms/${roomId}/stream${params}`);
 
-    es.addEventListener('room:updated', (e: MessageEvent) => {
-      try { dispatch('room:updated', JSON.parse(e.data)); } catch {}
-    });
+    const events = ['room:updated', 'game:started', 'game:playerVoted', 'game:roundEnded',
+      'game:continued', 'game:reset', 'phase:changed', 'turn:changed', 'player:kicked',
+      'host:changed', 'room:closed'];
 
-    es.addEventListener('game:started', (e: MessageEvent) => {
-      try { dispatch('game:started', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('game:playerVoted', (e: MessageEvent) => {
-      try { dispatch('game:playerVoted', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('game:roundEnded', (e: MessageEvent) => {
-      try { dispatch('game:roundEnded', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('game:continued', (e: MessageEvent) => {
-      try { dispatch('game:continued', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('game:reset', (e: MessageEvent) => {
-      try { dispatch('game:reset', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('phase:changed', (e: MessageEvent) => {
-      try { dispatch('phase:changed', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('turn:changed', (e: MessageEvent) => {
-      try { dispatch('turn:changed', JSON.parse(e.data)); } catch {}
-    });
-
-    es.addEventListener('player:kicked', (e: MessageEvent) => {
-      try { dispatch('player:kicked', JSON.parse(e.data)); } catch {}
-    });
+    for (const evt of events) {
+      es.addEventListener(evt, (e: MessageEvent) => {
+        try { dispatch(evt, JSON.parse(e.data)); } catch {}
+      });
+    }
 
     es.onerror = () => {};
     eventSource = es;
+
+    if (playerId) {
+      pingInterval = setInterval(() => {
+        $fetch(`/api/rooms/${roomId}/ping`, {
+          method: 'POST',
+          body: { playerId },
+        }).catch(() => {});
+      }, 10000);
+    }
   }
 
   function dispatch(event: string, data: unknown): void {
@@ -66,6 +51,10 @@ export const useSSE = () => {
   }
 
   function disconnect(): void {
+    if (pingInterval) {
+      clearInterval(pingInterval);
+      pingInterval = null;
+    }
     if (eventSource) {
       eventSource.close();
       eventSource = null;

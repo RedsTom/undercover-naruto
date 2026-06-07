@@ -51,6 +51,9 @@ export default defineEventHandler(async (event) => {
 
   const discordUser = await userResponse.json();
   const username = discordUser.global_name || discordUser.username;
+  const avatarUrl = discordUser.avatar
+    ? `https://cdn.discordapp.com/avatars/${discordUser.id}/${discordUser.avatar}.${discordUser.avatar.startsWith('a_') ? 'gif' : 'png'}`
+    : undefined;
 
   const existingRoomId = getRoomByChannel(channelId);
 
@@ -61,6 +64,8 @@ export default defineEventHandler(async (event) => {
       if ('error' in result) {
         throw createError({ statusCode: 400, message: result.error });
       }
+      result.player.discordId = discordUser.id;
+      result.player.discordAvatar = avatarUrl;
       broadcastToRoom(result.room.id, 'room:updated', result.room.toPublic());
       return {
         success: true,
@@ -68,13 +73,15 @@ export default defineEventHandler(async (event) => {
         roomCode: result.room.code,
         playerId: result.player.id,
         room: result.room.toPublic(),
-        user: { username },
+        user: { username, discordId: discordUser.id, avatar: avatarUrl },
       };
     }
     removeChannelMapping(channelId);
   }
 
   const result = createRoom(username);
+  result.player.discordId = discordUser.id;
+  result.player.discordAvatar = avatarUrl;
   setRoomChannel(channelId, result.room.id);
 
   return {
@@ -83,6 +90,6 @@ export default defineEventHandler(async (event) => {
     roomCode: result.room.code,
     playerId: result.player.id,
     room: result.room.toPublic(),
-    user: { username },
+    user: { username, discordId: discordUser.id, avatar: avatarUrl },
   };
 });

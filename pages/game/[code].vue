@@ -1,125 +1,143 @@
 <template>
   <div class="min-h-screen pb-16">
-    <div v-if="room && gameState" class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
-      <div class="flex items-center justify-between">
-        <div>
-          <h1 class="text-2xl font-black text-white">&#127918; Partie</h1>
-          <div class="flex items-center gap-2 mt-1">
-            <span :class="phaseBadgeClass">{{ phaseLabel }}</span>
-            <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
-          </div>
+    <template v-if="room && gameState">
+      <div v-if="isPreview" class="max-w-md mx-auto px-4 py-8">
+        <div v-if="gameState.phase === 'voting'" class="text-center py-12">
+          <div class="text-5xl mb-4">&#128499;&#65039;</div>
+          <p class="text-xl font-bold text-white">Vote en cours...</p>
+          <p class="text-sm text-gray-400 mt-2">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
         </div>
-        <div class="flex gap-2">
-          <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
-            &#8592; Lobby
-          </GameButton>
-          <GameButton variant="ghost" size="sm" @click="handleLeave">
-            &#128682;
-          </GameButton>
-        </div>
-      </div>
-
-      <div class="flex items-center justify-center">
-        <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
-      </div>
-
-      <WordDisplay
-        :word="myWord"
-        :role="myRole"
-        :show-word="!!myWord"
-        :anime="animeSlug"
-        :hide-role="!!(gameState.value?.config?.hideRole)"
-      />
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div v-for="player in room.players" :key="player.id"
-          class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] p-4 text-center transition-all duration-200 cursor-default"
-          :class="playerCardClass(player)">
-          <div class="text-2xl mb-1">
-            {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '&#127908;' : '&#128564;') : '&#128128;' }}
-          </div>
-          <p class="font-bold text-white text-sm">{{ player.name }}</p>
-          <p v-if="player.id === playerId" class="text-xs text-orange-400 mt-0.5">&#128100; Vous</p>
-          <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-green-400 font-bold mt-0.5 animate-pulse">&#128266; Parle</p>
-        </div>
-      </div>
-
-      <div v-if="gameState.phase === 'discussion'" class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden">
-        <div class="p-6 text-center space-y-4">
-          <div v-if="currentSpeaker" class="space-y-1">
-            <p class="text-3xl">&#127908;</p>
-            <p class="text-lg text-white font-bold">Tour de {{ currentSpeaker.name }}</p>
-          </div>
-          <p class="text-sm text-gray-400">Décrivez votre mot sans être trop explicite</p>
-          <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center flex-wrap">
-            <GameButton @click="handleNextTurn">&#10145;&#65039; Tour suivant</GameButton>
-            <GameButton variant="danger" @click="handleStartVoting">&#128499;&#65039; Passer au vote</GameButton>
+        <div v-else class="text-center py-12">
+          <WordDisplay
+            :word="myWord"
+            :role="myRole"
+            :show-word="!!myWord"
+            :anime="animeSlug"
+            :hide-role="!!(gameState.value?.config?.hideRole)"
+          />
+          <div class="mt-4 text-xs text-white/50">
+            &#128101; {{ aliveAll.length }} en vie — Round {{ gameState.currentRound }} — {{ phaseLabel }}
           </div>
         </div>
       </div>
-
-      <VotePanel
-        v-if="gameState.phase === 'voting'"
-        :players="room.players"
-        :player-id="playerId"
-        :vote-count="voteProgress.count"
-        :vote-total="voteProgress.total"
-        :disabled="voting"
-        @vote="handleVote"
-      />
-
-      <div v-if="gameState.phase === 'reveal'" class="text-center space-y-4 animate-bounce-in">
-        <div v-if="lastRoundResult?.eliminatedPlayerId" class="space-y-3">
-          <div class="text-5xl">&#128128;</div>
-          <h2 class="text-xl font-black text-white">{{ eliminatedPlayerName }} a été éliminé !</h2>
-          <div class="inline-block px-4 py-2 rounded-xl text-sm font-bold"
-            :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite'
-              ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
-              : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-            {{ roleLabel(lastRoundResult.eliminatedRole) }}
-            <span v-if="lastRoundResult.eliminatedWord" class="ml-1 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
+      <div v-else class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">&#127918; Partie</h1>
+            <div class="flex items-center gap-2 mt-1">
+              <span :class="phaseBadgeClass">{{ phaseLabel }}</span>
+              <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
+              &#8592; Lobby
+            </GameButton>
+            <GameButton variant="ghost" size="sm" @click="handleLeave">
+              &#128682;
+            </GameButton>
           </div>
         </div>
-        <div v-else class="space-y-2">
-          <div class="text-5xl">&#129335;</div>
-          <h2 class="text-xl font-black text-white">Pas de majorité — personne n'est éliminé !</h2>
+
+        <div class="flex items-center justify-center">
+          <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
         </div>
 
-        <div v-if="!canContinueGame && gameState.exposed" class="space-y-2 border-t border-white/10 pt-6">
-          <p class="text-xs font-bold uppercase tracking-wider text-white/50 text-center">Tous les rôles</p>
-          <div v-for="p in gameState.exposed" :key="p.playerId"
-            class="p-3 rounded-xl text-sm font-bold flex items-center gap-3"
-            :class="p.role === 'undercover' || p.role === 'mrWhite'
-              ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
-              : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-            <img v-if="p.word && getWordImage(p.word)" :src="getWordImage(p.word)" :alt="p.word" class="h-10 w-auto max-w-16 rounded-lg ring-1 ring-white/10 shrink-0 object-contain" />
-            <div>
-              <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
-              <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+        <WordDisplay
+          :word="myWord"
+          :role="myRole"
+          :show-word="!!myWord"
+          :anime="animeSlug"
+          :hide-role="!!(gameState.value?.config?.hideRole)"
+        />
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div v-for="player in room.players" :key="player.id"
+            class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] p-4 text-center transition-all duration-200 cursor-default"
+            :class="playerCardClass(player)">
+            <div class="text-2xl mb-1">
+              {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '&#127908;' : '&#128564;') : '&#128128;' }}
+            </div>
+            <p class="font-bold text-white text-sm">{{ player.name }}</p>
+            <p v-if="player.id === playerId" class="text-xs text-orange-400 mt-0.5">&#128100; Vous</p>
+            <p v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'" class="text-xs text-green-400 font-bold mt-0.5 animate-pulse">&#128266; Parle</p>
+          </div>
+        </div>
+
+        <div v-if="gameState.phase === 'discussion'" class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden">
+          <div class="p-6 text-center space-y-4">
+            <div v-if="currentSpeaker" class="space-y-1">
+              <p class="text-3xl">&#127908;</p>
+              <p class="text-lg text-white font-bold">Tour de {{ currentSpeaker.name }}</p>
+            </div>
+            <p class="text-sm text-gray-400">Décrivez votre mot sans être trop explicite</p>
+            <div v-if="isHost || isCurrentSpeaker(playerId)" class="flex gap-3 justify-center flex-wrap">
+              <GameButton @click="handleNextTurn">&#10145;&#65039; Tour suivant</GameButton>
+              <GameButton variant="danger" @click="handleStartVoting">&#128499;&#65039; Passer au vote</GameButton>
             </div>
           </div>
         </div>
 
-        <div v-if="isHost && canContinueGame" class="flex flex-col gap-3 items-center">
-          <GameButton variant="primary" size="lg" @click="handleContinueRound">
-            &#10145;&#65039; Continuer
-          </GameButton>
-          <GameButton variant="ghost" size="sm" @click="handleNextRound">
-            &#127968; Retour au lobby
-          </GameButton>
+        <VotePanel
+          v-if="gameState.phase === 'voting'"
+          :players="room.players"
+          :player-id="playerId"
+          :vote-count="voteProgress.count"
+          :vote-total="voteProgress.total"
+          :disabled="voting"
+          @vote="handleVote"
+        />
+
+        <div v-if="gameState.phase === 'reveal'" class="text-center space-y-4 animate-bounce-in">
+          <div v-if="lastRoundResult?.eliminatedPlayerId" class="space-y-3">
+            <div class="text-5xl">&#128128;</div>
+            <h2 class="text-xl font-black text-white">{{ eliminatedPlayerName }} a été éliminé !</h2>
+            <div class="inline-block px-4 py-2 rounded-xl text-sm font-bold"
+              :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite'
+                ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
+                : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
+              {{ roleLabel(lastRoundResult.eliminatedRole) }}
+              <span v-if="lastRoundResult.eliminatedWord" class="ml-1 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
+            </div>
+          </div>
+          <div v-else class="space-y-2">
+            <div class="text-5xl">&#129335;</div>
+            <h2 class="text-xl font-black text-white">Pas de majorité — personne n'est éliminé !</h2>
+          </div>
+
+          <div v-if="!canContinueGame && gameState.exposed" class="space-y-2 border-t border-white/10 pt-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-white/50 text-center">Tous les rôles</p>
+            <div v-for="p in gameState.exposed" :key="p.playerId"
+              class="p-3 rounded-xl text-sm font-bold flex items-center gap-3"
+              :class="p.role === 'undercover' || p.role === 'mrWhite'
+                ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
+                : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
+              <img v-if="p.word && getWordImage(p.word)" :src="getWordImage(p.word)" :alt="p.word" class="h-10 w-auto max-w-16 rounded-lg ring-1 ring-white/10 shrink-0 object-contain" />
+              <div>
+                <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
+                <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="isHost && canContinueGame" class="flex flex-col gap-3 items-center">
+            <GameButton variant="primary" size="lg" @click="handleContinueRound">
+              &#10145;&#65039; Continuer
+            </GameButton>
+            <GameButton variant="ghost" size="sm" @click="handleNextRound">
+              &#127968; Retour au lobby
+            </GameButton>
+          </div>
+          <p v-else-if="!isHost && canContinueGame" class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
+          <div v-else-if="isHost" class="flex flex-col gap-3 items-center">
+            <GameButton variant="primary" size="lg" @click="handleNextRound">
+              &#127968; Retour au lobby
+            </GameButton>
+          </div>
+          <p v-else class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
         </div>
-        <p v-else-if="!isHost && canContinueGame" class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
-        <div v-else-if="isHost" class="flex flex-col gap-3 items-center">
-          <GameButton variant="primary" size="lg" @click="handleNextRound">
-            &#127968; Retour au lobby
-          </GameButton>
-        </div>
-        <p v-else class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
       </div>
-
-
-    </div>
-
+    </template>
     <div v-else class="text-center py-20">
       <p class="text-gray-500">Chargement...</p>
       <div class="mt-4">
@@ -136,6 +154,15 @@ const route = useRoute();
 const { room, playerId, isHost, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
+
+const isDiscord = import.meta.client && window.self !== window.top;
+const isPreview = ref(false);
+
+if (import.meta.client) {
+  const checkPreview = () => { isPreview.value = window.innerWidth < 400 || window.innerHeight < 400; };
+  checkPreview();
+  window.addEventListener('resize', checkPreview);
+}
 
 const voting = ref(false);
 
@@ -240,7 +267,7 @@ onMounted(async () => {
     return;
   }
   if (room.value) {
-    connect(room.value.id);
+    connect(room.value.id, playerId.value ?? undefined);
     await fetchMyInfo();
   }
 
@@ -286,6 +313,19 @@ onMounted(async () => {
       disconnect();
       navigateTo('/');
     }
+  });
+
+  on('host:changed', (data: any) => {
+    if (room.value) {
+      room.value = { ...room.value, hostId: data.newHostId };
+    }
+  });
+
+  on('room:closed', () => {
+    gameCleanup();
+    cleanup();
+    disconnect();
+    navigateTo('/');
   });
 
 });

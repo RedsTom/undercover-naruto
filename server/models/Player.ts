@@ -8,6 +8,9 @@ export class PlayerModel {
   role?: PlayerRole;
   word?: string | null;
   isAlive: boolean;
+  discordId?: string;
+  discordAvatar?: string;
+  lastPing: number;
 
   constructor(id: string, name: string, isHost = false) {
     this.id = id;
@@ -16,6 +19,7 @@ export class PlayerModel {
     this.isReady = false;
     this.isAlive = true;
     this.word = null;
+    this.lastPing = Date.now();
   }
 
   assignRole(role: PlayerRole): void {
@@ -37,17 +41,19 @@ export class PlayerModel {
     this.isReady = false;
   }
 
-  toPublic(): { id: string; name: string; isHost: boolean; isReady: boolean; isAlive: boolean } {
+  toPublic() {
     return {
       id: this.id,
       name: this.name,
       isHost: this.isHost,
       isReady: this.isReady,
       isAlive: this.isAlive,
+      discordId: this.discordId,
+      discordAvatar: this.discordAvatar,
     };
   }
 
-  toPrivate(): { id: string; name: string; isHost: boolean; isReady: boolean; isAlive: boolean; role?: PlayerRole; word?: string | null } {
+  toPrivate() {
     return {
       ...this.toPublic(),
       role: this.role,

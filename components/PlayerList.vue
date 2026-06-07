@@ -17,9 +17,14 @@
         :class="player.isHost ? 'bg-orange-500/10 ring-1 ring-orange-500/20' : 'bg-white/5 hover:bg-white/10'"
       >
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold text-white shrink-0"
-            :class="player.isHost ? 'bg-gradient-to-br from-orange-400 to-orange-600' : 'bg-gradient-to-br from-gray-600 to-gray-700'">
-            {{ player.name.charAt(0).toUpperCase() }}
+          <div class="w-10 h-10 rounded-full shrink-0 overflow-hidden"
+            :class="player.isHost ? 'ring-2 ring-orange-500' : ''">
+            <img v-if="player.discordAvatar" :src="player.discordAvatar" :alt="player.name"
+              class="w-full h-full object-cover" @error="(player as any).discordAvatar = undefined" />
+            <div v-else class="w-full h-full flex items-center justify-center text-lg font-bold text-white"
+              :class="player.isHost ? 'bg-gradient-to-br from-orange-400 to-orange-600' : 'bg-gradient-to-br from-gray-600 to-gray-700'">
+              {{ player.name.charAt(0).toUpperCase() }}
+            </div>
           </div>
           <div>
             <p class="font-bold text-white">{{ player.name }}</p>

@@ -1,0 +1,27 @@
+{
+  "id": "deep-purple",
+  "name": "Deep Purple",
+  "category": "nen",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "manipulation",
+    "morel",
+    "fumee",
+    "soldats",
+    "pipe",
+    "controle",
+    "nen",
+    "essaim",
+    "polyvalence"
+  ],
+  "summary": "Capacité Nen de Morel Mccarnathy, créant des soldats de fumée contrôlables à distance",
+  "details": [
+    "Technique Nen de type Manipulation de Morel Mccarnathy, Hunter Three Star",
+    "Morel transforme la fumée de sa pipe en soldats, créatures et outils variés",
+    "Peut créer jusqu'à 216 soldats de fumée simultanément, chacun pilotable individuellement",
+    "La fumée peut prendre n'importe quelle forme : murs, cages, créatures, etc.",
+    "Extrêmement polyvalente, adaptée autant au combat qu'à l'exploration ou au sauvetage"
+  ]
+}

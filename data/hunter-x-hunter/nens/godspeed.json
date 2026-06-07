@@ -1,0 +1,28 @@
+{
+  "id": "godspeed",
+  "name": "Godspeed",
+  "category": "nen",
+  "era": [
+    "chimera-ant",
+    "chairman-election"
+  ],
+  "tags": [
+    "transmutation",
+    "killua",
+    "electricite",
+    "vitesse",
+    "reflexe",
+    "automatique",
+    "nen",
+    "foudre",
+    "charge"
+  ],
+  "summary": "Technique ultime de Killua Zoldyck, combinant vitesse foudroyante et réactions automatiques",
+  "details": [
+    "Technique Nen de type Transmutation maîtrisée par Killua Zoldyck sous l'entraînement de Bisky",
+    "Killua transforme son aura en électricité et l'utilise pour stimuler son système nerveux",
+    "Composée de deux modes : Denkosekka (éclair) pour la vitesse, et Kōsoku no Denkō (réflexion)",
+    "Le mode réflexion automatique permet à son corps de réagir sans passer par le cerveau",
+    "Nécessite une recharge électrique externe après utilisation intensive"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "chains-jail",
+  "name": "Chaîne de l'Emprisonnement",
+  "category": "nen",
+  "era": [
+    "yorknew"
+  ],
+  "tags": [
+    "conjuration",
+    "kurapika",
+    "chaine",
+    "emprisonnement",
+    "brigade-fantome",
+    "Zetsu",
+    "nen",
+    "capture",
+    "vengeance"
+  ],
+  "summary": "Chaîne Nen de Kurapika spécialisée contre la Brigade Fantôme, forçant l'adversaire en état de Zetsu",
+  "details": [
+    "Chaîne conjurée par Kurapika, l'une des cinq chaînes de sa technique de Nen",
+    "Spécifiquement créée pour capturer les membres de la Brigade Fantôme",
+    "Impose l'état Zetsu à la cible, l'empêchant d'utiliser son Nen",
+    "Une condition stricte limite son usage aux membres de la Brigade, faute de quoi Kurapika meurt",
+    "A permis la capture d'Uvogin, le premier membre de la Brigade neutralisé par Kurapika"
+  ]
+}

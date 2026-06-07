@@ -1,0 +1,28 @@
+{
+  "id": "pain-packer",
+  "name": "Pain Packer",
+  "category": "nen",
+  "era": [
+    "yorknew",
+    "dark-continent"
+  ],
+  "tags": [
+    "conjuration",
+    "feitan",
+    "degats",
+    "stockage",
+    "soleil",
+    "rising-sun",
+    "douleur",
+    "nen",
+    "vengeance"
+  ],
+  "summary": "Capacité Nen de Feitan, stockant les dégâts subis pour les libérer sous forme d'un soleil dévastateur",
+  "details": [
+    "Technique Nen de type Conjuration de Feitan, membre de la Brigade Fantôme",
+    "Stocke tous les dégâts reçus par Feitan pendant le combat",
+    "Libère la douleur accumulée sous forme de Rising Sun, un soleil miniature qui brûle tout",
+    "Plus Feitan subit de dégâts, plus Rising Sun est puissant",
+    "L'activation se fait par une transformation d'armure révélant le niveau de dégâts stockés"
+  ]
+}

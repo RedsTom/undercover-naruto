@@ -1,0 +1,26 @@
+{
+  "id": "hotel-rafflesia",
+  "name": "Hotel Rafflesia",
+  "category": "nen",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "conjuration",
+    "shoot",
+    "cage",
+    "main",
+    "enfermement",
+    "nen",
+    "controle",
+    "combat-zone"
+  ],
+  "summary": "Capacité Nen de Shoot McMahon, créant des cages et mains mécaniques pour contrôler l'espace de combat",
+  "details": [
+    "Technique Nen de type Conjuration de Shoot McMahon, disciple de Morel",
+    "Crée des mains mécaniques volantes qui peuvent saisir et attraper les adversaires",
+    "Hotel Rafflesia est une cage d'aura qui emprisonne la cible et rétrécit l'espace de combat",
+    "Les cages peuvent sectionner des parties du corps adverse en se refermant",
+    "Capacité spécialisée dans le contrôle du champ de bataille et la restriction des mouvements"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "emperor-time",
+  "name": "Emperor Time",
+  "category": "nen",
+  "era": [
+    "yorknew",
+    "dark-continent"
+  ],
+  "tags": [
+    "specialisation",
+    "kurapika",
+    "yeaux-ecarlates",
+    "tous-types",
+    "100-pourcent",
+    "nen",
+    "kurta",
+    "emotion"
+  ],
+  "summary": "Capacité Nen spéciale de Kurapika activée par ses yeux écarlates, lui permettant d'utiliser tous les types de Nen à 100%",
+  "details": [
+    "Capacité Nen de type Spécialisation propre à Kurapika, activée par ses yeux écarlates",
+    "Lorsque ses yeux deviennent écarlates, Kurapika peut utiliser les six types de Nen à 100%",
+    "Cette capacité est liée au sang du clan Kurta et à la puissance émotionnelle",
+    "Chaque seconde d'activation réduit son espérance de vie",
+    "Permet à Kurapika d'utiliser toutes ses chaînes avec une efficacité maximale"
+  ]
+}

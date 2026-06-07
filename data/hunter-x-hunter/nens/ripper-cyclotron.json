@@ -1,0 +1,27 @@
+{
+  "id": "ripper-cyclotron",
+  "name": "Ripper Cyclotron",
+  "category": "nen",
+  "era": [
+    "yorknew",
+    "dark-continent"
+  ],
+  "tags": [
+    "enhancement",
+    "phinks",
+    "rotation",
+    "bras",
+    "force-croissante",
+    "poing",
+    "nen",
+    "puissance-illimitee"
+  ],
+  "summary": "Capacité Nen de Phinks Magcub, augmentant sa force à chaque rotation de bras",
+  "details": [
+    "Technique Nen de type Enhancement de Phinks Magcub, membre de la Brigade Fantôme",
+    "Phinks tourne son bras comme une manivelle, chaque rotation augmentant sa force",
+    "Théoriquement aucune limite au nombre de rotations, donc à la puissance atteinte",
+    "Le coup de poing final libère toute l'énergie accumulée en une seule frappe dévastatrice",
+    "Contrainte : Phinks doit rester immobile pendant les rotations, le rendant vulnérable"
+  ]
+}

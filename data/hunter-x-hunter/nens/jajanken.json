@@ -1,0 +1,29 @@
+{
+  "id": "jajanken",
+  "name": "Jajanken",
+  "category": "nen",
+  "era": [
+    "greed-island",
+    "chimera-ant"
+  ],
+  "tags": [
+    "enhancement",
+    "gon",
+    "rock-paper-scissors",
+    "pierre",
+    "feuille",
+    "ciseaux",
+    "poing",
+    "nen",
+    "pacte",
+    "limitation"
+  ],
+  "summary": "Technique signature de Gon Freecss, inspirée du jeu pierre-feuille-ciseaux, concentrant l'aura de trois façons",
+  "details": [
+    "Technique Nen de type Enhancement créée par Gon Freecss, basée sur Pierre-Feuille-Ciseaux",
+    "Pierre (Rock) : concentration d'aura dans le poing pour un coup dévastateur",
+    "Feuille (Scissors) : aura tranchante projetée en lame depuis les doigts",
+    "Ciseaux (Paper) : aura projetée en onde de choc à distance",
+    "Gon doit énoncer clairement le nom pour activer la bonne forme, créant une limitation volontaire"
+  ]
+}

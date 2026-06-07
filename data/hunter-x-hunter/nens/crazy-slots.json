@@ -1,0 +1,26 @@
+{
+  "id": "crazy-slots",
+  "name": "Crazy Slots",
+  "category": "nen",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "conjuration",
+    "kite",
+    "de",
+    "hasard",
+    "arme-aleatoire",
+    "marteau",
+    "nen",
+    "chance"
+  ],
+  "summary": "Capacité Nen de Kite, invoquant une arme aléatoire déterminée par un dé à neuf faces",
+  "details": [
+    "Technique Nen de type Conjuration de Kite, Hunter disciple de Ging Freecss",
+    "Invoque un dé à neuf faces ; chaque face correspond à une arme différente",
+    "Les armes vont du pistolet au marteau de guerre, en passant par la faux et la lance",
+    "Le numéro tiré est totalement aléatoire, Kite ne peut pas choisir son arme",
+    "Une des armes (face inconnue) peut être réanimée en dernier recours si Kite est tué"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hakoware",
+  "name": "Hakoware",
+  "category": "nen",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "emission",
+    "knuckle",
+    "dette",
+    "APR",
+    "credit",
+    "aura",
+    "creature",
+    "nen",
+    "potentiel"
+  ],
+  "summary": "Capacité Nen de Knuckle Bine, endettant l'aura de l'adversaire via une petite créature APR",
+  "details": [
+    "Technique Nen de type Émission maîtrisée par Knuckle Bine, disciple de Morel",
+    "Invoque une petite créature APR qui s'attache à l'adversaire et calcule l'aura gagnée/perdue",
+    "Si la dette d'aura atteint zéro, l'adversaire est forcé en Zetsu pendant 30 jours",
+    "L'aura empruntée par Knuckle augmente son potentiel de combat temporairement",
+    "Capacité pacifiste : permet de vaincre sans tuer, en mettant l'adversaire hors d'état de nuire"
+  ]
+}

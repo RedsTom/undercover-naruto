@@ -11,7 +11,8 @@
             </div>
           </div>
         </div>
-        <GameButton @click="navigateTo('/')">&#8592; Retour à l'accueil</GameButton>
+        <GameButton @click="retry">&#x21BB; Réessayer</GameButton>
+        <GameButton variant="ghost" @click="navigateTo('/')">&#8592; Retour à l'accueil</GameButton>
       </div>
       <div v-else class="space-y-3">
         <p class="text-lg text-white font-semibold">{{ status }}</p>
@@ -34,6 +35,16 @@ const { setRoom, playerName } = useRoomAPI();
 
 const status = ref('Connexion à Discord...');
 const error = ref('');
+let discordSdk: DiscordSDK | null = null;
+
+function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((_, reject) =>
+      setTimeout(() => reject(new Error(`Timeout: ${label} (${ms}ms)`)), ms),
+    ),
+  ]);
+}
 
 async function handleAuth() {
   try {
@@ -42,9 +53,14 @@ async function handleAuth() {
       return;
     }
 
+    if (!window.frameElement) {
+      error.value = "Cette page doit être ouverte depuis Discord";
+      return;
+    }
+
     status.value = 'Initialisation...';
-    const discordSdk = new DiscordSDK(CLIENT_ID);
-    await discordSdk.ready();
+    discordSdk = new DiscordSDK(CLIENT_ID);
+    await withTimeout(discordSdk.ready(), 15000, 'SDK ready()');
 
     const channelId = discordSdk.channelId;
     if (!channelId) {
@@ -53,9 +69,11 @@ async function handleAuth() {
     }
 
     status.value = 'Authentification...';
-    const { code } = await discordSdk.commands.authorize({
-      scopes: ['identify'],
-    });
+    const { code } = await withTimeout(
+      discordSdk.commands.authorize({ scopes: ['identify'] }),
+      15000,
+      'authorize()',
+    );
 
     status.value = 'Création de la salle...';
     const data = await $fetch('/api/discord/auth', {
@@ -72,8 +90,13 @@ async function handleAuth() {
       error.value = 'Erreur lors de la connexion au salon';
     }
   } catch (e: any) {
-    error.value = e.data?.message || e.message || 'Erreur de connexion à Discord';
+    error.value = e.message || 'Erreur de connexion à Discord';
   }
+}
+
+function retry() {
+  error.value = '';
+  handleAuth();
 }
 
 onMounted(handleAuth);

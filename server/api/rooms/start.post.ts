@@ -15,5 +15,5 @@ export default defineEventHandler(async (event) => {
 
   broadcastToRoom(roomId, 'game:started', room.toPublic());
 
-  return { success: true, gameState: room.gameState };
+  return { success: true };
 });

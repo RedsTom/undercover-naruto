@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, message: result.error });
   }
 
-  broadcastToRoom(roomId, 'turn:changed', { currentTurnIndex: room.gameState?.currentTurnIndex });
+  broadcastToRoom(roomId, 'turn:changed', room.toPublic());
 
   return { success: true };
 });

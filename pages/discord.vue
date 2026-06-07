@@ -27,9 +27,6 @@
 <script setup lang="ts">
 import { DiscordSDK } from '@discord/embedded-app-sdk';
 
-const runtimeConfig = useRuntimeConfig();
-const CLIENT_ID = runtimeConfig.public.discordClientId;
-
 const router = useRouter();
 const { setRoom, playerName } = useRoomAPI();
 
@@ -48,6 +45,8 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
 
 async function handleAuth() {
   try {
+    const config = await $fetch('/api/config');
+    const CLIENT_ID = (config as any).discordClientId;
     if (!CLIENT_ID) {
       error.value = 'Discord non configuré (CLIENT_ID manquant)';
       return;

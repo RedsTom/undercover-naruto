@@ -8,7 +8,6 @@ services:
       - DISCORD_CLIENT_ID=${DISCORD_CLIENT_ID}
       - DISCORD_CLIENT_SECRET=${DISCORD_CLIENT_SECRET}
       - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
-      - NUXT_PUBLIC_DISCORD_CLIENT_ID=${DISCORD_CLIENT_ID}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.undercover-naruto.rule=Host(`undercover-naruto.vps.redstom.fr`)"

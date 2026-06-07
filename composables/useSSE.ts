@@ -20,10 +20,6 @@ export const useSSE = () => {
 
     const es = new EventSource(`/api/rooms/${roomId}/stream`);
 
-    es.addEventListener('connected', (e: MessageEvent) => {
-      try { dispatch('connected', JSON.parse(e.data)); } catch {}
-    });
-
     es.addEventListener('room:updated', (e: MessageEvent) => {
       try { dispatch('room:updated', JSON.parse(e.data)); } catch {}
     });

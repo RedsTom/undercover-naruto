@@ -104,46 +104,24 @@ async function handleAuth() {
     }
 
     status.value = 'Authentification...';
-    log('Calling authenticate()...');
-    let accessToken: string | undefined;
-    let user: any;
-    try {
-      const authResult = await withTimeout(
-        discordSdk.commands.authenticate({}),
-        15000,
-        'authenticate()',
-      );
-      log('authenticate() succeeded');
-      accessToken = (authResult as any).access_token;
-      user = (authResult as any).user;
-    } catch (authErr: any) {
-      log('authenticate() failed, fallback to authorize():', authErr.code, authErr.message);
-      const { code } = await withTimeout(
-        discordSdk.commands.authorize({ scopes: ['identify'] }),
-        15000,
-        'authorize()',
-      );
-      log('authorize() got code');
-      status.value = 'Échange du code...';
-      const exchange = await $fetch('/api/discord/auth', {
-        method: 'POST',
-        body: { code, channelId },
-      });
-      const r = exchange as any;
-      if (r.success) {
-        setRoom(r.room, r.playerId);
-        playerName.value = r.user.username;
-        await router.push(`/room/${r.roomCode}`);
-        return;
-      }
-      error.value = 'Erreur lors de la connexion au salon';
-      return;
-    }
+    log('Calling authorize() with correct params...');
+    const { code } = await withTimeout(
+      discordSdk.commands.authorize({
+        client_id: CLIENT_ID,
+        response_type: 'code',
+        state: '',
+        prompt: 'none',
+        scope: ['identify'],
+      }),
+      15000,
+      'authorize()',
+    );
+    log('authorize() got code:', code);
 
-    status.value = 'Création de la salle...';
+    status.value = 'Échange du code...';
     const data = await $fetch('/api/discord/auth', {
       method: 'POST',
-      body: { accessToken, channelId },
+      body: { code, channelId },
     });
 
     const result = data as any;

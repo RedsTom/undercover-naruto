@@ -1,0 +1,24 @@
+{
+  "id": "cimetière",
+  "name": "Cimetière",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "morts",
+    "tombes",
+    "silence",
+    "fleurs",
+    "deuil",
+    "souvenir",
+    "paix",
+    "enterrement"
+  ],
+  "summary": "Lieu d'inhumation des défunts.",
+  "details": [
+    "Mort",
+    "Souvenir",
+    "Lieu"
+  ]
+}

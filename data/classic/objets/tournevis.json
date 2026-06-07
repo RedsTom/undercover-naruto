@@ -1,0 +1,24 @@
+{
+  "id": "tournevis",
+  "name": "Tournevis",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "visser",
+    "dévisser",
+    "pointe",
+    "manche",
+    "vis",
+    "bricolage",
+    "métal"
+  ],
+  "summary": "Outil pour visser et dévisser.",
+  "details": [
+    "Outil",
+    "Bricolage",
+    "Vissage"
+  ]
+}

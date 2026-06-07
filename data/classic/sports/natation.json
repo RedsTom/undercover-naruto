@@ -1,0 +1,24 @@
+{
+  "id": "natation",
+  "name": "Natation",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "piscine",
+    "nage",
+    "brasse",
+    "crawl",
+    "bassin",
+    "longueur",
+    "olympique"
+  ],
+  "summary": "Sport de déplacement dans l'eau.",
+  "details": [
+    "Sport",
+    "Eau",
+    "Individuel"
+  ]
+}

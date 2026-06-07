@@ -1,0 +1,24 @@
+{
+  "id": "tramway",
+  "name": "Tramway",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rail",
+    "urbain",
+    "électrique",
+    "ville",
+    "ligne",
+    "arrêts",
+    "moderne",
+    "écologique"
+  ],
+  "summary": "Transport urbain sur rails.",
+  "details": [
+    "Transport",
+    "Rail",
+    "Urbain"
+  ]
+}

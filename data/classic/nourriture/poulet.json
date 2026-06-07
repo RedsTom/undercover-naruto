@@ -1,0 +1,24 @@
+{
+  "id": "poulet",
+  "name": "Poulet",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "viande",
+    "blanche",
+    "volaille",
+    "doux",
+    "polyvalent",
+    "cuisson",
+    "peau",
+    "tendre"
+  ],
+  "summary": "Viande blanche de la volaille gallinacée.",
+  "details": [
+    "Viande",
+    "Blanche",
+    "Volaille"
+  ]
+}

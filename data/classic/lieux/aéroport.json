@@ -1,0 +1,24 @@
+{
+  "id": "aéroport",
+  "name": "Aéroport",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "avion",
+    "décollage",
+    "atterrissage",
+    "terminal",
+    "bagages",
+    "passeport",
+    "voyage",
+    "international"
+  ],
+  "summary": "Infrastructure pour le transport aérien.",
+  "details": [
+    "Transport",
+    "Aérien",
+    "Infrastructure"
+  ]
+}

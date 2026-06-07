@@ -1,0 +1,24 @@
+{
+  "id": "vin",
+  "name": "Vin",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "alcool",
+    "rouge",
+    "raisin",
+    "fermentation",
+    "repas",
+    "France",
+    "verre"
+  ],
+  "summary": "Boisson alcoolisée obtenue par fermentation du raisin.",
+  "details": [
+    "Boisson",
+    "Alcool",
+    "Viticulture"
+  ]
+}

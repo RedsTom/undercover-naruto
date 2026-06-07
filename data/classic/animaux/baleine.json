@@ -1,0 +1,24 @@
+{
+  "id": "baleine",
+  "name": "Baleine",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "aquatique",
+    "mammifère",
+    "cétacé",
+    "énorme",
+    "mer",
+    "fanons",
+    "chant"
+  ],
+  "summary": "Grand mammifère marin de l'ordre des cétacés.",
+  "details": [
+    "Cétacé",
+    "Mammifère marin",
+    "Mysticète"
+  ]
+}

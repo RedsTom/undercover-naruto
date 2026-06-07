@@ -1,0 +1,24 @@
+{
+  "id": "brosse à dents",
+  "name": "Brosse à dents",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "hygiène",
+    "dents",
+    "poils",
+    "manche",
+    "dentifrice",
+    "salle de bain",
+    "nettoyer",
+    "bain"
+  ],
+  "summary": "Instrument d'hygiène pour nettoyer les dents.",
+  "details": [
+    "Hygiène",
+    "Salle de bain",
+    "Soin"
+  ]
+}

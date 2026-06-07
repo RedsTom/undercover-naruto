@@ -1,0 +1,24 @@
+{
+  "id": "autoroute",
+  "name": "Autoroute",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rapide",
+    "voies",
+    "péage",
+    "voitures",
+    "longue distance",
+    "limitée",
+    "sortie",
+    "aire"
+  ],
+  "summary": "Route à accès limité pour circulation rapide.",
+  "details": [
+    "Infrastructure",
+    "Transport",
+    "Rapide"
+  ]
+}

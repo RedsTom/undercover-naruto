@@ -1,0 +1,24 @@
+{
+  "id": "valise",
+  "name": "Valise",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voyage",
+    "bagage",
+    "roues",
+    "poignée",
+    "vêtements",
+    "avion",
+    "transport",
+    "fermeture"
+  ],
+  "summary": "Bagage rigide pour le voyage.",
+  "details": [
+    "Accessoire",
+    "Voyage",
+    "Bagage"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "or",
+  "name": "Or",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "métal",
+    "jaune",
+    "précieux",
+    "brillant",
+    "lingot",
+    "monnaie",
+    "riche",
+    "pur"
+  ],
+  "summary": "Métal précieux de couleur jaune.",
+  "details": [
+    "Métal",
+    "Précieux",
+    "Jaune"
+  ]
+}

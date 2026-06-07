@@ -1,0 +1,24 @@
+{
+  "id": "handball",
+  "name": "Handball",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "main",
+    "équipe",
+    "but",
+    "salle",
+    "passe",
+    "shoot",
+    "gardien"
+  ],
+  "summary": "Sport collectif au ballon à la main.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Salle"
+  ]
+}

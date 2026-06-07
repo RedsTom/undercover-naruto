@@ -1,0 +1,24 @@
+{
+  "id": "sanglier",
+  "name": "Sanglier",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "porcin",
+    "défenses",
+    "soies",
+    "forêt",
+    "fouille"
+  ],
+  "summary": "Mammifère porcin sauvage aux défenses acérées.",
+  "details": [
+    "Porcin",
+    "Omnivore",
+    "Ongulé"
+  ]
+}

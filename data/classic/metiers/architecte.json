@@ -1,0 +1,24 @@
+{
+  "id": "architecte",
+  "name": "Architecte",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bâtiment",
+    "dessin",
+    "plan",
+    "maison",
+    "conception",
+    "esthétique",
+    "permis",
+    "chantier"
+  ],
+  "summary": "Professionnel de la conception de bâtiments.",
+  "details": [
+    "Architecture",
+    "Construction",
+    "Libéral"
+  ]
+}

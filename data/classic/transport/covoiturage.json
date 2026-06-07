@@ -1,0 +1,24 @@
+{
+  "id": "covoiturage",
+  "name": "Covoiturage",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "partage",
+    "voiture",
+    "économie",
+    "écologique",
+    "trajet",
+    "application",
+    "solidaire",
+    "moderne"
+  ],
+  "summary": "Partage de trajet en voiture.",
+  "details": [
+    "Transport",
+    "Partage",
+    "Écologique"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "parachutisme",
+  "name": "Parachutisme",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "saut",
+    "avion",
+    "parachute",
+    "chute",
+    "air",
+    "sensation",
+    "extrême",
+    "liberté"
+  ],
+  "summary": "Sport de saut en parachute.",
+  "details": [
+    "Sport",
+    "Air",
+    "Extrême"
+  ]
+}

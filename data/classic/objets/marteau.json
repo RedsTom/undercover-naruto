@@ -1,0 +1,24 @@
+{
+  "id": "marteau",
+  "name": "Marteau",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "frapper",
+    "tête",
+    "manche",
+    "clous",
+    "bois",
+    "métal",
+    "bricolage"
+  ],
+  "summary": "Outil à tête lourde pour frapper.",
+  "details": [
+    "Outil",
+    "Bricolage",
+    "Construction"
+  ]
+}

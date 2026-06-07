@@ -1,0 +1,24 @@
+{
+  "id": "coiffeur",
+  "name": "Coiffeur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cheveux",
+    "coupe",
+    "ciseaux",
+    "salon",
+    "shampoing",
+    "couleur",
+    "coiffure",
+    "miroir"
+  ],
+  "summary": "Professionnel de la coiffure.",
+  "details": [
+    "Esthétique",
+    "Coiffure",
+    "Salon"
+  ]
+}

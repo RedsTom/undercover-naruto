@@ -1,0 +1,24 @@
+{
+  "id": "grue",
+  "name": "Grue",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "levage",
+    "chantier",
+    "bras",
+    "câble",
+    "charge",
+    "construction",
+    "haut",
+    "puissant"
+  ],
+  "summary": "Engin de levage de charges.",
+  "details": [
+    "Transport",
+    "Levage",
+    "Chantier"
+  ]
+}

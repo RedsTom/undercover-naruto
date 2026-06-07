@@ -1,0 +1,24 @@
+{
+  "id": "skateboard",
+  "name": "Skateboard",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "planche",
+    "roues",
+    "urbain",
+    "figure",
+    "rampes",
+    "rue",
+    "style",
+    "jeune"
+  ],
+  "summary": "Sport de glisse urbaine sur planche.",
+  "details": [
+    "Sport",
+    "Glisse",
+    "Urbain"
+  ]
+}

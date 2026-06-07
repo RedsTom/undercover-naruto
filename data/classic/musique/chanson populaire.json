@@ -1,0 +1,24 @@
+{
+  "id": "chanson populaire",
+  "name": "Chanson populaire",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voix",
+    "texte",
+    "mélodie",
+    "peuple",
+    "tradition",
+    "folklore",
+    "transmission",
+    "culture"
+  ],
+  "summary": "Chanson transmise par le peuple.",
+  "details": [
+    "Musique",
+    "Tradition",
+    "Folklore"
+  ]
+}

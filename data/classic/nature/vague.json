@@ -1,0 +1,24 @@
+{
+  "id": "vague",
+  "name": "Vague",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "eau",
+    "mouvement",
+    "surf",
+    "plage",
+    "écume",
+    "vent",
+    "rouleau"
+  ],
+  "summary": "Ondulation de la surface de la mer.",
+  "details": [
+    "Mer",
+    "Eau",
+    "Mouvement"
+  ]
+}

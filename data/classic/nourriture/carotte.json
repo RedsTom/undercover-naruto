@@ -1,0 +1,24 @@
+{
+  "id": "carotte",
+  "name": "Carotte",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "orange",
+    "racine",
+    "croquant",
+    "vitamine A",
+    "lapin",
+    "terre",
+    "long"
+  ],
+  "summary": "Légume-racine orange allongé et croquant.",
+  "details": [
+    "Légume",
+    "Racine",
+    "Ombellifère"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "grenouille",
+  "name": "Grenouille",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "amphibie",
+    "anoure",
+    "peau lisse",
+    "saute",
+    "eau",
+    "croassement",
+    "vert"
+  ],
+  "summary": "Amphibien anoure à la peau lisse et aux longues pattes.",
+  "details": [
+    "Amphibie",
+    "Anoure",
+    "Batracien"
+  ]
+}

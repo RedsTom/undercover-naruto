@@ -1,0 +1,24 @@
+{
+  "id": "policier",
+  "name": "Policier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sécurité",
+    "ordre",
+    "uniforme",
+    "arme",
+    "enquête",
+    "arrestation",
+    "patrouille",
+    "loi"
+  ],
+  "summary": "Agent chargé du maintien de l'ordre public.",
+  "details": [
+    "Sécurité",
+    "Ordre",
+    "Public"
+  ]
+}

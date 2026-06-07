@@ -1,0 +1,24 @@
+{
+  "id": "sac à main",
+  "name": "Sac à main",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "femme",
+    "porter",
+    "cuir",
+    "épaule",
+    "affaires",
+    "mode",
+    "accessoire",
+    "élégant"
+  ],
+  "summary": "Sac féminin pour les affaires personnelles.",
+  "details": [
+    "Accessoire",
+    "Mode",
+    "Féminin"
+  ]
+}

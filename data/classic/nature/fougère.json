@@ -1,0 +1,24 @@
+{
+  "id": "fougère",
+  "name": "Fougère",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plante",
+    "feuille",
+    "forêt",
+    "ombre",
+    "vert",
+    "préhistorique",
+    "humide",
+    "fronde"
+  ],
+  "summary": "Plante verte aux grandes feuilles découpées.",
+  "details": [
+    "Végétal",
+    "Forêt",
+    "Ombre"
+  ]
+}

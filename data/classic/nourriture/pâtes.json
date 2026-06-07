@@ -1,0 +1,24 @@
+{
+  "id": "pâtes",
+  "name": "Pâtes",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "féculent",
+    "blé",
+    "semoule",
+    "eau",
+    "cuisson",
+    "Italie",
+    "formes",
+    "sauce"
+  ],
+  "summary": "Aliment de semoule de blé cuit à l'eau.",
+  "details": [
+    "Féculent",
+    "Céréale",
+    "Italien"
+  ]
+}

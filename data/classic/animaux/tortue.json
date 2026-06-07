@@ -1,0 +1,24 @@
+{
+  "id": "tortue",
+  "name": "Tortue",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "reptile",
+    "chélonien",
+    "carapace",
+    "lente",
+    "longue vie",
+    "terre",
+    "mer"
+  ],
+  "summary": "Reptile chélonien protégé par une carapace.",
+  "details": [
+    "Reptile",
+    "Chélonien",
+    "Lépidosaure"
+  ]
+}

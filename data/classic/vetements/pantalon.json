@@ -1,0 +1,24 @@
+{
+  "id": "pantalon",
+  "name": "Pantalon",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "jambes",
+    "ceinture",
+    "poche",
+    "tissu",
+    "jean",
+    "long",
+    "taille"
+  ],
+  "summary": "Vêtement couvrant les jambes.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Long"
+  ]
+}

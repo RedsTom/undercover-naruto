@@ -1,0 +1,24 @@
+{
+  "id": "karaté",
+  "name": "Karaté",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "combat",
+    "frappe",
+    "pied",
+    "poing",
+    "kata",
+    "ceinture",
+    "japonais",
+    "discipline"
+  ],
+  "summary": "Art martial japonais avec frappes.",
+  "details": [
+    "Sport",
+    "Combat",
+    "Japonais"
+  ]
+}

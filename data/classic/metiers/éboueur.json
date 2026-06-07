@@ -1,0 +1,24 @@
+{
+  "id": "éboueur",
+  "name": "Éboueur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "poubelles",
+    "camion",
+    "déchets",
+    "tournée",
+    "matin",
+    "propreté",
+    "ville",
+    "collecte"
+  ],
+  "summary": "Personne qui collecte les ordures.",
+  "details": [
+    "Propreté",
+    "Déchets",
+    "Public"
+  ]
+}

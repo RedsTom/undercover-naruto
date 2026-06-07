@@ -1,0 +1,24 @@
+{
+  "id": "cadenas",
+  "name": "Cadenas",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sécurité",
+    "fermer",
+    "métal",
+    "serrure",
+    "anse",
+    "code",
+    "clé",
+    "protection"
+  ],
+  "summary": "Serrure mobile pour fermer à clé.",
+  "details": [
+    "Sécurité",
+    "Métal",
+    "Serrurerie"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Classique",
+  "slug": "classic",
+  "color": "#3b82f6",
+  "eras": [
+    { "id": "classique", "label": "Classique" }
+  ],
+  "categories": {
+    "animaux": "Animaux",
+    "nourriture": "Nourriture",
+    "objets": "Objets",
+    "lieux": "Lieux",
+    "metiers": "Métiers",
+    "vetements": "Vêtements",
+    "nature": "Nature",
+    "sports": "Sports",
+    "musique": "Musique",
+    "transport": "Transport"
+  }
+}

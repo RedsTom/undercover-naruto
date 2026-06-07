@@ -1,0 +1,24 @@
+{
+  "id": "source",
+  "name": "Source",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "origine",
+    "terre",
+    "pure",
+    "montagne",
+    "débit",
+    "rivière",
+    "naturelle"
+  ],
+  "summary": "Point de surgissement de l'eau.",
+  "details": [
+    "Eau",
+    "Origine",
+    "Nature"
+  ]
+}

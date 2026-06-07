@@ -1,0 +1,24 @@
+{
+  "id": "tambour",
+  "name": "Tambour",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "peau",
+    "baguette",
+    "rythme",
+    "militaire",
+    "cercle",
+    "frapper"
+  ],
+  "summary": "Instrument à percussion à peau tendue.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Peau"
+  ]
+}

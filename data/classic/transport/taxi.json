@@ -1,0 +1,24 @@
+{
+  "id": "taxi",
+  "name": "Taxi",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voiture",
+    "chauffeur",
+    "course",
+    "ville",
+    "client",
+    "compteur",
+    "transport",
+    "service"
+  ],
+  "summary": "Voiture de transport avec chauffeur.",
+  "details": [
+    "Transport",
+    "Service",
+    "Urbain"
+  ]
+}

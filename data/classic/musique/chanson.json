@@ -1,0 +1,24 @@
+{
+  "id": "chanson",
+  "name": "Chanson",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voix",
+    "paroles",
+    "mélodie",
+    "texte",
+    "français",
+    "artiste",
+    "amour",
+    "poésie"
+  ],
+  "summary": "Composition musicale avec paroles.",
+  "details": [
+    "Musique",
+    "Vocal",
+    "Poésie"
+  ]
+}

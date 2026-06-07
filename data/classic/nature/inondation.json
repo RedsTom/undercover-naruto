@@ -1,0 +1,24 @@
+{
+  "id": "inondation",
+  "name": "Inondation",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "débordement",
+    "rivière",
+    "pluie",
+    "destruction",
+    "maison",
+    "danger",
+    "montée"
+  ],
+  "summary": "Submersion par les eaux.",
+  "details": [
+    "Eau",
+    "Débordement",
+    "Danger"
+  ]
+}

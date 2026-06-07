@@ -1,0 +1,24 @@
+{
+  "id": "acteur",
+  "name": "Acteur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cinéma",
+    "théâtre",
+    "rôle",
+    "scène",
+    "caméra",
+    "texte",
+    "jeu",
+    "spectacle"
+  ],
+  "summary": "Personne qui joue dans des films ou pièces.",
+  "details": [
+    "Cinéma",
+    "Théâtre",
+    "Spectacle"
+  ]
+}

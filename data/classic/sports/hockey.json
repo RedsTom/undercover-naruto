@@ -1,0 +1,24 @@
+{
+  "id": "hockey",
+  "name": "Hockey",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "crosse",
+    "palet",
+    "glace",
+    "équipe",
+    "but",
+    "patins",
+    "rapide",
+    "contact"
+  ],
+  "summary": "Sport collectif sur glace avec crosse.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Glace"
+  ]
+}

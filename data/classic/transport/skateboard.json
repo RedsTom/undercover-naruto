@@ -1,0 +1,24 @@
+{
+  "id": "skateboard",
+  "name": "Skateboard",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "planche",
+    "roues",
+    "urbain",
+    "figure",
+    "jeune",
+    "rue",
+    "sport",
+    "équilibre"
+  ],
+  "summary": "Planche à roulettes.",
+  "details": [
+    "Transport",
+    "Roues",
+    "Sport"
+  ]
+}

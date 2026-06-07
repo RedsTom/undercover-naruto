@@ -1,0 +1,24 @@
+{
+  "id": "marin",
+  "name": "Marin",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "bateau",
+    "navigation",
+    "port",
+    "vague",
+    "uniforme",
+    "pêche",
+    "équipage"
+  ],
+  "summary": "Personne qui travaille en mer.",
+  "details": [
+    "Maritime",
+    "Navigation",
+    "Mer"
+  ]
+}

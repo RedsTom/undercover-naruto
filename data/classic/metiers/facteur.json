@@ -1,0 +1,24 @@
+{
+  "id": "facteur",
+  "name": "Facteur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "courrier",
+    "lettres",
+    "tournée",
+    "sac",
+    "vélo",
+    "distribution",
+    "boîte aux lettres",
+    "colis"
+  ],
+  "summary": "Personne qui distribue le courrier.",
+  "details": [
+    "Poste",
+    "Distribution",
+    "Public"
+  ]
+}

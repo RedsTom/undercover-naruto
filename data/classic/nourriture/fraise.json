@@ -1,0 +1,24 @@
+{
+  "id": "fraise",
+  "name": "Fraise",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "rouge",
+    "petit",
+    "graines",
+    "juteux",
+    "sucré",
+    "printemps",
+    "fragile"
+  ],
+  "summary": "Petit fruit rouge charnu et parfumé.",
+  "details": [
+    "Fruit",
+    "Fraise",
+    "Comestible"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "kayak",
+  "name": "Kayak",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "pagaie",
+    "rivière",
+    "sport",
+    "mer",
+    "étroit",
+    "assis",
+    "maniable"
+  ],
+  "summary": "Embarcation étroite à pagaie.",
+  "details": [
+    "Transport",
+    "Eau",
+    "Sport"
+  ]
+}

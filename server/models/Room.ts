@@ -119,8 +119,6 @@ export class RoomModel {
         rounds: gs.rounds.map(r => ({
           roundNumber: r.roundNumber,
           eliminatedPlayerId: r.eliminatedPlayerId,
-          eliminatedRole: r.eliminatedRole,
-          eliminatedWord: r.eliminatedWord,
           voteCount: r.votes.length,
         })),
         config: gs.config,

@@ -1,0 +1,24 @@
+{
+  "id": "traîneau",
+  "name": "Traîneau",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "neige",
+    "glisse",
+    "chien",
+    "nordique",
+    "hiver",
+    "patins",
+    "traditionnel",
+    "arctique"
+  ],
+  "summary": "Véhicule glissant sur neige.",
+  "details": [
+    "Transport",
+    "Neige",
+    "Nordique"
+  ]
+}

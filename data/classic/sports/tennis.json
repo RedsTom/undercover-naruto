@@ -1,0 +1,24 @@
+{
+  "id": "tennis",
+  "name": "Tennis",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "raquette",
+    "balle",
+    "filet",
+    "court",
+    "service",
+    "échange",
+    "simple",
+    "double"
+  ],
+  "summary": "Sport de raquette avec balle et filet.",
+  "details": [
+    "Sport",
+    "Raquette",
+    "Individuel"
+  ]
+}

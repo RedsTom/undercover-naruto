@@ -1,0 +1,24 @@
+{
+  "id": "glace",
+  "name": "Glace",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "froid",
+    "solide",
+    "eau",
+    "transparent",
+    "glissant",
+    "pôle",
+    "casser",
+    "froid"
+  ],
+  "summary": "Eau à l'état solide.",
+  "details": [
+    "Froid",
+    "Solide",
+    "Eau"
+  ]
+}

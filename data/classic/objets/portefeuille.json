@@ -1,0 +1,24 @@
+{
+  "id": "portefeuille",
+  "name": "Portefeuille",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "argent",
+    "cartes",
+    "cuir",
+    "plier",
+    "poche",
+    "papiers",
+    "identitié",
+    "porteur"
+  ],
+  "summary": "Étui pour porter argent et papiers.",
+  "details": [
+    "Accessoire",
+    "Cuir",
+    "Portefeuille"
+  ]
+}

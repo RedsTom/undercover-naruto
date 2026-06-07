@@ -1,0 +1,24 @@
+{
+  "id": "pharmacie",
+  "name": "Pharmacie",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "médicaments",
+    "santé",
+    "ordonnance",
+    "conseil",
+    "croix verte",
+    "pharmacien",
+    "soins",
+    "produits"
+  ],
+  "summary": "Commerce de médicaments et produits de santé.",
+  "details": [
+    "Santé",
+    "Commerce",
+    "Médicaments"
+  ]
+}

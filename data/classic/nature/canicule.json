@@ -1,0 +1,24 @@
+{
+  "id": "canicule",
+  "name": "Canicule",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "chaud",
+    "extrême",
+    "été",
+    "danger",
+    "santé",
+    "température",
+    "soleil",
+    "épuisement"
+  ],
+  "summary": "Période de chaleur extrême.",
+  "details": [
+    "Climat",
+    "Chaud",
+    "Danger"
+  ]
+}

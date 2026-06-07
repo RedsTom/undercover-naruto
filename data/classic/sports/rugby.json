@@ -1,0 +1,24 @@
+{
+  "id": "rugby",
+  "name": "Rugby",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "ovale",
+    "équipe",
+    "placage",
+    "essai",
+    "terrain",
+    "mêlée",
+    "physique"
+  ],
+  "summary": "Sport collectif au ballon ovale.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Contact"
+  ]
+}

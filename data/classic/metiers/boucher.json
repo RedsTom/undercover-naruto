@@ -1,0 +1,24 @@
+{
+  "id": "boucher",
+  "name": "Boucher",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "viande",
+    "couteau",
+    "étal",
+    "découpe",
+    "abattoir",
+    "artisan",
+    "fraîcheur",
+    "morceaux"
+  ],
+  "summary": "Artisan qui vend de la viande.",
+  "details": [
+    "Artisan",
+    "Alimentation",
+    "Boucherie"
+  ]
+}

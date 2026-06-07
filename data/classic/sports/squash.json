@@ -1,0 +1,24 @@
+{
+  "id": "squash",
+  "name": "Squash",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "raquette",
+    "balle",
+    "mur",
+    "court",
+    "rapide",
+    "intérieur",
+    "endurance",
+    "technique"
+  ],
+  "summary": "Sport de raquette en salle contre un mur.",
+  "details": [
+    "Sport",
+    "Raquette",
+    "Salle"
+  ]
+}

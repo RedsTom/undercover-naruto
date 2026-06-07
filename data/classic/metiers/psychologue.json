@@ -1,0 +1,24 @@
+{
+  "id": "psychologue",
+  "name": "Psychologue",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "esprit",
+    "écoute",
+    "thérapie",
+    "comportement",
+    "consultation",
+    "mental",
+    "soutien",
+    "analyse"
+  ],
+  "summary": "Professionnel de la santé mentale.",
+  "details": [
+    "Santé",
+    "Mental",
+    "Thérapie"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "téléphone",
+  "name": "Téléphone",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "communication",
+    "écran",
+    "appeler",
+    "portable",
+    "numéro",
+    "message",
+    "internet",
+    "moderne"
+  ],
+  "summary": "Appareil de communication à distance.",
+  "details": [
+    "Communication",
+    "Électronique",
+    "Moderne"
+  ]
+}

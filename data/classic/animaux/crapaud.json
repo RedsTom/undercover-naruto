@@ -1,0 +1,24 @@
+{
+  "id": "crapaud",
+  "name": "Crapaud",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "amphibie",
+    "anoure",
+    "peau rugueuse",
+    "marche",
+    "terre",
+    "coassement",
+    "brun"
+  ],
+  "summary": "Amphibien anoure à la peau rugueuse et verruqueuse.",
+  "details": [
+    "Amphibie",
+    "Anoure",
+    "Batracien"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "comptable",
+  "name": "Comptable",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "chiffres",
+    "bilan",
+    "entreprise",
+    "impôts",
+    "budget",
+    "tableur",
+    "rigueur",
+    "bureau"
+  ],
+  "summary": "Professionnel de la comptabilité.",
+  "details": [
+    "Finance",
+    "Comptabilité",
+    "Bureau"
+  ]
+}

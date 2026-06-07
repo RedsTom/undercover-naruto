@@ -1,0 +1,24 @@
+{
+  "id": "voile",
+  "name": "Voile",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bateau",
+    "mer",
+    "vent",
+    "voile",
+    "navigation",
+    "régate",
+    "skipper",
+    "équipement"
+  ],
+  "summary": "Sport de navigation à voile.",
+  "details": [
+    "Sport",
+    "Mer",
+    "Navigation"
+  ]
+}

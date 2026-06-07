@@ -1,0 +1,24 @@
+{
+  "id": "collant",
+  "name": "Collant",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "femme",
+    "fin",
+    "transparent",
+    "chaud",
+    "jupe",
+    "élégant",
+    "nylon"
+  ],
+  "summary": "Vêtement féminin couvrant les jambes.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Féminin"
+  ]
+}

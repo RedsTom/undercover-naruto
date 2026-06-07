@@ -1,0 +1,24 @@
+{
+  "id": "courgette",
+  "name": "Courgette",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "fruit",
+    "vert",
+    "allongé",
+    "doux",
+    "cuisine",
+    "été",
+    "graines"
+  ],
+  "summary": "Légume-fruit vert allongé au goût doux.",
+  "details": [
+    "Légume",
+    "Fruit",
+    "Cucurbitacée"
+  ]
+}

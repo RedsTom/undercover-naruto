@@ -1,0 +1,24 @@
+{
+  "id": "renard",
+  "name": "Renard",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "canidé",
+    "poils",
+    "rusé",
+    "queue touffue",
+    "forêt"
+  ],
+  "summary": "Petit mammifère canidé rusé à la queue touffue.",
+  "details": [
+    "Canidé",
+    "Carnivore",
+    "Omnivore"
+  ]
+}

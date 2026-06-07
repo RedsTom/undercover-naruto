@@ -1,0 +1,24 @@
+{
+  "id": "accord",
+  "name": "Accord",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "notes",
+    "simultané",
+    "harmonie",
+    "majeur",
+    "mineur",
+    "guitare",
+    "piano",
+    "accompagnement"
+  ],
+  "summary": "Ensemble de notes jouées ensemble.",
+  "details": [
+    "Musique",
+    "Harmonie",
+    "Simultané"
+  ]
+}

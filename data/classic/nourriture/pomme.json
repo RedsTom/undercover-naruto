@@ -1,0 +1,24 @@
+{
+  "id": "pomme",
+  "name": "Pomme",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "rouge",
+    "juteux",
+    "croquant",
+    "arbre",
+    "pépins",
+    "doux",
+    "cider"
+  ],
+  "summary": "Fruit du pommier, rond et souvent rouge ou vert.",
+  "details": [
+    "Fruit",
+    "Pomé",
+    "Comestible"
+  ]
+}

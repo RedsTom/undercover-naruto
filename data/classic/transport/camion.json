@@ -1,0 +1,24 @@
+{
+  "id": "camion",
+  "name": "Camion",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "marchandise",
+    "transport",
+    "poids lourd",
+    "cabine",
+    "remorque",
+    "route",
+    "logistique",
+    "grande capacité"
+  ],
+  "summary": "Véhicule de transport de marchandises.",
+  "details": [
+    "Transport",
+    "Marchandise",
+    "Lourd"
+  ]
+}

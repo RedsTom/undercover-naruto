@@ -66,8 +66,6 @@ export class VoteService {
       const player = room.getPlayer(eliminatedPlayerId);
       if (player) {
         player.eliminate();
-        currentRound.eliminatedRole = player.role ?? 'unknown';
-        currentRound.eliminatedWord = player.word ?? null;
       }
     }
 

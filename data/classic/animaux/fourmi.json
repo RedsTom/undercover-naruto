@@ -1,0 +1,24 @@
+{
+  "id": "fourmi",
+  "name": "Fourmi",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "hyménoptère",
+    "sans ailes",
+    "colonie",
+    "travailleuse",
+    "petite",
+    "noire"
+  ],
+  "summary": "Petit insecte hyménoptère social vivant en colonie.",
+  "details": [
+    "Insecte",
+    "Hyménoptère",
+    "Social"
+  ]
+}

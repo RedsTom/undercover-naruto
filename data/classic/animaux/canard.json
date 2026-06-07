@@ -1,0 +1,24 @@
+{
+  "id": "canard",
+  "name": "Canard",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "oiseau",
+    "anatidé",
+    "plumes",
+    "nage",
+    "coin-coin",
+    "bec plat"
+  ],
+  "summary": "Oiseau aquatique de la famille des anatidés.",
+  "details": [
+    "Anatidé",
+    "Oiseau aquatique",
+    "Volaille"
+  ]
+}

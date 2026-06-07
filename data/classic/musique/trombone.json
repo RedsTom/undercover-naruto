@@ -1,0 +1,24 @@
+{
+  "id": "trombone",
+  "name": "Trombone",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cuivre",
+    "coulisse",
+    "grave",
+    "jazz",
+    "orchestre",
+    "cuivres",
+    "puissant"
+  ],
+  "summary": "Instrument à vent en cuivre à coulisse.",
+  "details": [
+    "Instrument",
+    "Cuivre",
+    "Grave"
+  ]
+}

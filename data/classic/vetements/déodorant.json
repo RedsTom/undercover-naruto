@@ -1,0 +1,24 @@
+{
+  "id": "déodorant",
+  "name": "Déodorant",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "aisselle",
+    "odeur",
+    "protection",
+    "spray",
+    "hygiène",
+    "fraîcheur",
+    "quotidien",
+    "salle de bain"
+  ],
+  "summary": "Produit contre les odeurs corporelles.",
+  "details": [
+    "Hygiène",
+    "Odeur",
+    "Quotidien"
+  ]
+}

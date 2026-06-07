@@ -1,0 +1,24 @@
+{
+  "id": "journaliste",
+  "name": "Journaliste",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "actualité",
+    "enquête",
+    "article",
+    "presse",
+    "interview",
+    "information",
+    "reportage",
+    "média"
+  ],
+  "summary": "Personne qui informe par les médias.",
+  "details": [
+    "Média",
+    "Information",
+    "Presse"
+  ]
+}

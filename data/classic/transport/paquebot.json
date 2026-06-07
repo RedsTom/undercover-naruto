@@ -1,0 +1,24 @@
+{
+  "id": "paquebot",
+  "name": "Paquebot",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "croisière",
+    "passagers",
+    "luxe",
+    "cabine",
+    "pont",
+    "voyage",
+    "tourisme"
+  ],
+  "summary": "Grand navire de croisière.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Croisière"
+  ]
+}

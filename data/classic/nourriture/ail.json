@@ -1,0 +1,24 @@
+{
+  "id": "ail",
+  "name": "Ail",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "bulbe",
+    "gousses",
+    "piquant",
+    "aromatique",
+    "cuisine",
+    "santé",
+    "fort"
+  ],
+  "summary": "Bulbe aromatique aux gousses au goût fort.",
+  "details": [
+    "Légume",
+    "Bulbe",
+    "Alliacée"
+  ]
+}

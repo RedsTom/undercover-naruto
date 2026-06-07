@@ -1,0 +1,24 @@
+{
+  "id": "autostop",
+  "name": "Autostop",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pouce",
+    "route",
+    "gratuit",
+    "voyage",
+    "aventure",
+    "inconnu",
+    "liberté",
+    "débrouille"
+  ],
+  "summary": "Transport gratuit par solicitation.",
+  "details": [
+    "Transport",
+    "Gratuit",
+    "Aventure"
+  ]
+}

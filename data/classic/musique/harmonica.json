@@ -1,0 +1,24 @@
+{
+  "id": "harmonica",
+  "name": "Harmonica",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "anche",
+    "bouche",
+    "souffle",
+    "blues",
+    "petit",
+    "portable",
+    "métal"
+  ],
+  "summary": "Petit instrument à anche libre.",
+  "details": [
+    "Instrument",
+    "Anche",
+    "Portable"
+  ]
+}

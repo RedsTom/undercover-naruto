@@ -1,0 +1,24 @@
+{
+  "id": "aubergine",
+  "name": "Aubergine",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "fruit",
+    "violet",
+    "allongé",
+    "brillant",
+    "cuisine",
+    "ratatouille",
+    "éponge"
+  ],
+  "summary": "Légume-fruit violet brillant à la chair spongieuse.",
+  "details": [
+    "Légume",
+    "Fruit",
+    "Solanacée"
+  ]
+}

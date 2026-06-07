@@ -1,0 +1,24 @@
+{
+  "id": "électricien",
+  "name": "Électricien",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "électricité",
+    "fils",
+    "prises",
+    "réparation",
+    "installation",
+    "sécurité",
+    "outils",
+    "courant"
+  ],
+  "summary": "Artisan spécialisé dans les installations électriques.",
+  "details": [
+    "Artisan",
+    "Électricité",
+    "Dépannage"
+  ]
+}

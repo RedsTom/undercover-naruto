@@ -1,0 +1,24 @@
+{
+  "id": "cymbale",
+  "name": "Cymbale",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "métal",
+    "disque",
+    "brillant",
+    "batterie",
+    "crash",
+    "ride"
+  ],
+  "summary": "Disque de métal de la batterie.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Métal"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "poisson",
+  "name": "Poisson",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "aquatique",
+    "écailles",
+    "nageoires",
+    "branchies",
+    "nage",
+    "eau",
+    "froid"
+  ],
+  "summary": "Vertébré aquatique respirant par des branchies.",
+  "details": [
+    "Vertébré",
+    "Aquatique",
+    "Ovovivipare"
+  ]
+}

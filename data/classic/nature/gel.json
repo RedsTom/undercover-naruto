@@ -1,0 +1,24 @@
+{
+  "id": "gel",
+  "name": "Gel",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "froid",
+    "glace",
+    "nuit",
+    "hiver",
+    "blanc",
+    "casser",
+    "fragile",
+    "agriculture"
+  ],
+  "summary": "Formation de glace par le froid.",
+  "details": [
+    "Froid",
+    "Glace",
+    "Hiver"
+  ]
+}

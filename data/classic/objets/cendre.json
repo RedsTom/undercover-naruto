@@ -1,0 +1,24 @@
+{
+  "id": "cendre",
+  "name": "Cendre",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "résidu",
+    "feu",
+    "gris",
+    "poudre",
+    "combustion",
+    "cendrier",
+    "brûlé",
+    "fumée"
+  ],
+  "summary": "Résidu poudreux de la combustion.",
+  "details": [
+    "Résidu",
+    "Combustion",
+    "Déchet"
+  ]
+}

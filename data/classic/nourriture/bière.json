@@ -1,0 +1,24 @@
+{
+  "id": "bière",
+  "name": "Bière",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "alcool",
+    "mousse",
+    "houblon",
+    "orge",
+    "fermentation",
+    "pinte",
+    "fraîche"
+  ],
+  "summary": "Boisson alcoolisée obtenue par fermentation de céréales.",
+  "details": [
+    "Boisson",
+    "Alcool",
+    "Brasserie"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tsunami",
+  "name": "Tsunami",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vague",
+    "mer",
+    "géant",
+    "destruction",
+    "séisme",
+    "côte",
+    "danger",
+    "puissant"
+  ],
+  "summary": "Vague géante après un séisme.",
+  "details": [
+    "Mer",
+    "Vague",
+    "Danger"
+  ]
+}

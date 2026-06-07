@@ -1,0 +1,24 @@
+{
+  "id": "parfum",
+  "name": "Parfum",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "odeur",
+    "flacon",
+    "peau",
+    "fragrance",
+    "élégant",
+    "senteur",
+    "vaporiser",
+    "luxe"
+  ],
+  "summary": "Substance odorante pour le corps.",
+  "details": [
+    "Cosmétique",
+    "Odeur",
+    "Luxe"
+  ]
+}

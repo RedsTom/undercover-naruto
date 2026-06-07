@@ -1,0 +1,24 @@
+{
+  "id": "jazz",
+  "name": "Jazz",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "improvisation",
+    "swing",
+    "blues",
+    "saxophone",
+    "trompette",
+    "américain",
+    "noir",
+    "club"
+  ],
+  "summary": "Musique afro-américaine improvisée.",
+  "details": [
+    "Musique",
+    "Improvisation",
+    "Américain"
+  ]
+}

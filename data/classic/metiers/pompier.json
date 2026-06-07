@@ -1,0 +1,24 @@
+{
+  "id": "pompier",
+  "name": "Pompier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "incendie",
+    "sauvetage",
+    "camion",
+    "eau",
+    "casque",
+    "urgence",
+    "courage",
+    "uniforme"
+  ],
+  "summary": "Professionnel de la lutte contre les incendies.",
+  "details": [
+    "Sécurité",
+    "Urgence",
+    "Public"
+  ]
+}

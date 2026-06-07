@@ -1,0 +1,24 @@
+{
+  "id": "poussière",
+  "name": "Poussière",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "particule",
+    "fine",
+    "sec",
+    "air",
+    "ménage",
+    "gris",
+    "voler",
+    "nettoyer"
+  ],
+  "summary": "Particules fines en suspension.",
+  "details": [
+    "Particule",
+    "Sec",
+    "Air"
+  ]
+}

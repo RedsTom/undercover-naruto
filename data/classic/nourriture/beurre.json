@@ -1,0 +1,24 @@
+{
+  "id": "beurre",
+  "name": "Beurre",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "laitier",
+    "crème",
+    "gras",
+    "jaune",
+    "tartine",
+    "cuisine",
+    "fondant",
+    "richesse"
+  ],
+  "summary": "Matière grasse laitière obtenue par barattage.",
+  "details": [
+    "Laitier",
+    "Matière grasse",
+    "Crèmerie"
+  ]
+}

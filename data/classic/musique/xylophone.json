@@ -1,0 +1,24 @@
+{
+  "id": "xylophone",
+  "name": "Xylophone",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "lames",
+    "bois",
+    "mailloche",
+    "aigu",
+    "mélodique",
+    "orchestre"
+  ],
+  "summary": "Instrument à lames de bois.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Bois"
+  ]
+}

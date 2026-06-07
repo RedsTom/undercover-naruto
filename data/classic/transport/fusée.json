@@ -1,0 +1,24 @@
+{
+  "id": "fusée",
+  "name": "Fusée",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "espace",
+    "propulsion",
+    "satellite",
+    "astronaute",
+    "décollage",
+    "puissant",
+    "science",
+    "exploration"
+  ],
+  "summary": "Véhicule spatial propulsé.",
+  "details": [
+    "Transport",
+    "Spatial",
+    "Propulsion"
+  ]
+}

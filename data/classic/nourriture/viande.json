@@ -1,0 +1,24 @@
+{
+  "id": "viande",
+  "name": "Viande",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "muscle",
+    "protéine",
+    "rouge",
+    "cuisson",
+    "fer",
+    "repas",
+    "gras"
+  ],
+  "summary": "Chair des animaux consommée comme aliment.",
+  "details": [
+    "Animal",
+    "Protéine",
+    "Boucherie"
+  ]
+}

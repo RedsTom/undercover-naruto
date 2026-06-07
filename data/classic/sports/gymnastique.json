@@ -1,0 +1,24 @@
+{
+  "id": "gymnastique",
+  "name": "Gymnastique",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "corps",
+    "souplesse",
+    "agrès",
+    "barre",
+    "sol",
+    "acrobatie",
+    "équilibre",
+    "force"
+  ],
+  "summary": "Sport d'exercices corporels.",
+  "details": [
+    "Sport",
+    "Corps",
+    "Individuel"
+  ]
+}

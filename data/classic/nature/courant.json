@@ -1,0 +1,24 @@
+{
+  "id": "courant",
+  "name": "Courant",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "mouvement",
+    "rivière",
+    "mer",
+    "direction",
+    "force",
+    "navigation",
+    "fluide"
+  ],
+  "summary": "Mouvement directionnel de l'eau.",
+  "details": [
+    "Eau",
+    "Mouvement",
+    "Direction"
+  ]
+}

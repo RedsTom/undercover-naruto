@@ -1,0 +1,24 @@
+{
+  "id": "chocolat",
+  "name": "Chocolat",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "doux",
+    "cacao",
+    "brun",
+    "fondant",
+    "dessert",
+    "plaisir",
+    "Amérique",
+    "tablette"
+  ],
+  "summary": "Produit alimentaire issu des fèves de cacao.",
+  "details": [
+    "Dessert",
+    "Cacao",
+    "Confiserie"
+  ]
+}

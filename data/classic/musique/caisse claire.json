@@ -1,0 +1,24 @@
+{
+  "id": "caisse claire",
+  "name": "Caisse claire",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "timbre",
+    "aigu",
+    "batterie",
+    "baguette",
+    "rythme",
+    "militaire"
+  ],
+  "summary": "Tambour à timbre de la batterie.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Aigu"
+  ]
+}

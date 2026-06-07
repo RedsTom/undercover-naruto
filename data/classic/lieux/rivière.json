@@ -1,0 +1,24 @@
+{
+  "id": "rivière",
+  "name": "Rivière",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "courant",
+    "poissons",
+    "pont",
+    "berge",
+    "nature",
+    "fluide",
+    "vallée"
+  ],
+  "summary": "Cours d'eau naturel de taille moyenne.",
+  "details": [
+    "Nature",
+    "Eau",
+    "Hydrographie"
+  ]
+}

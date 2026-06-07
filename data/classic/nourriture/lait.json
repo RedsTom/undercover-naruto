@@ -1,0 +1,24 @@
+{
+  "id": "lait",
+  "name": "Lait",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "blanc",
+    "liquide",
+    "vache",
+    "calcium",
+    "doux",
+    "petit-déjeuner",
+    "céréales"
+  ],
+  "summary": "Liquide blanc produit par les mammifères pour leurs petits.",
+  "details": [
+    "Boisson",
+    "Laitier",
+    "Nutrition"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "marée",
+  "name": "Marée",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "montée",
+    "descente",
+    "lune",
+    "côte",
+    "plage",
+    "poisson",
+    "pêche"
+  ],
+  "summary": "Mouvement périodique de la mer.",
+  "details": [
+    "Mer",
+    "Mouvement",
+    "Lune"
+  ]
+}

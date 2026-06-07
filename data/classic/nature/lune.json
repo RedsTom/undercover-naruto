@@ -1,0 +1,24 @@
+{
+  "id": "lune",
+  "name": "Lune",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "nuit",
+    "satellite",
+    "blanc",
+    "phases",
+    "lumière",
+    "cratères",
+    "orbite",
+    "romantique"
+  ],
+  "summary": "Satellite naturel de la Terre.",
+  "details": [
+    "Satellite",
+    "Nuit",
+    "Ciel"
+  ]
+}

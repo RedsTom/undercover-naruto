@@ -1,0 +1,24 @@
+{
+  "id": "île",
+  "name": "Île",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "terre",
+    "entourée",
+    "plage",
+    "bateau",
+    "isolée",
+    "tropicale",
+    "volcan"
+  ],
+  "summary": "Terre entourée d'eau de tous côtés.",
+  "details": [
+    "Nature",
+    "Géographie",
+    "Insulaire"
+  ]
+}

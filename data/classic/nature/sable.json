@@ -1,0 +1,24 @@
+{
+  "id": "sable",
+  "name": "Sable",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "grain",
+    "fin",
+    "plage",
+    "désert",
+    "doux",
+    "chaud",
+    "couler",
+    "tas"
+  ],
+  "summary": "Matière minérale en grains fins.",
+  "details": [
+    "Minéral",
+    "Grain",
+    "Plage"
+  ]
+}

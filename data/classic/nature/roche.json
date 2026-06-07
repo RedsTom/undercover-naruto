@@ -1,0 +1,24 @@
+{
+  "id": "roche",
+  "name": "Roche",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pierre",
+    "dur",
+    "minéral",
+    "montagne",
+    "sol",
+    "géologie",
+    "gris",
+    "massif"
+  ],
+  "summary": "Masse minérale solide.",
+  "details": [
+    "Minéral",
+    "Géologie",
+    "Solide"
+  ]
+}

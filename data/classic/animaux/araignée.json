@@ -1,0 +1,24 @@
+{
+  "id": "araignée",
+  "name": "Araignée",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "arachnide",
+    "huit pattes",
+    "toile",
+    "venimeuse",
+    "fileuse",
+    "insectivore",
+    "sombre"
+  ],
+  "summary": "Arachnide fileuse tissant des toiles pour capturer ses proies.",
+  "details": [
+    "Arachnide",
+    "Prédateur",
+    "Insectivore"
+  ]
+}

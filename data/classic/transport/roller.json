@@ -1,0 +1,24 @@
+{
+  "id": "roller",
+  "name": "Roller",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "patins",
+    "roues",
+    "pieds",
+    "urbain",
+    "glisse",
+    "sport",
+    "équilibre",
+    "vitesse"
+  ],
+  "summary": "Patins à roulettes en ligne.",
+  "details": [
+    "Transport",
+    "Roues",
+    "Sport"
+  ]
+}

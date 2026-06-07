@@ -1,0 +1,24 @@
+{
+  "id": "escalade",
+  "name": "Escalade",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mur",
+    "prise",
+    "corde",
+    "baudrier",
+    "grimper",
+    "falaise",
+    "difficulté",
+    "sécurité"
+  ],
+  "summary": "Sport de progression verticale.",
+  "details": [
+    "Sport",
+    "Verticale",
+    "Individuel"
+  ]
+}

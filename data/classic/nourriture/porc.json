@@ -1,0 +1,24 @@
+{
+  "id": "porc",
+  "name": "Porc",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "viande",
+    "rose",
+    "cochon",
+    "gras",
+    "charcuterie",
+    "cuisson",
+    "doux",
+    "jambon"
+  ],
+  "summary": "Viande rose du cochon domestique.",
+  "details": [
+    "Viande",
+    "Rose",
+    "Porcin"
+  ]
+}

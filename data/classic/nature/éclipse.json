@@ -1,0 +1,24 @@
+{
+  "id": "éclipse",
+  "name": "Éclipse",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "soleil",
+    "lune",
+    "ombre",
+    "rare",
+    "ciel",
+    "sombre",
+    "phénomène",
+    "observation"
+  ],
+  "summary": "Occultation d'un astre par un autre.",
+  "details": [
+    "Ciel",
+    "Occultation",
+    "Rare"
+  ]
+}

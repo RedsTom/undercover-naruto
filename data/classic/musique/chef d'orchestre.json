@@ -1,0 +1,24 @@
+{
+  "id": "chef d'orchestre",
+  "name": "Chef d'orchestre",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "direction",
+    "baguette",
+    "musiciens",
+    "tempo",
+    "interprétation",
+    "autorité",
+    "scène",
+    "classique"
+  ],
+  "summary": "Directeur d'ensemble musical.",
+  "details": [
+    "Musique",
+    "Direction",
+    "Classique"
+  ]
+}

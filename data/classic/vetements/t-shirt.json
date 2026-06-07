@@ -1,0 +1,24 @@
+{
+  "id": "t-shirt",
+  "name": "T-shirt",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "haut",
+    "manches courtes",
+    "coton",
+    "décontracté",
+    "col rond",
+    "imprimé",
+    "été",
+    "confort"
+  ],
+  "summary": "Haut léger à manches courtes.",
+  "details": [
+    "Vêtement",
+    "Haut",
+    "Décontracté"
+  ]
+}

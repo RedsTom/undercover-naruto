@@ -1,0 +1,24 @@
+{
+  "id": "maçon",
+  "name": "Maçon",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "construction",
+    "bâtiment",
+    "briques",
+    "ciment",
+    "mur",
+    "chantier",
+    "casque",
+    "physique"
+  ],
+  "summary": "Artisan qui construit les murs et structures.",
+  "details": [
+    "Construction",
+    "Bâtiment",
+    "Artisan"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "plage",
+  "name": "Plage",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "sable",
+    "vagues",
+    "soleil",
+    "été",
+    "vacances",
+    "serviette",
+    "baignade"
+  ],
+  "summary": "Zone de sable au bord de la mer.",
+  "details": [
+    "Nature",
+    "Mer",
+    "Vacances"
+  ]
+}

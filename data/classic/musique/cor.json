@@ -1,0 +1,24 @@
+{
+  "id": "cor",
+  "name": "Cor",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cuivre",
+    "pavillon",
+    "chasse",
+    "orchestre",
+    "rond",
+    "noble",
+    "harmonique"
+  ],
+  "summary": "Instrument à vent en cuivre enroulé.",
+  "details": [
+    "Instrument",
+    "Cuivre",
+    "Orchestre"
+  ]
+}

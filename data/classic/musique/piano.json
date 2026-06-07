@@ -1,0 +1,24 @@
+{
+  "id": "piano",
+  "name": "Piano",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "clavier",
+    "touches",
+    "cordes",
+    "marteau",
+    "classique",
+    "jazz",
+    "noir"
+  ],
+  "summary": "Instrument à clavier et cordes frappées.",
+  "details": [
+    "Instrument",
+    "Clavier",
+    "Cordes"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tracteur",
+  "name": "Tracteur",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "agricole",
+    "champs",
+    "puissant",
+    "roues",
+    "remorque",
+    "ferme",
+    "travail",
+    "lent"
+  ],
+  "summary": "Véhicule agricole puissant.",
+  "details": [
+    "Transport",
+    "Agriculture",
+    "Lourd"
+  ]
+}

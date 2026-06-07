@@ -1,0 +1,24 @@
+{
+  "id": "chariot",
+  "name": "Chariot",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "roues",
+    "transport",
+    "courses",
+    "supermarché",
+    "pousser",
+    "métal",
+    "pratique",
+    "charger"
+  ],
+  "summary": "Petit véhicule à pousser.",
+  "details": [
+    "Transport",
+    "Roues",
+    "Courses"
+  ]
+}

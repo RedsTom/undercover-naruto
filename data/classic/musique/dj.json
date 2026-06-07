@@ -1,0 +1,24 @@
+{
+  "id": "dj",
+  "name": "DJ",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "platines",
+    "mix",
+    "disque",
+    "club",
+    "électro",
+    "rythme",
+    "public",
+    "ambiance"
+  ],
+  "summary": "Animateur musical avec platines.",
+  "details": [
+    "Musique",
+    "Électronique",
+    "Club"
+  ]
+}

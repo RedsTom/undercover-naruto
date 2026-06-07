@@ -1,0 +1,24 @@
+{
+  "id": "cravate",
+  "name": "Cravate",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cou",
+    "tissu",
+    "nœud",
+    "chemise",
+    "formel",
+    "homme",
+    "élégant",
+    "soie"
+  ],
+  "summary": "Accessoire de cou masculin.",
+  "details": [
+    "Accessoire",
+    "Cou",
+    "Formel"
+  ]
+}

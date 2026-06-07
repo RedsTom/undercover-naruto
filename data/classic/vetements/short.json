@@ -1,0 +1,24 @@
+{
+  "id": "short",
+  "name": "Short",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "jambes",
+    "court",
+    "été",
+    "chaud",
+    "sport",
+    "décontracté",
+    "genoux"
+  ],
+  "summary": "Pantalon court s'arrêtant aux genoux.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Court"
+  ]
+}

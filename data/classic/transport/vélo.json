@@ -1,0 +1,24 @@
+{
+  "id": "vélo",
+  "name": "Vélo",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pédales",
+    "deux roues",
+    "chaîne",
+    "guidon",
+    "selle",
+    "écologique",
+    "sport",
+    "ville"
+  ],
+  "summary": "Véhicule à deux roues et pédales.",
+  "details": [
+    "Transport",
+    "Deux roues",
+    "Écologique"
+  ]
+}

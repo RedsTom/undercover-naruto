@@ -1,0 +1,24 @@
+{
+  "id": "poste",
+  "name": "Poste",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "courrier",
+    "colis",
+    "timbres",
+    "lettres",
+    "envoyer",
+    "recevoir",
+    "guichet",
+    "facteur"
+  ],
+  "summary": "Service public pour le courrier et colis.",
+  "details": [
+    "Service",
+    "Courrier",
+    "Public"
+  ]
+}

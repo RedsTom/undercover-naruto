@@ -1,0 +1,24 @@
+{
+  "id": "banjo",
+  "name": "Banjo",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "peau",
+    "manche",
+    "country",
+    "folk",
+    "américain",
+    "percussif"
+  ],
+  "summary": "Instrument à cordes à peau tendue.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Folk"
+  ]
+}

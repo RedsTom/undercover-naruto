@@ -1,0 +1,24 @@
+{
+  "id": "manteau",
+  "name": "Manteau",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "haut",
+    "chaud",
+    "hiver",
+    "long",
+    "laine",
+    "froid",
+    "capuche",
+    "doublé"
+  ],
+  "summary": "Vêtement chaud et long pour l'hiver.",
+  "details": [
+    "Vêtement",
+    "Haut",
+    "Hiver"
+  ]
+}

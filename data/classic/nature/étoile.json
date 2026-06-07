@@ -1,0 +1,24 @@
+{
+  "id": "étoile",
+  "name": "Étoile",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "nuit",
+    "ciel",
+    "lumière",
+    "point",
+    "brillant",
+    "lointain",
+    "constellation",
+    "magie"
+  ],
+  "summary": "Corps céleste lumineux.",
+  "details": [
+    "Ciel",
+    "Nuit",
+    "Lumière"
+  ]
+}

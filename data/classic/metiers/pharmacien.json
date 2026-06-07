@@ -1,0 +1,24 @@
+{
+  "id": "pharmacien",
+  "name": "Pharmacien",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "médicaments",
+    "ordonnance",
+    "conseil",
+    "officine",
+    "santé",
+    "préparation",
+    "produits",
+    "sécurité"
+  ],
+  "summary": "Professionnel du médicament.",
+  "details": [
+    "Santé",
+    "Médicament",
+    "Officine"
+  ]
+}

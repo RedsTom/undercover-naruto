@@ -1,0 +1,24 @@
+{
+  "id": "pluie",
+  "name": "Pluie",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "gouttes",
+    "ciel",
+    "mouillé",
+    "nuage",
+    "parapluie",
+    "orage",
+    "tomber"
+  ],
+  "summary": "Précipitation d'eau liquide.",
+  "details": [
+    "Eau",
+    "Météo",
+    "Précipitation"
+  ]
+}

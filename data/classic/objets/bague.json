@@ -1,0 +1,24 @@
+{
+  "id": "bague",
+  "name": "Bague",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bijou",
+    "doigt",
+    "or",
+    "argent",
+    "diamant",
+    "mariage",
+    "rond",
+    "précieux"
+  ],
+  "summary": "Anneau bijou porté au doigt.",
+  "details": [
+    "Bijou",
+    "Orfèvrerie",
+    "Accessoire"
+  ]
+}

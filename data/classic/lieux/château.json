@@ -1,0 +1,24 @@
+{
+  "id": "château",
+  "name": "Château",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "histoire",
+    "royal",
+    "tours",
+    "remparts",
+    "noble",
+    "visite",
+    "patrimoine",
+    "grand"
+  ],
+  "summary": "Grande demeure historique fortifiée.",
+  "details": [
+    "Histoire",
+    "Architecture",
+    "Patrimoine"
+  ]
+}

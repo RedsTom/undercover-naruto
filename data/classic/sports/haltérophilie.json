@@ -1,0 +1,24 @@
+{
+  "id": "haltérophilie",
+  "name": "Haltérophilie",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "poids",
+    "barre",
+    "force",
+    "musculation",
+    "arraché",
+    "épaulé",
+    "olympique",
+    "puissance"
+  ],
+  "summary": "Sport de soulèvement de poids.",
+  "details": [
+    "Sport",
+    "Force",
+    "Individuel"
+  ]
+}

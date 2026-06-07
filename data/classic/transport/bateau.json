@@ -1,0 +1,24 @@
+{
+  "id": "bateau",
+  "name": "Bateau",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "coque",
+    "voile",
+    "moteur",
+    "passagers",
+    "navigation",
+    "port",
+    "flotte"
+  ],
+  "summary": "Véhicule de transport maritime.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Eau"
+  ]
+}

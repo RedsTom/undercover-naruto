@@ -1,0 +1,24 @@
+{
+  "id": "briquet",
+  "name": "Briquet",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "feu",
+    "gaz",
+    "molette",
+    "flamme",
+    "métal",
+    "réutilisable",
+    "poche",
+    "allumer"
+  ],
+  "summary": "Appareil portatif pour produire du feu.",
+  "details": [
+    "Combustion",
+    "Allumage",
+    "Accessoire"
+  ]
+}

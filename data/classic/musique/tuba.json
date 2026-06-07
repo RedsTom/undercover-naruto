@@ -1,0 +1,24 @@
+{
+  "id": "tuba",
+  "name": "Tuba",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cuivre",
+    "très grave",
+    "grand",
+    "orchestre",
+    "fanfare",
+    "puissant",
+    "profond"
+  ],
+  "summary": "Plus grand instrument à vent en cuivre.",
+  "details": [
+    "Instrument",
+    "Cuivre",
+    "Grave"
+  ]
+}

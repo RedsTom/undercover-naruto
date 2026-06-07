@@ -1,0 +1,24 @@
+{
+  "id": "mouton",
+  "name": "Mouton",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "ovidé",
+    "laine",
+    "cornes",
+    "bêlement",
+    "troupeau"
+  ],
+  "summary": "Mammifère ruminant de la famille des ovidés, élevé pour sa laine.",
+  "details": [
+    "Ovidé",
+    "Ruminant",
+    "Animal d'élevage"
+  ]
+}

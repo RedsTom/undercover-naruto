@@ -1,0 +1,24 @@
+{
+  "id": "violoncelle",
+  "name": "Violoncelle",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "archet",
+    "grave",
+    "bois",
+    "orchestre",
+    "assis",
+    "profond"
+  ],
+  "summary": "Grand instrument à cordes frottées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Grave"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "basson",
+  "name": "Basson",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "vent",
+    "anche double",
+    "grave",
+    "bois",
+    "long",
+    "classique",
+    "orchestre"
+  ],
+  "summary": "Instrument à vent à anche double grave.",
+  "details": [
+    "Instrument",
+    "Vent",
+    "Grave"
+  ]
+}

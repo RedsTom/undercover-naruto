@@ -1,0 +1,24 @@
+{
+  "id": "cuisinier",
+  "name": "Cuisinier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cuisine",
+    "recettes",
+    "four",
+    "couteaux",
+    "restaurant",
+    "plats",
+    "brigade",
+    "toque"
+  ],
+  "summary": "Professionnel qui prépare les repas.",
+  "details": [
+    "Restauration",
+    "Cuisine",
+    "Gastronomie"
+  ]
+}

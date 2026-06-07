@@ -1,0 +1,24 @@
+{
+  "id": "gare",
+  "name": "Gare",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "train",
+    "quai",
+    "billets",
+    "départ",
+    "arrivée",
+    "voyage",
+    "rails",
+    "hall"
+  ],
+  "summary": "Station pour le transport ferroviaire.",
+  "details": [
+    "Transport",
+    "Ferroviaire",
+    "Infrastructure"
+  ]
+}

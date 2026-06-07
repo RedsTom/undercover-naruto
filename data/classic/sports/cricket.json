@@ -1,0 +1,24 @@
+{
+  "id": "cricket",
+  "name": "Cricket",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "batte",
+    "balle",
+    "wicket",
+    "équipe",
+    "terrain",
+    "lanceur",
+    "frappeur",
+    "anglais"
+  ],
+  "summary": "Sport collectif anglais avec batte.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Anglais"
+  ]
+}

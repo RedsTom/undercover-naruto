@@ -1,0 +1,24 @@
+{
+  "id": "pain",
+  "name": "Pain",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "féculent",
+    "blé",
+    "farine",
+    "levure",
+    "cuisson",
+    "croûte",
+    "mie",
+    "repas"
+  ],
+  "summary": "Aliment de base fait de farine, eau et levure cuits.",
+  "details": [
+    "Féculent",
+    "Céréale",
+    "Boulangerie"
+  ]
+}

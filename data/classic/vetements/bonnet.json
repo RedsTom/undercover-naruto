@@ -1,0 +1,24 @@
+{
+  "id": "bonnet",
+  "name": "Bonnet",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tête",
+    "chaud",
+    "laine",
+    "hiver",
+    "froid",
+    "tricot",
+    "confort",
+    "neige"
+  ],
+  "summary": "Couvre-chef chaud pour l'hiver.",
+  "details": [
+    "Accessoire",
+    "Tête",
+    "Hiver"
+  ]
+}

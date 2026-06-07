@@ -1,0 +1,24 @@
+{
+  "id": "pousse-pousse",
+  "name": "Pousse-pousse",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "asiatique",
+    "humain",
+    "traction",
+    "tourisme",
+    "ville",
+    "ancien",
+    "traditionnel",
+    "lent"
+  ],
+  "summary": "Véhicule à traction humaine.",
+  "details": [
+    "Transport",
+    "Humain",
+    "Traditionnel"
+  ]
+}

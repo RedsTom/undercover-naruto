@@ -1,0 +1,24 @@
+{
+  "id": "note",
+  "name": "Note",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "son",
+    "hauteur",
+    "partition",
+    "gamme",
+    "musique",
+    "lecture",
+    "chant",
+    "instrument"
+  ],
+  "summary": "Son musical de hauteur déterminée.",
+  "details": [
+    "Musique",
+    "Son",
+    "Hauteur"
+  ]
+}

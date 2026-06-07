@@ -1,0 +1,24 @@
+{
+  "id": "concert",
+  "name": "Concert",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "spectacle",
+    "scène",
+    "public",
+    "artiste",
+    "live",
+    "salle",
+    "ambiance",
+    "musique"
+  ],
+  "summary": "Spectacle musical en public.",
+  "details": [
+    "Spectacle",
+    "Musique",
+    "Public"
+  ]
+}

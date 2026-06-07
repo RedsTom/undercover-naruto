@@ -1,0 +1,24 @@
+{
+  "id": "musculation",
+  "name": "Musculation",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "poids",
+    "muscle",
+    "salle",
+    "force",
+    "esthétique",
+    "entraînement",
+    "haltère",
+    "machine"
+  ],
+  "summary": "Entraînement pour développer les muscles.",
+  "details": [
+    "Sport",
+    "Muscle",
+    "Individuel"
+  ]
+}

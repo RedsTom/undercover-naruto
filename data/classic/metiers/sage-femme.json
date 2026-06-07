@@ -1,0 +1,24 @@
+{
+  "id": "sage-femme",
+  "name": "Sage-femme",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "naissance",
+    "accouchement",
+    "grossesse",
+    "bébé",
+    "maternité",
+    "soins",
+    "suivi",
+    "médical"
+  ],
+  "summary": "Professionnelle de l'accouchement.",
+  "details": [
+    "Santé",
+    "Maternité",
+    "Médical"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "brouette",
+  "name": "Brouette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "une roue",
+    "jardin",
+    "terre",
+    "pousser",
+    "bricolage",
+    "charges",
+    "manche",
+    "jardinerie"
+  ],
+  "summary": "Petit véhicule à une roue.",
+  "details": [
+    "Transport",
+    "Une roue",
+    "Jardin"
+  ]
+}

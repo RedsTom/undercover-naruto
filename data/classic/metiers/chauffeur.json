@@ -1,0 +1,24 @@
+{
+  "id": "chauffeur",
+  "name": "Chauffeur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voiture",
+    "conduite",
+    "permis",
+    "passagers",
+    "taxi",
+    "route",
+    "véhicule",
+    "transport"
+  ],
+  "summary": "Personne qui conduit un véhicule.",
+  "details": [
+    "Transport",
+    "Conduite",
+    "Service"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "thé",
+  "name": "Thé",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "chaude",
+    "infusion",
+    "feuilles",
+    "théine",
+    "doux",
+    "Asie",
+    "tasse"
+  ],
+  "summary": "Boisson chaude obtenue par infusion de feuilles de théier.",
+  "details": [
+    "Boisson",
+    "Stimulant",
+    "Infusion"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "marimba",
+  "name": "Marimba",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "lames",
+    "bois",
+    "grave",
+    "tubes",
+    "mélodique",
+    "doux"
+  ],
+  "summary": "Grand xylophone aux sons graves.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Grave"
+  ]
+}

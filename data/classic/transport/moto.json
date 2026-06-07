@@ -1,0 +1,24 @@
+{
+  "id": "moto",
+  "name": "Moto",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "deux roues",
+    "moteur",
+    "vitesse",
+    "liberté",
+    "casque",
+    "route",
+    "puissance",
+    "passion"
+  ],
+  "summary": "Véhicule à deux roues motorisé.",
+  "details": [
+    "Transport",
+    "Deux roues",
+    "Rapide"
+  ]
+}

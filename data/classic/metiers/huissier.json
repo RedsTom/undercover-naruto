@@ -1,0 +1,24 @@
+{
+  "id": "huissier",
+  "name": "Huissier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "justice",
+    "signification",
+    "saisie",
+    "constat",
+    "autorité",
+    "étude",
+    "exécution",
+    "tribunal"
+  ],
+  "summary": "Officier ministériel chargé des significations.",
+  "details": [
+    "Justice",
+    "Officier",
+    "Exécution"
+  ]
+}

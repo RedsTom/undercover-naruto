@@ -1,0 +1,24 @@
+{
+  "id": "gamme",
+  "name": "Gamme",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "suite",
+    "notes",
+    "majeur",
+    "mineur",
+    "tonalité",
+    "exercice",
+    "échelle",
+    "musique"
+  ],
+  "summary": "Suite ordonnée de notes.",
+  "details": [
+    "Musique",
+    "Note",
+    "Échelle"
+  ]
+}

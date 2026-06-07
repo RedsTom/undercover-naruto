@@ -1,0 +1,24 @@
+{
+  "id": "chaussettes",
+  "name": "Chaussettes",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pieds",
+    "coton",
+    "chaussures",
+    "chaud",
+    "confort",
+    "élastique",
+    "paire",
+    "tissu"
+  ],
+  "summary": "Vêtement couvrant les pieds.",
+  "details": [
+    "Vêtement",
+    "Pieds",
+    "Intérieur"
+  ]
+}

@@ -27,10 +27,24 @@ const props = defineProps<{
   label?: string;
 }>();
 
+const emit = defineEmits<{ timeout: [] }>();
+
 const now = ref(Date.now());
 let interval: ReturnType<typeof setInterval> | null = null;
+let hasExpired = false;
 
-onMounted(() => { interval = setInterval(() => { now.value = Date.now(); }, 100); });
+onMounted(() => {
+  interval = setInterval(() => {
+    now.value = Date.now();
+    if (!hasExpired && props.endTime && Date.now() >= props.endTime) {
+      hasExpired = true;
+      emit('timeout');
+    }
+  }, 100);
+});
+
+watch(() => props.endTime, () => { hasExpired = false; });
+
 onUnmounted(() => { if (interval) clearInterval(interval); });
 
 const remainingMs = computed(() => {

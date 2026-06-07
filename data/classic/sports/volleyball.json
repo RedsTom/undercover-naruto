@@ -1,0 +1,24 @@
+{
+  "id": "volleyball",
+  "name": "Volleyball",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "filet",
+    "équipe",
+    "manche",
+    "salle",
+    "plage",
+    "service",
+    "smash"
+  ],
+  "summary": "Sport collectif avec ballon et filet haut.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Filet"
+  ]
+}

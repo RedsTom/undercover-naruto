@@ -1,0 +1,24 @@
+{
+  "id": "hoverboard",
+  "name": "Hoverboard",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plateau",
+    "roues",
+    "équilibre",
+    "électrique",
+    "jeune",
+    "urbain",
+    "moderne",
+    "tendance"
+  ],
+  "summary": "Planche auto-équilibrée électrique.",
+  "details": [
+    "Transport",
+    "Électrique",
+    "Moderne"
+  ]
+}

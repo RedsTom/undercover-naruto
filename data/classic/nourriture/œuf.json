@@ -1,0 +1,24 @@
+{
+  "id": "œuf",
+  "name": "Œuf",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "poule",
+    "coquille",
+    "blanc",
+    "jaune",
+    "protéine",
+    "cuisine",
+    "base"
+  ],
+  "summary": "Produit de la ponte des poules, base de la cuisine.",
+  "details": [
+    "Animal",
+    "Protéine",
+    "Volaille"
+  ]
+}

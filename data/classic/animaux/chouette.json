@@ -1,0 +1,24 @@
+{
+  "id": "chouette",
+  "name": "Chouette",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "rapace",
+    "strigidé",
+    "plumes",
+    "nocturne",
+    "yeux",
+    "silencieuse"
+  ],
+  "summary": "Oiseau rapace nocturne, sans aigrettes.",
+  "details": [
+    "Strigidé",
+    "Rapace nocturne",
+    "Oiseau de proie"
+  ]
+}

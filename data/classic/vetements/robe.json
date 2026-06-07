@@ -1,0 +1,24 @@
+{
+  "id": "robe",
+  "name": "Robe",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "femme",
+    "haut",
+    "bas",
+    "une pièce",
+    "élégante",
+    "tissu",
+    "soirée",
+    "été"
+  ],
+  "summary": "Vêtement féminin d'une seule pièce.",
+  "details": [
+    "Vêtement",
+    "Une pièce",
+    "Féminin"
+  ]
+}

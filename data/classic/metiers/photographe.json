@@ -1,0 +1,24 @@
+{
+  "id": "photographe",
+  "name": "Photographe",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "appareil",
+    "photo",
+    "image",
+    "cadrage",
+    "lumière",
+    "portrait",
+    "reportage",
+    "objectif"
+  ],
+  "summary": "Personne qui prend des photographies.",
+  "details": [
+    "Photographie",
+    "Image",
+    "Art"
+  ]
+}

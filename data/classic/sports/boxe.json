@@ -1,0 +1,24 @@
+{
+  "id": "boxe",
+  "name": "Boxe",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "combat",
+    "poing",
+    "ring",
+    "gant",
+    "round",
+    "arbitre",
+    "physique",
+    "technique"
+  ],
+  "summary": "Sport de combat à mains gantées.",
+  "details": [
+    "Sport",
+    "Combat",
+    "Individuel"
+  ]
+}

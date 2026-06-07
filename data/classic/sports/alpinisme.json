@@ -1,0 +1,24 @@
+{
+  "id": "alpinisme",
+  "name": "Alpinisme",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "montagne",
+    "sommet",
+    "corde",
+    "glacier",
+    "altitude",
+    "crampons",
+    "piolet",
+    "expédition"
+  ],
+  "summary": "Ascension de montagnes.",
+  "details": [
+    "Sport",
+    "Montagne",
+    "Altitude"
+  ]
+}

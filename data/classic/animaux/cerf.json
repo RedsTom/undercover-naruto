@@ -1,0 +1,24 @@
+{
+  "id": "cerf",
+  "name": "Cerf",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "cervidé",
+    "bois",
+    "ramure",
+    "forêt",
+    "brame"
+  ],
+  "summary": "Grand mammifère cervidé portant des bois sur la tête.",
+  "details": [
+    "Cervidé",
+    "Herbivore",
+    "Ongulé"
+  ]
+}

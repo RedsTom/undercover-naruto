@@ -1,0 +1,24 @@
+{
+  "id": "mousse",
+  "name": "Mousse",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plante",
+    "vert",
+    "humide",
+    "pierre",
+    "forêt",
+    "doux",
+    "tapis",
+    "ombre"
+  ],
+  "summary": "Petite plante verte des lieux humides.",
+  "details": [
+    "Végétal",
+    "Humide",
+    "Tapis"
+  ]
+}

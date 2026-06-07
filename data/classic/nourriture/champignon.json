@@ -1,0 +1,24 @@
+{
+  "id": "champignon",
+  "name": "Champignon",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "fungi",
+    "chapeau",
+    "pied",
+    "forêt",
+    "humide",
+    "umami",
+    "cuisine"
+  ],
+  "summary": "Organisme fongique comestible au chapeau et au pied.",
+  "details": [
+    "Fungi",
+    "Basidiomycète",
+    "Comestible"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "horloge",
+  "name": "Horloge",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "temps",
+    "aiguilles",
+    "cadran",
+    "mur",
+    "tic-tac",
+    "heures",
+    "minutes",
+    "secondes"
+  ],
+  "summary": "Instrument de mesure du temps.",
+  "details": [
+    "Instrument",
+    "Temps",
+    "Mécanique"
+  ]
+}

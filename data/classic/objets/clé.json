@@ -1,0 +1,24 @@
+{
+  "id": "clé",
+  "name": "Clé",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ouvrir",
+    "serrure",
+    "métal",
+    "porte",
+    "petit",
+    "anneau",
+    "dentelé",
+    "accès"
+  ],
+  "summary": "Objet métallique pour ouvrir une serrure.",
+  "details": [
+    "Sécurité",
+    "Métal",
+    "Accès"
+  ]
+}

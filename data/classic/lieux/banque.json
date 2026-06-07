@@ -1,0 +1,24 @@
+{
+  "id": "banque",
+  "name": "Banque",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "argent",
+    "comptes",
+    "prêts",
+    "guichet",
+    "conseiller",
+    "finance",
+    "dépôts",
+    "retraits"
+  ],
+  "summary": "Établissement financier pour gérer l'argent.",
+  "details": [
+    "Finance",
+    "Argent",
+    "Services"
+  ]
+}

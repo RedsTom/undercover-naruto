@@ -1,0 +1,24 @@
+{
+  "id": "ingénieur",
+  "name": "Ingénieur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "technique",
+    "conception",
+    "calcul",
+    "projet",
+    "science",
+    "entreprise",
+    "innovation",
+    "diplôme"
+  ],
+  "summary": "Professionnel de la conception technique.",
+  "details": [
+    "Technique",
+    "Ingénierie",
+    "Privé"
+  ]
+}

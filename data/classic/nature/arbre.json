@@ -1,0 +1,24 @@
+{
+  "id": "arbre",
+  "name": "Arbre",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "végétal",
+    "tronc",
+    "branches",
+    "feuilles",
+    "forêt",
+    "oxygène",
+    "racines",
+    "grand"
+  ],
+  "summary": "Grand végétal ligneux à tronc.",
+  "details": [
+    "Végétal",
+    "Ligneux",
+    "Forêt"
+  ]
+}

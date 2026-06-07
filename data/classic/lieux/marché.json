@@ -1,0 +1,24 @@
+{
+  "id": "marché",
+  "name": "Marché",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "commerce",
+    "stands",
+    "frais",
+    "légumes",
+    "fruits",
+    "plein air",
+    "matin",
+    "animation"
+  ],
+  "summary": "Lieu de vente en plein air de produits frais.",
+  "details": [
+    "Commerce",
+    "Alimentation",
+    "Plein air"
+  ]
+}

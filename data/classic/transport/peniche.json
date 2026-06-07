@@ -1,0 +1,9 @@
+{
+  "id": "péniche",
+  "name": "Péniche",
+  "category": "transport",
+  "era": ["classique"],
+  "tags": ["rivière", "canal", "marchandise", "fluvial", "lent", "barge", "eau douce", "transport"],
+  "summary": "Grand bateau de transport fluvial.",
+  "details": ["Transport", "Fluvial", "Marchandise"]
+}

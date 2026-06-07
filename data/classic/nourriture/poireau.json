@@ -1,0 +1,24 @@
+{
+  "id": "poireau",
+  "name": "Poireau",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "tige",
+    "vert",
+    "blanc",
+    "doux",
+    "soupe",
+    "cuisine",
+    "long"
+  ],
+  "summary": "Légume à la tige cylindrique verte et blanche.",
+  "details": [
+    "Légume",
+    "Tige",
+    "Alliacée"
+  ]
+}

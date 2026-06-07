@@ -1,0 +1,24 @@
+{
+  "id": "aviron",
+  "name": "Aviron",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rame",
+    "bateau",
+    "eau",
+    "lac",
+    "rivière",
+    "équipe",
+    "rythme",
+    "endurance"
+  ],
+  "summary": "Sport de propulsion à rames.",
+  "details": [
+    "Sport",
+    "Eau",
+    "Équipe"
+  ]
+}

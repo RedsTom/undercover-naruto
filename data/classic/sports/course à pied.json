@@ -1,0 +1,24 @@
+{
+  "id": "course à pied",
+  "name": "Course à pied",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "courir",
+    "endurance",
+    "vitesse",
+    "route",
+    "piste",
+    "chaussures",
+    "cardio",
+    "santé"
+  ],
+  "summary": "Sport de déplacement rapide à pied.",
+  "details": [
+    "Sport",
+    "Course",
+    "Individuel"
+  ]
+}

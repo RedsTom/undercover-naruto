@@ -1,0 +1,24 @@
+{
+  "id": "kitesurf",
+  "name": "Kitesurf",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cerf-volant",
+    "planche",
+    "mer",
+    "vent",
+    "glisse",
+    "saut",
+    "extrême",
+    "sensation"
+  ],
+  "summary": "Sport de glisse tracté par un cerf-volant.",
+  "details": [
+    "Sport",
+    "Mer",
+    "Extrême"
+  ]
+}

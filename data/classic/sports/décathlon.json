@@ -1,0 +1,24 @@
+{
+  "id": "décathlon",
+  "name": "Décathlon",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "dix",
+    "épreuves",
+    "athlétisme",
+    "polyvalent",
+    "olympique",
+    "points",
+    "complet",
+    "champion"
+  ],
+  "summary": "Compétition d'athlétisme en dix épreuves.",
+  "details": [
+    "Sport",
+    "Athlétisme",
+    "Polyvalent"
+  ]
+}

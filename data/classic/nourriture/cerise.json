@@ -1,0 +1,24 @@
+{
+  "id": "cerise",
+  "name": "Cerise",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "rouge",
+    "petit",
+    "noyau",
+    "tige",
+    "printemps",
+    "sucré",
+    "arbre"
+  ],
+  "summary": "Petit fruit rouge à noyau du cerisier.",
+  "details": [
+    "Fruit",
+    "Drupe",
+    "Comestible"
+  ]
+}

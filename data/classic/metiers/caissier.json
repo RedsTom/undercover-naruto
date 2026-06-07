@@ -1,0 +1,24 @@
+{
+  "id": "caissier",
+  "name": "Caissier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "caisse",
+    "argent",
+    "supermarché",
+    "scan",
+    "client",
+    "monnaie",
+    "ticket",
+    "accueil"
+  ],
+  "summary": "Personnel encaissant les achats.",
+  "details": [
+    "Commerce",
+    "Caisse",
+    "Accueil"
+  ]
+}

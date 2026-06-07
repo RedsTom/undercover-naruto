@@ -1,0 +1,24 @@
+{
+  "id": "randonnée",
+  "name": "Randonnée",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "marche",
+    "montagne",
+    "sentier",
+    "nature",
+    "sac à dos",
+    "endurance",
+    "plein air",
+    "découverte"
+  ],
+  "summary": "Marche sportive en nature.",
+  "details": [
+    "Sport",
+    "Marche",
+    "Nature"
+  ]
+}

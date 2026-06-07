@@ -1,0 +1,24 @@
+{
+  "id": "artiste",
+  "name": "Artiste",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "création",
+    "œuvre",
+    "talent",
+    "exposition",
+    "peinture",
+    "sculpture",
+    "inspiration",
+    "galerie"
+  ],
+  "summary": "Personne qui crée des œuvres d'art.",
+  "details": [
+    "Art",
+    "Création",
+    "Culture"
+  ]
+}

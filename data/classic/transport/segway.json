@@ -1,0 +1,24 @@
+{
+  "id": "segway",
+  "name": "Segway",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "électrique",
+    "équilibre",
+    "debout",
+    "urbain",
+    "moderne",
+    "gyropode",
+    "tourisme",
+    "innovant"
+  ],
+  "summary": "Transport personnel auto-équilibré.",
+  "details": [
+    "Transport",
+    "Électrique",
+    "Moderne"
+  ]
+}

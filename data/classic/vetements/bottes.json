@@ -1,0 +1,24 @@
+{
+  "id": "bottes",
+  "name": "Bottes",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pieds",
+    "hautes",
+    "hiver",
+    "pluie",
+    "cuir",
+    "chaud",
+    "marcher",
+    "neige"
+  ],
+  "summary": "Chaussures montantes pour l'hiver.",
+  "details": [
+    "Chaussures",
+    "Pieds",
+    "Hiver"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "montgolfière",
+  "name": "Montgolfière",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "air chaud",
+    "vol",
+    "lent",
+    "panier",
+    "tourisme",
+    "spectaculaire",
+    "ciel"
+  ],
+  "summary": "Ballon à air chaud.",
+  "details": [
+    "Transport",
+    "Aérien",
+    "Tourisme"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "canoë",
+  "name": "Canoë",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "pagaie",
+    "rivière",
+    "sport",
+    "ouvert",
+    "génér",
+    "traditionnel",
+    "nature"
+  ],
+  "summary": "Embarcation ouverte à pagaie.",
+  "details": [
+    "Transport",
+    "Eau",
+    "Traditionnel"
+  ]
+}

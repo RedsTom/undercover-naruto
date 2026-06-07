@@ -1,0 +1,24 @@
+{
+  "id": "musicien",
+  "name": "Musicien",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "musique",
+    "concert",
+    "partition",
+    "scène",
+    "mélodie",
+    "orchestre",
+    "talent"
+  ],
+  "summary": "Personne qui joue de la musique.",
+  "details": [
+    "Musique",
+    "Art",
+    "Spectacle"
+  ]
+}

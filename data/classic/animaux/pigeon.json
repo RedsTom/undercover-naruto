@@ -1,0 +1,23 @@
+{
+  "id": "pigeon",
+  "name": "Pigeon",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "columbidé",
+    "plumes",
+    "roucoule",
+    "ville",
+    "messager"
+  ],
+  "summary": "Oiseau de la famille des columbidés, souvent urbain.",
+  "details": [
+    "Columbidé",
+    "Oiseau",
+    "Volatile"
+  ]
+}

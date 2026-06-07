@@ -1,0 +1,24 @@
+{
+  "id": "navire",
+  "name": "Navire",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "grand",
+    "commerce",
+    "passagers",
+    "équipage",
+    "pavillon",
+    "port",
+    "cargaison"
+  ],
+  "summary": "Grand bâtiment de mer.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Grand"
+  ]
+}

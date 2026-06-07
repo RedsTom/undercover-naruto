@@ -1,0 +1,24 @@
+{
+  "id": "scie",
+  "name": "Scie",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "couper",
+    "dents",
+    "lame",
+    "bois",
+    "métal",
+    "bricolage",
+    "manche"
+  ],
+  "summary": "Outil à lame dentée pour couper.",
+  "details": [
+    "Outil",
+    "Bricolage",
+    "Coupe"
+  ]
+}

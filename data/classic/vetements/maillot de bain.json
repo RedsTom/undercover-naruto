@@ -1,0 +1,24 @@
+{
+  "id": "maillot de bain",
+  "name": "Maillot de bain",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "nage",
+    "plage",
+    "piscine",
+    "été",
+    "tissu",
+    "moulant",
+    "sport"
+  ],
+  "summary": "Vêtement pour la baignade.",
+  "details": [
+    "Vêtement",
+    "Bain",
+    "Été"
+  ]
+}

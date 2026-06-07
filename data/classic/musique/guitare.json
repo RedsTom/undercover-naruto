@@ -1,0 +1,24 @@
+{
+  "id": "guitare",
+  "name": "Guitare",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "bois",
+    "manche",
+    "accord",
+    "mélodie",
+    "pop",
+    "rock"
+  ],
+  "summary": "Instrument à cordes pincées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Bois"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "golf",
+  "name": "Golf",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "club",
+    "balle",
+    "trou",
+    "green",
+    "parcours",
+    "précision",
+    "calme",
+    "herbe"
+  ],
+  "summary": "Sport de précision avec club et balle.",
+  "details": [
+    "Sport",
+    "Précision",
+    "Plein air"
+  ]
+}

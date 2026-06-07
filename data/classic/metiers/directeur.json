@@ -1,0 +1,24 @@
+{
+  "id": "directeur",
+  "name": "Directeur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "entreprise",
+    "décision",
+    "équipe",
+    "management",
+    "stratégie",
+    "réunion",
+    "responsabilité",
+    "bureau"
+  ],
+  "summary": "Responsable de la direction d'une entreprise.",
+  "details": [
+    "Management",
+    "Direction",
+    "Entreprise"
+  ]
+}

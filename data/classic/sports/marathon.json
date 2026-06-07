@@ -1,0 +1,24 @@
+{
+  "id": "marathon",
+  "name": "Marathon",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "course",
+    "42 km",
+    "endurance",
+    "route",
+    "longue distance",
+    "médaille",
+    "temps",
+    "dépassement"
+  ],
+  "summary": "Course à pied de 42,195 km.",
+  "details": [
+    "Sport",
+    "Course",
+    "Longue distance"
+  ]
+}

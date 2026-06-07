@@ -1,0 +1,24 @@
+{
+  "id": "fromage",
+  "name": "Fromage",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "laitier",
+    "lait",
+    "fermenté",
+    "affiné",
+    "calcium",
+    "fort",
+    "France",
+    "variété"
+  ],
+  "summary": "Produit laitier fermenté et affiné.",
+  "details": [
+    "Laitier",
+    "Fermenté",
+    "Fromagerie"
+  ]
+}

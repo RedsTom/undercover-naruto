@@ -1,0 +1,24 @@
+{
+  "id": "basketball",
+  "name": "Basketball",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "main",
+    "panier",
+    "équipe",
+    "terrain",
+    "salle",
+    "dribble",
+    "shoot"
+  ],
+  "summary": "Sport collectif avec ballon et paniers.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Ballon"
+  ]
+}

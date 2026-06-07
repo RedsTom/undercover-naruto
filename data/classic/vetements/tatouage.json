@@ -1,0 +1,24 @@
+{
+  "id": "tatouage",
+  "name": "Tatouage",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "peau",
+    "encre",
+    "dessin",
+    "permanent",
+    "aiguille",
+    "art",
+    "décoration",
+    "symbolique"
+  ],
+  "summary": "Dessin permanent sur la peau.",
+  "details": [
+    "Art",
+    "Peau",
+    "Permanent"
+  ]
+}

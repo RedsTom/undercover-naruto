@@ -1,0 +1,24 @@
+{
+  "id": "infirmier",
+  "name": "Infirmier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "soins",
+    "malades",
+    "hôpital",
+    "piqûres",
+    "pansements",
+    "médecin",
+    "blouse",
+    "nuit"
+  ],
+  "summary": "Professionnel paramédical prodiguant des soins.",
+  "details": [
+    "Santé",
+    "Paramédical",
+    "Hospitalier"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "casquette",
+  "name": "Casquette",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tête",
+    "visière",
+    "soleil",
+    "sport",
+    "coton",
+    "réglable",
+    "décontracté",
+    "été"
+  ],
+  "summary": "Couvre-chef à visière.",
+  "details": [
+    "Accessoire",
+    "Tête",
+    "Sport"
+  ]
+}

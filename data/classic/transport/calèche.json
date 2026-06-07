@@ -1,0 +1,24 @@
+{
+  "id": "calèche",
+  "name": "Calèche",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cheval",
+    "passagers",
+    "tourisme",
+    "ville",
+    "élégant",
+    "ancien",
+    "promenade",
+    "hippomobile"
+  ],
+  "summary": "Voiture hippomobile de promenade.",
+  "details": [
+    "Transport",
+    "Animal",
+    "Tourisme"
+  ]
+}

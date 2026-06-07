@@ -1,0 +1,24 @@
+{
+  "id": "souris",
+  "name": "Souris",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "rongeur",
+    "mammifère",
+    "muridé",
+    "poils",
+    "petite",
+    "discrète",
+    "fromage"
+  ],
+  "summary": "Petit rongeur muridé discret et agile.",
+  "details": [
+    "Rongeur",
+    "Omnivore",
+    "Muridé"
+  ]
+}

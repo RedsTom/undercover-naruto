@@ -1,0 +1,24 @@
+{
+  "id": "contrebasse",
+  "name": "Contrebasse",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "archet",
+    "très grave",
+    "grand",
+    "jazz",
+    "orchestre",
+    "profond"
+  ],
+  "summary": "Plus grand instrument à cordes frottées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Grave"
+  ]
+}

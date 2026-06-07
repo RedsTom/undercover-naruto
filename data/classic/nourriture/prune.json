@@ -1,0 +1,24 @@
+{
+  "id": "prune",
+  "name": "Prune",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "violet",
+    "noyau",
+    "juteux",
+    "sucré",
+    "été",
+    "arbre",
+    "pruneau"
+  ],
+  "summary": "Fruit du prunier à la peau violette et au noyau.",
+  "details": [
+    "Fruit",
+    "Drupe",
+    "Comestible"
+  ]
+}

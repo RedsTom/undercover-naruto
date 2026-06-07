@@ -1,0 +1,24 @@
+{
+  "id": "maison",
+  "name": "Maison",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "habitation",
+    "toit",
+    "murs",
+    "famille",
+    "vivre",
+    "jardin",
+    "portefenêtres",
+    "privé"
+  ],
+  "summary": "Bâtiment d'habitation pour une famille.",
+  "details": [
+    "Bâtiment",
+    "Habitation",
+    "Résidence"
+  ]
+}

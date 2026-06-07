@@ -1,0 +1,24 @@
+{
+  "id": "montagne",
+  "name": "Montagne",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sommet",
+    "altitude",
+    "neige",
+    "randonnée",
+    "ski",
+    "pic",
+    "vallée",
+    "nature"
+  ],
+  "summary": "Relief élevé de la surface terrestre.",
+  "details": [
+    "Nature",
+    "Relief",
+    "Géographie"
+  ]
+}

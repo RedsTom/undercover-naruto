@@ -1,0 +1,24 @@
+{
+  "id": "pomme de terre",
+  "name": "Pomme de terre",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "tubercule",
+    "terre",
+    "fécule",
+    "cuisine",
+    "purée",
+    "frites",
+    "brun"
+  ],
+  "summary": "Tubercule comestible base de l'alimentation mondiale.",
+  "details": [
+    "Légume",
+    "Tubercule",
+    "Solanacée"
+  ]
+}

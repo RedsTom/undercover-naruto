@@ -1,0 +1,24 @@
+{
+  "id": "givre",
+  "name": "Givre",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "froid",
+    "cristaux",
+    "glace",
+    "matin",
+    "blanc",
+    "fenêtre",
+    "délicat",
+    "hiver"
+  ],
+  "summary": "Cristaux de glace sur les surfaces.",
+  "details": [
+    "Froid",
+    "Cristaux",
+    "Hiver"
+  ]
+}

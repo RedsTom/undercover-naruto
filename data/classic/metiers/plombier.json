@@ -1,0 +1,24 @@
+{
+  "id": "plombier",
+  "name": "Plombier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tuyaux",
+    "eau",
+    "réparation",
+    "salle de bain",
+    "fuite",
+    "outils",
+    "dépannage",
+    "urgence"
+  ],
+  "summary": "Artisan spécialisé dans les canalisations.",
+  "details": [
+    "Artisan",
+    "Plomberie",
+    "Dépannage"
+  ]
+}

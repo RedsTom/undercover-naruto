@@ -1,0 +1,24 @@
+{
+  "id": "kinésithérapeute",
+  "name": "Kinésithérapeute",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rééducation",
+    "massage",
+    "mouvement",
+    "douleur",
+    "sport",
+    "kiné",
+    "soins",
+    "rééducation"
+  ],
+  "summary": "Professionnel de la rééducation physique.",
+  "details": [
+    "Santé",
+    "Rééducation",
+    "Paramédical"
+  ]
+}

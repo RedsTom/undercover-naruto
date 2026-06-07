@@ -1,0 +1,24 @@
+{
+  "id": "ceinture",
+  "name": "Ceinture",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "taille",
+    "cuir",
+    "boucle",
+    "pantalon",
+    "serrer",
+    "accessoire",
+    "mode",
+    "tenir"
+  ],
+  "summary": "Bande de cuir ou tissu pour tenir le pantalon.",
+  "details": [
+    "Accessoire",
+    "Mode",
+    "Vêtement"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "peigne",
+  "name": "Peigne",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cheveux",
+    "dents",
+    "coiffer",
+    "démêler",
+    "plastique",
+    "salle de bain",
+    "toilette",
+    "soin"
+  ],
+  "summary": "Instrument à dents pour coiffer les cheveux.",
+  "details": [
+    "Coiffure",
+    "Salle de bain",
+    "Soin"
+  ]
+}

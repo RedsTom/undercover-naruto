@@ -1,0 +1,24 @@
+{
+  "id": "station spatiale",
+  "name": "Station spatiale",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "orbite",
+    "habitation",
+    "astronaute",
+    "recherche",
+    "international",
+    "microgravité",
+    "moderne",
+    "science"
+  ],
+  "summary": "Habitat spatial en orbite.",
+  "details": [
+    "Transport",
+    "Spatial",
+    "Habitation"
+  ]
+}

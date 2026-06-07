@@ -1,0 +1,9 @@
+{
+  "id": "sommelier",
+  "name": "Sommelier",
+  "category": "metiers",
+  "era": ["classique"],
+  "tags": ["vin", "restaurant", "dégustation", "cave", "conseil", "bouteille", "expert", "service"],
+  "summary": "Expert en vins dans un restaurant.",
+  "details": ["Restauration", "Vin", "Expert"]
+}

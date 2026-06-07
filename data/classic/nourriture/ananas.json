@@ -1,0 +1,9 @@
+{
+  "id": "ananas",
+  "name": "Ananas",
+  "category": "nourriture",
+  "era": ["classique"],
+  "tags": ["fruit", "tropical", "jaune", "sucré", "acidulé", "couronne", "exotique", "juteux"],
+  "summary": "Fruit tropical à la couronne de feuilles.",
+  "details": ["Fruit", "Tropical", "Exotique"]
+}

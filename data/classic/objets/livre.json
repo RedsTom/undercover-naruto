@@ -1,0 +1,24 @@
+{
+  "id": "livre",
+  "name": "Livre",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "lecture",
+    "pages",
+    "papier",
+    "histoire",
+    "couverture",
+    "savoir",
+    "bibliothèque",
+    "écrire"
+  ],
+  "summary": "Ouvrage imprimé relié pour la lecture.",
+  "details": [
+    "Écrit",
+    "Papier",
+    "Édition"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "usine",
+  "name": "Usine",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "production",
+    "machines",
+    "ouvriers",
+    "travail",
+    "chimique",
+    "fumée",
+    "chaînes",
+    "industriel"
+  ],
+  "summary": "Bâtiment de production industrielle.",
+  "details": [
+    "Industrie",
+    "Production",
+    "Bâtiment"
+  ]
+}

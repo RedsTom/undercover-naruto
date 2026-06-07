@@ -1,0 +1,24 @@
+{
+  "id": "grosse caisse",
+  "name": "Grosse caisse",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "grave",
+    "pédale",
+    "batterie",
+    "puissant",
+    "rythme",
+    "profond"
+  ],
+  "summary": "Plus grand tambour de la batterie.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Grave"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "TGV",
+  "name": "TGV",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "train",
+    "rapide",
+    "grande vitesse",
+    "France",
+    "voyage",
+    "confort",
+    "moderne",
+    "ponctuel"
+  ],
+  "summary": "Train à grande vitesse français.",
+  "details": [
+    "Transport",
+    "Rail",
+    "Rapide"
+  ]
+}

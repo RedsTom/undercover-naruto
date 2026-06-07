@@ -1,0 +1,9 @@
+{
+  "id": "turban",
+  "name": "Turban",
+  "category": "vetements",
+  "era": ["classique"],
+  "tags": ["tête", "tissu", "enroulé", "oriental", "homme", "tradition", "religion", "couvre-chef"],
+  "summary": "Couvre-chef en tissu enroulé.",
+  "details": ["Accessoire", "Tête", "Oriental"]
+}

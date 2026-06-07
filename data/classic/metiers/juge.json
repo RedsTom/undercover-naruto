@@ -1,0 +1,24 @@
+{
+  "id": "juge",
+  "name": "Juge",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "justice",
+    "tribunal",
+    "jugement",
+    "loi",
+    "autorité",
+    "robe",
+    "décision",
+    "impartial"
+  ],
+  "summary": "Magistrat qui rend la justice.",
+  "details": [
+    "Justice",
+    "Magistrature",
+    "Public"
+  ]
+}

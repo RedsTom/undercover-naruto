@@ -1,0 +1,24 @@
+{
+  "id": "menuisier",
+  "name": "Menuisier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bois",
+    "meubles",
+    "portes",
+    "fenêtres",
+    "atelier",
+    "outils",
+    "artisan",
+    "sur mesure"
+  ],
+  "summary": "Artisan qui travaille le bois.",
+  "details": [
+    "Artisan",
+    "Bois",
+    "Menuiserie"
+  ]
+}

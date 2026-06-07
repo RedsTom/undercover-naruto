@@ -1,0 +1,24 @@
+{
+  "id": "séisme",
+  "name": "Séisme",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tremblement",
+    "terre",
+    "secousse",
+    "destruction",
+    "faille",
+    "magnitude",
+    "danger",
+    "sismique"
+  ],
+  "summary": "Tremblement de terre.",
+  "details": [
+    "Géologie",
+    "Secousse",
+    "Danger"
+  ]
+}

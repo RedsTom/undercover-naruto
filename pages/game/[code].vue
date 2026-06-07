@@ -29,14 +29,9 @@
           <p class="text-[0.55rem] text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
         </div>
 
-        <div v-else-if="gameState.phase === 'reveal'">
-          <div class="text-lg">&#128128;</div>
-          <p class="text-[0.65rem] font-bold text-white truncate">{{ eliminatedPlayerName || 'Pas d\'élimination' }}</p>
-          <p v-if="lastRoundResult?.eliminatedRole" class="text-[0.5rem]"
-            :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite' ? 'text-red-300' : 'text-green-300'">
-            {{ roleLabel(lastRoundResult.eliminatedRole) }}
-            <span v-if="lastRoundResult.eliminatedWord" class="ml-0.5 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
-          </p>
+        <div v-else-if="gameState.phase === 'finished'">
+          <div class="text-lg">&#127942;</div>
+          <p class="text-[0.65rem] font-bold text-white">{{ winnerText }}</p>
         </div>
 
         <div v-else>
@@ -69,7 +64,7 @@
         </div>
 
         <div class="flex items-center justify-center">
-          <GameTimer v-if="gameState.timerEndTime" :end-time="gameState.timerEndTime" :label="timerLabel" />
+          <GameTimer v-if="gameState.timerEndTime && gameState.phase !== 'finished'" :end-time="gameState.timerEndTime" :label="timerLabel" @timeout="handleTimerExpiry" />
         </div>
 
         <WordDisplay
@@ -132,24 +127,11 @@
           @vote="handleVote"
         />
 
-        <div v-if="gameState.phase === 'reveal'" class="text-center space-y-4 animate-bounce-in">
-          <div v-if="lastRoundResult?.eliminatedPlayerId" class="space-y-3">
-            <div class="text-5xl">&#128128;</div>
-            <h2 class="text-xl font-black text-white">{{ eliminatedPlayerName }} a été éliminé !</h2>
-            <div class="inline-block px-4 py-2 rounded-xl text-sm font-bold"
-              :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite'
-                ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
-                : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-              {{ roleLabel(lastRoundResult.eliminatedRole) }}
-              <span v-if="lastRoundResult.eliminatedWord" class="ml-1 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
-            </div>
-          </div>
-          <div v-else class="space-y-2">
-            <div class="text-5xl">&#129335;</div>
-            <h2 class="text-xl font-black text-white">Pas de majorité — personne n'est éliminé !</h2>
-          </div>
+        <div v-if="gameState.phase === 'finished'" class="text-center space-y-4 animate-bounce-in">
+          <div class="text-5xl">&#127942;</div>
+          <h2 class="text-xl font-black text-white">{{ winnerText }}</h2>
 
-          <div v-if="!canContinueGame && gameState.exposed" class="space-y-2 border-t border-white/10 pt-6">
+          <div v-if="gameState.exposed" class="space-y-2 pt-6">
             <p class="text-xs font-bold uppercase tracking-wider text-white/50 text-center">Tous les rôles</p>
             <div v-for="p in gameState.exposed" :key="p.playerId"
               class="p-3 rounded-xl text-sm font-bold flex items-center gap-3"
@@ -164,17 +146,8 @@
             </div>
           </div>
 
-          <div v-if="isHost && canContinueGame" class="flex flex-col gap-3 items-center">
-            <GameButton variant="primary" size="lg" @click="handleContinueRound">
-              &#10145;&#65039; Continuer
-            </GameButton>
-            <GameButton variant="ghost" size="sm" @click="handleNextRound">
-              &#127968; Retour au lobby
-            </GameButton>
-          </div>
-          <p v-else-if="!isHost && canContinueGame" class="text-sm text-gray-400 animate-pulse">En attente de l'hôte...</p>
-          <div v-else-if="isHost" class="flex flex-col gap-3 items-center">
-            <GameButton variant="primary" size="lg" @click="handleNextRound">
+          <div v-if="isHost" class="flex flex-col gap-3 items-center pt-4">
+            <GameButton variant="primary" size="lg" @click="handleReturnToLobby">
               &#127968; Retour au lobby
             </GameButton>
           </div>
@@ -196,7 +169,7 @@ import { getWordInfo } from '~/utils/wordInfo';
 
 const route = useRoute();
 const { room, playerId, isHost, cleanup } = useRoomAPI();
-const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
+const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
 const isIframe = import.meta.client && window.self !== window.top;
@@ -214,7 +187,7 @@ const phaseLabel = computed(() => {
   const phases: Record<string, string> = {
     discussion: 'Discussion',
     voting: 'Vote',
-    reveal: 'Révélation',
+    finished: 'Terminé',
   };
   return phases[gameState.value?.phase] || gameState.value?.phase || 'En attente';
 });
@@ -224,7 +197,7 @@ const phaseBadgeClass = computed(() => {
   const colors: Record<string, string> = {
     discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
     voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',
-    reveal: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
+    finished: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
   };
   return `${base} ${colors[gameState.value?.phase] || ''}`;
 });
@@ -234,20 +207,15 @@ const compactBadgeClass = computed(() => {
   const colors: Record<string, string> = {
     discussion: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white',
     voting: 'bg-gradient-to-r from-red-500 to-red-600 text-white',
-    reveal: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
+    finished: 'bg-gradient-to-r from-purple-500 to-purple-600 text-white',
   };
   return `${base} ${colors[gameState.value?.phase] || ''}`;
 });
 
-const lastRoundResult = computed(() => {
-  if (!gameState.value?.rounds?.length) return null;
-  return gameState.value.rounds[gameState.value.rounds.length - 1];
-});
-
-const eliminatedPlayerName = computed(() => {
-  if (!lastRoundResult.value?.eliminatedPlayerId || !room.value) return '';
-  const p = room.value.players.find((pl: any) => pl.id === lastRoundResult.value.eliminatedPlayerId);
-  return p?.name ?? 'Un joueur';
+const winnerText = computed(() => {
+  if (gameState.value?.winner === 'civilians') return '&#127942; Les civils ont gagné !';
+  if (gameState.value?.winner === 'undercover') return '&#128373; Les Undercover ont gagné !';
+  return 'Partie terminée';
 });
 
 function roleLabel(role?: string): string {
@@ -256,14 +224,6 @@ function roleLabel(role?: string): string {
   if (role === 'civil') return 'Civil';
   return role ?? 'Inconnu';
 }
-
-const canContinueGame = computed(() => {
-  if (!gameState.value?.phase || gameState.value.phase !== 'reveal') return false;
-  if (!lastRoundResult.value?.eliminatedPlayerId) return false;
-  if (lastRoundResult.value?.eliminatedRole !== 'civil') return false;
-  if (aliveAll.value.length <= 2) return false;
-  return true;
-});
 
 const timerLabel = computed(() => {
   if (gameState.value?.phase === 'discussion') return 'Temps de discussion restant';
@@ -303,6 +263,43 @@ function playerCardClass(player: any): string {
   return 'ring-1 ring-white/10';
 }
 
+let timerExpired = false;
+
+function handleTimerExpiry() {
+  if (timerExpired) return;
+  if (gameState.value?.phase !== 'voting') return;
+  timerExpired = true;
+  $fetch(`/api/rooms/${room.value?.id}/resolve-vote`, {
+    method: 'POST',
+  }).catch(() => {});
+}
+
+async function handleVote(targetId: string) {
+  voting.value = true;
+  await vote(targetId);
+  voting.value = false;
+}
+
+async function handleNextTurn() {
+  await nextTurn();
+}
+
+async function handleStartVoting() {
+  timerExpired = false;
+  await startVoting();
+}
+
+async function handleReturnToLobby() {
+  await returnToLobby();
+  navigateTo(`/room/${route.params.code}`);
+}
+
+function handleLeave() {
+  disconnect();
+  cleanup();
+  navigateTo('/');
+}
+
 onMounted(async () => {
   const code = route.params.code as string;
   try {
@@ -332,6 +329,7 @@ onMounted(async () => {
 
   on('game:roundEnded', (data: any) => {
     room.value = data;
+    timerExpired = false;
     fetchMyInfo();
   });
 
@@ -373,7 +371,6 @@ onMounted(async () => {
     disconnect();
     navigateTo('/');
   });
-
 });
 
 watch(gameState, (newState, oldState) => {
@@ -387,39 +384,4 @@ watch(gameState, (newState, oldState) => {
 onUnmounted(() => {
   disconnect();
 });
-
-async function handleNextTurn() {
-  await nextTurn();
-}
-
-async function handleStartVoting() {
-  await startVoting();
-}
-
-async function handleVote(targetId: string) {
-  voting.value = true;
-  await vote(targetId);
-  voting.value = false;
-}
-
-async function handleNextRound() {
-  await returnToLobby();
-  navigateTo(`/room/${route.params.code}`);
-}
-
-async function handleContinueRound() {
-  await continueRound();
-  await fetchMyInfo();
-}
-
-async function handleReturnToLobby() {
-  await returnToLobby();
-  navigateTo(`/room/${route.params.code}`);
-}
-
-function handleLeave() {
-  disconnect();
-  cleanup();
-  navigateTo('/');
-}
 </script>

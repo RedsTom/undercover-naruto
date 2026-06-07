@@ -1,0 +1,24 @@
+{
+  "id": "vétérinaire",
+  "name": "Vétérinaire",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animaux",
+    "soins",
+    "clinique",
+    "opération",
+    "vaccin",
+    "animal",
+    "santé",
+    "diagnostic"
+  ],
+  "summary": "Médecin des animaux.",
+  "details": [
+    "Santé",
+    "Animal",
+    "Médical"
+  ]
+}

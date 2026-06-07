@@ -1,0 +1,24 @@
+{
+  "id": "ski",
+  "name": "Ski",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "neige",
+    "montagne",
+    "pente",
+    "slalom",
+    "descente",
+    "remontée",
+    "hiver",
+    "glisse"
+  ],
+  "summary": "Sport de glisse sur neige.",
+  "details": [
+    "Sport",
+    "Neige",
+    "Hiver"
+  ]
+}

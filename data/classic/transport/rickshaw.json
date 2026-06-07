@@ -1,0 +1,24 @@
+{
+  "id": "rickshaw",
+  "name": "Rickshaw",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "asiatique",
+    "vélo",
+    "passager",
+    "tourisme",
+    "ville",
+    "traditionnel",
+    "artisanal",
+    "lent"
+  ],
+  "summary": "Véhicule à vélo avec passager.",
+  "details": [
+    "Transport",
+    "Vélo",
+    "Asiatique"
+  ]
+}

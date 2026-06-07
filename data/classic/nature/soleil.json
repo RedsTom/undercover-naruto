@@ -1,0 +1,24 @@
+{
+  "id": "soleil",
+  "name": "Soleil",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "étoile",
+    "lumière",
+    "chaleur",
+    "jour",
+    "jaune",
+    "brillant",
+    "énergie",
+    "vie"
+  ],
+  "summary": "Étoile centre du système solaire.",
+  "details": [
+    "Étoile",
+    "Lumière",
+    "Jour"
+  ]
+}

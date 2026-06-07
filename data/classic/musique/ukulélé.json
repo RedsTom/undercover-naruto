@@ -1,0 +1,24 @@
+{
+  "id": "ukulélé",
+  "name": "Ukulélé",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "petit",
+    "hawaïen",
+    "doux",
+    "plage",
+    "joyeux",
+    "simple"
+  ],
+  "summary": "Petit instrument à cordes hawaïen.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Hawaïen"
+  ]
+}

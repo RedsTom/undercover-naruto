@@ -1,0 +1,24 @@
+{
+  "id": "cyclisme",
+  "name": "Cyclisme",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vélo",
+    "route",
+    "course",
+    "pédale",
+    "maillot",
+    "tour",
+    "étape",
+    "vitesse"
+  ],
+  "summary": "Sport de course à vélo.",
+  "details": [
+    "Sport",
+    "Vélo",
+    "Route"
+  ]
+}

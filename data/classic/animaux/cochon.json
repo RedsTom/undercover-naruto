@@ -1,0 +1,24 @@
+{
+  "id": "cochon",
+  "name": "Cochon",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "porcin",
+    "sabots",
+    "groin",
+    "grognement",
+    "boue"
+  ],
+  "summary": "Mammifère omnivore de la famille des porcins, domestiqué.",
+  "details": [
+    "Porcin",
+    "Omnivore",
+    "Animal d'élevage"
+  ]
+}

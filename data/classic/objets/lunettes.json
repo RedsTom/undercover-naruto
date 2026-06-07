@@ -1,0 +1,24 @@
+{
+  "id": "lunettes",
+  "name": "Lunettes",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voir",
+    "verres",
+    "monture",
+    "yeux",
+    "vue",
+    "nez",
+    "branches",
+    "correction"
+  ],
+  "summary": "Instrument optique pour corriger la vue.",
+  "details": [
+    "Optique",
+    "Vision",
+    "Accessoire"
+  ]
+}

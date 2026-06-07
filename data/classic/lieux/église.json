@@ -1,0 +1,24 @@
+{
+  "id": "église",
+  "name": "Église",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "religion",
+    "catholique",
+    "messe",
+    "clocher",
+    "autel",
+    "prière",
+    "chrétien",
+    "vitrail"
+  ],
+  "summary": "Lieu de culte catholique.",
+  "details": [
+    "Religion",
+    "Culte",
+    "Bâtiment"
+  ]
+}

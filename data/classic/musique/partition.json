@@ -1,0 +1,24 @@
+{
+  "id": "partition",
+  "name": "Partition",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "écrit",
+    "notes",
+    "portée",
+    "lecture",
+    "musique",
+    "compositeur",
+    "interprète",
+    "mesure"
+  ],
+  "summary": "Écriture musicale sur portée.",
+  "details": [
+    "Musique",
+    "Écrit",
+    "Portée"
+  ]
+}

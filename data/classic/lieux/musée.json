@@ -1,0 +1,24 @@
+{
+  "id": "musée",
+  "name": "Musée",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "art",
+    "exposition",
+    "œuvres",
+    "visite",
+    "culture",
+    "collections",
+    "tableaux",
+    "sculptures"
+  ],
+  "summary": "Lieu d'exposition d'œuvres d'art.",
+  "details": [
+    "Culture",
+    "Art",
+    "Bâtiment"
+  ]
+}

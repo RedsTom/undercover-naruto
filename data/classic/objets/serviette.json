@@ -1,0 +1,24 @@
+{
+  "id": "serviette",
+  "name": "Serviette",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sécher",
+    "tissu",
+    "éponge",
+    "bain",
+    "mains",
+    "doux",
+    "absorbant",
+    "salle de bain"
+  ],
+  "summary": "Tissu absorbant pour se sécher.",
+  "details": [
+    "Linge",
+    "Bain",
+    "Maison"
+  ]
+}

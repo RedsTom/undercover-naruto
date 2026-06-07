@@ -1,0 +1,24 @@
+{
+  "id": "port",
+  "name": "Port",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bateaux",
+    "mer",
+    "quai",
+    "pêche",
+    "commerce",
+    "amarres",
+    "phare",
+    "maritime"
+  ],
+  "summary": "Infrastructure maritime pour bateaux.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Infrastructure"
+  ]
+}

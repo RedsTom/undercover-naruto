@@ -1,0 +1,24 @@
+{
+  "id": "pilote",
+  "name": "Pilote",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "avion",
+    "cockpit",
+    "décollage",
+    "atterrissage",
+    "ciel",
+    "uniforme",
+    "aéroport",
+    "commandant"
+  ],
+  "summary": "Personne qui pilote un avion.",
+  "details": [
+    "Aviation",
+    "Transport",
+    "Aérien"
+  ]
+}

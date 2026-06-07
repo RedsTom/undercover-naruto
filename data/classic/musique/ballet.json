@@ -1,0 +1,24 @@
+{
+  "id": "ballet",
+  "name": "Ballet",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "danse",
+    "classique",
+    "scène",
+    "musique",
+    "chorégraphie",
+    "pointe",
+    "tutu",
+    "grâce"
+  ],
+  "summary": "Danse classique sur scène.",
+  "details": [
+    "Danse",
+    "Classique",
+    "Scène"
+  ]
+}

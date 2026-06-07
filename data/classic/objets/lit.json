@@ -1,0 +1,24 @@
+{
+  "id": "lit",
+  "name": "Lit",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "meuble",
+    "dormir",
+    "matelas",
+    "coussin",
+    "confort",
+    "chambre",
+    "nuit",
+    "repos"
+  ],
+  "summary": "Meuble pour dormir et se reposer.",
+  "details": [
+    "Meuble",
+    "Literie",
+    "Mobilier"
+  ]
+}

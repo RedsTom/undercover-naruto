@@ -1,0 +1,24 @@
+{
+  "id": "costume",
+  "name": "Costume",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "homme",
+    "veste",
+    "pantalon",
+    "formel",
+    "élégant",
+    "cravate",
+    "travail",
+    "cérémonie"
+  ],
+  "summary": "Ensemble veste et pantalon formel.",
+  "details": [
+    "Vêtement",
+    "Formel",
+    "Homme"
+  ]
+}

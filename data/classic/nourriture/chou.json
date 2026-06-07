@@ -1,0 +1,24 @@
+{
+  "id": "chou",
+  "name": "Chou",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "feuille",
+    "vert",
+    "pomme",
+    "cuisine",
+    "hiver",
+    "robuste",
+    "choucroute"
+  ],
+  "summary": "Légume-feuille formant une pomme compacte.",
+  "details": [
+    "Légume",
+    "Feuille",
+    "Brassicacée"
+  ]
+}

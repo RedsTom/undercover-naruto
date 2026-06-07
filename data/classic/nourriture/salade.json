@@ -1,0 +1,24 @@
+{
+  "id": "salade",
+  "name": "Salade",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "feuille",
+    "vert",
+    "cru",
+    "frais",
+    "entrée",
+    "vinaigrette",
+    "léger"
+  ],
+  "summary": "Légume-feuille consommé cru en entrée.",
+  "details": [
+    "Légume",
+    "Feuille",
+    "Astéracée"
+  ]
+}

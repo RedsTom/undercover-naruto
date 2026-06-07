@@ -1,0 +1,24 @@
+{
+  "id": "chaise",
+  "name": "Chaise",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "meuble",
+    "assis",
+    "dossier",
+    "pieds",
+    "bois",
+    "manger",
+    "confort",
+    "salle"
+  ],
+  "summary": "Siège à dossier pour une personne.",
+  "details": [
+    "Meuble",
+    "Siège",
+    "Mobilier"
+  ]
+}

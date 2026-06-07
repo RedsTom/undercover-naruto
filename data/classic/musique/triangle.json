@@ -1,0 +1,9 @@
+{
+  "id": "triangle",
+  "name": "Triangle",
+  "category": "musique",
+  "era": ["classique"],
+  "tags": ["instrument", "percussion", "métal", "baguette", "aigu", "brillant", "orchestre", "tinter"],
+  "summary": "Instrument à percussion métallique triangulaire.",
+  "details": ["Instrument", "Percussion", "Métal"]
+}

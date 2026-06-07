@@ -1,0 +1,24 @@
+{
+  "id": "sandales",
+  "name": "Sandales",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pieds",
+    "été",
+    "ouvertes",
+    "chaud",
+    "plage",
+    "lanières",
+    "confort",
+    "décontracté"
+  ],
+  "summary": "Chaussures ouvertes pour l'été.",
+  "details": [
+    "Chaussures",
+    "Pieds",
+    "Été"
+  ]
+}

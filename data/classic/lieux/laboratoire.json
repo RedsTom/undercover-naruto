@@ -1,0 +1,24 @@
+{
+  "id": "laboratoire",
+  "name": "Laboratoire",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "recherche",
+    "expériences",
+    "scientifique",
+    "microscope",
+    "produits",
+    "blouse",
+    "analyses",
+    "précision"
+  ],
+  "summary": "Lieu de recherche scientifique.",
+  "details": [
+    "Science",
+    "Recherche",
+    "Bâtiment"
+  ]
+}

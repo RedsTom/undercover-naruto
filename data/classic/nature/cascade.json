@@ -1,0 +1,24 @@
+{
+  "id": "cascade",
+  "name": "Cascade",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "chute",
+    "rocher",
+    "montagne",
+    "bruit",
+    "écume",
+    "nature",
+    "spectaculaire"
+  ],
+  "summary": "Chute d'eau naturelle.",
+  "details": [
+    "Eau",
+    "Chute",
+    "Montagne"
+  ]
+}

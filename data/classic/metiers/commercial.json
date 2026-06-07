@@ -1,0 +1,24 @@
+{
+  "id": "commercial",
+  "name": "Commercial",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vente",
+    "client",
+    "produit",
+    "objectif",
+    "commission",
+    "négociation",
+    "terrain",
+    "chiffre"
+  ],
+  "summary": "Personne chargée de la vente.",
+  "details": [
+    "Vente",
+    "Commerce",
+    "Terrain"
+  ]
+}

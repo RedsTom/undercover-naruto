@@ -1,0 +1,24 @@
+{
+  "id": "riz",
+  "name": "Riz",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "féculent",
+    "céréale",
+    "grain",
+    "blanc",
+    "Asie",
+    "eau",
+    "cuisson",
+    "accompagnement"
+  ],
+  "summary": "Céréale de base de l'alimentation asiatique.",
+  "details": [
+    "Féculent",
+    "Céréale",
+    "Graminée"
+  ]
+}

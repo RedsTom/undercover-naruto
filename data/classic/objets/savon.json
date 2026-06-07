@@ -1,0 +1,24 @@
+{
+  "id": "savon",
+  "name": "Savon",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "hygiène",
+    "laver",
+    "mousse",
+    "mains",
+    "corps",
+    "parfum",
+    "dur",
+    "salle de bain"
+  ],
+  "summary": "Produit d'hygiène pour se laver.",
+  "details": [
+    "Hygiène",
+    "Salle de bain",
+    "Nettoyage"
+  ]
+}

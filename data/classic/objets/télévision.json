@@ -1,0 +1,24 @@
+{
+  "id": "télévision",
+  "name": "Télévision",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "écran",
+    "images",
+    "son",
+    "salon",
+    "divertissement",
+    "programmes",
+    "regarder",
+    "canapé"
+  ],
+  "summary": "Appareil de diffusion d'images et de son.",
+  "details": [
+    "Électronique",
+    "Divertissement",
+    "Maison"
+  ]
+}

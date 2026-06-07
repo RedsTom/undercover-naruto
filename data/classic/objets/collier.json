@@ -1,0 +1,24 @@
+{
+  "id": "collier",
+  "name": "Collier",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bijou",
+    "cou",
+    "chaîne",
+    "perles",
+    "or",
+    "argent",
+    "pendentif",
+    "parure"
+  ],
+  "summary": "Bijou porté autour du cou.",
+  "details": [
+    "Bijou",
+    "Orfèvrerie",
+    "Accessoire"
+  ]
+}

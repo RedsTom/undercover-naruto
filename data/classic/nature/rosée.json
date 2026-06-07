@@ -1,0 +1,24 @@
+{
+  "id": "rosée",
+  "name": "Rosée",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "matin",
+    "gouttes",
+    "herbe",
+    "frais",
+    "printemps",
+    "humidité",
+    "fleur",
+    "doux"
+  ],
+  "summary": "Gouttelettes d'eau du matin.",
+  "details": [
+    "Eau",
+    "Matin",
+    "Humidité"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "professeur",
+  "name": "Professeur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "université",
+    "étudiants",
+    "cours",
+    "recherche",
+    "savoir",
+    "amphi",
+    "diplôme",
+    "spécialiste"
+  ],
+  "summary": "Enseignant dans l'enseignement supérieur.",
+  "details": [
+    "Éducation",
+    "Université",
+    "Public"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "aigle",
+  "name": "Aigle",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "rapace",
+    "accipitridé",
+    "plumes",
+    "vol",
+    "puissant",
+    "montagne"
+  ],
+  "summary": "Grand rapace diurne de la famille des accipitridés.",
+  "details": [
+    "Accipitridé",
+    "Rapace",
+    "Oiseau de proie"
+  ]
+}

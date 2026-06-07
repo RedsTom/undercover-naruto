@@ -1,0 +1,24 @@
+{
+  "id": "avocat",
+  "name": "Avocat",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "justice",
+    "tribunal",
+    "défense",
+    "loi",
+    "client",
+    "plaidoirie",
+    "robe",
+    "droit"
+  ],
+  "summary": "Juriste qui défend en justice.",
+  "details": [
+    "Justice",
+    "Droit",
+    "Libéral"
+  ]
+}

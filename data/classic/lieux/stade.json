@@ -1,0 +1,24 @@
+{
+  "id": "stade",
+  "name": "Stade",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sport",
+    "terrain",
+    "spectateurs",
+    "match",
+    "tribunes",
+    "athlétisme",
+    "football",
+    "compétition"
+  ],
+  "summary": "Installation sportive avec tribunes.",
+  "details": [
+    "Sport",
+    "Compétition",
+    "Bâtiment"
+  ]
+}

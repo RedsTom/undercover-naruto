@@ -1,0 +1,24 @@
+{
+  "id": "sac",
+  "name": "Sac",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "transporter",
+    "tissu",
+    "cuir",
+    "porter",
+    "épaule",
+    "affaires",
+    "courses",
+    "voyage"
+  ],
+  "summary": "Récipient souple pour transporter des affaires.",
+  "details": [
+    "Accessoire",
+    "Transport",
+    "Mode"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "short de bain",
+  "name": "Short de bain",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "homme",
+    "court",
+    "piscine",
+    "plage",
+    "séchant",
+    "élastique",
+    "sport"
+  ],
+  "summary": "Short pour la baignade masculine.",
+  "details": [
+    "Vêtement",
+    "Bain",
+    "Homme"
+  ]
+}

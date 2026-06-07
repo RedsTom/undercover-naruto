@@ -1,0 +1,24 @@
+{
+  "id": "chercheur",
+  "name": "Chercheur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "science",
+    "laboratoire",
+    "expérience",
+    "découverte",
+    "étude",
+    "université",
+    "publication",
+    "hypothèse"
+  ],
+  "summary": "Personne qui fait de la recherche scientifique.",
+  "details": [
+    "Science",
+    "Recherche",
+    "Université"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "chaussures",
+  "name": "Chaussures",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pieds",
+    "marcher",
+    "semelle",
+    "lacets",
+    "cuir",
+    "extérieur",
+    "protection",
+    "paire"
+  ],
+  "summary": "Chaussures pour protéger les pieds.",
+  "details": [
+    "Chaussures",
+    "Pieds",
+    "Extérieur"
+  ]
+}

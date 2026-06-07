@@ -1,0 +1,24 @@
+{
+  "id": "violon",
+  "name": "Violon",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "archet",
+    "bois",
+    "classique",
+    "orchestre",
+    "aigu",
+    "élégant"
+  ],
+  "summary": "Instrument à cordes frottées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Classique"
+  ]
+}

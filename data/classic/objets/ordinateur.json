@@ -1,0 +1,24 @@
+{
+  "id": "ordinateur",
+  "name": "Ordinateur",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "machine",
+    "écran",
+    "clavier",
+    "travail",
+    "internet",
+    "programme",
+    "bureau",
+    "moderne"
+  ],
+  "summary": "Machine électronique de traitement de données.",
+  "details": [
+    "Informatique",
+    "Électronique",
+    "Travail"
+  ]
+}

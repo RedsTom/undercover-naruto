@@ -1,0 +1,24 @@
+{
+  "id": "gant",
+  "name": "Gant",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mains",
+    "doigts",
+    "chaud",
+    "hiver",
+    "cuir",
+    "laine",
+    "froid",
+    "paire"
+  ],
+  "summary": "Vêtement couvrant les mains.",
+  "details": [
+    "Accessoire",
+    "Mains",
+    "Hiver"
+  ]
+}

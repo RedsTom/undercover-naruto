@@ -1,0 +1,24 @@
+{
+  "id": "citron",
+  "name": "Citron",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "agrume",
+    "jaune",
+    "acide",
+    "juteux",
+    "vitamine C",
+    "zeste",
+    "amer"
+  ],
+  "summary": "Fruit du citronnier, agrume jaune très acide.",
+  "details": [
+    "Fruit",
+    "Agrume",
+    "Condiment"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "pilates",
+  "name": "Pilates",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "posture",
+    "muscle",
+    "respiration",
+    "tapis",
+    "contrôle",
+    "centre",
+    "équilibre",
+    "doux"
+  ],
+  "summary": "Méthode de renforcement musculaire doux.",
+  "details": [
+    "Sport",
+    "Corps",
+    "Doux"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "chèvre",
+  "name": "Chèvre",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "caprin",
+    "cornes",
+    "lait",
+    "barbe",
+    "montagne"
+  ],
+  "summary": "Mammifère ruminant de la famille des caprins.",
+  "details": [
+    "Caprin",
+    "Ruminant",
+    "Animal d'élevage"
+  ]
+}

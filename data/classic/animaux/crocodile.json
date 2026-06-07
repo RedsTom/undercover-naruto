@@ -1,0 +1,24 @@
+{
+  "id": "crocodile",
+  "name": "Crocodile",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "reptile",
+    "crocodilien",
+    "écailles",
+    "aquatique",
+    "dents",
+    "mâchoires",
+    "tropique"
+  ],
+  "summary": "Grand reptile crocodilien des eaux tropicales.",
+  "details": [
+    "Reptile",
+    "Crocodilien",
+    "Archosaure"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "aurore",
+  "name": "Aurore",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "matin",
+    "lumière",
+    "couleurs",
+    "ciel",
+    "lever",
+    "rose",
+    "aube",
+    "poétique"
+  ],
+  "summary": "Lumière colorée du lever du soleil.",
+  "details": [
+    "Lumière",
+    "Matin",
+    "Ciel"
+  ]
+}

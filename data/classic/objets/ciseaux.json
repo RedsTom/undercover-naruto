@@ -1,0 +1,24 @@
+{
+  "id": "ciseaux",
+  "name": "Ciseaux",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "couper",
+    "lames",
+    "métal",
+    "papier",
+    "tissu",
+    "deux branches",
+    "poignées",
+    "tranchant"
+  ],
+  "summary": "Outil à deux lames mobiles pour couper.",
+  "details": [
+    "Outil",
+    "Coupe",
+    "Ménage"
+  ]
+}

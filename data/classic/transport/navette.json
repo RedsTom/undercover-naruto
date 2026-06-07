@@ -1,0 +1,24 @@
+{
+  "id": "navette",
+  "name": "Navette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "spatiale",
+    "réutilisable",
+    "astronaute",
+    "orbite",
+    "NASA",
+    "atterrissage",
+    "moderne",
+    "technologie"
+  ],
+  "summary": "Véhicule spatial réutilisable.",
+  "details": [
+    "Transport",
+    "Spatial",
+    "Réutilisable"
+  ]
+}

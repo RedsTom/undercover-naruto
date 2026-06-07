@@ -1,0 +1,24 @@
+{
+  "id": "escargot",
+  "name": "Escargot",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "mollusque",
+    "gastéropode",
+    "coquille",
+    "lent",
+    "bave",
+    "jardin",
+    "pluie"
+  ],
+  "summary": "Mollusque gastéropode terrestre protégé par une coquille.",
+  "details": [
+    "Mollusque",
+    "Gastéropode",
+    "Herbivore"
+  ]
+}

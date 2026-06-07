@@ -1,0 +1,24 @@
+{
+  "id": "armoire",
+  "name": "Armoire",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "meuble",
+    "rangement",
+    "portes",
+    "vêtements",
+    "bois",
+    "grand",
+    "chambre",
+    "étagères"
+  ],
+  "summary": "Grand meuble de rangement à portes.",
+  "details": [
+    "Meuble",
+    "Rangement",
+    "Mobilier"
+  ]
+}

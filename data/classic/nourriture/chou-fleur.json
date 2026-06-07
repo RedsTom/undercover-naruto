@@ -1,0 +1,24 @@
+{
+  "id": "chou-fleur",
+  "name": "Chou-fleur",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "inflorescence",
+    "blanc",
+    "pomme",
+    "cuisine",
+    "gratin",
+    "végétarien",
+    "doux"
+  ],
+  "summary": "Légume blanc formant une grosse inflorescence compacte.",
+  "details": [
+    "Légume",
+    "Inflorescence",
+    "Brassicacée"
+  ]
+}

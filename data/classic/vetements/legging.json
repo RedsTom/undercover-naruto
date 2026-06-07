@@ -1,0 +1,24 @@
+{
+  "id": "legging",
+  "name": "Legging",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "moulant",
+    "sport",
+    "femme",
+    "élastique",
+    "confort",
+    "yoga",
+    "fitness"
+  ],
+  "summary": "Pantalon moulant et élastique.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Sport"
+  ]
+}

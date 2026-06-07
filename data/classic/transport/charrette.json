@@ -1,0 +1,24 @@
+{
+  "id": "charrette",
+  "name": "Charrette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "roues",
+    "cheval",
+    "bois",
+    "ferme",
+    "marchandise",
+    "ancien",
+    "rural",
+    "traction"
+  ],
+  "summary": "Véhicule à traction animale.",
+  "details": [
+    "Transport",
+    "Animal",
+    "Rural"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "allumette",
+  "name": "Allumette",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "feu",
+    "bois",
+    "gratter",
+    "flamme",
+    "soufre",
+    "allumer",
+    "petit",
+    "jetable"
+  ],
+  "summary": "Petit bâtonnet pour produire du feu.",
+  "details": [
+    "Combustion",
+    "Allumage",
+    "Jetables"
+  ]
+}

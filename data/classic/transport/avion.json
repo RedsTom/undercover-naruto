@@ -1,0 +1,24 @@
+{
+  "id": "avion",
+  "name": "Avion",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ailes",
+    "moteur",
+    "ciel",
+    "aéroport",
+    "vol",
+    "passagers",
+    "longue distance",
+    "rapide"
+  ],
+  "summary": "Véhicule aérien de transport.",
+  "details": [
+    "Transport",
+    "Aérien",
+    "Rapide"
+  ]
+}

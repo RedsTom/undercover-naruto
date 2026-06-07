@@ -1,0 +1,24 @@
+{
+  "id": "chasse",
+  "name": "Chasse",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "fusil",
+    "forêt",
+    "gibier",
+    "tradition",
+    "saison",
+    "camouflage",
+    "nature"
+  ],
+  "summary": "Activité de poursuite d'animaux.",
+  "details": [
+    "Loisir",
+    "Nature",
+    "Tradition"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "limace",
+  "name": "Limace",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "mollusque",
+    "gastéropode",
+    "sans coquille",
+    "lent",
+    "bave",
+    "jardin",
+    "humide"
+  ],
+  "summary": "Mollusque gastéropode terrestre sans coquille.",
+  "details": [
+    "Mollusque",
+    "Gastéropode",
+    "Herbivore"
+  ]
+}

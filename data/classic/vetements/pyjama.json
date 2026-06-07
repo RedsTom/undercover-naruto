@@ -1,0 +1,24 @@
+{
+  "id": "pyjama",
+  "name": "Pyjama",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "nuit",
+    "dormir",
+    "confort",
+    "coton",
+    "doux",
+    "maison",
+    "repos",
+    "chaud"
+  ],
+  "summary": "Vêtement de nuit confortable.",
+  "details": [
+    "Vêtement",
+    "Nuit",
+    "Confort"
+  ]
+}

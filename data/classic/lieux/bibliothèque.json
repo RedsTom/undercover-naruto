@@ -1,0 +1,24 @@
+{
+  "id": "bibliothèque",
+  "name": "Bibliothèque",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "livres",
+    "lecture",
+    "emprunt",
+    "silence",
+    "étagères",
+    "étude",
+    "culture",
+    "gratuit"
+  ],
+  "summary": "Lieu de prêt et consultation de livres.",
+  "details": [
+    "Culture",
+    "Livres",
+    "Public"
+  ]
+}

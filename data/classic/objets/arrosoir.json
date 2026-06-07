@@ -1,0 +1,24 @@
+{
+  "id": "arrosoir",
+  "name": "Arrosoir",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "jardin",
+    "eau",
+    "plantes",
+    "bec",
+    "poignée",
+    "arroser",
+    "fleurs",
+    "pot"
+  ],
+  "summary": "Récipient à bec pour arroser les plantes.",
+  "details": [
+    "Jardin",
+    "Arrosage",
+    "Accessoire"
+  ]
+}

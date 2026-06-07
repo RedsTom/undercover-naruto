@@ -1,0 +1,24 @@
+{
+  "id": "tempo",
+  "name": "Tempo",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vitesse",
+    "mesure",
+    "rapide",
+    "lent",
+    "battement",
+    "pulsation",
+    "indication",
+    "métronomie"
+  ],
+  "summary": "Vitesse d'exécution musicale.",
+  "details": [
+    "Musique",
+    "Vitesse",
+    "Mesure"
+  ]
+}

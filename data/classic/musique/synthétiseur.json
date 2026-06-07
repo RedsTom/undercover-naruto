@@ -1,0 +1,24 @@
+{
+  "id": "synthétiseur",
+  "name": "Synthétiseur",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "électronique",
+    "clavier",
+    "son",
+    "modulation",
+    "pop",
+    "techno",
+    "moderne"
+  ],
+  "summary": "Instrument électronique de création sonore.",
+  "details": [
+    "Instrument",
+    "Électronique",
+    "Moderne"
+  ]
+}

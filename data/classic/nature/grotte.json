@@ -1,0 +1,24 @@
+{
+  "id": "grotte",
+  "name": "Grotte",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "caverne",
+    "roche",
+    "sombre",
+    "humide",
+    "stalactite",
+    "chauve-souris",
+    "profond",
+    "mystère"
+  ],
+  "summary": "Cavité naturelle dans la roche.",
+  "details": [
+    "Géologie",
+    "Cavité",
+    "Sombre"
+  ]
+}

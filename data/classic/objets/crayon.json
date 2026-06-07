@@ -1,0 +1,24 @@
+{
+  "id": "crayon",
+  "name": "Crayon",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "écriture",
+    "mine",
+    "bois",
+    "papier",
+    "dessin",
+    "tailler",
+    "gris",
+    "outil"
+  ],
+  "summary": "Instrument d'écriture et de dessin à mine.",
+  "details": [
+    "Écriture",
+    "Dessin",
+    "Instrument"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "abeille",
+  "name": "Abeille",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "hyménoptère",
+    "ailes",
+    "miel",
+    "ruche",
+    "piqûre",
+    "pollen"
+  ],
+  "summary": "Insecte hyménoptère producteur de miel.",
+  "details": [
+    "Insecte",
+    "Hyménoptère",
+    "Pollinisateur"
+  ]
+}

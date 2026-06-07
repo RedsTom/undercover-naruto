@@ -1,0 +1,24 @@
+{
+  "id": "baseball",
+  "name": "Baseball",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "batte",
+    "balle",
+    "base",
+    "équipe",
+    "terrain",
+    "lanceur",
+    "frappeur",
+    " américain"
+  ],
+  "summary": "Sport collectif américain avec batte.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Américain"
+  ]
+}

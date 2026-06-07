@@ -1,0 +1,23 @@
+{
+  "id": "moineau",
+  "name": "Moineau",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "passéridé",
+    "plumes",
+    "piaille",
+    "petit",
+    "urbain"
+  ],
+  "summary": "Petit oiseau passereau commun dans les villes.",
+  "details": [
+    "Passéridé",
+    "Passereau",
+    "Oiseau"
+  ]
+}

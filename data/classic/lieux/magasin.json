@@ -1,0 +1,24 @@
+{
+  "id": "magasin",
+  "name": "Magasin",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "commerce",
+    "vente",
+    "achats",
+    "produits",
+    "caisse",
+    "rayons",
+    "client",
+    "vitrine"
+  ],
+  "summary": "Lieu de vente de produits aux consommateurs.",
+  "details": [
+    "Commerce",
+    "Vente",
+    "Bâtiment"
+  ]
+}

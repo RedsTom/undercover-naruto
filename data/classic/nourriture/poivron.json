@@ -1,0 +1,24 @@
+{
+  "id": "poivron",
+  "name": "Poivron",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "fruit",
+    "coloré",
+    "creux",
+    "croquant",
+    "doux",
+    "cuisine",
+    "graines"
+  ],
+  "summary": "Légume-fruit creux et coloré au goût doux.",
+  "details": [
+    "Légume",
+    "Fruit",
+    "Solanacée"
+  ]
+}

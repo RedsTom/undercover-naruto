@@ -1,0 +1,23 @@
+{
+  "id": "hirondelle",
+  "name": "Hirondelle",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "hirundinidé",
+    "plumes",
+    "migration",
+    "printemps",
+    "rapide"
+  ],
+  "summary": "Petit oiseau migrateur au vol rapide.",
+  "details": [
+    "Hirundinidé",
+    "Passereau",
+    "Oiseau migrateur"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "notaire",
+  "name": "Notaire",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "acte",
+    "contrat",
+    "immobilier",
+    "succession",
+    "authentique",
+    "étude",
+    "droit",
+    "signature"
+  ],
+  "summary": "Officier public rédigeant les actes authentiques.",
+  "details": [
+    "Justice",
+    "Droit",
+    "Officier"
+  ]
+}

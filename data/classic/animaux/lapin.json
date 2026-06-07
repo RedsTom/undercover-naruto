@@ -1,0 +1,24 @@
+{
+  "id": "lapin",
+  "name": "Lapin",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "léporidé",
+    "poils",
+    "longues oreilles",
+    "saut",
+    "carotte"
+  ],
+  "summary": "Petit mammifère lagomorphe de la famille des léporidés.",
+  "details": [
+    "Lagomorphe",
+    "Herbivore",
+    "Animal de compagnie"
+  ]
+}

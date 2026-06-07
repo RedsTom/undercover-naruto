@@ -1,0 +1,24 @@
+{
+  "id": "arts martiaux",
+  "name": "Arts martiaux",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "combat",
+    "technique",
+    "discipline",
+    "tradition",
+    "asiatique",
+    "respect",
+    "maître",
+    "ceinture"
+  ],
+  "summary": "Ensemble de sports de combat traditionnels.",
+  "details": [
+    "Sport",
+    "Combat",
+    "Tradition"
+  ]
+}

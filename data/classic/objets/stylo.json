@@ -1,0 +1,24 @@
+{
+  "id": "stylo",
+  "name": "Stylo",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "écriture",
+    "encre",
+    "main",
+    "papier",
+    "pointe",
+    "écrire",
+    "bureau",
+    "outil"
+  ],
+  "summary": "Instrument d'écriture à encre.",
+  "details": [
+    "Écriture",
+    "Bureau",
+    "Instrument"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "judo",
+  "name": "Judo",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "combat",
+    "prise",
+    "tapis",
+    "ceinture",
+    "kimono",
+    "projection",
+    "japonais",
+    "discipline"
+  ],
+  "summary": "Art martial japonais sans frappe.",
+  "details": [
+    "Sport",
+    "Combat",
+    "Japonais"
+  ]
+}

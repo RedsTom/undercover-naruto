@@ -1,0 +1,24 @@
+{
+  "id": "montre",
+  "name": "Montre",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "temps",
+    "poignet",
+    "aiguilles",
+    "bracelet",
+    "heures",
+    "métal",
+    "précision",
+    "accessoire"
+  ],
+  "summary": "Instrument de mesure du temps porté au poignet.",
+  "details": [
+    "Horlogerie",
+    "Accessoire",
+    "Temps"
+  ]
+}

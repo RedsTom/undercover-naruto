@@ -1,0 +1,24 @@
+{
+  "id": "roller",
+  "name": "Roller",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "patins",
+    "roues",
+    "urbain",
+    "glisse",
+    "figure",
+    "vitesse",
+    "rue",
+    "équilibre"
+  ],
+  "summary": "Sport de glisse sur patins à roulettes.",
+  "details": [
+    "Sport",
+    "Glisse",
+    "Urbain"
+  ]
+}

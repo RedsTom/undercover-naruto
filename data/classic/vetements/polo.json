@@ -1,0 +1,24 @@
+{
+  "id": "polo",
+  "name": "Polo",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "haut",
+    "col",
+    "boutons",
+    "coton",
+    "sport",
+    "élégant",
+    "manches courtes",
+    "décontracté"
+  ],
+  "summary": "Haut à col et boutons.",
+  "details": [
+    "Vêtement",
+    "Haut",
+    "Sport"
+  ]
+}

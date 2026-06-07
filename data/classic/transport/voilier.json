@@ -1,0 +1,24 @@
+{
+  "id": "voilier",
+  "name": "Voilier",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voile",
+    "vent",
+    "mer",
+    "mât",
+    "sport",
+    "plaisance",
+    "régate",
+    "navigation"
+  ],
+  "summary": "Bateau à voile.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Voile"
+  ]
+}

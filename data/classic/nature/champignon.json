@@ -1,0 +1,24 @@
+{
+  "id": "champignon",
+  "name": "Champignon",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fungi",
+    "chapeau",
+    "pied",
+    "forêt",
+    "humide",
+    "comestible",
+    "toxique",
+    "automne"
+  ],
+  "summary": "Organisme fongique poussant en forêt.",
+  "details": [
+    "Fungi",
+    "Forêt",
+    "Humide"
+  ]
+}

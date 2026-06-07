@@ -1,0 +1,24 @@
+{
+  "id": "pelle",
+  "name": "Pelle",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "creuser",
+    "terre",
+    "manche",
+    "fer",
+    "jardin",
+    "neige",
+    "plate"
+  ],
+  "summary": "Outil à fer plat pour creuser ou pelleter.",
+  "details": [
+    "Outil",
+    "Jardin",
+    "Terrassement"
+  ]
+}

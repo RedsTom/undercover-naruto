@@ -1,0 +1,24 @@
+{
+  "id": "guêpe",
+  "name": "Guêpe",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "hyménoptère",
+    "ailes",
+    "rayures",
+    "piqûre",
+    "nid",
+    "agressive"
+  ],
+  "summary": "Insecte hyménoptère piqueur aux couleurs vives.",
+  "details": [
+    "Insecte",
+    "Hyménoptère",
+    "Parasitoïde"
+  ]
+}

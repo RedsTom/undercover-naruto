@@ -1,0 +1,24 @@
+{
+  "id": "triathlon",
+  "name": "Triathlon",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "natation",
+    "vélo",
+    "course",
+    "enchaînement",
+    "endurance",
+    "olympique",
+    "multisport",
+    "effort"
+  ],
+  "summary": "Enchaînement de trois sports d'endurance.",
+  "details": [
+    "Sport",
+    "Multisport",
+    "Endurance"
+  ]
+}

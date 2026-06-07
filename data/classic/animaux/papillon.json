@@ -1,0 +1,24 @@
+{
+  "id": "papillon",
+  "name": "Papillon",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "lépidoptère",
+    "ailes",
+    "coloré",
+    "vol",
+    "métamorphose",
+    "fleurs"
+  ],
+  "summary": "Insecte lépidoptère aux ailes colorées.",
+  "details": [
+    "Insecte",
+    "Lépidoptère",
+    "Pollinisateur"
+  ]
+}

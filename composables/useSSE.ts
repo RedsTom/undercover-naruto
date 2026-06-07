@@ -3,9 +3,9 @@ export const useSSE = () => {
   let eventSource: EventSource | null = null;
   let roomIdRef: string | null = null;
   let playerIdRef: string | null = null;
-  let pingInterval: ReturnType<typeof setInterval> | null = null;
-  let visibilityHandler: (() => void) | null = null;
   let pageHideHandler: (() => void) | null = null;
+  let beforeUnloadHandler: (() => void) | null = null;
+  let visibilityHandler: (() => void) | null = null;
 
   function on(event: string, callback: (data: unknown) => void): () => void {
     if (!listeners.has(event)) listeners.set(event, new Set());
@@ -17,21 +17,10 @@ export const useSSE = () => {
     listeners.get(event)?.delete(callback);
   }
 
-  function startPing(roomId: string, pid: string): void {
-    stopPing();
-    pingInterval = setInterval(() => {
-      $fetch(`/api/rooms/${roomId}/ping`, {
-        method: 'POST',
-        body: { playerId: pid },
-      }).catch(() => {});
-    }, 10000);
-  }
-
-  function stopPing(): void {
-    if (pingInterval) {
-      clearInterval(pingInterval);
-      pingInterval = null;
-    }
+  function sendLeaveBeacon(roomId: string, pid: string): void {
+    try {
+      navigator.sendBeacon(`/api/rooms/${roomId}/leave`, JSON.stringify({ playerId: pid }));
+    } catch {}
   }
 
   function connect(roomId: string, playerId?: string): void {
@@ -57,22 +46,22 @@ export const useSSE = () => {
     eventSource = es;
 
     if (playerId) {
-      startPing(roomId, playerId);
+      pageHideHandler = () => {
+        if (roomIdRef && playerIdRef) sendLeaveBeacon(roomIdRef, playerIdRef);
+      };
+      window.addEventListener('pagehide', pageHideHandler);
+
+      beforeUnloadHandler = () => {
+        if (roomIdRef && playerIdRef) sendLeaveBeacon(roomIdRef, playerIdRef);
+      };
+      window.addEventListener('beforeunload', beforeUnloadHandler);
 
       visibilityHandler = () => {
         if (document.hidden) {
-          stopPing();
-          navigator.sendBeacon(`/api/rooms/${roomId}/ping`, JSON.stringify({ playerId, hidden: true }));
-        } else {
-          startPing(roomId, playerId);
+          disconnect();
         }
       };
       document.addEventListener('visibilitychange', visibilityHandler);
-
-      pageHideHandler = () => {
-        navigator.sendBeacon(`/api/rooms/${roomId}/ping`, JSON.stringify({ playerId, leaving: true }));
-      };
-      window.addEventListener('pagehide', pageHideHandler);
     }
   }
 
@@ -82,14 +71,17 @@ export const useSSE = () => {
   }
 
   function disconnect(): void {
-    stopPing();
-    if (visibilityHandler) {
-      document.removeEventListener('visibilitychange', visibilityHandler);
-      visibilityHandler = null;
-    }
     if (pageHideHandler) {
       window.removeEventListener('pagehide', pageHideHandler);
       pageHideHandler = null;
+    }
+    if (beforeUnloadHandler) {
+      window.removeEventListener('beforeunload', beforeUnloadHandler);
+      beforeUnloadHandler = null;
+    }
+    if (visibilityHandler) {
+      document.removeEventListener('visibilitychange', visibilityHandler);
+      visibilityHandler = null;
     }
     if (eventSource) {
       eventSource.close();

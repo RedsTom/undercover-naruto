@@ -1,0 +1,24 @@
+{
+  "id": "hibou",
+  "name": "Hibou",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "rapace",
+    "strigidé",
+    "plumes",
+    "nocturne",
+    "sagesse",
+    "hou-hou"
+  ],
+  "summary": "Oiseau rapace nocturne de la famille des strigidés.",
+  "details": [
+    "Strigidé",
+    "Rapace nocturne",
+    "Oiseau de proie"
+  ]
+}

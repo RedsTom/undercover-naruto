@@ -1,0 +1,24 @@
+{
+  "id": "timbales",
+  "name": "Timbales",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "cuivre",
+    "peau",
+    "pédale",
+    "orchestre",
+    "accordé",
+    "grave"
+  ],
+  "summary": "Tambours accordés de l'orchestre.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Orchestre"
+  ]
+}

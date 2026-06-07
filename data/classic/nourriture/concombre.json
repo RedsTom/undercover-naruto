@@ -1,0 +1,24 @@
+{
+  "id": "concombre",
+  "name": "Concombre",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "fruit",
+    "vert",
+    "long",
+    "frais",
+    "croquant",
+    "eau",
+    "salade"
+  ],
+  "summary": "Légume-fruit vert allongé, frais et croquant.",
+  "details": [
+    "Légume",
+    "Fruit",
+    "Cucurbitacée"
+  ]
+}

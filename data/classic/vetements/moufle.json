@@ -1,0 +1,24 @@
+{
+  "id": "moufle",
+  "name": "Moufle",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mains",
+    "chaud",
+    "hiver",
+    "laine",
+    "froid",
+    "paire",
+    "enfant",
+    "confort"
+  ],
+  "summary": "Vêtement chaud pour les mains sans doigts séparés.",
+  "details": [
+    "Accessoire",
+    "Mains",
+    "Hiver"
+  ]
+}

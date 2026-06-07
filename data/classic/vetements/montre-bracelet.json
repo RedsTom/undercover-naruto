@@ -1,0 +1,24 @@
+{
+  "id": "montre-bracelet",
+  "name": "Montre-bracelet",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "poignet",
+    "temps",
+    "aiguilles",
+    "bracelet",
+    "métal",
+    "accessoire",
+    "élégant",
+    "précision"
+  ],
+  "summary": "Accessoire donnant l'heure au poignet.",
+  "details": [
+    "Accessoire",
+    "Poignet",
+    "Temps"
+  ]
+}

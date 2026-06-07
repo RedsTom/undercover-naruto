@@ -1,0 +1,24 @@
+{
+  "id": "orage",
+  "name": "Orage",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "éclair",
+    "tonnerre",
+    "pluie",
+    "nuage",
+    "violent",
+    "ciel",
+    "peur",
+    "grêle"
+  ],
+  "summary": "Perturbation électrique atmosphérique.",
+  "details": [
+    "Météo",
+    "Électrique",
+    "Violent"
+  ]
+}

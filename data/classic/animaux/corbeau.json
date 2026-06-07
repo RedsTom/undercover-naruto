@@ -1,0 +1,24 @@
+{
+  "id": "corbeau",
+  "name": "Corbeau",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "corvidé",
+    "plumes",
+    "noir",
+    "croassement",
+    "intelligent",
+    "charogne"
+  ],
+  "summary": "Grand oiseau noir de la famille des corvidés.",
+  "details": [
+    "Corvidé",
+    "Passereau",
+    "Oiseau"
+  ]
+}

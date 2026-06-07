@@ -1,0 +1,24 @@
+{
+  "id": "écrivain",
+  "name": "Écrivain",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "livre",
+    "roman",
+    "texte",
+    "style",
+    "publication",
+    "imagination",
+    "plume",
+    "éditeur"
+  ],
+  "summary": "Personne qui écrit des livres.",
+  "details": [
+    "Littérature",
+    "Écriture",
+    "Création"
+  ]
+}

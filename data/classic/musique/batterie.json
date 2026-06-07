@@ -1,0 +1,24 @@
+{
+  "id": "batterie",
+  "name": "Batterie",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "percussion",
+    "peau",
+    "baguettes",
+    "rythme",
+    "rock",
+    "jazz",
+    "ensemble"
+  ],
+  "summary": "Ensemble de percussions.",
+  "details": [
+    "Instrument",
+    "Percussion",
+    "Rythme"
+  ]
+}

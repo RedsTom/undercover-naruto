@@ -1,0 +1,24 @@
+{
+  "id": "parc",
+  "name": "Parc",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vert",
+    "arbres",
+    "promenade",
+    "jeux",
+    "urbain",
+    "bancs",
+    "pelouse",
+    "public"
+  ],
+  "summary": "Espace vert public en ville.",
+  "details": [
+    "Nature",
+    "Urbain",
+    "Loisir"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "fleur",
+  "name": "Fleur",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plante",
+    "pétales",
+    "couleur",
+    "parfum",
+    "printemps",
+    "jardin",
+    "beauté",
+    "pollen"
+  ],
+  "summary": "Organe reproducteur coloré des plantes.",
+  "details": [
+    "Végétal",
+    "Reproduction",
+    "Beauté"
+  ]
+}

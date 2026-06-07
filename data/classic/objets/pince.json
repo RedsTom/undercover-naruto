@@ -1,0 +1,24 @@
+{
+  "id": "pince",
+  "name": "Pince",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "saisir",
+    "mors",
+    "manches",
+    "métal",
+    "bricolage",
+    "serrer",
+    "couper"
+  ],
+  "summary": "Outil à mors pour saisir et serrer.",
+  "details": [
+    "Outil",
+    "Bricolage",
+    "Serrage"
+  ]
+}

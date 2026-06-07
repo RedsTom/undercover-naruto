@@ -1,0 +1,24 @@
+{
+  "id": "scooter",
+  "name": "Scooter",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "deux roues",
+    "moteur",
+    "urbain",
+    "jeune",
+    "pratique",
+    "ville",
+    "léger",
+    "maniable"
+  ],
+  "summary": "Deux-roues motorisé urbain.",
+  "details": [
+    "Transport",
+    "Deux roues",
+    "Urbain"
+  ]
+}

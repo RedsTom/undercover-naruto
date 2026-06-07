@@ -1,0 +1,24 @@
+{
+  "id": "pêche",
+  "name": "Pêche",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "duveteux",
+    "noyau",
+    "juteux",
+    "sucré",
+    "été",
+    "chair jaune",
+    "arbre"
+  ],
+  "summary": "Fruit du pêcher à la peau duveteuse et au noyau.",
+  "details": [
+    "Fruit",
+    "Drupe",
+    "Comestible"
+  ]
+}

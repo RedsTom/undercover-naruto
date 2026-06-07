@@ -1,0 +1,24 @@
+{
+  "id": "nuage",
+  "name": "Nuage",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ciel",
+    "blanc",
+    "eau",
+    "vapeur",
+    "pluie",
+    "mou",
+    "flotter",
+    "gris"
+  ],
+  "summary": "Masse de vapeur d'eau dans le ciel.",
+  "details": [
+    "Ciel",
+    "Eau",
+    "Météo"
+  ]
+}

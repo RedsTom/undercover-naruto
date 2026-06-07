@@ -1,0 +1,24 @@
+{
+  "id": "orchestre",
+  "name": "Orchestre",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ensemble",
+    "musiciens",
+    "chef",
+    "symphonique",
+    "classique",
+    "instruments",
+    "harmonie",
+    "direction"
+  ],
+  "summary": "Ensemble de musiciens dirigés.",
+  "details": [
+    "Musique",
+    "Ensemble",
+    "Classique"
+  ]
+}

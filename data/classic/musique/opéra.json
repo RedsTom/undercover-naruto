@@ -1,0 +1,24 @@
+{
+  "id": "opéra",
+  "name": "Opéra",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "chant",
+    "théâtre",
+    "scène",
+    "drame",
+    "classique",
+    "italien",
+    "orchestre",
+    "costume"
+  ],
+  "summary": "Art lyrique mêlant chant et théâtre.",
+  "details": [
+    "Musique",
+    "Théâtre",
+    "Classique"
+  ]
+}

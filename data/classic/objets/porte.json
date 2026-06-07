@@ -1,0 +1,24 @@
+{
+  "id": "porte",
+  "name": "Porte",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ouverture",
+    "bois",
+    "poignée",
+    "entrée",
+    "fermer",
+    "mur",
+    "passage",
+    "battant"
+  ],
+  "summary": "Panneau mobile fermant une ouverture dans un mur.",
+  "details": [
+    "Ouverture",
+    "Bois",
+    "Bâtiment"
+  ]
+}

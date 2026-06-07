@@ -103,19 +103,16 @@ const localAnimeList = computed(() => {
 onMounted(async () => {
   if (localAnimeList.value.length > 0) {
     animeList.value = [...localAnimeList.value];
-    if (!selectedAnime.value) {
-      selectedAnime.value = localAnimeList.value[0].slug;
-    }
   }
   try {
     const apiList = await $fetch('/api/anime') as any;
     if (apiList.length > 0) {
       animeList.value = apiList;
-      if (!selectedAnime.value) {
-        selectedAnime.value = apiList[0].slug;
-      }
     }
   } catch {}
+  if (!props.config?.anime && animeList.value.length > 0 && !selectedAnime.value) {
+    selectedAnime.value = animeList.value[0].slug;
+  }
 });
 
 watch(() => props.config, async (cfg) => {

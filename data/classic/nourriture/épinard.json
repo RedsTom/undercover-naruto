@@ -1,0 +1,24 @@
+{
+  "id": "épinard",
+  "name": "Épinard",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "feuille",
+    "vert",
+    "fer",
+    "cuisine",
+    "santé",
+    "Popeye",
+    "tendre"
+  ],
+  "summary": "Légume-feuille vert riche en fer.",
+  "details": [
+    "Légume",
+    "Feuille",
+    "Chénopodiacée"
+  ]
+}

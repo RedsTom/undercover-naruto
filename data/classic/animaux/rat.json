@@ -1,0 +1,24 @@
+{
+  "id": "rat",
+  "name": "Rat",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "rongeur",
+    "mammifère",
+    "muridé",
+    "poils",
+    "queue nue",
+    "urbain",
+    "nuisible"
+  ],
+  "summary": "Rongeur muridé commun dans les zones urbaines.",
+  "details": [
+    "Rongeur",
+    "Omnivore",
+    "Muridé"
+  ]
+}

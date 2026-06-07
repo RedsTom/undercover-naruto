@@ -1,0 +1,24 @@
+{
+  "id": "badminton",
+  "name": "Badminton",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "raquette",
+    "volant",
+    "filet",
+    "court",
+    "rapide",
+    "léger",
+    "intérieur",
+    "technique"
+  ],
+  "summary": "Sport de raquette avec volant.",
+  "details": [
+    "Sport",
+    "Raquette",
+    "Intérieur"
+  ]
+}

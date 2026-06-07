@@ -1,0 +1,24 @@
+{
+  "id": "assiette",
+  "name": "Assiette",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "manger",
+    "plat",
+    "rond",
+    "creux",
+    "porcelaine",
+    "repas",
+    "poser",
+    "table"
+  ],
+  "summary": "Récipient plat pour servir les aliments.",
+  "details": [
+    "Vaisselle",
+    "Porcelaine",
+    "Table"
+  ]
+}

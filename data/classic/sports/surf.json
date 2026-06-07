@@ -1,0 +1,24 @@
+{
+  "id": "surf",
+  "name": "Surf",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vague",
+    "mer",
+    "planche",
+    "glisse",
+    "océan",
+    "plage",
+    "équilibre",
+    "été"
+  ],
+  "summary": "Sport de glisse sur les vagues.",
+  "details": [
+    "Sport",
+    "Mer",
+    "Glisse"
+  ]
+}

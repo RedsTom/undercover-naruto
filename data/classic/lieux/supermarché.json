@@ -1,0 +1,24 @@
+{
+  "id": "supermarché",
+  "name": "Supermarché",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "courses",
+    "rayons",
+    "caisses",
+    "caddie",
+    "produits",
+    "frais",
+    "congélateur",
+    "grande surface"
+  ],
+  "summary": "Grand magasin d'alimentation en libre-service.",
+  "details": [
+    "Commerce",
+    "Alimentation",
+    "Grande surface"
+  ]
+}

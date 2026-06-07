@@ -1,0 +1,24 @@
+{
+  "id": "arc-en-ciel",
+  "name": "Arc-en-ciel",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "couleurs",
+    "ciel",
+    "pluie",
+    "soleil",
+    "arc",
+    "beauté",
+    "rare",
+    "magie"
+  ],
+  "summary": "Phénomène lumineux coloré après la pluie.",
+  "details": [
+    "Lumière",
+    "Couleurs",
+    "Ciel"
+  ]
+}

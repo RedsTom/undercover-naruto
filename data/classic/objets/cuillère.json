@@ -1,0 +1,24 @@
+{
+  "id": "cuillère",
+  "name": "Cuillère",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "manger",
+    "creux",
+    "métal",
+    "repas",
+    "liquide",
+    "soupe",
+    "couvert",
+    "bouche"
+  ],
+  "summary": "Couvert creux pour les aliments liquides.",
+  "details": [
+    "Couvert",
+    "Métal",
+    "Table"
+  ]
+}

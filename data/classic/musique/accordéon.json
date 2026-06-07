@@ -1,0 +1,24 @@
+{
+  "id": "accordéon",
+  "name": "Accordéon",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "anche",
+    "soufflet",
+    "boutons",
+    "clavier",
+    "musette",
+    "populaire",
+    "portable"
+  ],
+  "summary": "Instrument à anche et soufflet.",
+  "details": [
+    "Instrument",
+    "Anche",
+    "Populaire"
+  ]
+}

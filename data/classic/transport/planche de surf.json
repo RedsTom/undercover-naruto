@@ -1,0 +1,24 @@
+{
+  "id": "planche de surf",
+  "name": "Planche de surf",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "vague",
+    "glisse",
+    "sport",
+    "équilibre",
+    "plage",
+    "été",
+    "sensation"
+  ],
+  "summary": "Planche pour surfer les vagues.",
+  "details": [
+    "Transport",
+    "Mer",
+    "Sport"
+  ]
+}

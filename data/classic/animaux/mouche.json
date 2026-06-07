@@ -1,0 +1,24 @@
+{
+  "id": "mouche",
+  "name": "Mouche",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "diptère",
+    "ailes",
+    "bourdonne",
+    "nuisible",
+    "décomposition",
+    "rapide"
+  ],
+  "summary": "Insecte diptère commun aux ailes transparentes.",
+  "details": [
+    "Insecte",
+    "Diptère",
+    "Nuisible"
+  ]
+}

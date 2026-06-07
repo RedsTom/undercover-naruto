@@ -1,0 +1,24 @@
+{
+  "id": "ski",
+  "name": "Ski",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "neige",
+    "glisse",
+    "pente",
+    "montagne",
+    "sport",
+    "hiver",
+    "vitesse",
+    "descente"
+  ],
+  "summary": "Planches pour glisser sur neige.",
+  "details": [
+    "Transport",
+    "Neige",
+    "Sport"
+  ]
+}

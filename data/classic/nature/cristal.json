@@ -1,0 +1,24 @@
+{
+  "id": "cristal",
+  "name": "Cristal",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "minéral",
+    "transparent",
+    "brillant",
+    "géométrie",
+    "précieux",
+    "taille",
+    "verre",
+    "pur"
+  ],
+  "summary": "Minéral transparent et brillant.",
+  "details": [
+    "Minéral",
+    "Transparent",
+    "Brillant"
+  ]
+}

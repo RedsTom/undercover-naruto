@@ -1,0 +1,24 @@
+{
+  "id": "prison",
+  "name": "Prison",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "détenus",
+    "cellules",
+    "gardes",
+    "punition",
+    "liberté",
+    "sécurité",
+    "jugement",
+    "crime"
+  ],
+  "summary": "Établissement pénitentiaire.",
+  "details": [
+    "Justice",
+    "Sécurité",
+    "Bâtiment"
+  ]
+}

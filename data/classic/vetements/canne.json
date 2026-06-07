@@ -1,0 +1,24 @@
+{
+  "id": "canne",
+  "name": "Canne",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "marche",
+    "bois",
+    "soutien",
+    "personne âgée",
+    "poignée",
+    "élégant",
+    "accessoire",
+    "aide"
+  ],
+  "summary": "Bâton d'aide à la marche.",
+  "details": [
+    "Accessoire",
+    "Marche",
+    "Aide"
+  ]
+}

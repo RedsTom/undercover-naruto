@@ -1,0 +1,24 @@
+{
+  "id": "éclair",
+  "name": "Éclair",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "lumière",
+    "ciel",
+    "orage",
+    "rapide",
+    "brillant",
+    "peur",
+    "danger",
+    "électricité"
+  ],
+  "summary": "Décharge électrique lumineuse.",
+  "details": [
+    "Électricité",
+    "Lumière",
+    "Orage"
+  ]
+}

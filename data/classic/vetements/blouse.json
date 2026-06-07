@@ -1,0 +1,24 @@
+{
+  "id": "blouse",
+  "name": "Blouse",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "travail",
+    "blanc",
+    "médecin",
+    "protection",
+    "longue",
+    "boutons",
+    "hôpital",
+    "professionnel"
+  ],
+  "summary": "Vêtement de travail long et blanc.",
+  "details": [
+    "Vêtement",
+    "Travail",
+    "Médical"
+  ]
+}

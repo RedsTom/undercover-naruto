@@ -1,0 +1,24 @@
+{
+  "id": "parking",
+  "name": "Parking",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voitures",
+    "stationner",
+    "places",
+    "sous-terrain",
+    "payant",
+    "gratuit",
+    "entrée",
+    "sortie"
+  ],
+  "summary": "Espace de stationnement pour véhicules.",
+  "details": [
+    "Transport",
+    "Stationnement",
+    "Infrastructure"
+  ]
+}

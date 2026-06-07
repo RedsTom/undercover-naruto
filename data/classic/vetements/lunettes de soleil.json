@@ -1,0 +1,24 @@
+{
+  "id": "lunettes de soleil",
+  "name": "Lunettes de soleil",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "yeux",
+    "protection",
+    "soleil",
+    "verres",
+    "monture",
+    "mode",
+    "UV",
+    "été"
+  ],
+  "summary": "Lunettes protégeant du soleil.",
+  "details": [
+    "Accessoire",
+    "Yeux",
+    "Protection"
+  ]
+}

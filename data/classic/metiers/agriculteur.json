@@ -1,0 +1,24 @@
+{
+  "id": "agriculteur",
+  "name": "Agriculteur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "champs",
+    "cultures",
+    "tracteur",
+    "récolte",
+    "ferme",
+    "animaux",
+    "terre",
+    "saisons"
+  ],
+  "summary": "Personne qui cultive la terre.",
+  "details": [
+    "Agriculture",
+    "Rural",
+    "Exploitant"
+  ]
+}

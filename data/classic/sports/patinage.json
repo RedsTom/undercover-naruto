@@ -1,0 +1,24 @@
+{
+  "id": "patinage",
+  "name": "Patinage",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "glisse",
+    "patins",
+    "glace",
+    "pirouette",
+    "saut",
+    "artistique",
+    "vitesse",
+    "hiver"
+  ],
+  "summary": "Sport de glisse sur patins.",
+  "details": [
+    "Sport",
+    "Glisse",
+    "Hiver"
+  ]
+}

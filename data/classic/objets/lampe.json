@@ -1,0 +1,24 @@
+{
+  "id": "lampe",
+  "name": "Lampe",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "lumière",
+    "électricité",
+    "ampoule",
+    "poser",
+    "bureau",
+    "éclairage",
+    "interrupteur",
+    "abat-jour"
+  ],
+  "summary": "Appareil d'éclairage électrique.",
+  "details": [
+    "Éclairage",
+    "Électrique",
+    "Mobilier"
+  ]
+}

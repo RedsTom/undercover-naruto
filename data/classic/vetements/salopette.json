@@ -1,0 +1,24 @@
+{
+  "id": "salopette",
+  "name": "Salopette",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pantalon",
+    "bretelles",
+    "travail",
+    "bleu",
+    "solide",
+    "ouvrier",
+    "poche",
+    "pratique"
+  ],
+  "summary": "Pantalon à bretelles intégré.",
+  "details": [
+    "Vêtement",
+    "Travail",
+    "Pratique"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "danse",
+  "name": "Danse",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "musique",
+    "rythme",
+    "corps",
+    "mouvement",
+    "chorégraphie",
+    "scène",
+    "expression",
+    "grâce"
+  ],
+  "summary": "Art du mouvement en rythme.",
+  "details": [
+    "Art",
+    "Mouvement",
+    "Rythme"
+  ]
+}

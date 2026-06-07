@@ -1,0 +1,24 @@
+{
+  "id": "flûte",
+  "name": "Flûte",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "vent",
+    "bois",
+    "souffle",
+    "aigu",
+    "léger",
+    "classique",
+    "argent"
+  ],
+  "summary": "Instrument à vent en bois ou métal.",
+  "details": [
+    "Instrument",
+    "Vent",
+    "Bois"
+  ]
+}

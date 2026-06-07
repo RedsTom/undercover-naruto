@@ -1,0 +1,24 @@
+{
+  "id": "clarinette",
+  "name": "Clarinette",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "vent",
+    "anche",
+    "bois",
+    "noir",
+    "jazz",
+    "classique",
+    "chaud"
+  ],
+  "summary": "Instrument à vent à anche simple.",
+  "details": [
+    "Instrument",
+    "Vent",
+    "Bois"
+  ]
+}

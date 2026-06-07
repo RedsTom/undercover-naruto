@@ -1,0 +1,24 @@
+{
+  "id": "harmonie",
+  "name": "Harmonie",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "accords",
+    "simultané",
+    "consonance",
+    "mélodie",
+    "accompagnement",
+    "riche",
+    "complexe",
+    "beau"
+  ],
+  "summary": "Combinaison de sons simultanés.",
+  "details": [
+    "Musique",
+    "Accord",
+    "Simultané"
+  ]
+}

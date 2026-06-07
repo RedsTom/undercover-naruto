@@ -1,0 +1,24 @@
+{
+  "id": "eau",
+  "name": "Eau",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "transparent",
+    "liquide",
+    "vie",
+    "incolore",
+    "inodore",
+    "essentiel",
+    "verre"
+  ],
+  "summary": "Liquide transparent essentiel à la vie.",
+  "details": [
+    "Boisson",
+    "Essentiel",
+    "Hydratation"
+  ]
+}

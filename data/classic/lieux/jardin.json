@@ -1,0 +1,24 @@
+{
+  "id": "jardin",
+  "name": "Jardin",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plantes",
+    "fleurs",
+    "pelouse",
+    "arbres",
+    "maison",
+    "verdure",
+    "repos",
+    "potager"
+  ],
+  "summary": "Espace cultivé de plantes et fleurs.",
+  "details": [
+    "Nature",
+    "Végétation",
+    "Loisir"
+  ]
+}

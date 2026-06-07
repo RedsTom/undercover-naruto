@@ -1,0 +1,24 @@
+{
+  "id": "bougie",
+  "name": "Bougie",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "lumière",
+    "cire",
+    "mèche",
+    "flamme",
+    "parfum",
+    "décoration",
+    "brûler",
+    "ambiance"
+  ],
+  "summary": "Source de lumière à base de cire et mèche.",
+  "details": [
+    "Éclairage",
+    "Décoration",
+    "Combustion"
+  ]
+}

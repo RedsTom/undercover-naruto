@@ -1,0 +1,24 @@
+{
+  "id": "volcan",
+  "name": "Volcan",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "montagne",
+    "lave",
+    "éruption",
+    "feu",
+    "cendre",
+    "cratère",
+    "danger",
+    "puissant"
+  ],
+  "summary": "Montagne rejetant lave et cendres.",
+  "details": [
+    "Géologie",
+    "Montagne",
+    "Danger"
+  ]
+}

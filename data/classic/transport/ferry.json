@@ -1,0 +1,24 @@
+{
+  "id": "ferry",
+  "name": "Ferry",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "traversée",
+    "mer",
+    "voiture",
+    "passagers",
+    "ligne",
+    "port",
+    "court",
+    "régulier"
+  ],
+  "summary": "Navire de traversée maritime.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Traversée"
+  ]
+}

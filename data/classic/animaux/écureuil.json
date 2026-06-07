@@ -1,0 +1,24 @@
+{
+  "id": "écureuil",
+  "name": "Écureuil",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "rongeur",
+    "poils",
+    "queue touffue",
+    "arbre",
+    "noisettes"
+  ],
+  "summary": "Petit rongeur arboricole à la queue touffue.",
+  "details": [
+    "Rongeur",
+    "Herbivore",
+    "Arboricole"
+  ]
+}

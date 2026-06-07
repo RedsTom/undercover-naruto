@@ -1,6 +1,5 @@
 import { RoomModel, PlayerModel } from '../models';
 import { broadcastToRoom } from './sse';
-import { handlePlayerDisconnect } from './disconnect';
 
 const rooms = new Map<string, RoomModel>();
 
@@ -60,11 +59,6 @@ setInterval(() => {
     if (room.isInactive()) {
       rooms.delete(id);
       return;
-    }
-    for (const [pid, player] of room.players) {
-      if (now - player.lastPing > 30000) {
-        handlePlayerDisconnect(id, pid);
-      }
     }
   });
 }, 15000);

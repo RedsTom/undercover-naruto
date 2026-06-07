@@ -1,0 +1,24 @@
+{
+  "id": "mairie",
+  "name": "Mairie",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "administration",
+    "commune",
+    "maire",
+    "état civil",
+    "mariage",
+    "papiers",
+    "public",
+    "drapeau"
+  ],
+  "summary": "Bâtiment administratif de la commune.",
+  "details": [
+    "Administration",
+    "Commune",
+    "Public"
+  ]
+}

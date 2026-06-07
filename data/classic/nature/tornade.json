@@ -1,0 +1,24 @@
+{
+  "id": "tornade",
+  "name": "Tornade",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vent",
+    "tourbillon",
+    "nuage",
+    "entonnoir",
+    "destruction",
+    "violent",
+    "rare",
+    "danger"
+  ],
+  "summary": "Tourbillon de vent violent.",
+  "details": [
+    "Météo",
+    "Vent",
+    "Danger"
+  ]
+}

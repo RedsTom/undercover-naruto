@@ -1,0 +1,24 @@
+{
+  "id": "terre",
+  "name": "Terre",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sol",
+    "brun",
+    "cultiver",
+    "jardin",
+    "planète",
+    "fertile",
+    "humide",
+    "planter"
+  ],
+  "summary": "Sol fertile pour la végétation.",
+  "details": [
+    "Sol",
+    "Fertile",
+    "Jardin"
+  ]
+}

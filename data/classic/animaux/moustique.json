@@ -1,0 +1,24 @@
+{
+  "id": "moustique",
+  "name": "Moustique",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "insecte",
+    "diptère",
+    "ailes",
+    "piqûre",
+    "sang",
+    "bourdonne",
+    "eau"
+  ],
+  "summary": "Petit insecte diptère piqueur se nourrissant de sang.",
+  "details": [
+    "Insecte",
+    "Diptère",
+    "Hématophage"
+  ]
+}

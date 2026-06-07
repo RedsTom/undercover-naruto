@@ -1,0 +1,24 @@
+{
+  "id": "chemise",
+  "name": "Chemise",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "haut",
+    "boutons",
+    "col",
+    "manches",
+    "tissu",
+    "coton",
+    "formel",
+    "repasser"
+  ],
+  "summary": "Vêtement à boutons couvrant le haut du corps.",
+  "details": [
+    "Vêtement",
+    "Haut",
+    "Formel"
+  ]
+}

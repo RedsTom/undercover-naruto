@@ -1,0 +1,24 @@
+{
+  "id": "rythme",
+  "name": "Rythme",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "temps",
+    "battement",
+    "pulsation",
+    "mesure",
+    "cadence",
+    "danse",
+    "régulier",
+    "percussion"
+  ],
+  "summary": "Organisation temporelle de la musique.",
+  "details": [
+    "Musique",
+    "Temps",
+    "Pulsation"
+  ]
+}

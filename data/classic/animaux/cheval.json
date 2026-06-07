@@ -1,0 +1,24 @@
+{
+  "id": "cheval",
+  "name": "Cheval",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "équidé",
+    "sabots",
+    "crinière",
+    "monture",
+    "galope"
+  ],
+  "summary": "Grand mammifère ongulé de la famille des équidés.",
+  "details": [
+    "Équidé",
+    "Herbivore",
+    "Animal de selle"
+  ]
+}

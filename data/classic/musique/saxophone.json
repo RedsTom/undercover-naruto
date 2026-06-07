@@ -1,0 +1,24 @@
+{
+  "id": "saxophone",
+  "name": "Saxophone",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "vent",
+    "anche",
+    "cuivre",
+    "jazz",
+    "blues",
+    "courbe",
+    "métal"
+  ],
+  "summary": "Instrument à vent en cuivre à anche.",
+  "details": [
+    "Instrument",
+    "Vent",
+    "Jazz"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "équitation",
+  "name": "Équitation",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cheval",
+    "monte",
+    "selle",
+    "carrière",
+    "obstacle",
+    "dressage",
+    "cavalier",
+    "complicité"
+  ],
+  "summary": "Sport équestre.",
+  "details": [
+    "Sport",
+    "Animal",
+    "Individuel"
+  ]
+}

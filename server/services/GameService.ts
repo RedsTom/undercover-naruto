@@ -105,52 +105,12 @@ export class GameService {
     return null;
   }
 
-  static endRound(room: RoomModel): void {
-    if (!room.gameState) return;
-
-    const result = VoteService.resolveVotes(room);
-    const winner = GameService.checkWinCondition(room);
-
-    if (winner) {
-      room.setPhase('finished');
-      room.gameState!.winner = winner;
-      room.gameState!.exposed = Array.from(room.players.values()).map(p => ({
-        playerId: p.id,
-        name: p.name,
-        role: p.role ?? 'unknown',
-        word: p.word ?? null,
-      }));
-      if (winner === 'civilians') {
-        room.gameState.scores.civilians++;
-      } else {
-        room.gameState.scores.undercover++;
-      }
-    } else {
-      room.setPhase('reveal');
-    }
-
-    room.updateActivity();
-  }
-
-  static continueRound(room: RoomModel): boolean {
-    if (!room.gameState || room.gameState.phase !== 'reveal') return false;
-    if (room.players.size < 3) return false;
-
-    room.players.forEach(p => { p.isAlive = true; });
-
-    room.setPhase('discussion');
-    room.gameState.currentTurnIndex = 0;
-    room.gameState.timerEndTime = Date.now() + room.gameState.config.discussionTime * 1000;
-    room.updateActivity();
-
-    return true;
-  }
-
   static returnToLobby(room: RoomModel): void {
     if (!room.gameState) return;
     room.gameState.timerEndTime = null;
+    room.gameState.phase = 'waiting';
+    room.gameState.currentTurnIndex = 0;
     room.players.forEach(p => { p.isAlive = true; });
-    room.setPhase('waiting');
     room.updateActivity();
   }
 

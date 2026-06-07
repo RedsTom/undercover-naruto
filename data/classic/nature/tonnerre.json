@@ -1,0 +1,24 @@
+{
+  "id": "tonnerre",
+  "name": "Tonnerre",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bruit",
+    "orage",
+    "ciel",
+    "grondement",
+    "peur",
+    "violence",
+    "orage",
+    "écho"
+  ],
+  "summary": "Bruit de l'orage.",
+  "details": [
+    "Bruit",
+    "Orage",
+    "Ciel"
+  ]
+}

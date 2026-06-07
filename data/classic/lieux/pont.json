@@ -1,0 +1,24 @@
+{
+  "id": "pont",
+  "name": "Pont",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "traverser",
+    "rivière",
+    "route",
+    "arches",
+    "métal",
+    "béton",
+    "passage",
+    "lien"
+  ],
+  "summary": "Construction pour traverser un obstacle.",
+  "details": [
+    "Infrastructure",
+    "Transport",
+    "Génie civil"
+  ]
+}

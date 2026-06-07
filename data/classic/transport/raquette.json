@@ -1,0 +1,24 @@
+{
+  "id": "raquette",
+  "name": "Raquette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "neige",
+    "marche",
+    "raquette",
+    "hiver",
+    "montagne",
+    "randonnée",
+    "traditionnel",
+    "nature"
+  ],
+  "summary": "Chaussure pour marcher sur neige.",
+  "details": [
+    "Transport",
+    "Neige",
+    "Marche"
+  ]
+}

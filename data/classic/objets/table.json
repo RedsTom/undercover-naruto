@@ -1,0 +1,24 @@
+{
+  "id": "table",
+  "name": "Table",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "meuble",
+    "bois",
+    "plat",
+    "repas",
+    "pieds",
+    "surface",
+    "manger",
+    "salon"
+  ],
+  "summary": "Meuble à surface plane posée sur des pieds.",
+  "details": [
+    "Meuble",
+    "Bois",
+    "Mobilier"
+  ]
+}

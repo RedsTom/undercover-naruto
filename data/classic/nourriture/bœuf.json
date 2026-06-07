@@ -1,0 +1,24 @@
+{
+  "id": "bœuf",
+  "name": "Bœuf",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "viande",
+    "rouge",
+    "vache",
+    "muscle",
+    "fer",
+    "steak",
+    "cuisson",
+    "robuste"
+  ],
+  "summary": "Viande rouge de l'animal bovin adulte.",
+  "details": [
+    "Viande",
+    "Rouge",
+    "Bovin"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "chapeau",
+  "name": "Chapeau",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tête",
+    "bord",
+    "élégant",
+    "soleil",
+    "feutre",
+    "formel",
+    "protection",
+    "mode"
+  ],
+  "summary": "Couvre-chef à bords.",
+  "details": [
+    "Accessoire",
+    "Tête",
+    "Élégant"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ouragan",
+  "name": "Ouragan",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "vent",
+    "tempête",
+    "tropical",
+    "destruction",
+    "pluie",
+    "cyclone",
+    "danger",
+    "puissant"
+  ],
+  "summary": "Tempête tropicale violente.",
+  "details": [
+    "Météo",
+    "Vent",
+    "Danger"
+  ]
+}

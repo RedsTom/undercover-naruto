@@ -1,0 +1,24 @@
+{
+  "id": "alliance",
+  "name": "Alliance",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "doigt",
+    "or",
+    "mariage",
+    "rond",
+    "symbole",
+    "engagement",
+    "précieux",
+    "couple"
+  ],
+  "summary": "Anneau symbolisant le mariage.",
+  "details": [
+    "Bijou",
+    "Mariage",
+    "Symbole"
+  ]
+}

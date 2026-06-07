@@ -1,0 +1,24 @@
+{
+  "id": "bus",
+  "name": "Bus",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "transport",
+    "public",
+    "passagers",
+    "arrêts",
+    "ligne",
+    "urbain",
+    "grand",
+    "collectif"
+  ],
+  "summary": "Véhicule de transport en commun.",
+  "details": [
+    "Transport",
+    "Public",
+    "Collectif"
+  ]
+}

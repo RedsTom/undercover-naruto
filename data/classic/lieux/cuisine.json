@@ -1,0 +1,24 @@
+{
+  "id": "cuisine",
+  "name": "Cuisine",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "préparer",
+    "manger",
+    "four",
+    "plaques",
+    "évier",
+    "frigo",
+    "repas",
+    "ustensiles"
+  ],
+  "summary": "Pièce pour la préparation des repas.",
+  "details": [
+    "Maison",
+    "Repas",
+    "Pièce"
+  ]
+}

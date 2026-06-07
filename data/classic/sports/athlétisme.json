@@ -1,0 +1,24 @@
+{
+  "id": "athlétisme",
+  "name": "Athlétisme",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "course",
+    "saut",
+    "lancer",
+    "piste",
+    "stade",
+    "vitesse",
+    "endurance",
+    "olympique"
+  ],
+  "summary": "Ensemble de sports de course, saut et lancer.",
+  "details": [
+    "Sport",
+    "Piste",
+    "Olympique"
+  ]
+}

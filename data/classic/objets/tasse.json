@@ -1,0 +1,24 @@
+{
+  "id": "tasse",
+  "name": "Tasse",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boire",
+    "chaud",
+    "anse",
+    "café",
+    "thé",
+    "porcelaine",
+    "petit",
+    "matin"
+  ],
+  "summary": "Récipient à anse pour boissons chaudes.",
+  "details": [
+    "Vaisselle",
+    "Porcelaine",
+    "Table"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sac à dos",
+  "name": "Sac à dos",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "dos",
+    "porter",
+    "épaules",
+    "sangles",
+    "école",
+    "voyage",
+    "pratique",
+    "grand"
+  ],
+  "summary": "Sac porté sur le dos.",
+  "details": [
+    "Accessoire",
+    "Dos",
+    "Pratique"
+  ]
+}

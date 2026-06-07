@@ -1,0 +1,24 @@
+{
+  "id": "orgue",
+  "name": "Orgue",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "clavier",
+    "tuyaux",
+    "vent",
+    "église",
+    "puissant",
+    "polyphonique",
+    "sacré"
+  ],
+  "summary": "Instrument à clavier et tuyaux.",
+  "details": [
+    "Instrument",
+    "Clavier",
+    "Tuyaux"
+  ]
+}

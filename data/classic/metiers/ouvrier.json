@@ -1,0 +1,24 @@
+{
+  "id": "ouvrier",
+  "name": "Ouvrier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "travail",
+    "usine",
+    "manuel",
+    "chaîne",
+    "production",
+    "casque",
+    "équipe",
+    "physique"
+  ],
+  "summary": "Travailleur manuel dans l'industrie.",
+  "details": [
+    "Industrie",
+    "Manuel",
+    "Salarié"
+  ]
+}

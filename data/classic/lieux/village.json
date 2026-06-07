@@ -1,0 +1,24 @@
+{
+  "id": "village",
+  "name": "Village",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "petit",
+    "rural",
+    "maisons",
+    "église",
+    "place",
+    "calme",
+    "campagne",
+    "communauté"
+  ],
+  "summary": "Petite agglomération rurale.",
+  "details": [
+    "Urbanisme",
+    "Rural",
+    "Communauté"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "lac",
+  "name": "Lac",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "stagnant",
+    "profond",
+    "poissons",
+    "bateau",
+    "nature",
+    "baignade",
+    "calme"
+  ],
+  "summary": "Grande étendue d'eau stagnante.",
+  "details": [
+    "Nature",
+    "Eau",
+    "Hydrographie"
+  ]
+}

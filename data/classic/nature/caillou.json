@@ -1,0 +1,24 @@
+{
+  "id": "caillou",
+  "name": "Caillou",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pierre",
+    "petit",
+    "rond",
+    "sol",
+    "chemin",
+    "dur",
+    "ramasser",
+    "lancer"
+  ],
+  "summary": "Petite pierre arrondie.",
+  "details": [
+    "Minéral",
+    "Petit",
+    "Sol"
+  ]
+}

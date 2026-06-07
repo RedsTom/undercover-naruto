@@ -1,0 +1,24 @@
+{
+  "id": "rateau",
+  "name": "Râteau",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "outil",
+    "jardin",
+    "dents",
+    "manche",
+    "feuilles",
+    "sol",
+    "égaliser",
+    "métal"
+  ],
+  "summary": "Outil à dents pour ratisser le sol.",
+  "details": [
+    "Outil",
+    "Jardin",
+    "Nettoyage"
+  ]
+}

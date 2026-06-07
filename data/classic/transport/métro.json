@@ -1,0 +1,24 @@
+{
+  "id": "métro",
+  "name": "Métro",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "souterrain",
+    "urbain",
+    "rapide",
+    "station",
+    "rame",
+    "ville",
+    "ligne",
+    "bondé"
+  ],
+  "summary": "Transport urbain souterrain.",
+  "details": [
+    "Transport",
+    "Souterrain",
+    "Urbain"
+  ]
+}

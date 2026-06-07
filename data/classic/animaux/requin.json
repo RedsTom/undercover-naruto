@@ -1,0 +1,24 @@
+{
+  "id": "requin",
+  "name": "Requin",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "aquatique",
+    "cartilagineux",
+    "nageoires",
+    "dents",
+    "prédateur",
+    "mer",
+    "rapide"
+  ],
+  "summary": "Poisson cartilagineux prédateur des mers.",
+  "details": [
+    "Chondrichtyen",
+    "Prédateur",
+    "Poisson"
+  ]
+}

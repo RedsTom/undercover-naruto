@@ -1,0 +1,24 @@
+{
+  "id": "chien",
+  "name": "Chien",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "canidé",
+    "poils",
+    "aboie",
+    "fidèle",
+    "queue"
+  ],
+  "summary": "Mammifère carnivore de la famille des canidés, domestiqué par l'homme.",
+  "details": [
+    "Canidé",
+    "Carnivore",
+    "Animal de compagnie"
+  ]
+}

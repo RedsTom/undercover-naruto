@@ -1,0 +1,24 @@
+{
+  "id": "miel",
+  "name": "Miel",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "doux",
+    "liquide",
+    "visqueux",
+    "abeille",
+    "fleurs",
+    "naturel",
+    "antiseptique",
+    "doré"
+  ],
+  "summary": "Substance sucrée produite par les abeilles.",
+  "details": [
+    "Édulcorant",
+    "Naturel",
+    "Apiculture"
+  ]
+}

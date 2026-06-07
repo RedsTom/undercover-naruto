@@ -1,0 +1,24 @@
+{
+  "id": "école",
+  "name": "École",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "éducation",
+    "élèves",
+    "professeurs",
+    "classes",
+    "apprendre",
+    "cours",
+    "savoir",
+    "enfants"
+  ],
+  "summary": "Établissement d'enseignement pour les enfants.",
+  "details": [
+    "Éducation",
+    "Enseignement",
+    "Bâtiment"
+  ]
+}

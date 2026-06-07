@@ -1,0 +1,24 @@
+{
+  "id": "ville",
+  "name": "Ville",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "urbain",
+    "population",
+    "bâtiments",
+    "rues",
+    "commerces",
+    "transports",
+    "animation",
+    "centre"
+  ],
+  "summary": "Grande agglomération urbaine.",
+  "details": [
+    "Urbanisme",
+    "Population",
+    "Géographie"
+  ]
+}

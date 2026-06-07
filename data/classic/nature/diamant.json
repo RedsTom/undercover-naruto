@@ -1,0 +1,24 @@
+{
+  "id": "diamant",
+  "name": "Diamant",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pierre",
+    "précieux",
+    "dur",
+    "brillant",
+    "transparent",
+    "bijou",
+    "cher",
+    "éternel"
+  ],
+  "summary": "Pierre précieuse la plus dure.",
+  "details": [
+    "Minéral",
+    "Précieux",
+    "Dur"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tir à l'arc",
+  "name": "Tir à l'arc",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "arc",
+    "flèche",
+    "cible",
+    "précision",
+    "concentration",
+    "tir",
+    "olympique",
+    "calme"
+  ],
+  "summary": "Sport de précision avec arc et flèches.",
+  "details": [
+    "Sport",
+    "Précision",
+    "Tir"
+  ]
+}

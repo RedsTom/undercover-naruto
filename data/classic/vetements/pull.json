@@ -1,0 +1,24 @@
+{
+  "id": "pull",
+  "name": "Pull",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "haut",
+    "chaud",
+    "laine",
+    "manches longues",
+    "hiver",
+    "tricot",
+    "col",
+    "doux"
+  ],
+  "summary": "Vêtement chaud à manches longues.",
+  "details": [
+    "Vêtement",
+    "Haut",
+    "Chaud"
+  ]
+}

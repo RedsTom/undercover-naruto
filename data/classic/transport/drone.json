@@ -1,0 +1,24 @@
+{
+  "id": "drone",
+  "name": "Drone",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "aérien",
+    "télécommandé",
+    "caméra",
+    "vol",
+    "moderne",
+    "technologie",
+    "prise de vue",
+    "autonome"
+  ],
+  "summary": "Aéronef télécommandé.",
+  "details": [
+    "Transport",
+    "Aérien",
+    "Moderne"
+  ]
+}

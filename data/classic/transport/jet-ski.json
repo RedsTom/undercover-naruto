@@ -1,0 +1,24 @@
+{
+  "id": "jet-ski",
+  "name": "Jet-ski",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "moteur",
+    "vitesse",
+    "sport",
+    "sensation",
+    "glisse",
+    "moderne",
+    "loisir"
+  ],
+  "summary": "Moto des mers.",
+  "details": [
+    "Transport",
+    "Mer",
+    "Sport"
+  ]
+}

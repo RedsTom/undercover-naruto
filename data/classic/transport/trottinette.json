@@ -1,0 +1,24 @@
+{
+  "id": "trottinette",
+  "name": "Trottinette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plateau",
+    "guidon",
+    "pousser",
+    "urbain",
+    "léger",
+    "enfant",
+    "pratique",
+    "pliable"
+  ],
+  "summary": "Engin à plateau et guidon.",
+  "details": [
+    "Transport",
+    "Roues",
+    "Urbain"
+  ]
+}

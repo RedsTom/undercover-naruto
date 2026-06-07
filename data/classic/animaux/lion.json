@@ -1,0 +1,24 @@
+{
+  "id": "lion",
+  "name": "Lion",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "félin",
+    "crinière",
+    "roi",
+    "savane",
+    "rugissement"
+  ],
+  "summary": "Grand félin sauvage d'Afrique, roi des animaux.",
+  "details": [
+    "Félin",
+    "Carnivore",
+    "Prédateur"
+  ]
+}

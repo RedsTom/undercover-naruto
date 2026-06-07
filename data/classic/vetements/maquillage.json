@@ -1,0 +1,24 @@
+{
+  "id": "maquillage",
+  "name": "Maquillage",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "visage",
+    "couleur",
+    "fard",
+    "lèvres",
+    "yeux",
+    "beauté",
+    "cosmétique",
+    "miroir"
+  ],
+  "summary": "Produits cosmétiques pour le visage.",
+  "details": [
+    "Cosmétique",
+    "Beauté",
+    "Visage"
+  ]
+}

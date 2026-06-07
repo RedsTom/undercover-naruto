@@ -1,0 +1,24 @@
+{
+  "id": "forêt",
+  "name": "Forêt",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "arbres",
+    "nature",
+    "bois",
+    "animaux",
+    "sentier",
+    "ombre",
+    "champignons",
+    "vert"
+  ],
+  "summary": "Grande étendue couverte d'arbres.",
+  "details": [
+    "Nature",
+    "Végétation",
+    "Écosystème"
+  ]
+}

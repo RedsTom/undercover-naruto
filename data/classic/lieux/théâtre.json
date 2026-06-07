@@ -1,0 +1,24 @@
+{
+  "id": "théâtre",
+  "name": "Théâtre",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "spectacle",
+    "scène",
+    "acteurs",
+    "pièce",
+    "sièges",
+    "rideau",
+    "culture",
+    "représentation"
+  ],
+  "summary": "Salle de spectacle pour pièces de théâtre.",
+  "details": [
+    "Culture",
+    "Spectacle",
+    "Bâtiment"
+  ]
+}

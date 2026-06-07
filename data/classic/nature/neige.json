@@ -1,0 +1,24 @@
+{
+  "id": "neige",
+  "name": "Neige",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "froid",
+    "blanc",
+    "flocons",
+    "hiver",
+    "glacé",
+    "fondre",
+    "bonhomme",
+    "ski"
+  ],
+  "summary": "Précipitation de cristaux de glace.",
+  "details": [
+    "Froid",
+    "Hiver",
+    "Blanc"
+  ]
+}

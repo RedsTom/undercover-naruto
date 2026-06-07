@@ -1,0 +1,24 @@
+{
+  "id": "harpe",
+  "name": "Harpe",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "pincées",
+    "grand",
+    "cadre",
+    "pédale",
+    "céleste",
+    "élégant"
+  ],
+  "summary": "Grand instrument à cordes pincées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Classique"
+  ]
+}

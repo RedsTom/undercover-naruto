@@ -1,0 +1,24 @@
+{
+  "id": "échelle",
+  "name": "Échelle",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "monter",
+    "barreaux",
+    "bois",
+    "métal",
+    "hauteur",
+    "grimper",
+    "travail",
+    "deux montants"
+  ],
+  "summary": "Instrument à barreaux pour monter.",
+  "details": [
+    "Outil",
+    "Accès",
+    "Travail"
+  ]
+}

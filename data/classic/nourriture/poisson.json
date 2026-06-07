@@ -1,0 +1,24 @@
+{
+  "id": "poisson",
+  "name": "Poisson",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "aquatique",
+    "chair",
+    "oméga-3",
+    "mer",
+    "écailles",
+    "cuisson",
+    "santé",
+    "frais"
+  ],
+  "summary": "Chair comestible des poissons marins ou d'eau douce.",
+  "details": [
+    "Aquatique",
+    "Protéine",
+    "Pêche"
+  ]
+}

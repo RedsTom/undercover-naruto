@@ -1,0 +1,24 @@
+{
+  "id": "chat",
+  "name": "Chat",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "félin",
+    "poils",
+    "moustaches",
+    "ronronne",
+    "griffes"
+  ],
+  "summary": "Petit mammifère carnivore de la famille des félidés, domestiqué par l'homme.",
+  "details": [
+    "Félin",
+    "Carnivore",
+    "Animal de compagnie"
+  ]
+}

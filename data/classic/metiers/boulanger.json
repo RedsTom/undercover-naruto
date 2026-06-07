@@ -1,0 +1,24 @@
+{
+  "id": "boulanger",
+  "name": "Boulanger",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pain",
+    "four",
+    "farine",
+    "pâte",
+    "matin",
+    "viennoiserie",
+    "artisan",
+    "chaleur"
+  ],
+  "summary": "Artisan qui fabrique le pain.",
+  "details": [
+    "Artisan",
+    "Alimentation",
+    "Boulangerie"
+  ]
+}

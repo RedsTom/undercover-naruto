@@ -1,0 +1,24 @@
+{
+  "id": "vache",
+  "name": "Vache",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "mammifère",
+    "bovidé",
+    "sabots",
+    "cornes",
+    "lait",
+    "meugle"
+  ],
+  "summary": "Mammifère ruminant de la famille des bovidés, élevé pour son lait.",
+  "details": [
+    "Bovidé",
+    "Ruminant",
+    "Animal d'élevage"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "vendeur",
+  "name": "Vendeur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "magasin",
+    "client",
+    "conseil",
+    "produit",
+    "rayon",
+    "vente",
+    "accueil",
+    "cabine"
+  ],
+  "summary": "Personnel de vente en magasin.",
+  "details": [
+    "Commerce",
+    "Vente",
+    "Magasin"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "aurore boréale",
+  "name": "Aurore boréale",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "nuit",
+    "lumière",
+    "vert",
+    "pôle",
+    "magnétique",
+    "rare",
+    "magique",
+    "rideau"
+  ],
+  "summary": "Phénomène lumineux des régions polaires.",
+  "details": [
+    "Lumière",
+    "Pôle",
+    "Magnétique"
+  ]
+}

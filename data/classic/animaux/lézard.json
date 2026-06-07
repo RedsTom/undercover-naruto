@@ -1,0 +1,24 @@
+{
+  "id": "lézard",
+  "name": "Lézard",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "reptile",
+    "saurien",
+    "écailles",
+    "quatre pattes",
+    "queue",
+    "soleil",
+    "rapide"
+  ],
+  "summary": "Reptile saurien à quatre pattes et longue queue.",
+  "details": [
+    "Reptile",
+    "Saurien",
+    "Lépidosaure"
+  ]
+}

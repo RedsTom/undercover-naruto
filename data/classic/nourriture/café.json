@@ -1,0 +1,24 @@
+{
+  "id": "café",
+  "name": "Café",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boisson",
+    "chaude",
+    "noir",
+    "amer",
+    "caféine",
+    "énergie",
+    "matin",
+    "grains"
+  ],
+  "summary": "Boisson chaude obtenue par infusion de grains torréfiés.",
+  "details": [
+    "Boisson",
+    "Stimulant",
+    "Torréfaction"
+  ]
+}

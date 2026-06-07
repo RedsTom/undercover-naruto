@@ -1,0 +1,24 @@
+{
+  "id": "enseignant",
+  "name": "Enseignant",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "éducation",
+    "élèves",
+    "classe",
+    "cours",
+    "savoir",
+    "école",
+    "tableau",
+    "patience"
+  ],
+  "summary": "Professionnel de l'éducation qui instruit.",
+  "details": [
+    "Éducation",
+    "Enseignement",
+    "Public"
+  ]
+}

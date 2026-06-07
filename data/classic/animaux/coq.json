@@ -1,0 +1,24 @@
+{
+  "id": "coq",
+  "name": "Coq",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "oiseau",
+    "gallinacé",
+    "plumes",
+    "crête",
+    "cocorico",
+    "matinal"
+  ],
+  "summary": "Oiseau gallinacé mâle, symbole de la France.",
+  "details": [
+    "Gallinacé",
+    "Oiseau",
+    "Volaille"
+  ]
+}

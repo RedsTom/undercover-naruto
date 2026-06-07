@@ -1,0 +1,24 @@
+{
+  "id": "boucles d'oreilles",
+  "name": "Boucles d'oreilles",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bijou",
+    "oreilles",
+    "perçage",
+    "or",
+    "argent",
+    "pendantes",
+    "clous",
+    "parure"
+  ],
+  "summary": "Bijoux portés aux oreilles.",
+  "details": [
+    "Bijou",
+    "Orfèvrerie",
+    "Accessoire"
+  ]
+}

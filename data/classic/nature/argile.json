@@ -1,0 +1,24 @@
+{
+  "id": "argile",
+  "name": "Argile",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sol",
+    "plastique",
+    "humide",
+    "poterie",
+    "modèle",
+    "lisse",
+    "céramique",
+    "sculpter"
+  ],
+  "summary": "Terre fine et plastique.",
+  "details": [
+    "Sol",
+    "Céramique",
+    "Plastique"
+  ]
+}

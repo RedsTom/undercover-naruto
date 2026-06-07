@@ -1,0 +1,24 @@
+{
+  "id": "écharpe",
+  "name": "Écharpe",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cou",
+    "chaud",
+    "laine",
+    "hiver",
+    "tissu",
+    "longue",
+    "froid",
+    "accessoire"
+  ],
+  "summary": "Accessoire de cou pour se réchauffer.",
+  "details": [
+    "Accessoire",
+    "Cou",
+    "Hiver"
+  ]
+}

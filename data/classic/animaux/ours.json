@@ -1,0 +1,24 @@
+{
+  "id": "ours",
+  "name": "Ours",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "sauvage",
+    "mammifère",
+    "ursidé",
+    "poils",
+    "griffes",
+    "forêt",
+    "hibernation"
+  ],
+  "summary": "Grand mammifère ursidé des forêts et montagnes.",
+  "details": [
+    "Ursidé",
+    "Omnivore",
+    "Prédateur"
+  ]
+}

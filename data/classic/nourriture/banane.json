@@ -1,0 +1,24 @@
+{
+  "id": "banane",
+  "name": "Banane",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "fruit",
+    "jaune",
+    "tropical",
+    "courbé",
+    "peau épaisse",
+    "crémeux",
+    "sucré",
+    "énergie"
+  ],
+  "summary": "Fruit tropical du bananier, allongé et courbé.",
+  "details": [
+    "Fruit",
+    "Baie",
+    "Tropical"
+  ]
+}

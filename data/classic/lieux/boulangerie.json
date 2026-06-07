@@ -1,0 +1,24 @@
+{
+  "id": "boulangerie",
+  "name": "Boulangerie",
+  "category": "lieux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pain",
+    "pâtisserie",
+    "four",
+    "farine",
+    "viennoiserie",
+    "matin",
+    "odeur",
+    "artisan"
+  ],
+  "summary": "Commerce artisanal de pain et pâtisseries.",
+  "details": [
+    "Commerce",
+    "Alimentation",
+    "Artisanat"
+  ]
+}

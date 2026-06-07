@@ -1,0 +1,24 @@
+{
+  "id": "football",
+  "name": "Football",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ballon",
+    "pied",
+    "équipe",
+    "but",
+    "terrain",
+    "stade",
+    "joueur",
+    "match"
+  ],
+  "summary": "Sport collectif au ballon rond joué au pied.",
+  "details": [
+    "Sport",
+    "Collectif",
+    "Ballon"
+  ]
+}

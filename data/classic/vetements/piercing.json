@@ -1,0 +1,24 @@
+{
+  "id": "piercing",
+  "name": "Piercing",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "corps",
+    "métal",
+    "perçage",
+    "nez",
+    "oreille",
+    "bijou",
+    "mode",
+    "décoration"
+  ],
+  "summary": "Bijou inséré dans un piercing.",
+  "details": [
+    "Bijou",
+    "Corps",
+    "Mode"
+  ]
+}

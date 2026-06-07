@@ -1,0 +1,24 @@
+{
+  "id": "foulard",
+  "name": "Foulard",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cou",
+    "tissu",
+    "léger",
+    "soie",
+    "couleur",
+    "mode",
+    "accessoire",
+    "élégant"
+  ],
+  "summary": "Accessoire de cou léger et décoratif.",
+  "details": [
+    "Accessoire",
+    "Cou",
+    "Mode"
+  ]
+}

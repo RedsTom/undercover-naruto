@@ -1,0 +1,24 @@
+{
+  "id": "tablier",
+  "name": "Tablier",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "cuisine",
+    "protection",
+    "devant",
+    "tissu",
+    "cuisson",
+    "ménage",
+    "attache",
+    "travail"
+  ],
+  "summary": "Vêtement de protection pour la cuisine.",
+  "details": [
+    "Vêtement",
+    "Protection",
+    "Cuisine"
+  ]
+}

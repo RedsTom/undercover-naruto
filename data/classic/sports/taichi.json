@@ -1,0 +1,24 @@
+{
+  "id": "taichi",
+  "name": "Tai-chi",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mouvement",
+    "lent",
+    "chinois",
+    "équilibre",
+    "énergie",
+    "méditation",
+    "doux",
+    "tradition"
+  ],
+  "summary": "Art martial chinois lent et méditatif.",
+  "details": [
+    "Sport",
+    "Chinois",
+    "Doux"
+  ]
+}

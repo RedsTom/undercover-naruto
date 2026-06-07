@@ -1,0 +1,24 @@
+{
+  "id": "hélicoptère",
+  "name": "Hélicoptère",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rotor",
+    "pales",
+    "décollage vertical",
+    "vol",
+    "sauvetage",
+    "militaire",
+    "bruit",
+    "maniable"
+  ],
+  "summary": "Aéronef à rotor.",
+  "details": [
+    "Transport",
+    "Aérien",
+    "Vertical"
+  ]
+}

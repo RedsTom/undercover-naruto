@@ -1,0 +1,24 @@
+{
+  "id": "faucon",
+  "name": "Faucon",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "oiseau",
+    "rapace",
+    "falconidé",
+    "plumes",
+    "vol",
+    "rapide",
+    "chasse"
+  ],
+  "summary": "Oiseau de proie diurne de la famille des falconidés.",
+  "details": [
+    "Falconidé",
+    "Rapace",
+    "Oiseau de proie"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sucre",
+  "name": "Sucre",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "doux",
+    "blanc",
+    "cristaux",
+    "énergie",
+    "betterave",
+    "canne",
+    "dessert",
+    "soluble"
+  ],
+  "summary": "Substance sucrante extraite de la betterave ou de la canne.",
+  "details": [
+    "Glucide",
+    "Édulcorant",
+    "Alimentation"
+  ]
+}

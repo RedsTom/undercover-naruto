@@ -1,0 +1,24 @@
+{
+  "id": "patinette",
+  "name": "Patinette",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plateau",
+    "roues",
+    "guidon",
+    "pousser",
+    "urbain",
+    "jeune",
+    "léger",
+    "pratique"
+  ],
+  "summary": "Planche à roulettes avec guidon.",
+  "details": [
+    "Transport",
+    "Roues",
+    "Urbain"
+  ]
+}

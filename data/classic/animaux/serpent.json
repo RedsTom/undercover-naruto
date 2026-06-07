@@ -1,0 +1,24 @@
+{
+  "id": "serpent",
+  "name": "Serpent",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "reptile",
+    "ophidien",
+    "écailles",
+    "rampe",
+    "sans pattes",
+    "venimeux",
+    "mue"
+  ],
+  "summary": "Reptile ophidien au corps allongé sans pattes.",
+  "details": [
+    "Reptile",
+    "Ophidien",
+    "Lépidosaure"
+  ]
+}

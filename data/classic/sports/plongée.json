@@ -1,0 +1,24 @@
+{
+  "id": "plongée",
+  "name": "Plongée",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "eau",
+    "bouteille",
+    "profondeur",
+    "poisson",
+    "corail",
+    "masque",
+    "palmes",
+    "sous-marin"
+  ],
+  "summary": "Exploration sous-marine avec équipement.",
+  "details": [
+    "Sport",
+    "Eau",
+    "Sous-marin"
+  ]
+}

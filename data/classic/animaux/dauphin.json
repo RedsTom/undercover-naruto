@@ -1,0 +1,24 @@
+{
+  "id": "dauphin",
+  "name": "Dauphin",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "aquatique",
+    "mammifère",
+    "cétacé",
+    "intelligent",
+    "joue",
+    "mer",
+    "saut"
+  ],
+  "summary": "Mammifère marin intelligent de l'ordre des cétacés.",
+  "details": [
+    "Cétacé",
+    "Mammifère marin",
+    "Odontocète"
+  ]
+}

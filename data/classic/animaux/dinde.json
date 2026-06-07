@@ -1,0 +1,24 @@
+{
+  "id": "dinde",
+  "name": "Dinde",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "oiseau",
+    "gallinacé",
+    "plumes",
+    "caroncule",
+    "Noël",
+    "gros"
+  ],
+  "summary": "Grand oiseau gallinacé originaire d'Amérique.",
+  "details": [
+    "Gallinacé",
+    "Oiseau",
+    "Volaille"
+  ]
+}

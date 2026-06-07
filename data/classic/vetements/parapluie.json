@@ -1,0 +1,24 @@
+{
+  "id": "parapluie",
+  "name": "Parapluie",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "pluie",
+    "protection",
+    "toile",
+    "tiges",
+    "plier",
+    "mouillé",
+    "orage",
+    "main"
+  ],
+  "summary": "Accessoire de protection contre la pluie.",
+  "details": [
+    "Accessoire",
+    "Pluie",
+    "Protection"
+  ]
+}

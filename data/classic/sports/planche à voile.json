@@ -1,0 +1,24 @@
+{
+  "id": "planche à voile",
+  "name": "Planche à voile",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "vent",
+    "voile",
+    "planche",
+    "glisse",
+    "équilibre",
+    "sport",
+    "vague"
+  ],
+  "summary": "Sport de glisse nautique à voile.",
+  "details": [
+    "Sport",
+    "Mer",
+    "Glisse"
+  ]
+}

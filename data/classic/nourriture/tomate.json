@@ -1,0 +1,24 @@
+{
+  "id": "tomate",
+  "name": "Tomate",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "rouge",
+    "juteux",
+    "graines",
+    "été",
+    "salade",
+    "sauce",
+    "jardin"
+  ],
+  "summary": "Fruit-légume rond et rouge, base de la cuisine méditerranéenne.",
+  "details": [
+    "Fruit",
+    "Solanacée",
+    "Légume"
+  ]
+}

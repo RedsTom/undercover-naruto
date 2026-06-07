@@ -1,0 +1,24 @@
+{
+  "id": "herbe",
+  "name": "Herbe",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plante",
+    "verte",
+    "sol",
+    "pelouse",
+    "pâturage",
+    "tendre",
+    "nature",
+    "prairie"
+  ],
+  "summary": "Plante verte rase couvrant le sol.",
+  "details": [
+    "Végétal",
+    "Prairie",
+    "Vert"
+  ]
+}

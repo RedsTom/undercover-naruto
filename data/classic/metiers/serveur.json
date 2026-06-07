@@ -1,0 +1,24 @@
+{
+  "id": "serveur",
+  "name": "Serveur",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "restaurant",
+    "tables",
+    "commandes",
+    "plateau",
+    "client",
+    "service",
+    "addition",
+    "salle"
+  ],
+  "summary": "Personnel de service en restauration.",
+  "details": [
+    "Restauration",
+    "Service",
+    "Salle"
+  ]
+}

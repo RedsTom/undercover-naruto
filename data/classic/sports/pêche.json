@@ -1,0 +1,24 @@
+{
+  "id": "pêche",
+  "name": "Pêche",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "poisson",
+    "canne",
+    "ligne",
+    "appât",
+    "eau",
+    "rivière",
+    "mer",
+    "patience"
+  ],
+  "summary": "Activité de capture de poissons.",
+  "details": [
+    "Loisir",
+    "Eau",
+    "Nature"
+  ]
+}

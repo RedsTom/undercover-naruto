@@ -1,0 +1,24 @@
+{
+  "id": "jean",
+  "name": "Jean",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "denim",
+    "bleu",
+    "jambes",
+    "solide",
+    "décontracté",
+    "poche",
+    "coutures"
+  ],
+  "summary": "Pantalon en toile de denim.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Denim"
+  ]
+}

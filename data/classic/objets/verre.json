@@ -1,0 +1,24 @@
+{
+  "id": "verre",
+  "name": "Verre",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "boire",
+    "transparent",
+    "cylindrique",
+    "liquide",
+    "cristal",
+    "table",
+    "repas",
+    "fragile"
+  ],
+  "summary": "Récipient transparent pour boire.",
+  "details": [
+    "Vaisselle",
+    "Verre",
+    "Table"
+  ]
+}

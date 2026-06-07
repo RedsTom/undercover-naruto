@@ -1,0 +1,24 @@
+{
+  "id": "sécheresse",
+  "name": "Sécheresse",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "sec",
+    "chaud",
+    "pas de pluie",
+    "terre",
+    "fissure",
+    "désert",
+    "agriculture",
+    "pénurie"
+  ],
+  "summary": "Absence prolongée de pluie.",
+  "details": [
+    "Climat",
+    "Sec",
+    "Pénurie"
+  ]
+}

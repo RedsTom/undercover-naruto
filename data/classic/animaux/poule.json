@@ -1,0 +1,24 @@
+{
+  "id": "poule",
+  "name": "Poule",
+  "category": "animaux",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "animal",
+    "domestique",
+    "oiseau",
+    "gallinacé",
+    "plumes",
+    "pond",
+    "œufs",
+    "cacarde"
+  ],
+  "summary": "Oiseau gallinacé femelle, élevé pour ses œufs.",
+  "details": [
+    "Gallinacé",
+    "Oiseau",
+    "Volaille"
+  ]
+}

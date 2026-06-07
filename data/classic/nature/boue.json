@@ -1,0 +1,24 @@
+{
+  "id": "boue",
+  "name": "Boue",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "terre",
+    "eau",
+    "sale",
+    "mouillé",
+    "pluie",
+    "glissant",
+    "tache",
+    "marcher"
+  ],
+  "summary": "Mélange de terre et d'eau.",
+  "details": [
+    "Sol",
+    "Mouillé",
+    "Sale"
+  ]
+}

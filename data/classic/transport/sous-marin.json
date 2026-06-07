@@ -1,0 +1,24 @@
+{
+  "id": "sous-marin",
+  "name": "Sous-marin",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "immersion",
+    "mer",
+    "militaire",
+    "profondeur",
+    "équipage",
+    "torpille",
+    "furtif",
+    "exploration"
+  ],
+  "summary": "Navire naviguant sous l'eau.",
+  "details": [
+    "Transport",
+    "Maritime",
+    "Immersion"
+  ]
+}

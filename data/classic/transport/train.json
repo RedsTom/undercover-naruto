@@ -1,0 +1,24 @@
+{
+  "id": "train",
+  "name": "Train",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "rail",
+    "wagon",
+    "locomotive",
+    "gare",
+    "voyage",
+    "longue distance",
+    "passagers",
+    "rapide"
+  ],
+  "summary": "Véhicule ferroviaire de transport.",
+  "details": [
+    "Transport",
+    "Rail",
+    "Longue distance"
+  ]
+}

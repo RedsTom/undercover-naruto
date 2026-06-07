@@ -1,0 +1,24 @@
+{
+  "id": "secrétaire",
+  "name": "Secrétaire",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bureau",
+    "accueil",
+    "téléphone",
+    "courrier",
+    "agenda",
+    "organisation",
+    "clavier",
+    "entreprise"
+  ],
+  "summary": "Personnel administratif d'accueil.",
+  "details": [
+    "Administration",
+    "Accueil",
+    "Bureau"
+  ]
+}

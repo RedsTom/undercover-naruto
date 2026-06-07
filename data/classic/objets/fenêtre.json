@@ -1,0 +1,24 @@
+{
+  "id": "fenêtre",
+  "name": "Fenêtre",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ouverture",
+    "vitre",
+    "lumière",
+    "mur",
+    "vue",
+    "air",
+    "battant",
+    "rideaux"
+  ],
+  "summary": "Ouverture vitrée dans un mur pour la lumière.",
+  "details": [
+    "Ouverture",
+    "Vitrage",
+    "Bâtiment"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "miroir",
+  "name": "Miroir",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "reflet",
+    "verre",
+    "image",
+    "salle de bain",
+    "regarder",
+    "brillant",
+    "cadre",
+    "reflet"
+  ],
+  "summary": "Surface réfléchissante renvoyant l'image.",
+  "details": [
+    "Objet",
+    "Verre",
+    "Décoration"
+  ]
+}

@@ -10,7 +10,6 @@ export class PlayerModel {
   isAlive: boolean;
   discordId?: string;
   discordAvatar?: string;
-  lastPing: number;
 
   constructor(id: string, name: string, isHost = false) {
     this.id = id;
@@ -19,7 +18,6 @@ export class PlayerModel {
     this.isReady = false;
     this.isAlive = true;
     this.word = null;
-    this.lastPing = Date.now();
   }
 
   assignRole(role: PlayerRole): void {

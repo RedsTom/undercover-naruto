@@ -1,0 +1,24 @@
+{
+  "id": "fourchette",
+  "name": "Fourchette",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "manger",
+    "dents",
+    "métal",
+    "repas",
+    "piquer",
+    "couvert",
+    "table",
+    "manger"
+  ],
+  "summary": "Couvert à dents pour piquer les aliments.",
+  "details": [
+    "Couvert",
+    "Métal",
+    "Table"
+  ]
+}

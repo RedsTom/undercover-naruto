@@ -1,0 +1,24 @@
+{
+  "id": "uniforme",
+  "name": "Uniforme",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "tenue",
+    "réglementaire",
+    "école",
+    "travail",
+    "identique",
+    "officiel",
+    "code",
+    "appartenance"
+  ],
+  "summary": "Tenue réglementaire identique pour tous.",
+  "details": [
+    "Vêtement",
+    "Réglementaire",
+    "Officiel"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tir sportif",
+  "name": "Tir sportif",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "arme",
+    "cible",
+    "précision",
+    "stand",
+    "concentration",
+    "olympique",
+    "calme",
+    "sécurité"
+  ],
+  "summary": "Sport de précision avec arme à feu.",
+  "details": [
+    "Sport",
+    "Précision",
+    "Tir"
+  ]
+}

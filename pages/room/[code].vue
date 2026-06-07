@@ -44,6 +44,11 @@
 
           <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" @transfer-host="handleTransferHost" />
 
+          <div v-if="isSpectating" class="bg-gradient-to-br from-orange-900/20 via-orange-800/10 to-orange-900/20 border border-orange-500/20 rounded-2xl p-4 text-center animate-bounce-in">
+            <p class="text-sm font-bold text-orange-300">&#128250; Partie en cours</p>
+            <p class="text-xs text-gray-400 mt-1">Vous pourrez jouer au prochain tour</p>
+          </div>
+
           <div v-if="scores" class="animate-slide-up">
             <GameCard>
               <div class="space-y-4 text-center">
@@ -100,7 +105,7 @@ import type { GameConfig } from '~/types';
 
 const route = useRoute();
 const { room, playerId, isHost, playerCount, cleanup, joinRoom, kickPlayer } = useRoomAPI();
-const { startGame, fetchMyInfo } = useGameAPI();
+const { myWord, startGame, fetchMyInfo } = useGameAPI();
 const { connect, disconnect, on, off } = useSSE();
 
 const isIframe = import.meta.client && window.self !== window.top;
@@ -205,11 +210,18 @@ onUnmounted(() => {
   disconnect();
 });
 
-watch(() => room.value?.gameState?.phase, (phase) => {
+watch(() => room.value?.gameState?.phase, async (phase) => {
   if (phase && phase !== 'waiting' && phase !== 'finished' && playerId.value) {
-    fetchMyInfo();
-    navigateTo(`/game/${route.params.code}`);
+    await fetchMyInfo();
+    if (myWord.value) {
+      navigateTo(`/game/${route.params.code}`);
+    }
   }
+});
+
+const isSpectating = computed(() => {
+  const phase = (room.value as any)?.gameState?.phase;
+  return phase && phase !== 'waiting' && phase !== 'finished' && !myWord.value;
 });
 
 watch(currentAnimeSlug, async (slug) => {

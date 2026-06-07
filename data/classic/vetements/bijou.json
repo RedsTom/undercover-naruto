@@ -1,0 +1,24 @@
+{
+  "id": "bijou",
+  "name": "Bijou",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "parure",
+    "or",
+    "argent",
+    "diamant",
+    "élégant",
+    "décoration",
+    "précieux",
+    "accessoire"
+  ],
+  "summary": "Objet précieux de parure.",
+  "details": [
+    "Accessoire",
+    "Parure",
+    "Précieux"
+  ]
+}

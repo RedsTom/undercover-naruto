@@ -1,0 +1,24 @@
+{
+  "id": "oignon",
+  "name": "Oignon",
+  "category": "nourriture",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "légume",
+    "bulbe",
+    "couches",
+    "piquant",
+    "pleurs",
+    "cuisine",
+    "base",
+    "rond"
+  ],
+  "summary": "Légume-bulbe à couches concentriques au goût piquant.",
+  "details": [
+    "Légume",
+    "Bulbe",
+    "Alliacée"
+  ]
+}

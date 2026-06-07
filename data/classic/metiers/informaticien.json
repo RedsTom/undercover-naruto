@@ -1,0 +1,24 @@
+{
+  "id": "informaticien",
+  "name": "Informaticien",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "ordinateur",
+    "code",
+    "programme",
+    "développement",
+    "bug",
+    "écran",
+    "logiciel",
+    "système"
+  ],
+  "summary": "Professionnel de l'informatique.",
+  "details": [
+    "Informatique",
+    "Développement",
+    "Technique"
+  ]
+}

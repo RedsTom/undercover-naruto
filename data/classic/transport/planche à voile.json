@@ -1,0 +1,24 @@
+{
+  "id": "planche à voile",
+  "name": "Planche à voile",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "mer",
+    "vent",
+    "voile",
+    "glisse",
+    "sport",
+    "équilibre",
+    "vague",
+    "sensation"
+  ],
+  "summary": "Planche nautique à voile.",
+  "details": [
+    "Transport",
+    "Mer",
+    "Sport"
+  ]
+}

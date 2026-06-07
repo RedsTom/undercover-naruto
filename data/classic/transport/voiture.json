@@ -1,0 +1,24 @@
+{
+  "id": "voiture",
+  "name": "Voiture",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "roues",
+    "moteur",
+    "essence",
+    "conduite",
+    "route",
+    "passagers",
+    "familiale",
+    "personnelle"
+  ],
+  "summary": "Véhicule automobile à quatre roues.",
+  "details": [
+    "Véhicule",
+    "Route",
+    "Personnel"
+  ]
+}

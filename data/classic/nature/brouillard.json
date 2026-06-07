@@ -1,0 +1,24 @@
+{
+  "id": "brouillard",
+  "name": "Brouillard",
+  "category": "nature",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "brume",
+    "visibilité",
+    "humide",
+    "matin",
+    "gris",
+    "mystère",
+    "gouttelettes",
+    "voile"
+  ],
+  "summary": "Nuage au niveau du sol.",
+  "details": [
+    "Météo",
+    "Humide",
+    "Visibilité"
+  ]
+}

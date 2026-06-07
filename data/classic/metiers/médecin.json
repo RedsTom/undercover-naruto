@@ -1,0 +1,24 @@
+{
+  "id": "médecin",
+  "name": "Médecin",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "santé",
+    "malades",
+    "diagnostic",
+    "ordonnance",
+    "hôpital",
+    "soins",
+    "stéthoscope",
+    "blouse"
+  ],
+  "summary": "Professionnel de la santé qui soigne les malades.",
+  "details": [
+    "Santé",
+    "Médical",
+    "Libéral"
+  ]
+}

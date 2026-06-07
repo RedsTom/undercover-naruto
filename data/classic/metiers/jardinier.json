@@ -1,0 +1,24 @@
+{
+  "id": "jardinier",
+  "name": "Jardinier",
+  "category": "metiers",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "plantes",
+    "jardin",
+    "tondeuse",
+    "fleurs",
+    "taille",
+    "arroser",
+    "nature",
+    "vert"
+  ],
+  "summary": "Personne qui entretient les jardins.",
+  "details": [
+    "Espaces verts",
+    "Nature",
+    "Entretien"
+  ]
+}

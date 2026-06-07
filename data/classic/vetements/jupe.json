@@ -1,0 +1,24 @@
+{
+  "id": "jupe",
+  "name": "Jupe",
+  "category": "vetements",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "bas",
+    "femme",
+    "taille",
+    "jambes",
+    "tissu",
+    "longueur",
+    "plissée",
+    "élégante"
+  ],
+  "summary": "Vêtement féminin couvrant le bas du corps.",
+  "details": [
+    "Vêtement",
+    "Bas",
+    "Féminin"
+  ]
+}

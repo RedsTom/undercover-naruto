@@ -1,0 +1,24 @@
+{
+  "id": "mandoline",
+  "name": "Mandoline",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "piqué",
+    "bois",
+    "petit",
+    "italien",
+    "folk",
+    "aigu"
+  ],
+  "summary": "Petit instrument à cordes pincées.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Folk"
+  ]
+}

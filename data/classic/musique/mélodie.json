@@ -1,0 +1,24 @@
+{
+  "id": "mélodie",
+  "name": "Mélodie",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "suite",
+    "notes",
+    "chant",
+    "ligne",
+    "harmonie",
+    "rythme",
+    "musique",
+    "doux"
+  ],
+  "summary": "Suite de notes musicales.",
+  "details": [
+    "Musique",
+    "Note",
+    "Ligne"
+  ]
+}

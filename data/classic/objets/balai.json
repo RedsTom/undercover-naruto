@@ -1,0 +1,24 @@
+{
+  "id": "balai",
+  "name": "Balai",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "nettoyer",
+    "sol",
+    "poils",
+    "manche",
+    "poussière",
+    "ménage",
+    "balayer",
+    "brosse"
+  ],
+  "summary": "Instrument à poils pour balayer le sol.",
+  "details": [
+    "Ménage",
+    "Nettoyage",
+    "Brosse"
+  ]
+}

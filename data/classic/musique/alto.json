@@ -1,0 +1,24 @@
+{
+  "id": "alto",
+  "name": "Alto",
+  "category": "musique",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "instrument",
+    "cordes",
+    "archet",
+    "médium",
+    "bois",
+    "orchestre",
+    "plus grand",
+    "chaud"
+  ],
+  "summary": "Instrument à cordes intermédiaire.",
+  "details": [
+    "Instrument",
+    "Cordes",
+    "Médium"
+  ]
+}

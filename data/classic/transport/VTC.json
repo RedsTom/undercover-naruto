@@ -1,0 +1,24 @@
+{
+  "id": "VTC",
+  "name": "VTC",
+  "category": "transport",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "voiture",
+    "chauffeur",
+    "application",
+    "réservation",
+    "moderne",
+    "urbain",
+    "service",
+    "confort"
+  ],
+  "summary": "Voiture de transport avec chauffeur privée.",
+  "details": [
+    "Transport",
+    "Service",
+    "Moderne"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "escrime",
+  "name": "Escrime",
+  "category": "sports",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "épée",
+    "fleuret",
+    "sabre",
+    "masque",
+    "piste",
+    "touche",
+    "assaut",
+    "élégant"
+  ],
+  "summary": "Sport de combat à l'arme blanche.",
+  "details": [
+    "Sport",
+    "Combat",
+    "Arme"
+  ]
+}

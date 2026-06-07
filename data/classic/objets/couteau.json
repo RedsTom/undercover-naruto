@@ -1,0 +1,24 @@
+{
+  "id": "couteau",
+  "name": "Couteau",
+  "category": "objets",
+  "era": [
+    "classique"
+  ],
+  "tags": [
+    "couper",
+    "lame",
+    "métal",
+    "manche",
+    "cuisine",
+    "tranchant",
+    "repas",
+    "pointu"
+  ],
+  "summary": "Ustensile à lame tranchante pour couper.",
+  "details": [
+    "Ustensile",
+    "Coupe",
+    "Cuisine"
+  ]
+}

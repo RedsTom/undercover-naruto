@@ -1,23 +1,52 @@
 <template>
   <div class="min-h-screen pb-16">
     <template v-if="room && gameState">
-      <div v-if="isPreview" class="max-w-md mx-auto px-4 py-8">
-        <div v-if="gameState.phase === 'voting'" class="text-center py-12">
-          <div class="text-5xl mb-4">&#128499;&#65039;</div>
-          <p class="text-xl font-bold text-white">Vote en cours...</p>
-          <p class="text-sm text-gray-400 mt-2">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
+      <div v-if="isPreview" class="max-w-md mx-auto px-4 py-6 space-y-4">
+        <div class="text-center">
+          <span :class="phaseBadgeClass">{{ phaseLabel }}</span>
+          <span class="text-xs text-gray-500 ml-2">Round {{ gameState.currentRound }}</span>
         </div>
-        <div v-else class="text-center py-12">
-          <WordDisplay
-            :word="myWord"
-            :role="myRole"
-            :show-word="!!myWord"
-            :anime="animeSlug"
-            :hide-role="!!(gameState.value?.config?.hideRole)"
-          />
-          <div class="mt-4 text-xs text-white/50">
-            &#128101; {{ aliveAll.length }} en vie — Round {{ gameState.currentRound }} — {{ phaseLabel }}
+
+        <div v-if="gameState.phase === 'discussion'">
+          <div v-if="currentSpeaker" class="text-center space-y-2">
+            <div class="w-14 h-14 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
+              <img v-if="(currentSpeaker as any).discordAvatar" :src="(currentSpeaker as any).discordAvatar" :alt="currentSpeaker.name" class="w-full h-full object-cover" />
+              <div v-else class="w-full h-full flex items-center justify-center text-xl font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
+                {{ currentSpeaker.name.charAt(0).toUpperCase() }}
+              </div>
+            </div>
+            <p class="text-base font-bold text-green-400">{{ currentSpeaker.name }} parle</p>
           </div>
+          <div v-if="myWord" class="text-center mt-3">
+            <p class="text-2xl font-black text-white">{{ myWord }}</p>
+            <p v-if="myRole && !gameState.value?.config?.hideRole" class="text-xs text-white/50 mt-1">{{ roleLabel(myRole) }}</p>
+          </div>
+        </div>
+
+        <div v-else-if="gameState.phase === 'voting'" class="text-center py-4">
+          <div class="text-4xl mb-2">&#128499;&#65039;</div>
+          <p class="text-lg font-bold text-white">Vote en cours...</p>
+          <p class="text-sm text-gray-400">{{ voteProgress.count }}/{{ voteProgress.total }}</p>
+        </div>
+
+        <div v-else-if="gameState.phase === 'reveal'" class="text-center py-4">
+          <div class="text-4xl mb-2">&#128128;</div>
+          <p v-if="eliminatedPlayerName" class="text-lg font-bold text-white">{{ eliminatedPlayerName }} éliminé</p>
+          <p v-else class="text-lg font-bold text-white">Pas d'élimination</p>
+          <p v-if="lastRoundResult?.eliminatedRole" class="text-xs mt-1"
+            :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite' ? 'text-red-300' : 'text-green-300'">
+            {{ roleLabel(lastRoundResult.eliminatedRole) }}
+          </p>
+        </div>
+
+        <div v-else class="text-center py-4">
+          <div v-if="myWord" class="mb-2">
+            <p class="text-2xl font-black text-white">{{ myWord }}</p>
+          </div>
+        </div>
+
+        <div class="text-center text-xs text-white/50">
+          &#128101; {{ aliveAll.length }} en vie
         </div>
       </div>
       <div v-else class="max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
@@ -55,8 +84,18 @@
           <div v-for="player in room.players" :key="player.id"
             class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] p-4 text-center transition-all duration-200 cursor-default"
             :class="playerCardClass(player)">
-            <div class="text-2xl mb-1">
-              {{ player.isAlive ? (isCurrentSpeaker(player.id) && gameState.phase === 'discussion' ? '&#127908;' : '&#128564;') : '&#128128;' }}
+            <div class="mb-1">
+              <template v-if="isCurrentSpeaker(player.id) && gameState.phase === 'discussion'">
+                <div class="w-10 h-10 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
+                  <img v-if="(player as any).discordAvatar" :src="(player as any).discordAvatar" :alt="player.name" class="w-full h-full object-cover" />
+                  <div v-else class="w-full h-full flex items-center justify-center text-lg font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
+                    {{ player.name.charAt(0).toUpperCase() }}
+                  </div>
+                </div>
+              </template>
+              <div v-else class="text-2xl">
+                {{ player.isAlive ? '&#128564;' : '&#128128;' }}
+              </div>
             </div>
             <p class="font-bold text-white text-sm">{{ player.name }}</p>
             <p v-if="player.id === playerId" class="text-xs text-orange-400 mt-0.5">&#128100; Vous</p>
@@ -66,8 +105,13 @@
 
         <div v-if="gameState.phase === 'discussion'" class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden">
           <div class="p-6 text-center space-y-4">
-            <div v-if="currentSpeaker" class="space-y-1">
-              <p class="text-3xl">&#127908;</p>
+            <div v-if="currentSpeaker" class="space-y-2">
+              <div class="w-16 h-16 rounded-full mx-auto overflow-hidden ring-2 ring-green-500">
+                <img v-if="(currentSpeaker as any).discordAvatar" :src="(currentSpeaker as any).discordAvatar" :alt="currentSpeaker.name" class="w-full h-full object-cover" />
+                <div v-else class="w-full h-full flex items-center justify-center text-2xl font-bold text-white bg-gradient-to-br from-green-400 to-green-600">
+                  {{ currentSpeaker.name.charAt(0).toUpperCase() }}
+                </div>
+              </div>
               <p class="text-lg text-white font-bold">Tour de {{ currentSpeaker.name }}</p>
             </div>
             <p class="text-sm text-gray-400">Décrivez votre mot sans être trop explicite</p>

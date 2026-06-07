@@ -9,6 +9,9 @@
               <span>&#9888;&#65039;</span>
               <span class="text-sm font-semibold">{{ error }}</span>
             </div>
+            <div v-if="debug" class="mt-4 text-left text-xs text-gray-400 font-mono space-y-1">
+              <div v-for="(line, i) in debug" :key="i">{{ line }}</div>
+            </div>
           </div>
         </div>
         <GameButton @click="retry">&#x21BB; Réessayer</GameButton>
@@ -32,6 +35,12 @@ const { setRoom, playerName } = useRoomAPI();
 
 const status = ref('Connexion à Discord...');
 const error = ref('');
+const debug = ref<string[]>([]);
+
+function log(...args: any[]) {
+  debug.value.push(args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' '));
+}
+
 let discordSdk: DiscordSDK | null = null;
 
 function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise<T> {
@@ -45,8 +54,16 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
 
 async function handleAuth() {
   try {
+    log('URL:', window.location.href);
+    log('Origin:', window.location.origin);
+    log('Path:', window.location.pathname);
+    log('Search:', window.location.search);
+    log('In iframe:', window.self !== window.top);
+
     const config = await $fetch('/api/config');
+    log('/api/config response:', config);
     const CLIENT_ID = (config as any).discordClientId;
+    log('CLIENT_ID:', CLIENT_ID);
     if (!CLIENT_ID) {
       error.value = 'Discord non configuré (CLIENT_ID manquant)';
       return;
@@ -58,7 +75,9 @@ async function handleAuth() {
     }
 
     status.value = 'Initialisation...';
+    log('Creating DiscordSDK with CLIENT_ID:', CLIENT_ID);
     discordSdk = new DiscordSDK(CLIENT_ID);
+    log('Calling SDK ready()...');
     await withTimeout(discordSdk.ready(), 15000, 'SDK ready()');
 
     const channelId = discordSdk.channelId;
@@ -89,12 +108,14 @@ async function handleAuth() {
       error.value = 'Erreur lors de la connexion au salon';
     }
   } catch (e: any) {
+    log('Error:', e.message, e.stack);
     error.value = e.message || 'Erreur de connexion à Discord';
   }
 }
 
 function retry() {
   error.value = '';
+  debug.value = [];
   handleAuth();
 }
 

@@ -82,6 +82,8 @@ const emit = defineEmits<{
   configChanged: [config: Partial<GameConfig>];
 }>();
 
+const manifestModules = import.meta.glob('~/data/*/manifest.json', { eager: true, import: 'default' });
+
 const animeList = ref<Array<{ slug: string; name: string; color: string }>>([]);
 const selectedAnime = ref('');
 const selectedEras = ref<string[]>([]);
@@ -91,11 +93,27 @@ const categoryOptions = ref<Array<{ label: string; value: string }>>([]);
 const animeName = ref('');
 const manifestLoading = ref(false);
 
+const localAnimeList = computed(() => {
+  return Object.entries(manifestModules).map(([path, data]) => {
+    const m = data as any;
+    return { slug: m.slug, name: m.name, color: m.color };
+  });
+});
+
 onMounted(async () => {
+  if (localAnimeList.value.length > 0) {
+    animeList.value = [...localAnimeList.value];
+    if (!selectedAnime.value) {
+      selectedAnime.value = localAnimeList.value[0].slug;
+    }
+  }
   try {
-    animeList.value = await $fetch('/api/anime') as any;
-    if (animeList.value.length > 0 && !selectedAnime.value) {
-      selectedAnime.value = animeList.value[0].slug;
+    const apiList = await $fetch('/api/anime') as any;
+    if (apiList.length > 0) {
+      animeList.value = apiList;
+      if (!selectedAnime.value) {
+        selectedAnime.value = apiList[0].slug;
+      }
     }
   } catch {}
 });

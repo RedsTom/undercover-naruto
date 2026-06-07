@@ -80,7 +80,7 @@
           </div>
 
           <div class="text-center">
-            <GameButton variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>
+            <GameButton variant="ghost" class="max-[420px]:hidden" @click="handleLeave">&#128682; Quitter la salle</GameButton>
           </div>
         </div>
       </template>

@@ -57,11 +57,11 @@
               <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
             </div>
           </div>
-          <div class="flex gap-2 max-[420px]:hidden">
+          <div class="flex gap-2">
             <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
               &#8592; Lobby
             </GameButton>
-            <GameButton variant="ghost" size="sm" @click="handleLeave">
+            <GameButton variant="ghost" size="sm" class="max-[420px]:hidden" @click="handleLeave">
               &#128682;
             </GameButton>
           </div>

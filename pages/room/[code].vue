@@ -7,8 +7,6 @@
             <div class="text-5xl">&#127841;</div>
             <h3 class="text-xl font-bold text-white">Rejoindre la partie</h3>
             <p class="text-sm text-gray-400">
-              <span class="text-orange-400 font-semibold">{{ animeName }}</span>
-              <span class="mx-2 text-gray-600">|</span>
               Code: <span class="font-mono text-2xl font-bold text-orange-400">{{ room.code }}</span>
             </p>
             <div class="flex flex-col gap-2">
@@ -31,69 +29,48 @@
           <div class="text-4xl animate-float">&#127807;</div>
           <h1 class="text-3xl font-black text-white">Salle d'attente</h1>
           <p class="text-gray-400">
-            <span class="text-sm">Animé :</span> <span class="font-bold text-orange-400">{{ animeName }}</span>
-            <span class="mx-2 text-gray-600">|</span>
+            <span v-if="animeName" class="text-sm">Animé :</span> <span v-if="animeName" class="font-bold text-orange-400">{{ animeName }}</span>
+            <span v-if="animeName" class="mx-2 text-gray-600">|</span>
             Code : <span class="font-mono text-2xl font-bold text-white">{{ room.code }}</span>
           </p>
         </div>
 
         <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" />
 
-        <div v-if="isInGame" class="animate-slide-up">
-          <GameCard>
-            <div class="space-y-3 text-center">
-              <p class="text-sm text-gray-400">
-                Round <span class="text-orange-400 font-bold">{{ gameState.currentRound }}</span>
-              </p>
-              <div class="flex justify-center gap-6">
-                <div class="text-center">
-                  <p class="text-2xl font-black text-orange-400">{{ gameState.scores.civilians }}</p>
-                  <p class="text-xs text-gray-400">Civils</p>
-                </div>
-                <div class="text-center">
-                  <p class="text-2xl font-black text-red-400">{{ gameState.scores.undercover }}</p>
-                  <p class="text-xs text-gray-400">Undercover</p>
-                </div>
-              </div>
-              <p v-if="!isHost" class="text-sm text-gray-500 animate-pulse">&#9203; En attente que l'hôte lance le tour suivant...</p>
-            </div>
-          </GameCard>
-        </div>
-
-        <div v-if="lastGameResult" class="animate-slide-up">
+        <div v-if="scores" class="animate-slide-up">
           <GameCard>
             <div class="space-y-4 text-center">
-              <h2 class="text-xl font-black text-white">
-                {{ lastGameResult.winner === 'civilians' ? '&#127942; Les civils ont gagné !' : '&#128120; Les Undercover ont gagné !' }}
-              </h2>
-
-              <div class="p-4 rounded-xl bg-white/5 space-y-1">
-                <p class="text-sm text-gray-400">Mot des civils : <span class="text-orange-400 font-bold">{{ lastGameResult.wordA }}</span></p>
-                <p class="text-sm text-gray-400">Mot des imposteurs : <span class="text-red-400 font-bold">{{ lastGameResult.wordB }}</span></p>
-              </div>
-
-              <div class="space-y-2">
-                <p class="block text-xs font-bold uppercase tracking-wider text-white/50 text-center">Rôles</p>
-                <div v-for="p in lastGameResult.exposed" :key="p.playerId"
-                  class="p-3 rounded-xl text-sm font-bold"
-                  :class="p.role === 'undercover' || p.role === 'mrWhite'
-                    ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
-                    : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-                  <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
-                  <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>
+              <p class="block text-xs font-bold uppercase tracking-wider text-white/50">Score</p>
+              <div class="flex justify-center gap-12">
+                <div class="text-center">
+                  <p class="text-4xl font-black text-orange-400">{{ scores.civilians }}</p>
+                  <p class="text-sm text-gray-400">Civils</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-4xl font-black text-red-400">{{ scores.undercover }}</p>
+                  <p class="text-sm text-gray-400">Undercover</p>
                 </div>
               </div>
-
-              <p class="text-sm text-gray-500">
-                &#127941; Civils {{ lastGameResult.scores.civilians }} - {{ lastGameResult.scores.undercover }} Undercover
-              </p>
+              <p v-if="winnerText" class="text-lg font-black text-white">{{ winnerText }}</p>
+              <p v-if="roundText" class="text-sm text-gray-500">{{ roundText }}</p>
             </div>
           </GameCard>
         </div>
 
         <InviteLink :room="room" />
 
-        <GameSettings :is-host="isHost" :player-count="playerCount" :config="lastConfig ?? undefined" :in-game="!!isInGame" :anime="animeSlug" @start="handleStart" />
+        <div class="space-y-6">
+          <GameGeneralSettings :is-host="isHost" :config="settingsConfig" @config-changed="onGeneralConfigChanged" />
+          <GameAnimeSettings :is-host="isHost" :config="settingsConfig" @config-changed="onAnimeConfigChanged" />
+
+          <div v-if="isHost" class="flex flex-col gap-2 pt-2">
+            <GameButton block size="lg" :disabled="!canStartGame" @click="handleStart">
+              <template v-if="isInGame">&#10145;&#65039; Tour suivant</template>
+              <template v-else-if="canStartGame">&#128640; Lancer la partie</template>
+              <template v-else>&#9203; {{ playerCount }}/{{ minPlayers }}</template>
+            </GameButton>
+          </div>
+        </div>
 
         <div class="text-center">
           <GameButton variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>
@@ -114,9 +91,9 @@
 import type { GameConfig } from '~/types';
 
 const route = useRoute();
-const { room, playerId, isHost, playerCount, fetchRoom, cleanup, joinRoom, kickPlayer } = useRoomAPI();
+const { room, playerId, isHost, playerCount, cleanup, joinRoom, kickPlayer } = useRoomAPI();
 const { startGame, fetchMyInfo } = useGameAPI();
-const { connect, disconnect } = useSSE();
+const { connect, disconnect, on, off } = useSSE();
 
 const joinName = ref('');
 const joining = ref(false);
@@ -124,51 +101,91 @@ const joinError = ref('');
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
 const isInGame = computed(() => gameState.value && gameState.value.currentRound > 0 && gameState.value.phase === 'waiting');
-const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
-const animeName = ref('Naruto');
+
+const currentAnimeSlug = ref('');
+const animeName = ref('');
 
 const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (room.value as any)?.lastConfig ?? null);
-const lastGameResult = computed(() => {
-  if (gameState.value?.phase === 'finished') return gameState.value;
-  if (!isInGame.value) return (room.value as any)?.lastGameResult ?? null;
+
+const minPlayers = computed(() => lastConfig.value?.minPlayers ?? 3);
+
+const settingsConfig = computed(() => isHost.value
+  ? (lastConfig.value ?? undefined)
+  : ((room.value as any)?.pendingConfig ?? lastConfig.value ?? undefined)
+);
+
+const gameConfig = ref<Partial<GameConfig>>({});
+
+const canStartGame = computed(() => {
+  if (!isHost.value) return false;
+  if (isInGame.value) return true;
+  if (!currentAnimeSlug.value) return false;
+  if (playerCount.value < minPlayers.value) return false;
+  return true;
+});
+
+const scores = computed(() => {
+  if (gameState.value) return gameState.value.scores;
+  const last = (room.value as any)?.lastGameResult;
+  if (last) return last.scores;
   return null;
 });
 
-let pollInterval: NodeJS.Timeout | null = null;
+const winnerText = computed(() => {
+  if (gameState.value?.winner) {
+    return gameState.value.winner === 'civilians' ? '🏆 Les civils ont gagné !' : '🕵️ Les Undercover ont gagné !';
+  }
+  const last = (room.value as any)?.lastGameResult;
+  if (last?.winner) {
+    return last.winner === 'civilians' ? '🏆 Les civils ont gagné !' : '🕵️ Les Undercover ont gagné !';
+  }
+  return '';
+});
+
+const roundText = computed(() => {
+  if (!gameState.value?.currentRound) return '';
+  return `Round ${gameState.value.currentRound}`;
+});
 
 onMounted(async () => {
   const code = route.params.code as string;
   try {
     const data = await $fetch(`/api/rooms/code/${code}`);
     room.value = data as any;
+    const initialSlug = (data as any)?.pendingConfig?.anime || (data as any)?.lastConfig?.anime || '';
+    if (initialSlug) currentAnimeSlug.value = initialSlug;
   } catch {
     navigateTo('/');
     return;
   }
   if (room.value && playerId.value) {
     connect(room.value.id);
-    try {
-      const manifest = await $fetch(`/api/anime/${animeSlug.value}`) as any;
-      animeName.value = manifest.name;
-    } catch {}
-    pollInterval = setInterval(async () => {
-      if (room.value && playerId.value) {
-        await fetchRoom(room.value.id);
-        const stillInRoom = room.value?.players?.some((p: any) => p.id === playerId.value);
-        if (!stillInRoom) {
-          cleanup();
-          disconnect();
-          if (pollInterval) clearInterval(pollInterval);
-          navigateTo('/');
-        }
-      }
-    }, 3000);
   }
+
+  on('room:updated', (data: any) => {
+    room.value = data;
+  });
+
+  on('game:started', (data: any) => {
+    room.value = data;
+    fetchMyInfo();
+  });
+
+  on('player:kicked', (data: any) => {
+    if (data?.playerId === playerId.value) {
+      cleanup();
+      disconnect();
+      navigateTo('/');
+    }
+  });
+
+  on('connected', (data: any) => {
+    room.value = data;
+  });
 });
 
 onUnmounted(() => {
   disconnect();
-  if (pollInterval) clearInterval(pollInterval);
 });
 
 watch(() => room.value?.gameState?.phase, (phase) => {
@@ -178,6 +195,43 @@ watch(() => room.value?.gameState?.phase, (phase) => {
   }
 });
 
+watch(currentAnimeSlug, async (slug) => {
+  if (!slug) { animeName.value = ''; return; }
+  try {
+    const manifest = await $fetch(`/api/anime/${slug}`) as any;
+    animeName.value = manifest.name;
+  } catch {
+    animeName.value = slug;
+  }
+}, { immediate: false });
+
+let configDebounce: ReturnType<typeof setTimeout> | null = null;
+
+function pushConfig() {
+  if (!room.value || !playerId.value) return;
+  $fetch('/api/rooms/config', {
+    method: 'POST',
+    body: { roomId: room.value.id, playerId: playerId.value, config: gameConfig.value },
+  }).catch(() => {});
+}
+
+function onGeneralConfigChanged(config: Partial<GameConfig>) {
+  gameConfig.value = { ...gameConfig.value, ...config };
+  if (isHost.value) {
+    if (configDebounce) clearTimeout(configDebounce);
+    configDebounce = setTimeout(pushConfig, 500);
+  }
+}
+
+function onAnimeConfigChanged(config: Partial<GameConfig>) {
+  if (config.anime) currentAnimeSlug.value = config.anime;
+  gameConfig.value = { ...gameConfig.value, ...config };
+  if (isHost.value) {
+    if (configDebounce) clearTimeout(configDebounce);
+    configDebounce = setTimeout(pushConfig, 500);
+  }
+}
+
 async function handleJoinRoom() {
   if (joinName.value.trim().length < 2) return;
   joining.value = true;
@@ -186,9 +240,6 @@ async function handleJoinRoom() {
     const result = await joinRoom(route.params.code as string, joinName.value.trim());
     if (result.success) {
       connect(room.value!.id);
-      pollInterval = setInterval(() => {
-        if (room.value) fetchRoom(room.value.id);
-      }, 3000);
     } else {
       joinError.value = result.error || 'Impossible de rejoindre';
     }
@@ -200,13 +251,11 @@ async function handleJoinRoom() {
 }
 
 async function handleKick(targetId: string) {
-  const result = await kickPlayer(targetId);
-  if (!result.success) {
-  }
+  await kickPlayer(targetId);
 }
 
-async function handleStart(config: Partial<GameConfig>) {
-  const result = await startGame(config);
+async function handleStart() {
+  const result = await startGame(gameConfig.value);
   if (result.success) {
     await fetchMyInfo();
     navigateTo(`/game/${route.params.code}`);

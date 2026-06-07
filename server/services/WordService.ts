@@ -24,7 +24,7 @@ export class WordService {
   static assignWords(room: RoomModel, aliveOnly = false): void {
     if (!room.gameState) return;
 
-    const anime = room.gameState.config.anime || 'naruto';
+    const anime = room.gameState.config.anime;
     const eras = room.gameState.config.eras ?? [];
     const difficulty = room.gameState.config.difficulty || 'mixed';
     const categories = room.gameState.config.categories ?? [];

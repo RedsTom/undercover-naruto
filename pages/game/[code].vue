@@ -133,9 +133,9 @@
 import { getWordInfo } from '~/utils/wordInfo';
 
 const route = useRoute();
-const { room, playerId, isHost, fetchRoom, cleanup } = useRoomAPI();
+const { room, playerId, isHost, cleanup } = useRoomAPI();
 const { myWord, myRole, fetchMyInfo, vote, nextTurn, startVoting, continueRound, backToLobby, returnToLobby, cleanup: gameCleanup } = useGameAPI();
-const { connect, disconnect } = useSSE();
+const { connect, disconnect, on, off } = useSSE();
 
 const voting = ref(false);
 
@@ -145,7 +145,7 @@ function getWordImage(word: string): string | undefined {
 }
 
 const gameState = computed(() => (room.value as any)?.gameState ?? null);
-const animeSlug = computed(() => (room.value as any)?.anime ?? 'naruto');
+const animeSlug = computed(() => (room.value as any)?.gameState?.config?.anime || (room.value as any)?.anime || '');
 
 const phaseLabel = computed(() => {
   const phases: Record<string, string> = {
@@ -208,7 +208,7 @@ const voteProgress = computed(() => {
   if (!rounds?.length) return { count: 0, total: 0 };
   const lastRound = rounds[rounds.length - 1];
   return {
-    count: lastRound.votes?.length ?? 0,
+    count: lastRound.voteCount ?? 0,
     total: aliveAll.value.length,
   };
 });
@@ -230,8 +230,6 @@ function playerCardClass(player: any): string {
   return 'ring-1 ring-white/10';
 }
 
-let pollInterval: NodeJS.Timeout | null = null;
-
 onMounted(async () => {
   const code = route.params.code as string;
   try {
@@ -244,33 +242,68 @@ onMounted(async () => {
   if (room.value) {
     connect(room.value.id);
     await fetchMyInfo();
-    pollInterval = setInterval(async () => {
-      if (room.value) {
-        await fetchRoom(room.value.id);
-        await fetchMyInfo();
-        const stillInRoom = room.value?.players?.some((p: any) => p.id === playerId.value);
-        if (!stillInRoom) {
-          gameCleanup();
-          cleanup();
-          disconnect();
-          if (pollInterval) clearInterval(pollInterval);
-          navigateTo('/');
-          return;
-        }
-        if (room.value?.gameState?.phase === 'waiting') {
-          gameCleanup();
-          disconnect();
-          if (pollInterval) clearInterval(pollInterval);
-          navigateTo(`/room/${route.params.code}`);
-        }
-      }
-    }, 3000);
+  }
+
+  on('room:updated', (data: any) => {
+    room.value = data;
+  });
+
+  on('game:started', (data: any) => {
+    room.value = data;
+    fetchMyInfo();
+  });
+
+  on('game:playerVoted', (data: any) => {
+    room.value = data;
+  });
+
+  on('game:roundEnded', (data: any) => {
+    room.value = data;
+    fetchMyInfo();
+  });
+
+  on('game:continued', (data: any) => {
+    room.value = data;
+    fetchMyInfo();
+  });
+
+  on('phase:changed', (data: any) => {
+    room.value = data;
+  });
+
+  on('turn:changed', (data: any) => {
+    room.value = data;
+  });
+
+  on('game:reset', (data: any) => {
+    room.value = data;
+  });
+
+  on('player:kicked', (data: any) => {
+    if (data?.playerId === playerId.value) {
+      gameCleanup();
+      cleanup();
+      disconnect();
+      navigateTo('/');
+    }
+  });
+
+  on('connected', (data: any) => {
+    room.value = data;
+    fetchMyInfo();
+  });
+});
+
+watch(gameState, (newState, oldState) => {
+  if (oldState && !newState) {
+    gameCleanup();
+    disconnect();
+    navigateTo(`/room/${route.params.code}`);
   }
 });
 
 onUnmounted(() => {
   disconnect();
-  if (pollInterval) clearInterval(pollInterval);
 });
 
 async function handleNextTurn() {
@@ -288,7 +321,7 @@ async function handleVote(targetId: string) {
 }
 
 async function handleNextRound() {
-  await backToLobby();
+  await returnToLobby();
 }
 
 async function handleContinueRound() {

@@ -11,7 +11,7 @@ export class GameService {
     maxPlayers: 8,
     minPlayers: 3,
     eras: [],
-    anime: 'naruto',
+    anime: '',
     difficulty: 'mixed',
     categories: [],
     hideRole: false,
@@ -29,6 +29,8 @@ export class GameService {
       ...GameService.DEFAULT_CONFIG,
       ...config,
     };
+
+    if (!mergedConfig.anime) return false;
 
     if (room.gameState?.exposed) {
       const rounds = room.gameState.rounds;

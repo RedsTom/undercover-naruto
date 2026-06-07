@@ -17,11 +17,11 @@ export function getRoomByCode(code: string): RoomModel | undefined {
   return Array.from(rooms.values()).find(r => r.code === code.toUpperCase());
 }
 
-export function createRoom(hostName: string, anime: string = 'naruto'): { room: RoomModel; player: PlayerModel } {
+export function createRoom(hostName: string): { room: RoomModel; player: PlayerModel } {
   const roomId = Math.random().toString(36).substring(2, 10);
   const roomCode = generateRoomCode();
   const playerId = Math.random().toString(36).substring(2, 10);
-  const room = new RoomModel(roomId, roomCode, playerId, 8, anime);
+  const room = new RoomModel(roomId, roomCode, playerId, 8);
   const player = new PlayerModel(playerId, hostName, true);
   room.addPlayer(player);
   rooms.set(roomId, room);

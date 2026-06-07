@@ -20,9 +20,10 @@ export class RoomModel {
   gameState: GameState | null;
   lastConfig: GameConfig | null = null;
   lastGameResult: GameResult | null = null;
+  pendingConfig: GameConfig | null = null;
   anime: string;
 
-  constructor(id: string, code: string, hostId: string, maxPlayers = 8, anime = 'naruto') {
+  constructor(id: string, code: string, hostId: string, maxPlayers = 8, anime = '') {
     this.id = id;
     this.code = code;
     this.hostId = hostId;
@@ -103,18 +104,8 @@ export class RoomModel {
     this.players.forEach(player => player.reset());
   }
 
-  toPublic(): {
-    id: string;
-    code: string;
-    hostId: string;
-    players: ReturnType<PlayerModel['toPublic']>[];
-    maxPlayers: number;
-    playerCount: number;
-    gameState: GameState | null;
-    lastConfig: GameConfig | null;
-    lastGameResult: GameResult | null;
-    anime: string;
-  } {
+  toPublic() {
+    const gs = this.gameState;
     return {
       id: this.id,
       code: this.code,
@@ -122,32 +113,34 @@ export class RoomModel {
       players: Array.from(this.players.values()).map(p => p.toPublic()),
       maxPlayers: this.maxPlayers,
       playerCount: this.players.size,
-      gameState: this.gameState,
+      gameState: gs ? {
+        phase: gs.phase,
+        currentRound: gs.currentRound,
+        rounds: gs.rounds.map(r => ({
+          roundNumber: r.roundNumber,
+          eliminatedPlayerId: r.eliminatedPlayerId,
+          eliminatedRole: r.eliminatedRole,
+          eliminatedWord: r.eliminatedWord,
+          voteCount: r.votes.length,
+        })),
+        config: gs.config,
+        currentTurnIndex: gs.currentTurnIndex,
+        timerEndTime: gs.timerEndTime,
+        winner: gs.winner,
+        scores: { ...gs.scores },
+        exposed: gs.exposed,
+      } : null,
       lastConfig: this.lastConfig,
       lastGameResult: this.lastGameResult,
+      pendingConfig: this.pendingConfig,
       anime: this.anime,
     };
   }
 
-  toPrivate(playerId: string): {
-    id: string;
-    code: string;
-    hostId: string;
-    players: ReturnType<PlayerModel['toPublic']>[];
-    maxPlayers: number;
-    playerCount: number;
-    gameState: GameState | null;
-    lastConfig: GameConfig | null;
-    lastGameResult: GameResult | null;
-    myWord: string | null;
-    myRole: string | null;
-    hideRole: boolean;
-    anime: string;
-  } {
+  toPrivate(playerId: string) {
     const me = this.players.get(playerId);
     const hideRole = this.gameState?.config?.hideRole ?? false;
     return {
-      ...this.toPublic(),
       myWord: me?.word ?? null,
       myRole: hideRole ? null : (me?.role ?? null),
       hideRole,

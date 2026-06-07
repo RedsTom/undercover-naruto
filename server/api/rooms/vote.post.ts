@@ -16,8 +16,8 @@ export default defineEventHandler(async (event) => {
   broadcastToRoom(roomId, 'game:playerVoted', room.toPublic());
 
   if (result.roundEnded) {
-    broadcastToRoom(roomId, 'game:roundEnded', room.toPublic());
+    broadcastToRoom(roomId, result.wasTie ? 'game:continued' : 'game:roundEnded', room.toPublic());
   }
 
-  return { success: true, roundEnded: result.roundEnded, result: result.result };
+  return { success: true, roundEnded: result.roundEnded };
 });

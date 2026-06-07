@@ -17,13 +17,21 @@ export function startGame(room: RoomModel, playerId: string, config?: Record<str
   return { success: true };
 }
 
-export function castVote(room: RoomModel, voterId: string, targetId: string): { success: boolean; error?: string; roundEnded?: boolean; result?: any } {
+export function castVote(room: RoomModel, voterId: string, targetId: string): { success: boolean; error?: string; roundEnded?: boolean; wasTie?: boolean; result?: any } {
   const voteSuccess = VoteService.castVote(room, voterId, targetId);
   if (!voteSuccess) return { success: false, error: 'Invalid vote' };
 
   if (!VoteService.hasAllVoted(room)) return { success: true };
 
   const result = VoteService.resolveVotes(room);
+
+  if (result.isTie) {
+    VoteService.resetVotes(room);
+    room.setPhase('discussion');
+    room.gameState!.currentTurnIndex = 0;
+    room.gameState!.timerEndTime = Date.now() + room.gameState!.config.discussionTime * 1000;
+    return { success: true, roundEnded: true, wasTie: true, result };
+  }
 
   room.gameState!.exposed = Array.from(room.players.values()).map(p => ({
     playerId: p.id,

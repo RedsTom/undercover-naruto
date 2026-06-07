@@ -22,7 +22,8 @@ undercover-naruto/
 ├── server/              # Backend Nuxt (Node.js)
 │   ├── api/            # Endpoints REST + SSE
 │   ├── models/         # Room, Player
-│   └── services/       # GameService, VoteService, WordService, DataService
+│   ├── services/       # GameService, VoteService, WordService, DataService
+│   └── utils/          # rooms.ts, sse.ts, game.ts (séparés)
 ├── components/         # Composants Vue PLATS (pas de sous-dossiers)
 ├── composables/        # Hooks Vue réutilisables (useRoomAPI, useGameAPI, useSSE)
 ├── pages/             # Routes Nuxt (file-based routing)
@@ -30,7 +31,11 @@ undercover-naruto/
 ├── data/              # Données statiques par anime
 │   └── <slug>/        # Un dossier par anime (naruto, ...)
 │       ├── manifest.json
-│       └── <category>/*.json
+│       └── <category>/*.json    # 8 champs (inclut image)
+├── public/images/     # Images statiques servies à la racine
+│   └── <slug>/        # Un dossier par anime (naruto, ...)
+│       └── <category>/*.png
+├── scripts/            # Scripts utilitaires (download-images.ts)
 └── utils/             # Fonctions utilitaires pures (animeData, wordInfo)
 ```
 
@@ -52,16 +57,19 @@ undercover-naruto/
 - `GameButton` passe `$attrs` au `<button>` natif (incluant `type="submit"`)
 
 ### Types
-- `types/anime.ts` : `AnimeEntry` (7 champs : id, name, category, era, tags, summary, details) + `AnimeManifest`
-- `types/game.ts` : `GameConfig` (contient `anime: string`), `GameState`, `Vote`, `GameRound` (avec `eliminatedRole`, `eliminatedWord`)
+- `types/anime.ts` : `AnimeEntry` (8 champs : id, name, image?, category, era, tags, summary, details) + `AnimeManifest`
+- `types/game.ts` : `GameConfig` (contient `anime: string`, `difficulty`, `categories`), `GameState`, `Vote`, `GameRound` (avec `eliminatedRole`, `eliminatedWord`)
 - `types/room.ts` : `RoomState` (contient `anime?: string`)
+- `GameMode` inclut `'mrWhiteOnly'` (5 modes au total)
 
 ### Données Anime
 - Chaque anime dans `data/<slug>/manifest.json` avec nom, couleur, époques, catégories
-- Fichiers JSON : 7 champs uniquement (`id`, `name`, `category`, `era`, `tags`, `summary`, `details`)
-- Pour ajouter un anime : créer le dossier + manifest + fichiers catégorie
+- Fichiers JSON : 8 champs (`id`, `name`, `image`, `category`, `era`, `tags`, `summary`, `details`)
+- `image` : chemin relatif vers `/images/<slug>/<category>/<id>.png` (stocké dans `public/images/`)
+- Pour ajouter un anime : créer le dossier + manifest + fichiers catégorie + images dans `public/images/<slug>/`
 - DataService (serveur) : scan dynamique des dossiers, cache en mémoire
 - animeData (client) : `import.meta.glob` pour charger les JSON
+- Images téléchargées via `scripts/download-images.ts` (wiki → `public/images/`), slugify du nom pour le nom de fichier
 
 ## Principes SOLID
 
@@ -95,10 +103,15 @@ static loadAllEntries(anime: string): AnimeEntry[]
 static getRandomWordPair(anime: string, eras: string[], ...): WordPairCandidate | null
 ```
 
+### Utilitaires serveur
+- `server/utils/rooms.ts` : Room Map + CRUD (`getRoom`, `getRoomByCode`, `createRoom`, `joinRoom`, `kickPlayer`, `deleteRoom`, cleanup interval)
+- `server/utils/sse.ts` : SSE streams management (`addSSEStream`, `removeSSEStream`, `broadcastToRoom`)
+- `server/utils/game.ts` : Pure game orchestration (`startGame`, `castVote`, `nextTurn`, `startVoting`, `nextRound`, `continueRound`, `resetGame`) — pas de room lookup, pas de broadcast
+
 ### API Endpoints
+- Les routes sont **fines** : room lookup via `getRoom()`, passage de `RoomModel` aux fonctions game, broadcast géré dans la route
 - Validation côté serveur de toutes les entrées
-- SSE pour le temps réel (`/api/rooms/[id]/stream`)
-- REST pour les actions (`POST /api/rooms/start`, `/vote`, `/next`, etc.)
+- SSE pour le temps réel (`/api/rooms/[id]/stream`) avec ping 5s + `try/catch` + `NITRO_BUN_IDLE_TIMEOUT=60`
 
 ## Architecture Client
 
@@ -118,7 +131,7 @@ export const useRoomAPI = () => {
 ### Pages
 - Logique minimale dans les pages
 - Déléguez aux composables et composants
-- Redirections automatiques : `waiting`/`finished` → lobby, autres phases → jeu
+- Redirections : `waiting` → lobby
 
 ## Gestion des Erreurs
 

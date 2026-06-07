@@ -59,7 +59,7 @@
       </GameCard>
 
       <div v-if="error" class="animate-shake">
-        <div class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden">
+        <div class="bg-gradient-to-br from-[#1a1a3e] via-[#16213e] to-[#0f3460] border border-orange-500/15 rounded-2xl shadow-[0_6px_0_rgba(0,0,0,0.2),0_8px_32_rgba(0,0,0,0.3)] overflow-hidden">
           <div class="p-6">
             <div class="flex items-center gap-3 text-red-400">
               <span>&#9888;&#65039;</span>
@@ -67,6 +67,12 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="text-center">
+        <NuxtLink to="/legal" class="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+          Mentions légales
+        </NuxtLink>
       </div>
     </div>
   </div>

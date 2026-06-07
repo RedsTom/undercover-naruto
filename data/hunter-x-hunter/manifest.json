@@ -1,0 +1,19 @@
+{
+  "name": "Hunter x Hunter",
+  "slug": "hunter-x-hunter",
+  "color": "#27ae60",
+  "eras": [
+    { "id": "hunter-exam", "label": "Examen Hunter" },
+    { "id": "yorknew", "label": "Yorknew City" },
+    { "id": "greed-island", "label": "Greed Island" },
+    { "id": "chimera-ant", "label": "Fourmis Chimères" },
+    { "id": "chairman-election", "label": "Élection du Président" },
+    { "id": "dark-continent", "label": "Continent Obscur" }
+  ],
+  "categories": {
+    "character": "Personnage",
+    "nen": "Capacité Nen",
+    "organization": "Organisation",
+    "location": "Lieu"
+  }
+}

@@ -75,6 +75,10 @@
 <script setup lang="ts">
 const { createRoom, joinRoom } = useRoomAPI();
 
+if (import.meta.client && window.self !== window.top) {
+  navigateTo('/discord');
+}
+
 const roomCode = ref('');
 const createName = ref('');
 const creating = ref(false);

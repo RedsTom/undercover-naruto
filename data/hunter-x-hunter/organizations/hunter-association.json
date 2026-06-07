@@ -1,0 +1,32 @@
+{
+  "id": "hunter-association",
+  "name": "Association des Hunters",
+  "category": "organization",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "greed-island",
+    "chimera-ant",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "organisation",
+    "hunter",
+    "president",
+    "examen",
+    "rang",
+    "star",
+    "monde",
+    "profession",
+    "elite"
+  ],
+  "summary": "Organisation internationale régissant la profession de Hunter, dirigée par un président élu",
+  "details": [
+    "Organisation mondiale qui régit et supervise la profession de Hunter",
+    "Organise l'examen Hunter annuel pour recruter de nouveaux membres",
+    "Hiérarchie basée sur les étoiles : Single Star, Double Star et Triple Star",
+    "Les Hunters ont accès à des privilèges exclusifs et des ressources mondiales",
+    "Dirigée par Isaac Netero pendant des décennies, puis après son décès par Pariston Hill"
+  ]
+}

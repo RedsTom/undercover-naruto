@@ -1,0 +1,29 @@
+{
+  "id": "phantom-troupe",
+  "name": "Brigade Fantôme",
+  "category": "organization",
+  "era": [
+    "yorknew",
+    "greed-island",
+    "dark-continent"
+  ],
+  "tags": [
+    "organisation",
+    "meteor-city",
+    "criminels",
+    "chrollo",
+    "treize-membres",
+    "araignee",
+    "rang",
+    "numéro",
+    "vengeance"
+  ],
+  "summary": "Organisation criminelle d'élite composée de treize membres numérotés, originaires de Météor City",
+  "details": [
+    "Groupe criminel de treize membres (au départ), chacun portant un numéro et un tatouage d'araignée",
+    "Originaires de Météor City, ville rejetée par le monde",
+    "Fondée par Chrollo Lucilfer, leur chef et membre numéro 0",
+    "Connus pour leurs vols, meurtres et la destruction du clan Kurta",
+    "Le tatouage d'araignée symbolise leur lien : quand un membre meurt, un autre le remplace"
+  ]
+}

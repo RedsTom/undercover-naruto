@@ -1,0 +1,26 @@
+{
+  "id": "chimera-ant",
+  "name": "Fourmis Chimères",
+  "category": "organization",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "organisation",
+    "reine",
+    "roi",
+    "garde-royale",
+    "espece",
+    "evolution",
+    "instinct",
+    "contamination"
+  ],
+  "summary": "Espèce dangereuse originaire du Continent Obscur, capable d'absorber les gènes de ses proies pour évoluer",
+  "details": [
+    "Espèce invasive originaire du Continent Obscur, découverte à NGL",
+    "La reine pond des soldats, des ouvriers et potentiellement un roi",
+    "Chaque fourmi absorbée hérite des caractéristiques de ses proies humaines",
+    "La Garde Royale (Pitou, Pouf, Youpi) protège le roi Meruem",
+    "Considérée comme une menace de niveau B par l'Association des Hunters"
+  ]
+}

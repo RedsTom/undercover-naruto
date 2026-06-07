@@ -1,0 +1,27 @@
+{
+  "id": "meteor-city",
+  "name": "Météor City",
+  "category": "location",
+  "era": [
+    "yorknew",
+    "dark-continent"
+  ],
+  "tags": [
+    "ville",
+    "decharge",
+    "rejet",
+    "brigade-fantome",
+    "poubelle-monde",
+    "dechet",
+    "marginalise",
+    "fierté"
+  ],
+  "summary": "Ville-décharge où le monde jette ses rebuts, lieu d'origine de la Brigade Fantôme",
+  "details": [
+    "Ville construite sur une immense décharge, où le monde rejette ses indésirables",
+    "Aucun gouvernement ne reconnaît Météor City comme faisant partie de son territoire",
+    "Lieu d'origine de la Brigade Fantôme et d'autres criminels célèbres",
+    "Ses habitants sont fiers de leur indépendance et de leur survie dans l'adversité",
+    "Considérée comme un trou noir sur la carte du monde"
+  ]
+}

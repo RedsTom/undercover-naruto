@@ -1,0 +1,27 @@
+{
+  "id": "whale-island",
+  "name": "Île Baleine",
+  "category": "location",
+  "era": [
+    "hunter-exam",
+    "chairman-election"
+  ],
+  "tags": [
+    "ile",
+    "gon",
+    "village",
+    "mer",
+    "tante-mito",
+    "natale",
+    "tranquille",
+    "phare"
+  ],
+  "summary": "Île natale de Gon Freecss, petit village de pêcheurs où il a grandi avec sa tante Mito",
+  "details": [
+    "Petite île isolée où Gon Freecss a passé son enfance avec sa tante Mito",
+    "Village de pêcheurs paisible, entouré d'une mer riche en poissons",
+    "Gon y a appris la pêche et la survie en pleine nature",
+    "Lieu du phare et de la maison des Freecss",
+    "Gon y retourne après l'arc des Fourmis Chimères pour retrouver ses forces"
+  ]
+}

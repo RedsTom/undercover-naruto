@@ -1,0 +1,26 @@
+{
+  "id": "ngl",
+  "name": "NGL",
+  "category": "location",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "region",
+    "ecologie",
+    "nature",
+    "reine",
+    "fourmis-chimeres",
+    "foret",
+    "autonome",
+    "neutralite"
+  ],
+  "summary": "Région autonome écologiste où la reine des Fourmis Chimères a établi sa première colonie",
+  "details": [
+    "Région autonome écologiste, interdite aux technologies modernes",
+    "Gouvernée par des principes de retour à la nature et de neutralité",
+    "Premier lieu d'apparition des Fourmis Chimères après leur arrivée du Continent Obscur",
+    "La reine des Fourmis Chimères y a établi sa colonie et ses premières couvées",
+    "Entièrement dévastée par l'invasion des Fourmis Chimères"
+  ]
+}

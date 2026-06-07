@@ -1,0 +1,26 @@
+{
+  "id": "mafia",
+  "name": "Mafia de Yorknew",
+  "category": "organization",
+  "era": [
+    "yorknew"
+  ],
+  "tags": [
+    "organisation",
+    "mafia",
+    "yorknew",
+    "dons",
+    "bete-ombre",
+    "souterrain",
+    "crime",
+    "argent"
+  ],
+  "summary": "Réseau mafieux puissant opérant à Yorknew City, utilisant des Bêtes de l'Ombre comme gardes d'élite",
+  "details": [
+    "Organisation criminelle contrôlant les bas-fonds de Yorknew City",
+    "Composée de plusieurs familles dirigées par les Dix Dons (les dix chefs)",
+    "Emploie les Bêtes de l'Ombre, des utilisateurs de Nen d'élite, comme gardes du corps",
+    "Cible régulière de la Brigade Fantôme pour ses richesses",
+    "A engagé Kurapika comme garde du corps pendant l'enchère de Yorknew"
+  ]
+}

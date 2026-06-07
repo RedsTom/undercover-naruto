@@ -1,0 +1,27 @@
+{
+  "id": "heavens-arena",
+  "name": "Céleste Tour",
+  "category": "organization",
+  "era": [
+    "hunter-exam"
+  ],
+  "tags": [
+    "organisation",
+    "tour",
+    "combat",
+    "etage",
+    "gradin",
+    "nen",
+    "argent",
+    "arena",
+    "spectacle"
+  ],
+  "summary": "Immense tour de combat où les combattants gravissent les étages pour la gloire et la fortune",
+  "details": [
+    "Gratte-ciel de 251 étages dédié aux combats de tournoi",
+    "Les combattants gravissent les étages en gagnant des combats, gagnant primes et prestige",
+    "À partir du 200e étage, les combattants doivent utiliser le Nen",
+    "Lieu où Gon et Killua ont appris les bases du Nen avec Wing et Zushi",
+    "Hisoka y a affronté Chrollo dans un combat à mort dévastateur"
+  ]
+}

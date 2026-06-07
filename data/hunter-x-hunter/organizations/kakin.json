@@ -1,0 +1,26 @@
+{
+  "id": "kakin",
+  "name": "Empire de Kakin",
+  "category": "organization",
+  "era": [
+    "dark-continent"
+  ],
+  "tags": [
+    "organisation",
+    "empire",
+    "roi",
+    "princes",
+    "succession",
+    "continent-obscur",
+    "voyage",
+    "politique"
+  ],
+  "summary": "Empire puissant dont la succession royale déclenche un jeu de massacre mortel lors de l'expédition vers le Continent Obscur",
+  "details": [
+    "Empire gouverné par le roi Nasubi Hui Guo Rou, en compétition avec l'Association des Hunters",
+    "La succession au trône implique que les quatorze princes s'entretuent dans un combat rituel",
+    "Chaque prince hérite d'une bête Nen gardienne (Nen Beast) de son père",
+    "A organisé une expédition massive vers le Continent Obscur à bord du navire Black Whale",
+    "Kurapika a rejoint l'expédition comme garde du corps du prince Woble"
+  ]
+}

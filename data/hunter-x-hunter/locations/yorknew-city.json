@@ -1,0 +1,26 @@
+{
+  "id": "yorknew-city",
+  "name": "Yorknew City",
+  "category": "location",
+  "era": [
+    "yorknew"
+  ],
+  "tags": [
+    "ville",
+    "metropole",
+    "enchère",
+    "underground",
+    "mafia",
+    "brigade-fantome",
+    "nuit",
+    "gratte-ciel"
+  ],
+  "summary": "Mégalopole tentaculaire, centre financier mondial et rendez-vous des chasseurs de trésors lors de l'enchère annuelle",
+  "details": [
+    "Immense métropole moderne, centre névralgique du commerce et de la finance mondiale",
+    "Hôte de l'enchère annuelle la plus célèbre du monde, attirant collectionneurs et chasseurs",
+    "Repaire de la mafia locale, ses bas-fonds grouillent de criminels",
+    "Lieu du massacre du clan Kurta par la Brigade Fantôme",
+    "Théâtre de l'affrontement entre Kurapika et la Brigade Fantôme"
+  ]
+}

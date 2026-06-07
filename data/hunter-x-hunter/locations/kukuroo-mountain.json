@@ -1,0 +1,27 @@
+{
+  "id": "kukuroo-mountain",
+  "name": "Mont Kukuroo",
+  "category": "location",
+  "era": [
+    "hunter-exam",
+    "chairman-election"
+  ],
+  "tags": [
+    "montagne",
+    "zoldyck",
+    "manoir",
+    "assassin",
+    "foret",
+    "pieges",
+    "porte-testament",
+    "famille"
+  ],
+  "summary": "Montagne abritant le manoir de la famille Zoldyck, l'un des lieux les plus dangereux du monde",
+  "details": [
+    " Montagne où se trouve le manoir ancestral de la famille Zoldyck",
+    "Entouré d'une forêt dense truffée de pièges mortels",
+    "Le manoir possède une porte monumentale (la Porte du Testament) de plusieurs tonnes",
+    "L'accès est gardé par des gardiens comme Mike, un chien-lion monstrueux",
+    "Killua y a grandi et subi l'entraînement impitoyable de la famille"
+  ]
+}

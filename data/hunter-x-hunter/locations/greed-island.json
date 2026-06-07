@@ -1,0 +1,26 @@
+{
+  "id": "greed-island",
+  "name": "Greed Island",
+  "category": "location",
+  "era": [
+    "greed-island"
+  ],
+  "tags": [
+    "jeu",
+    "ile",
+    "carte-rom",
+    "ging",
+    "treasure",
+    "nen",
+    "mmo",
+    "reel"
+  ],
+  "summary": "Jeu vidéo créé par Ging Freecss, se déroulant dans une île réelle imprégnée de Nen",
+  "details": [
+    "Jeu vidéo sur carte ROM unique développé par Ging Freecss et ses amis",
+    "Se déroule sur une île réelle quelque part dans le monde, accessible via le Nen",
+    "Les joueurs doivent collecter 99 cartes spécifiques parmi 100 pour terminer le jeu",
+    "Le Nen des joueurs fonctionne à l'intérieur du jeu, suivant des règles spécifiques",
+    "Contient une carte spéciale 'Accompagner la Patronne' permettant de rencontrer Ging"
+  ]
+}

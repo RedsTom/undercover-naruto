@@ -1,0 +1,26 @@
+{
+  "id": "dark-continent",
+  "name": "Continent Obscur",
+  "category": "location",
+  "era": [
+    "dark-continent"
+  ],
+  "tags": [
+    "continent",
+    "mysterieux",
+    "dangereux",
+    "tresors",
+    "leviathan",
+    "inexplore",
+    "monstres",
+    "legende"
+  ],
+  "summary": "Continent légendaire inexploré, berceau de dangers indicibles et de trésors inestimables, au-delà du lac Mort",
+  "details": [
+    "Continent gigantesque situé au-delà du lac Mort (l'océan qui entoure le monde connu)",
+    "Considéré comme le lieu le plus dangereux au monde, classé A ou B par les Hunters",
+    "Source de tous les maux et calamités qui ont frappé le monde connu",
+    "Les espèces qui en proviennent (comme les Chimera Ants) sont extrêmement dangereuses",
+    "Objectif ultime de nombreux Hunters légendaires, dont Ging Freecss et Beyond Netero"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "heavens-arena",
+  "name": "Céleste Tour",
+  "category": "location",
+  "era": [
+    "hunter-exam"
+  ],
+  "tags": [
+    "tour",
+    "combat",
+    "etage",
+    "gradin",
+    "ville",
+    "arena",
+    "spectacle",
+    "competition"
+  ],
+  "summary": "Gratte-ciel de 251 étages dédié aux combats de tournoi, lieu d'apprentissage du Nen pour Gon et Killua",
+  "details": [
+    "Immense tour de combat située dans une grande ville, destination des combattants du monde entier",
+    "Les étages 1-199 sont réservés aux amateurs, à partir du 200e étage le Nen est obligatoire",
+    "Lieu où Gon et Killua ont rencontré leur maître Wing et appris les bases du Nen",
+    "Hisoka y a affronté Kastro, puis plus tard Chrollo dans un combat destructeur",
+    "Le toit de la tour offre une vue imprenable sur toute la ville"
+  ]
+}

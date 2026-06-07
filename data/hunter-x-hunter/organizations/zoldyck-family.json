@@ -1,0 +1,29 @@
+{
+  "id": "zoldyck-family",
+  "name": "Famille Zoldyck",
+  "category": "organization",
+  "era": [
+    "hunter-exam",
+    "yorknew",
+    "chairman-election",
+    "dark-continent"
+  ],
+  "tags": [
+    "organisation",
+    "assassin",
+    "famille",
+    "professionnel",
+    "mont-kukuroo",
+    "zoldyck",
+    "entrainement",
+    "lignee"
+  ],
+  "summary": "Plus célèbre famille d'assassins du monde, réputée pour former des tueurs d'élite depuis des générations",
+  "details": [
+    "Famille d'assassins la plus célèbre et la plus redoutée au monde",
+    "Basée au Mont Kukuroo, dans un immense manoir piégé",
+    "Chaque enfant est entraîné dès la naissance aux techniques d'assassinat",
+    "Les membres incluent Silva, Zeno, Illumi, Milluki, Killua et Alluka",
+    "Leurs services sont extrêmement coûteux et réservés à une clientèle d'élite"
+  ]
+}

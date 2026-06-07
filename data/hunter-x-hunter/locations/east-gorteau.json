@@ -1,0 +1,26 @@
+{
+  "id": "east-gorteau",
+  "name": "Gorteau de l'Est",
+  "category": "location",
+  "era": [
+    "chimera-ant"
+  ],
+  "tags": [
+    "region",
+    "royaume",
+    "palais",
+    "meruem",
+    "hiru-gi",
+    "gungi",
+    "komugi",
+    "invasion"
+  ],
+  "summary": "Royaume de l'Est où le roi Meruem établit son palais, théâtre de la bataille finale",
+  "details": [
+    "Royaume dirigé par le dictateur Ming Jol-ik, envahi par les Fourmis Chimères",
+    "Le palais royal devient le quartier général de Meruem et de sa Garde Royale",
+    "Lieu de la bataille finale entre les Hunters et les Fourmis Chimères",
+    "Meruem y a rencontré Komugi et découvert le jeu de Gungi",
+    "Site de l'explosion de la bombe miniaturisée de Netero"
+  ]
+}

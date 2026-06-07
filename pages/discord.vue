@@ -52,7 +52,7 @@ async function handleAuth() {
       return;
     }
 
-    if (!window.frameElement) {
+    if (window.self === window.top) {
       error.value = "Cette page doit être ouverte depuis Discord";
       return;
     }

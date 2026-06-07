@@ -35,6 +35,7 @@
           <p v-if="lastRoundResult?.eliminatedRole" class="text-[0.5rem]"
             :class="lastRoundResult.eliminatedRole === 'undercover' || lastRoundResult.eliminatedRole === 'mrWhite' ? 'text-red-300' : 'text-green-300'">
             {{ roleLabel(lastRoundResult.eliminatedRole) }}
+            <span v-if="lastRoundResult.eliminatedWord" class="ml-0.5 opacity-70">— {{ lastRoundResult.eliminatedWord }}</span>
           </p>
         </div>
 

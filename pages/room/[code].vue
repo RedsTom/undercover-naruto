@@ -109,10 +109,9 @@ const lastConfig = computed(() => (room.value as any)?.gameState?.config ?? (roo
 
 const minPlayers = computed(() => lastConfig.value?.minPlayers ?? 3);
 
-const settingsConfig = computed(() => isHost.value
-  ? (lastConfig.value ?? undefined)
-  : ((room.value as any)?.pendingConfig ?? lastConfig.value ?? undefined)
-);
+const pendingConfig = computed(() => (room.value as any)?.pendingConfig ?? null);
+
+const settingsConfig = computed(() => pendingConfig.value ?? lastConfig.value ?? undefined);
 
 const gameConfig = ref<Partial<GameConfig>>({});
 

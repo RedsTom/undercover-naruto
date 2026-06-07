@@ -123,13 +123,18 @@ watch(() => props.config, async (cfg) => {
   if (cfg.anime && cfg.anime !== selectedAnime.value) {
     selectedAnime.value = cfg.anime;
   }
-  if (cfg.eras?.length) {
+  if (cfg.eras?.length && !arraysEqual(cfg.eras, selectedEras.value)) {
     selectedEras.value = [...cfg.eras];
   }
-  if (cfg.categories?.length) {
+  if (cfg.categories?.length && !arraysEqual(cfg.categories, selectedCategories.value)) {
     selectedCategories.value = [...cfg.categories];
   }
 }, { immediate: true });
+
+function arraysEqual(a: string[], b: string[]): boolean {
+  if (a.length !== b.length) return false;
+  return a.every((v, i) => v === b[i]);
+}
 
 watch(selectedAnime, async (slug) => {
   if (!slug) return;

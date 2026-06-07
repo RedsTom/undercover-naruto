@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen pb-16">
     <template v-if="room && gameState">
-      <div class="hidden max-[480px]:block max-w-xs mx-auto px-3 py-4 space-y-3">
+      <div class="hidden max-[420px]:block max-w-xs mx-auto px-3 py-4 space-y-3">
         <div class="text-center">
           <span :class="phaseBadgeClass" class="text-[0.6rem]">{{ phaseLabel }}</span>
           <span class="text-[0.6rem] text-gray-500 ml-1">R{{ gameState.currentRound }}</span>
@@ -48,7 +48,7 @@
           &#128101; {{ aliveAll.length }} en vie
         </div>
       </div>
-      <div class="block max-[480px]:hidden max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
+      <div class="block max-[420px]:hidden max-w-4xl mx-auto px-4 py-8 space-y-6 animate-slide-up">
         <div class="flex items-center justify-between">
           <div>
             <h1 class="text-2xl font-black text-white">&#127918; Partie</h1>
@@ -57,7 +57,7 @@
               <span class="text-sm text-gray-500">Round {{ gameState.currentRound }}</span>
             </div>
           </div>
-          <div class="flex gap-2">
+          <div class="flex gap-2 max-[420px]:hidden">
             <GameButton v-if="isHost" variant="secondary" size="sm" @click="handleReturnToLobby">
               &#8592; Lobby
             </GameButton>

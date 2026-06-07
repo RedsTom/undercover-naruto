@@ -1,5 +1,5 @@
 <template>
-  <GameCard>
+  <GameCard v-if="showLink">
     <template #header>
       <h3 class="text-lg font-bold text-white">&#128279; Inviter des amis</h3>
     </template>
@@ -40,6 +40,8 @@ import type { RoomState } from '~/types';
 const props = defineProps<{
   room: RoomState;
 }>();
+
+const showLink = import.meta.client ? window.self === window.top : true;
 
 const copied = ref(false);
 const linkCopied = ref(false);

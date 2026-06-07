@@ -25,59 +25,63 @@
       </div>
 
       <template v-else>
-        <div class="text-center space-y-2">
-          <div class="text-4xl animate-float">&#127807;</div>
-          <h1 class="text-3xl font-black text-white">Salle d'attente</h1>
-          <p class="text-gray-400">
-            <span v-if="animeName" class="text-sm">Animé :</span> <span v-if="animeName" class="font-bold text-orange-400">{{ animeName }}</span>
-            <span v-if="animeName" class="mx-2 text-gray-600">|</span>
-            Code : <span class="font-mono text-2xl font-bold text-white">{{ room.code }}</span>
-          </p>
+        <div class="hidden max-[420px]:flex flex-col items-center justify-center min-h-[200px] text-center space-y-3">
+          <div class="text-6xl">&#128101;</div>
+          <p class="text-2xl font-bold text-white">{{ room.players.length }} joueur{{ room.players.length > 1 ? 's' : '' }}</p>
+          <p class="text-sm text-gray-400 font-mono">#{{ room.code }}</p>
         </div>
 
-        <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" @transfer-host="handleTransferHost" />
-
-        <div v-if="scores" class="animate-slide-up">
-          <GameCard>
-            <div class="space-y-4 text-center">
-              <p class="block text-xs font-bold uppercase tracking-wider text-white/50">Score</p>
-              <div class="flex justify-center gap-12">
-                <div class="text-center">
-                  <p class="text-4xl font-black text-orange-400">{{ scores.civilians }}</p>
-                  <p class="text-sm text-gray-400">Civils</p>
-                </div>
-                <div class="text-center">
-                  <p class="text-4xl font-black text-red-400">{{ scores.undercover }}</p>
-                  <p class="text-sm text-gray-400">Undercover</p>
-                </div>
-              </div>
-              <p v-if="winnerText" class="text-lg font-black text-white">{{ winnerText }}</p>
-              <p v-if="roundText" class="text-sm text-gray-500">{{ roundText }}</p>
-            </div>
-          </GameCard>
-        </div>
-
-        <InviteLink class="block max-[480px]:hidden" :room="room" />
-
-        <div class="hidden max-[480px]:block text-center py-4">
-          <p class="text-xs text-white/50 uppercase tracking-wider">&#128101; {{ room.players.length }} joueurs</p>
-        </div>
-
-        <div class="space-y-6">
-          <GameGeneralSettings :is-host="isHost" :config="settingsConfig" @config-changed="onGeneralConfigChanged" />
-          <GameAnimeSettings :is-host="isHost" :config="settingsConfig" @config-changed="onAnimeConfigChanged" />
-
-          <div v-if="isHost" class="flex flex-col gap-2 pt-2">
-            <GameButton block size="lg" :disabled="!canStartGame" @click="handleStart">
-              <template v-if="isInGame">&#10145;&#65039; Tour suivant</template>
-              <template v-else-if="canStartGame">&#128640; Lancer la partie</template>
-              <template v-else>&#9203; {{ playerCount }}/{{ minPlayers }}</template>
-            </GameButton>
+        <div class="flex max-[420px]:hidden flex-col space-y-6">
+          <div class="text-center space-y-2">
+            <div class="text-4xl animate-float">&#127807;</div>
+            <h1 class="text-3xl font-black text-white">Salle d'attente</h1>
+            <p class="text-gray-400">
+              <span v-if="animeName" class="text-sm">Animé :</span> <span v-if="animeName" class="font-bold text-orange-400">{{ animeName }}</span>
+              <span v-if="animeName" class="mx-2 text-gray-600">|</span>
+              Code : <span class="font-mono text-2xl font-bold text-white">{{ room.code }}</span>
+            </p>
           </div>
-        </div>
 
-        <div class="text-center">
-          <GameButton variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>
+          <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" @transfer-host="handleTransferHost" />
+
+          <div v-if="scores" class="animate-slide-up">
+            <GameCard>
+              <div class="space-y-4 text-center">
+                <p class="block text-xs font-bold uppercase tracking-wider text-white/50">Score</p>
+                <div class="flex justify-center gap-12">
+                  <div class="text-center">
+                    <p class="text-4xl font-black text-orange-400">{{ scores.civilians }}</p>
+                    <p class="text-sm text-gray-400">Civils</p>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-4xl font-black text-red-400">{{ scores.undercover }}</p>
+                    <p class="text-sm text-gray-400">Undercover</p>
+                  </div>
+                </div>
+                <p v-if="winnerText" class="text-lg font-black text-white">{{ winnerText }}</p>
+                <p v-if="roundText" class="text-sm text-gray-500">{{ roundText }}</p>
+              </div>
+            </GameCard>
+          </div>
+
+          <InviteLink :room="room" />
+
+          <div class="space-y-6">
+            <GameGeneralSettings :is-host="isHost" :config="settingsConfig" @config-changed="onGeneralConfigChanged" />
+            <GameAnimeSettings :is-host="isHost" :config="settingsConfig" @config-changed="onAnimeConfigChanged" />
+
+            <div v-if="isHost" class="flex flex-col gap-2 pt-2">
+              <GameButton block size="lg" :disabled="!canStartGame" @click="handleStart">
+                <template v-if="isInGame">&#10145;&#65039; Tour suivant</template>
+                <template v-else-if="canStartGame">&#128640; Lancer la partie</template>
+                <template v-else>&#9203; {{ playerCount }}/{{ minPlayers }}</template>
+              </GameButton>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <GameButton variant="ghost" @click="handleLeave">&#128682; Quitter la salle</GameButton>
+          </div>
         </div>
       </template>
     </div>

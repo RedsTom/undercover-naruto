@@ -75,8 +75,10 @@
 <script setup lang="ts">
 const { createRoom, joinRoom } = useRoomAPI();
 
+const route = useRoute();
+
 if (import.meta.client && window.self !== window.top) {
-  navigateTo('/discord');
+  navigateTo({ path: '/discord', query: route.query });
 }
 
 const roomCode = ref('');

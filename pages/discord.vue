@@ -60,6 +60,11 @@ async function handleAuth() {
     log('Search:', window.location.search);
     log('In iframe:', window.self !== window.top);
 
+    const frameId = new URL(window.location.href).searchParams.get('frame_id');
+    if (frameId) {
+      sessionStorage.setItem('discord_frame_id', frameId);
+    }
+
     const config = await $fetch('/api/config');
     log('/api/config response:', config);
     const CLIENT_ID = (config as any).discordClientId;
@@ -76,12 +81,27 @@ async function handleAuth() {
 
     status.value = 'Initialisation...';
     log('Creating DiscordSDK with CLIENT_ID:', CLIENT_ID);
+
+    if (!window.location.search.includes('frame_id')) {
+      const saved = sessionStorage.getItem('discord_frame_id');
+      if (saved) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('frame_id', saved);
+        window.history.replaceState({}, '', url.toString());
+        log('Restored frame_id from sessionStorage:', saved);
+      }
+    }
+
     let sdk;
     try {
       sdk = new DiscordSDK(CLIENT_ID);
       log('SDK constructor OK');
     } catch (c: any) {
       log('SDK constructor threw:', c.name, c.message, c.code, c.stack);
+      if (c.message?.includes('frame_id') && !window.location.search.includes('frame_id')) {
+        error.value = 'Connexion Discord impossible : frame_id manquant. Veuillez rouvrir l\'activité depuis Discord.';
+        return;
+      }
       throw c;
     }
     discordSdk = sdk;

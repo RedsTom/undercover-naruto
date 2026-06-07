@@ -35,7 +35,7 @@
           </p>
         </div>
 
-        <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" />
+        <PlayerList :room="room" :player-id="playerId" :is-host="isHost" @kick="handleKick" @transfer-host="handleTransferHost" />
 
         <div v-if="scores" class="animate-slide-up">
           <GameCard>
@@ -273,6 +273,17 @@ async function handleJoinRoom() {
 
 async function handleKick(targetId: string) {
   await kickPlayer(targetId);
+}
+
+async function handleTransferHost(targetId: string) {
+  if (!room.value || !playerId.value) return;
+  try {
+    await $fetch(`/api/rooms/${room.value.id}/transfer-host`, {
+      method: 'POST',
+      body: { playerId: playerId.value, targetPlayerId: targetId },
+    });
+    room.value = { ...room.value, hostId: targetId };
+  } catch {}
 }
 
 async function handleStart() {

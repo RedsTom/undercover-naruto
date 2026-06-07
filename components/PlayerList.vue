@@ -35,14 +35,24 @@
           </div>
         </div>
 
-        <GameButton
-          v-if="isHost && player.id !== playerId"
-          variant="ghost"
-          size="sm"
-          @click="handleKick(player.id)"
-        >
-          &#10005;
-        </GameButton>
+        <div v-if="isHost && player.id !== playerId" class="flex gap-1">
+          <GameButton
+            variant="ghost"
+            size="sm"
+            @click="handleTransferHost(player.id)"
+            title="Transférer l'hôte"
+          >
+            &#128081;
+          </GameButton>
+          <GameButton
+            variant="ghost"
+            size="sm"
+            @click="handleKick(player.id)"
+            title="Exclure"
+          >
+            &#10005;
+          </GameButton>
+        </div>
       </div>
     </div>
   </GameCard>
@@ -59,9 +69,14 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   kick: [targetId: string];
+  transferHost: [targetId: string];
 }>();
 
 function handleKick(targetId: string) {
   emit('kick', targetId);
+}
+
+function handleTransferHost(targetId: string) {
+  emit('transferHost', targetId);
 }
 </script>

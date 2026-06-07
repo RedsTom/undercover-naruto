@@ -92,7 +92,7 @@
             :class="p.role === 'undercover' || p.role === 'mrWhite'
               ? 'bg-red-900/30 ring-1 ring-red-500/30 text-red-300'
               : 'bg-green-900/30 ring-1 ring-green-500/30 text-green-300'">
-            <img v-if="p.word && getWordImage(p.word)" :src="getWordImage(p.word)" :alt="p.word" class="w-10 h-10 object-cover rounded-lg ring-1 ring-white/10 shrink-0" />
+            <img v-if="p.word && getWordImage(p.word)" :src="getWordImage(p.word)" :alt="p.word" class="h-10 w-auto max-w-16 rounded-lg ring-1 ring-white/10 shrink-0 object-contain" />
             <div>
               <p>{{ p.name }} — {{ p.role === 'undercover' ? 'Undercover' : p.role === 'mrWhite' ? 'Mr. White' : 'Civil' }}</p>
               <p v-if="p.word" class="text-xs opacity-70">Mot : {{ p.word }}</p>

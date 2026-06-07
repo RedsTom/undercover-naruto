@@ -11,7 +11,7 @@
       >
         <div v-if="showWord && word" class="space-y-3 animate-bounce-in">
           <div v-if="wordImage" class="flex justify-center">
-            <img :src="wordImage" :alt="word" class="w-24 h-24 object-cover rounded-xl ring-2 ring-orange-500/30" />
+            <img :src="wordImage" :alt="word" class="max-h-36 w-auto max-w-full rounded-xl ring-2 ring-orange-500/30" />
           </div>
           <p class="text-4xl font-black text-orange-400">{{ word }}</p>
           <span v-if="!hideRole" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider"
